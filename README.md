@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 ## Available Scripts
 
@@ -66,3 +67,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://github.com/ElreyB"><img src="https://avatars1.githubusercontent.com/u/20192033?v=4" width="100px;" alt="ElreyB"/><br /><sub><b>ElreyB</b></sub></a><br /><a href="https://github.com/ElreyB/sharp-dance/commits?author=ElreyB" title="Code">💻</a> <a href="https://github.com/ElreyB/sharp-dance/issues?q=author%3AElreyB" title="Bug reports">🐛</a> <a href="#content-ElreyB" title="Content">🖋</a> <a href="#maintenance-ElreyB" title="Maintenance">🚧</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
