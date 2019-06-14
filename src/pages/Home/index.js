@@ -1,20 +1,23 @@
 import * as React from "react";
-import { Grid, HeaderBanner } from "../../styledGuide";
+import { Grid, Page, Quote, HeaderBanner, Markdown } from "../../styledGuide";
+import data from "./data.json";
 
 export default function Home() {
-  const data = {
-    title: "SHARP",
-    subtitle: "Dance Company",
-    headerImage:
-      "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/droppedImage.jpg"
-  };
   return (
-    <Grid>
+    <Page>
       <HeaderBanner
-        title={data.title}
-        subtitle={data.subtitle}
-        src={data.headerImage}
+        title={data.home.title}
+        subtitle={data.home.subtitle}
+        src={data.home.headerImage}
       />
-    </Grid>
+      <Grid>
+        <Grid size={2}>
+          {data.quotes.map((quote, i) => (
+            <Quote {...quote} key={i} />
+          ))}
+        </Grid>
+        <Markdown size={10}>{data.home.content}</Markdown>
+      </Grid>
+    </Page>
   );
 }
