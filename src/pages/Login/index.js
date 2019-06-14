@@ -1,7 +1,12 @@
 import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
+import styled from 'styled-components';
 import * as Yup from 'yup';
 import { Grid, H1 } from '../../styledGuide';
+
+const Heading = styled(H1)`
+  color: ${({ theme }) => theme.colors.red};
+`;
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string()
@@ -12,10 +17,10 @@ const LoginSchema = Yup.object().shape({
     .required('Required')
 });
 
-export default function Login() {
+export default function Login(props) {
   return (
-    <Grid>
-      <H1>Login</H1>
+    <Grid size={6} style={{ backgroundColor: 'blue' }}>
+      <Heading>Login</Heading>
       <Formik
         initialValues={{ email: '', password: '' }}
         validationSchema={LoginSchema}
