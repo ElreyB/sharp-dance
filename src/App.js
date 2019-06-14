@@ -1,10 +1,7 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Login from './pages/Admin/login';
-
-function Index() {
-  return <h2>Home</h2>;
-}
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Login from "./pages/Admin/login";
+import Home from "./pages/Home";
 
 function About() {
   return <h2>About</h2>;
@@ -35,7 +32,7 @@ function App() {
           </ul>
         </nav>
 
-        <Route path="/" exact component={Index} />
+        <Route path="/" exact component={Home} />
         <Route path="/about/" component={About} />
         <Route path="/users/" component={Users} />
         <Route path="/login/" component={Login} />

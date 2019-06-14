@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Grid, HeaderBanner } from "./styleGuide";
+import { Grid, HeaderBanner } from "../../styledGuide";
 
 export default function Home() {
   const data = {
