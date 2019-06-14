@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Login from "./pages/Admin/login";
-import Home from "./pages/Home";
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Login from './pages/Login';
+import Home from './pages/Home';
 
 function About() {
   return <h2>About</h2>;
