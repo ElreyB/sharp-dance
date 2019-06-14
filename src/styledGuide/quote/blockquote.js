@@ -9,6 +9,7 @@ const StyledBlockquote = styled("blockquote")`
   margin-inline-start: 0;
   margin-inline-end: 0;
   color: ${({ theme }) => theme.colors.blue};
+  line-height: 1.4;
   font-style: italic;
 `;
 

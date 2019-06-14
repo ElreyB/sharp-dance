@@ -3,26 +3,29 @@ import PropTypes from "prop-types";
 import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 
-const Credit = styled(({ children, ...props }) => (
-  <div {...props}>Credit: {children}</div>
-))`
+const StyledCredit = styled("div")`
   right: 0;
   bottom: 0;
   position: absolute;
 `;
+const StyledImg = styled(Grid)`
+  position: relative;
+`;
 
-export const Img = styled(({ src, alt, credit, ...props }) => {
+const Credit = ({ children, ...props }) => (
+  <StyledCredit {...props}>Credit: {children}</StyledCredit>
+);
+
+export const Img = ({ src, alt, credit, ...props }) => {
   const role = alt ? undefined : "presentation";
 
   return (
-    <Grid {...props}>
+    <StyledImg {...props}>
       <img src={src} alt={alt} role={role} />
       {credit && <Credit>{credit}</Credit>}
-    </Grid>
+    </StyledImg>
   );
-})`
-  position: relative;
-`;
+};
 
 Img.propTypes = {
   src: PropTypes.string,

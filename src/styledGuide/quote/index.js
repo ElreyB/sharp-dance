@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Blockquote } from "./blockquote";
-import { Footer } from "./footer";
-import { Cite } from "./cite";
-import { P } from "../p";
+import { Blockquote } from "./Blockquote";
+import { Footer } from "./Footer";
+import { Cite } from "./Cite";
+import { P } from "../P";
 
 export const Quote = ({ source, author, quote, ...props }) => {
   return (

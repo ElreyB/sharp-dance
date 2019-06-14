@@ -5,6 +5,12 @@ const colors = {
   blue: "#00fdff"
 };
 
+const fonts = {
+  sansSerif: `'Montserrat', sans-serif`,
+  serif: `'Libre Baskerville', serif`
+};
+
 export const theme = {
-  colors: colors
+  colors,
+  fonts
 };

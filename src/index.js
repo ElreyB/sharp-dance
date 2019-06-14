@@ -3,11 +3,14 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ThemeProvider } from "styled-components/macro";
-import { theme } from "./styles";
+import { theme, GlobalStyle } from "./styles";
 
 const RootApp = () => (
   <ThemeProvider theme={theme}>
-    <App />
+    <>
+      <GlobalStyle />
+      <App />
+    </>
   </ThemeProvider>
 );
 

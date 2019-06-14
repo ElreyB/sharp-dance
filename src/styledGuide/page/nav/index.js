@@ -1,7 +1,7 @@
 import React from "react";
 import { useGrid } from "gymnast";
-import { Ul } from "./ul";
-import { Li } from "./li";
+import { Ul } from "./Ul";
+import { Li } from "./Li";
 
 export function Nav(props) {
   const [, allProps] = useGrid(props);

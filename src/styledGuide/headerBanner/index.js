@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useGrid } from "gymnast";
 import PropTypes from "prop-types";
-import { Header } from "./header";
-import { H1, H2 } from "../headings";
-import { Img } from "../img";
+import { Header } from "./Header";
+import { H1, H2 } from "../Headings";
+import { Img } from "../Img";
 
 export const HeaderBanner = ({
   title,

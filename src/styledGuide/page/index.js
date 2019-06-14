@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "gymnast";
 import styled from "styled-components/macro";
-import { Nav } from "./nav";
+import { Nav } from "./Nav";
 
 const PageContent = styled(Grid)`
   max-width: 900px;
