@@ -1,20 +1,31 @@
-import * as React from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { useGrid } from "gymnast";
+import { Grid } from "gymnast";
+import styled from "styled-components/macro";
 
-export const Img = ({ src, alt, ...props }) => {
-  const [showImg, allProps] = useGrid(props);
+const Credit = styled(({ children, ...props }) => (
+  <div {...props}>Credit: {children}</div>
+))`
+  right: 0;
+  bottom: 0;
+  position: absolute;
+`;
 
-  if (showImg) {
-    const role = alt ? undefined : "presentation";
+export const Img = styled(({ src, alt, credit, ...props }) => {
+  const role = alt ? undefined : "presentation";
 
-    return <img {...allProps} src={src} alt={alt} role={role} />;
-  }
-
-  return null;
-};
+  return (
+    <Grid {...props}>
+      <img src={src} alt={alt} role={role} />
+      {credit && <Credit>{credit}</Credit>}
+    </Grid>
+  );
+})`
+  position: relative;
+`;
 
 Img.propTypes = {
   src: PropTypes.string,
-  alt: PropTypes.string
+  alt: PropTypes.string,
+  credit: PropTypes.string
 };

@@ -1,42 +1,28 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Login from './pages/Login';
-import Home from './pages/Home';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { createGlobalStyle } from "styled-components/macro";
+import About from "./pages/About";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
 
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
+const GlobalStyle = createGlobalStyle`
+  html {
+    background-color: ${({ theme }) => theme.colors.black};
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+`;
 
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about/">About</Link>
-            </li>
-            <li>
-              <Link to="/users/">Users</Link>
-            </li>
-            <li>
-              <Link to="/login/">Login</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Route path="/" exact component={Home} />
-        <Route path="/about/" component={About} />
-        <Route path="/users/" component={Users} />
-        <Route path="/login/" component={Login} />
-      </div>
+      <GlobalStyle />
+      <Route path="/" exact component={Home} />
+      <Route path="/about/" component={About} />
+      <Route path="/login/" component={Login} />
     </Router>
   );
 }

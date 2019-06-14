@@ -1,8 +1,8 @@
-import React from 'react';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import styled from 'styled-components';
-import * as Yup from 'yup';
-import { Grid, H1 } from '../../styledGuide';
+import React from "react";
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from "yup";
+import styled from "styled-components/macro";
+import { Page, H1 } from "../../styledGuide";
 
 const Heading = styled(H1)`
   color: ${({ theme }) => theme.colors.red};
@@ -10,28 +10,28 @@ const Heading = styled(H1)`
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string()
-    .email('Invalid email')
-    .required('Required'),
+    .email("Invalid email")
+    .required("Required"),
   password: Yup.string()
-    .min(6, 'too short')
-    .required('Required')
+    .min(6, "too short")
+    .required("Required")
 });
 
-export default function Login(props) {
+export default function Login() {
   return (
-    <Grid size={6} style={{ backgroundColor: 'blue' }}>
+    <Page>
       <Heading>Login</Heading>
       <Formik
-        initialValues={{ email: '', password: '' }}
+        initialValues={{ email: "", password: "" }}
         validationSchema={LoginSchema}
         onSubmit={(values, actions) => {
-          console.warn('actions and values', values, actions);
+          console.warn("actions and values", values, actions);
           return setTimeout(() => {
             console.warn(values);
             actions.setSubmitting(false);
           }, 2000);
         }}
-        render={({ errors, status, touched, isSubmitting }) => (
+        render={({ isSubmitting }) => (
           <Form>
             <Field type="email" name="email" />
             <ErrorMessage name="email" />
@@ -43,6 +43,6 @@ export default function Login(props) {
           </Form>
         )}
       />
-    </Grid>
+    </Page>
   );
 }
