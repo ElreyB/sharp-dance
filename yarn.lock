@@ -5163,10 +5163,10 @@ gud@^1.0.0:
   resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
   integrity sha512-zGEOVKFM5sVPPrYs7J5/hYEw2Pof8KCyOwyhG8sAF26mCAeUFAcYPu1mwB7hhpIP29zOIBaDqwuHdLp0jvZXjw==
 
-gymnast@^17.0.0:
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/gymnast/-/gymnast-17.0.0.tgz#945bb5dcc177d997ba6b40be374d9f0b49e3cc89"
-  integrity sha512-1ZIP29BMK+vqWYoK8G0V4vx29nVE98vcwyWaKegBxFW45WiowpD/JHwHUAkm0KxhYVt9HBZ0AfjrQlYN57/Dpw==
+gymnast@^17.0.0-next.13:
+  version "17.0.0-next.13"
+  resolved "https://registry.yarnpkg.com/gymnast/-/gymnast-17.0.0-next.13.tgz#24da3f394edc53963a5ef1fcca7e955552321140"
+  integrity sha512-bMvlI77pU/KJOmioIok85Pu41c4Chu2gJT2bRVkjuAyVNSB9ltLskLJShz4gRfsnM6J5tI4uycoX+asiQ+Womg==
   dependencies:
     cxs "https://github.com/arahansen/cxs#d593d14e708c4f5c17cb2105cb9435ae87ade362"
     preval.macro "3.0.0"
