@@ -1,9 +1,15 @@
 import React from "react";
-import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import styled from "styled-components/macro";
-import { Page, H1 } from "../../styledGuide";
-import { SignIn } from "../../fbconfig";
+import {
+  Page,
+  H1,
+  Button,
+  Formik,
+  Field,
+  Form,
+  ErrorMessage
+} from "../../styledGuide";
 
 const Heading = styled(H1)`
   color: ${({ theme }) => theme.colors.red};
@@ -39,9 +45,9 @@ export default function Login() {
             <ErrorMessage name="email" />
             <Field type="password" className="error" name="password" />
             <ErrorMessage name="password" />
-            <button type="submit" disabled={isSubmitting}>
+            <Button type="submit" disabled={isSubmitting}>
               Submit
-            </button>
+            </Button>
           </Form>
         )}
       />

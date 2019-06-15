@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Bios from "./pages/Bios";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/bios" exact component={Bios} />
       <Route path="/about/" component={About} />
       <Route path="/login/" component={Login} />
+      <Route path="/signup/" component={SignUp} />
     </Router>
   );
 }

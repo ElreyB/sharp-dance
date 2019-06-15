@@ -12,7 +12,7 @@ export const withAuthorization = condition => Component => {
           props.history.push(SIGN_IN);
         }
       });
-    }, []);
+    });
 
     return (
       <AuthUserContext.Consumer>
