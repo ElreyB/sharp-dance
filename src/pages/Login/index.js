@@ -3,6 +3,7 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import styled from "styled-components/macro";
 import { Page, H1 } from "../../styledGuide";
+import { SignIn } from "../../fbconfig";
 
 const Heading = styled(H1)`
   color: ${({ theme }) => theme.colors.red};
@@ -25,11 +26,12 @@ export default function Login() {
         initialValues={{ email: "", password: "" }}
         validationSchema={LoginSchema}
         onSubmit={(values, actions) => {
-          console.warn("actions and values", values, actions);
-          return setTimeout(() => {
-            console.warn(values);
-            actions.setSubmitting(false);
-          }, 2000);
+          const promise = SignIn(values);
+          promise.catch(e => {
+            actions.setStatus({ error: e });
+            console.error(e);
+          });
+          actions.setSubmitting(false);
         }}
         render={({ isSubmitting }) => (
           <Form>

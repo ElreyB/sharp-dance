@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
-import { SIGN_IN, SIGN_UP } from "../constants/routes";
+import { SIGN_IN } from "../constants/routes";
 import { auth } from "./fb";
 import { AuthUserContext } from "./AuthUserContext";
 

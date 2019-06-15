@@ -1,11 +1,11 @@
 import { auth } from "./fb";
 
 // Sign Up
-export const SignUP = (email, password) =>
+export const SignUp = ({ email, password }) =>
   auth.createUserWithEmailAndPassword(email, password);
 
 // Sign In
-export const SignIn = (email, password) =>
+export const SignIn = ({ email, password }) =>
   auth.signInWithEmailAndPassword(email, password);
 
 // Sign out
