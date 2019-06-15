@@ -1,11 +1,32 @@
 {
   "home": {
-    "title": "SHARP",
-    "subtitle": "Dance Company",
-    "headerImage": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/droppedImage.jpg",
+    "headerBanner": {
+      "title": "SHARP",
+      "subtitle": "Dance Company",
+      "imageSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/droppedImage.jpg",
+      "imageCredit": "Bill Hebert"
+    },
     "content": "## The Mission\nThe mission of SHARP Dance Co. is to translate raw human emotion utilizing contemporary movement to connect the audience through individual interpretation.\n## About SHARP\nSHARP is a thirteen year old 501C-3 modern company and its theory of “meaning behind movement” is shown prominently throughout their work.  SHARP feels that dance should be more than a performance, it should be an experience.\nSHARP has performed throughout the U.S. in cities such as:  New York, Rochester, Phoenix, Chicago, Cincinnati, Portland, Boulder, San Diego, Brooklyn, Portsmouth etc.  SHARP has toured throughout Europe in Italy, England and Greece.\nArtistic Director/Choreographer Diane Sharp-Nachsin was selected as a New Edge Mix Artist Award Recipient in Philadelphia. She was also chosen as a BAU Institute fellow in June 2013 in Italy and an Artist in Residence recipient in Paros, Greece 2014.",
-    "quotesTitle": "Press Quotes:"
+    "quotesTitle": "Press Quotes"
   },
+  "members": [
+    {
+      "organization": "Pennsylvania Presenters",
+      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/logo.gif"
+    },
+    {
+      "organization": "Association of Performing Arts Presenters",
+      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/apap_365_logo.jpg"
+    },
+    {
+      "organization": "NCPC",
+      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/header-logo.jpg"
+    },
+    {
+      "organization": "SHARP Dance Company",
+      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/coming_soon_image.jpg"
+    }
+  ],
   "quotes": [
     {
       "quote": "…the gap between the audience age or level of appreciation for modern dance, choreographer Diane Sharp-Nachsin abridged it, capturing the free-form movements of concertgoers, but with an exciting, contemporary edge.",
