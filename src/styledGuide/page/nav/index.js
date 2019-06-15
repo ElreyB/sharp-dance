@@ -10,6 +10,7 @@ export function Nav(props) {
     <nav {...allProps}>
       <Ul>
         <Li to="/">Home</Li>
+        <Li to="/bios">Bio's</Li>
         <Li to="/about">About</Li>
         <Li to="/login">Login</Li>
       </Ul>

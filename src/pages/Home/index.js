@@ -2,7 +2,7 @@ import React from "react";
 import {
   Grid,
   H2,
-  HeaderBanner,
+  Banner,
   Markdown,
   Img,
   Page,
@@ -11,29 +11,33 @@ import {
 import data from "../../data.json";
 
 export default function Home() {
+  const { pages, organizations, quotes } = data;
+
   return (
     <Page>
-      <HeaderBanner {...data.home.headerBanner} />
+      <Banner {...pages.home.headerBanner} />
       <Grid align="start">
-        <Grid size={3} marginRight="XL">
-          <H2>{data.home.quotesTitle}</H2>
-          {data.quotes.map((quote, i) => (
-            <Quote {...quote} key={i} />
-          ))}
-        </Grid>
+        {quotes.length > 0 && (
+          <Grid size={3} marginRight="XL">
+            <H2>{pages.home.quotesTitle}</H2>
+            {quotes.map((quote, i) => (
+              <Quote {...quote} key={i} />
+            ))}
+          </Grid>
+        )}
         <Grid size="auto">
-          <Markdown>{data.home.content}</Markdown>
-          {data.members.length > 0 && (
+          <Markdown>{pages.home.content}</Markdown>
+          {organizations.length > 0 && (
             <Grid justify="center">
               <H2>Members</H2>
-              {data.members.map(member => (
+              {organizations.map(org => (
                 <Img
                   size="fit"
                   margin="M"
                   align="center"
-                  alt={member.organization}
-                  src={member.logo}
-                  key={member.organization}
+                  alt={org.organization}
+                  src={org.logo}
+                  key={org.organization}
                 />
               ))}
             </Grid>
