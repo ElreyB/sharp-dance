@@ -2,7 +2,7 @@ import React from "react";
 import {
   Grid,
   H2,
-  HeaderBanner,
+  Banner,
   Markdown,
   Img,
   Page,
@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <Page>
-      <HeaderBanner {...pages.home.headerBanner} />
+      <Banner {...pages.home.headerBanner} />
       <Grid align="start">
         {quotes.length > 0 && (
           <Grid size={3} marginRight="XL">

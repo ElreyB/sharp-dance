@@ -1,14 +1,14 @@
 import React from "react";
-import { Grid, Bio, H2, HeaderBanner, Markdown, Page } from "../../styledGuide";
+import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
 import data from "../../data.json";
 
 export default function Home() {
   const { pages, performers, apprentices, guestPerformers, staff } = data;
-  const getBio = (bio, i) => <Bio {...bio} key={bio.name} headerColor={i} />;
+  const getBio = bio => <Bio {...bio} key={bio.name} />;
 
   return (
     <Page>
-      <HeaderBanner {...pages.bios.headerBanner} />
+      <Banner {...pages.bios.headerBanner} />
       <Grid align="start">
         {performers.length > 0 && performers.map(getBio)}
         {apprentices.length > 0 && (
@@ -23,7 +23,7 @@ export default function Home() {
             {guestPerformers.map(getBio)}
           </>
         )}
-        <HeaderBanner {...pages.bios.aboutDianeBanner} />
+        <Banner {...pages.bios.aboutDianeBanner} />
         <Markdown>{pages.bios.aboutDianeText}</Markdown>
         {staff.length > 0 && staff.map(getBio)}
       </Grid>

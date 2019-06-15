@@ -5,7 +5,7 @@ import { Header } from "./Header";
 import { H1, H2 } from "../Headings";
 import { Img } from "../Img";
 
-export const HeaderBanner = ({
+export const Banner = ({
   title,
   subtitle,
   imageSrc,
@@ -36,7 +36,7 @@ export const HeaderBanner = ({
   return null;
 };
 
-HeaderBanner.propTypes = {
+Banner.propTypes = {
   alt: PropTypes.string,
   imageCredit: PropTypes.string,
   imageSrc: PropTypes.string,

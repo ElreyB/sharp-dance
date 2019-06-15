@@ -1,5 +1,5 @@
 export * from "./Bio";
-export * from "./HeaderBanner";
+export * from "./Banner";
 export * from "./Headings";
 export * from "./Img";
 export * from "./Markdown";

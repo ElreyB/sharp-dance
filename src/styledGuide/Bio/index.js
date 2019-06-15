@@ -6,34 +6,16 @@ import { H3 } from "../Headings";
 import { Img } from "../Img";
 import { Markdown } from "../Markdown";
 
-const colors = [
-  "goldenrod",
-  "rebeccapurple",
-  "deeppink",
-  "lightblue",
-  "limegreen"
-];
-
-const Name = ({ headerColor, ...props }) => <Grid {...props} />;
+const Name = props => <Grid {...props} size="fit" marginRight="S" />;
 const StyledName = styled(Name)`
-  color: ${({ headerColor }) => colors[headerColor % colors.length]};
+  color: ${({ theme }) => theme.colors.blue};
 `;
 
-export function Bio({
-  name,
-  role,
-  imgCredit,
-  imgSrc,
-  bio,
-  headerColor,
-  ...props
-}) {
+export function Bio({ name, role, imgCredit, imgSrc, bio, ...props }) {
   return (
     <Grid {...props} align="start">
       <H3>
-        <StyledName size="fit" marginRight="S" headerColor={headerColor}>
-          {name}
-        </StyledName>
+        <StyledName>{name}</StyledName>
         {role && `(${role})`}
       </H3>
       <Img src={imgSrc} size={3} credit={imgCredit} />
@@ -47,6 +29,5 @@ Bio.propTypes = {
   role: PropTypes.string,
   imgCredit: PropTypes.string,
   imgSrc: PropTypes.string,
-  bio: PropTypes.string,
-  headerColor: PropTypes.number
+  bio: PropTypes.string
 };
