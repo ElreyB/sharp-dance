@@ -18,8 +18,10 @@ export function Bio({ name, role, imgCredit, imgSrc, bio, ...props }) {
         <StyledName>{name}</StyledName>
         {role && `(${role})`}
       </H3>
-      <Img src={imgSrc} size={3} credit={imgCredit} />
-      <Markdown size="auto">{bio}</Markdown>
+      <Img src={imgSrc} size={3} credit={imgCredit} margin="S 0 0 0" />
+      <Markdown marginLeft="M" size="auto">
+        {bio}
+      </Markdown>
     </Grid>
   );
 }
