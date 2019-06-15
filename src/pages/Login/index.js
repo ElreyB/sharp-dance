@@ -10,6 +10,7 @@ import {
   Form,
   ErrorMessage
 } from "../../styledGuide";
+import { SignIn, SignOut } from "../../fbconfig";
 
 const Heading = styled(H1)`
   color: ${({ theme }) => theme.colors.red};
@@ -27,29 +28,41 @@ const LoginSchema = Yup.object().shape({
 export default function Login() {
   return (
     <Page>
+      <Button type="button" onClick={SignOut}>
+        SignOut
+      </Button>
       <Heading>Login</Heading>
       <Formik
+        initialStatus={{}}
         initialValues={{ email: "", password: "" }}
         validationSchema={LoginSchema}
         onSubmit={(values, actions) => {
-          const promise = SignIn(values);
-          promise.catch(e => {
-            actions.setStatus({ error: e });
-            console.error(e);
-          });
+          console.log(actions);
+          SignIn(values)
+            .then(user => {
+              actions.setStatus(user);
+              console.warn(user);
+            })
+            .catch(e => {
+              actions.setStatus({ error: e });
+              console.error(e);
+            });
           actions.setSubmitting(false);
         }}
-        render={({ isSubmitting }) => (
-          <Form>
-            <Field type="email" name="email" />
-            <ErrorMessage name="email" />
-            <Field type="password" className="error" name="password" />
-            <ErrorMessage name="password" />
-            <Button type="submit" disabled={isSubmitting}>
-              Submit
-            </Button>
-          </Form>
-        )}
+        render={({ isSubmitting, status }) => {
+          console.warn("prpps", status);
+          return (
+            <Form>
+              <Field type="email" name="email" />
+              <ErrorMessage name="email" />
+              <Field type="password" className="error" name="password" />
+              <ErrorMessage name="password" />
+              <Button type="submit" disabled={isSubmitting}>
+                Submit
+              </Button>
+            </Form>
+          );
+        }}
       />
     </Page>
   );
