@@ -4,8 +4,8 @@
       "headerBanner": {
         "title": "SHARP",
         "subtitle": "Dance Company",
-        "imageSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/droppedImage.jpg",
-        "imageCredit": "Bill Hebert"
+        "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/droppedImage.jpg",
+        "imgCredit": "Bill Hebert"
       },
       "content": "## The Mission\nThe mission of SHARP Dance Co. is to translate raw human emotion utilizing contemporary movement to connect the audience through individual interpretation.\n## About SHARP\nSHARP is a thirteen year old 501C-3 modern company and its theory of “meaning behind movement” is shown prominently throughout their work.  SHARP feels that dance should be more than a performance, it should be an experience.\nSHARP has performed throughout the U.S. in cities such as:  New York, Rochester, Phoenix, Chicago, Cincinnati, Portland, Boulder, San Diego, Brooklyn, Portsmouth etc.  SHARP has toured throughout Europe in Italy, England and Greece.\nArtistic Director/Choreographer Diane Sharp-Nachsin was selected as a New Edge Mix Artist Award Recipient in Philadelphia. She was also chosen as a BAU Institute fellow in June 2013 in Italy and an Artist in Residence recipient in Paros, Greece 2014.",
       "quotesTitle": "Press Quotes"
@@ -13,7 +13,7 @@
     "bios": {
       "headerBanner": {
         "title": "Bio’s",
-        "subtitle": "Company and Guest Dancers/Choreographers"
+        "subtitle": "Company and Guest Dancers / Choreographers"
       },
       "aboutDianeBanner": {
         "title": "About Artistic Director Diane Sharp-Nachsin",

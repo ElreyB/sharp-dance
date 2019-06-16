@@ -24,7 +24,7 @@ export default function Home() {
           </>
         )}
         <Banner {...pages.bios.aboutDianeBanner} />
-        <Markdown>{pages.bios.aboutDianeText}</Markdown>
+        <Markdown marginTop="L">{pages.bios.aboutDianeText}</Markdown>
         {staff.length > 0 && staff.map(getBio)}
       </Grid>
     </Page>
