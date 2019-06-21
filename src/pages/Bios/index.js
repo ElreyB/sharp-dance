@@ -1,8 +1,9 @@
 import React from "react";
 import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
 import data from "../../data.json";
+import { withAuthorization } from "../../fbconfig";
 
-export default function Home() {
+function Home() {
   const { pages, performers, apprentices, guestPerformers, staff } = data;
   const getBio = bio => <Bio {...bio} key={bio.name} />;
 
@@ -30,3 +31,9 @@ export default function Home() {
     </Page>
   );
 }
+
+function isTrue(value) {
+  return !!value;
+}
+
+export default withAuthorization(isTrue)(Home);
