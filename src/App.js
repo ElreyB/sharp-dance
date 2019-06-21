@@ -5,6 +5,7 @@ import Bios from "./pages/Bios";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
+import { withAuthentication } from "../src/fbconfig";
 
 function App() {
   return (
@@ -18,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthentication(App);
