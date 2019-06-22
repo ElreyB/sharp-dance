@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import firebase from "firebase";
 import { auth } from "./fb";
 import { AuthUserContext } from "./AuthUserContext";
 
