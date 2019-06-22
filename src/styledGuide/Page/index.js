@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "gymnast";
 import styled from "styled-components/macro";
-import { Nav } from "./Nav";
+import { Nav } from "../Nav";
 
 const PageContent = styled(Grid)`
   max-width: 900px;
@@ -14,7 +14,16 @@ const PageContent = styled(Grid)`
 export const Page = ({ children, ...props }) => {
   return (
     <PageContent {...props} align="start" padding="M 2XL 2XL">
-      <Nav />
+      <Nav
+        links={[
+          { to: "/", label: "Home" },
+          { to: "/bios", label: "Bio's" },
+          { to: "/events", label: "Events" },
+          { to: "/about", label: "About" },
+          { to: "/login", label: "Login" },
+          { to: "/admin", label: "Admin" }
+        ]}
+      />
       {children}
     </PageContent>
   );

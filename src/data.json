@@ -24,6 +24,11 @@
         "imgCredit": "Kylene Cleaver"
       },
       "aboutDianeText": "Diane Sharp-Nachsin suffered from injuries that forced her to retire from performing, so in 2005 she founded SHARP and premiered the company in March 2006.  Diane’s work has been selected for the:  Cool NY Festival, Southern Vermont Dance Festival, STEPS Performance Lab (NY), Come Together Festival, Artsfest, Philadelphia International of the Arts (PIFA) and over 15 Fringe Festivals throughout the country and the United Kingdom.\nDiane has been invited as a resident artist in the U.S. and abroad including: The Living Garden Residency (Greece), CEC New Edge Mix Residency (Philadelphia),  and the BAU institute Residency (Italy).  Diane’s choreography has been commissioned for Mid Atlantic Ballet, The prestigous Governors School, Penn State University and the New Zealand Embassy.\nShe started her career in Pittsburgh, dancing with Pittsburgh based, Mary Miller Dance Company from 1992-1994.  She returned to Philadelphia to dance on scholarship with Philadanco’s training program.  Diane has also danced professionally with Juan Antonio and dancers, Trapezius Aerial Dance Company, Deborah Birrane, Anne-Marie Mulgrew and Dancers, Convergence Dancers and Musicians/Dance Matrix and Amsterdam based company Jacqueline Knopps and dansers.  She has performed with Pennsylvania Ballet Theaters’ Principal dancers Leslie Carothers and Meredith Rainey and Dirk Platzik, formally of The White Oak Project with Mikhail Baryshnikov.\nSome of Diane’s other original work has been showcased Maryland, Greece, Pittsburgh, Italy, California, New Hampshire, New York and Colorado and in numerous musicals throughout the Philadelphia Area."
+    },
+    "events": {
+      "headerBanner": {
+        "title": "SHARP Performances"
+      }
     }
   },
   "performers": [
@@ -212,7 +217,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2006-delaware-dance-festival"
     },
     {
       "name": "DELAWARE DANCE FESTIVAL",
@@ -233,7 +239,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2007-delaware-dance-festival"
     },
     {
       "name": "SOUTHERN DELAWARE DANCE FESTIVAL",
@@ -254,7 +261,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2007-southern-delaware-dance-festival"
     },
     {
       "name": "PHILADELPHIA FRINGE FESTIVAL - THREE on 3",
@@ -275,7 +283,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2007-philadelphia-fringe-festival---three-on-3"
     },
     {
       "name": "MEET THE ARTISTS",
@@ -296,7 +305,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2007-meet-the-artists"
     },
     {
       "name": "TOGETHER",
@@ -317,7 +327,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2007-together"
     },
     {
       "name": "COMMUNITY EDUCATION CENTER (CEC) NEW EDGE MIX SERIES",
@@ -338,7 +349,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2008-community-education-center--cec--new-edge-mix-series"
     },
     {
       "name": "DELAWARE DANCE FESTIVAL",
@@ -359,7 +371,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2008-delaware-dance-festival"
     },
     {
       "name": "ETC PERFORMANCE SERIES",
@@ -380,7 +393,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2008-5-etc-performance-series"
     },
     {
       "name": "PHILADELPHIA FRINGE FESTIVAL FOUR ON 2",
@@ -401,7 +415,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2008-philadelphia-fringe-festival-four-on-2"
     },
     {
       "name": "KORESH ARTIST SHOWCASE",
@@ -422,7 +437,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2008-koresh-artist-showcase"
     },
     {
       "name": "ETC PERFORMANCE SERIES",
@@ -443,7 +459,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2008-10-etc-performance-series"
     },
     {
       "name": "PHILLY DANCE COLLECTIVE",
@@ -464,7 +481,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2008-philly-dance-collective"
     },
     {
       "name": "KORESH ARTIST SHOWCASE",
@@ -492,7 +510,8 @@
           "time": "6:00 PM & 8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-1-koresh-artist-showcase"
     },
     {
       "name": "COOL NEW YORK 2009 DANCE FESTIVAL",
@@ -520,7 +539,8 @@
           "time": "6:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-cool-new-york-2009-dance-festival"
     },
     {
       "name": "ETC PERFORMANCE SERIES",
@@ -548,7 +568,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-2-etc-performance-series"
     },
     {
       "name": "KORESH ARTIST SHOWCASE",
@@ -576,7 +597,8 @@
           "time": "6:00 PM & 8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-2-koresh-artist-showcase"
     },
     {
       "name": "ETC PERFORMANCE SERIES",
@@ -604,7 +626,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-4-etc-performance-series"
     },
     {
       "name": "PHILADELPHIA DANCE SHOWCASE",
@@ -625,7 +648,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-philadelphia-dance-showcase"
     },
     {
       "name": "PHILLY DANCE COLLECTIVE",
@@ -646,7 +670,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-5-philly-dance-collective"
     },
     {
       "name": "SUMMER RESIDENCY",
@@ -674,7 +699,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-summer-residency"
     },
     {
       "name": "FILTHY",
@@ -695,7 +721,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-filthy"
     },
     {
       "name": "WILMINGTON FRINGE FESTIVAL - full night of SHARP",
@@ -723,7 +750,8 @@
           "time": "12:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-wilmington-fringe-festival---full-night-of-sharp"
     },
     {
       "name": "SHARP Full NIGHT FALL PERFORMANCE",
@@ -751,7 +779,8 @@
           "time": "7:30 PM",
           "notes": "Saturday replacement show rescheduled for Sunday Nov. 22nd 3:00 PM"
         }
-      ]
+      ],
+      "pathId": "2009-10-sharp-full-night-fall-performance"
     },
     {
       "name": "URBAN LAW FORUM DANCE SHOWCASE",
@@ -772,7 +801,8 @@
           "time": "5:00 PM - 6:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-urban-law-forum-dance-showcase"
     },
     {
       "name": "HEARTS FULL OF HOPE - Benefit for the March of Dimes",
@@ -793,7 +823,8 @@
           "time": "5:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-hearts-full-of-hope---benefit-for-the-march-of-dimes"
     },
     {
       "name": "PHILLY DANCE COLLECTIVE",
@@ -814,7 +845,8 @@
           "time": "2:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-11-philly-dance-collective"
     },
     {
       "name": "SHARP Full NIGHT FALL PERFORMANCE",
@@ -835,7 +867,8 @@
           "time": "3:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2009-110sharp-full-night-fall-performance"
     },
     {
       "name": "MOUNTAIN DANCE CONCERT",
@@ -856,7 +889,8 @@
           "time": "2:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-mountain-dance-concert"
     },
     {
       "name": "INHALE PERFORMANCE SERIES",
@@ -877,7 +911,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-inhale-performance-series"
     },
     {
       "name": "DELAWARE DANCE FESTIVAL",
@@ -898,7 +933,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-delaware-dance-festival"
     },
     {
       "name": "PHOENIX FRINGE FESTIVAL",
@@ -940,7 +976,8 @@
           "time": "2:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-phoenix-fringe-festival"
     },
     {
       "name": "EVENING OF DUETS",
@@ -961,7 +998,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-evening-of-duets"
     },
     {
       "name": "ARTFEST - PERFORMANCE SERIES NEW HAMPSHIRE",
@@ -982,7 +1020,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-artfest---performance-series-new-hampshire"
     },
     {
       "name": "GREEN SPACE - FERTILE GROUND PERFORMANCE SERIES",
@@ -1003,7 +1042,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-green-space---fertile-ground-performance-series"
     },
     {
       "name": "OUTDOOR SCULPTURE GARDEN PERFORMANCE",
@@ -1024,7 +1064,8 @@
           "time": "2:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-outdoor-sculpture-garden-performance"
     },
     {
       "name": "SUMMER CONCERT SERIES-UPPER GWYNEDD",
@@ -1045,7 +1086,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-summer-concert-series-upper-gwynedd"
     },
     {
       "name": "BHPHOTOS PRESENTS-CHOREOGRAPHY SHOWCASE II",
@@ -1066,7 +1108,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-bhphotos-presents-choreography-showcase-ii"
     },
     {
       "name": "FRINGE WILMINGTON - “ADDICTIVE FRAGILITY”",
@@ -1101,7 +1144,8 @@
           "time": "1:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-fringe-wilmington----addictive-fragility-"
     },
     {
       "name": "SEACOAST FRINGE FESTIVAL",
@@ -1129,7 +1173,8 @@
           "time": "3:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-seacoast-fringe-festival"
     },
     {
       "name": "SHARP’s HOME SEASON FALL PERFORMANCE - “REVELATION”",
@@ -1164,7 +1209,8 @@
           "time": "3:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-sharp-s-home-season-fall-performance----revelation-"
     },
     {
       "name": "BIG STEPS FOR LITTLE FEET - Benefit for the March of Dimes",
@@ -1185,7 +1231,8 @@
           "time": "2:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2010-big-steps-for-little-feet---benefit-for-the-march-of-dimes"
     },
     {
       "name": "MOUNTAIN DANCE FESTIVAL 2011",
@@ -1206,7 +1253,8 @@
           "time": "2:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-mountain-dance-festival-2011"
     },
     {
       "name": "STEPS ON BROADWAY-Performance Lab Series",
@@ -1227,7 +1275,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-steps-on-broadway-performance-lab-series"
     },
     {
       "name": "ARTFEST PERFORMANCE SERIES NEW HAMPSHIRE",
@@ -1248,10 +1297,11 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-artfest-performance-series-new-hampshire"
     },
     {
-      "name": "ARMILLA -SHARP’s  Home Season Performance",
+      "name": "ARMILLA - SHARP’s  Home Season Performance",
       "description": "Performing a full night of SHARP work with four premiere pieces",
       "location": {
         "name": "",
@@ -1261,7 +1311,16 @@
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
-      "dates": []
+      "dates": [
+        {
+          "days": "",
+          "month": 0,
+          "year": 2011,
+          "time": "",
+          "notes": ""
+        }
+      ],
+      "pathId": "2011-armilla---sharp-s--home-season-performance"
     },
     {
       "name": "PHILADELPHIA INTERNATIONAL FESTIVAL OF THE ARTS (PIFA)",
@@ -1296,7 +1355,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-philadelphia-international-festival-of-the-arts--pifa-"
     },
     {
       "name": "SUMMER RESIDENCY",
@@ -1317,7 +1377,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-summer-residency"
     },
     {
       "name": "WILMINGTON FRINGE FESTIVAL 2011",
@@ -1345,7 +1406,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-wilmington-fringe-festival-2011"
     },
     {
       "name": "ETC PERFORMANCE SERIES 2011",
@@ -1373,7 +1435,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-etc-performance-series-2011"
     },
     {
       "name": "SEACOAST FRINGE FESTIVAL",
@@ -1401,7 +1464,8 @@
           "time": "6:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-seacoast-fringe-festival"
     },
     {
       "name": "",
@@ -1436,7 +1500,8 @@
           "time": "3:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2011-"
     },
     {
       "name": "DELAWARE DANCE FESTIVAL",
@@ -1457,7 +1522,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-delaware-dance-festival"
     },
     {
       "name": "INDIGENOUS PITCH DANCE COLLECTIVE",
@@ -1492,7 +1558,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-indigenous-pitch-dance-collective"
     },
     {
       "name": "PHILADELPHIA ALLIANCE 10TH ANNUAL CONFERENCE",
@@ -1513,7 +1580,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-philadelphia-alliance-10th-annual-conference"
     },
     {
       "name": "PERFORMANCE GARAGE OPEN HOUSE II",
@@ -1534,7 +1602,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-performance-garage-open-house-ii"
     },
     {
       "name": "DANCE/USA CONFERENCE 2012",
@@ -1555,7 +1624,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-dance-usa-conference-2012"
     },
     {
       "name": "BEDFRINGE FESTIVAL (UK)",
@@ -1583,7 +1653,8 @@
           "time": "6:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-bedfringe-festival--uk-"
     },
     {
       "name": "CHICAGO FRINGE FESTIVAL 2012",
@@ -1618,7 +1689,8 @@
           "time": "2:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-chicago-fringe-festival-2012"
     },
     {
       "name": "KORESH ARTIST SHOWCASE",
@@ -1646,7 +1718,8 @@
           "time": "6:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-koresh-artist-showcase"
     },
     {
       "name": "SHARP HOME SEASON PERFORMANCE - ”Four hot men and an old lady”",
@@ -1674,7 +1747,8 @@
           "time": "5:00 PM & 8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2012-sharp-home-season-performance----four-hot-men-and-an-old-lady-"
     },
     {
       "name": "INHALE PERFORMANCE SERIES",
@@ -1695,7 +1769,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013-inhale-performance-series"
     },
     {
       "name": "DELAWARE DANCE FESTIVAL",
@@ -1716,7 +1791,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013-delaware-dance-festival"
     },
     {
       "name": "“PHILADELPHIA INTERNATIONAL FESTIVAL OF THE ARTS (PIFA)",
@@ -1737,7 +1813,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013--philadelphia-international-festival-of-the-arts--pifa-"
     },
     {
       "name": "COME TOGETHER DANCE FESTIVAL",
@@ -1758,7 +1835,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013-come-together-dance-festival"
     },
     {
       "name": "ITALY RESIDENCY",
@@ -1779,7 +1857,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013-italy-residency"
     },
     {
       "name": "SOUTHERN VERMONT DANCE FESTIVAL",
@@ -1800,7 +1879,8 @@
           "time": "1:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013-southern-vermont-dance-festival"
     },
     {
       "name": "ROCHESTER FRINGE FESTIVAL",
@@ -1821,7 +1901,8 @@
           "time": "12:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013-rochester-fringe-festival"
     },
     {
       "name": "ETC PERFORMANCE SERIES",
@@ -1842,7 +1923,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013-etc-performance-series"
     },
     {
       "name": "SHARP HOME SEASON PERFORMANCE “PERCEPTIONS”",
@@ -1863,7 +1945,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2013-sharp-home-season-performance--perceptions-"
     },
     {
       "name": "TEACHING RESIDENCY/PERFORMANCE",
@@ -1884,7 +1967,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-teaching-residency-performance"
     },
     {
       "name": "ARTISTRY UNFOLDED PERFORMANCE SERIES",
@@ -1905,7 +1989,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-artistry-unfolded-performance-series"
     },
     {
       "name": "GREECE ARTIST RESIDENCY",
@@ -1926,7 +2011,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-greece-artist-residency"
     },
     {
       "name": "CINCYFRINGE 2014",
@@ -1961,7 +2047,8 @@
           "time": "9:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-cincyfringe-2014"
     },
     {
       "name": "PORTFRINGE 2014",
@@ -1989,7 +2076,8 @@
           "time": "5:00 PM",
           "notes": "Genos Rock Club 625 Congress St."
         }
-      ]
+      ],
+      "pathId": "2014-portfringe-2014"
     },
     {
       "name": "SOUTHERN VERMONT DANCE FESTIVAL 2014",
@@ -2017,7 +2105,8 @@
           "time": "6:00 PM - 7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-southern-vermont-dance-festival-2014"
     },
     {
       "name": "BH PHOTO SHOWCASE 2014",
@@ -2038,7 +2127,8 @@
           "time": "6:00 PM & 8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-bh-photo-showcase-2014"
     },
     {
       "name": "SHARP HOME SEASON 9th YEAR REUNION PERFORMANCE - “The Journey”",
@@ -2059,7 +2149,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-sharp-home-season-9th-year-reunion-performance----the-journey-"
     },
     {
       "name": "MID-ATLANTIC PERFORMING ARTS CONFERENCE",
@@ -2080,7 +2171,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-mid-atlantic-performing-arts-conference"
     },
     {
       "name": "REVENTING THE STANDARD",
@@ -2101,7 +2193,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2014-reventing-the-standard"
     },
     {
       "name": "DELAWARE DANCE FESTIVAL 2015",
@@ -2122,7 +2215,8 @@
           "time": "2:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-delaware-dance-festival-2015"
     },
     {
       "name": "NICE AND FRESH: February",
@@ -2143,7 +2237,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-nice-and-fresh--february"
     },
     {
       "name": "UNE SOIREE AU CABARET -FUNDRAISER PERFORMANCE",
@@ -2164,7 +2259,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-une-soiree-au-cabaret--fundraiser-performance"
     },
     {
       "name": "PWR Anniversary & Power Award Celebration",
@@ -2185,7 +2281,8 @@
           "time": "5:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-pwr-anniversary---power-award-celebration"
     },
     {
       "name": "SCRANTON FRINGE FESTIVAL",
@@ -2206,7 +2303,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-scranton-fringe-festival"
     },
     {
       "name": "BOULDER FRINGE FESTIVAL",
@@ -2227,7 +2325,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-boulder-fringe-festival"
     },
     {
       "name": "SAN DIEGO FRINGE FESTIVAL",
@@ -2255,7 +2354,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-san-diego-fringe-festival"
     },
     {
       "name": "CAPITAL FRINGE FESTIVAL",
@@ -2276,7 +2376,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-capital-fringe-festival"
     },
     {
       "name": "COME TOGETHER FESTIVAL",
@@ -2297,7 +2398,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-come-together-festival"
     },
     {
       "name": "Dance/USA Conference",
@@ -2318,7 +2420,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-dance-usa-conference"
     },
     {
       "name": "Juried Showcase OAPN Performance Conference",
@@ -2339,7 +2442,8 @@
           "time": "10:30 AM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015-juried-showcase-oapn-performance-conference"
     },
     {
       "name": "“THE SEVEN WINDOWS”- SHARP Home Season Performance",
@@ -2360,7 +2464,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2015--the-seven-windows---sharp-home-season-performance"
     },
     {
       "name": "“16 WORDS”- SHARP’s Home Season Performance",
@@ -2395,7 +2500,8 @@
           "time": "3:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016--16-words---sharp-s-home-season-performance"
     },
     {
       "name": "MID-ATLANTIC PERFORMING Arts Conference",
@@ -2416,7 +2522,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-mid-atlantic-performing-arts-conference"
     },
     {
       "name": "OAPN-OHIO ARTS PRESENTERS Network Conference",
@@ -2437,7 +2544,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-oapn-ohio-arts-presenters-network-conference"
     },
     {
       "name": "PERFORMING ARTS EXCHANGE by South Arts",
@@ -2458,7 +2566,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-performing-arts-exchange-by-south-arts"
     },
     {
       "name": "FIRST NIAGARA ROCHESTER Fringe Festival",
@@ -2479,7 +2588,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-first-niagara-rochester-fringe-festival"
     },
     {
       "name": "ARTSMIDWEST Conference",
@@ -2500,7 +2610,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-artsmidwest-conference"
     },
     {
       "name": "CAPITALFringe Festival",
@@ -2521,7 +2632,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-capitalfringe-festival"
     },
     {
       "name": "CINCYFRINGE FESTIVAL",
@@ -2542,7 +2654,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-cincyfringe-festival"
     },
     {
       "name": "SUMMER ARTIST RESIDENCY",
@@ -2563,7 +2676,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-summer-artist-residency"
     },
     {
       "name": "GORDON CENTER FOR THE PERFORMING ARTS",
@@ -2584,7 +2698,8 @@
           "time": "4:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2016-gordon-center-for-the-performing-arts"
     },
     {
       "name": "APAP/NYC Arts Conference Showcase",
@@ -2605,9 +2720,9 @@
           "time": "6:35 PM & 8:15 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017-apap-nyc-arts-conference-showcase"
     },
-
     {
       "name": "“ACT ONE/ACT TWO”",
       "description": "SHARP Dance Company hopes to build community by inviting two choreographers to open Act one and Act Two of this performance. Chosen choreographers are:  Asya Zlatina (Philadelphia, PA) & Elizabeth Shea Dance (Bloomington, Indiana).  Show runs approx. 90 minutes.",
@@ -2648,7 +2763,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017--act-one-act-two-"
     },
     {
       "name": "COME TOGETHER DANCE FESTIVAL",
@@ -2669,7 +2785,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017-come-together-dance-festival"
     },
     {
       "name": "ARTSMIDWEST Conference",
@@ -2718,7 +2835,8 @@
           "time": "11:45 PM",
           "notes": "Performing SHARP repertory with SHARP's Full Dance Company!"
         }
-      ]
+      ],
+      "pathId": "2017-artsmidwest-conference"
     },
     {
       "name": "DELAWARE ART MUSUEM",
@@ -2739,7 +2857,8 @@
           "time": "7:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017-delaware-art-musuem"
     },
     {
       "name": "PERFORMING ARTS EXCHANGE by South Arts",
@@ -2760,7 +2879,8 @@
           "time": "9:15 PM, 9:55 PM & 10:35 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017-performing-arts-exchange-by-south-arts"
     },
     {
       "name": "ARTSMARKET 2017",
@@ -2781,7 +2901,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017-artsmarket-2017"
     },
     {
       "name": "SHARP’s Fall Home Season Performance - ”HUMANITY”",
@@ -2816,7 +2937,8 @@
           "time": "3:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017-sharp-s-fall-home-season-performance----humanity-"
     },
     {
       "name": "Project Moshen Charity Performance - ”EXCERPTS”",
@@ -2837,7 +2959,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017-project-moshen-charity-performance----excerpts-"
     },
     {
       "name": "APAP/NYC Arts Conference & Showcase",
@@ -2858,7 +2981,8 @@
           "time": "8:00 PM - 8:20 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2017-apap-nyc-arts-conference---showcase"
     },
     {
       "name": "Beach Residency",
@@ -2879,7 +3003,8 @@
           "time": "",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2018-beach-residency"
     },
     {
       "name": "ACT One/ACT Two -SHARP’s Spring Home Season Performance",
@@ -2907,7 +3032,8 @@
           "time": "5:00 PM & 8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2018-act-one-act-two--sharp-s-spring-home-season-performance"
     },
     {
       "name": "BOSTON CONTEMPORARY DANCE FESTIVAL National Showcase",
@@ -2928,7 +3054,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2018-boston-contemporary-dance-festival-national-showcase"
     },
     {
       "name": "ARTSMIDWEST Conference",
@@ -2949,7 +3076,8 @@
           "time": "2:00 - 2:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2018-artsmidwest-conference"
     },
     {
       "name": "PERFORMING ARTS EXCHANGE by South Arts",
@@ -2970,7 +3098,8 @@
           "time": "10:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2018-performing-arts-exchange-by-south-arts"
     },
     {
       "name": "MAPAM Conference",
@@ -2998,7 +3127,8 @@
           "time": "1:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2018-mapam-conference"
     },
     {
       "name": "SHARP’s Fall Home Season Performance",
@@ -3033,7 +3163,8 @@
           "time": "3:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2018-sharp-s-fall-home-season-performance"
     },
     {
       "name": "COME TOGETHER FESTIVAL",
@@ -3054,7 +3185,8 @@
           "time": "7:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2018-come-together-festival"
     },
     {
       "name": "APAP/NYC Arts Conference & Showcase",
@@ -3075,7 +3207,8 @@
           "time": "8:05 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2019-apap-nyc-arts-conference---showcase"
     },
     {
       "name": "Charity Performance for the Tree of Life Synagogue families",
@@ -3096,7 +3229,8 @@
           "time": "8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2019-charity-performance-for-the-tree-of-life-synagogue-families"
     },
     {
       "name": "SHARP Dance Company Spring Home Season Performance",
@@ -3115,7 +3249,8 @@
           "time": "6:00 PM & 8:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2019-sharp-dance-company-spring-home-season-performance"
     },
     {
       "name": "Arts Center at Lake Superior State University",
@@ -3136,7 +3271,8 @@
           "time": "2:00 PM",
           "notes": "Tickets available soon"
         }
-      ]
+      ],
+      "pathId": "2020-arts-center-at-lake-superior-state-university"
     },
     {
       "name": "APAP Conference",
@@ -3157,7 +3293,8 @@
           "time": "",
           "notes": "Details TBA"
         }
-      ]
+      ],
+      "pathId": "2020-apap-conference"
     },
     {
       "name": "SHARP’s Fall Home Season Performance",
@@ -3192,7 +3329,8 @@
           "time": "3:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2019-sharp-s-fall-home-season-performance"
     },
     {
       "name": "PERFORMING ARTS EXCHANGE by South Arts",
@@ -3213,7 +3351,8 @@
           "time": "",
           "notes": "Booth # TBA"
         }
-      ]
+      ],
+      "pathId": "2019-performing-arts-exchange-by-south-arts"
     },
     {
       "name": "SABES JCC",
@@ -3234,7 +3373,8 @@
           "time": "2:00 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2019-sabes-jcc"
     },
     {
       "name": "ARTSMIDWEST Conference",
@@ -3262,7 +3402,8 @@
           "time": "10:30 PM",
           "notes": ""
         }
-      ]
+      ],
+      "pathId": "2019-artsmidwest-conference"
     }
   ]
 }
