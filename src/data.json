@@ -4,8 +4,8 @@
       "headerBanner": {
         "title": "SHARP",
         "subtitle": "Dance Company",
-        "imageSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/droppedImage.jpg",
-        "imageCredit": "Bill Hebert"
+        "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/droppedImage.jpg",
+        "imgCredit": "Bill Hebert"
       },
       "content": "## The Mission\nThe mission of SHARP Dance Co. is to translate raw human emotion utilizing contemporary movement to connect the audience through individual interpretation.\n## About SHARP\nSHARP is a thirteen year old 501C-3 modern company and its theory of “meaning behind movement” is shown prominently throughout their work.  SHARP feels that dance should be more than a performance, it should be an experience.\nSHARP has performed throughout the U.S. in cities such as:  New York, Rochester, Phoenix, Chicago, Cincinnati, Portland, Boulder, San Diego, Brooklyn, Portsmouth etc.  SHARP has toured throughout Europe in Italy, England and Greece.\nArtistic Director/Choreographer Diane Sharp-Nachsin was selected as a New Edge Mix Artist Award Recipient in Philadelphia. She was also chosen as a BAU Institute fellow in June 2013 in Italy and an Artist in Residence recipient in Paros, Greece 2014.",
       "quotesTitle": "Press Quotes"
@@ -13,7 +13,7 @@
     "bios": {
       "headerBanner": {
         "title": "Bio’s",
-        "subtitle": "Company and Guest Dancers/Choreographers"
+        "subtitle": "Company and Guest Dancers / Choreographers"
       },
       "aboutDianeBanner": {
         "title": "About Artistic Director Diane Sharp-Nachsin",
@@ -190,6 +190,3079 @@
       "quote": "…expect a roller-coaster ride of emotions and life experiences",
       "author": "Denise N. Lewis",
       "source": "City Paper Pittsburgh"
+    }
+  ],
+  "performances": [
+    {
+      "name": "DELAWARE DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "University of Delaware, Mitchell Hall",
+        "address": ""
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "",
+          "month": 0,
+          "year": 2006,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "DELAWARE DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Dover Downs Hotel & Casino",
+        "address": "1131 N Dupont Hwy, Dover, DE 19901"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "3",
+          "month": 3,
+          "year": 2007,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SOUTHERN DELAWARE DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Milford, Delaware"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "19",
+          "month": 5,
+          "year": 2007,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PHILADELPHIA FRINGE FESTIVAL - THREE on 3",
+      "description": "",
+      "location": {
+        "name": "Community Education Education Center (CEC) Meetinghouse Theater",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "7-9",
+          "month": 9,
+          "year": 2007,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "MEET THE ARTISTS",
+      "description": "",
+      "location": {
+        "name": "Community Education Education Center (CEC) Meetinghouse Theater",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "7",
+          "month": 10,
+          "year": 2007,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "TOGETHER",
+      "description": "Collaborative project with Pittsburgh based Company, Mary Miller Dance Company (MMDC).",
+      "location": {
+        "name": "Open Stage Theatre",
+        "address": "Pittsburgh, PA"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "16-17",
+          "month": 11,
+          "year": 2007,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "COMMUNITY EDUCATION CENTER (CEC) NEW EDGE MIX SERIES",
+      "description": "",
+      "location": {
+        "name": "Community Education Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "11-13",
+          "month": 1,
+          "year": 2008,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "DELAWARE DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Dover Downs Hotel & Casino",
+        "address": "1131 N Dupont Hwy, Dover, DE 19901"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "1",
+          "month": 3,
+          "year": 2008,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ETC PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Community Education Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "3-4",
+          "month": 5,
+          "year": 2008,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PHILADELPHIA FRINGE FESTIVAL FOUR ON 2",
+      "description": "",
+      "location": {
+        "name": "Temple Universities Conwell Hall Theater (5th Floor)",
+        "address": "1801 N Broad St, Philadelphia, PA 19122"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "6-7",
+          "month": 9,
+          "year": 2008,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "KORESH ARTIST SHOWCASE",
+      "description": "",
+      "location": {
+        "name": "Koresh Dance",
+        "address": "2020 Chestnut St, Philadelphia, PA 19103"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "20-21",
+          "month": 9,
+          "year": 2008,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ETC PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Community Education Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "4-5",
+          "month": 10,
+          "year": 2008,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PHILLY DANCE COLLECTIVE",
+      "description": "",
+      "location": {
+        "name": "Painted Bride Arts Center",
+        "address": "230 Vine St, Philadelphia, PA 19106"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "17",
+          "month": 10,
+          "year": 2008,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "KORESH ARTIST SHOWCASE",
+      "description": "",
+      "location": {
+        "name": "Koresh Dance",
+        "address": "2020 Chestnut St, Philadelphia, PA 19103"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "24",
+          "month": 1,
+          "year": 2009,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "25",
+          "month": 1,
+          "year": 2009,
+          "time": "6:00 PM & 8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "COOL NEW YORK 2009 DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "John Ryan Theater",
+        "address": "25 Jay St, Brooklyn, NY 11201"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "30",
+          "month": 1,
+          "year": 2009,
+          "time": "9:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "1",
+          "month": 2,
+          "year": 2009,
+          "time": "6:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ETC PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Community Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "7",
+          "month": 2,
+          "year": 2009,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "8",
+          "month": 2,
+          "year": 2009,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "KORESH ARTIST SHOWCASE",
+      "description": "",
+      "location": {
+        "name": "Koresh Dance",
+        "address": "2020 Chestnut St, Philadelphia, PA 19103"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "21",
+          "month": 2,
+          "year": 2009,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "22",
+          "month": 2,
+          "year": 2009,
+          "time": "6:00 PM & 8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ETC PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Community Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "4",
+          "month": 4,
+          "year": 2009,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "5",
+          "month": 4,
+          "year": 2009,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PHILADELPHIA DANCE SHOWCASE",
+      "description": "",
+      "location": {
+        "name": "Jeanne Ruddy Performance Garage",
+        "address": "1515 Brandywine St, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "27",
+          "month": 4,
+          "year": 2009,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PHILLY DANCE COLLECTIVE",
+      "description": "",
+      "location": {
+        "name": "Painted Bride Arts Center",
+        "address": "230 Vine St, Philadelphia, PA 19106"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "16",
+          "month": 5,
+          "year": 2009,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SUMMER RESIDENCY",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Cape May New Jersey"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "31",
+          "month": 5,
+          "year": 2009,
+          "time": "",
+          "notes": ""
+        },
+        {
+          "days": "1-5",
+          "month": 6,
+          "year": 2009,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "FILTHY",
+      "description": "A group invitational multi-media exhibition produced by Plastic Fantastic",
+      "location": {
+        "name": "Studio 34",
+        "address": "4522 Baltimore Ave, Philadelphia, PA 19143"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "13",
+          "month": 8,
+          "year": 2009,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "WILMINGTON FRINGE FESTIVAL - full night of SHARP",
+      "description": "",
+      "location": {
+        "name": "The Grand Opera House - Baby Grand Theater",
+        "address": "818 N Market St, Wilmington, DE 19801"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "3",
+          "month": 10,
+          "year": 2009,
+          "time": "8:45 PM",
+          "notes": ""
+        },
+        {
+          "days": "4",
+          "month": 10,
+          "year": 2009,
+          "time": "12:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP Full NIGHT FALL PERFORMANCE",
+      "description": "",
+      "location": {
+        "name": "Temple University - Conwell Hall Theater",
+        "address": "1801 N Broad St, Philadelphia, PA 19122"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "https://www.danceboxoffice.com",
+      "dates": [
+        {
+          "days": "23",
+          "month": 10,
+          "year": 2009,
+          "time": "7:30 PM",
+          "notes": ""
+        },
+        {
+          "days": "24",
+          "month": 10,
+          "year": 2009,
+          "time": "7:30 PM",
+          "notes": "Saturday replacement show rescheduled for Sunday Nov. 22nd 3:00 PM"
+        }
+      ]
+    },
+    {
+      "name": "URBAN LAW FORUM DANCE SHOWCASE",
+      "description": "",
+      "location": {
+        "name": "University of Pennsylvania Law School",
+        "address": "3400 Chestnut St, Philadelphia, PA 19104"
+      },
+      "footnote": "Silverman Hall--Room 245 (Levy Conference Center)",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "11",
+          "month": 11,
+          "year": 2009,
+          "time": "5:00 PM - 6:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "HEARTS FULL OF HOPE - Benefit for the March of Dimes",
+      "description": "",
+      "location": {
+        "name": "Widener University Alumni Auditorium",
+        "address": "One University Pl, Chester, PA 19013"
+      },
+      "footnote": "",
+      "website": "http://www.widener.edu/about/maps_directions/main_campus/campus_map.aspx",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "15",
+          "month": 11,
+          "year": 2009,
+          "time": "5:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PHILLY DANCE COLLECTIVE",
+      "description": "",
+      "location": {
+        "name": "Painted Bride Arts Center",
+        "address": "230 Vine St, Philadelphia, PA 19106"
+      },
+      "footnote": "",
+      "website": "https://paintedbride.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "21",
+          "month": 11,
+          "year": 2009,
+          "time": "2:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP Full NIGHT FALL PERFORMANCE",
+      "description": "",
+      "location": {
+        "name": "Temple University-Conwell Hall Theater",
+        "address": "1801 N Broad St, Philadelphia, PA 19122"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "//www.danceboxoffice.com",
+      "dates": [
+        {
+          "days": "22",
+          "month": 11,
+          "year": 2009,
+          "time": "3:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "MOUNTAIN DANCE CONCERT",
+      "description": "",
+      "location": {
+        "name": "Sherman Theater",
+        "address": "524 Main St, Stroudsburg, PA 18360"
+      },
+      "footnote": "",
+      "website": "https://www.shermantheater.com",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "24",
+          "month": 1,
+          "year": 2010,
+          "time": "2:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "INHALE PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Chi Movement Arts Center",
+        "address": "1316 S 9th St, Philadelphia, PA 19147"
+      },
+      "footnote": "",
+      "website": "//www.kyld.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "5",
+          "month": 3,
+          "year": 2010,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "DELAWARE DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Dover Downs Hotel & Casino",
+        "address": "1131 N Dupont Hwy, Dover, DE 19901 (Rt 13)"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "13",
+          "month": 3,
+          "year": 2010,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PHOENIX FRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Little Theater at Phoenix Theater",
+        "address": "1825 N Central Ave, Phoenix, AZ 85004"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "8",
+          "month": 4,
+          "year": 2010,
+          "time": "7:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "9",
+          "month": 4,
+          "year": 2010,
+          "time": "8:30 PM",
+          "notes": ""
+        },
+        {
+          "days": "10",
+          "month": 4,
+          "year": 2010,
+          "time": "3:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "11",
+          "month": 4,
+          "year": 2010,
+          "time": "2:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "EVENING OF DUETS",
+      "description": "",
+      "location": {
+        "name": "Meetinghouse Theater - Community Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "16",
+          "month": 4,
+          "year": 2010,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARTFEST - PERFORMANCE SERIES NEW HAMPSHIRE",
+      "description": "",
+      "location": {
+        "name": "Rochester Opera House",
+        "address": "31 Wakefield St, Rochester, NH 03867"
+      },
+      "footnote": "Box Office (603) 335-1992",
+      "website": "//www.rochesteroperahouse.com",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "8",
+          "month": 5,
+          "year": 2010,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "GREEN SPACE - FERTILE GROUND PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Green Space Studio",
+        "address": "37-24 24th St Suites 211 + 212, Long Island City, NY 11101"
+      },
+      "footnote": "",
+      "website": "https://www.greenspacestudio.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "16",
+          "month": 5,
+          "year": 2010,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "OUTDOOR SCULPTURE GARDEN PERFORMANCE",
+      "description": "",
+      "location": {
+        "name": "James A. Michener Art Museum",
+        "address": "138 S Pine St, Doylestown, PA 18901"
+      },
+      "footnote": "",
+      "website": "https://www.michenerartmuseum.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "27",
+          "month": 6,
+          "year": 2010,
+          "time": "2:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SUMMER CONCERT SERIES-UPPER GWYNEDD",
+      "description": "",
+      "location": {
+        "name": "DeBarth Amphitheater",
+        "address": "Parkside Place, North Wales, PA 19454"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "30",
+          "month": 6,
+          "year": 2010,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "BHPHOTOS PRESENTS-CHOREOGRAPHY SHOWCASE II",
+      "description": "",
+      "location": {
+        "name": "Community Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "26",
+          "month": 9,
+          "year": 2010,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "FRINGE WILMINGTON - “ADDICTIVE FRAGILITY”",
+      "description": "",
+      "location": {
+        "name": "Baby Grand Theater",
+        "address": "818 N Market St, Wilmington, DE 19801"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "1",
+          "month": 10,
+          "year": 2010,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "2",
+          "month": 10,
+          "year": 2010,
+          "time": "6:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "3",
+          "month": 10,
+          "year": 2010,
+          "time": "1:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SEACOAST FRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Great Bay Academy of Dance",
+        "address": "1 Raynes Ave #203 Portsmouth, NH 03801"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "8",
+          "month": 10,
+          "year": 2010,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "9",
+          "month": 10,
+          "year": 2010,
+          "time": "3:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP’s HOME SEASON FALL PERFORMANCE - “REVELATION”",
+      "description": "",
+      "location": {
+        "name": "The Performance Dance Garage",
+        "address": "1515 Brandywine St, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "22",
+          "month": 10,
+          "year": 2010,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "23",
+          "month": 10,
+          "year": 2010,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "24",
+          "month": 10,
+          "year": 2010,
+          "time": "3:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "BIG STEPS FOR LITTLE FEET - Benefit for the March of Dimes",
+      "description": "",
+      "location": {
+        "name": "Widener University - Alumni Auditorium",
+        "address": "E 14th St & Chestnut St, Chester, PA 19013"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "14",
+          "month": 11,
+          "year": 2010,
+          "time": "2:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "MOUNTAIN DANCE FESTIVAL 2011",
+      "description": "",
+      "location": {
+        "name": "Sherman Theater",
+        "address": "54 Main St, Stroudsburg, PA 18360"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "23",
+          "month": 1,
+          "year": 2011,
+          "time": "2:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "STEPS ON BROADWAY-Performance Lab Series",
+      "description": "",
+      "location": {
+        "name": "Steps on Broadway",
+        "address": "212 W 74th St, New York, NY 10023"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "26",
+          "month": 2,
+          "year": 2011,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARTFEST PERFORMANCE SERIES NEW HAMPSHIRE",
+      "description": "",
+      "location": {
+        "name": "Franklin Opera House",
+        "address": "316 Central St, Franklin, NH 03235"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "2",
+          "month": 4,
+          "year": 2011,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARMILLA -SHARP’s  Home Season Performance",
+      "description": "Performing a full night of SHARP work with four premiere pieces",
+      "location": {
+        "name": "",
+        "address": ""
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": []
+    },
+    {
+      "name": "PHILADELPHIA INTERNATIONAL FESTIVAL OF THE ARTS (PIFA)",
+      "description": "Festival runs April 7-May 1, 2011",
+      "location": {
+        "name": "thefidget space",
+        "address": "1714 N Mascher St, Philadelphia, PA 19122"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "29",
+          "month": 4,
+          "year": 2011,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "30",
+          "month": 4,
+          "year": 2011,
+          "time": "5:00 PM & 8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "1",
+          "month": 5,
+          "year": 2011,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SUMMER RESIDENCY",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Cape May New Jersey"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "13-17",
+          "month": 6,
+          "year": 2011,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "WILMINGTON FRINGE FESTIVAL 2011",
+      "description": "",
+      "location": {
+        "name": "Christina Cultural Arts Center",
+        "address": "705 N Market St, Wilmington, DE 19801"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "23",
+          "month": 9,
+          "year": 2011,
+          "time": "8:30 PM",
+          "notes": ""
+        },
+        {
+          "days": "24",
+          "month": 9,
+          "year": 2011,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ETC PERFORMANCE SERIES 2011",
+      "description": "",
+      "location": {
+        "name": "Community Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "1",
+          "month": 10,
+          "year": 2011,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "2",
+          "month": 10,
+          "year": 2011,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SEACOAST FRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Great Bay Dance Academy",
+        "address": "1 Raynes Ave #203, Portsmouth, NH 03801"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "8",
+          "month": 10,
+          "year": 2011,
+          "time": "6:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "9",
+          "month": 10,
+          "year": 2011,
+          "time": "6:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "",
+      "description": "",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine St, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "21",
+          "month": 10,
+          "year": 2011,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "22",
+          "month": 10,
+          "year": 2011,
+          "time": "8:00 PM",
+          "notes": "SOLD OUT"
+        },
+        {
+          "days": "23",
+          "month": 10,
+          "year": 2011,
+          "time": "3:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "DELAWARE DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "The Grand Opera Theater",
+        "address": "818 N Market St, Wilmington, DE 19801"
+      },
+      "footnote": "",
+      "website": "https://www.thegrandwilmington.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "3",
+          "month": 3,
+          "year": 2012,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "INDIGENOUS PITCH DANCE COLLECTIVE",
+      "description": "",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine St, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "29",
+          "month": 3,
+          "year": 2012,
+          "time": "7:30 PM",
+          "notes": ""
+        },
+        {
+          "days": "30",
+          "month": 3,
+          "year": 2012,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "31",
+          "month": 3,
+          "year": 2012,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PHILADELPHIA ALLIANCE 10TH ANNUAL CONFERENCE",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Philadelphia, PA"
+      },
+      "footnote": "",
+      "website": "//www.philalliance.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "20",
+          "month": 4,
+          "year": 2012,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PERFORMANCE GARAGE OPEN HOUSE II",
+      "description": "",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine St, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "25",
+          "month": 5,
+          "year": 2012,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "DANCE/USA CONFERENCE 2012",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "San Francisco, California"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "27-30",
+          "month": 6,
+          "year": 2012,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "BEDFRINGE FESTIVAL (UK)",
+      "description": "",
+      "location": {
+        "name": "The Place Theater",
+        "address": "Bradgate Rd, Bedford MK40 3DE, UK"
+      },
+      "footnote": "",
+      "website": "https://bedfringe.com",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "27",
+          "month": 7,
+          "year": 2012,
+          "time": "5:30 PM",
+          "notes": ""
+        },
+        {
+          "days": "28",
+          "month": 7,
+          "year": 2012,
+          "time": "6:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "CHICAGO FRINGE FESTIVAL 2012",
+      "description": "",
+      "location": {
+        "name": "Chicago Art Department Gallery (CAD)",
+        "address": "1932 S Halsted St #100, Chicago, IL 60608"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "30",
+          "month": 8,
+          "year": 2012,
+          "time": "8:30 PM",
+          "notes": ""
+        },
+        {
+          "days": "31",
+          "month": 8,
+          "year": 2012,
+          "time": "10:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "1",
+          "month": 9,
+          "year": 2012,
+          "time": "2:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "KORESH ARTIST SHOWCASE",
+      "description": "",
+      "location": {
+        "name": "Koresh Dance Studio",
+        "address": "2020 Chestnut St, Philadelphia, PA 19103"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "20",
+          "month": 10,
+          "year": 2012,
+          "time": "7:00 PM & 9:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "21",
+          "month": 10,
+          "year": 2012,
+          "time": "6:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP HOME SEASON PERFORMANCE - ”Four hot men and an old lady”",
+      "description": "Performing full night of SHARP new work with 4 amazing guest choreographers:\nSteven Vaughn (Parsons Dance Company Member), Charles Tyson (Underground Danceworks),  Kevin Ferguson (former Parsons Dance Company & Doug Elkins Dance Company dancer),  Joe Cotler (Koresh Dance Company) and Diane Sharp-Nachsin (Artistic Director of SHARP)",
+      "location": {
+        "name": "The Painted Bride Arts Center",
+        "address": "230 Vine St, Philadelphia, PA 19106"
+      },
+      "footnote": "",
+      "website": "https://paintedbride.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "9",
+          "month": 11,
+          "year": 2012,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "10",
+          "month": 11,
+          "year": 2012,
+          "time": "5:00 PM & 8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "INHALE PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Chi Movement Arts Studio",
+        "address": "1316 S 9th St, Philadelphia, PA 19147"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "1",
+          "month": 2,
+          "year": 2013,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "DELAWARE DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "The Grand Opera House",
+        "address": "818 N Market St, Wilmington, DE 19801"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "16",
+          "month": 3,
+          "year": 2013,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "“PHILADELPHIA INTERNATIONAL FESTIVAL OF THE ARTS (PIFA)",
+      "description": "Aquarian Exposition: A Trip back to the Original Woodstock”",
+      "location": {
+        "name": "The BOX",
+        "address": "2628 Martha St #2C, Philadelphia, PA 19125"
+      },
+      "footnote": "",
+      "website": "https://www.kimmelcenter.org/events-and-tickets/201718/pifa/pifa-2018",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "12-21",
+          "month": 4,
+          "year": 2013,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "COME TOGETHER DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Suzanne Roberts Theater",
+        "address": "480 S Broad St, Philadelphia, PA 19146"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "5",
+          "month": 5,
+          "year": 2013,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ITALY RESIDENCY",
+      "description": "Artistic Director Diane Sharp-Nachsin was invited to a residency in Italy with 10 other artists world-wide.",
+      "location": {
+        "name": "",
+        "address": "Province of Lecce, Italy"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "15-30",
+          "month": 6,
+          "year": 2013,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SOUTHERN VERMONT DANCE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "The Stone Church",
+        "address": "210 Main St, Brattleboro, VT 05301"
+      },
+      "footnote": "",
+      "website": "//southernvermontdancefestival.com",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "19",
+          "month": 7,
+          "year": 2013,
+          "time": "1:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ROCHESTER FRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "RAPA Theatre",
+        "address": "200 W Ridge Rd, Rochester, NY 14615"
+      },
+      "footnote": "",
+      "website": "//www.rapatheatre.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "21-22",
+          "month": 9,
+          "year": 2013,
+          "time": "12:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ETC PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Community Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "2-3",
+          "month": 11,
+          "year": 2013,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP HOME SEASON PERFORMANCE “PERCEPTIONS”",
+      "description": "",
+      "location": {
+        "name": "Neighborhood House - Christ Church",
+        "address": "20 N American St, Philadelphia, PA 19106"
+      },
+      "footnote": "Guest Choreography by Steven Vaughn of Parsons Dance (NY)\nGuest performance by Mid-Atlantic Ballet [www.midatlanticballet.org](//www.midatlanticballet.org)",
+      "website": "//www.neighborhood-house.com",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "22-24",
+          "month": 11,
+          "year": 2013,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "TEACHING RESIDENCY/PERFORMANCE",
+      "description": "",
+      "location": {
+        "name": "CB Lamb",
+        "address": "46 Schoolhouse Rd, Wrightstown, NJ 08562"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "20",
+          "month": 3,
+          "year": 2014,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARTISTRY UNFOLDED PERFORMANCE SERIES",
+      "description": "",
+      "location": {
+        "name": "Institute of Dance Artistry",
+        "address": "400 Commerce Dr, Fort Washington, PA 19034"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "15",
+          "month": 3,
+          "year": 2014,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "GREECE ARTIST RESIDENCY",
+      "description": "Artistic Director Diane Sharp-Nachsin was invited to a residency in Greece and will be accompanied by dancers Caroline Butcher and Sandra Davis.",
+      "location": {
+        "name": "",
+        "address": "Paros, Greece"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "13-27",
+          "month": 4,
+          "year": 2014,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "CINCYFRINGE 2014",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "17 E Court St, Cincinnati, OH 45202"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "29",
+          "month": 5,
+          "year": 2014,
+          "time": "9:30 PM",
+          "notes": ""
+        },
+        {
+          "days": "30",
+          "month": 5,
+          "year": 2014,
+          "time": "7:30 PM",
+          "notes": ""
+        },
+        {
+          "days": "31",
+          "month": 5,
+          "year": 2014,
+          "time": "9:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PORTFRINGE 2014",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Portland, ME 04101"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "28",
+          "month": 6,
+          "year": 2014,
+          "time": "12:00 PM",
+          "notes": "Empire 575 Congress St."
+        },
+        {
+          "days": "28",
+          "month": 6,
+          "year": 2014,
+          "time": "5:00 PM",
+          "notes": "Genos Rock Club 625 Congress St."
+        }
+      ]
+    },
+    {
+      "name": "SOUTHERN VERMONT DANCE FESTIVAL 2014",
+      "description": "",
+      "location": {
+        "name": "The Stone Church",
+        "address": "210 Main St, Brattleboro, VT 05301"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "19",
+          "month": 7,
+          "year": 2014,
+          "time": "8:00 PM",
+          "notes": "Redfern Arts Center at Keene State College-Keene, NH"
+        },
+        {
+          "days": "20",
+          "month": 7,
+          "year": 2014,
+          "time": "6:00 PM - 7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "BH PHOTO SHOWCASE 2014",
+      "description": "Steven Vaughn (formally of Parsons Dance) will be performing “The Journey” originally choreographed for him in 2006.",
+      "location": {
+        "name": "Community Education Center (CEC)",
+        "address": "3500 Lancaster Ave, Philadelphia, PA 19104"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "28",
+          "month": 9,
+          "year": 2014,
+          "time": "6:00 PM & 8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP HOME SEASON 9th YEAR REUNION PERFORMANCE - “The Journey”",
+      "description": "",
+      "location": {
+        "name": "Neighborhood House - Christ Church",
+        "address": "20 N American St, Philadelphia, PA 19106"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "10-12",
+          "month": 10,
+          "year": 2014,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "MID-ATLANTIC PERFORMING ARTS CONFERENCE",
+      "description": "",
+      "location": {
+        "name": "The Ware Center - Millersville University",
+        "address": "42 N Prince St, Lancaster, PA 17603"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "10-12",
+          "month": 11,
+          "year": 2014,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "REVENTING THE STANDARD",
+      "description": "",
+      "location": {
+        "name": "Neighborhood House - Christ Church",
+        "address": "20 N American St, Philadelphia, PA 19106"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "21-22",
+          "month": 11,
+          "year": 2014,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "DELAWARE DANCE FESTIVAL 2015",
+      "description": "",
+      "location": {
+        "name": "The Grand Opera House",
+        "address": "818 N Market St, Wilmington, DE 19801"
+      },
+      "footnote": "",
+      "website": "https://www.thegrandwilmington.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "22",
+          "month": 2,
+          "year": 2015,
+          "time": "2:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "NICE AND FRESH: February",
+      "description": "",
+      "location": {
+        "name": "Moving Arts of Mt. Airy",
+        "address": "6819 Greene St, Philadelphia, PA 19119"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "27-28",
+          "month": 2,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "UNE SOIREE AU CABARET -FUNDRAISER PERFORMANCE",
+      "description": "",
+      "location": {
+        "name": "The JUNK Space",
+        "address": "2040 Christian Street, Philadelphia, PA"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "1-2",
+          "month": 5,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PWR Anniversary & Power Award Celebration",
+      "description": "",
+      "location": {
+        "name": "New Century Trust",
+        "address": "1307 Locust Street, Philadelphia, PA 19103"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "8",
+          "month": 10,
+          "year": 2015,
+          "time": "5:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SCRANTON FRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "The Leonard Theater",
+        "address": "335 Adams Ave, Scranton, PA 18503"
+      },
+      "footnote": "",
+      "website": "//scrantonfringe.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "3-4",
+          "month": 10,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "BOULDER FRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "The Dairy Center for the Arts - The East Theater",
+        "address": "2590 Walnut Street, Boulder, Colorado"
+      },
+      "footnote": "",
+      "website": "//www.boulderfringe.com",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "17-21",
+          "month": 9,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SAN DIEGO FRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Tenth Ave Arts Center",
+        "address": "930 10th Ave, San Diego, CA 92101"
+      },
+      "footnote": "",
+      "website": "//www.tenthavenuearts.com",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "30-31",
+          "month": 7,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        },
+        {
+          "days": "1-2",
+          "month": 8,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "CAPITAL FRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Cafritz Foundation Theater – Dance Place",
+        "address": "3225 8th St NE, Washington, DC 20017"
+      },
+      "footnote": "",
+      "website": "//www.danceplace.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "15-25",
+          "month": 7,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "COME TOGETHER FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Suzanne Robert Theater",
+        "address": "480 S Broad St, Philadelphia, PA 19146"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "24",
+          "month": 7,
+          "year": 2015,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "Dance/USA Conference",
+      "description": "",
+      "location": {
+        "name": "2015 Annual Conference",
+        "address": "Miami, FL"
+      },
+      "footnote": "Supported by: Knight Foundation Informed & Engaged Communities",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "17-20",
+          "month": 6,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "Juried Showcase OAPN Performance Conference",
+      "description": "",
+      "location": {
+        "name": "Kahari Conference Center",
+        "address": "7000 Kalahari Dr, Sandusky, OH 44870"
+      },
+      "footnote": "",
+      "website": "//www.performancegarage.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "21",
+          "month": 10,
+          "year": 2015,
+          "time": "10:30 AM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "“THE SEVEN WINDOWS”- SHARP Home Season Performance",
+      "description": "Premiere of all new work with collaboration of visual artists & musicians from around the world including: Visual Artists, [Jill Brandwein](https://jillbrandwein.com/home.html) (Italy), [Patricia Zarate](//www.patriciazarate.com) (NY), [Julia Salinger](//www.bakedmashedfried.com) (MA), [Danielle Hallman](https://dk-illustrations.com/home.html) (Philadelphia)  Musician [Monica McIntyre](https://www.reverbnation.com/monicamcintyre) (New Orleans) and Choreographer Diane Sharp-Nachsin.",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine Street, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "//www.performancegarage.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "6-8",
+          "month": 11,
+          "year": 2015,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "“16 WORDS”- SHARP’s Home Season Performance",
+      "description": "",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine Street, Philadelphia, PA 19130"
+      },
+      "footnote": "Guest Choreography by Joe Cotler (Koresh Dance Company Member)",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "18",
+          "month": 11,
+          "year": 2016,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "19",
+          "month": 11,
+          "year": 2016,
+          "time": "5:00 PM & 8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "20",
+          "month": 11,
+          "year": 2016,
+          "time": "3:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "MID-ATLANTIC PERFORMING Arts Conference",
+      "description": "",
+      "location": {
+        "name": "Ware Center/Millersville University",
+        "address": "42 N Prince St, Lancaster, PA 17603"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "1-3",
+          "month": 11,
+          "year": 2016,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "OAPN-OHIO ARTS PRESENTERS Network Conference",
+      "description": "",
+      "location": {
+        "name": "Kalahari Resort and Conference Center",
+        "address": "700 Kalahari Drive, Sandusky, Ohio 44870"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "17-19",
+          "month": 10,
+          "year": 2016,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PERFORMING ARTS EXCHANGE by South Arts",
+      "description": "",
+      "location": {
+        "name": "Caribe Royale Orlando",
+        "address": "8101 World Center Drive, Orlando, FL 32821"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "26-29",
+          "month": 9,
+          "year": 2016,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "FIRST NIAGARA ROCHESTER Fringe Festival",
+      "description": "",
+      "location": {
+        "name": "RAPA at School of the Arts - Allen Main Stage",
+        "address": "45 Prince St, Rochester, NY 14607"
+      },
+      "footnote": "",
+      "website": "//www.rapatheatre.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "20-21",
+          "month": 9,
+          "year": 2016,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARTSMIDWEST Conference",
+      "description": "",
+      "location": {
+        "name": "Hilton Milwaukee City Center",
+        "address": "509 W Wisconsin Ave, Milwaukee, WI 53203"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "13-16",
+          "month": 9,
+          "year": 2016,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "CAPITALFringe Festival",
+      "description": "",
+      "location": {
+        "name": "The Lang - Atlas Performing Arts Center",
+        "address": "1333 H St NE, Washington, DC 20002"
+      },
+      "footnote": "",
+      "website": "https://www.capitalfringe.org",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "15-17",
+          "month": 7,
+          "year": 2016,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "CINCYFRINGE FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Gabriel’s Corner",
+        "address": "1425 Sycamore Street, Cincinnati, OH 45202"
+      },
+      "footnote": "",
+      "website": "//www.cincyfringe.com",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "8-11",
+          "month": 6,
+          "year": 2016,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SUMMER ARTIST RESIDENCY",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Ocean City, NJ"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "19-22",
+          "month": 5,
+          "year": 2016,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "GORDON CENTER FOR THE PERFORMING ARTS",
+      "description": "",
+      "location": {
+        "name": "Gordon Arts Center",
+        "address": "3506 Gwynnbrook Ave, Owings Mills, MD 21117"
+      },
+      "footnote": "",
+      "website": "//www.jcc.org/gordon-center",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "21",
+          "month": 2,
+          "year": 2016,
+          "time": "4:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "APAP/NYC Arts Conference Showcase",
+      "description": "The showcase will feature Koresh Dance, Kun-Yang Lin/Dancers, BalletX and SHARP Dance Company as part of the Dance Managers Collective at City Center produced by Koresh Dance Company.",
+      "location": {
+        "name": "City Center Studios - Studio 4",
+        "address": "131 W 55th St, New York, NY 10019"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "6",
+          "month": 1,
+          "year": 2017,
+          "time": "6:35 PM & 8:15 PM",
+          "notes": ""
+        }
+      ]
+    },
+
+    {
+      "name": "“ACT ONE/ACT TWO”",
+      "description": "SHARP Dance Company hopes to build community by inviting two choreographers to open Act one and Act Two of this performance. Chosen choreographers are:  Asya Zlatina (Philadelphia, PA) & Elizabeth Shea Dance (Bloomington, Indiana).  Show runs approx. 90 minutes.",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine Street, Philadelphia, PA 19130"
+      },
+      "footnote": "Guest Choreography on SHARP by Joe Cotler (Koresh Dance Company Member)",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "12",
+          "month": 5,
+          "year": 2017,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "13",
+          "month": 5,
+          "year": 2017,
+          "time": "5:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "13",
+          "month": 5,
+          "year": 2017,
+          "time": "6:30 PM",
+          "notes": "Mother’s day tea with the dancers"
+        },
+        {
+          "days": "13",
+          "month": 5,
+          "year": 2017,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "COME TOGETHER DANCE FESTIVAL",
+      "description": "Koresh Dance Company will unite dance innovators, audience favorites, and emerging artists this summer when it presents 41 dance companies in its 4th annual Come Together Dance Festival in Philadelphia.",
+      "location": {
+        "name": "Suzanne Roberts Theater",
+        "address": "480 S Broad St, Philadelphia, PA 19146"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "17",
+          "month": 8,
+          "year": 2017,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARTSMIDWEST Conference",
+      "description": "",
+      "location": {
+        "name": "Hayes / Harrison Room, Hyatt Hotel",
+        "address": "350 N High St, Columbus, OH 43215"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "28-31",
+          "month": 8,
+          "year": 2017,
+          "time": "",
+          "notes": ""
+        },
+        {
+          "days": "29",
+          "month": 8,
+          "year": 2017,
+          "time": "10:25 PM",
+          "notes": "Performing SHARP repertory with SHARP's Full Dance Company!"
+        },
+        {
+          "days": "29",
+          "month": 8,
+          "year": 2017,
+          "time": "11:45 PM",
+          "notes": "Performing the “Garden Tour “ with 4 dancers and the Living Garden!"
+        },
+        {
+          "days": "30",
+          "month": 8,
+          "year": 2017,
+          "time": "10:50 PM",
+          "notes": "Performing SHARP repertory with SHARP's Full Dance Company!"
+        },
+        {
+          "days": "30",
+          "month": 8,
+          "year": 2017,
+          "time": "11:45 PM",
+          "notes": "Performing SHARP repertory with SHARP's Full Dance Company!"
+        }
+      ]
+    },
+    {
+      "name": "DELAWARE ART MUSUEM",
+      "description": "Collaborative performance with Syrian Artist Emad “Jano” Hemede",
+      "location": {
+        "name": "Delaware Art Museum",
+        "address": "2301 Kentmere Pkwy, Wilmington, DE 19806"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "17",
+          "month": 9,
+          "year": 2017,
+          "time": "7:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PERFORMING ARTS EXCHANGE by South Arts",
+      "description": "Performing the “Garden Tour “ with 3 dancers and the Living Garden!",
+      "location": {
+        "name": "Hyatt Hotel Regency Atlanta",
+        "address": "265 Peachtree St NE, Atlanta, GA 30303"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "25",
+          "month": 9,
+          "year": 2017,
+          "time": "9:15 PM, 9:55 PM & 10:35 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARTSMARKET 2017",
+      "description": "",
+      "location": {
+        "name": "Durham Convention Center",
+        "address": "301 W Morgan St, Durham, NC 27701"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "6-8",
+          "month": 11,
+          "year": 2017,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP’s Fall Home Season Performance - ”HUMANITY”",
+      "description": "Featuring the multi-media piece “MADNESS” and the world premiere of “669.”",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine Street, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "17",
+          "month": 11,
+          "year": 2017,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "18",
+          "month": 11,
+          "year": 2017,
+          "time": "5:00 PM & 8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "19",
+          "month": 11,
+          "year": 2017,
+          "time": "3:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "Project Moshen Charity Performance - ”EXCERPTS”",
+      "description": "A production benefiting the Morris Animal Refuge-Opening Reception, Raffles & Silent Auction begin at 7 PM",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine Street, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "2",
+          "month": 12,
+          "year": 2017,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "APAP/NYC Arts Conference & Showcase",
+      "description": "Showcase Performance",
+      "location": {
+        "name": "City Center - Studio 4",
+        "address": "131 W 55th St, New York, NY 10019"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "12",
+          "month": 1,
+          "year": 2017,
+          "time": "8:00 PM - 8:20 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "Beach Residency",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Ocean City, NJ"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "6-9",
+          "month": 4,
+          "year": 2018,
+          "time": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ACT One/ACT Two -SHARP’s Spring Home Season Performance",
+      "description": "SHARP is trying to build community by inviting two other choreographers to join our Spring performance.  Choreographers chosen this year are:  Blythe Contemporary Ballet and Project Moshen.",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine Street, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "27",
+          "month": 4,
+          "year": 2018,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "28",
+          "month": 4,
+          "year": 2018,
+          "time": "5:00 PM & 8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "BOSTON CONTEMPORARY DANCE FESTIVAL National Showcase",
+      "description": "Performing excerpts of “669”",
+      "location": {
+        "name": "Huntingdon Theatre",
+        "address": "4606, 264 Huntington Ave, Boston, MA 02115"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "11",
+          "month": 8,
+          "year": 2018,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARTSMIDWEST Conference",
+      "description": "Pitch Session",
+      "location": {
+        "name": "",
+        "address": "Indianapolis, Indiana"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "7",
+          "month": 9,
+          "year": 2018,
+          "time": "2:00 - 2:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PERFORMING ARTS EXCHANGE by South Arts",
+      "description": "",
+      "location": {
+        "name": "Caribe Royale - Bonaire Rooms 7 & 8",
+        "address": "8101 World Center Dr, Orlando, FL 32821"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "2",
+          "month": 10,
+          "year": 2018,
+          "time": "10:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "MAPAM Conference",
+      "description": "Juried Performance",
+      "location": {
+        "name": "The Ware Center",
+        "address": "42 N Prince St, Lancaster, PA 17603"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "8-10",
+          "month": 11,
+          "year": 2018,
+          "time": "",
+          "notes": ""
+        },
+        {
+          "days": "9",
+          "month": 11,
+          "year": 2018,
+          "time": "1:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP’s Fall Home Season Performance",
+      "description": "Featuring the collaboration choreography project of “PUZZLE” co-choreographed by \nJoe Cotler (Koresh Dance Company) & Diane Sharp-Nachsin (Artistic Director of SHARP)",
+      "location": {
+        "name": "The Performance Garage",
+        "address": "1515 Brandywine Street, Philadelphia, PA 19130"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "2",
+          "month": 11,
+          "year": 2018,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "3",
+          "month": 11,
+          "year": 2018,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "4",
+          "month": 11,
+          "year": 2018,
+          "time": "3:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "COME TOGETHER FESTIVAL",
+      "description": "",
+      "location": {
+        "name": "Suzanne Roberts Theater",
+        "address": "480 S Broad St, Philadelphia, PA 19146"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "15",
+          "month": 11,
+          "year": 2018,
+          "time": "7:30 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "APAP/NYC Arts Conference & Showcase",
+      "description": "",
+      "location": {
+        "name": "City Center - Studio 4",
+        "address": "131 W 55th St, New York, NY 10019"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "4",
+          "month": 1,
+          "year": 2019,
+          "time": "8:05 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "Charity Performance for the Tree of Life Synagogue families",
+      "description": "Featuring SHARP repertory &“669” the Story of Nicholas Winton who saved 669 children from the Holocaust.",
+      "location": {
+        "name": "The Hillman Center for the Performing Arts",
+        "address": "423 Fox Chapel Rd, Pittsburgh, PA 15238"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "https://red.vendini.com/ticket-software.html?t=tix&e=e6faa2326a75e8e46980bf3c3a8ee438",
+      "dates": [
+        {
+          "days": "16",
+          "month": 2,
+          "year": 2019,
+          "time": "8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "SHARP Dance Company Spring Home Season Performance",
+      "description": "Featuring SHARP repertory &“669” the Story of Nicholas Winton who saved 669 children from the Holocaust.",
+      "location": {
+        "name": "The National Museum of American Jewish History - Dell Theater",
+        "address": "101 S Independence Mall E, Philadelphia, PA 19106"
+      },
+      "pricing": "$25 Adult   $20 Senior/Student/Artist   Buy 3 tickets ($75) and get one ticket free",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "13",
+          "month": 4,
+          "year": 2019,
+          "time": "6:00 PM & 8:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "Arts Center at Lake Superior State University",
+      "description": "Featuring “Seven Windows” & “Puzzle” a collaborative piece with choreographers Joe Cotler(Koresh Dance Company Member)  & Diane Sharp-Nachsin (Artistic Director of SHARP)",
+      "location": {
+        "name": "Arts Center at Lake Superior State University",
+        "address": "650 W Easterday Ave, Sault Ste. Marie, MI 49783"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "18",
+          "month": 1,
+          "year": 2020,
+          "time": "2:00 PM",
+          "notes": "Tickets available soon"
+        }
+      ]
+    },
+    {
+      "name": "APAP Conference",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "New York City, NY"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "10-14",
+          "month": 1,
+          "year": 2020,
+          "time": "",
+          "notes": "Details TBA"
+        }
+      ]
+    },
+    {
+      "name": "SHARP’s Fall Home Season Performance",
+      "description": "AQUARIAN EXPOSITION:  A TRIP BACK TO THE ORGIINAL WOOSTOCK",
+      "location": {
+        "name": "Christ Church Neighborhood Theater",
+        "address": "20 N American St, Philadelphia, PA 19106"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "1",
+          "month": 11,
+          "year": 2019,
+          "time": "8:00 PM",
+          "notes": ""
+        },
+        {
+          "days": "2",
+          "month": 11,
+          "year": 2019,
+          "time": "5:00 PM",
+          "notes": "Q&A Following Performance"
+        },
+        {
+          "days": "3",
+          "month": 11,
+          "year": 2019,
+          "time": "3:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "PERFORMING ARTS EXCHANGE by South Arts",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Orlando, FL"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "23-26",
+          "month": 9,
+          "year": 2019,
+          "time": "",
+          "notes": "Booth # TBA"
+        }
+      ]
+    },
+    {
+      "name": "SABES JCC",
+      "description": "Featuring SHARP repertory &“669” the Story of Nicholas Winton who saved 669 children from the Holocaust.",
+      "location": {
+        "name": "",
+        "address": "Minneapolis, MN"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "8",
+          "month": 9,
+          "year": 2019,
+          "time": "2:00 PM",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "name": "ARTSMIDWEST Conference",
+      "description": "",
+      "location": {
+        "name": "",
+        "address": "Minneapolis, MN"
+      },
+      "footnote": "",
+      "website": "",
+      "pricing": "",
+      "purchaseUrl": "",
+      "dates": [
+        {
+          "days": "4-8",
+          "month": 9,
+          "year": 2019,
+          "time": "",
+          "notes": "Booth # TBA"
+        },
+        {
+          "days": "6",
+          "month": 9,
+          "year": 2019,
+          "time": "10:30 PM",
+          "notes": ""
+        }
+      ]
     }
   ]
 }

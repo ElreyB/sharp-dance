@@ -16,4 +16,8 @@ export const GlobalStyle = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.colors.white};
   }
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 `;
