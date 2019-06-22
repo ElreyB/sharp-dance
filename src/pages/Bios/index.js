@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
 import data from "../../data.json";
 
-export default function Home() {
+export default function BioPage() {
   const { pages, performers, apprentices, guestPerformers, staff } = data;
   const getBio = bio => <Bio {...bio} key={bio.name} />;
 
