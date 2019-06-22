@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import styled from "styled-components/macro";
-import { Grid, Page, H1 } from "../../styledGuide";
+import { Button, Grid, Page, H1 } from "../../styledGuide";
 import { SignUp } from "../../fbconfig";
 
 const Heading = styled(H1)`
@@ -30,7 +30,6 @@ export default function SignUpForm() {
             const promise = SignUp(values);
             promise.catch(e => {
               actions.setStatus({ error: e });
-              console.error(e);
             });
             actions.setSubmitting(false);
           }}
@@ -41,9 +40,9 @@ export default function SignUpForm() {
               <Field type="password" className="error" name="password" />
               <ErrorMessage name="password" />
 
-              <button type="submit" disabled={isSubmitting}>
+              <Button type="submit" disabled={isSubmitting}>
                 Submit
-              </button>
+              </Button>
             </Form>
           )}
         />

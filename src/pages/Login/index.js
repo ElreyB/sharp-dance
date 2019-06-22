@@ -37,20 +37,16 @@ export default function Login() {
         initialValues={{ email: "", password: "" }}
         validationSchema={LoginSchema}
         onSubmit={(values, actions) => {
-          console.log(actions);
           SignIn(values)
             .then(user => {
               actions.setStatus(user);
-              console.warn(user);
             })
             .catch(e => {
               actions.setStatus({ error: e });
-              console.error(e);
             });
           actions.setSubmitting(false);
         }}
         render={({ isSubmitting, status }) => {
-          console.warn("prpps", status);
           return (
             <Form>
               <Field type="email" name="email" />

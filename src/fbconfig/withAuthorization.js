@@ -4,12 +4,11 @@ import { LOG_IN } from "../constants/routes";
 import { auth } from "./fb";
 import { AuthUserContext } from "./AuthUserContext";
 
-export const withAuthorization = condition => Component => {
+export const withAuthorization = Component => {
   const WithAuthorization = props => {
-    console.warn(props);
     useEffect(() => {
       auth.onAuthStateChanged(authUser => {
-        if (!condition(authUser)) {
+        if (!authUser) {
           props.history.push(LOG_IN);
         }
       });

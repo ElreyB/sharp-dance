@@ -1,7 +1,6 @@
 import React from "react";
 import { Page, H1 } from "../../styledGuide";
 import { withAuthorization } from "../../fbconfig";
-import { isAuthUser } from "../../utils";
 
 function AdminPage() {
   return (
@@ -11,4 +10,4 @@ function AdminPage() {
   );
 }
 
-export default withAuthorization(isAuthUser)(AdminPage);
+export default withAuthorization(AdminPage);
