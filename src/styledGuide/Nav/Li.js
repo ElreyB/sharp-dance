@@ -9,17 +9,18 @@ const StyledLi = styled("li")`
     text-decoration: none;
     font-weight: normal;
   }
+  a.link-active {
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.blue};
+  }
 `;
 
 export const Li = ({ to, children, ...props }) => {
   const [, allProps] = useGrid({ size: "fit", margin: "0 M", ...props });
-  const activeStyle = {
-    fontWeight: "bold"
-  };
 
   return (
     <StyledLi {...allProps}>
-      <NavLink activeStyle={activeStyle} to={to}>
+      <NavLink exact to={to} activeClassName="link-active">
         {children}
       </NavLink>
     </StyledLi>
