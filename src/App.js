@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./pages/About";
+import Admin from "./pages/Admin";
 import Bios from "./pages/Bios";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
@@ -15,6 +16,7 @@ function App() {
       <Route path="/about/" component={About} />
       <Route path="/login/" component={Login} />
       <Route path="/signup/" component={SignUp} />
+      <Route path="/admin/" component={Admin} />
     </Router>
   );
 }

@@ -13,6 +13,7 @@ export function Nav(props) {
         <Li to="/bios">Bio's</Li>
         <Li to="/about">About</Li>
         <Li to="/login">Login</Li>
+        <Li to="/admin">Admin</Li>
       </Ul>
     </nav>
   );
