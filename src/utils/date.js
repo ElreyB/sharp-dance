@@ -46,14 +46,16 @@ export function parsePerformance(performance) {
  * Sorts dates within each year from earlier to later
  */
 export function groupPerformancesByYear(performances = []) {
-  return performances.reduce(
-    (acc, performance) => ({
-      ...acc,
-      [performance.dates[0].year]: [
-        ...(acc[performance.dates[0].year] || []),
-        performance
-      ].sort(sortPerformance)
-    }),
-    {}
-  );
+  return performances.reduce((acc, performance) => {
+    const { year } = performance.dates[0];
+
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+
+    acc[year].push(performance);
+    acc[year].sort(sortPerformance);
+
+    return acc;
+  }, {});
 }

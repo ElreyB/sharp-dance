@@ -20,6 +20,7 @@ export const Page = ({ children, ...props }) => {
           { to: "/bios", label: "Bio's" },
           { to: "/events", label: "Events" },
           { to: "/about", label: "About" },
+          { to: "/login", label: "Login" },
           { to: "/admin", label: "Admin" }
         ]}
       />
