@@ -23,9 +23,10 @@
   },
   "scripts": {
     "start": "yarn && react-scripts start",
-    "build": "rm -rf build docs && react-scripts build && mv build docs",
+    "build": "rm -rf build && react-scripts build",
     "test": "react-scripts test",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"

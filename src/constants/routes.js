@@ -1,5 +1,10 @@
-export const ADMIN = "/admin";
-export const LANDING = "/";
-export const LOG_IN = "/login";
-export const SIGN_IN = "/signin";
-export const SIGN_UP = "/signup";
+const prefix = process.env.NODE_ENV === "development" ? "" : "/sharp-dance";
+
+export const ABOUT = `${prefix}/about`;
+export const ADMIN = `${prefix}/admin`;
+export const BIOS = `${prefix}/bios`;
+export const EVENTS = `${prefix}/events`;
+export const LANDING = `${prefix}/`;
+export const LOG_IN = `${prefix}/login`;
+export const SIGN_IN = `${prefix}/signin`;
+export const SIGN_UP = `${prefix}/signup`;
