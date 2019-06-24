@@ -7,18 +7,29 @@ import Events from "./pages/Events";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
+import Error404 from "./pages/404";
 import { withAuthentication } from "../src/fbconfig";
+import {
+  ABOUT,
+  ADMIN,
+  BIOS,
+  EVENTS,
+  LANDING,
+  LOG_IN,
+  SIGN_UP
+} from "./constants";
 
 function App() {
   return (
     <Router>
-      <Route path="/about/" component={About} />
-      <Route path="/bios" exact component={Bios} />
-      <Route path="/events/" component={Events} />
-      <Route path="/login/" component={Login} />
-      <Route path="/signup/" component={SignUp} />
-      <Route path="/admin/" component={Admin} />
-      <Route path="/" exact component={Home} />
+      <Route path={ABOUT} component={About} />
+      <Route path={BIOS} exact component={Bios} />
+      <Route path={EVENTS} component={Events} />
+      <Route path={LOG_IN} component={Login} />
+      <Route path={SIGN_UP} component={SignUp} />
+      <Route path={ADMIN} component={Admin} />
+      <Route path={LANDING} exact component={Home} />
+      <Route path={LANDING} component={Error404} />
     </Router>
   );
 }
