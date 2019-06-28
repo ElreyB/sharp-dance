@@ -9,7 +9,8 @@ import Events from "./pages/Events";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import { withAuthentication } from "../src/fbconfig";
+import Loading from "./pages/Loading";
+import { withAuthentication, getDB, loadLocal } from "../src/fbconfig";
 import {
   ABOUT,
   ADMIN,
@@ -22,18 +23,36 @@ import {
 } from "./constants";
 
 function App() {
+  const [database, setDatabase] = React.useState(loadLocal());
+
+  React.useEffect(() => {
+    getDB().then(value => setDatabase(value));
+  }, []);
+
+  if (!database.pages) {
+    return (
+      <Router>
+        <Loading />
+      </Router>
+    );
+  }
+  // Add loaded "database" as prop to route component
+  const component = Component => routeProps => (
+    <Component {...routeProps} database={database} />
+  );
+
   return (
     <Router>
       <Switch>
-        <Route path={ABOUT} component={About} />
-        <Route path={BIOS} exact component={Bios} />
-        <Route path={CLASSES} exact component={Classes} />
-        <Route path={EVENTS} component={Events} />
-        <Route path={LOG_IN} component={Login} />
-        <Route path={SIGN_UP} component={SignUp} />
-        <Route path={ADMIN} component={Admin} />
-        <Route path={LANDING} exact component={Home} />
-        <Route component={Error404} />
+        <Route path={ABOUT} component={component(About)} />
+        <Route path={BIOS} exact component={component(Bios)} />
+        <Route path={CLASSES} exact component={component(Classes)} />
+        <Route path={EVENTS} component={component(Events)} />
+        <Route path={LOG_IN} component={component(Login)} />
+        <Route path={SIGN_UP} component={component(SignUp)} />
+        <Route path={ADMIN} component={component(Admin)} />
+        <Route path={LANDING} exact component={component(Home)} />
+        <Route component={component(Error404)} />
       </Switch>
     </Router>
   );
