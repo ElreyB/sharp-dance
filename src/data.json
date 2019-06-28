@@ -25,6 +25,15 @@
       },
       "aboutDianeText": "Diane Sharp-Nachsin suffered from injuries that forced her to retire from performing, so in 2005 she founded SHARP and premiered the company in March 2006.  Diane’s work has been selected for the:  Cool NY Festival, Southern Vermont Dance Festival, STEPS Performance Lab (NY), Come Together Festival, Artsfest, Philadelphia International of the Arts (PIFA) and over 15 Fringe Festivals throughout the country and the United Kingdom.\nDiane has been invited as a resident artist in the U.S. and abroad including: The Living Garden Residency (Greece), CEC New Edge Mix Residency (Philadelphia),  and the BAU institute Residency (Italy).  Diane’s choreography has been commissioned for Mid Atlantic Ballet, The prestigous Governors School, Penn State University and the New Zealand Embassy.\nShe started her career in Pittsburgh, dancing with Pittsburgh based, Mary Miller Dance Company from 1992-1994.  She returned to Philadelphia to dance on scholarship with Philadanco’s training program.  Diane has also danced professionally with Juan Antonio and dancers, Trapezius Aerial Dance Company, Deborah Birrane, Anne-Marie Mulgrew and Dancers, Convergence Dancers and Musicians/Dance Matrix and Amsterdam based company Jacqueline Knopps and dansers.  She has performed with Pennsylvania Ballet Theaters’ Principal dancers Leslie Carothers and Meredith Rainey and Dirk Platzik, formally of The White Oak Project with Mikhail Baryshnikov.\nSome of Diane’s other original work has been showcased Maryland, Greece, Pittsburgh, Italy, California, New Hampshire, New York and Colorado and in numerous musicals throughout the Philadelphia Area."
     },
+    "classes": {
+      "headerBanner": {
+        "title": "Class Schedule",
+        "subtitle": "Come dance with us",
+        "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Open_Company_Class_Schedule_files/UNADJUSTEDNONRAW_thumb_4398.jpg",
+        "content": "SHARP is happy to announce we will now be opening our company class.\nClasses will run 55 minutes. $10 cash or credit. Classes will be taught by a rotation of company members"
+      },
+      "noClasses": "No upcoming classess"
+    },
     "events": {
       "headerBanner": {
         "title": "SHARP Performances"
@@ -197,6 +206,62 @@
       "source": "City Paper Pittsburgh"
     }
   ],
+  "classSchedule": {
+    "name": "Summer Schedule",
+    "description": "",
+    "location": {
+      "name": "",
+      "address": ""
+    },
+    "footnote": "",
+    "website": "",
+    "pricing": "",
+    "purchaseUrl": "",
+    "dates": [
+      {
+        "days": "27",
+        "month": 6,
+        "year": 2019,
+        "time": "6:35 PM - 7:30 PM",
+        "notes": "Sandra Davis - Teaching Ballet"
+      },
+      {
+        "days": "4",
+        "month": 7,
+        "year": 2019,
+        "time": "",
+        "notes": "No Class"
+      },
+      {
+        "days": "11",
+        "month": 7,
+        "year": 2019,
+        "time": "6:35 PM - 7:30 PM",
+        "notes": "Kate Lombardi - Teaching Modern"
+      },
+      {
+        "days": "18",
+        "month": 7,
+        "year": 2019,
+        "time": "6:35 PM - 7:30 PM",
+        "notes": "Miguel Quiñones - Teaching Ballet"
+      },
+      {
+        "days": "25",
+        "month": 7,
+        "year": 2019,
+        "time": "6:35 PM - 7:30 PM",
+        "notes": "Linnea Calzada-Charma - Teaching Ballet"
+      },
+      {
+        "days": "1",
+        "month": 8,
+        "year": 2019,
+        "time": "",
+        "notes": "No Class"
+      }
+    ]
+  },
   "performances": [
     {
       "name": "DELAWARE DANCE FESTIVAL",

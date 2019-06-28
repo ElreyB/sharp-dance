@@ -2,12 +2,27 @@ function sortPerformance(perfA, perfB) {
   return perfA.dateTime - perfB.dateTime;
 }
 
+export function parseDate(date) {
+  const parsedDate = {
+    day: parseInt((date.days.match(/([0-9]+)/) || [])[1], 10) || 0,
+    month: date.month || 0,
+    year: date.year
+  };
+  const hasDate = date.year || date.month;
+
+  return hasDate
+    ? new Date(
+        `${parsedDate.month || 1}/${parsedDate.day || 1}/${parsedDate.year}`
+      ).getTime()
+    : 0;
+}
+
 /**
  * Ensures dates are set and adds information on whether the
  * date is in the future (isFuture), if a date was provided (hasDate)
  * and a parsed time representation of the first date (dateTime)
  */
-export function parsePerformance(performance) {
+export function parseSchedule(performance) {
   const now = new Date().getTime();
   const copy = JSON.parse(JSON.stringify(performance));
   let hasDate = false;
@@ -18,17 +33,7 @@ export function parsePerformance(performance) {
     hasDate = true;
   }
 
-  const parsedDate = {
-    day: parseInt((dates[0].days.match(/([0-9]+)/) || [])[1], 10) || 0,
-    month: dates[0].month,
-    year: dates[0].year
-  };
-  const dateTime = hasDate
-    ? new Date(
-        `${parsedDate.month || 1}/${parsedDate.day || 1}/${parsedDate.year}`
-      ).getTime()
-    : 0;
-
+  const dateTime = parseDate(copy.dates[0]);
   const isFuture = hasDate && dateTime > now;
 
   return {
