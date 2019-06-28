@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
-import data from "../../data.json";
 import { getDB } from "../../fbconfig";
 
 export default function Bios() {
