@@ -1,3 +1,4 @@
+export * from "./IFrame";
 export * from "./Banner";
 export * from "./Bio";
 export * from "./Button";
