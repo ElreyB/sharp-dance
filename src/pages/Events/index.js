@@ -3,6 +3,9 @@ import { Route } from "react-router-dom";
 import { Grid, Banner, Page, Schedule, Nav, H3 } from "../../styledGuide";
 import data from "../../data.json";
 import { groupPerformancesByYear, parsePerformance } from "../../utils";
+import { EVENTS } from "../../constants";
+
+const PAST_EVENTS = `${EVENTS}/past`;
 
 function mostRecentFirst(a, b) {
   return b.dateTime - a.dateTime;
@@ -50,12 +53,12 @@ export default function Events() {
       <Grid align="start">
         <Nav
           links={[
-            { to: "/events", label: "Upcoming Performances" },
-            { to: "/events/past", label: "Past Performances" }
+            { to: EVENTS, label: "Upcoming Performances" },
+            { to: PAST_EVENTS, label: "Past Performances" }
           ]}
         />
         <Route
-          path="/events"
+          path={EVENTS}
           exact
           component={() => (
             <>
@@ -66,7 +69,7 @@ export default function Events() {
           )}
         />
         <Route
-          path="/events/past"
+          path={PAST_EVENTS}
           component={() => (
             <>
               {Object.entries(groupPerformancesByYear(pastPerformances))

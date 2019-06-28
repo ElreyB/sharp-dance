@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![CircleCI](https://circleci.com/gh/ElreyB/sharp-dance/tree/master.svg?style=svg&circle-token=938ee374a10c42df48a81fdeb284c65f4c8b9457)](https://circleci.com/gh/ElreyB/sharp-dance/tree/master)
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 ## Available Scripts

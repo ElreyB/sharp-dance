@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 import { Nav } from "../Nav";
+import { ABOUT, ADMIN, BIOS, EVENTS, LANDING, LOG_IN } from "../../constants";
 
 const PageContent = styled(Grid)`
   max-width: 900px;
@@ -16,12 +17,12 @@ export const Page = ({ children, ...props }) => {
     <PageContent {...props} align="start" padding="M 2XL 2XL">
       <Nav
         links={[
-          { to: "/", label: "Home" },
-          { to: "/bios", label: "Bio's" },
-          { to: "/events", label: "Events" },
-          { to: "/about", label: "About" },
-          { to: "/login", label: "Login" },
-          { to: "/admin", label: "Admin" }
+          { to: LANDING, label: "Home" },
+          { to: BIOS, label: "Bio's" },
+          { to: EVENTS, label: "Events" },
+          { to: ABOUT, label: "About" },
+          { to: LOG_IN, label: "Login" },
+          { to: ADMIN, label: "Admin" }
         ]}
       />
       {children}

@@ -2,6 +2,7 @@
   "name": "sharp-dance",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://elreyb.github.io/sharp-dance",
   "dependencies": {
     "firebase": "^6.1.1",
     "firebase-admin": "^8.1.0",
@@ -22,9 +23,10 @@
   },
   "scripts": {
     "start": "yarn && react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf build && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +45,8 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.13.0"
+    "eslint-plugin-react": "^7.13.0",
+    "gh-pages": "^2.0.1",
+    "pages": "^0.0.16"
   }
 }
