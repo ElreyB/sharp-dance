@@ -8,11 +8,8 @@ import {
   Page,
   Quote
 } from "../../styledGuide";
-import data from "../../data.json";
 
-export default function Home() {
-  const { pages, organizations, quotes } = data;
-
+export default function Home({ pages, organizations, quotes }) {
   return (
     <Page>
       <Banner {...pages.home.headerBanner} />
