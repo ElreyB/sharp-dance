@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
-import { LOG_IN } from "../constants/routes";
+import { LOG_IN } from "../constants";
 import { auth } from "./fb";
 import { AuthUserContext } from "./AuthUserContext";
 

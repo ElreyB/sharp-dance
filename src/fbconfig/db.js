@@ -25,3 +25,19 @@ export function loadLocal() {
     return {};
   }
 }
+
+export function enterNewData(ref, set) {
+  const newAppernticeKey = db
+    .ref()
+    .child(ref)
+    .push().key;
+
+  let updates = {};
+  updates[ref + "/" + newAppernticeKey] = set;
+
+  return db
+    .ref()
+    .update(updates)
+    .then(() => true)
+    .catch(error => console.error("ERROR", error));
+}
