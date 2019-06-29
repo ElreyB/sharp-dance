@@ -10,24 +10,27 @@ import {
 } from "../../styledGuide";
 
 export default function Home({ pages, organizations, quotes }) {
+  const organizationList = Object.values(organizations);
+  const quoteList = Object.values(quotes);
+
   return (
     <Page>
       <Banner {...pages.home.headerBanner} />
       <Grid align="start">
-        {quotes.length > 0 && (
+        {quoteList.length > 0 && (
           <Grid size={3} marginRight="XL">
             <H2>{pages.home.quotesTitle}</H2>
-            {quotes.map((quote, i) => (
+            {quoteList.map((quote, i) => (
               <Quote {...quote} key={i} />
             ))}
           </Grid>
         )}
         <Grid size="auto">
           <Markdown>{pages.home.content}</Markdown>
-          {organizations.length > 0 && (
+          {organizationList.length > 0 && (
             <Grid justify="center">
               <H2>Members</H2>
-              {organizations.map(org => (
+              {organizationList.map(org => (
                 <Img
                   size="fit"
                   margin="M"

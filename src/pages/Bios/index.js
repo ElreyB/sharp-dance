@@ -10,26 +10,31 @@ export default function Bios({
   guestPerformers,
   staff
 }) {
+  const performerList = Object.values(performers);
+  const apprenticeList = Object.values(apprentices);
+  const guestPerformerList = Object.values(guestPerformers);
+  const staffList = Object.values(staff);
+
   return (
     <Page>
       <Banner {...pages.bios.headerBanner} />
       <Grid align="start">
-        {performers.length > 0 && performers.map(getBio)}
-        {apprentices.length > 0 && (
+        {performerList.length > 0 && Object.values(performerList).map(getBio)}
+        {apprenticeList.length > 0 && (
           <>
             <H2>Apprentices</H2>
-            {apprentices.map(getBio)}
+            {apprenticeList.map(getBio)}
           </>
         )}
-        {guestPerformers.length > 0 && (
+        {guestPerformerList.length > 0 && (
           <>
             <H2>Guest Performers</H2>
-            {guestPerformers.map(getBio)}
+            {guestPerformerList.map(getBio)}
           </>
         )}
         <Banner {...pages.bios.aboutDianeBanner} />
         <Markdown marginTop="L">{pages.bios.aboutDianeText}</Markdown>
-        {staff.length > 0 && staff.map(getBio)}
+        {staffList.length > 0 && staffList.map(getBio)}
       </Grid>
     </Page>
   );
