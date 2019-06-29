@@ -3,10 +3,13 @@ import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
 
 const getBio = bio => <Bio {...bio} key={bio.name} />;
 
-export default function Bios({ database }) {
-  const { pages, performers, apprentices, guestPerformers, staff } =
-    database || {};
-
+export default function Bios({
+  pages,
+  performers,
+  apprentices,
+  guestPerformers,
+  staff
+}) {
   return (
     <Page>
       <Banner {...pages.bios.headerBanner} />

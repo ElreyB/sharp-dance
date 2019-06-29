@@ -1,14 +1,11 @@
 import React from "react";
 import { Banner, Page, Schedule, H3, IFrame } from "../../styledGuide";
-import data from "../../data.json";
 import { parseDate } from "../../utils";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
 
-export default function Classes() {
-  const { pages, classSchedule } = data;
-
+export default function Classes({ pages, classSchedule }) {
   const upcomingClasses = {
     ...classSchedule,
     dates: classSchedule.dates.filter(date => isFuture(parseDate(date)))

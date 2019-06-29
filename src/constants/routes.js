@@ -7,5 +7,6 @@ export const CLASSES = `${prefix}/classes`;
 export const EVENTS = `${prefix}/events`;
 export const LANDING = `${prefix}/`;
 export const LOG_IN = `${prefix}/login`;
+export const MEDIA = `${prefix}/media`;
 export const SIGN_IN = `${prefix}/signin`;
 export const SIGN_UP = `${prefix}/signup`;

@@ -7,9 +7,10 @@ import Classes from "./pages/Classes";
 import Error404 from "./pages/404";
 import Events from "./pages/Events";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
-import SignUp from "./pages/SignUp";
 import Loading from "./pages/Loading";
+import Login from "./pages/Login";
+import Media from "./pages/Media";
+import SignUp from "./pages/SignUp";
 import { withAuthentication, getDB, loadLocal } from "../src/fbconfig";
 import {
   ABOUT,
@@ -19,6 +20,7 @@ import {
   EVENTS,
   LANDING,
   LOG_IN,
+  MEDIA,
   SIGN_UP
 } from "./constants";
 
@@ -38,19 +40,20 @@ function App() {
   }
   // Add loaded "database" as prop to route component
   const component = Component => routeProps => (
-    <Component {...routeProps} database={database} />
+    <Component {...routeProps} {...database} />
   );
 
   return (
     <Router>
       <Switch>
         <Route path={ABOUT} component={component(About)} />
+        <Route path={ADMIN} component={component(Admin)} />
         <Route path={BIOS} exact component={component(Bios)} />
         <Route path={CLASSES} exact component={component(Classes)} />
         <Route path={EVENTS} component={component(Events)} />
         <Route path={LOG_IN} component={component(Login)} />
+        <Route path={MEDIA} component={component(Media)} />
         <Route path={SIGN_UP} component={component(SignUp)} />
-        <Route path={ADMIN} component={component(Admin)} />
         <Route path={LANDING} exact component={component(Home)} />
         <Route component={component(Error404)} />
       </Switch>

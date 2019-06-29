@@ -1,7 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { Grid, Banner, Page, Schedule, Nav, H3 } from "../../styledGuide";
-import data from "../../data.json";
 import { groupPerformancesByYear, parseSchedule } from "../../utils";
 import { EVENTS } from "../../constants";
 
@@ -37,8 +36,7 @@ const renderPerformances = ([year, perfs]) =>
     </React.Fragment>
   );
 
-export default function Events() {
-  const { pages, performances } = data;
+export default function Events({ pages, performances }) {
   const parsedPerformances = performances.map(parseSchedule);
   const upcomingPerformances = parsedPerformances
     .filter(({ isFuture }) => isFuture)
