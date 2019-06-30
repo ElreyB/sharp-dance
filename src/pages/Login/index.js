@@ -10,7 +10,7 @@ import {
   Form,
   ErrorMessage
 } from "../../styledGuide";
-import { SignIn, SignOut } from "../../fbconfig";
+import { SignIn, SignOut, getDB } from "../../fbconfig";
 import { ADMIN } from "../../constants";
 
 const Heading = styled(H1)`
@@ -26,7 +26,18 @@ const LoginSchema = Yup.object().shape({
     .required("Required")
 });
 
+const addUuid = (data, uuid) => {
+  return {
+    ...data,
+    uuid
+  };
+};
+
 export default function Login(props) {
+  getDB("performers").then(val => {
+    let newData = val.map((data, index) => addUuid(data, index));
+    console.warn(newData);
+  });
   return (
     <Page>
       <Button type="button" onClick={SignOut}>
