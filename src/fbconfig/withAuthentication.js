@@ -13,7 +13,7 @@ export const withAuthentication = Component => {
 
     return (
       <AuthUserContext.Provider value={authUser}>
-        <Component />
+        <Component {...props} />
       </AuthUserContext.Provider>
     );
   };
