@@ -45,3 +45,37 @@ export function loadLocal() {
     return {};
   }
 }
+
+export function enterNewData(ref, data) {
+  const newAppernticeKey = db
+    .ref()
+    .child(ref)
+    .push().key;
+
+  let updates = {};
+  updates[ref + "/" + newAppernticeKey] = data;
+
+  return db
+    .ref()
+    .update(updates)
+    .then(() => true)
+    .catch(error => console.error("ERROR", error));
+}
+
+export function editData(ref, key, data) {
+  return db
+    .ref(ref)
+    .child(key)
+    .update(data)
+    .then(() => true)
+    .catch(error => error);
+}
+
+export function deleteData(ref, key) {
+  return db
+    .ref(ref)
+    .child(key)
+    .remove()
+    .then(() => true)
+    .catch(error => error);
+}

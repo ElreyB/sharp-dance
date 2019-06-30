@@ -11,6 +11,7 @@ import {
   ErrorMessage
 } from "../../styledGuide";
 import { SignIn, SignOut } from "../../fbconfig";
+import { ADMIN } from "../../constants";
 
 const Heading = styled(H1)`
   color: ${({ theme }) => theme.colors.red};
@@ -25,7 +26,7 @@ const LoginSchema = Yup.object().shape({
     .required("Required")
 });
 
-export default function Login() {
+export default function Login(props) {
   return (
     <Page>
       <Button type="button" onClick={SignOut}>
@@ -40,6 +41,7 @@ export default function Login() {
           SignIn(values)
             .then(user => {
               actions.setStatus(user);
+              props.history.push(ADMIN);
             })
             .catch(e => {
               actions.setStatus({ error: e });
