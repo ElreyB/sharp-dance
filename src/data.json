@@ -34,12 +34,96 @@
       },
       "noClasses": "No upcoming classess"
     },
+    "media": {
+      "headerBanner": {
+        "title": "Media"
+      }
+    },
     "events": {
       "headerBanner": {
         "title": "SHARP Performances"
       }
     }
   },
+  "media": [
+    {
+      "title": "PUZZLE",
+      "subtitle": "Currently Available for Tour or Performance",
+      "content": "SHARP’s newest work premiered in November 2018, PUZZLE is a collaborative modern dance experience designed to piece together diverse life experiences and challenge the ingenuity of both the artists and audience.  Co-created by Joe Cotler, Koresh Dance Company Member and Diane Sharp-Nachsin, SHARP Dance Company’s Artistic Director, PUZZLE will be a combination of two: styles, ages and experiences all rolled into one exciting piece.",
+      "sources": [
+        {
+          "title": "Puzzle MAP",
+          "credit": "",
+          "src": "https://www.dropbox.com/s/z1wg6sccieu044b/Puzzle%20MAP.mp4?dl=0"
+        },
+        {
+          "title": "Section 1",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_142/SharpDanceCo_Facade_142.jpg"
+        },
+        {
+          "title": "Section 2",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_106/SharpDanceCo_Facade_106.jpg"
+        },
+        {
+          "title": "Section 3",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_160/SharpDanceCo_Facade_160.jpg"
+        },
+        {
+          "title": "Section 1",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_100/SharpDanceCo_Facade_100.jpg"
+        },
+        {
+          "title": "Section 3",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_150/SharpDanceCo_Facade_150.jpg"
+        },
+        {
+          "title": "Section 2",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_105/SharpDanceCo_Facade_105.jpg"
+        },
+        {
+          "title": "Section 3",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_144/SharpDanceCo_Facade_144.jpg"
+        },
+        {
+          "title": "Section 1",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_147/SharpDanceCo_Facade_147.jpg"
+        },
+        {
+          "title": "Section 2",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_104/SharpDanceCo_Facade_104.jpg"
+        },
+        {
+          "title": "Section 3",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_036/SharpDanceCo_Facade_036.jpg"
+        },
+        {
+          "title": "Section 1",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_019/SharpDanceCo_Facade_019.jpg"
+        },
+        {
+          "title": "Section 2",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_028/SharpDanceCo_Facade_028.jpg"
+        },
+        {
+          "title": "Section 1",
+          "credit": "Kylene Cleaver",
+          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_003/SharpDanceCo_Facade_003.jpg"
+        }
+      ]
+    }
+  ],
   "performers": [
     {
       "name": "Greg Anmuth",

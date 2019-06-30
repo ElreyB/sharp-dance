@@ -7,10 +7,11 @@ import {
   ABOUT,
   ADMIN,
   BIOS,
+  CLASSES,
   EVENTS,
   LANDING,
   LOG_IN,
-  CLASSES
+  MEDIA
 } from "../../constants";
 
 const PageContent = styled(Grid)`
@@ -27,8 +28,9 @@ export const Page = ({ children, links, ...props }) => {
         links={[
           { to: LANDING, label: "Home" },
           { to: BIOS, label: "Bio's" },
-          { to: CLASSES, label: "Classes" },
+          { to: MEDIA, label: "Media" },
           { to: EVENTS, label: "Events" },
+          { to: CLASSES, label: "Classes" },
           { to: ABOUT, label: "About" },
           { to: LOG_IN, label: "Login" },
           { to: ADMIN, label: "Admin" }
