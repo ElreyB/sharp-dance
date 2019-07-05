@@ -34,19 +34,11 @@
       },
       "noClasses": "No upcoming classess"
     },
-    "media": {
-      "headerBanner": {
-        "title": "Media"
-      }
-    },
-    "events": {
-      "headerBanner": {
-        "title": "SHARP Performances"
-      }
-    }
+    "media": { "headerBanner": { "title": "Media" } },
+    "events": { "headerBanner": { "title": "SHARP Performances" } }
   },
-  "media": [
-    {
+  "media": {
+    "media158": {
       "title": "PUZZLE",
       "subtitle": "Currently Available for Tour or Performance",
       "content": "SHARP’s newest work premiered in November 2018, PUZZLE is a collaborative modern dance experience designed to piece together diverse life experiences and challenge the ingenuity of both the artists and audience.  Co-created by Joe Cotler, Koresh Dance Company Member and Diane Sharp-Nachsin, SHARP Dance Company’s Artistic Director, PUZZLE will be a combination of two: styles, ages and experiences all rolled into one exciting piece.",
@@ -121,182 +113,206 @@
           "credit": "Kylene Cleaver",
           "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_003/SharpDanceCo_Facade_003.jpg"
         }
-      ]
+      ],
+      "id": "media158"
     }
-  ],
-  "performers": [
-    {
+  },
+  "performers": {
+    "performers159": {
       "name": "Greg Anmuth",
       "role": "Company Member",
       "imgCredit": "Kylene Cleaver",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_161.jpg",
-      "bio": "Greg began his dance training at his mother’s studio in New Jersey; he then continued his education at Rowan University under the direction of Paule Turner and Melanie Stewart. He was elected the president of Rowan’s Contemporary Dance Company, and has been awarded the Bryna G. Goldhaft Medallion for Dance Excellence in 2012 upon his completion of his B.A. in Health and Exercise Science.  Now a co-owner of his family’s school, Greg has been awarded numerous choreography and entertainment awards.  Greg’s performance career has continued as a past company member with Band of Artists, Andrea Mychaels Dance Project, Roger Lee Dance, Nickerson-Rossi Dance (NRD) East Company and Legends in Concert.\nThis is Greg’s first season with SHARP Dance Company."
+      "bio": "Greg began his dance training at his mother’s studio in New Jersey; he then continued his education at Rowan University under the direction of Paule Turner and Melanie Stewart. He was elected the president of Rowan’s Contemporary Dance Company, and has been awarded the Bryna G. Goldhaft Medallion for Dance Excellence in 2012 upon his completion of his B.A. in Health and Exercise Science.  Now a co-owner of his family’s school, Greg has been awarded numerous choreography and entertainment awards.  Greg’s performance career has continued as a past company member with Band of Artists, Andrea Mychaels Dance Project, Roger Lee Dance, Nickerson-Rossi Dance (NRD) East Company and Legends in Concert.\nThis is Greg’s first season with SHARP Dance Company.",
+      "id": "performers159"
     },
-    {
+    "performers160": {
       "name": "Hannah Brumbach",
       "role": "Guest Artist",
       "imgCredit": "FigTree Photos",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/Figtree%20Photography%20%281%29.jpg",
-      "bio": "Hannah Brumbach is a dancer and choreographer in the Philadelphia area.  She was raised and trained in Williamsport, Pennsylvania and continued her education at Eastern University earning a BA in Dance. Hannah’s performance career includes a 2016 solo work, “Cultivate”, choreographed by Lydia Bugosh, and performed at the American College Dance Association Festival. She has also staged three choreographic works at Eastern University and has restaged her largest work, “Hymn Study” at the 2017 “Bridgefest” in Cambria City.  Currently, Hannah fulfills her need to dance by teaching the next generation of movers and performing with Apex Dance Company and Melange Contemporary Dance Company."
+      "bio": "Hannah Brumbach is a dancer and choreographer in the Philadelphia area.  She was raised and trained in Williamsport, Pennsylvania and continued her education at Eastern University earning a BA in Dance. Hannah’s performance career includes a 2016 solo work, “Cultivate”, choreographed by Lydia Bugosh, and performed at the American College Dance Association Festival. She has also staged three choreographic works at Eastern University and has restaged her largest work, “Hymn Study” at the 2017 “Bridgefest” in Cambria City.  Currently, Hannah fulfills her need to dance by teaching the next generation of movers and performing with Apex Dance Company and Melange Contemporary Dance Company.",
+      "id": "performers160"
     },
-    {
+    "performers161": {
       "name": "Linnea Alexis Calzada-Charma",
       "role": "Company Member / Social Media Director",
       "imgCredit": "Kylene Cleaver",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_105.jpg",
-      "bio": "Linnea began her dance education with Linda Moores, former principal dancer of Group Motion, and spent most of her training years at Mid-Atlantic Ballet in Newark, DE. She has had additional training at Central PA Youth Ballet, Pittsburgh Ballet Theatre School, Ballet Austin, The Rock School for Dance Education, Alonzo King's LINES Ballet, Secret Circus Philly: School for Contemporary Circus Arts, and was invited to dance with BalletX and Pennsylvania Ballet in 2015. Linnea graduated as a Dance Major from The University of the Arts in 2016, with honors and an Artist’s Merit Award Scholarship. Linnea has been dancing with SHARP for 6 years."
+      "bio": "Linnea began her dance education with Linda Moores, former principal dancer of Group Motion, and spent most of her training years at Mid-Atlantic Ballet in Newark, DE. She has had additional training at Central PA Youth Ballet, Pittsburgh Ballet Theatre School, Ballet Austin, The Rock School for Dance Education, Alonzo King's LINES Ballet, Secret Circus Philly: School for Contemporary Circus Arts, and was invited to dance with BalletX and Pennsylvania Ballet in 2015. Linnea graduated as a Dance Major from The University of the Arts in 2016, with honors and an Artist’s Merit Award Scholarship. Linnea has been dancing with SHARP for 6 years.",
+      "id": "performers161"
     },
-    {
+    "performers162": {
       "name": "Sandra Davis",
       "role": "Company Member, Assistant Director",
       "imgCredit": "Kylene Cleaver",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_100.jpg",
-      "bio": "Sandra is a native of Philadelphia and started her training at the Anastasi Dance Studio. She received her BFA in Ballet Performance from the University of the Arts in May of 2007. During her time at the University of the Arts, she studied under such instructors as: Christine Cox, Scott Jovovich, Andrew Pap, Eva Szabo, Ronen Koresh, and Kim Bears-Bailey. Sandra completed Philadanco's training program in August 2006. She also performed in Danco-on-Danco in September 2006 at the Painted Bride.  Sandra currently teaches at the Blue Bell School of Dance in Blue Bell, PA, and Mid-Atlantic Ballet in Newark, DE. She was named Artistic Director of Mid-Atlantic Ballet in June 2018. She began teaching ballroom dance for Dancing Classrooms Philly in September of 2014. Sandra started performing with SHARP in the spring of 2009."
+      "bio": "Sandra is a native of Philadelphia and started her training at the Anastasi Dance Studio. She received her BFA in Ballet Performance from the University of the Arts in May of 2007. During her time at the University of the Arts, she studied under such instructors as: Christine Cox, Scott Jovovich, Andrew Pap, Eva Szabo, Ronen Koresh, and Kim Bears-Bailey. Sandra completed Philadanco's training program in August 2006. She also performed in Danco-on-Danco in September 2006 at the Painted Bride.  Sandra currently teaches at the Blue Bell School of Dance in Blue Bell, PA, and Mid-Atlantic Ballet in Newark, DE. She was named Artistic Director of Mid-Atlantic Ballet in June 2018. She began teaching ballroom dance for Dancing Classrooms Philly in September of 2014. Sandra started performing with SHARP in the spring of 2009.",
+      "id": "performers162"
     },
-    {
+    "performers163": {
       "name": "Kate Lombardi",
       "role": "Company Member / Artist Liasion",
       "imgCredit": "Kylene Cleaver",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_009.jpg",
-      "bio": "Kate received her BFA from The University of the Arts, along with training at The Martha Graham School of Contemporary Dance and the American Dance Festival. Kate is a member of SHARP, Dancefusion, and Anne Marie Mulgrew & Dancers in Philadelphia, where she enjoys both reconstructing historical works and exploring new choreography by local artists. Kate previously danced with Underground Dance Works and Between Movement Contemporary Dance Company. She was a guest artist with Esse Eficionado and joined Jeanne Ruddy Dance for its farewell season. Along with performing, Kate brings ballroom dance to the youth of Philadelphia as Managing Director for Dancing Classrooms Philly. Kate joined the SHARP family in January 2011."
+      "bio": "Kate received her BFA from The University of the Arts, along with training at The Martha Graham School of Contemporary Dance and the American Dance Festival. Kate is a member of SHARP, Dancefusion, and Anne Marie Mulgrew & Dancers in Philadelphia, where she enjoys both reconstructing historical works and exploring new choreography by local artists. Kate previously danced with Underground Dance Works and Between Movement Contemporary Dance Company. She was a guest artist with Esse Eficionado and joined Jeanne Ruddy Dance for its farewell season. Along with performing, Kate brings ballroom dance to the youth of Philadelphia as Managing Director for Dancing Classrooms Philly. Kate joined the SHARP family in January 2011.",
+      "id": "performers163"
     },
-    {
+    "performers164": {
       "name": "Miguel Quinones",
       "role": "Company Member",
       "imgCredit": "Kylene Cleaver",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_027.jpg",
-      "bio": "Miguel began his Ballet training in Miami at the age of 7 at the Miami Conservatory.  Miguel also studied at Joe Michaels Studio with the New Image Dance Ensemble where he learned other forms of dance.  In college, at the New World School of the Arts in downtown Miami he continued his studies in jazz, modern and breaking.  After graduating in 3 years with honors, he joined the Parsons Dance Company in 2005.  He danced with David Parsons from 2005-2011 and currently is a guest dancer for the company. Miguel has worked with such artists as:  David Parsons, Robert Battle, Monica Bill Barnes, Donald McKayle, Michael Uthoff, Arthur Mitchell, Nicholas Andre, Mark Stuart, Shea Sullivan, Greg Dolbashian and other New York Artist.  He has taught master classes all over the U.S. and he is currently living in Philadelphia. He’s currently dancing with SHARP Dance Company and dances for Pages to Pirouettes, continuing his dance education, and focusing on creating more of his own choreography."
+      "bio": "Miguel began his Ballet training in Miami at the age of 7 at the Miami Conservatory.  Miguel also studied at Joe Michaels Studio with the New Image Dance Ensemble where he learned other forms of dance.  In college, at the New World School of the Arts in downtown Miami he continued his studies in jazz, modern and breaking.  After graduating in 3 years with honors, he joined the Parsons Dance Company in 2005.  He danced with David Parsons from 2005-2011 and currently is a guest dancer for the company. Miguel has worked with such artists as:  David Parsons, Robert Battle, Monica Bill Barnes, Donald McKayle, Michael Uthoff, Arthur Mitchell, Nicholas Andre, Mark Stuart, Shea Sullivan, Greg Dolbashian and other New York Artist.  He has taught master classes all over the U.S. and he is currently living in Philadelphia. He’s currently dancing with SHARP Dance Company and dances for Pages to Pirouettes, continuing his dance education, and focusing on creating more of his own choreography.",
+      "id": "performers164"
     },
-    {
+    "performers165": {
       "name": "Rosemary Scalise",
       "role": "Guest Artist",
       "imgCredit": "Brian Megini",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/OQADPa0QQ9G+5Dk2P2N4zw_thumb_4393.jpg",
-      "bio": "Rosemary Scalise grew up dancing at local studios in her hometown of West Deptford, New Jersey. She was a member of the performing arts program at Paul VI High School under the direction of Courtney Daniels. Rosemary followed her passion to Towson University and earned her BFA in Dance Performance and Choreography in 2017. During her college career Rosemary performed original works by Darrell Grand Moultrie, Kim Y. Bears-Bailey, Runqiao Du, Linda-Denise Fisher-Harrell, Vincent Thomas, Quilan Arnold, and Susan Mann. Following graduation, Rosemary attended the 2017 METdance Professional Intensive in Houston, Texas. Rosemary now performs professionally in the Philadelphia area with Nickerson-Rossi Dance (East), Allegory Dance Theatre, Matter Movement Group, and other local artists."
+      "bio": "Rosemary Scalise grew up dancing at local studios in her hometown of West Deptford, New Jersey. She was a member of the performing arts program at Paul VI High School under the direction of Courtney Daniels. Rosemary followed her passion to Towson University and earned her BFA in Dance Performance and Choreography in 2017. During her college career Rosemary performed original works by Darrell Grand Moultrie, Kim Y. Bears-Bailey, Runqiao Du, Linda-Denise Fisher-Harrell, Vincent Thomas, Quilan Arnold, and Susan Mann. Following graduation, Rosemary attended the 2017 METdance Professional Intensive in Houston, Texas. Rosemary now performs professionally in the Philadelphia area with Nickerson-Rossi Dance (East), Allegory Dance Theatre, Matter Movement Group, and other local artists.",
+      "id": "performers165"
     }
-  ],
-  "apprentices": [
-    {
+  },
+  "apprentices": {
+    "apprentices166": {
       "name": "Juliet Bernstein",
       "role": "Apprentice",
       "imgCredit": "Courtney Kehr",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/thumbnail%202.jpg",
-      "bio": "Juliet is a dance artist and performer originally from Los Angeles, CA where she began her formal dance training at Elements Dance Space. Juliet graduated from University of the Arts in Philadelphia, PA, where she earned her BFA in dance with a minor in musical theatre under the direction of Donna Faye Burchfield. She has been fortunate to work with various notable artists including, Bobbi Jean Smith, Gary Jeter, Juel D. Lane, Roni Koresh, and Sidra Bell. Her most recent debuts as a graduate include being a part of the upcoming feature film “Aviva” directed by Boaz Yakin and choreographed by Bobbi Jean Smith, performing in Roschman Dance Company’s 2018 season, and performing and working with choreographer Alisia Ialicicco in Mare Nostrum Elements Emerging Choreographer Series. Juliet is excited to be an apprentice this season with SHARP Dance Company!"
+      "bio": "Juliet is a dance artist and performer originally from Los Angeles, CA where she began her formal dance training at Elements Dance Space. Juliet graduated from University of the Arts in Philadelphia, PA, where she earned her BFA in dance with a minor in musical theatre under the direction of Donna Faye Burchfield. She has been fortunate to work with various notable artists including, Bobbi Jean Smith, Gary Jeter, Juel D. Lane, Roni Koresh, and Sidra Bell. Her most recent debuts as a graduate include being a part of the upcoming feature film “Aviva” directed by Boaz Yakin and choreographed by Bobbi Jean Smith, performing in Roschman Dance Company’s 2018 season, and performing and working with choreographer Alisia Ialicicco in Mare Nostrum Elements Emerging Choreographer Series. Juliet is excited to be an apprentice this season with SHARP Dance Company!",
+      "id": "apprentices166"
     }
-  ],
-  "guestPerformers": [
-    {
+  },
+  "guestPerformers": {
+    "guestPerformers167": {
       "name": "Micah Geyer",
       "role": "Guest Artist",
       "imgCredit": "",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/droppedImage_1.jpg",
-      "bio": "Raised in North Carolina, Micah started dancing at a young age with Nina's School of Dance in Durham. He later joined the North Carolina Youth Tap Ensemble under the direction of Gene Medler. During his career, he had the privilege to perform at the Kennedy Center and the Joyce Theater for Tap City, as well as tour throughout Europe and South America. He received his BFA in Dance Performance and Psychology from East Carolina University and joined Koresh Dance Company in 2007."
+      "bio": "Raised in North Carolina, Micah started dancing at a young age with Nina's School of Dance in Durham. He later joined the North Carolina Youth Tap Ensemble under the direction of Gene Medler. During his career, he had the privilege to perform at the Kennedy Center and the Joyce Theater for Tap City, as well as tour throughout Europe and South America. He received his BFA in Dance Performance and Psychology from East Carolina University and joined Koresh Dance Company in 2007.",
+      "id": "guestPerformers167"
     }
-  ],
-  "staff": [
-    {
+  },
+  "staff": {
+    "staff168": {
       "name": "Nikki Battestilli",
       "role": "Company Manager",
       "imgCredit": "Michael Cannon",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/IMG_3437.jpg",
-      "bio": "Drexel University (2015), B.A. (Theater, Dance Minor) Robert E. Cook Honors College-Indiana University of Pennsylvania. Nikki has had the opportunity to work for numerous organizations such as: Brian Sanders JUNK, Pasion y Arte Flamenco, Eastern University, and Kids Across America. She recently left her position at Wolf Performing Arts Center where she was the Marketing and Development Director for 3 years. Nikki recently moved to Pittsburgh to take the position of Marketing Director with City Theatre. Nikki is incredibly grateful to be part of the SHARP family since January 2013 and can never leave."
+      "bio": "Drexel University (2015), B.A. (Theater, Dance Minor) Robert E. Cook Honors College-Indiana University of Pennsylvania. Nikki has had the opportunity to work for numerous organizations such as: Brian Sanders JUNK, Pasion y Arte Flamenco, Eastern University, and Kids Across America. She recently left her position at Wolf Performing Arts Center where she was the Marketing and Development Director for 3 years. Nikki recently moved to Pittsburgh to take the position of Marketing Director with City Theatre. Nikki is incredibly grateful to be part of the SHARP family since January 2013 and can never leave.",
+      "id": "staff168"
     },
-    {
+    "staff169": {
       "name": "Joe Cotler",
       "role": "Guest Choreographer",
       "imgCredit": "Kylene Cleaver",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/droppedImage.jpg",
-      "bio": "Joe grew up in Batavia, NY and trained at his mother Robin Cotler's dance studio, Images in Dance. He graduated from The University of the Arts in May 2009. While at school, he had the opportunity to work with numerous choreographers including Scott Jovovich, Roni Koresh and Paul Selwyn-Norton. He currently teaches and choreographs for numerous studios in the area and is a Koresh Dance company member. Joe has choreographed several pieces for SHARP Dance Company over the last 6 years."
+      "bio": "Joe grew up in Batavia, NY and trained at his mother Robin Cotler's dance studio, Images in Dance. He graduated from The University of the Arts in May 2009. While at school, he had the opportunity to work with numerous choreographers including Scott Jovovich, Roni Koresh and Paul Selwyn-Norton. He currently teaches and choreographs for numerous studios in the area and is a Koresh Dance company member. Joe has choreographed several pieces for SHARP Dance Company over the last 6 years.",
+      "id": "staff169"
     },
-    {
+    "staff170": {
       "name": "Jenna Kueriz",
       "role": "Guest Vocalist",
       "imgCredit": "Justin Muir Photography",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/jennakuerzi.jpg",
-      "bio": "Jenna Kuerzi is an actor, singer, and deviser. She has worked regionally with Tribe of Fools (Barrymore Nominee: Best Ensemble/New Play- Fishtown: A Hipster Noir), 11th Hour, PlayPenn, Shakespeare in Clark Park, the Philadelphia Shakespeare Theatre, Philadelphia Young Playwrights, Irish Heritage Theatre, the Laurie Beechman Theatre in NYC, Act II Playhouse, and On the Rocks. Jenna's solo-ish show, Johnny Depp: A Retrospective on Late-Stage Capitalism, an original show she stars in and co-wrote with local playwright Val Dunn, traveled to the 2019 Edinburgh Fringe Festival. [www.jennakuerzi.com](//www.jennakuerzi.com)"
+      "bio": "Jenna Kuerzi is an actor, singer, and deviser. She has worked regionally with Tribe of Fools (Barrymore Nominee: Best Ensemble/New Play- Fishtown: A Hipster Noir), 11th Hour, PlayPenn, Shakespeare in Clark Park, the Philadelphia Shakespeare Theatre, Philadelphia Young Playwrights, Irish Heritage Theatre, the Laurie Beechman Theatre in NYC, Act II Playhouse, and On the Rocks. Jenna's solo-ish show, Johnny Depp: A Retrospective on Late-Stage Capitalism, an original show she stars in and co-wrote with local playwright Val Dunn, traveled to the 2019 Edinburgh Fringe Festival. [www.jennakuerzi.com](//www.jennakuerzi.com)",
+      "id": "staff170"
     },
-    {
+    "staff171": {
       "name": "Steven Vaughn",
       "role": "Guest Artist, Guest Choreographer, Former SHARP Dancer and Parsons Company Member",
       "imgCredit": "Kylene Cleaver",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SV-7.jpg",
-      "bio": "Steven was born in Iowa City, Iowa, and grew up dancing all over the Midwest and Massachusetts at various dance studios. While attending the University of the Arts in Philadelphia, where he graduated with a BFA in Modern Dance in May 2009, he was given the opportunity to perform works by Silvanna Cardell, Martha Graham, and Twyla Tharp, among others, and to present his own choreography. His college career also afforded him the privilege of working professionally with Diane Sharp-Nachsin's SHARP Dance Company; Scott Jovovich in Brandywine Ballet Theater; Zane Booker and his Smoke, Lilies and Jade Arts Initiative; and Brian Sanders' JUNK. Steven joined Parsons Dance in June 2008 as an apprentice as was invited to become a company member this August 2009.  Steven has previously choreographed pieces on SHARP dance company and the Joffery Ballet summer program."
+      "bio": "Steven was born in Iowa City, Iowa, and grew up dancing all over the Midwest and Massachusetts at various dance studios. While attending the University of the Arts in Philadelphia, where he graduated with a BFA in Modern Dance in May 2009, he was given the opportunity to perform works by Silvanna Cardell, Martha Graham, and Twyla Tharp, among others, and to present his own choreography. His college career also afforded him the privilege of working professionally with Diane Sharp-Nachsin's SHARP Dance Company; Scott Jovovich in Brandywine Ballet Theater; Zane Booker and his Smoke, Lilies and Jade Arts Initiative; and Brian Sanders' JUNK. Steven joined Parsons Dance in June 2008 as an apprentice as was invited to become a company member this August 2009.  Steven has previously choreographed pieces on SHARP dance company and the Joffery Ballet summer program.",
+      "id": "staff171"
     },
-    {
+    "staff172": {
       "name": "Kevin Ferguson",
       "role": "Guest Choreographer",
       "imgCredit": "",
       "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/12968_192850378636_684058636_2910688_4942030_n.jpg",
-      "bio": "Kevin is originally from Houston, Texas. He has studied at The Houston Ballet, Boston Ballet, The Ailey School, and graduated with a BFA from the Boston Conservatory of Music. Kevin is an NAACP and Arts Recognition and Talent Search recipient. He has taught and choreographed internationally and domestically. Kevin has performed work by Nilas Martins, Donald Byrd, and Larry Keigwin as a guest artist. He has danced with Elisa Monte Dance Company, Radio City, The Metropolitan Opera, Regis and Kelly, and David Parsons Dance Company. Kevin is proud to work with SHARP Dance."
+      "bio": "Kevin is originally from Houston, Texas. He has studied at The Houston Ballet, Boston Ballet, The Ailey School, and graduated with a BFA from the Boston Conservatory of Music. Kevin is an NAACP and Arts Recognition and Talent Search recipient. He has taught and choreographed internationally and domestically. Kevin has performed work by Nilas Martins, Donald Byrd, and Larry Keigwin as a guest artist. He has danced with Elisa Monte Dance Company, Radio City, The Metropolitan Opera, Regis and Kelly, and David Parsons Dance Company. Kevin is proud to work with SHARP Dance.",
+      "id": "staff172"
     }
-  ],
-  "organizations": [
-    {
+  },
+  "organizations": {
+    "organizations173": {
       "organization": "Pennsylvania Presenters",
-      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/logo.gif"
+      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/logo.gif",
+      "id": "organizations173"
     },
-    {
+    "organizations174": {
       "organization": "Association of Performing Arts Presenters",
-      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/apap_365_logo.jpg"
+      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/apap_365_logo.jpg",
+      "id": "organizations174"
     },
-    {
+    "organizations175": {
       "organization": "NCPC",
-      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/header-logo.jpg"
+      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/header-logo.jpg",
+      "id": "organizations175"
     },
-    {
+    "organizations176": {
       "organization": "SHARP Dance Company",
-      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/coming_soon_image.jpg"
+      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/coming_soon_image.jpg",
+      "id": "organizations176"
     }
-  ],
-  "quotes": [
-    {
+  },
+  "quotes": {
+    "quotes177": {
       "quote": "…the gap between the audience age or level of appreciation for modern dance, choreographer Diane Sharp-Nachsin abridged it, capturing the free-form movements of concertgoers, but with an exciting, contemporary edge.",
       "author": "Nicole Finkbinder",
-      "source": "Philadelphia Weekly"
+      "source": "Philadelphia Weekly",
+      "id": "quotes177"
     },
-    {
+    "quotes178": {
       "quote": "..it seemed like there were more than just six dancers thanks to Sharp’s adept use of canons and different levels",
       "author": "Kat Richter",
-      "source": "PhiladelphiaDance.org"
+      "source": "PhiladelphiaDance.org",
+      "id": "quotes178"
     },
-    {
+    "quotes179": {
       "quote": "SHARP Dance Company is quickly becoming recognized for their combination of inspired artistry, imagination capturing “stories of performance” and the discipline required of such performance mastery.",
       "author": "Barry Livingstone",
-      "source": "ArtSpider Arts Scene, New Hampshire"
+      "source": "ArtSpider Arts Scene, New Hampshire",
+      "id": "quotes179"
     },
-    {
+    "quotes180": {
       "quote": "Pieces of U.........confronted the pains of discrimination through dance, multimedia, and prop.  The piece generated an uncomfortable and uneasy sensation, which was completely effective",
       "author": "Kathleen Glynn",
-      "source": "The Dance Journal Philadelphia"
+      "source": "The Dance Journal Philadelphia",
+      "id": "quotes180"
     },
-    {
+    "quotes181": {
       "quote": "SHARP’s performance has emerged as a center piece of the Philly Fringe",
       "author": "Lewis Whittington",
-      "source": "Edge Philadelphia"
+      "source": "Edge Philadelphia",
+      "id": "quotes181"
     },
-    {
+    "quotes182": {
       "quote": "...the work tackles some weighty themes uncommon to the dance stage",
       "author": "Lewis Whittington",
-      "source": "Edge Philadelphia"
+      "source": "Edge Philadelphia",
+      "id": "quotes182"
     },
-    {
+    "quotes183": {
       "quote": "…clean modern dance movement with a strong technique",
       "author": "Jane Vranish",
-      "source": "Post Gazette Pittsburgh"
+      "source": "Post Gazette Pittsburgh",
+      "id": "quotes183"
     },
-    {
+    "quotes184": {
       "quote": "…expect a roller-coaster ride of emotions and life experiences",
       "author": "Denise N. Lewis",
-      "source": "City Paper Pittsburgh"
+      "source": "City Paper Pittsburgh",
+      "id": "quotes184"
     }
-  ],
+  },
   "classSchedule": {
     "name": "Summer Schedule",
     "description": "",
-    "location": {
-      "name": "",
-      "address": ""
-    },
+    "location": { "name": "", "address": "" },
     "footnote": "",
     "website": "",
     "pricing": "",
@@ -337,17 +353,11 @@
         "time": "6:35 PM - 7:30 PM",
         "notes": "Linnea Calzada-Charma - Teaching Ballet"
       },
-      {
-        "days": "1",
-        "month": 8,
-        "year": 2019,
-        "time": "",
-        "notes": "No Class"
-      }
+      { "days": "1", "month": 8, "year": 2019, "time": "", "notes": "No Class" }
     ]
   },
-  "performances": [
-    {
+  "performances": {
+    "performances185": {
       "name": "DELAWARE DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -359,17 +369,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "",
-          "month": 0,
-          "year": 2006,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "", "month": 0, "year": 2006, "time": "", "notes": "" }
       ],
-      "pathId": "2006-delaware-dance-festival"
+      "pathId": "2006-delaware-dance-festival",
+      "id": "performances185"
     },
-    {
+    "performances186": {
       "name": "DELAWARE DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -381,39 +386,26 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "3",
-          "month": 3,
-          "year": 2007,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "3", "month": 3, "year": 2007, "time": "", "notes": "" }
       ],
-      "pathId": "2007-delaware-dance-festival"
+      "pathId": "2007-delaware-dance-festival",
+      "id": "performances186"
     },
-    {
+    "performances187": {
       "name": "SOUTHERN DELAWARE DANCE FESTIVAL",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Milford, Delaware"
-      },
+      "location": { "name": "", "address": "Milford, Delaware" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "19",
-          "month": 5,
-          "year": 2007,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "19", "month": 5, "year": 2007, "time": "", "notes": "" }
       ],
-      "pathId": "2007-southern-delaware-dance-festival"
+      "pathId": "2007-southern-delaware-dance-festival",
+      "id": "performances187"
     },
-    {
+    "performances188": {
       "name": "PHILADELPHIA FRINGE FESTIVAL - THREE on 3",
       "description": "",
       "location": {
@@ -425,17 +417,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "7-9",
-          "month": 9,
-          "year": 2007,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "7-9", "month": 9, "year": 2007, "time": "", "notes": "" }
       ],
-      "pathId": "2007-philadelphia-fringe-festival---three-on-3"
+      "pathId": "2007-philadelphia-fringe-festival---three-on-3",
+      "id": "performances188"
     },
-    {
+    "performances189": {
       "name": "MEET THE ARTISTS",
       "description": "",
       "location": {
@@ -447,39 +434,26 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "7",
-          "month": 10,
-          "year": 2007,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "7", "month": 10, "year": 2007, "time": "", "notes": "" }
       ],
-      "pathId": "2007-meet-the-artists"
+      "pathId": "2007-meet-the-artists",
+      "id": "performances189"
     },
-    {
+    "performances190": {
       "name": "TOGETHER",
       "description": "Collaborative project with Pittsburgh based Company, Mary Miller Dance Company (MMDC).",
-      "location": {
-        "name": "Open Stage Theatre",
-        "address": "Pittsburgh, PA"
-      },
+      "location": { "name": "Open Stage Theatre", "address": "Pittsburgh, PA" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "16-17",
-          "month": 11,
-          "year": 2007,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "16-17", "month": 11, "year": 2007, "time": "", "notes": "" }
       ],
-      "pathId": "2007-together"
+      "pathId": "2007-together",
+      "id": "performances190"
     },
-    {
+    "performances191": {
       "name": "COMMUNITY EDUCATION CENTER (CEC) NEW EDGE MIX SERIES",
       "description": "",
       "location": {
@@ -491,17 +465,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "11-13",
-          "month": 1,
-          "year": 2008,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "11-13", "month": 1, "year": 2008, "time": "", "notes": "" }
       ],
-      "pathId": "2008-community-education-center--cec--new-edge-mix-series"
+      "pathId": "2008-community-education-center--cec--new-edge-mix-series",
+      "id": "performances191"
     },
-    {
+    "performances192": {
       "name": "DELAWARE DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -513,17 +482,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "1",
-          "month": 3,
-          "year": 2008,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "1", "month": 3, "year": 2008, "time": "", "notes": "" }
       ],
-      "pathId": "2008-delaware-dance-festival"
+      "pathId": "2008-delaware-dance-festival",
+      "id": "performances192"
     },
-    {
+    "performances193": {
       "name": "ETC PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -535,17 +499,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "3-4",
-          "month": 5,
-          "year": 2008,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "3-4", "month": 5, "year": 2008, "time": "", "notes": "" }
       ],
-      "pathId": "2008-5-etc-performance-series"
+      "pathId": "2008-5-etc-performance-series",
+      "id": "performances193"
     },
-    {
+    "performances194": {
       "name": "PHILADELPHIA FRINGE FESTIVAL FOUR ON 2",
       "description": "",
       "location": {
@@ -557,17 +516,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "6-7",
-          "month": 9,
-          "year": 2008,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "6-7", "month": 9, "year": 2008, "time": "", "notes": "" }
       ],
-      "pathId": "2008-philadelphia-fringe-festival-four-on-2"
+      "pathId": "2008-philadelphia-fringe-festival-four-on-2",
+      "id": "performances194"
     },
-    {
+    "performances195": {
       "name": "KORESH ARTIST SHOWCASE",
       "description": "",
       "location": {
@@ -579,17 +533,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "20-21",
-          "month": 9,
-          "year": 2008,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "20-21", "month": 9, "year": 2008, "time": "", "notes": "" }
       ],
-      "pathId": "2008-koresh-artist-showcase"
+      "pathId": "2008-koresh-artist-showcase",
+      "id": "performances195"
     },
-    {
+    "performances196": {
       "name": "ETC PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -601,17 +550,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "4-5",
-          "month": 10,
-          "year": 2008,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "4-5", "month": 10, "year": 2008, "time": "", "notes": "" }
       ],
-      "pathId": "2008-10-etc-performance-series"
+      "pathId": "2008-10-etc-performance-series",
+      "id": "performances196"
     },
-    {
+    "performances197": {
       "name": "PHILLY DANCE COLLECTIVE",
       "description": "",
       "location": {
@@ -631,9 +575,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2008-philly-dance-collective"
+      "pathId": "2008-philly-dance-collective",
+      "id": "performances197"
     },
-    {
+    "performances198": {
       "name": "KORESH ARTIST SHOWCASE",
       "description": "",
       "location": {
@@ -660,9 +605,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-1-koresh-artist-showcase"
+      "pathId": "2009-1-koresh-artist-showcase",
+      "id": "performances198"
     },
-    {
+    "performances199": {
       "name": "COOL NEW YORK 2009 DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -689,9 +635,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-cool-new-york-2009-dance-festival"
+      "pathId": "2009-cool-new-york-2009-dance-festival",
+      "id": "performances199"
     },
-    {
+    "performances200": {
       "name": "ETC PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -718,9 +665,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-2-etc-performance-series"
+      "pathId": "2009-2-etc-performance-series",
+      "id": "performances200"
     },
-    {
+    "performances201": {
       "name": "KORESH ARTIST SHOWCASE",
       "description": "",
       "location": {
@@ -747,9 +695,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-2-koresh-artist-showcase"
+      "pathId": "2009-2-koresh-artist-showcase",
+      "id": "performances201"
     },
-    {
+    "performances202": {
       "name": "ETC PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -776,9 +725,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-4-etc-performance-series"
+      "pathId": "2009-4-etc-performance-series",
+      "id": "performances202"
     },
-    {
+    "performances203": {
       "name": "PHILADELPHIA DANCE SHOWCASE",
       "description": "",
       "location": {
@@ -790,17 +740,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "27",
-          "month": 4,
-          "year": 2009,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "27", "month": 4, "year": 2009, "time": "", "notes": "" }
       ],
-      "pathId": "2009-philadelphia-dance-showcase"
+      "pathId": "2009-philadelphia-dance-showcase",
+      "id": "performances203"
     },
-    {
+    "performances204": {
       "name": "PHILLY DANCE COLLECTIVE",
       "description": "",
       "location": {
@@ -820,38 +765,25 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-5-philly-dance-collective"
+      "pathId": "2009-5-philly-dance-collective",
+      "id": "performances204"
     },
-    {
+    "performances205": {
       "name": "SUMMER RESIDENCY",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Cape May New Jersey"
-      },
+      "location": { "name": "", "address": "Cape May New Jersey" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "31",
-          "month": 5,
-          "year": 2009,
-          "time": "",
-          "notes": ""
-        },
-        {
-          "days": "1-5",
-          "month": 6,
-          "year": 2009,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "31", "month": 5, "year": 2009, "time": "", "notes": "" },
+        { "days": "1-5", "month": 6, "year": 2009, "time": "", "notes": "" }
       ],
-      "pathId": "2009-summer-residency"
+      "pathId": "2009-summer-residency",
+      "id": "performances205"
     },
-    {
+    "performances206": {
       "name": "FILTHY",
       "description": "A group invitational multi-media exhibition produced by Plastic Fantastic",
       "location": {
@@ -871,9 +803,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-filthy"
+      "pathId": "2009-filthy",
+      "id": "performances206"
     },
-    {
+    "performances207": {
       "name": "WILMINGTON FRINGE FESTIVAL - full night of SHARP",
       "description": "",
       "location": {
@@ -900,9 +833,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-wilmington-fringe-festival---full-night-of-sharp"
+      "pathId": "2009-wilmington-fringe-festival---full-night-of-sharp",
+      "id": "performances207"
     },
-    {
+    "performances208": {
       "name": "SHARP Full NIGHT FALL PERFORMANCE",
       "description": "",
       "location": {
@@ -929,9 +863,10 @@
           "notes": "Saturday replacement show rescheduled for Sunday Nov. 22nd 3:00 PM"
         }
       ],
-      "pathId": "2009-10-sharp-full-night-fall-performance"
+      "pathId": "2009-10-sharp-full-night-fall-performance",
+      "id": "performances208"
     },
-    {
+    "performances209": {
       "name": "URBAN LAW FORUM DANCE SHOWCASE",
       "description": "",
       "location": {
@@ -951,9 +886,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-urban-law-forum-dance-showcase"
+      "pathId": "2009-urban-law-forum-dance-showcase",
+      "id": "performances209"
     },
-    {
+    "performances210": {
       "name": "HEARTS FULL OF HOPE - Benefit for the March of Dimes",
       "description": "",
       "location": {
@@ -973,9 +909,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-hearts-full-of-hope---benefit-for-the-march-of-dimes"
+      "pathId": "2009-hearts-full-of-hope---benefit-for-the-march-of-dimes",
+      "id": "performances210"
     },
-    {
+    "performances211": {
       "name": "PHILLY DANCE COLLECTIVE",
       "description": "",
       "location": {
@@ -995,9 +932,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-11-philly-dance-collective"
+      "pathId": "2009-11-philly-dance-collective",
+      "id": "performances211"
     },
-    {
+    "performances212": {
       "name": "SHARP Full NIGHT FALL PERFORMANCE",
       "description": "",
       "location": {
@@ -1017,9 +955,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2009-110sharp-full-night-fall-performance"
+      "pathId": "2009-110sharp-full-night-fall-performance",
+      "id": "performances212"
     },
-    {
+    "performances213": {
       "name": "MOUNTAIN DANCE CONCERT",
       "description": "",
       "location": {
@@ -1039,9 +978,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-mountain-dance-concert"
+      "pathId": "2010-mountain-dance-concert",
+      "id": "performances213"
     },
-    {
+    "performances214": {
       "name": "INHALE PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -1061,9 +1001,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-inhale-performance-series"
+      "pathId": "2010-inhale-performance-series",
+      "id": "performances214"
     },
-    {
+    "performances215": {
       "name": "DELAWARE DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -1083,9 +1024,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-delaware-dance-festival"
+      "pathId": "2010-delaware-dance-festival",
+      "id": "performances215"
     },
-    {
+    "performances216": {
       "name": "PHOENIX FRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -1126,9 +1068,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-phoenix-fringe-festival"
+      "pathId": "2010-phoenix-fringe-festival",
+      "id": "performances216"
     },
-    {
+    "performances217": {
       "name": "EVENING OF DUETS",
       "description": "",
       "location": {
@@ -1148,9 +1091,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-evening-of-duets"
+      "pathId": "2010-evening-of-duets",
+      "id": "performances217"
     },
-    {
+    "performances218": {
       "name": "ARTFEST - PERFORMANCE SERIES NEW HAMPSHIRE",
       "description": "",
       "location": {
@@ -1170,9 +1114,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-artfest---performance-series-new-hampshire"
+      "pathId": "2010-artfest---performance-series-new-hampshire",
+      "id": "performances218"
     },
-    {
+    "performances219": {
       "name": "GREEN SPACE - FERTILE GROUND PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -1192,9 +1137,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-green-space---fertile-ground-performance-series"
+      "pathId": "2010-green-space---fertile-ground-performance-series",
+      "id": "performances219"
     },
-    {
+    "performances220": {
       "name": "OUTDOOR SCULPTURE GARDEN PERFORMANCE",
       "description": "",
       "location": {
@@ -1214,9 +1160,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-outdoor-sculpture-garden-performance"
+      "pathId": "2010-outdoor-sculpture-garden-performance",
+      "id": "performances220"
     },
-    {
+    "performances221": {
       "name": "SUMMER CONCERT SERIES-UPPER GWYNEDD",
       "description": "",
       "location": {
@@ -1236,9 +1183,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-summer-concert-series-upper-gwynedd"
+      "pathId": "2010-summer-concert-series-upper-gwynedd",
+      "id": "performances221"
     },
-    {
+    "performances222": {
       "name": "BHPHOTOS PRESENTS-CHOREOGRAPHY SHOWCASE II",
       "description": "",
       "location": {
@@ -1258,9 +1206,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-bhphotos-presents-choreography-showcase-ii"
+      "pathId": "2010-bhphotos-presents-choreography-showcase-ii",
+      "id": "performances222"
     },
-    {
+    "performances223": {
       "name": "FRINGE WILMINGTON - “ADDICTIVE FRAGILITY”",
       "description": "",
       "location": {
@@ -1294,9 +1243,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-fringe-wilmington----addictive-fragility-"
+      "pathId": "2010-fringe-wilmington----addictive-fragility-",
+      "id": "performances223"
     },
-    {
+    "performances224": {
       "name": "SEACOAST FRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -1323,9 +1273,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-seacoast-fringe-festival"
+      "pathId": "2010-seacoast-fringe-festival",
+      "id": "performances224"
     },
-    {
+    "performances225": {
       "name": "SHARP’s HOME SEASON FALL PERFORMANCE - “REVELATION”",
       "description": "",
       "location": {
@@ -1359,9 +1310,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-sharp-s-home-season-fall-performance----revelation-"
+      "pathId": "2010-sharp-s-home-season-fall-performance----revelation-",
+      "id": "performances225"
     },
-    {
+    "performances226": {
       "name": "BIG STEPS FOR LITTLE FEET - Benefit for the March of Dimes",
       "description": "",
       "location": {
@@ -1381,9 +1333,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2010-big-steps-for-little-feet---benefit-for-the-march-of-dimes"
+      "pathId": "2010-big-steps-for-little-feet---benefit-for-the-march-of-dimes",
+      "id": "performances226"
     },
-    {
+    "performances227": {
       "name": "MOUNTAIN DANCE FESTIVAL 2011",
       "description": "",
       "location": {
@@ -1403,9 +1356,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2011-mountain-dance-festival-2011"
+      "pathId": "2011-mountain-dance-festival-2011",
+      "id": "performances227"
     },
-    {
+    "performances228": {
       "name": "STEPS ON BROADWAY-Performance Lab Series",
       "description": "",
       "location": {
@@ -1425,9 +1379,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2011-steps-on-broadway-performance-lab-series"
+      "pathId": "2011-steps-on-broadway-performance-lab-series",
+      "id": "performances228"
     },
-    {
+    "performances229": {
       "name": "ARTFEST PERFORMANCE SERIES NEW HAMPSHIRE",
       "description": "",
       "location": {
@@ -1447,31 +1402,24 @@
           "notes": ""
         }
       ],
-      "pathId": "2011-artfest-performance-series-new-hampshire"
+      "pathId": "2011-artfest-performance-series-new-hampshire",
+      "id": "performances229"
     },
-    {
+    "performances230": {
       "name": "ARMILLA - SHARP’s  Home Season Performance",
       "description": "Performing a full night of SHARP work with four premiere pieces",
-      "location": {
-        "name": "",
-        "address": ""
-      },
+      "location": { "name": "", "address": "" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "",
-          "month": 0,
-          "year": 2011,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "", "month": 0, "year": 2011, "time": "", "notes": "" }
       ],
-      "pathId": "2011-armilla---sharp-s--home-season-performance"
+      "pathId": "2011-armilla---sharp-s--home-season-performance",
+      "id": "performances230"
     },
-    {
+    "performances231": {
       "name": "PHILADELPHIA INTERNATIONAL FESTIVAL OF THE ARTS (PIFA)",
       "description": "Festival runs April 7-May 1, 2011",
       "location": {
@@ -1505,31 +1453,24 @@
           "notes": ""
         }
       ],
-      "pathId": "2011-philadelphia-international-festival-of-the-arts--pifa-"
+      "pathId": "2011-philadelphia-international-festival-of-the-arts--pifa-",
+      "id": "performances231"
     },
-    {
+    "performances232": {
       "name": "SUMMER RESIDENCY",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Cape May New Jersey"
-      },
+      "location": { "name": "", "address": "Cape May New Jersey" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "13-17",
-          "month": 6,
-          "year": 2011,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "13-17", "month": 6, "year": 2011, "time": "", "notes": "" }
       ],
-      "pathId": "2011-summer-residency"
+      "pathId": "2011-summer-residency",
+      "id": "performances232"
     },
-    {
+    "performances233": {
       "name": "WILMINGTON FRINGE FESTIVAL 2011",
       "description": "",
       "location": {
@@ -1556,9 +1497,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2011-wilmington-fringe-festival-2011"
+      "pathId": "2011-wilmington-fringe-festival-2011",
+      "id": "performances233"
     },
-    {
+    "performances234": {
       "name": "ETC PERFORMANCE SERIES 2011",
       "description": "",
       "location": {
@@ -1585,9 +1527,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2011-etc-performance-series-2011"
+      "pathId": "2011-etc-performance-series-2011",
+      "id": "performances234"
     },
-    {
+    "performances235": {
       "name": "SEACOAST FRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -1614,9 +1557,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2011-seacoast-fringe-festival"
+      "pathId": "2011-seacoast-fringe-festival",
+      "id": "performances235"
     },
-    {
+    "performances236": {
       "name": "",
       "description": "",
       "location": {
@@ -1650,9 +1594,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2011-"
+      "pathId": "2011-",
+      "id": "performances236"
     },
-    {
+    "performances237": {
       "name": "DELAWARE DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -1672,9 +1617,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2012-delaware-dance-festival"
+      "pathId": "2012-delaware-dance-festival",
+      "id": "performances237"
     },
-    {
+    "performances238": {
       "name": "INDIGENOUS PITCH DANCE COLLECTIVE",
       "description": "",
       "location": {
@@ -1708,31 +1654,24 @@
           "notes": ""
         }
       ],
-      "pathId": "2012-indigenous-pitch-dance-collective"
+      "pathId": "2012-indigenous-pitch-dance-collective",
+      "id": "performances238"
     },
-    {
+    "performances239": {
       "name": "PHILADELPHIA ALLIANCE 10TH ANNUAL CONFERENCE",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Philadelphia, PA"
-      },
+      "location": { "name": "", "address": "Philadelphia, PA" },
       "footnote": "",
       "website": "//www.philalliance.org",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "20",
-          "month": 4,
-          "year": 2012,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "20", "month": 4, "year": 2012, "time": "", "notes": "" }
       ],
-      "pathId": "2012-philadelphia-alliance-10th-annual-conference"
+      "pathId": "2012-philadelphia-alliance-10th-annual-conference",
+      "id": "performances239"
     },
-    {
+    "performances240": {
       "name": "PERFORMANCE GARAGE OPEN HOUSE II",
       "description": "",
       "location": {
@@ -1752,31 +1691,24 @@
           "notes": ""
         }
       ],
-      "pathId": "2012-performance-garage-open-house-ii"
+      "pathId": "2012-performance-garage-open-house-ii",
+      "id": "performances240"
     },
-    {
+    "performances241": {
       "name": "DANCE/USA CONFERENCE 2012",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "San Francisco, California"
-      },
+      "location": { "name": "", "address": "San Francisco, California" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "27-30",
-          "month": 6,
-          "year": 2012,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "27-30", "month": 6, "year": 2012, "time": "", "notes": "" }
       ],
-      "pathId": "2012-dance-usa-conference-2012"
+      "pathId": "2012-dance-usa-conference-2012",
+      "id": "performances241"
     },
-    {
+    "performances242": {
       "name": "BEDFRINGE FESTIVAL (UK)",
       "description": "",
       "location": {
@@ -1803,9 +1735,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2012-bedfringe-festival--uk-"
+      "pathId": "2012-bedfringe-festival--uk-",
+      "id": "performances242"
     },
-    {
+    "performances243": {
       "name": "CHICAGO FRINGE FESTIVAL 2012",
       "description": "",
       "location": {
@@ -1839,9 +1772,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2012-chicago-fringe-festival-2012"
+      "pathId": "2012-chicago-fringe-festival-2012",
+      "id": "performances243"
     },
-    {
+    "performances244": {
       "name": "KORESH ARTIST SHOWCASE",
       "description": "",
       "location": {
@@ -1868,9 +1802,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2012-koresh-artist-showcase"
+      "pathId": "2012-koresh-artist-showcase",
+      "id": "performances244"
     },
-    {
+    "performances245": {
       "name": "SHARP HOME SEASON PERFORMANCE - ”Four hot men and an old lady”",
       "description": "Performing full night of SHARP new work with 4 amazing guest choreographers:\nSteven Vaughn (Parsons Dance Company Member), Charles Tyson (Underground Danceworks),  Kevin Ferguson (former Parsons Dance Company & Doug Elkins Dance Company dancer),  Joe Cotler (Koresh Dance Company) and Diane Sharp-Nachsin (Artistic Director of SHARP)",
       "location": {
@@ -1897,9 +1832,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2012-sharp-home-season-performance----four-hot-men-and-an-old-lady-"
+      "pathId": "2012-sharp-home-season-performance----four-hot-men-and-an-old-lady-",
+      "id": "performances245"
     },
-    {
+    "performances246": {
       "name": "INHALE PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -1919,9 +1855,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2013-inhale-performance-series"
+      "pathId": "2013-inhale-performance-series",
+      "id": "performances246"
     },
-    {
+    "performances247": {
       "name": "DELAWARE DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -1941,9 +1878,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2013-delaware-dance-festival"
+      "pathId": "2013-delaware-dance-festival",
+      "id": "performances247"
     },
-    {
+    "performances248": {
       "name": "“PHILADELPHIA INTERNATIONAL FESTIVAL OF THE ARTS (PIFA)",
       "description": "Aquarian Exposition: A Trip back to the Original Woodstock”",
       "location": {
@@ -1955,17 +1893,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "12-21",
-          "month": 4,
-          "year": 2013,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "12-21", "month": 4, "year": 2013, "time": "", "notes": "" }
       ],
-      "pathId": "2013--philadelphia-international-festival-of-the-arts--pifa-"
+      "pathId": "2013--philadelphia-international-festival-of-the-arts--pifa-",
+      "id": "performances248"
     },
-    {
+    "performances249": {
       "name": "COME TOGETHER DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -1985,31 +1918,24 @@
           "notes": ""
         }
       ],
-      "pathId": "2013-come-together-dance-festival"
+      "pathId": "2013-come-together-dance-festival",
+      "id": "performances249"
     },
-    {
+    "performances250": {
       "name": "ITALY RESIDENCY",
       "description": "Artistic Director Diane Sharp-Nachsin was invited to a residency in Italy with 10 other artists world-wide.",
-      "location": {
-        "name": "",
-        "address": "Province of Lecce, Italy"
-      },
+      "location": { "name": "", "address": "Province of Lecce, Italy" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "15-30",
-          "month": 6,
-          "year": 2013,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "15-30", "month": 6, "year": 2013, "time": "", "notes": "" }
       ],
-      "pathId": "2013-italy-residency"
+      "pathId": "2013-italy-residency",
+      "id": "performances250"
     },
-    {
+    "performances251": {
       "name": "SOUTHERN VERMONT DANCE FESTIVAL",
       "description": "",
       "location": {
@@ -2029,9 +1955,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2013-southern-vermont-dance-festival"
+      "pathId": "2013-southern-vermont-dance-festival",
+      "id": "performances251"
     },
-    {
+    "performances252": {
       "name": "ROCHESTER FRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -2051,9 +1978,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2013-rochester-fringe-festival"
+      "pathId": "2013-rochester-fringe-festival",
+      "id": "performances252"
     },
-    {
+    "performances253": {
       "name": "ETC PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -2073,9 +2001,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2013-etc-performance-series"
+      "pathId": "2013-etc-performance-series",
+      "id": "performances253"
     },
-    {
+    "performances254": {
       "name": "SHARP HOME SEASON PERFORMANCE “PERCEPTIONS”",
       "description": "",
       "location": {
@@ -2087,17 +2016,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "22-24",
-          "month": 11,
-          "year": 2013,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "22-24", "month": 11, "year": 2013, "time": "", "notes": "" }
       ],
-      "pathId": "2013-sharp-home-season-performance--perceptions-"
+      "pathId": "2013-sharp-home-season-performance--perceptions-",
+      "id": "performances254"
     },
-    {
+    "performances255": {
       "name": "TEACHING RESIDENCY/PERFORMANCE",
       "description": "",
       "location": {
@@ -2109,17 +2033,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "20",
-          "month": 3,
-          "year": 2014,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "20", "month": 3, "year": 2014, "time": "", "notes": "" }
       ],
-      "pathId": "2014-teaching-residency-performance"
+      "pathId": "2014-teaching-residency-performance",
+      "id": "performances255"
     },
-    {
+    "performances256": {
       "name": "ARTISTRY UNFOLDED PERFORMANCE SERIES",
       "description": "",
       "location": {
@@ -2139,31 +2058,24 @@
           "notes": ""
         }
       ],
-      "pathId": "2014-artistry-unfolded-performance-series"
+      "pathId": "2014-artistry-unfolded-performance-series",
+      "id": "performances256"
     },
-    {
+    "performances257": {
       "name": "GREECE ARTIST RESIDENCY",
       "description": "Artistic Director Diane Sharp-Nachsin was invited to a residency in Greece and will be accompanied by dancers Caroline Butcher and Sandra Davis.",
-      "location": {
-        "name": "",
-        "address": "Paros, Greece"
-      },
+      "location": { "name": "", "address": "Paros, Greece" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "13-27",
-          "month": 4,
-          "year": 2014,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "13-27", "month": 4, "year": 2014, "time": "", "notes": "" }
       ],
-      "pathId": "2014-greece-artist-residency"
+      "pathId": "2014-greece-artist-residency",
+      "id": "performances257"
     },
-    {
+    "performances258": {
       "name": "CINCYFRINGE 2014",
       "description": "",
       "location": {
@@ -2197,15 +2109,13 @@
           "notes": ""
         }
       ],
-      "pathId": "2014-cincyfringe-2014"
+      "pathId": "2014-cincyfringe-2014",
+      "id": "performances258"
     },
-    {
+    "performances259": {
       "name": "PORTFRINGE 2014",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Portland, ME 04101"
-      },
+      "location": { "name": "", "address": "Portland, ME 04101" },
       "footnote": "",
       "website": "",
       "pricing": "",
@@ -2226,9 +2136,10 @@
           "notes": "Genos Rock Club 625 Congress St."
         }
       ],
-      "pathId": "2014-portfringe-2014"
+      "pathId": "2014-portfringe-2014",
+      "id": "performances259"
     },
-    {
+    "performances260": {
       "name": "SOUTHERN VERMONT DANCE FESTIVAL 2014",
       "description": "",
       "location": {
@@ -2255,9 +2166,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2014-southern-vermont-dance-festival-2014"
+      "pathId": "2014-southern-vermont-dance-festival-2014",
+      "id": "performances260"
     },
-    {
+    "performances261": {
       "name": "BH PHOTO SHOWCASE 2014",
       "description": "Steven Vaughn (formally of Parsons Dance) will be performing “The Journey” originally choreographed for him in 2006.",
       "location": {
@@ -2277,9 +2189,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2014-bh-photo-showcase-2014"
+      "pathId": "2014-bh-photo-showcase-2014",
+      "id": "performances261"
     },
-    {
+    "performances262": {
       "name": "SHARP HOME SEASON 9th YEAR REUNION PERFORMANCE - “The Journey”",
       "description": "",
       "location": {
@@ -2291,17 +2204,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "10-12",
-          "month": 10,
-          "year": 2014,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "10-12", "month": 10, "year": 2014, "time": "", "notes": "" }
       ],
-      "pathId": "2014-sharp-home-season-9th-year-reunion-performance----the-journey-"
+      "pathId": "2014-sharp-home-season-9th-year-reunion-performance----the-journey-",
+      "id": "performances262"
     },
-    {
+    "performances263": {
       "name": "MID-ATLANTIC PERFORMING ARTS CONFERENCE",
       "description": "",
       "location": {
@@ -2313,17 +2221,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "10-12",
-          "month": 11,
-          "year": 2014,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "10-12", "month": 11, "year": 2014, "time": "", "notes": "" }
       ],
-      "pathId": "2014-mid-atlantic-performing-arts-conference"
+      "pathId": "2014-mid-atlantic-performing-arts-conference",
+      "id": "performances263"
     },
-    {
+    "performances264": {
       "name": "REVENTING THE STANDARD",
       "description": "",
       "location": {
@@ -2343,9 +2246,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2014-reventing-the-standard"
+      "pathId": "2014-reventing-the-standard",
+      "id": "performances264"
     },
-    {
+    "performances265": {
       "name": "DELAWARE DANCE FESTIVAL 2015",
       "description": "",
       "location": {
@@ -2365,9 +2269,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2015-delaware-dance-festival-2015"
+      "pathId": "2015-delaware-dance-festival-2015",
+      "id": "performances265"
     },
-    {
+    "performances266": {
       "name": "NICE AND FRESH: February",
       "description": "",
       "location": {
@@ -2379,17 +2284,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "27-28",
-          "month": 2,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "27-28", "month": 2, "year": 2015, "time": "", "notes": "" }
       ],
-      "pathId": "2015-nice-and-fresh--february"
+      "pathId": "2015-nice-and-fresh--february",
+      "id": "performances266"
     },
-    {
+    "performances267": {
       "name": "UNE SOIREE AU CABARET -FUNDRAISER PERFORMANCE",
       "description": "",
       "location": {
@@ -2401,17 +2301,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "1-2",
-          "month": 5,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "1-2", "month": 5, "year": 2015, "time": "", "notes": "" }
       ],
-      "pathId": "2015-une-soiree-au-cabaret--fundraiser-performance"
+      "pathId": "2015-une-soiree-au-cabaret--fundraiser-performance",
+      "id": "performances267"
     },
-    {
+    "performances268": {
       "name": "PWR Anniversary & Power Award Celebration",
       "description": "",
       "location": {
@@ -2431,9 +2326,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2015-pwr-anniversary---power-award-celebration"
+      "pathId": "2015-pwr-anniversary---power-award-celebration",
+      "id": "performances268"
     },
-    {
+    "performances269": {
       "name": "SCRANTON FRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -2445,17 +2341,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "3-4",
-          "month": 10,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "3-4", "month": 10, "year": 2015, "time": "", "notes": "" }
       ],
-      "pathId": "2015-scranton-fringe-festival"
+      "pathId": "2015-scranton-fringe-festival",
+      "id": "performances269"
     },
-    {
+    "performances270": {
       "name": "BOULDER FRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -2467,17 +2358,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "17-21",
-          "month": 9,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "17-21", "month": 9, "year": 2015, "time": "", "notes": "" }
       ],
-      "pathId": "2015-boulder-fringe-festival"
+      "pathId": "2015-boulder-fringe-festival",
+      "id": "performances270"
     },
-    {
+    "performances271": {
       "name": "SAN DIEGO FRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -2489,24 +2375,13 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "30-31",
-          "month": 7,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        },
-        {
-          "days": "1-2",
-          "month": 8,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "30-31", "month": 7, "year": 2015, "time": "", "notes": "" },
+        { "days": "1-2", "month": 8, "year": 2015, "time": "", "notes": "" }
       ],
-      "pathId": "2015-san-diego-fringe-festival"
+      "pathId": "2015-san-diego-fringe-festival",
+      "id": "performances271"
     },
-    {
+    "performances272": {
       "name": "CAPITAL FRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -2518,17 +2393,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "15-25",
-          "month": 7,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "15-25", "month": 7, "year": 2015, "time": "", "notes": "" }
       ],
-      "pathId": "2015-capital-fringe-festival"
+      "pathId": "2015-capital-fringe-festival",
+      "id": "performances272"
     },
-    {
+    "performances273": {
       "name": "COME TOGETHER FESTIVAL",
       "description": "",
       "location": {
@@ -2548,31 +2418,24 @@
           "notes": ""
         }
       ],
-      "pathId": "2015-come-together-festival"
+      "pathId": "2015-come-together-festival",
+      "id": "performances273"
     },
-    {
+    "performances274": {
       "name": "Dance/USA Conference",
       "description": "",
-      "location": {
-        "name": "2015 Annual Conference",
-        "address": "Miami, FL"
-      },
+      "location": { "name": "2015 Annual Conference", "address": "Miami, FL" },
       "footnote": "Supported by: Knight Foundation Informed & Engaged Communities",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "17-20",
-          "month": 6,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "17-20", "month": 6, "year": 2015, "time": "", "notes": "" }
       ],
-      "pathId": "2015-dance-usa-conference"
+      "pathId": "2015-dance-usa-conference",
+      "id": "performances274"
     },
-    {
+    "performances275": {
       "name": "Juried Showcase OAPN Performance Conference",
       "description": "",
       "location": {
@@ -2592,9 +2455,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2015-juried-showcase-oapn-performance-conference"
+      "pathId": "2015-juried-showcase-oapn-performance-conference",
+      "id": "performances275"
     },
-    {
+    "performances276": {
       "name": "“THE SEVEN WINDOWS”- SHARP Home Season Performance",
       "description": "Premiere of all new work with collaboration of visual artists & musicians from around the world including: Visual Artists, [Jill Brandwein](https://jillbrandwein.com/home.html) (Italy), [Patricia Zarate](//www.patriciazarate.com) (NY), [Julia Salinger](//www.bakedmashedfried.com) (MA), [Danielle Hallman](https://dk-illustrations.com/home.html) (Philadelphia)  Musician [Monica McIntyre](https://www.reverbnation.com/monicamcintyre) (New Orleans) and Choreographer Diane Sharp-Nachsin.",
       "location": {
@@ -2606,17 +2470,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "6-8",
-          "month": 11,
-          "year": 2015,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "6-8", "month": 11, "year": 2015, "time": "", "notes": "" }
       ],
-      "pathId": "2015--the-seven-windows---sharp-home-season-performance"
+      "pathId": "2015--the-seven-windows---sharp-home-season-performance",
+      "id": "performances276"
     },
-    {
+    "performances277": {
       "name": "“16 WORDS”- SHARP’s Home Season Performance",
       "description": "",
       "location": {
@@ -2650,9 +2509,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2016--16-words---sharp-s-home-season-performance"
+      "pathId": "2016--16-words---sharp-s-home-season-performance",
+      "id": "performances277"
     },
-    {
+    "performances278": {
       "name": "MID-ATLANTIC PERFORMING Arts Conference",
       "description": "",
       "location": {
@@ -2664,17 +2524,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "1-3",
-          "month": 11,
-          "year": 2016,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "1-3", "month": 11, "year": 2016, "time": "", "notes": "" }
       ],
-      "pathId": "2016-mid-atlantic-performing-arts-conference"
+      "pathId": "2016-mid-atlantic-performing-arts-conference",
+      "id": "performances278"
     },
-    {
+    "performances279": {
       "name": "OAPN-OHIO ARTS PRESENTERS Network Conference",
       "description": "",
       "location": {
@@ -2686,17 +2541,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "17-19",
-          "month": 10,
-          "year": 2016,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "17-19", "month": 10, "year": 2016, "time": "", "notes": "" }
       ],
-      "pathId": "2016-oapn-ohio-arts-presenters-network-conference"
+      "pathId": "2016-oapn-ohio-arts-presenters-network-conference",
+      "id": "performances279"
     },
-    {
+    "performances280": {
       "name": "PERFORMING ARTS EXCHANGE by South Arts",
       "description": "",
       "location": {
@@ -2708,17 +2558,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "26-29",
-          "month": 9,
-          "year": 2016,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "26-29", "month": 9, "year": 2016, "time": "", "notes": "" }
       ],
-      "pathId": "2016-performing-arts-exchange-by-south-arts"
+      "pathId": "2016-performing-arts-exchange-by-south-arts",
+      "id": "performances280"
     },
-    {
+    "performances281": {
       "name": "FIRST NIAGARA ROCHESTER Fringe Festival",
       "description": "",
       "location": {
@@ -2738,9 +2583,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2016-first-niagara-rochester-fringe-festival"
+      "pathId": "2016-first-niagara-rochester-fringe-festival",
+      "id": "performances281"
     },
-    {
+    "performances282": {
       "name": "ARTSMIDWEST Conference",
       "description": "",
       "location": {
@@ -2752,17 +2598,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "13-16",
-          "month": 9,
-          "year": 2016,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "13-16", "month": 9, "year": 2016, "time": "", "notes": "" }
       ],
-      "pathId": "2016-artsmidwest-conference"
+      "pathId": "2016-artsmidwest-conference",
+      "id": "performances282"
     },
-    {
+    "performances283": {
       "name": "CAPITALFringe Festival",
       "description": "",
       "location": {
@@ -2774,17 +2615,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "15-17",
-          "month": 7,
-          "year": 2016,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "15-17", "month": 7, "year": 2016, "time": "", "notes": "" }
       ],
-      "pathId": "2016-capitalfringe-festival"
+      "pathId": "2016-capitalfringe-festival",
+      "id": "performances283"
     },
-    {
+    "performances284": {
       "name": "CINCYFRINGE FESTIVAL",
       "description": "",
       "location": {
@@ -2796,39 +2632,26 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "8-11",
-          "month": 6,
-          "year": 2016,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "8-11", "month": 6, "year": 2016, "time": "", "notes": "" }
       ],
-      "pathId": "2016-cincyfringe-festival"
+      "pathId": "2016-cincyfringe-festival",
+      "id": "performances284"
     },
-    {
+    "performances285": {
       "name": "SUMMER ARTIST RESIDENCY",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Ocean City, NJ"
-      },
+      "location": { "name": "", "address": "Ocean City, NJ" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "19-22",
-          "month": 5,
-          "year": 2016,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "19-22", "month": 5, "year": 2016, "time": "", "notes": "" }
       ],
-      "pathId": "2016-summer-artist-residency"
+      "pathId": "2016-summer-artist-residency",
+      "id": "performances285"
     },
-    {
+    "performances286": {
       "name": "GORDON CENTER FOR THE PERFORMING ARTS",
       "description": "",
       "location": {
@@ -2848,9 +2671,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2016-gordon-center-for-the-performing-arts"
+      "pathId": "2016-gordon-center-for-the-performing-arts",
+      "id": "performances286"
     },
-    {
+    "performances287": {
       "name": "APAP/NYC Arts Conference Showcase",
       "description": "The showcase will feature Koresh Dance, Kun-Yang Lin/Dancers, BalletX and SHARP Dance Company as part of the Dance Managers Collective at City Center produced by Koresh Dance Company.",
       "location": {
@@ -2870,9 +2694,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2017-apap-nyc-arts-conference-showcase"
+      "pathId": "2017-apap-nyc-arts-conference-showcase",
+      "id": "performances287"
     },
-    {
+    "performances288": {
       "name": "“ACT ONE/ACT TWO”",
       "description": "SHARP Dance Company hopes to build community by inviting two choreographers to open Act one and Act Two of this performance. Chosen choreographers are:  Asya Zlatina (Philadelphia, PA) & Elizabeth Shea Dance (Bloomington, Indiana).  Show runs approx. 90 minutes.",
       "location": {
@@ -2913,9 +2738,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2017--act-one-act-two-"
+      "pathId": "2017--act-one-act-two-",
+      "id": "performances288"
     },
-    {
+    "performances289": {
       "name": "COME TOGETHER DANCE FESTIVAL",
       "description": "Koresh Dance Company will unite dance innovators, audience favorites, and emerging artists this summer when it presents 41 dance companies in its 4th annual Come Together Dance Festival in Philadelphia.",
       "location": {
@@ -2935,9 +2761,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2017-come-together-dance-festival"
+      "pathId": "2017-come-together-dance-festival",
+      "id": "performances289"
     },
-    {
+    "performances290": {
       "name": "ARTSMIDWEST Conference",
       "description": "",
       "location": {
@@ -2949,13 +2776,7 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "28-31",
-          "month": 8,
-          "year": 2017,
-          "time": "",
-          "notes": ""
-        },
+        { "days": "28-31", "month": 8, "year": 2017, "time": "", "notes": "" },
         {
           "days": "29",
           "month": 8,
@@ -2985,9 +2806,10 @@
           "notes": "Performing SHARP repertory with SHARP's Full Dance Company!"
         }
       ],
-      "pathId": "2017-artsmidwest-conference"
+      "pathId": "2017-artsmidwest-conference",
+      "id": "performances290"
     },
-    {
+    "performances291": {
       "name": "DELAWARE ART MUSUEM",
       "description": "Collaborative performance with Syrian Artist Emad “Jano” Hemede",
       "location": {
@@ -3007,9 +2829,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2017-delaware-art-musuem"
+      "pathId": "2017-delaware-art-musuem",
+      "id": "performances291"
     },
-    {
+    "performances292": {
       "name": "PERFORMING ARTS EXCHANGE by South Arts",
       "description": "Performing the “Garden Tour “ with 3 dancers and the Living Garden!",
       "location": {
@@ -3029,9 +2852,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2017-performing-arts-exchange-by-south-arts"
+      "pathId": "2017-performing-arts-exchange-by-south-arts",
+      "id": "performances292"
     },
-    {
+    "performances293": {
       "name": "ARTSMARKET 2017",
       "description": "",
       "location": {
@@ -3043,17 +2867,12 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "6-8",
-          "month": 11,
-          "year": 2017,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "6-8", "month": 11, "year": 2017, "time": "", "notes": "" }
       ],
-      "pathId": "2017-artsmarket-2017"
+      "pathId": "2017-artsmarket-2017",
+      "id": "performances293"
     },
-    {
+    "performances294": {
       "name": "SHARP’s Fall Home Season Performance - ”HUMANITY”",
       "description": "Featuring the multi-media piece “MADNESS” and the world premiere of “669.”",
       "location": {
@@ -3087,9 +2906,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2017-sharp-s-fall-home-season-performance----humanity-"
+      "pathId": "2017-sharp-s-fall-home-season-performance----humanity-",
+      "id": "performances294"
     },
-    {
+    "performances295": {
       "name": "Project Moshen Charity Performance - ”EXCERPTS”",
       "description": "A production benefiting the Morris Animal Refuge-Opening Reception, Raffles & Silent Auction begin at 7 PM",
       "location": {
@@ -3109,9 +2929,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2017-project-moshen-charity-performance----excerpts-"
+      "pathId": "2017-project-moshen-charity-performance----excerpts-",
+      "id": "performances295"
     },
-    {
+    "performances296": {
       "name": "APAP/NYC Arts Conference & Showcase",
       "description": "Showcase Performance",
       "location": {
@@ -3131,31 +2952,24 @@
           "notes": ""
         }
       ],
-      "pathId": "2017-apap-nyc-arts-conference---showcase"
+      "pathId": "2017-apap-nyc-arts-conference---showcase",
+      "id": "performances296"
     },
-    {
+    "performances297": {
       "name": "Beach Residency",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Ocean City, NJ"
-      },
+      "location": { "name": "", "address": "Ocean City, NJ" },
       "footnote": "",
       "website": "",
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "6-9",
-          "month": 4,
-          "year": 2018,
-          "time": "",
-          "notes": ""
-        }
+        { "days": "6-9", "month": 4, "year": 2018, "time": "", "notes": "" }
       ],
-      "pathId": "2018-beach-residency"
+      "pathId": "2018-beach-residency",
+      "id": "performances297"
     },
-    {
+    "performances298": {
       "name": "ACT One/ACT Two -SHARP’s Spring Home Season Performance",
       "description": "SHARP is trying to build community by inviting two other choreographers to join our Spring performance.  Choreographers chosen this year are:  Blythe Contemporary Ballet and Project Moshen.",
       "location": {
@@ -3182,9 +2996,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2018-act-one-act-two--sharp-s-spring-home-season-performance"
+      "pathId": "2018-act-one-act-two--sharp-s-spring-home-season-performance",
+      "id": "performances298"
     },
-    {
+    "performances299": {
       "name": "BOSTON CONTEMPORARY DANCE FESTIVAL National Showcase",
       "description": "Performing excerpts of “669”",
       "location": {
@@ -3204,15 +3019,13 @@
           "notes": ""
         }
       ],
-      "pathId": "2018-boston-contemporary-dance-festival-national-showcase"
+      "pathId": "2018-boston-contemporary-dance-festival-national-showcase",
+      "id": "performances299"
     },
-    {
+    "performances300": {
       "name": "ARTSMIDWEST Conference",
       "description": "Pitch Session",
-      "location": {
-        "name": "",
-        "address": "Indianapolis, Indiana"
-      },
+      "location": { "name": "", "address": "Indianapolis, Indiana" },
       "footnote": "",
       "website": "",
       "pricing": "",
@@ -3226,9 +3039,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2018-artsmidwest-conference"
+      "pathId": "2018-artsmidwest-conference",
+      "id": "performances300"
     },
-    {
+    "performances301": {
       "name": "PERFORMING ARTS EXCHANGE by South Arts",
       "description": "",
       "location": {
@@ -3248,9 +3062,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2018-performing-arts-exchange-by-south-arts"
+      "pathId": "2018-performing-arts-exchange-by-south-arts",
+      "id": "performances301"
     },
-    {
+    "performances302": {
       "name": "MAPAM Conference",
       "description": "Juried Performance",
       "location": {
@@ -3262,13 +3077,7 @@
       "pricing": "",
       "purchaseUrl": "",
       "dates": [
-        {
-          "days": "8-10",
-          "month": 11,
-          "year": 2018,
-          "time": "",
-          "notes": ""
-        },
+        { "days": "8-10", "month": 11, "year": 2018, "time": "", "notes": "" },
         {
           "days": "9",
           "month": 11,
@@ -3277,9 +3086,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2018-mapam-conference"
+      "pathId": "2018-mapam-conference",
+      "id": "performances302"
     },
-    {
+    "performances303": {
       "name": "SHARP’s Fall Home Season Performance",
       "description": "Featuring the collaboration choreography project of “PUZZLE” co-choreographed by \nJoe Cotler (Koresh Dance Company) & Diane Sharp-Nachsin (Artistic Director of SHARP)",
       "location": {
@@ -3313,9 +3123,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2018-sharp-s-fall-home-season-performance"
+      "pathId": "2018-sharp-s-fall-home-season-performance",
+      "id": "performances303"
     },
-    {
+    "performances304": {
       "name": "COME TOGETHER FESTIVAL",
       "description": "",
       "location": {
@@ -3335,9 +3146,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2018-come-together-festival"
+      "pathId": "2018-come-together-festival",
+      "id": "performances304"
     },
-    {
+    "performances305": {
       "name": "APAP/NYC Arts Conference & Showcase",
       "description": "",
       "location": {
@@ -3357,9 +3169,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2019-apap-nyc-arts-conference---showcase"
+      "pathId": "2019-apap-nyc-arts-conference---showcase",
+      "id": "performances305"
     },
-    {
+    "performances306": {
       "name": "Charity Performance for the Tree of Life Synagogue families",
       "description": "Featuring SHARP repertory &“669” the Story of Nicholas Winton who saved 669 children from the Holocaust.",
       "location": {
@@ -3379,9 +3192,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2019-charity-performance-for-the-tree-of-life-synagogue-families"
+      "pathId": "2019-charity-performance-for-the-tree-of-life-synagogue-families",
+      "id": "performances306"
     },
-    {
+    "performances307": {
       "name": "SHARP Dance Company Spring Home Season Performance",
       "description": "Featuring SHARP repertory &“669” the Story of Nicholas Winton who saved 669 children from the Holocaust.",
       "location": {
@@ -3399,9 +3213,10 @@
           "notes": ""
         }
       ],
-      "pathId": "2019-sharp-dance-company-spring-home-season-performance"
+      "pathId": "2019-sharp-dance-company-spring-home-season-performance",
+      "id": "performances307"
     },
-    {
+    "performances308": {
       "name": "Arts Center at Lake Superior State University",
       "description": "Featuring “Seven Windows” & “Puzzle” a collaborative piece with choreographers Joe Cotler(Koresh Dance Company Member)  & Diane Sharp-Nachsin (Artistic Director of SHARP)",
       "location": {
@@ -3421,15 +3236,13 @@
           "notes": "Tickets available soon"
         }
       ],
-      "pathId": "2020-arts-center-at-lake-superior-state-university"
+      "pathId": "2020-arts-center-at-lake-superior-state-university",
+      "id": "performances308"
     },
-    {
+    "performances309": {
       "name": "APAP Conference",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "New York City, NY"
-      },
+      "location": { "name": "", "address": "New York City, NY" },
       "footnote": "",
       "website": "",
       "pricing": "",
@@ -3443,9 +3256,10 @@
           "notes": "Details TBA"
         }
       ],
-      "pathId": "2020-apap-conference"
+      "pathId": "2020-apap-conference",
+      "id": "performances309"
     },
-    {
+    "performances310": {
       "name": "SHARP’s Fall Home Season Performance",
       "description": "AQUARIAN EXPOSITION:  A TRIP BACK TO THE ORGIINAL WOOSTOCK",
       "location": {
@@ -3479,15 +3293,13 @@
           "notes": ""
         }
       ],
-      "pathId": "2019-sharp-s-fall-home-season-performance"
+      "pathId": "2019-sharp-s-fall-home-season-performance",
+      "id": "performances310"
     },
-    {
+    "performances311": {
       "name": "PERFORMING ARTS EXCHANGE by South Arts",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Orlando, FL"
-      },
+      "location": { "name": "", "address": "Orlando, FL" },
       "footnote": "",
       "website": "",
       "pricing": "",
@@ -3501,15 +3313,13 @@
           "notes": "Booth # TBA"
         }
       ],
-      "pathId": "2019-performing-arts-exchange-by-south-arts"
+      "pathId": "2019-performing-arts-exchange-by-south-arts",
+      "id": "performances311"
     },
-    {
+    "performances312": {
       "name": "SABES JCC",
       "description": "Featuring SHARP repertory &“669” the Story of Nicholas Winton who saved 669 children from the Holocaust.",
-      "location": {
-        "name": "",
-        "address": "Minneapolis, MN"
-      },
+      "location": { "name": "", "address": "Minneapolis, MN" },
       "footnote": "",
       "website": "",
       "pricing": "",
@@ -3523,15 +3333,13 @@
           "notes": ""
         }
       ],
-      "pathId": "2019-sabes-jcc"
+      "pathId": "2019-sabes-jcc",
+      "id": "performances312"
     },
-    {
+    "performances313": {
       "name": "ARTSMIDWEST Conference",
       "description": "",
-      "location": {
-        "name": "",
-        "address": "Minneapolis, MN"
-      },
+      "location": { "name": "", "address": "Minneapolis, MN" },
       "footnote": "",
       "website": "",
       "pricing": "",
@@ -3552,7 +3360,8 @@
           "notes": ""
         }
       ],
-      "pathId": "2019-artsmidwest-conference"
+      "pathId": "2019-artsmidwest-conference",
+      "id": "performances313"
     }
-  ]
+  }
 }

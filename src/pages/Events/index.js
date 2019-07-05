@@ -37,7 +37,7 @@ const renderPerformances = ([year, perfs]) =>
   );
 
 export default function Events({ pages, performances }) {
-  const parsedPerformances = performances.map(parseSchedule);
+  const parsedPerformances = Object.values(performances).map(parseSchedule);
   const upcomingPerformances = parsedPerformances
     .filter(({ isFuture }) => isFuture)
     .sort(olderFirst);
