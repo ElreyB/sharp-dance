@@ -6,9 +6,10 @@ export const withDatabase = Component => {
   const WithDatabase = props => {
     const [database, setDatabase] = useState(null);
     useEffect(() => {
-      const db = getDB();
+      let db;
+      getDB().then(value => (db = value));
       setDatabase(db);
-    }, []);
+    }, [database]);
 
     return (
       <DatabaseContext.Provider value={database}>

@@ -11,7 +11,7 @@ import Loading from "./pages/Loading";
 import Login from "./pages/Login";
 import Media from "./pages/Media";
 import SignUp from "./pages/SignUp";
-import { withAuthentication, getDB, loadLocal } from "../src/fbconfig";
+import { getDB, loadLocal } from "../src/fbconfig";
 import {
   ABOUT,
   ADMIN,
@@ -61,4 +61,4 @@ function App() {
   );
 }
 
-export default withAuthentication(App);
+export default App;

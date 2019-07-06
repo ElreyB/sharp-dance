@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Redirect } from "react-router-dom";
 import * as Yup from "yup";
 import styled from "styled-components/macro";
 import {
@@ -10,7 +11,7 @@ import {
   Form,
   ErrorMessage
 } from "../../styledGuide";
-import { SignIn, SignOut, getDB } from "../../fbconfig";
+import { SignIn, SignOut, AuthUserContext } from "../../fbconfig";
 import { ADMIN } from "../../constants";
 
 const Heading = styled(H1)`
@@ -26,24 +27,19 @@ const LoginSchema = Yup.object().shape({
     .required("Required")
 });
 
-const addUuid = (data, uuid) => {
-  return {
-    ...data,
-    uuid
-  };
-};
+export default function Login({ history, ...props }) {
+  const userContext = useContext(AuthUserContext);
+  const { authUser } = userContext;
+  if (authUser) {
+    return <Redirect to={ADMIN} />;
+  }
 
-export default function Login(props) {
-  getDB("performers").then(val => {
-    let newData = val.map((data, index) => addUuid(data, index));
-    console.warn(newData);
-  });
   return (
     <Page>
       <Button type="button" onClick={SignOut}>
         SignOut
       </Button>
-      <Heading>Login</Heading>
+      <Heading>{authUser ? "Welcome" : "Login"}</Heading>
       <Formik
         initialStatus={{}}
         initialValues={{ email: "", password: "" }}
@@ -51,11 +47,10 @@ export default function Login(props) {
         onSubmit={(values, actions) => {
           SignIn(values)
             .then(user => {
-              actions.setStatus(user);
-              props.history.push(ADMIN);
+              // actions.setStatus(user);
             })
             .catch(e => {
-              actions.setStatus({ error: e });
+              // actions.setStatus({ error: e });
             });
           actions.setSubmitting(false);
         }}
@@ -64,7 +59,7 @@ export default function Login(props) {
             <Form>
               <Field type="email" name="email" />
               <ErrorMessage name="email" />
-              <Field type="password" className="error" name="password" />
+              <Field type="password" name="password" />
               <ErrorMessage name="password" />
               <Button type="submit" disabled={isSubmitting}>
                 Submit

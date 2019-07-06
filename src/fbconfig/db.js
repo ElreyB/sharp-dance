@@ -46,14 +46,19 @@ export function loadLocal() {
   }
 }
 
-export function enterNewData(ref, data) {
-  const newAppernticeKey = db
+export function newData(ref, data) {
+  const newDataKey = db
     .ref()
     .child(ref)
     .push().key;
 
+  const dataWithKey = {
+    ...data,
+    uuid: newDataKey
+  };
+
   let updates = {};
-  updates[ref + "/" + newAppernticeKey] = data;
+  updates[ref + "/" + newDataKey] = dataWithKey;
 
   return db
     .ref()
