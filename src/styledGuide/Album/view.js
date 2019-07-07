@@ -1,28 +1,23 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Grid } from "gymnast";
+import styled from "styled-components";
 import { isImageURL } from "./utils";
 
-const Footer = ({ interactionIsIdle, ...props }) => (
-  <div
-    style={{
-      alignItems: "center",
-      bottom: 0,
-      display: "flex ",
-      left: 0,
-      opacity: interactionIsIdle ? 0 : 1,
-      padding: 10,
-      paddingRight: 15,
-      position: "absolute",
-      right: 0,
-      transition: "opacity 300ms",
-      background: "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.44))"
-    }}
-    {...props}
-  />
-);
+const StyledView = styled("div")`
+  line-height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90vw;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+`;
 
-export default function View({ data, interactionIsIdle, views, currentIndex }) {
+const StyledPlayer = styled(ReactPlayer)`
+  margin: auto;
+`;
+
+export default function View({ data, views, currentIndex }) {
   const [playing, setPlaying] = React.useState(false);
 
   React.useEffect(() => {
@@ -32,19 +27,12 @@ export default function View({ data, interactionIsIdle, views, currentIndex }) {
   }, [currentIndex, data, views]);
 
   return (
-    <Grid
-      justify="center"
-      style={{
-        backgroundColor: "black",
-        lineHeight: 0
-      }}
-    >
+    <StyledView>
       {isImageURL(data.src) ? (
         <img src={data.src} alt="" />
       ) : (
-        <ReactPlayer url={data.src} playing={playing} controls />
+        <StyledPlayer url={data.src} playing={playing} controls />
       )}
-      <Footer interactionIsIdle={interactionIsIdle}></Footer>
-    </Grid>
+    </StyledView>
   );
 }

@@ -4,11 +4,11 @@ import { Grid } from "gymnast";
 import Carousel, { ModalGateway, Modal } from "react-images";
 import View from "./view";
 
-export default function Slides({ sources, ...props }) {
+export default function Slides({ sources }) {
   const [currentModal, setCurrentModal] = React.useState(null);
 
   return (
-    <Grid {...props}>
+    <>
       <Grid style={{ overflow: "hidden" }}>
         {sources.map(({ src }, i) => (
           <Poster
@@ -28,13 +28,13 @@ export default function Slides({ sources, ...props }) {
           >
             <Carousel
               currentIndex={currentModal}
-              components={{ Footer: null, View }}
+              components={{ View }}
               frameProps={{ autoSize: "height" }}
               views={sources}
             />
           </Modal>
         ) : null}
       </ModalGateway>
-    </Grid>
+    </>
   );
 }

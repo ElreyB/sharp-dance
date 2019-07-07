@@ -11,7 +11,9 @@ export function Album({ title, subtitle, content, sources, ...props }) {
       {title && <H2>{title}</H2>}
       {subtitle && <H3>{subtitle}</H3>}
       {content && <P>{content}</P>}
-      <Slides sources={sources} />
+      <Slides
+        sources={sources.map(source => ({ ...source, caption: title }))}
+      />
     </Grid>
   );
 }
