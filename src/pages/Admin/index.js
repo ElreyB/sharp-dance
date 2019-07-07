@@ -33,30 +33,34 @@ const Container = styled(Grid)`
   display: flex;
   justify-content: center;
 `;
+
 const LeftContent = styled(Grid)`
   flex: 0 1 50%;
   border: 2px solid white;
 `;
+
 const RightContent = styled(Grid)`
   flex: 0 1 50%;
   border: 2px solid white;
   overflow: scroll;
   max-height: 350px;
 `;
-const Input = styled.input`
+
+const Input = styled(Field)`
   width: 100%;
   height: 26px;
 `;
 
 function AdminPage({ quotes, history, ...props }) {
   const [quoteList, setQuoteList] = useState([]);
-  console.warn(props, quotes);
   const appContext = useContext(AuthUserContext);
   const { authUser } = appContext;
-  // const quotes = Object.values(quotes);
+  const dbQuotes = Object.values(quotes);
+
   useEffect(() => {
-    setQuoteList(Object.values(quotes));
-  }, [quotes]);
+    setQuoteList(dbQuotes);
+  }, [dbQuotes]);
+
   if (!authUser) {
     return <Redirect to={LOG_IN} />;
   }
@@ -74,25 +78,23 @@ function AdminPage({ quotes, history, ...props }) {
             initialValues={{ author: "", quote: "", source: "" }}
             validationSchema={QuoteSchema}
             onSubmit={(values, actions) => {
-              console.warn("VALUES", values);
               newData(QUOTES, { ...values });
             }}
-            render={({ isSubmitting, status, errors }) => {
-              console.warn("ERRORS", errors);
+            render={({ isSubmitting, status, errors, handleSubmit }) => {
               return (
-                <Form>
+                <Form onSubmit={handleSubmit}>
                   <Label htmlFor="author">Add Author</Label>
-                  <Field name="author" type="text" placeholder="Sandy Critic" />
+                  <Input name="author" type="text" placeholder="Sandy Critic" />
                   <ErrorMessage name="author" component={Error} />
                   <Label htmlFor="quote">quote</Label>
-                  <Field
+                  <Input
                     name="quote"
                     type="text"
                     placeholder="There's no place like home"
                   />
                   <ErrorMessage name="quote" component={Error} />
                   <Label htmlFor="source">source</Label>
-                  <Field
+                  <Input
                     name="source"
                     type="text"
                     placeholder="Philadelphia Weekly"
