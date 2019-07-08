@@ -5,10 +5,18 @@ export function useGetDatabase(ref = undefined) {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    db.ref(ref).on("value", snapshot => {
+    const database = db.ref(ref).on("value", snapshot => {
       const val = snapshot.val();
       setData(val);
     });
+    // db.ref(ref)
+    //   .once("value")
+    //   .then(function(snapshot) {
+    //     const val = snapshot.val();
+    //     setData(val);
+    //   });
+    console.warn("USE DATABASE");
+    return () => db.ref(ref).off("value", database);
   }, [ref]);
   return data;
 }
@@ -43,10 +51,11 @@ export function editData(ref, key, data) {
 }
 
 export function deleteData(ref, key) {
+  console.warn("DELETE", ref, key);
   return db
     .ref(ref)
     .child(key)
     .remove()
-    .then(() => true)
+    .then(() => console.log("Document successfully deleted!"))
     .catch(error => error);
 }
