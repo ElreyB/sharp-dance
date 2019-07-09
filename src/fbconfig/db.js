@@ -15,7 +15,6 @@ export function useGetDatabase(ref = undefined) {
     //     const val = snapshot.val();
     //     setData(val);
     //   });
-    console.warn("USE DATABASE");
     return () => db.ref(ref).off("value", database);
   }, [ref]);
   return data;
@@ -51,7 +50,6 @@ export function editData(ref, key, data) {
 }
 
 export function deleteData(ref, key) {
-  console.warn("DELETE", ref, key);
   return db
     .ref(ref)
     .child(key)

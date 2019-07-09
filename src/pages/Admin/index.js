@@ -15,14 +15,9 @@ import {
   Page,
   Quote
 } from "../../styledGuide";
-import {
-  newData,
-  AuthUserContext,
-  SignOut,
-  deleteData,
-  editData
-} from "../../fbconfig";
+import { newData, AuthUserContext, SignOut, deleteData } from "../../fbconfig";
 import { LOG_IN, QUOTES } from "../../constants";
+import EditForm from "../EditForm";
 
 const Error = styled.div`
   color: red;
@@ -152,68 +147,13 @@ function AdminPage({ quotes, history, ...props }) {
                     >
                       Delete
                     </Button>
-                    <Button type="button" onClick={() => setWillEdit(true)}>
-                      edit
+                    <Button
+                      type="button"
+                      onClick={() => setWillEdit(!willEdit)}
+                    >
+                      {willEdit ? "Edit" : "Hide Edit form"}
                     </Button>
-                    {willEdit && (
-                      <Formik
-                        initialStatus={{}}
-                        initialValues={quote}
-                        validationSchema={QuoteSchema}
-                        onSubmit={async (values, actions) => {
-                          setTimeout(
-                            () => editData(QUOTES, quote.id, values),
-                            1000
-                          );
-                          setWillEdit(false);
-                          actions.setSubmitting(false);
-                          console.warn("Value", values);
-                        }}
-                        render={({
-                          isSubmitting,
-                          status,
-                          errors,
-                          handleSubmit,
-                          handleChange,
-                          values
-                        }) => {
-                          return (
-                            <Form onSubmit={handleSubmit}>
-                              <Label htmlFor="author">Add Author</Label>
-                              <Input
-                                name="author"
-                                type="text"
-                                placeholder="Sandy Critic"
-                                value={values.author}
-                                onChange={handleChange}
-                              />
-                              <ErrorMessage name="author" component={Error} />
-                              <Label htmlFor="quote">quote</Label>
-                              <Input
-                                name="quote"
-                                type="text"
-                                placeholder="There's no place like home"
-                                value={values.quote}
-                                onChange={handleChange}
-                              />
-                              <ErrorMessage name="quote" component={Error} />
-                              <Label htmlFor="source">source</Label>
-                              <Input
-                                name="source"
-                                type="text"
-                                placeholder="Philadelphia Weekly"
-                                value={values.source}
-                                onChange={handleChange}
-                              />
-                              <ErrorMessage name="source" component={Error} />
-                              <Button type="submit" disabled={isSubmitting}>
-                                edit Quote
-                              </Button>
-                            </Form>
-                          );
-                        }}
-                      />
-                    )}
+                    <EditForm initialValues={quote} showForm={willEdit} />
                   </Grid>
                 );
               })}
