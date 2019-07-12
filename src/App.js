@@ -11,7 +11,7 @@ import Loading from "./pages/Loading";
 import Login from "./pages/Login";
 import Media from "./pages/Media";
 import SignUp from "./pages/SignUp";
-import { withAuthentication, getDB, loadLocal } from "../src/fbconfig";
+import { useGetDatabase } from "../src/fbconfig";
 import {
   ABOUT,
   ADMIN,
@@ -25,11 +25,7 @@ import {
 } from "./constants";
 
 function App() {
-  const [database, setDatabase] = React.useState(loadLocal());
-
-  React.useEffect(() => {
-    getDB().then(value => setDatabase(value));
-  }, []);
+  const database = useGetDatabase();
 
   if (!database.pages) {
     return (
@@ -61,4 +57,4 @@ function App() {
   );
 }
 
-export default withAuthentication(App);
+export default App;

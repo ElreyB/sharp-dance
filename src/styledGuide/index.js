@@ -6,6 +6,7 @@ export * from "./Formik";
 export * from "./Headings";
 export * from "./IFrame";
 export * from "./Img";
+export * from "./Label";
 export * from "./Markdown";
 export * from "./Nav";
 export * from "./P";

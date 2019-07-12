@@ -1,60 +1,33 @@
+import { useState, useEffect } from "react";
 import { db } from "./fb";
 
-const STORAGE_KEY = "SHARP_STORAGE";
-const TIME_THRESHOLD = 5;
+export function useGetDatabase(ref = undefined) {
+  const [data, setData] = useState({});
 
-export function getDB(ref = undefined) {
-  if (shouldReload()) {
-    const dataBase = db
-      .ref(ref)
-      .once("value")
-      .then(snapshot => {
-        const val = snapshot.val();
-        setStorage(val);
-        return val;
-      });
-    return dataBase;
-  }
-  return Promise.resolve(loadLocal());
+  useEffect(() => {
+    const database = db.ref(ref).on("value", snapshot => {
+      const val = snapshot.val();
+      setData(val);
+    });
+
+    return () => db.ref(ref).off("value", database);
+  }, [ref]);
+  return data;
 }
 
-function shouldReload() {
-  const local = loadLocal();
-  const now = new Date().getTime();
-
-  if (!local.lastSave) {
-    return true;
-  }
-
-  return TIME_THRESHOLD > ((now - local.lastSave) / 1000) * 60;
-}
-
-function setStorage(value) {
-  const lastSave = new Date().getTime();
-
-  window.localStorage.setItem(
-    STORAGE_KEY,
-    JSON.stringify({ ...value, lastSave })
-  );
-}
-
-export function loadLocal() {
-  try {
-    return JSON.parse(window.localStorage.getItem(STORAGE_KEY) || "{}");
-  } catch (e) {
-    return {};
-  }
-}
-
-export function enterNewData(ref, data) {
-  const newAppernticeKey = db
+export function newData(ref, data) {
+  const newDataKey = db
     .ref()
     .child(ref)
     .push().key;
 
-  let updates = {};
-  updates[ref + "/" + newAppernticeKey] = data;
+  const dataWithKey = {
+    ...data,
+    uuid: newDataKey
+  };
 
+  let updates = {};
+  updates[ref + "/" + newDataKey] = dataWithKey;
   return db
     .ref()
     .update(updates)
@@ -76,6 +49,6 @@ export function deleteData(ref, key) {
     .ref(ref)
     .child(key)
     .remove()
-    .then(() => true)
+    .then(() => console.log("Document successfully deleted!"))
     .catch(error => error);
 }

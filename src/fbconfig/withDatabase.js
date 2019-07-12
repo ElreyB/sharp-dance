@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from "react";
+//TODO: changes to context?
+import React from "react";
 import { DatabaseContext } from "./DatabaseContext";
-import { getDB } from "./db";
+import { useGetDatabase } from "./db";
 
 export const withDatabase = Component => {
   const WithDatabase = props => {
-    const [database, setDatabase] = useState(null);
-    useEffect(() => {
-      const db = getDB();
-      setDatabase(db);
-    }, []);
+    const database = useGetDatabase();
 
     return (
       <DatabaseContext.Provider value={database}>
