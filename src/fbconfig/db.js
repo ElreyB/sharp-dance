@@ -9,12 +9,7 @@ export function useGetDatabase(ref = undefined) {
       const val = snapshot.val();
       setData(val);
     });
-    // db.ref(ref)
-    //   .once("value")
-    //   .then(function(snapshot) {
-    //     const val = snapshot.val();
-    //     setData(val);
-    //   });
+
     return () => db.ref(ref).off("value", database);
   }, [ref]);
   return data;
