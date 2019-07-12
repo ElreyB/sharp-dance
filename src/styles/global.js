@@ -20,4 +20,10 @@ export const GlobalStyle = createGlobalStyle`
     margin-block-start: 0;
     margin-block-end: 0;
   }
+  .react-images__pager {
+    position: static !important;
+  }
+  .react-images__track {
+    height: 100%;
+  }
 `;
