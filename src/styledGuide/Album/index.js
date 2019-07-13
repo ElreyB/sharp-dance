@@ -1,14 +1,47 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "gymnast";
-import { H2, H3 } from "../Headings";
+import { H2, H3, H4 } from "../Headings";
 import { P } from "../P";
 import Slides from "./slides";
 
-export function Album({ title, subtitle, content, sources, ...props }) {
+const message = {
+  tour: "Available for tour",
+  performance: "Available for performance",
+  both: "Available for tour or performance"
+};
+
+function getMessage(availableForTour, availableForPerformance) {
+  if (availableForTour && availableForPerformance) {
+    return message.both;
+  }
+  if (availableForTour) {
+    return message.tour;
+  }
+  if (availableForPerformance) {
+    return message.performance;
+  }
+
+  return undefined;
+}
+
+export function Album({
+  availableForPerformance,
+  availableForTour,
+  content,
+  sources,
+  subtitle,
+  title,
+  ...props
+}) {
+  const message = getMessage(availableForPerformance, availableForTour);
+
   return (
     <Grid {...props} align="start" padding="M">
-      {title && <H2>{title}</H2>}
+      <Grid>
+        {title && <H2 size="fit">{title}</H2>}
+        {message && <H4>({message})</H4>}
+      </Grid>
       {subtitle && <H3>{subtitle}</H3>}
       {content && <P>{content}</P>}
       <Slides
@@ -19,9 +52,11 @@ export function Album({ title, subtitle, content, sources, ...props }) {
 }
 
 Album.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
+  availableForPerformance: PropTypes.bool,
+  availableForTour: PropTypes.bool,
   content: PropTypes.string,
+  subtitle: PropTypes.string,
+  title: PropTypes.string,
   sources: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
