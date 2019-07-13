@@ -4,7 +4,7 @@
       "headerBanner": {
         "title": "SHARP",
         "subtitle": "Dance Company",
-        "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/droppedImage.jpg",
+        "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpages%2Fhome%2Fhome.jpg?alt=media&token=17b229e7-6332-4b87-91ec-37943ff73264",
         "imgCredit": "Bill Hebert"
       },
       "content": "## The Mission\nThe mission of SHARP Dance Co. is to translate raw human emotion utilizing contemporary movement to connect the audience through individual interpretation.\n## About SHARP\nSHARP is a thirteen year old 501C-3 modern company and its theory of “meaning behind movement” is shown prominently throughout their work.  SHARP feels that dance should be more than a performance, it should be an experience.\nSHARP has performed throughout the U.S. in cities such as:  New York, Rochester, Phoenix, Chicago, Cincinnati, Portland, Boulder, San Diego, Brooklyn, Portsmouth etc.  SHARP has toured throughout Europe in Italy, England and Greece.\nArtistic Director/Choreographer Diane Sharp-Nachsin was selected as a New Edge Mix Artist Award Recipient in Philadelphia. She was also chosen as a BAU Institute fellow in June 2013 in Italy and an Artist in Residence recipient in Paros, Greece 2014.",
@@ -18,8 +18,8 @@
       "aboutDianeBanner": {
         "title": "About Artistic Director Diane Sharp-Nachsin",
         "imgSrc": [
-          "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/diandancing.jpg",
-          "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/DSC_3139.jpg"
+          "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpages%2Fbios%2Fdiandancing.jpg?alt=media&token=b70281af-ad6c-4228-ad52-0facc6324001",
+          "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpages%2Fbios%2Fdianedancing2.jpg?alt=media&token=83047cdd-89e7-4851-8f83-ab6be331aef5"
         ],
         "imgCredit": "Kylene Cleaver"
       },
@@ -29,7 +29,7 @@
       "headerBanner": {
         "title": "Class Schedule",
         "subtitle": "Come dance with us",
-        "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Open_Company_Class_Schedule_files/UNADJUSTEDNONRAW_thumb_4398.jpg",
+        "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpages%2Fclasses%2Fclasses.jpg?alt=media&token=1d768d9c-52c6-4d38-818f-1d611332b224",
         "content": "SHARP is happy to announce we will now be opening our company class.\nClasses will run 55 minutes. $10 cash or credit. Classes will be taught by a rotation of company members"
       },
       "noClasses": "No upcoming classess"
@@ -51,70 +51,243 @@
         {
           "title": "Section 1",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_142/SharpDanceCo_Facade_142.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F1.jpg?alt=media&token=28d8f7a7-56b3-47a4-9249-c32ec24e661c"
         },
         {
           "title": "Section 2",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_106/SharpDanceCo_Facade_106.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F2.jpg?alt=media&token=ce313494-c7fb-4c6b-a6f4-979aa37a87ec"
         },
         {
           "title": "Section 3",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_160/SharpDanceCo_Facade_160.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F3.jpg?alt=media&token=f2ca3d14-87b6-48c3-9177-6594716fe716"
         },
         {
           "title": "Section 1",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_100/SharpDanceCo_Facade_100.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F4.jpg?alt=media&token=9cfc9b12-b848-45e1-862e-600557d0d353"
         },
         {
           "title": "Section 3",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_150/SharpDanceCo_Facade_150.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F5.jpg?alt=media&token=f286d674-6bea-43f9-b512-e6e5b1d3be3f"
         },
         {
           "title": "Section 2",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_105/SharpDanceCo_Facade_105.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F6.jpg?alt=media&token=e4ebd608-54c1-4aae-a0d3-5db4dd60511b"
         },
         {
           "title": "Section 3",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_144/SharpDanceCo_Facade_144.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F7.jpg?alt=media&token=b22e5fa7-7ab5-4ae1-a8fa-17f4b0f98a74"
         },
         {
           "title": "Section 1",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_147/SharpDanceCo_Facade_147.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F8.jpg?alt=media&token=e91c1bda-0bc6-45c6-8d5b-e9c45bb43510"
         },
         {
           "title": "Section 2",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_104/SharpDanceCo_Facade_104.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F9.jpg?alt=media&token=ca17e1a9-1ac4-4a09-8ea1-1b7027dd4b18"
         },
         {
           "title": "Section 3",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_036/SharpDanceCo_Facade_036.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F10.jpg?alt=media&token=1a6c830f-b7da-45e4-aac2-9f707349d282"
         },
         {
           "title": "Section 1",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_019/SharpDanceCo_Facade_019.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F11.jpg?alt=media&token=9ee7a7e8-39b0-469d-aa6d-218340455d7c"
         },
         {
           "title": "Section 2",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_028/SharpDanceCo_Facade_028.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F12.jpg?alt=media&token=e8dee793-16b3-4c98-b8e4-ce9a813dc340"
         },
         {
           "title": "Section 1",
           "credit": "Kylene Cleaver",
-          "src": "http://www.sharpdance.org/SHARP_Dance_Company/Photos/Pages/PUZZLE_files/Media/SharpDanceCo_Facade_003/SharpDanceCo_Facade_003.jpg"
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F13.jpg?alt=media&token=482e73b7-9e47-4b6a-bf7f-724decc5bfd8"
         }
       ],
       "id": "media158"
+    },
+    "media159": {
+      "title": "669",
+      "subtitle": "Currently Available for Tour or Performance",
+      "content": "“669” world premiered in November 2017.  It is a story of an amazing man Sir Nicholas Winton who saved 669 children from the Holocaust. The piece was created with amazing original music by Liliya Danieva from Moscow, Russia.",
+      "sources": [
+        {
+          "title": "669 Promo Video",
+          "credit": "",
+          "src": "https://vimeo.com/252107468"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F1.jpg?alt=media&token=e8fefcda-a083-4532-ac63-9cc3982ca6e7"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F2.jpg?alt=media&token=35bd78c2-4fd7-4e23-889c-3ab14d5a269d"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F3.jpg?alt=media&token=8a6eee83-2a38-48ff-ba1b-61ba03e2117b"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F4.jpg?alt=media&token=eb75222d-c8e5-4c32-b744-24f1f467341c"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F5.jpg?alt=media&token=3430c669-a646-41c3-b48e-67ad3df9b7db"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F6.jpg?alt=media&token=f3c54850-9c63-4f65-ac38-c420e9f0066c"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F7.jpg?alt=media&token=8b897d3d-4760-4168-874f-5b8e91cdb22d"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F8.jpg?alt=media&token=fe3a6503-a084-4995-a121-7a6d6d19958b"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F9.jpg?alt=media&token=05e5c89e-7de7-4a1b-a341-dcd179ea483d"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F10.jpg?alt=media&token=9a96c14b-57e1-4fee-ab0f-64817275e772"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F11.jpg?alt=media&token=7e084434-5246-492c-8340-7ad1c72e5891"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F12.jpg?alt=media&token=3a5648c4-4d4f-43df-b673-5e134a2f82a3"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F13.jpg?alt=media&token=58740e21-cfcb-4507-b02c-3763fc3a6b97"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F14.jpg?alt=media&token=a6858ada-8c62-4f12-aec7-af4e10512cc0"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F15.jpg?alt=media&token=1c414eb2-623b-417c-b271-6bb519a5cc29"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F16.jpg?alt=media&token=a6ba8e0f-8e40-4126-9a8b-1871a236ecf6"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F17.jpg?alt=media&token=d8e144c9-be1f-419f-8bb4-656bf56c0eb5"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F18.jpg?alt=media&token=5233c7ea-211f-457f-907d-a16e566d5fc7"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F19.jpg?alt=media&token=1fd42be5-65ee-4d12-99a8-306b1e942490"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F20.jpg?alt=media&token=6da90f23-4ee5-4e23-9184-6146cba7bc3a"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F21.jpg?alt=media&token=c4c5591f-127c-4b6d-b703-9521a863b144"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F22.jpg?alt=media&token=7e30e5c7-d525-4fbe-a8aa-69194422ac8f"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F23.jpg?alt=media&token=29a15476-d20a-4598-86b7-c030646e7e65"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F24.jpg?alt=media&token=ac76a84e-e505-4223-a35d-e6dd5446ed13"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F25.jpg?alt=media&token=2104de90-d5c0-4afd-99fa-664ead82ca1a"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F26.jpg?alt=media&token=d9424879-bb24-4852-b759-8051a1dde94c"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F27.jpg?alt=media&token=b90928b3-9fd0-4d4f-b9d3-70d072ff3f7c"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F28.jpg?alt=media&token=a4b564c7-7f88-41ba-b13a-397d5f7efa74"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F29.jpg?alt=media&token=54209afb-63bc-453d-afb7-91c98f4567a9"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F30.jpg?alt=media&token=fde405a8-ff7c-4547-b932-1e6e9ef57143"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F31.jpg?alt=media&token=6557886e-a957-4206-96a0-48babd55a5ca"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2F669%2F32.jpg?alt=media&token=3d6220b1-8ebb-416b-a26e-6a9f1f1b5909"
+        }
+      ],
+      "id": "media159"
     }
   },
   "performers": {
@@ -122,7 +295,7 @@
       "name": "Greg Anmuth",
       "role": "Company Member",
       "imgCredit": "Kylene Cleaver",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_161.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fperformers%2Fgreg.jpg?alt=media&token=84966c14-6656-47c0-a2c2-63bbc7f8ccb2",
       "bio": "Greg began his dance training at his mother’s studio in New Jersey; he then continued his education at Rowan University under the direction of Paule Turner and Melanie Stewart. He was elected the president of Rowan’s Contemporary Dance Company, and has been awarded the Bryna G. Goldhaft Medallion for Dance Excellence in 2012 upon his completion of his B.A. in Health and Exercise Science.  Now a co-owner of his family’s school, Greg has been awarded numerous choreography and entertainment awards.  Greg’s performance career has continued as a past company member with Band of Artists, Andrea Mychaels Dance Project, Roger Lee Dance, Nickerson-Rossi Dance (NRD) East Company and Legends in Concert.\nThis is Greg’s first season with SHARP Dance Company.",
       "id": "performers159"
     },
@@ -130,7 +303,7 @@
       "name": "Hannah Brumbach",
       "role": "Guest Artist",
       "imgCredit": "FigTree Photos",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/Figtree%20Photography%20%281%29.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fperformers%2Fhannah.jpg?alt=media&token=55426b0f-7997-46cd-bc5a-f075c55aa606",
       "bio": "Hannah Brumbach is a dancer and choreographer in the Philadelphia area.  She was raised and trained in Williamsport, Pennsylvania and continued her education at Eastern University earning a BA in Dance. Hannah’s performance career includes a 2016 solo work, “Cultivate”, choreographed by Lydia Bugosh, and performed at the American College Dance Association Festival. She has also staged three choreographic works at Eastern University and has restaged her largest work, “Hymn Study” at the 2017 “Bridgefest” in Cambria City.  Currently, Hannah fulfills her need to dance by teaching the next generation of movers and performing with Apex Dance Company and Melange Contemporary Dance Company.",
       "id": "performers160"
     },
@@ -138,7 +311,7 @@
       "name": "Linnea Alexis Calzada-Charma",
       "role": "Company Member / Social Media Director",
       "imgCredit": "Kylene Cleaver",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_105.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fperformers%2Flinnea.jpg?alt=media&token=7312abca-a7f0-47e7-9b5b-78e3d34c7615",
       "bio": "Linnea began her dance education with Linda Moores, former principal dancer of Group Motion, and spent most of her training years at Mid-Atlantic Ballet in Newark, DE. She has had additional training at Central PA Youth Ballet, Pittsburgh Ballet Theatre School, Ballet Austin, The Rock School for Dance Education, Alonzo King's LINES Ballet, Secret Circus Philly: School for Contemporary Circus Arts, and was invited to dance with BalletX and Pennsylvania Ballet in 2015. Linnea graduated as a Dance Major from The University of the Arts in 2016, with honors and an Artist’s Merit Award Scholarship. Linnea has been dancing with SHARP for 6 years.",
       "id": "performers161"
     },
@@ -146,7 +319,7 @@
       "name": "Sandra Davis",
       "role": "Company Member, Assistant Director",
       "imgCredit": "Kylene Cleaver",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_100.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fperformers%2Fsandra.jpg?alt=media&token=664dd609-82ab-4500-9440-ba9c751ab9bd",
       "bio": "Sandra is a native of Philadelphia and started her training at the Anastasi Dance Studio. She received her BFA in Ballet Performance from the University of the Arts in May of 2007. During her time at the University of the Arts, she studied under such instructors as: Christine Cox, Scott Jovovich, Andrew Pap, Eva Szabo, Ronen Koresh, and Kim Bears-Bailey. Sandra completed Philadanco's training program in August 2006. She also performed in Danco-on-Danco in September 2006 at the Painted Bride.  Sandra currently teaches at the Blue Bell School of Dance in Blue Bell, PA, and Mid-Atlantic Ballet in Newark, DE. She was named Artistic Director of Mid-Atlantic Ballet in June 2018. She began teaching ballroom dance for Dancing Classrooms Philly in September of 2014. Sandra started performing with SHARP in the spring of 2009.",
       "id": "performers162"
     },
@@ -154,7 +327,7 @@
       "name": "Kate Lombardi",
       "role": "Company Member / Artist Liasion",
       "imgCredit": "Kylene Cleaver",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_009.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fperformers%2Fkate.jpg?alt=media&token=423ba15a-347d-46ff-be2d-d2232d4af487",
       "bio": "Kate received her BFA from The University of the Arts, along with training at The Martha Graham School of Contemporary Dance and the American Dance Festival. Kate is a member of SHARP, Dancefusion, and Anne Marie Mulgrew & Dancers in Philadelphia, where she enjoys both reconstructing historical works and exploring new choreography by local artists. Kate previously danced with Underground Dance Works and Between Movement Contemporary Dance Company. She was a guest artist with Esse Eficionado and joined Jeanne Ruddy Dance for its farewell season. Along with performing, Kate brings ballroom dance to the youth of Philadelphia as Managing Director for Dancing Classrooms Philly. Kate joined the SHARP family in January 2011.",
       "id": "performers163"
     },
@@ -162,7 +335,7 @@
       "name": "Miguel Quinones",
       "role": "Company Member",
       "imgCredit": "Kylene Cleaver",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SharpDanceCo_Facade_027.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fperformers%2Fmiguel.jpg?alt=media&token=ca191a30-964f-4496-b5ea-e3c890c0f56c",
       "bio": "Miguel began his Ballet training in Miami at the age of 7 at the Miami Conservatory.  Miguel also studied at Joe Michaels Studio with the New Image Dance Ensemble where he learned other forms of dance.  In college, at the New World School of the Arts in downtown Miami he continued his studies in jazz, modern and breaking.  After graduating in 3 years with honors, he joined the Parsons Dance Company in 2005.  He danced with David Parsons from 2005-2011 and currently is a guest dancer for the company. Miguel has worked with such artists as:  David Parsons, Robert Battle, Monica Bill Barnes, Donald McKayle, Michael Uthoff, Arthur Mitchell, Nicholas Andre, Mark Stuart, Shea Sullivan, Greg Dolbashian and other New York Artist.  He has taught master classes all over the U.S. and he is currently living in Philadelphia. He’s currently dancing with SHARP Dance Company and dances for Pages to Pirouettes, continuing his dance education, and focusing on creating more of his own choreography.",
       "id": "performers164"
     },
@@ -170,7 +343,7 @@
       "name": "Rosemary Scalise",
       "role": "Guest Artist",
       "imgCredit": "Brian Megini",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/OQADPa0QQ9G+5Dk2P2N4zw_thumb_4393.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fperformers%2Frosemary.jpg?alt=media&token=b25ffa15-e763-4774-bf23-4e2670487ef7",
       "bio": "Rosemary Scalise grew up dancing at local studios in her hometown of West Deptford, New Jersey. She was a member of the performing arts program at Paul VI High School under the direction of Courtney Daniels. Rosemary followed her passion to Towson University and earned her BFA in Dance Performance and Choreography in 2017. During her college career Rosemary performed original works by Darrell Grand Moultrie, Kim Y. Bears-Bailey, Runqiao Du, Linda-Denise Fisher-Harrell, Vincent Thomas, Quilan Arnold, and Susan Mann. Following graduation, Rosemary attended the 2017 METdance Professional Intensive in Houston, Texas. Rosemary now performs professionally in the Philadelphia area with Nickerson-Rossi Dance (East), Allegory Dance Theatre, Matter Movement Group, and other local artists.",
       "id": "performers165"
     }
@@ -180,7 +353,7 @@
       "name": "Juliet Bernstein",
       "role": "Apprentice",
       "imgCredit": "Courtney Kehr",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/thumbnail%202.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fapprentices%2Fjuliet.jpg?alt=media&token=9d9b8ad9-7800-4743-aac2-a3f48283d8c7",
       "bio": "Juliet is a dance artist and performer originally from Los Angeles, CA where she began her formal dance training at Elements Dance Space. Juliet graduated from University of the Arts in Philadelphia, PA, where she earned her BFA in dance with a minor in musical theatre under the direction of Donna Faye Burchfield. She has been fortunate to work with various notable artists including, Bobbi Jean Smith, Gary Jeter, Juel D. Lane, Roni Koresh, and Sidra Bell. Her most recent debuts as a graduate include being a part of the upcoming feature film “Aviva” directed by Boaz Yakin and choreographed by Bobbi Jean Smith, performing in Roschman Dance Company’s 2018 season, and performing and working with choreographer Alisia Ialicicco in Mare Nostrum Elements Emerging Choreographer Series. Juliet is excited to be an apprentice this season with SHARP Dance Company!",
       "id": "apprentices166"
     }
@@ -190,7 +363,7 @@
       "name": "Micah Geyer",
       "role": "Guest Artist",
       "imgCredit": "",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/droppedImage_1.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2FguestPerformers%2Fmicah.jpg?alt=media&token=4c7f190d-c42b-4dab-bc10-a7e6cc7d6539",
       "bio": "Raised in North Carolina, Micah started dancing at a young age with Nina's School of Dance in Durham. He later joined the North Carolina Youth Tap Ensemble under the direction of Gene Medler. During his career, he had the privilege to perform at the Kennedy Center and the Joyce Theater for Tap City, as well as tour throughout Europe and South America. He received his BFA in Dance Performance and Psychology from East Carolina University and joined Koresh Dance Company in 2007.",
       "id": "guestPerformers167"
     }
@@ -200,7 +373,7 @@
       "name": "Nikki Battestilli",
       "role": "Company Manager",
       "imgCredit": "Michael Cannon",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/IMG_3437.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fstaff%2Fnikki.jpg?alt=media&token=478963e3-c60e-42b9-987f-d60c7900dfee",
       "bio": "Drexel University (2015), B.A. (Theater, Dance Minor) Robert E. Cook Honors College-Indiana University of Pennsylvania. Nikki has had the opportunity to work for numerous organizations such as: Brian Sanders JUNK, Pasion y Arte Flamenco, Eastern University, and Kids Across America. She recently left her position at Wolf Performing Arts Center where she was the Marketing and Development Director for 3 years. Nikki recently moved to Pittsburgh to take the position of Marketing Director with City Theatre. Nikki is incredibly grateful to be part of the SHARP family since January 2013 and can never leave.",
       "id": "staff168"
     },
@@ -208,7 +381,7 @@
       "name": "Joe Cotler",
       "role": "Guest Choreographer",
       "imgCredit": "Kylene Cleaver",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/droppedImage.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fstaff%2Fjoe.jpg?alt=media&token=9b7bafee-57e7-487c-b5dd-3608852ae489",
       "bio": "Joe grew up in Batavia, NY and trained at his mother Robin Cotler's dance studio, Images in Dance. He graduated from The University of the Arts in May 2009. While at school, he had the opportunity to work with numerous choreographers including Scott Jovovich, Roni Koresh and Paul Selwyn-Norton. He currently teaches and choreographs for numerous studios in the area and is a Koresh Dance company member. Joe has choreographed several pieces for SHARP Dance Company over the last 6 years.",
       "id": "staff169"
     },
@@ -216,7 +389,7 @@
       "name": "Jenna Kueriz",
       "role": "Guest Vocalist",
       "imgCredit": "Justin Muir Photography",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/jennakuerzi.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fstaff%2Fjenna.jpg?alt=media&token=4e1a12b1-b3ea-42da-a116-c6603a6d23c4",
       "bio": "Jenna Kuerzi is an actor, singer, and deviser. She has worked regionally with Tribe of Fools (Barrymore Nominee: Best Ensemble/New Play- Fishtown: A Hipster Noir), 11th Hour, PlayPenn, Shakespeare in Clark Park, the Philadelphia Shakespeare Theatre, Philadelphia Young Playwrights, Irish Heritage Theatre, the Laurie Beechman Theatre in NYC, Act II Playhouse, and On the Rocks. Jenna's solo-ish show, Johnny Depp: A Retrospective on Late-Stage Capitalism, an original show she stars in and co-wrote with local playwright Val Dunn, traveled to the 2019 Edinburgh Fringe Festival. [www.jennakuerzi.com](//www.jennakuerzi.com)",
       "id": "staff170"
     },
@@ -224,7 +397,7 @@
       "name": "Steven Vaughn",
       "role": "Guest Artist, Guest Choreographer, Former SHARP Dancer and Parsons Company Member",
       "imgCredit": "Kylene Cleaver",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/SV-7.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fstaff%2Fsteven.jpg?alt=media&token=243f3acc-b6fa-4038-82dd-3518983672d6",
       "bio": "Steven was born in Iowa City, Iowa, and grew up dancing all over the Midwest and Massachusetts at various dance studios. While attending the University of the Arts in Philadelphia, where he graduated with a BFA in Modern Dance in May 2009, he was given the opportunity to perform works by Silvanna Cardell, Martha Graham, and Twyla Tharp, among others, and to present his own choreography. His college career also afforded him the privilege of working professionally with Diane Sharp-Nachsin's SHARP Dance Company; Scott Jovovich in Brandywine Ballet Theater; Zane Booker and his Smoke, Lilies and Jade Arts Initiative; and Brian Sanders' JUNK. Steven joined Parsons Dance in June 2008 as an apprentice as was invited to become a company member this August 2009.  Steven has previously choreographed pieces on SHARP dance company and the Joffery Ballet summer program.",
       "id": "staff171"
     },
@@ -232,7 +405,7 @@
       "name": "Kevin Ferguson",
       "role": "Guest Choreographer",
       "imgCredit": "",
-      "imgSrc": "http://www.sharpdance.org/SHARP_Dance_Company/Bios_files/12968_192850378636_684058636_2910688_4942030_n.jpg",
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fstaff%2Fkevin.jpg?alt=media&token=0c3c4103-8cd0-4205-b4d5-ccba7be475f9",
       "bio": "Kevin is originally from Houston, Texas. He has studied at The Houston Ballet, Boston Ballet, The Ailey School, and graduated with a BFA from the Boston Conservatory of Music. Kevin is an NAACP and Arts Recognition and Talent Search recipient. He has taught and choreographed internationally and domestically. Kevin has performed work by Nilas Martins, Donald Byrd, and Larry Keigwin as a guest artist. He has danced with Elisa Monte Dance Company, Radio City, The Metropolitan Opera, Regis and Kelly, and David Parsons Dance Company. Kevin is proud to work with SHARP Dance.",
       "id": "staff172"
     }
@@ -240,22 +413,22 @@
   "organizations": {
     "organizations173": {
       "organization": "Pennsylvania Presenters",
-      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/logo.gif",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Forganizations%2Fpennsylvaniapresenters.gif?alt=media&token=1c5d5a09-92fa-478d-b6f5-522e159b24a5",
       "id": "organizations173"
     },
     "organizations174": {
       "organization": "Association of Performing Arts Presenters",
-      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/apap_365_logo.jpg",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Forganizations%2Fapap.jpg?alt=media&token=88c2d0ef-9a8d-4e49-a6f6-002712704cd9",
       "id": "organizations174"
     },
     "organizations175": {
       "organization": "NCPC",
-      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/header-logo.jpg",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Forganizations%2Fncpc.jpg?alt=media&token=18e7c70d-cf74-4fdf-9c8a-98842f894a53",
       "id": "organizations175"
     },
     "organizations176": {
       "organization": "SHARP Dance Company",
-      "logo": "http://www.sharpdance.org/SHARP_Dance_Company/Home_files/coming_soon_image.jpg",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Forganizations%2Fsharp.jpg?alt=media&token=3e3fadd3-7a1d-4dee-9fc1-29d45f6807fb",
       "id": "organizations176"
     }
   },
