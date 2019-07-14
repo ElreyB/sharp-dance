@@ -40,7 +40,9 @@
   "media": {
     "media158": {
       "title": "PUZZLE",
-      "subtitle": "Currently Available for Tour or Performance",
+      "availableForTour": true,
+      "availableForPerformance": true,
+      "subtitle": "",
       "content": "SHARP’s newest work premiered in November 2018, PUZZLE is a collaborative modern dance experience designed to piece together diverse life experiences and challenge the ingenuity of both the artists and audience.  Co-created by Joe Cotler, Koresh Dance Company Member and Diane Sharp-Nachsin, SHARP Dance Company’s Artistic Director, PUZZLE will be a combination of two: styles, ages and experiences all rolled into one exciting piece.",
       "sources": [
         {
@@ -118,7 +120,9 @@
     },
     "media159": {
       "title": "669",
-      "subtitle": "Currently Available for Tour or Performance",
+      "availableForTour": true,
+      "availableForPerformance": true,
+      "subtitle": "",
       "content": "“669” world premiered in November 2017.  It is a story of an amazing man Sir Nicholas Winton who saved 669 children from the Holocaust. The piece was created with amazing original music by Liliya Danieva from Moscow, Russia.",
       "sources": [
         {
@@ -291,7 +295,9 @@
     },
     "media160": {
       "title": "Aquarian Exposition",
-      "subtitle": "Currently Available for Tour or Performance",
+      "availableForTour": true,
+      "availableForPerformance": true,
+      "subtitle": "A Trip Back to the Original Woodstock",
       "content": "Aquarian Exposition: A Trip back to the Original Woodstock taps into the spirit of love, acceptance and exploration that made the hippie movement one that will transcend time.",
       "sources": [
         {
@@ -454,7 +460,238 @@
           "credit": "Kylene Cleaver",
           "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Faquarian%2FSP-29.jpg?alt=media&token=c0e0f791-5ecb-4d41-aed3-456b73942add"
         }
-      ]
+      ],
+      "id": "media160"
+    },
+    "media161": {
+      "title": "Seven Windows",
+      "availableForTour": true,
+      "availableForPerformance": false,
+      "subtitle": "",
+      "content": "Based on the dream of a dancer in which she is visited by her recently departed mother, she asks her mother if she is in heaven. Her mothers’ response is that she has not opened the seven windows yet. The Seven Windows looks into the world of reincarnation and moving on in the afterlife. A collaborative project with with four fine artists from NYC, Massachusetts, Philadelphia & Italy.",
+      "sources": [
+        {
+          "title": "Spreading Wings",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1973.jpg?alt=media&token=e0910537-8f52-4b11-b038-baea49f225ba"
+        },
+        {
+          "title": "End of the Road",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1886.jpg?alt=media&token=a24ee42f-fb8f-44fd-8edd-5a2c76924646"
+        },
+        {
+          "title": "I thought of you Again",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1731.jpg?alt=media&token=339a9e16-b903-4817-98fb-5fb6ed745236"
+        },
+        {
+          "title": "The Cube",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A2062.jpg?alt=media&token=f9b1e8c1-4a83-4380-bd8e-48f06a25ad25"
+        },
+        {
+          "title": "Plastic Windows",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1671.jpg?alt=media&token=d028a083-bd5f-4671-8cc0-a94ce50d2ac8"
+        },
+        {
+          "title": "The Cube",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A2041.jpg?alt=media&token=63c365f6-84e1-4886-9e29-dd5016704a94"
+        },
+        {
+          "title": "Spreading Wings",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1987.jpg?alt=media&token=4fec5e54-a7fb-444c-94de-056caa61f6b1"
+        },
+        {
+          "title": "I thought of you Again",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1736.jpg?alt=media&token=43288ca0-8d93-4921-86ce-98cc6bd31a77"
+        },
+        {
+          "title": "Flower in the Storm",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1837.jpg?alt=media&token=265bff5a-5a1a-40db-8a2b-705a8064c562"
+        },
+        {
+          "title": "Spreading Wings",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A2023.jpg?alt=media&token=4412c069-15b4-4abc-9733-d25d80d28d13"
+        },
+        {
+          "title": "One Voice",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1750.jpg?alt=media&token=9827b630-ee70-41fa-96c2-fe96b6433dbc"
+        },
+        {
+          "title": "The Cube",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A2047.jpg?alt=media&token=e05bca9a-10c8-42fa-83a8-91e67e5964f4"
+        },
+        {
+          "title": "The Cube",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A2037.jpg?alt=media&token=700ec9ba-7c3f-4139-afca-a1fa05d51489"
+        },
+        {
+          "title": "End of the Road",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1906.jpg?alt=media&token=f8552a4a-74d6-4e44-9688-6d547e25aded"
+        },
+        {
+          "title": "End of the Road",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1922.jpg?alt=media&token=9319a04b-5053-42e0-85e2-fc51dc8ce88e"
+        },
+        {
+          "title": "Spreading Wings",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A2010.jpg?alt=media&token=117a4f6d-9cbf-47e4-b2a7-a56101d13cf0"
+        },
+        {
+          "title": "Plastic Windows",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1683.jpg?alt=media&token=475d5c7a-eefe-43e3-be63-0a7a505685a1"
+        },
+        {
+          "title": "Spreading Wings",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1825.jpg?alt=media&token=50425733-78c3-44a4-a9d3-7f3468c6ea72"
+        }
+      ],
+      "id": "media161"
+    },
+    "media162": {
+      "title": "The Garden Tour",
+      "availableForTour": true,
+      "availableForPerformance": false,
+      "subtitle": "",
+      "content": "SHARP Dance Company will be presenting several dance pieces that intertwine the beauty of nature and the beauty of dance in one symbiotic art.  The pieces are designed to be performed in a park, garden or in various outdoor locations. No special flooring needed.\n\nEngaging the Community with the Garden Tour: SHARP also offers unique and innovative ways to incorporate the community into our performance",
+      "sources": [
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F1.jpg?alt=media&token=4471d495-efbe-49aa-88be-5f65adf01eb2"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F2.jpg?alt=media&token=2da2b8da-796d-4bfd-bd02-5b3bbf97b3e5"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F3.jpg?alt=media&token=7227fc32-715a-4a35-a77c-ac11fb44cbcb"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F4.jpg?alt=media&token=377700d9-988a-412e-9a17-4f3771050e19"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F5.jpg?alt=media&token=d237c35f-cbba-4472-879c-e55aaf39b7d7"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F6.jpg?alt=media&token=873db818-2e4f-4bf5-a62d-37cebc6fef6b"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F7.jpg?alt=media&token=53cd73ab-a125-4339-9cc2-bf59893e47e4"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F8.jpg?alt=media&token=bf38bbd4-c12a-4392-a1cf-f9ee1e53c443"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F9.jpg?alt=media&token=390e21fb-f7c8-40dd-a0b6-aaf7035670ea"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F10.jpg?alt=media&token=20af61f7-b0c5-4561-8f52-b28738ab984e"
+        }
+      ],
+      "id": "media162"
+    },
+    "media163": {
+      "title": "Roller Coaster",
+      "availableForTour": true,
+      "availableForPerformance": true,
+      "subtitle": "",
+      "content": "Haven’t we all heard the rules on a roller coaster ride.  Roller Coaster takes a fun look at listening or not listening to those rules. Voiceover Rich Orlow.",
+      "sources": [
+        {
+          "title": "Roller Coaster",
+          "credit": "Kylene Cleaver",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F1.jpg?alt=media&token=a605f5ff-d493-4f7d-902d-d876685020ea"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F2.jpg?alt=media&token=1a4bd294-04cd-4a97-baab-12496f1eb227"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F3.jpg?alt=media&token=977e6f90-5d3b-4cad-9ecb-0ec1e5046425"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Kylene Cleaver",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F4.jpg?alt=media&token=3fbe1832-0354-40b3-ac7a-bb365909ff40"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F5.jpg?alt=media&token=95b8db84-d11c-41ad-91f4-8500c6873258"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F6.jpg?alt=media&token=653bc113-4f2d-45c9-aeac-f025116c6b67"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F7.jpg?alt=media&token=90052421-6a6b-44b0-ab97-8b3e7d4dccd9"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F8.jpg?alt=media&token=b359929c-24aa-4b21-8d22-9a81a9d1480e"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Kylene Cleaver",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F9.jpg?alt=media&token=dafac293-48cf-4e28-b952-4d42af0b50a9"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F10.jpg?alt=media&token=19b6c480-4535-491d-b99f-509169c4620e"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Kylene Cleaver",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F11.jpg?alt=media&token=ee7968ce-368f-4e2b-936c-69772029fe23"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F12.jpg?alt=media&token=25194f11-7e44-4c7d-8e82-4dd092218a2f"
+        }
+      ],
+      "id": "media163"
     }
   },
   "performers": {
