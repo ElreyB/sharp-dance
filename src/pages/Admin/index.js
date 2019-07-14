@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Redirect } from "react-router-dom";
 import * as Yup from "yup";
 import styled from "styled-components/macro";
@@ -54,15 +54,10 @@ const Input = styled(Field)`
 `;
 
 function AdminPage({ quotes, history, ...props }) {
-  const [quoteList, setQuoteList] = useState([]);
   const [willEdit, setWillEdit] = useState(false);
   const appContext = useContext(AuthUserContext);
   const { authUser } = appContext;
-  const dbQuotes = Object.values(quotes);
-
-  useEffect(() => {
-    setQuoteList(dbQuotes);
-  }, [dbQuotes]);
+  const quoteList = Object.values(quotes);
 
   if (!authUser) {
     return <Redirect to={LOG_IN} />;
