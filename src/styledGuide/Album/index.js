@@ -34,7 +34,7 @@ export function Album({
   title,
   ...props
 }) {
-  const message = getMessage(availableForPerformance, availableForTour);
+  const message = getMessage(availableForTour, availableForPerformance);
 
   return (
     <Grid {...props} align="start" padding="M">

@@ -562,6 +562,136 @@
         }
       ],
       "id": "media161"
+    },
+    "media162": {
+      "title": "The Garden Tour",
+      "availableForTour": true,
+      "availableForPerformance": false,
+      "subtitle": "",
+      "content": "SHARP Dance Company will be presenting several dance pieces that intertwine the beauty of nature and the beauty of dance in one symbiotic art.  The pieces are designed to be performed in a park, garden or in various outdoor locations. No special flooring needed.\n\nEngaging the Community with the Garden Tour: SHARP also offers unique and innovative ways to incorporate the community into our performance",
+      "sources": [
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F1.jpg?alt=media&token=4471d495-efbe-49aa-88be-5f65adf01eb2"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F2.jpg?alt=media&token=2da2b8da-796d-4bfd-bd02-5b3bbf97b3e5"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F3.jpg?alt=media&token=7227fc32-715a-4a35-a77c-ac11fb44cbcb"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F4.jpg?alt=media&token=377700d9-988a-412e-9a17-4f3771050e19"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F5.jpg?alt=media&token=d237c35f-cbba-4472-879c-e55aaf39b7d7"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F6.jpg?alt=media&token=873db818-2e4f-4bf5-a62d-37cebc6fef6b"
+        },
+        {
+          "title": "",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F7.jpg?alt=media&token=53cd73ab-a125-4339-9cc2-bf59893e47e4"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F8.jpg?alt=media&token=bf38bbd4-c12a-4392-a1cf-f9ee1e53c443"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F9.jpg?alt=media&token=390e21fb-f7c8-40dd-a0b6-aaf7035670ea"
+        },
+        {
+          "title": "",
+          "credit": "Diane Sharp",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F10.jpg?alt=media&token=20af61f7-b0c5-4561-8f52-b28738ab984e"
+        }
+      ],
+      "id": "media162"
+    },
+    "media163": {
+      "title": "Roller Coaster",
+      "availableForTour": true,
+      "availableForPerformance": true,
+      "subtitle": "",
+      "content": "Haven’t we all heard the rules on a roller coaster ride.  Roller Coaster takes a fun look at listening or not listening to those rules. Voiceover Rich Orlow.",
+      "sources": [
+        {
+          "title": "Roller Coaster",
+          "credit": "Kylene Cleaver",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F1.jpg?alt=media&token=a605f5ff-d493-4f7d-902d-d876685020ea"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F2.jpg?alt=media&token=1a4bd294-04cd-4a97-baab-12496f1eb227"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F3.jpg?alt=media&token=977e6f90-5d3b-4cad-9ecb-0ec1e5046425"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Kylene Cleaver",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F4.jpg?alt=media&token=3fbe1832-0354-40b3-ac7a-bb365909ff40"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F5.jpg?alt=media&token=95b8db84-d11c-41ad-91f4-8500c6873258"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F6.jpg?alt=media&token=653bc113-4f2d-45c9-aeac-f025116c6b67"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F7.jpg?alt=media&token=90052421-6a6b-44b0-ab97-8b3e7d4dccd9"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F8.jpg?alt=media&token=b359929c-24aa-4b21-8d22-9a81a9d1480e"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Kylene Cleaver",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F9.jpg?alt=media&token=dafac293-48cf-4e28-b952-4d42af0b50a9"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F10.jpg?alt=media&token=19b6c480-4535-491d-b99f-509169c4620e"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Kylene Cleaver",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F11.jpg?alt=media&token=ee7968ce-368f-4e2b-936c-69772029fe23"
+        },
+        {
+          "title": "Roller Coaster",
+          "credit": "Bill Hebert",
+          "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FrollerCoaster%2F12.jpg?alt=media&token=25194f11-7e44-4c7d-8e82-4dd092218a2f"
+        }
+      ],
+      "id": "media163"
     }
   },
   "performers": {
