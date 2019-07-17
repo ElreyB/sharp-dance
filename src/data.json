@@ -471,6 +471,26 @@
       "content": "Based on the dream of a dancer in which she is visited by her recently departed mother, she asks her mother if she is in heaven. Her mothers’ response is that she has not opened the seven windows yet. The Seven Windows looks into the world of reincarnation and moving on in the afterlife. A collaborative project with with four fine artists from NYC, Massachusetts, Philadelphia & Italy.",
       "sources": [
         {
+          "title": "Seven Windows Clip",
+          "credit": "",
+          "src": "https://www.youtube.com/watch?v=aRypcGmfrCo"
+        },
+        {
+          "title": "End of the Road (Excerpt)",
+          "credit": "",
+          "src": "https://vimeo.com/157655432"
+        },
+        {
+          "title": "Flower in the Storm (Exceprt)",
+          "credit": "",
+          "src": "https://vimeo.com/123058283"
+        },
+        {
+          "title": "Wings (Excerpt)",
+          "credit": "",
+          "src": "https://vimeo.com/146982874"
+        },
+        {
           "title": "Spreading Wings",
           "credit": "Bill Hebert",
           "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FsevenWindows%2FE92A1973.jpg?alt=media&token=e0910537-8f52-4b11-b038-baea49f225ba"
@@ -571,6 +591,11 @@
       "content": "SHARP Dance Company will be presenting several dance pieces that intertwine the beauty of nature and the beauty of dance in one symbiotic art.  The pieces are designed to be performed in a park, garden or in various outdoor locations. No special flooring needed.\n\nEngaging the Community with the Garden Tour: SHARP also offers unique and innovative ways to incorporate the community into our performance",
       "sources": [
         {
+          "title": "Garden tour with the Living Fountain",
+          "credit": "",
+          "src": "https://www.youtube.com/watch?v=2DX48pH5NkU&feature=youtu.be"
+        },
+        {
           "title": "",
           "credit": "Diane Sharp",
           "src": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2FgardenTour%2F1.jpg?alt=media&token=4471d495-efbe-49aa-88be-5f65adf01eb2"
@@ -630,6 +655,11 @@
       "subtitle": "",
       "content": "Haven’t we all heard the rules on a roller coaster ride.  Roller Coaster takes a fun look at listening or not listening to those rules. Voiceover Rich Orlow.",
       "sources": [
+        {
+          "title": "Roller Coaster",
+          "credit": "",
+          "src": "https://vimeo.com/112506829"
+        },
         {
           "title": "Roller Coaster",
           "credit": "Kylene Cleaver",
@@ -692,6 +722,36 @@
         }
       ],
       "id": "media163"
+    },
+    "media164": {
+      "title": "2014 Compilation video",
+      "availableForTour": false,
+      "availableForPerformance": false,
+      "subtitle": "",
+      "content": "",
+      "sources": [
+        {
+          "title": "",
+          "credit": "",
+          "src": "https://vimeo.com/112503979"
+        }
+      ],
+      "id": "media164"
+    },
+    "media165": {
+      "title": "2011 Compilation video",
+      "availableForTour": false,
+      "availableForPerformance": false,
+      "subtitle": "",
+      "content": "",
+      "sources": [
+        {
+          "title": "",
+          "credit": "",
+          "src": "https://www.youtube.com/watch?v=ntuhHbSRrOM&list=HL1325649672&feature=mh_lolz"
+        }
+      ],
+      "id": "media165"
     }
   },
   "performers": {
