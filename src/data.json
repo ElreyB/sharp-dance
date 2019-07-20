@@ -4000,5 +4000,133 @@
       "pathId": "2019-artsmidwest-conference",
       "id": "performances313"
     }
-  }
+  },
+  "press": [
+    {
+      "outlet": "Broad Street Review",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fbroad_street_review.png?alt=media&token=cb1ed2e4-64a8-4ced-840a-2d897c813708",
+      "url": "https://www.broadstreetreview.com/dance/sharp-dance-company-presents-facade?fbclid=IwAR2AP4zahnaFePV8XF4DJl5kc8feUpWH5BNP0M8gmMzj4ymO6ZsaYEUs3Tw",
+      "author": "Melissa Strong",
+      "description": "",
+      "date": "11/06/18"
+    },
+    {
+      "outlet": "The Dance Journal",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fdance_journal.png?alt=media&token=2764f2f7-2026-4849-95e1-7fb5f0c3546a",
+      "url": "https://philadelphiadance.org/dancejournal/2017/05/17/review-sharp-dance-company-act-one-act-two/",
+      "author": "Ashabi Rich",
+      "description": "",
+      "date": "05/17/17"
+    },
+    {
+      "outlet": "City Newspaper",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fcity_newspaper.jpg?alt=media&token=c429fb81-6f6c-4a65-a531-450c8b5b2e14",
+      "url": "http://www.rochestercitynewspaper.com/rochester/rebecca-reviews-seven-windows/Content?oid=2887214",
+      "author": "Rebecca Rafferty",
+      "description": "",
+      "date": "09/21/2016"
+    },
+    {
+      "outlet": "City Beat",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fcity_beat.jpg?alt=media&token=38f4dfff-5087-47d5-82ce-25adb2a71cea",
+      "url": "",
+      "author": "Rick Pender",
+      "description": "",
+      "date": "06/11/16"
+    },
+    {
+      "outlet": "DC Metro",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fdc_metro.jpg?alt=media&token=bceac6af-7114-4fe8-95e8-97d14657c1b7",
+      "url": "https://dcmetrotheaterarts.com/2015/07/15/2015-capital-fringe-review-une-soiree-au-cabaret/",
+      "author": "Eames Armstrong",
+      "description": "",
+      "date": "07/15/15"
+    },
+    {
+      "outlet": "City Paper",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fcity_paper.png?alt=media&token=464f2915-ebf0-4f5e-adb4-0b783b754ea2",
+      "url": "https://www.washingtoncitypaper.com/arts/fringeworthy/blog/13136982/hip-shot-une-soiree-au-cabaret",
+      "author": "Emily Walz",
+      "description": "",
+      "date": "07/19/15"
+    },
+    {
+      "outlet": "The Temple News",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fthe_temple_news.png?alt=media&token=9da29dec-f1e0-4f43-9e11-dae464e2c016",
+      "url": "https://temple-news.com/philadelphia-dance-company-tours-us-and-europe/",
+      "author": "Grace Maiorano",
+      "description": "",
+      "date": "07/13/15"
+    },
+    {
+      "outlet": "Philadelphia Dance",
+      "logo": "",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fphiladelphia_journal.jpg?alt=media&token=51807613-e192-4100-acc5-be4612f2f6f3",
+      "url": "https://philadelphiadance.org/dancejournal/2014/10/16/sharps-journey-home/",
+      "author": "Lewis Whittington",
+      "description": "",
+      "date": "10/16/14"
+    },
+    {
+      "outlet": "The Temple News",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fthe_temple_news.png?alt=media&token=9da29dec-f1e0-4f43-9e11-dae464e2c016",
+      "url": "https://temple-news.com/nonprofit-dance-company-celebrates-ninth-year/",
+      "author": "Allison Merchant",
+      "description": "",
+      "date": "10/14/14"
+    },
+    {
+      "outlet": "The Dance Journal",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fdance_journal.png?alt=media&token=2764f2f7-2026-4849-95e1-7fb5f0c3546a",
+      "url": "https://philadelphiadance.org/dancejournal/2014/10/10/sneak-peak-sharp-dance-presenting-journey/",
+      "author": "Bill Hebert",
+      "description": "",
+      "date": "10/10/14"
+    },
+    {
+      "outlet": "The Rutgers Review",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Frutgers_review.jpeg?alt=media&token=b682b26e-2354-40f0-92b5-0955eda6017a",
+      "url": "https://rutgersreview.wordpress.com/2013/05/06/an-emotional-exposition-a-trip-back-to-authenticity/",
+      "author": "Amanda Matteo",
+      "description": "",
+      "date": "5/6/13"
+    },
+    {
+      "outlet": "The Dance Journal",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fdance_journal.png?alt=media&token=2764f2f7-2026-4849-95e1-7fb5f0c3546a",
+      "url": "https://philadelphiadance.org/dancejournal/2013/04/23/sharps-aquarian-exposition/",
+      "author": "Steven Weisz",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Ftrip_back.jpg?alt=media&token=705f2b3e-14bd-4b8e-a630-ca9e9c1c82f7",
+      "description": "",
+      "date": "5/23/13"
+    },
+    {
+      "outlet": "Philadelphia Weekly",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fphiladelphia_weekly.png?alt=media&token=0a97a990-34ee-4eb5-8b53-17746277ad95",
+      "url": "http://www.philadelphiaweekly.com/arts/battle-of-the-pifa-shows-carnies-vs-hippies/article_c26a01df-6436-5953-a759-4e67abb5ed55.html",
+      "author": "Nicole Finkbiner",
+      "description": "",
+      "date": "04/17/13"
+    },
+    {
+      "outlet": "The Cabinet",
+      "logo": "",
+      "url": "",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fthe_cabinet.jpg?alt=media&token=c45ef9a0-9c5f-4fdf-8193-c258faa3f189",
+      "author": "Amherst-Lyndebrough-Milford-Mont Vernon-Wilton",
+      "description": "SHARP Dance Company is back at the Seacoast Fringe to perform 8 exciting pieces including excerpts from SHARP’s sold out sexy cabaret performance “Une Soiree au Cabaret” and the world premiere of “Beauty from Pain.”\nSHARP Dance Company is a national touring modern dance company based out of Philadelphia that enjoys not only strong technical dance but incorporating that with various collaborators. SHARP’s striking work investigates the gravitational support each person is able to call upon in life.\nSexy and thought provoking, SHARP hopes to bring its kinetic energy to the Seacoast Fringe 2011. SHARP strives to bring together a company of strong dancers to perform work with a new vision. Their mission is to translate raw human emotion utilizing contemporary movement to connect the audience through individual interpretation.\nThis company and its theory of “meaning behind movement” is shown prominently throughout its work. SHARP feels that “dance should be more than a performance, it should be an experience. “\nSHARP’s work was recently selected for The Phoenix Fringe Festival 2010, The Seacoast Fringe Festival 2010 & 2011, the Cool 2009 NY Festival, and The Fringe Wilmington Festivals in 2009, 2010 & 2011 and the 2011 Philadelphia Festival of the Arts (PIFA). Artistic Director Diane Sharp-Nachsin was selected as a New Edge Mix Artist Award recipient in Philadelphia, PA in 2008 and was commissioned to set work on the Mid-Atlantic Ballet in 2008- 2011.",
+      "date": "09/14/11"
+    }
+  ]
 }
