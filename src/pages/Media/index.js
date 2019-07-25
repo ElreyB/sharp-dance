@@ -1,14 +1,19 @@
 import React from "react";
 import { Page, Banner, Album, H2 } from "../../styledGuide";
+import { findPage } from "../../utils";
 
 export default function Media({ pages, media }) {
-  const mediaList = Object.values(media);
+  const page = findPage(pages, "media");
+
+  if (!page) {
+    return null;
+  }
 
   return (
     <Page>
-      <Banner {...pages.media.headerBanner} />
-      {mediaList.length > 0 ? (
-        mediaList.map((album, i) => <Album size={6} {...album} key={i} />)
+      <Banner {...page.headerBanner} />
+      {media.length > 0 ? (
+        media.map((album, i) => <Album size={6} {...album} key={i} />)
       ) : (
         <H2>No albums available</H2>
       )}
