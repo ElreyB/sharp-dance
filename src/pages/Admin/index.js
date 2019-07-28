@@ -5,6 +5,7 @@ import styled from "styled-components/macro";
 import { Grid } from "gymnast";
 import {
   Button,
+  DropDown,
   ErrorMessage,
   Field,
   Form,
@@ -68,6 +69,7 @@ function AdminPage({ quotes, history, ...props }) {
       <Button type="button" onClick={SignOut}>
         SignOut
       </Button>
+      <DropDown />
       <H1>Admin Page</H1>
       <Container>
         <LeftContent>

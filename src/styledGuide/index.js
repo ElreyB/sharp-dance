@@ -2,6 +2,7 @@ export * from "./Album";
 export * from "./Banner";
 export * from "./Bio";
 export * from "./Button";
+export * from "./DropDown";
 export * from "./Formik";
 export * from "./Headings";
 export * from "./IFrame";
