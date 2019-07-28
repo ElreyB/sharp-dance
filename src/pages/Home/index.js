@@ -1,5 +1,6 @@
 import React from "react";
-import { Banner, Page } from "../../styledGuide";
+
+import { BackgroundVideo, Banner, Page } from "../../styledGuide";
 import { findPage } from "../../utils";
 
 export default function Home({ pages }) {
@@ -12,6 +13,7 @@ export default function Home({ pages }) {
   return (
     <Page>
       <Banner {...home.headerBanner} />
+      <BackgroundVideo src={home.video} />
     </Page>
   );
 }
