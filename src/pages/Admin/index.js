@@ -17,7 +17,17 @@ import {
   Quote
 } from "../../styledGuide";
 import { newData, AuthUserContext, SignOut, deleteData } from "../../fbconfig";
-import { LOG_IN, QUOTES } from "../../constants";
+import {
+  LOG_IN,
+  QUOTES,
+  ABOUT,
+  ADMIN,
+  BIOS,
+  CLASSES,
+  EVENTS,
+  LANDING,
+  MEDIA
+} from "../../constants";
 import EditForm from "../EditForm";
 
 const Error = styled.div`
@@ -54,6 +64,36 @@ const Input = styled(Field)`
   height: 26px;
 `;
 
+const testNav = [
+  {
+    itemLinks: [
+      { to: LANDING, label: "Home" },
+      { to: BIOS, label: "Bio's" },
+      { to: MEDIA, label: "Media" },
+      { to: EVENTS, label: "Events" },
+      { to: CLASSES, label: "Classes" },
+      { to: ABOUT, label: "About" },
+      { to: LOG_IN, label: "Login" },
+      { to: ADMIN, label: "Admin" }
+    ],
+    label: "Nav label"
+  },
+  {
+    itemLinks: [
+      { to: LANDING, label: "Home" },
+      { to: BIOS, label: "Bio's" },
+      { to: MEDIA, label: "Media" },
+      { to: EVENTS, label: "Events" },
+      { to: CLASSES, label: "Classes" }
+    ],
+    label: "Diff Label"
+  },
+  {
+    itemLinks: [{ to: LANDING, label: "Home" }, { to: BIOS, label: "Bio's" }],
+    label: "Other label"
+  }
+];
+
 function AdminPage({ quotes, history, ...props }) {
   const [willEdit, setWillEdit] = useState(false);
   const appContext = useContext(AuthUserContext);
@@ -69,7 +109,9 @@ function AdminPage({ quotes, history, ...props }) {
       <Button type="button" onClick={SignOut}>
         SignOut
       </Button>
-      <DropDown />
+      {testNav.map(item => (
+        <DropDown {...item} key={item.label} />
+      ))}
       <H1>Admin Page</H1>
       <Container>
         <LeftContent>
