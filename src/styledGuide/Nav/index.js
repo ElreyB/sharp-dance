@@ -5,7 +5,6 @@ import { Li } from "./Li";
 
 export function Nav({ links, ...props }) {
   const [, allProps] = useGrid(props);
-  // const Button = button;
 
   return (
     <nav {...allProps}>
