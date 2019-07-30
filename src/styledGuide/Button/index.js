@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useGrid, Grid } from "gymnast";
 import styled from "styled-components/macro";
 
-const StyledButton = styled("button")`
+const StyledButton = styled.button`
   border: 1px solid white;
 `;
 
