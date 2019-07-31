@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { Grid, Banner, Page, Schedule, Nav, H3 } from "../../styledGuide";
-import { groupPerformancesByYear, parseSchedule } from "../../utils";
+import { groupPerformancesByYear, parseSchedule, findPage } from "../../utils";
 import { EVENTS } from "../../constants";
 
 const PAST_EVENTS = `${EVENTS}/past`;
@@ -37,7 +37,9 @@ const renderPerformances = ([year, perfs]) =>
   );
 
 export default function Events({ pages, performances }) {
-  const parsedPerformances = Object.values(performances).map(parseSchedule);
+  const events = findPage(pages, "events");
+
+  const parsedPerformances = performances.map(parseSchedule);
   const upcomingPerformances = parsedPerformances
     .filter(({ isFuture }) => isFuture)
     .sort(olderFirst);
@@ -45,9 +47,13 @@ export default function Events({ pages, performances }) {
     .filter(({ isFuture }) => !isFuture)
     .sort(mostRecentFirst);
 
+  if (!events) {
+    return null;
+  }
+
   return (
     <Page>
-      <Banner {...pages.events.headerBanner} />
+      <Banner {...events.headerBanner} />
       <Grid align="start">
         <Nav
           links={[

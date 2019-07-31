@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
+import { findPage } from "../../utils";
 
 const getBio = bio => <Bio {...bio} key={bio.name} />;
 
@@ -10,31 +11,32 @@ export default function Bios({
   guestPerformers,
   staff
 }) {
-  const performerList = Object.values(performers);
-  const apprenticeList = Object.values(apprentices);
-  const guestPerformerList = Object.values(guestPerformers);
-  const staffList = Object.values(staff);
+  const bios = findPage(pages, "bios");
+
+  if (!bios) {
+    return null;
+  }
 
   return (
     <Page>
-      <Banner {...pages.bios.headerBanner} />
+      <Banner {...bios.headerBanner} />
       <Grid align="start">
-        {performerList.length > 0 && Object.values(performerList).map(getBio)}
-        {apprenticeList.length > 0 && (
+        {performers.length > 0 && Object.values(performers).map(getBio)}
+        {apprentices.length > 0 && (
           <>
             <H2>Apprentices</H2>
-            {apprenticeList.map(getBio)}
+            {apprentices.map(getBio)}
           </>
         )}
-        {guestPerformerList.length > 0 && (
+        {guestPerformers.length > 0 && (
           <>
             <H2>Guest Performers</H2>
-            {guestPerformerList.map(getBio)}
+            {guestPerformers.map(getBio)}
           </>
         )}
-        <Banner {...pages.bios.aboutDianeBanner} />
-        <Markdown marginTop="L">{pages.bios.aboutDianeText}</Markdown>
-        {staffList.length > 0 && staffList.map(getBio)}
+        <Banner {...bios.aboutDianeBanner} />
+        <Markdown marginTop="L">{bios.aboutDianeText}</Markdown>
+        {staff.length > 0 && staff.map(getBio)}
       </Grid>
     </Page>
   );

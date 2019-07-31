@@ -12,7 +12,10 @@ export function useGetDatabase(ref = undefined) {
 
     return () => db.ref(ref).off("value", database);
   }, [ref]);
-  return data;
+
+  // TODO RETURN "data", THIS IS A HACK!
+  console.log("fetched data", data);
+  return require("../data-array.json");
 }
 
 export function newData(ref, data) {

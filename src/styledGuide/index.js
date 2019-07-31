@@ -14,4 +14,5 @@ export * from "./P";
 export * from "./Page";
 export * from "./Quote";
 export * from "./Schedule";
+export * from "./Video";
 export * from "gymnast";

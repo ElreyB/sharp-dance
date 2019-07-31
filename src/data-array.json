@@ -1,9 +1,17 @@
 {
   "pages": [
     {
+      "id": "home",
       "headerBanner": {
-        "title": "SHARP",
-        "subtitle": "Dance Company",
+        "title": "SHARP DANCE",
+        "subtitle": ""
+      },
+      "video": "https://vimeo.com/252107468"
+    },
+    {
+      "id": "about",
+      "headerBanner": {
+        "title": "About",
         "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpages%2Fhome%2Fhome.jpg?alt=media&token=17b229e7-6332-4b87-91ec-37943ff73264",
         "imgCredit": "Bill Hebert"
       },
@@ -11,6 +19,7 @@
       "quotesTitle": "Press Quotes"
     },
     {
+      "id": "bios",
       "headerBanner": {
         "title": "Bio’s",
         "subtitle": "Company and Guest Dancers / Choreographers"
@@ -26,16 +35,70 @@
       "aboutDianeText": "Diane Sharp-Nachsin suffered from injuries that forced her to retire from performing, so in 2005 she founded SHARP and premiered the company in March 2006.  Diane’s work has been selected for the:  Cool NY Festival, Southern Vermont Dance Festival, STEPS Performance Lab (NY), Come Together Festival, Artsfest, Philadelphia International of the Arts (PIFA) and over 15 Fringe Festivals throughout the country and the United Kingdom.\nDiane has been invited as a resident artist in the U.S. and abroad including: The Living Garden Residency (Greece), CEC New Edge Mix Residency (Philadelphia),  and the BAU institute Residency (Italy).  Diane’s choreography has been commissioned for Mid Atlantic Ballet, The prestigous Governors School, Penn State University and the New Zealand Embassy.\nShe started her career in Pittsburgh, dancing with Pittsburgh based, Mary Miller Dance Company from 1992-1994.  She returned to Philadelphia to dance on scholarship with Philadanco’s training program.  Diane has also danced professionally with Juan Antonio and dancers, Trapezius Aerial Dance Company, Deborah Birrane, Anne-Marie Mulgrew and Dancers, Convergence Dancers and Musicians/Dance Matrix and Amsterdam based company Jacqueline Knopps and dansers.  She has performed with Pennsylvania Ballet Theaters’ Principal dancers Leslie Carothers and Meredith Rainey and Dirk Platzik, formally of The White Oak Project with Mikhail Baryshnikov.\nSome of Diane’s other original work has been showcased Maryland, Greece, Pittsburgh, Italy, California, New Hampshire, New York and Colorado and in numerous musicals throughout the Philadelphia Area."
     },
     {
+      "id": "classes",
       "headerBanner": {
         "title": "Class Schedule",
         "subtitle": "Come dance with us",
         "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpages%2Fclasses%2Fclasses.jpg?alt=media&token=1d768d9c-52c6-4d38-818f-1d611332b224",
         "content": "SHARP is happy to announce we will now be opening our company class.\nClasses will run 55 minutes. $10 cash or credit. Classes will be taught by a rotation of company members"
       },
+      "classSchedule": {
+        "name": "Summer Schedule",
+        "description": "",
+        "location": { "name": "", "address": "" },
+        "footnote": "",
+        "website": "",
+        "pricing": "",
+        "purchaseUrl": "",
+        "dates": [
+          {
+            "days": "27",
+            "month": 6,
+            "year": 2019,
+            "time": "6:35 PM - 7:30 PM",
+            "notes": "Sandra Davis - Teaching Ballet"
+          },
+          {
+            "days": "4",
+            "month": 7,
+            "year": 2019,
+            "time": "",
+            "notes": "No Class"
+          },
+          {
+            "days": "11",
+            "month": 7,
+            "year": 2019,
+            "time": "6:35 PM - 7:30 PM",
+            "notes": "Kate Lombardi - Teaching Modern"
+          },
+          {
+            "days": "18",
+            "month": 7,
+            "year": 2019,
+            "time": "6:35 PM - 7:30 PM",
+            "notes": "Miguel Quiñones - Teaching Ballet"
+          },
+          {
+            "days": "25",
+            "month": 7,
+            "year": 2019,
+            "time": "6:35 PM - 7:30 PM",
+            "notes": "Linnea Calzada-Charma - Teaching Ballet"
+          },
+          {
+            "days": "1",
+            "month": 8,
+            "year": 2019,
+            "time": "",
+            "notes": "No Class"
+          }
+        ]
+      },
       "noClasses": "No upcoming classess"
     },
-    { "headerBanner": { "title": "Media" } },
-    { "headerBanner": { "title": "SHARP Performances" } }
+    { "id": "media", "headerBanner": { "title": "Media" } },
+    { "id": "events", "headerBanner": { "title": "SHARP Performances" } }
   ],
   "media": [
     {
@@ -4198,13 +4261,52 @@
       "date": "04/28/08"
     },
     {
-      "outlet": "Pitttsburgh Citty Paper",
+      "outlet": "Pittsburgh Citty Paper",
       "img": "",
       "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fpittsburgh.jpg?alt=media&token=b4f49f62-52ef-41ad-9f08-9e2251955885",
       "url": "",
       "author": "Denise N. Lewis",
       "description": "Mary Miller makes dance with something to say\n\nFor many people, an encounter with an angry motorist is an everyday annoyance. For Mary Miller, it was an inspiration: Facing road rage led the dancer and choreographer to create the Peace Project, a five-year exploration of peace through movement. The latest installment is Together, Mary Miller Dance Company's collaboration with Philadelphia-based SHARP Dance Company, with three shows Nov. 16-17, at Open Stage Theater.\n\nUnlike a choreographer whose creative process begins in the studio, says Miller, \"I start from the point of human experience and expand from there.\" Audiences get to relate, and even sometimes take part in, the performance. \"There is a commonality among all of us; for example, we all want a good life,\" says Miller, her company's artistic director. \"Dance is my voice, my language. So, I use dance to remind people of the connections we share.\"\n\nThe goal of connecting people extends to Miller Dance Company's collaboration with SHARP, an edgy modern and hip-hop dance group. The collaboration did not emerge from the blue: SHARP artistic director Diane Sharp-Nachsin was a dancer for Mary Miller from 1992-1996. Sharp-Nachsin, who formed her own company in 2005, echoes Miller's mission statement. \"My work comes from having something to say,\" says Sharp-Nachsin. \"It's not just arbitrary movement in the middle of the floor.\"\n\nBoth companies prize unpredictability. \"A big part of creativity is humor,\" says Miller. \"I am moved by issues that present themselves to be funny. And I'm not preachy. I approach it as, 'I'm thinking about this, what do you think?'\"\n\nThe Nov. 16 and 17 performances here also feature local guest artists including musician Ellen Gozion, spoken-word artist Vanessa German, and musician and performance artist Stephen Pellegrino.\n\nLooking ahead, Miller and Sharp-Nachsin hope that this year's collaboration will be one of many. They intend to broaden their audience by reprising Together in Philadelphia.\n\nMeantime, audiences for Together here should expect a roller-coaster ride of emotions and life experiences. Miller's works include a dance about the experience of dreaming. Sharp-Nachsin's sensual dance \"Linear\" tells the story of a woman who's living life on the straight and narrow until a love interest has her stepping out of her comfort zone. Perhaps audiences who connect with the work on stage will have a better chance of connecting with one another, as well.\n\nMary Miller Dance Company presents Together 8 p.m. Fri., Nov. 16; and 2 and 8 p.m. Sat., Nov. 17. Open Stage Theater, 2835 Smallman St., Strip District. $18 ($15 seniors/$10 students/$5 students Nov. 17 matinee). 412-394-3353 or www.MaryMillerDanceCo.org",
       "date": "11/15/07"
+    },
+    {
+      "outlet": "The Philadelphia Inquirer",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fphiladelphia_inquirer.jpg?alt=media&token=6b708577-6e2b-4b7c-9193-7a9a31c1548e",
+      "url": "",
+      "author": "",
+      "description": "Best Bets!\nWilmington on the fringe. Une Soiree au Cabaret at Fringe Wilmington 2011 presented at 8 p.m. Saturday with Sharp Dance Company at the Christina Cultural Arts Center. A step back in time to early-1900s France, with a collaboration in dance, digital projection, and live vocals.\nChristina Cultural Arts Center, 705 N. Market St., Wilmington. Admission: $5. Information: 302-932-0738 or 302-332-2407, www.sharpdance.org.",
+      "date": "09/24/11"
+    },
+    {
+      "outlet": "The Philadelphia Inquirer",
+      "img": "",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fphiladelphia_inquirer.jpg?alt=media&token=6b708577-6e2b-4b7c-9193-7a9a31c1548e",
+      "url": "",
+      "author": "",
+      "description": "Do This!\nWilmington on the fringe\nUne Soiree au Cabaret at Fringe Wilmington 2011 will be presented at 8:30 p.m. Friday and 8 p.m. Saturday with Sharp Dance Company at the Christina Cultural Arts Center, 705 N. Market St., Wilmington, Del. Sharp takes the audience a step back in time to early-1900s France, with a full night of material from the Wilmington Fringe Festival 2011. The night will showcase a collaboration in dance, digital projection, and live vocals with a sexy, wicked, and comical cabaret spirit. Admission: $5. Information: 302-932-0738 or 302-332-2407, http://www.sharpdance.org",
+      "date": "09/23/11"
+    },
+    {
+      "outlet": "Philadelphia Gay News",
+      "img": [
+        "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fpgn1.jpg?alt=media&token=78571f24-eac0-42b5-a812-3e7ced11f7ea",
+        "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fpgn2.jpg?alt=media&token=ecda2e6b-633b-4a40-808b-06503d8fb2bc"
+      ],
+      "logo": "",
+      "url": "",
+      "author": "Larry Nichols",
+      "description": "",
+      "date": "09/04/08"
+    },
+    {
+      "outlet": "SPARK Magazine",
+      "img": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2Fspark2011.jpg?alt=media&token=db50fb08-8496-44af-9e12-608afc39aff1",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpress%2FSpark-Magazine-Logo-Black.png?alt=media&token=915674f9-acbf-4894-80d7-fb117008a1f9",
+      "url": "https://sparkmagazinetx.com",
+      "author": "Kylene Cleaver",
+      "description": "",
+      "date": "09/01/11"
     }
   ]
 }

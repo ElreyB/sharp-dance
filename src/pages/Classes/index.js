@@ -1,14 +1,20 @@
 import React from "react";
 import { Banner, Page, Schedule, H3, IFrame } from "../../styledGuide";
-import { parseDate } from "../../utils";
+import { parseDate, findPage } from "../../utils";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
 
-export default function Classes({ pages, classSchedule }) {
+export default function Classes({ pages }) {
+  const page = findPage(pages, "classes");
+
+  if (!page) {
+    return null;
+  }
+
   const upcomingClasses = {
-    ...classSchedule,
-    dates: classSchedule.dates.filter(date => isFuture(parseDate(date)))
+    ...page.classSchedule,
+    dates: page.classSchedule.dates.filter(date => isFuture(parseDate(date)))
   };
 
   const classes = (
@@ -22,12 +28,10 @@ export default function Classes({ pages, classSchedule }) {
       ></IFrame>
     </>
   );
-  const noClasses = <H3>{pages.classes.noClasses}</H3>;
-
   return (
     <Page>
-      <Banner {...pages.classes.headerBanner} />
-      {upcomingClasses.dates.length > 0 ? classes : noClasses}
+      <Banner {...page.headerBanner} />
+      {upcomingClasses.dates.length > 0 ? classes : <H3>{page.noClasses}</H3>}
     </Page>
   );
 }
