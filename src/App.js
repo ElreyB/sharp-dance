@@ -1,28 +1,33 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
-import Admin from "./pages/Admin";
 import Bios from "./pages/Bios";
 import Classes from "./pages/Classes";
+import Contact from "./pages/Contact";
+import Donations from "./pages/Donations";
 import Error404 from "./pages/404";
 import Events from "./pages/Events";
 import Home from "./pages/Home";
 import Loading from "./pages/Loading";
-import Login from "./pages/Login";
 import Media from "./pages/Media";
+import Photography from "./pages/Photography";
+import Press from "./pages/Press";
 import SignUp from "./pages/SignUp";
 import { useGetDatabase } from "../src/fbconfig";
 import {
   ABOUT,
-  ADMIN,
   BIOS,
   CLASSES,
+  CONTACT,
+  DONATIONS,
   EVENTS,
   LANDING,
-  LOG_IN,
   MEDIA,
+  PHOTOGRAPHY,
+  PRESS,
   SIGN_UP
 } from "./constants";
+import { ScrollToTop } from "./styledGuide";
 
 function App() {
   const database = useGetDatabase();
@@ -41,16 +46,20 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route path={ABOUT} component={component(About)} />
-        <Route path={ADMIN} component={component(Admin)} />
         <Route path={BIOS} exact component={component(Bios)} />
-        <Route path={CLASSES} exact component={component(Classes)} />
+        <Route path={CLASSES} component={component(Classes)} />
+        <Route path={CONTACT} component={component(Contact)} />
+        <Route path={DONATIONS} component={component(Donations)} />
         <Route path={EVENTS} component={component(Events)} />
-        <Route path={LOG_IN} component={component(Login)} />
-        <Route path={MEDIA} component={component(Media)} />
-        <Route path={SIGN_UP} component={component(SignUp)} />
         <Route path={LANDING} exact component={component(Home)} />
+        <Route path={MEDIA} component={component(Media)} />
+        <Route path={PHOTOGRAPHY} component={component(Photography)} />
+        <Route path={PRESS} component={component(Press)} />
+        <Route path={SIGN_UP} component={component(SignUp)} />
+
         <Route component={component(Error404)} />
       </Switch>
     </Router>

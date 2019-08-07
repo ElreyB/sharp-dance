@@ -9,9 +9,20 @@ export function Nav({ links, ...props }) {
   return (
     <nav {...allProps}>
       <Ul>
-        {links.map(({ to, label }) => (
-          <Li to={to} key={label}>
-            {label}
+        {links.map(({ to, label, sub = [] }) => (
+          <Li to={to} key={label} label={label}>
+            {sub.length > 0 && (
+              <Ul
+                key={`${label}-ul`}
+                size="fit"
+                direction="column"
+                margin="S 0 0 0"
+              >
+                {sub.map(li => (
+                  <Li {...li} key={li.label} size="fit" />
+                ))}
+              </Ul>
+            )}
           </Li>
         ))}
       </Ul>
