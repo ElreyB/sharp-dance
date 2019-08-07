@@ -1,24 +1,14 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React from "react";
 import { withFirestore } from "react-firestore";
 import { Page, Banner, Album, H2 } from "../../styledGuide";
 import { findPage } from "../../utils";
+import useGetData from "../../firestore/useGetData";
 
 export const collectionIdsAndDocs = doc => ({ id: doc.id, ...doc.data() });
 
 function Media({ pages, firestore }) {
   const page = findPage(pages, "media");
-  const [media, setMedia] = useState(null);
-
-  const subscribeToMedia = useCallback(
-    () =>
-      firestore.collection("media").onSnapshot(snapshot => {
-        const mediaDocs = snapshot.docs.map(collectionIdsAndDocs);
-        setMedia(mediaDocs);
-      }),
-    [firestore]
-  );
-
-  useEffect(() => subscribeToMedia(), [subscribeToMedia]);
+  const { media } = useGetData("media");
 
   if (!page) {
     return null;
