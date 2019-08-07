@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Redirect } from "react-router-dom";
+import { FirestoreCollection } from "react-firestore";
 import * as Yup from "yup";
 import styled from "styled-components/macro";
 import { Grid } from "gymnast";
@@ -29,6 +30,7 @@ import {
   MEDIA
 } from "../../constants";
 import EditForm from "../EditForm";
+import Loading from "../Loading";
 
 const Error = styled.div`
   color: red;
@@ -198,6 +200,39 @@ function AdminPage({ quotes, history, ...props }) {
               })}
             </Grid>
           )}
+        </RightContent>
+        <RightContent>
+          <FirestoreCollection
+            path="quotes"
+            render={({ isLoading, data }) => {
+              return isLoading ? (
+                <Loading />
+              ) : (
+                <Grid padding="S">
+                  <H2>Quote List</H2>
+                  {quotes.map((quote, i) => {
+                    return (
+                      <Grid key={i}>
+                        <Quote {...quote} />
+                        <Button
+                          type="button"
+                          onClick={() => deleteData("/" + QUOTES, quote.id)}
+                        >
+                          Delete
+                        </Button>
+                        <Button
+                          type="button"
+                          onClick={() => setWillEdit(!willEdit)}
+                        >
+                          {willEdit ? "Edit" : "Hide Edit form"}
+                        </Button>
+                      </Grid>
+                    );
+                  })}
+                </Grid>
+              );
+            }}
+          ></FirestoreCollection>
         </RightContent>
       </Container>
     </Page>

@@ -2,15 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { ThemeProvider } from "styled-components/macro";
+import "firebase/firestore";
+import { FirestoreProvider } from "react-firestore";
 import { theme, GlobalStyle } from "./styles";
-import { AuthUserProvider } from "./fbconfig";
+import { AuthUserProvider, Firebase } from "./fbconfig";
 
 const RootApp = () => (
   <ThemeProvider theme={theme}>
-    <AuthUserProvider>
-      <GlobalStyle />
-      <App />
-    </AuthUserProvider>
+    <FirestoreProvider firebase={Firebase}>
+      <AuthUserProvider>
+        <GlobalStyle />
+        <App />
+      </AuthUserProvider>
+    </FirestoreProvider>
   </ThemeProvider>
 );
 
