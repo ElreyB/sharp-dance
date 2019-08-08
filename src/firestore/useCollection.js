@@ -11,9 +11,7 @@ function useCollection(ref) {
       `Must pass a collection refference to useCollection or ref must be of type 'string' but got ${ref}`
     );
   }
-  // if (!ref) {
-  //   throw new Error("Opss!");
-  // }
+
   useEffect(() => {
     const subscribeToData = firestore.collection(ref).onSnapshot(
       snapshot => {
