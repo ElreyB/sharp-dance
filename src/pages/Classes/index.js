@@ -1,15 +1,20 @@
 import React from "react";
 import { Banner, Page, Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate, findPage } from "../../utils";
+import Loading from "../Loading";
+// import useCollection from "../../firestore/useCollection";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
 
 export default function Classes({ pages }) {
+  /**TODO: need to fix firestore database. Do not have 'page.classSchedule' */
+  // const { data } = useCollection("pages");
+  // const page = findPage(data, "2");
   const page = findPage(pages, "classes");
 
   if (!page) {
-    return null;
+    return <Loading />;
   }
 
   const upcomingClasses = {
@@ -28,6 +33,7 @@ export default function Classes({ pages }) {
       ></IFrame>
     </>
   );
+
   return (
     <Page>
       <Banner {...page.headerBanner} />

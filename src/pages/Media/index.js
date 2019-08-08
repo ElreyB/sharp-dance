@@ -6,6 +6,7 @@ import useCollection from "../../firestore/useCollection";
 
 function Media({ pages }) {
   const { data } = useCollection("pages");
+  /**TODO: need to fix firestore database. Do not have 'page.classSchedule' */
   const page = findPage(data, "3");
   if (!page) {
     return null;
@@ -13,18 +14,18 @@ function Media({ pages }) {
   return (
     <FirestoreCollection
       path="media"
-      render={({ data, isLoading }) => (
-        <Page>
-          <Banner {...page.headerBanner} />
-          {!isLoading ? (
-            data.map((album, i) => {
+      render={({ data, isLoading }) =>
+        !isLoading ? (
+          <Page>
+            <Banner {...page.headerBanner} />
+            {data.map((album, i) => {
               return <Album size={6} {...album} key={album.id} />;
-            })
-          ) : (
-            <H2>No albums available</H2>
-          )}
-        </Page>
-      )}
+            })}
+          </Page>
+        ) : (
+          <H2>No albums available</H2>
+        )
+      }
     />
   );
 }
