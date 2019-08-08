@@ -3,10 +3,17 @@ import { firestore } from "../fbconfig";
 
 export const collectionIdsAndDocs = doc => ({ id: doc.id, ...doc.data() });
 
-function useCollection(ref = "sharp-dance") {
+function useCollection(ref) {
   const [data, setData] = useState(null);
   const [error, setError] = React.useState(false);
-
+  if (!ref || typeof ref !== "string") {
+    throw new Error(
+      `Must pass a collection refference to useCollection or ref must be of type 'string' but got ${ref}`
+    );
+  }
+  // if (!ref) {
+  //   throw new Error("Opss!");
+  // }
   useEffect(() => {
     const subscribeToData = firestore.collection(ref).onSnapshot(
       snapshot => {
