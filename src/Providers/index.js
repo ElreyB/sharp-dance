@@ -4,3 +4,6 @@ export * from "./StaffProvider";
 export * from "./AuthProvider";
 export * from "./QuotesProvider";
 export * from "./OrganizationsProvider";
+export * from "./ApprenticesProvider";
+export * from "./GuestPerformersProvider";
+export * from "./PerformersProvider";

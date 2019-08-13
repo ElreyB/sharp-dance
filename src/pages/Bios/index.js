@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
 import { findPage } from "../../utils";
-import useCollection from "../../firestore/useCollection";
+import {
+  StaffContext,
+  PerformersContext,
+  ApprenticesContext,
+  GuestPerformersContext
+} from "../../Providers";
 
 const getBio = bio => <Bio {...bio} key={bio.name} />;
 
 export default function Bios({ pages }) {
-  const { data: performers } = useCollection("performers");
-  const { data: apprentices } = useCollection("apprentices");
-  const { data: guestPerformers } = useCollection("guestPerformers");
-  const { data: staff } = useCollection("staff");
+  const performers = useContext(PerformersContext);
+  const apprentices = useContext(ApprenticesContext);
+  const guestPerformers = useContext(GuestPerformersContext);
+  const staff = useContext(StaffContext);
   const bios = findPage(pages, "bios");
 
   if (!bios) {
