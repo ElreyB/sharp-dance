@@ -8,17 +8,8 @@ import Events from "./pages/Events";
 import Home from "./pages/Home";
 import Loading from "./pages/Loading";
 import Media from "./pages/Media";
-import SignUp from "./pages/SignUp";
 import { useGetDatabase } from "../src/fbconfig";
-import {
-  ABOUT,
-  BIOS,
-  CLASSES,
-  EVENTS,
-  LANDING,
-  MEDIA,
-  SIGN_UP
-} from "./constants";
+import { ABOUT, BIOS, CLASSES, EVENTS, LANDING, MEDIA } from "./constants";
 
 function App() {
   const database = useGetDatabase();
@@ -43,7 +34,6 @@ function App() {
         <Route path={CLASSES} exact component={component(Classes)} />
         <Route path={EVENTS} component={component(Events)} />
         <Route path={MEDIA} component={component(Media)} />
-        <Route path={SIGN_UP} component={component(SignUp)} />
         <Route path={LANDING} exact component={component(Home)} />
         <Route component={component(Error404)} />
       </Switch>

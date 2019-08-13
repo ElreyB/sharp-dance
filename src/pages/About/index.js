@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Grid,
   H2,
@@ -9,8 +9,11 @@ import {
   Quote
 } from "../../styledGuide";
 import { findPage } from "../../utils";
+import { QuotesContext, OrganizationsContext } from "../../Providers";
 
-export default function About({ pages, organizations, quotes }) {
+export default function About({ pages }) {
+  const quotes = useContext(QuotesContext);
+  const organizations = useContext(OrganizationsContext);
   const about = findPage(pages, "about");
 
   if (!about) {
@@ -21,7 +24,7 @@ export default function About({ pages, organizations, quotes }) {
     <Page>
       <Banner {...about.headerBanner} />
       <Grid align="start">
-        {quotes.length > 0 && (
+        {quotes && (
           <Grid size={3} marginRight="XL">
             <H2>{about.quotesTitle}</H2>
             {quotes.map((quote, i) => (
@@ -31,7 +34,7 @@ export default function About({ pages, organizations, quotes }) {
         )}
         <Grid size="auto">
           <Markdown>{about.content}</Markdown>
-          {organizations.length > 0 && (
+          {organizations && (
             <Grid justify="center">
               <H2>Members</H2>
               {organizations.map(org => (

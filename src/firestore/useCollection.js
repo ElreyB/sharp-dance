@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { firestore } from "../fbconfig";
+import { collectionIdsAndDocs } from "../utils";
 
-export const collectionIdsAndDocs = doc => ({ id: doc.id, ...doc.data() });
-
-function useCollection(ref) {
+export default function useCollection(ref) {
   const [data, setData] = useState(null);
   const [error, setError] = React.useState(false);
   if (!ref || typeof ref !== "string") {
@@ -27,5 +26,3 @@ function useCollection(ref) {
 
   return { data, error };
 }
-
-export default useCollection;

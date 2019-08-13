@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Route } from "react-router-dom";
 import { Grid, Banner, Page, Schedule, Nav, H3 } from "../../styledGuide";
 import { groupPerformancesByYear, parseSchedule, findPage } from "../../utils";
 import { EVENTS } from "../../constants";
-import { FirestoreCollection } from "react-firestore";
-import useCollection from "../../firestore/useCollection";
+import { PerformancesContext } from "../../Providers";
 
 const PAST_EVENTS = `${EVENTS}/past`;
 
@@ -38,14 +37,14 @@ const renderPerformances = ([year, perfs]) =>
     </React.Fragment>
   );
 
-export default function Events({ pages, performances }) {
-  const { data } = useCollection("pages");
-  const events = findPage(data, "4");
+export default function Events({ pages }) {
+  const performances = useContext(PerformancesContext);
+  const events = findPage(pages, "events");
 
-  const parsedPerformances = performances.map(parseSchedule);
-  const upcomingPerformances = parsedPerformances
-    .filter(({ isFuture }) => isFuture)
-    .sort(olderFirst);
+  const parsedPerformances = performances && performances.map(parseSchedule);
+  const upcomingPerformances =
+    performances &&
+    parsedPerformances.filter(({ isFuture }) => isFuture).sort(olderFirst);
   const pastPerformances = parsedPerformances
     .filter(({ isFuture }) => !isFuture)
     .sort(mostRecentFirst);
@@ -55,46 +54,37 @@ export default function Events({ pages, performances }) {
   }
 
   return (
-    <FirestoreCollection
-      path="performances"
-      render={({ isLoading, data }) => {
-        return !isLoading ? (
-          <Page>
-            <Banner {...events.headerBanner} />
-            <Grid align="start">
-              <Nav
-                links={[
-                  { to: EVENTS, label: "Upcoming Performances" },
-                  { to: PAST_EVENTS, label: "Past Performances" }
-                ]}
-              />
-              <Route
-                path={EVENTS}
-                exact
-                component={() => (
-                  <>
-                    {Object.entries(
-                      groupPerformancesByYear(upcomingPerformances)
-                    )
-                      .sort(olderYearsFirst)
-                      .map(renderPerformances)}
-                  </>
-                )}
-              />
-              <Route
-                path={PAST_EVENTS}
-                component={() => (
-                  <>
-                    {Object.entries(groupPerformancesByYear(pastPerformances))
-                      .sort(mostRecentYearsFirst)
-                      .map(renderPerformances)}
-                  </>
-                )}
-              />
-            </Grid>
-          </Page>
-        ) : null;
-      }}
-    />
+    <Page>
+      <Banner {...events.headerBanner} />
+      <Grid align="start">
+        <Nav
+          links={[
+            { to: EVENTS, label: "Upcoming Performances" },
+            { to: PAST_EVENTS, label: "Past Performances" }
+          ]}
+        />
+        <Route
+          path={EVENTS}
+          exact
+          component={() => (
+            <>
+              {Object.entries(groupPerformancesByYear(upcomingPerformances))
+                .sort(olderYearsFirst)
+                .map(renderPerformances)}
+            </>
+          )}
+        />
+        <Route
+          path={PAST_EVENTS}
+          component={() => (
+            <>
+              {Object.entries(groupPerformancesByYear(pastPerformances))
+                .sort(mostRecentYearsFirst)
+                .map(renderPerformances)}
+            </>
+          )}
+        />
+      </Grid>
+    </Page>
   );
 }

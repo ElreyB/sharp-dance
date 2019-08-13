@@ -1,32 +1,26 @@
-import React from "react";
-import { FirestoreCollection } from "react-firestore";
+import React, { useContext } from "react";
 import { Page, Banner, Album, H2 } from "../../styledGuide";
 import { findPage } from "../../utils";
-import useCollection from "../../firestore/useCollection";
+import { MediaContext } from "../../Providers";
 
 function Media({ pages }) {
-  const { data } = useCollection("pages");
   /**TODO: need to fix firestore database. Do not have 'page.classSchedule' */
-  const page = findPage(data, "3");
+  const media = useContext(MediaContext);
+  const page = findPage(pages, "media");
   if (!page) {
     return null;
   }
   return (
-    <FirestoreCollection
-      path="media"
-      render={({ data, isLoading }) =>
-        !isLoading ? (
-          <Page>
-            <Banner {...page.headerBanner} />
-            {data.map((album, i) => {
-              return <Album size={6} {...album} key={album.id} />;
-            })}
-          </Page>
-        ) : (
-          <H2>No albums available</H2>
-        )
-      }
-    />
+    <Page>
+      <Banner {...page.headerBanner} />
+      {media ? (
+        media.map((album, i) => {
+          return <Album size={6} {...album} key={album.id} />;
+        })
+      ) : (
+        <H2>No albums available</H2>
+      )}
+    </Page>
   );
 }
 

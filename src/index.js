@@ -5,15 +5,33 @@ import { ThemeProvider } from "styled-components/macro";
 import "firebase/firestore";
 import { FirestoreProvider } from "react-firestore";
 import { theme, GlobalStyle } from "./styles";
-import { AuthUserProvider, Firebase } from "./fbconfig";
+import { Firebase } from "./fbconfig";
+import {
+  MediaProvider,
+  PerformancesProvider,
+  StaffProvider,
+  AuthProvider,
+  QuotesProvider,
+  OrganizationsProvider
+} from "./Providers";
 
 const RootApp = () => (
   <ThemeProvider theme={theme}>
     <FirestoreProvider firebase={Firebase}>
-      <AuthUserProvider>
-        <GlobalStyle />
-        <App />
-      </AuthUserProvider>
+      <PerformancesProvider>
+        <MediaProvider>
+          <StaffProvider>
+            <QuotesProvider>
+              <OrganizationsProvider>
+                <AuthProvider>
+                  <GlobalStyle />
+                  <App />
+                </AuthProvider>
+              </OrganizationsProvider>
+            </QuotesProvider>
+          </StaffProvider>
+        </MediaProvider>
+      </PerformancesProvider>
     </FirestoreProvider>
   </ThemeProvider>
 );
