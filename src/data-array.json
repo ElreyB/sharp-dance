@@ -1,6 +1,21 @@
 {
   "pages": [
     {
+      "id": "contact",
+      "headerBanner": {
+        "title": "Contact Us",
+        "imgSrc": "https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fpages%2Fcontact%2Fcontact.jpg?alt=media&token=e5ee21eb-107c-4f2e-867b-935ff2024fd8"
+      },
+      "mailingAddress": "1420 Locust Street 33 F Philadelphia PA 19102",
+      "email": "corpdancer@yahoo.com",
+      "phone": "(215) 880-2306",
+      "facebookURL": "https://www.facebook.com/pages/SHARP-Dance-Company/137978859611278",
+      "facebookTitle": "SHARP Dance Company",
+      "contactDescription": "For Residency or Performance Information please contact our company manager Nikki Battestilli",
+      "contactEmail": "nikki@sharpdance.org",
+      "contactPhone": "(814) 952-6673"
+    },
+    {
       "id": "home",
       "headerBanner": {
         "title": "SHARP DANCE",

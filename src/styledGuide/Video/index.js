@@ -7,13 +7,6 @@ const StyledPlayer = styled(ReactPlayer)`
 `;
 
 export const BackgroundVideo = styled(({ src, className }) => {
-  const ref = React.useRef(null);
-  React.useEffect(() => {
-    if (ref && ref.current) {
-      console.log("le ref", ref.current);
-    }
-  }, [ref]);
-
   return (
     <Video
       muted
@@ -23,7 +16,6 @@ export const BackgroundVideo = styled(({ src, className }) => {
       width="100%"
       height="100%"
       loop
-      ref={ref}
     />
   );
 })`

@@ -3,19 +3,30 @@ import { Grid } from "gymnast";
 import styled from "styled-components";
 
 import { A } from "../A";
+import { PHOTOGRAPHY, CONTACT, PRESS, DONATIONS } from "../../constants";
 
 const StyledGrid = styled(Grid)`
   background-color: ${({ theme }) => theme.colors.black};
 `;
 
+function FooterLink({ to, children }) {
+  return (
+    <Grid size={6}>
+      <A size="fit" to={to}>
+        {children}
+      </A>
+    </Grid>
+  );
+}
+
 export const Footer = props => {
   return (
     <StyledGrid {...props} justify="center">
       <Grid size={6}>
-        <A size={6}>Diane's photography</A>
-        <A size={6}>Contact us / Bookings</A>
-        <A size={6}>Press Kit</A>
-        <A size={6}>Donations</A>
+        <FooterLink to={PHOTOGRAPHY}>Diane's photography</FooterLink>
+        <FooterLink to={CONTACT}>Contact us / Bookings</FooterLink>
+        <FooterLink to={PRESS}>Press Kit</FooterLink>
+        <FooterLink to={DONATIONS}>Donations</FooterLink>
       </Grid>
     </StyledGrid>
   );
