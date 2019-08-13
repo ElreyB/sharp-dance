@@ -9,6 +9,6 @@ const StyledUl = styled("ul")`
 
 export const Ul = props => (
   <StyledUl
-    {...useGrid({ justify: "center", margin: 0, padding: 0, ...props })[1]}
+    {...useGrid({ justify: "end", margin: "0 L 0 0", padding: 0, ...props })[1]}
   />
 );

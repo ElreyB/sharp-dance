@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Route } from "react-router-dom";
-import { Grid, Banner, Page, Schedule, Nav, H3 } from "../../styledGuide";
+import { Grid, Banner, Page, Schedule, H3 } from "../../styledGuide";
 import { groupPerformancesByYear, parseSchedule, findPage } from "../../utils";
 import { EVENTS } from "../../constants";
 import { PerformancesContext } from "../../Providers";
@@ -57,12 +57,6 @@ export default function Events({ pages }) {
     <Page>
       <Banner {...events.headerBanner} />
       <Grid align="start">
-        <Nav
-          links={[
-            { to: EVENTS, label: "Upcoming Performances" },
-            { to: PAST_EVENTS, label: "Past Performances" }
-          ]}
-        />
         <Route
           path={EVENTS}
           exact

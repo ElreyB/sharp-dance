@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import Bios from "./pages/Bios";
 import Classes from "./pages/Classes";
+import Contact from "./pages/Contact";
+import Donations from "./pages/Donations";
 import Error404 from "./pages/404";
 import Events from "./pages/Events";
 import Home from "./pages/Home";
@@ -28,13 +30,18 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Switch>
         <Route path={ABOUT} component={component(About)} />
         <Route path={BIOS} exact component={component(Bios)} />
-        <Route path={CLASSES} exact component={component(Classes)} />
+        <Route path={CLASSES} component={component(Classes)} />
+        <Route path={CONTACT} component={component(Contact)} />
+        <Route path={DONATIONS} component={component(Donations)} />
         <Route path={EVENTS} component={component(Events)} />
-        <Route path={MEDIA} component={component(Media)} />
         <Route path={LANDING} exact component={component(Home)} />
+        <Route path={MEDIA} component={component(Media)} />
+        <Route path={PHOTOGRAPHY} component={component(Photography)} />
+        <Route path={PRESS} component={component(Press)} />
         <Route component={component(Error404)} />
       </Switch>
     </Router>
