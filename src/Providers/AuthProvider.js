@@ -1,20 +1,20 @@
-import React, { useState, useEffect, useContext, createContext } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import { auth } from "../fbconfig";
 
-const authContext = createContext();
+const AuthContext = createContext();
 
 // Provider component that wraps your app and makes auth object ...
 // ... available to any child component that calls useAuth().
 function AuthProvider({ children }) {
   const auth = useAuthProvider();
-  return <authContext.Provider value={auth}>{children}</authContext.Provider>;
+  return <AuthContext.Provider value={auth}>{children}</AuthContext.Provider>;
 }
 
 // Hook for child components to get the auth object ...
 // ... and re-render when it changes.
-const useAuth = () => {
-  return useContext(authContext);
-};
+// const useAuth = () => {
+//   return useContext(AuthContext);
+// };
 
 // Provider hook that creates auth object and handles state
 function useAuthProvider() {
@@ -84,4 +84,4 @@ function useAuthProvider() {
   };
 }
 
-export { AuthProvider, useAuth };
+export { AuthProvider, AuthContext };

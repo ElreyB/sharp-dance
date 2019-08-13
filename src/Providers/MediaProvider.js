@@ -8,7 +8,9 @@ const MediaProvider = ({ children }) => {
 
   const { data: mediaCollection } = useCollection("media");
 
-  useEffect(() => setMedia(mediaCollection), [mediaCollection]);
+  useEffect(() => setMedia(mediaCollection ? mediaCollection : []), [
+    mediaCollection
+  ]);
 
   return (
     <MediaContext.Provider value={media}>{children}</MediaContext.Provider>

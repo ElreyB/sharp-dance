@@ -8,7 +8,9 @@ const QuotesProvider = ({ children }) => {
 
   const { data: quotesCollection } = useCollection("quotes");
 
-  useEffect(() => setQuotes(quotesCollection), [quotesCollection]);
+  useEffect(() => setQuotes(quotesCollection ? quotesCollection : []), [
+    quotesCollection
+  ]);
 
   return (
     <QuotesContext.Provider value={quotes}>{children}</QuotesContext.Provider>

@@ -8,9 +8,10 @@ const ApprenticesProvider = ({ children }) => {
 
   const { data: apprenticesCollection } = useCollection("apprentices");
 
-  useEffect(() => setApprentices(apprenticesCollection), [
-    apprenticesCollection
-  ]);
+  useEffect(
+    () => setApprentices(apprenticesCollection ? apprenticesCollection : []),
+    [apprenticesCollection]
+  );
 
   return (
     <ApprenticesContext.Provider value={apprentices}>

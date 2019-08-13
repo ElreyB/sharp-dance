@@ -10,8 +10,22 @@ import Events from "./pages/Events";
 import Home from "./pages/Home";
 import Loading from "./pages/Loading";
 import Media from "./pages/Media";
+import Photography from "./pages/Photography";
+import Press from "./pages/Press";
 import { useGetDatabase } from "../src/fbconfig";
-import { ABOUT, BIOS, CLASSES, EVENTS, LANDING, MEDIA } from "./constants";
+import {
+  ABOUT,
+  BIOS,
+  CLASSES,
+  CONTACT,
+  DONATIONS,
+  EVENTS,
+  LANDING,
+  MEDIA,
+  PHOTOGRAPHY,
+  PRESS
+} from "./constants";
+import { ScrollToTop } from "./styledGuide";
 
 function App() {
   const database = useGetDatabase();

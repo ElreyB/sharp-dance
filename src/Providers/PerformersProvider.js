@@ -8,7 +8,10 @@ const PerformersProvider = ({ children }) => {
 
   const { data: performersCollection } = useCollection("performers");
 
-  useEffect(() => setPerformers(performersCollection), [performersCollection]);
+  useEffect(
+    () => setPerformers(performersCollection ? performersCollection : []),
+    [performersCollection]
+  );
 
   return (
     <PerformersContext.Provider value={performers}>

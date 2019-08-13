@@ -8,7 +8,9 @@ const StaffProvider = ({ children }) => {
 
   const { data: staffCollection } = useCollection("staff");
 
-  useEffect(() => setStaff(staffCollection), [staffCollection]);
+  useEffect(() => setStaff(staffCollection ? staffCollection : []), [
+    staffCollection
+  ]);
 
   return (
     <StaffContext.Provider value={staff}>{children}</StaffContext.Provider>

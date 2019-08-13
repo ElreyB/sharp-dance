@@ -8,9 +8,11 @@ const OrganizationsProvider = ({ children }) => {
 
   const { data: organizationCollection } = useCollection("organizations");
 
-  useEffect(() => setOrganizations(organizationCollection), [
-    organizationCollection
-  ]);
+  useEffect(
+    () =>
+      setOrganizations(organizationCollection ? organizationCollection : []),
+    [organizationCollection]
+  );
 
   return (
     <OrganizationsContext.Provider value={organizations}>

@@ -38,7 +38,8 @@ const renderPerformances = ([year, perfs]) =>
   );
 
 export default function Events({ pages }) {
-  const performances = useContext(PerformancesContext);
+  const { performances } = useContext(PerformancesContext);
+
   const events = findPage(pages, "events");
 
   const parsedPerformances = performances && performances.map(parseSchedule);

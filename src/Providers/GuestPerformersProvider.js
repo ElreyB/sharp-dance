@@ -8,9 +8,13 @@ const GuestPerformersProvider = ({ children }) => {
 
   const { data: guestPerformersCollection } = useCollection("guestPerformers");
 
-  useEffect(() => setGuestPerformers(guestPerformersCollection), [
-    guestPerformersCollection
-  ]);
+  useEffect(
+    () =>
+      setGuestPerformers(
+        guestPerformersCollection ? guestPerformersCollection : []
+      ),
+    [guestPerformersCollection]
+  );
 
   return (
     <GuestPerformersContext.Provider value={guestPerformers}>
