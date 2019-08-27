@@ -27,15 +27,17 @@ export const Img = ({
   ...props
 }) => {
   const role = alt ? undefined : "presentation";
+  const srcString = typeof src === "string" ? src : src.src;
+  const combinedAlt = alt || (src && src.title) ? src.title : undefined;
 
   return (
     <ImgWrapper margin="0 M/2" {...props}>
       <ImgGrid
         align="center"
         justify="center"
-        style={{ backgroundImage: `url("${src}")`, backgroundSize }}
+        style={{ backgroundImage: `url("${srcString}")`, backgroundSize }}
       >
-        <InnerImg src={src} alt={alt} role={role} />
+        <InnerImg src={srcString} alt={combinedAlt} role={role} />
       </ImgGrid>
       <Credit>{credit}</Credit>
     </ImgWrapper>
@@ -46,5 +48,11 @@ Img.propTypes = {
   alt: PropTypes.string,
   backgroundSize: PropTypes.oneOf(["cover", "contain"]),
   credit: PropTypes.string,
-  src: PropTypes.string
+  src: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({
+      src: PropTypes.string,
+      title: PropTypes.string
+    })
+  ])
 };

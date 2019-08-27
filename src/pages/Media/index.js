@@ -1,27 +1,32 @@
-import React, { useContext } from "react";
-import { Page, Banner, Album, H2 } from "../../styledGuide";
+import React from "react";
+import { Redirect } from "react-router";
 import { findPage } from "../../utils";
+import { ERROR } from "../../constants";
+import AllPerformances from "./all";
+import SinglePerformance from "./single";
+import { isMatch } from "./media.logic";
 import { MediaContext } from "../../Providers";
 
-function Media({ pages }) {
-  /**TODO: need to fix firestore database. Do not have 'page.classSchedule' */
-  const media = useContext(MediaContext);
+export default function Media({ pages, match }) {
+  const media = React.useContext(MediaContext);
   const page = findPage(pages, "media");
+  const { performanceTitle } = match.params;
+
   if (!page) {
     return null;
   }
-  return (
-    <Page>
-      <Banner {...page.headerBanner} />
-      {media ? (
-        media.map((album, i) => {
-          return <Album size={6} {...album} key={album.id} />;
-        })
-      ) : (
-        <H2>No albums available</H2>
-      )}
-    </Page>
-  );
-}
 
-export default Media;
+  const performance = media.find(performance =>
+    isMatch(performance.title, performanceTitle)
+  );
+
+  if (performanceTitle && !performance) {
+    return <Redirect to={ERROR} />;
+  }
+
+  if (performance) {
+    return <SinglePerformance performance={performance} />;
+  }
+
+  return <AllPerformances media={media} page={page} />;
+}
