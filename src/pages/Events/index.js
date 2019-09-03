@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Route } from "react-router-dom";
 import { Grid, Banner, Page, Schedule, H3 } from "../../styledGuide";
 import { groupPerformancesByYear, parseSchedule, findPage } from "../../utils";
 import { EVENTS } from "../../constants";
+import { PerformancesContext } from "../../Providers";
 
 const PAST_EVENTS = `${EVENTS}/past`;
 
@@ -36,13 +37,15 @@ const renderPerformances = ([year, perfs]) =>
     </React.Fragment>
   );
 
-export default function Events({ pages, performances }) {
+export default function Events({ pages }) {
+  const { performances } = useContext(PerformancesContext);
+
   const events = findPage(pages, "events");
 
-  const parsedPerformances = performances.map(parseSchedule);
-  const upcomingPerformances = parsedPerformances
-    .filter(({ isFuture }) => isFuture)
-    .sort(olderFirst);
+  const parsedPerformances = performances && performances.map(parseSchedule);
+  const upcomingPerformances =
+    performances &&
+    parsedPerformances.filter(({ isFuture }) => isFuture).sort(olderFirst);
   const pastPerformances = parsedPerformances
     .filter(({ isFuture }) => !isFuture)
     .sort(mostRecentFirst);

@@ -12,7 +12,6 @@ import Loading from "./pages/Loading";
 import Media from "./pages/Media";
 import Photography from "./pages/Photography";
 import Press from "./pages/Press";
-import SignUp from "./pages/SignUp";
 import { useGetDatabase } from "../src/fbconfig";
 import {
   ABOUT,
@@ -24,8 +23,7 @@ import {
   LANDING,
   MEDIA,
   PHOTOGRAPHY,
-  PRESS,
-  SIGN_UP
+  PRESS
 } from "./constants";
 import { ScrollToTop } from "./styledGuide";
 
@@ -58,8 +56,6 @@ function App() {
         <Route path={MEDIA} component={component(Media)} />
         <Route path={PHOTOGRAPHY} component={component(Photography)} />
         <Route path={PRESS} component={component(Press)} />
-        <Route path={SIGN_UP} component={component(SignUp)} />
-
         <Route component={component(Error404)} />
       </Switch>
     </Router>

@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "gymnast";
 import styled from "styled-components/macro";
-
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
