@@ -5,7 +5,8 @@ import {
   StaffContext,
   PerformersContext,
   ApprenticesContext,
-  GuestPerformersContext
+  GuestPerformersContext,
+  PagesContext
 } from "../../Providers";
 
 const getBio = bio => <Bio {...bio} key={bio.name} />;

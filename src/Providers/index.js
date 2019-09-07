@@ -7,3 +7,4 @@ export * from "./OrganizationsProvider";
 export * from "./ApprenticesProvider";
 export * from "./GuestPerformersProvider";
 export * from "./PerformersProvider";
+export * from "./PagesProvider";

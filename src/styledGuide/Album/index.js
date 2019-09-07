@@ -32,6 +32,7 @@ export function Album({
   sources,
   subtitle,
   title,
+  images,
   ...props
 }) {
   const message = getMessage(availableForTour, availableForPerformance);
@@ -44,9 +45,7 @@ export function Album({
       </Grid>
       {subtitle && <H3>{subtitle}</H3>}
       {content && <P>{content}</P>}
-      <Slides
-        sources={sources.map(source => ({ ...source, caption: title }))}
-      />
+      <Slides sources={images.map(source => ({ ...source, caption: title }))} />
     </Grid>
   );
 }
