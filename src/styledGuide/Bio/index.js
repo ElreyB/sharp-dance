@@ -11,14 +11,24 @@ const StyledName = styled(Name)`
   color: ${({ theme }) => theme.colors.blue};
 `;
 
-export function Bio({ name, role, imgCredit, imgSrc, bio, ...props }) {
+export function Bio({ name, role, imgCredit, bio, image, images, ...props }) {
+  const imageList = images || [image];
+
+  if (!imageList[0]) {
+    console.error("Image not found for", name);
+  }
+
   return (
     <Grid {...props} align="start">
       <H3>
         <StyledName>{name}</StyledName>
         {role && `(${role})`}
       </H3>
-      <Img src={imgSrc} size={3} credit={imgCredit} margin="S 0 0 0" />
+      <Grid size={3}>
+        {imageList.map(({ src }) => (
+          <Img src={src} key={src} credit={imgCredit} margin="S 0 0 0" />
+        ))}
+      </Grid>
       <Markdown marginLeft="M" size="auto">
         {bio}
       </Markdown>
@@ -30,6 +40,15 @@ Bio.propTypes = {
   name: PropTypes.string,
   role: PropTypes.string,
   imgCredit: PropTypes.string,
-  imgSrc: PropTypes.string,
+  image: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    title: PropTypes.string
+  }),
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      title: PropTypes.string
+    })
+  ),
   bio: PropTypes.string
 };

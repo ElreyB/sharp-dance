@@ -9,7 +9,7 @@ export default function Slides({ sources }) {
 
   return (
     <>
-      <Grid style={{ overflow: "hidden" }}>
+      <Grid className="slides" style={{ overflow: "hidden" }}>
         {sources.map(({ src }, i) => (
           <Poster
             margin="XS"

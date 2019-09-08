@@ -58,53 +58,54 @@
         "content": "SHARP is happy to announce we will now be opening our company class.\nClasses will run 55 minutes. $10 cash or credit. Classes will be taught by a rotation of company members"
       },
       "classSchedule": {
-        "name": "Summer Schedule",
+        "address": "",
         "description": "",
-        "location": { "name": "", "address": "" },
         "footnote": "",
-        "website": "",
+        "location": "",
+        "name": "Summer Schedule",
         "pricing": "",
         "purchaseUrl": "",
+        "website": "",
         "dates": [
           {
             "days": "27",
             "month": 6,
-            "year": 2019,
+            "year": 2020,
             "time": "6:35 PM - 7:30 PM",
             "notes": "Sandra Davis - Teaching Ballet"
           },
           {
             "days": "4",
             "month": 7,
-            "year": 2019,
+            "year": 2020,
             "time": "",
             "notes": "No Class"
           },
           {
             "days": "11",
             "month": 7,
-            "year": 2019,
+            "year": 2020,
             "time": "6:35 PM - 7:30 PM",
             "notes": "Kate Lombardi - Teaching Modern"
           },
           {
             "days": "18",
             "month": 7,
-            "year": 2019,
+            "year": 2020,
             "time": "6:35 PM - 7:30 PM",
             "notes": "Miguel Quiñones - Teaching Ballet"
           },
           {
             "days": "25",
             "month": 7,
-            "year": 2019,
+            "year": 2020,
             "time": "6:35 PM - 7:30 PM",
             "notes": "Linnea Calzada-Charma - Teaching Ballet"
           },
           {
             "days": "1",
             "month": 8,
-            "year": 2019,
+            "year": 2020,
             "time": "",
             "notes": "No Class"
           }

@@ -39,17 +39,18 @@ const StyledH3 = styled(H3)`
 `;
 
 export const Schedule = ({
-  name,
+  address,
+  dates,
   description,
-  location,
   footnote,
-  website,
+  location,
+  margin,
+  name,
+  padding,
   pricing,
   purchaseUrl,
-  dates,
   size,
-  margin,
-  padding
+  website
 }) => {
   return (
     <Grid size={size} margin={margin} padding={padding}>
@@ -62,22 +63,20 @@ export const Schedule = ({
       <Grid>
         <table>
           <tbody>
-            {dates.map(({ days, month, time, notes }, i) => {
-              return (
-                <tr key={i}>
-                  <td>
-                    {monthName[month]}, {days}
-                  </td>
-                  <td>{time}</td>
-                  <td>{notes}</td>
-                </tr>
-              );
-            })}
+            {dates.map(({ days, month, time, notes }, i) => (
+              <tr key={i}>
+                <td>
+                  {monthName[month]}, {days}
+                </td>
+                <td>{time}</td>
+                <td>{notes}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </Grid>
-      {location && (
-        <P>{[location.name, location.address].filter(a => !!a).join(" - ")}</P>
+      {(location || address) && (
+        <P>{[location, address].filter(a => !!a).join(" - ")}</P>
       )}
       {pricing && <P>{pricing}</P>}
       {footnote && <P>{footnote}</P>}
@@ -86,16 +85,7 @@ export const Schedule = ({
 };
 
 Schedule.propTypes = {
-  name: PropTypes.string,
-  description: PropTypes.string,
-  location: PropTypes.shape({
-    name: PropTypes.string,
-    address: PropTypes.string
-  }),
-  footnote: PropTypes.string,
-  website: PropTypes.string,
-  pricing: PropTypes.string,
-  purchaseUrl: PropTypes.string,
+  address: PropTypes.string,
   dates: PropTypes.arrayOf(
     PropTypes.shape({
       days: PropTypes.string,
@@ -104,5 +94,12 @@ Schedule.propTypes = {
       time: PropTypes.string,
       notes: PropTypes.string
     })
-  )
+  ),
+  description: PropTypes.string,
+  footnote: PropTypes.string,
+  location: PropTypes.string,
+  name: PropTypes.string,
+  pricing: PropTypes.string,
+  purchaseUrl: PropTypes.string,
+  website: PropTypes.string
 };

@@ -13,3 +13,4 @@ export const PHOTOGRAPHY = `${prefix}/photography`;
 export const PRESS = `${prefix}/press`;
 export const SIGN_IN = `${prefix}/signin`;
 export const SIGN_UP = `${prefix}/signup`;
+export const ERROR = `${prefix}/404`;

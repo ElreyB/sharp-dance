@@ -19,6 +19,7 @@ import {
   CLASSES,
   CONTACT,
   DONATIONS,
+  ERROR,
   EVENTS,
   LANDING,
   MEDIA,
@@ -53,9 +54,14 @@ function App() {
         <Route path={DONATIONS} component={component(Donations)} />
         <Route path={EVENTS} component={component(Events)} />
         <Route path={LANDING} exact component={component(Home)} />
-        <Route path={MEDIA} component={component(Media)} />
+        <Route
+          path={`${MEDIA}/:performanceTitle?`}
+          component={component(Media)}
+        />
         <Route path={PHOTOGRAPHY} component={component(Photography)} />
         <Route path={PRESS} component={component(Press)} />
+        <Route path={ERROR} component={component(Error404)} />
+
         <Route component={component(Error404)} />
       </Switch>
     </Router>
