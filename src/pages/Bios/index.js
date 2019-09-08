@@ -16,7 +16,6 @@ export default function Bios({ pages }) {
   const guestPerformers = useContext(GuestPerformersContext);
   const staff = useContext(StaffContext);
   const bios = findPage(pages, "bios");
-
   if (!bios) {
     return null;
   }
