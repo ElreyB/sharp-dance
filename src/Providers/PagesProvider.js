@@ -12,8 +12,11 @@ const PagesProvider = ({ children }) => {
     pagesCollection
   ]);
 
+  const getPage = page => pages.filter(p => p.pageName === page)[0];
   return (
-    <PagesContext.Provider value={pages}>{children}</PagesContext.Provider>
+    <PagesContext.Provider value={{ pages, getPage }}>
+      {children}
+    </PagesContext.Provider>
   );
 };
 

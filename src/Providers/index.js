@@ -8,3 +8,4 @@ export * from "./ApprenticesProvider";
 export * from "./GuestPerformersProvider";
 export * from "./PerformersProvider";
 export * from "./PagesProvider";
+export * from "./ResourcesProvider";

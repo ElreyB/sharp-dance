@@ -5,8 +5,7 @@ import {
   StaffContext,
   PerformersContext,
   ApprenticesContext,
-  GuestPerformersContext,
-  PagesContext
+  GuestPerformersContext
 } from "../../Providers";
 
 const getBio = bio => <Bio {...bio} key={bio.name} />;
@@ -17,7 +16,6 @@ export default function Bios({ pages }) {
   const guestPerformers = useContext(GuestPerformersContext);
   const staff = useContext(StaffContext);
   const bios = findPage(pages, "bios");
-
   if (!bios) {
     return null;
   }
