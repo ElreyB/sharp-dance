@@ -38,25 +38,25 @@ export function Album({
   ...props
 }) {
   const message = getMessage(availableForTour, availableForPerformance);
-  const TitleWrapper = link ? props => <A to={link} {...props} /> : Grid;
+  const Wrapper = link ? props => <A to={link} {...props} /> : Grid;
 
   return (
-    <Grid {...props} align="start" padding="M">
-      <TitleWrapper>
+    <Wrapper {...props} align="start" padding="M">
+      <Grid>
         {title && <H2 size="fit">{title}</H2>}
         {message && <H4>({message})</H4>}
         {subtitle && <H3>{subtitle}</H3>}
         {content && <P>{content}</P>}
-      </TitleWrapper>
+      </Grid>
       <Slides
         sources={[...videos, ...images].map(source => ({
-          src: source.image || source.url,
+          src: source.src || source.url,
           title: source.showTitle,
           credit: source.credit,
           caption: source.imageTitle || source.videoTitle
         }))}
       />
-    </Grid>
+    </Wrapper>
   );
 }
 
