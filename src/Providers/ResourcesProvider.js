@@ -1,34 +1,14 @@
 import React, { createContext, useState, useEffect } from "react";
 import useCollection from "../firestore/useCollection";
 
-const createResourcesObj = resources => {
-  const sortedResource = {
-    staff: [],
-    apprentices: [],
-    guestPerformers: [],
-    performers: []
-  };
-  return resources.reduce((obj, resource, i, arr) => {
-    switch (resource.role) {
-      case "staff":
-        sortedResource.staff.push(resource);
-        break;
-      case "apprentices":
-        sortedResource.apprentices.push(resource);
-        break;
-      case "performers":
-        sortedResource.performers.push(resource);
-        break;
-      case "guestPerformers":
-        sortedResource.guestPerformers.push(resource);
-        break;
-      default:
-        break;
-    }
-    obj = { ...obj, ...sortedResource };
-    return obj;
-  }, {});
-};
+const createResourcesObj = resources =>
+  resources.reduce(
+    (obj, resource, i, arr) => ({
+      ...obj,
+      [resource.role]: [...(obj[resource.role] || []), resource]
+    }),
+    {}
+  );
 
 const ResourcesContext = createContext();
 
