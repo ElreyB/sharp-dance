@@ -29,7 +29,7 @@ export const ImgGroup = ({ src, alt, credit, backgroundSize, ...props }) => {
           <Img
             src={src}
             size="fit"
-            key={src}
+            key={typeof src === "string" ? src : src.src}
             alt={altArr[i]}
             backgroundSize={backgroundSize}
           />
@@ -51,6 +51,16 @@ ImgGroup.propTypes = {
   credit: PropTypes.string,
   src: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string)
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.shape({
+      src: PropTypes.string,
+      title: PropTypes.string
+    }),
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        src: PropTypes.string,
+        title: PropTypes.string
+      })
+    )
   ])
 };
