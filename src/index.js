@@ -13,7 +13,8 @@ import {
   PerformancesProvider,
   QuotesProvider,
   PagesProvider,
-  ResourcesProvider
+  ResourcesProvider,
+  DatabaseProvider
 } from "./Providers";
 
 const RootApp = () => (
@@ -25,10 +26,12 @@ const RootApp = () => (
             <OrganizationsProvider>
               <PagesProvider>
                 <ResourcesProvider>
-                  <AuthProvider>
-                    <GlobalStyle />
-                    <App />
-                  </AuthProvider>
+                  <DatabaseProvider>
+                    <AuthProvider>
+                      <GlobalStyle />
+                      <App />
+                    </AuthProvider>
+                  </DatabaseProvider>
                 </ResourcesProvider>
               </PagesProvider>
             </OrganizationsProvider>
