@@ -1,8 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
-import useCollection from "../firestore/useCollection";
 import { firestore } from "../fbconfig";
 import { collectionIdsAndDocs } from "../utils";
-import { asap } from "rxjs/internal/scheduler/asap";
 
 const getCollections = async () => {
   let collectionData = {};
