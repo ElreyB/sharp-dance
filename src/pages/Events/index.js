@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { Route } from "react-router-dom";
 import { Grid, Banner, Page, Schedule, H3 } from "../../styledGuide";
-import { groupPerformancesByYear, parseSchedule, findPage } from "../../utils";
+import Loading from "../Loading";
+import { groupPerformancesByYear, parseSchedule } from "../../utils";
 import { EVENTS } from "../../constants";
-import { PerformancesContext } from "../../Providers";
+import { PerformancesContext, PagesContext } from "../../Providers";
 
 const PAST_EVENTS = `${EVENTS}/past`;
 
@@ -37,10 +38,10 @@ const renderPerformances = ([year, perfs]) =>
     </React.Fragment>
   );
 
-export default function Events({ pages }) {
+export default function Events() {
   const { performances } = useContext(PerformancesContext);
-
-  const events = findPage(pages, "events");
+  const { getPage } = React.useContext(PagesContext);
+  const page = getPage("events");
 
   const parsedPerformances = performances && performances.map(parseSchedule);
   const upcomingPerformances =
@@ -50,13 +51,15 @@ export default function Events({ pages }) {
     .filter(({ isFuture }) => !isFuture)
     .sort(mostRecentFirst);
 
-  if (!events) {
-    return null;
+  if (!page) {
+    return <Loading />;
   }
+
+  const { headerBanner } = page;
 
   return (
     <Page>
-      <Banner {...events.headerBanner} />
+      <Banner {...headerBanner} />
       <Grid align="start">
         <Route
           path={EVENTS}
