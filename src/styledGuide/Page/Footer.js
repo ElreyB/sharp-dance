@@ -3,7 +3,7 @@ import { Grid } from "gymnast";
 import styled from "styled-components";
 
 import { A } from "../A";
-import { PHOTOGRAPHY, CONTACT, PRESS, DONATIONS } from "../../constants";
+import { PHOTOGRAPHY, CONTACT, PRESS_KIT, DONATIONS } from "../../constants";
 
 const StyledGrid = styled(Grid)`
   background-color: ${({ theme }) => theme.colors.black};
@@ -25,7 +25,7 @@ export const Footer = props => {
       <Grid size={6}>
         <FooterLink to={PHOTOGRAPHY}>Diane's photography</FooterLink>
         <FooterLink to={CONTACT}>Contact us / Bookings</FooterLink>
-        <FooterLink to={PRESS}>Press Kit</FooterLink>
+        <FooterLink to={PRESS_KIT}>Press Kit</FooterLink>
         <FooterLink to={DONATIONS}>Donations</FooterLink>
       </Grid>
     </StyledGrid>

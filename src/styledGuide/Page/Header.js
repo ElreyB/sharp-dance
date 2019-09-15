@@ -8,6 +8,7 @@ import {
   EVENTS,
   LANDING,
   MEDIA,
+  PRESS,
   PAST_EVENTS
 } from "../../constants";
 
@@ -25,6 +26,7 @@ export const Header = () => {
         { to: LANDING, label: "Home" },
         { to: BIOS, label: "Bio's" },
         { to: MEDIA, label: "Media" },
+        { to: PRESS, label: "Press" },
         {
           to: EVENTS,
           label: "Events",
