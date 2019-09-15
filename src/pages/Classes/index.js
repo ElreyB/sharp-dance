@@ -1,43 +1,69 @@
 import React from "react";
 import { Banner, Page, Schedule, H3, IFrame } from "../../styledGuide";
-import { parseDate, findPage } from "../../utils";
+import { parseDate } from "../../utils";
 import Loading from "../Loading";
-// import useCollection from "../../firestore/useCollection";
+import { PagesContext } from "../../Providers";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
+const googleMapsEmbedAPIKey = "AIzaSyD5q1ok9ku6lmBoqP-qG5A6WxMgdW6bWyM";
 
-export default function Classes({ pages }) {
-  /**TODO: need to fix firestore database. Do not have 'page.classSchedule' */
-  // const { data } = useCollection("pages");
-  // const page = findPage(data, "2");
-  const page = findPage(pages, "classes");
+function ClassSchedule({ address = "", season, ...upcomingClasses }) {
+  const queryAddress = address.replace(/\s/g, "+");
+
+  return (
+    <>
+      {season && <H3>{season}</H3>}
+      <Schedule {...upcomingClasses} margin="0 0 L 0" />
+      {queryAddress && (
+        <>
+          <H3>Location </H3>
+          <IFrame
+            src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsEmbedAPIKey}&q=${queryAddress}`}
+            title="Class locations"
+            height="500"
+          ></IFrame>
+        </>
+      )}
+    </>
+  );
+}
+
+export default function Classes() {
+  const { getPage } = React.useContext(PagesContext);
+  const page = getPage("classes");
 
   if (!page) {
     return <Loading />;
   }
 
-  const upcomingClasses = {
-    ...page.classSchedule,
-    dates: page.classSchedule.dates.filter(date => isFuture(parseDate(date)))
-  };
+  const { headerBanner, options = {} } = page;
 
-  const classes = (
-    <>
-      <Schedule {...upcomingClasses} margin="0 0 L 0" />
-      <H3>Location </H3>
-      <IFrame
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.602630698705!2d-75.17140168427034!3d39.927907979424894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c60e52a24873%3A0xaa0c34b5ed568918!2sEquilibrium+Dance+Academy%2C+LLC!5e0!3m2!1sen!2sus!4v1561598865092!5m2!1sen!2sus"
-        title="Class locations"
-        height="500"
-      ></IFrame>
-    </>
-  );
+  console.log(options);
+
+  const upcomingClassesList = options.classSchedules
+    .map(classSchedule => {
+      const dates = classSchedule.dates.filter(date =>
+        isFuture(parseDate(date))
+      );
+
+      return dates.length === 0 ? undefined : { ...classSchedule, dates };
+    })
+    .filter(classSchedule => !!classSchedule);
 
   return (
     <Page>
-      <Banner {...page.headerBanner} />
-      {upcomingClasses.dates.length > 0 ? classes : <H3>{page.noClasses}</H3>}
+      <Banner {...headerBanner} />
+      {upcomingClassesList.length > 0 ? (
+        <>
+          {options.content}
+          {upcomingClassesList.map((schedule, i) => (
+            <ClassSchedule {...schedule} key={i} />
+          ))}
+        </>
+      ) : (
+        <H3>{options.noClasses}</H3>
+      )}
     </Page>
   );
 }

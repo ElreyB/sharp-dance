@@ -1,19 +1,23 @@
 import React from "react";
 
 import { BackgroundVideo, Banner, Page } from "../../styledGuide";
-import { findPage } from "../../utils";
+import { PagesContext } from "../../Providers";
+import Loading from "../Loading";
 
-export default function Home({ pages }) {
-  const home = findPage(pages, "home");
+export default function Home() {
+  const { getPage } = React.useContext(PagesContext);
+  const page = getPage("home");
 
-  if (!home) {
-    return null;
+  if (!page) {
+    return <Loading />;
   }
+
+  const { headerBanner, options = {} } = page;
 
   return (
     <Page>
-      <Banner {...home.headerBanner} />
-      <BackgroundVideo src={home.video} />
+      <Banner {...headerBanner} />
+      <BackgroundVideo src={options.video} />
     </Page>
   );
 }

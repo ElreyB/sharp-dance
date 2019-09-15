@@ -8,32 +8,40 @@ import {
   Page,
   Quote
 } from "../../styledGuide";
-import { findPage } from "../../utils";
-import { QuotesContext, OrganizationsContext } from "../../Providers";
+import Loading from "../Loading";
+import {
+  QuotesContext,
+  OrganizationsContext,
+  PagesContext
+} from "../../Providers";
 
-export default function About({ pages }) {
+export default function About() {
   const quotes = useContext(QuotesContext);
   const organizations = useContext(OrganizationsContext);
-  const about = findPage(pages, "about");
+  const { getPage } = useContext(PagesContext);
 
-  if (!about) {
-    return null;
+  const page = getPage("about");
+
+  if (!page) {
+    return <Loading />;
   }
+
+  const { options = {}, headerBanner } = page;
 
   return (
     <Page>
-      <Banner {...about.headerBanner} />
+      <Banner {...headerBanner} />
       <Grid align="start">
         {quotes && (
           <Grid size={3} marginRight="XL">
-            <H2>{about.quotesTitle}</H2>
+            <H2>{options.quotesTitle}</H2>
             {quotes.map((quote, i) => (
               <Quote {...quote} key={i} />
             ))}
           </Grid>
         )}
         <Grid size="auto">
-          <Markdown>{about.content}</Markdown>
+          <Markdown>{options.content}</Markdown>
           {organizations && (
             <Grid justify="center">
               <H2>Members</H2>

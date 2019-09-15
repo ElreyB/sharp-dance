@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { findPage } from "../../utils";
-import { Page, Banner, P, A, Label } from "../../styledGuide";
+import { Page, Banner, Grid, P, A, Label } from "../../styledGuide";
+import { PagesContext } from "../../Providers";
+import Loading from "../Loading";
 
 const ColorTitle = styled(Label)`
   color: ${({ theme }) => theme.colors.red};
@@ -15,14 +16,14 @@ function TitleLink({ title, href, children, ...props }) {
   const Component = href ? A : P;
 
   return (
-    <P {...props}>
+    <Grid {...props}>
       <ColorTitle margin={0} size="fit">
         {title}:
       </ColorTitle>
       <Component size="fit" marginLeft="M" href={href}>
         {children}
       </Component>
-    </P>
+    </Grid>
   );
 }
 
@@ -44,12 +45,15 @@ function EmailLink({ children, ...props }) {
   );
 }
 
-export default function Contact({ pages }) {
-  const contact = findPage(pages, "contact");
+export default function Contact() {
+  const { getPage } = React.useContext(PagesContext);
+  const page = getPage("contact");
 
-  if (!contact) {
-    return null;
+  if (!page) {
+    return <Loading />;
   }
+
+  const { options = {}, headerBanner } = page;
 
   const {
     contactDescription,
@@ -60,11 +64,11 @@ export default function Contact({ pages }) {
     facebookURL,
     mailingAddress,
     phone
-  } = contact;
+  } = options;
 
   return (
     <Page>
-      <Banner {...contact.headerBanner} />
+      <Banner {...headerBanner} />
       <TitleLink marginTop="XL" title="Mailing Address">
         {mailingAddress}
       </TitleLink>

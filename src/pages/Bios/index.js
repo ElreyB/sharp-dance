@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
-import { findPage } from "../../utils";
-import { ResourcesContext } from "../../Providers";
+import Loading from "../Loading";
+import { ResourcesContext, PagesContext } from "../../Providers";
 
 // Removes director prop since it's not meant to be passed to the component
 const getBio = ({ director, ...bio }) => <Bio {...bio} key={bio.name} />;
@@ -9,20 +9,23 @@ const getBio = ({ director, ...bio }) => <Bio {...bio} key={bio.name} />;
 const isDirector = ({ director }) => director;
 const isNotDirector = ({ director }) => !director;
 
-export default function Bios({ pages }) {
+export default function Bios() {
   const { performers, apprentices, guestPerformers, staff } = useContext(
     ResourcesContext
   ).resourceObj;
   const director = staff ? staff.find(isDirector) : undefined;
+  const { getPage } = useContext(PagesContext);
+  const page = getPage("bios");
 
-  const bios = findPage(pages, "bios");
-  if (!bios) {
-    return null;
+  if (!page) {
+    return <Loading />;
   }
+
+  const { headerBanner, options = {} } = page;
 
   return (
     <Page>
-      <Banner {...bios.headerBanner} />
+      <Banner {...headerBanner} />
       <Grid align="start">
         {performers && Object.values(performers).map(getBio)}
         {apprentices && (
@@ -44,7 +47,7 @@ export default function Bios({ pages }) {
             imgCredit={director.imgCredit}
           />
         )}
-        <Markdown marginTop="L">{bios.aboutDianeText}</Markdown>
+        <Markdown marginTop="L">{options.bio}</Markdown>
         {staff && staff.filter(isNotDirector).map(getBio)}
       </Grid>
     </Page>
