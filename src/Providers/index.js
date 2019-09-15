@@ -6,3 +6,4 @@ export * from "./OrganizationsProvider";
 export * from "./PagesProvider";
 export * from "./ResourcesProvider";
 export * from "./DatabaseProvider";
+export * from "./PressProvider";

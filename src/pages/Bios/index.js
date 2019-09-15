@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
 import { findPage } from "../../utils";
-import { ResourcesContext, DatabaseContext } from "../../Providers";
+import { ResourcesContext } from "../../Providers";
 
 // Removes director prop since it's not meant to be passed to the component
 const getBio = ({ director, ...bio }) => <Bio {...bio} key={bio.name} />;
@@ -13,10 +13,8 @@ export default function Bios({ pages }) {
   const { performers, apprentices, guestPerformers, staff } = useContext(
     ResourcesContext
   ).resourceObj;
-  const director = staff ? staff.find(isDirector) : undefined;
 
-  const database = useContext(DatabaseContext);
-  console.warn(database);
+  const director = staff ? staff.find(isDirector) : undefined;
 
   const bios = findPage(pages, "bios");
   if (!bios) {
