@@ -53,7 +53,7 @@ export default function Contact() {
     return <Loading />;
   }
 
-  const { options = {}, headerBanner } = page;
+  const { options = {}, pageName, ...headerBanner } = page;
 
   const {
     contactDescription,

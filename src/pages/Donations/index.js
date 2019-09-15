@@ -12,7 +12,7 @@ export default function Donations() {
     return <Loading />;
   }
 
-  const { headerBanner } = page;
+  const { options, pageName, ...headerBanner } = page;
 
   return (
     <Page>

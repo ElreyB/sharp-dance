@@ -12,7 +12,7 @@ export default function Home() {
     return <Loading />;
   }
 
-  const { headerBanner, options = {} } = page;
+  const { options = {}, pageName, ...headerBanner } = page;
 
   return (
     <Page>

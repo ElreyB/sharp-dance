@@ -55,7 +55,7 @@ export default function Events() {
     return <Loading />;
   }
 
-  const { headerBanner } = page;
+  const { options, pageName, ...headerBanner } = page;
 
   return (
     <Page>

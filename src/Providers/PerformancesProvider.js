@@ -1,6 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
 import useCollection from "../firestore/useCollection";
-// import { firestore } from "../fbconfig";
 
 const PerformancesContext = createContext();
 

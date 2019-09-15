@@ -26,7 +26,7 @@ export default function About() {
     return <Loading />;
   }
 
-  const { options = {}, headerBanner } = page;
+  const { options = {}, pageName, ...headerBanner } = page;
 
   return (
     <Page>

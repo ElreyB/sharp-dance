@@ -7,14 +7,12 @@ import { FirestoreProvider } from "react-firestore";
 import { theme, GlobalStyle } from "./styles";
 import { Firebase } from "./fbconfig";
 import {
-  AuthProvider,
   MediaProvider,
   OrganizationsProvider,
   PerformancesProvider,
   QuotesProvider,
   PagesProvider,
   ResourcesProvider,
-  DatabaseProvider,
   PressProvider
 } from "./Providers";
 
@@ -28,12 +26,8 @@ const RootApp = () => (
               <PagesProvider>
                 <ResourcesProvider>
                   <PressProvider>
-                    <DatabaseProvider>
-                      <AuthProvider>
-                        <GlobalStyle />
-                        <App />
-                      </AuthProvider>
-                    </DatabaseProvider>
+                    <GlobalStyle />
+                    <App />
                   </PressProvider>
                 </ResourcesProvider>
               </PagesProvider>
