@@ -11,6 +11,7 @@ export const LANDING = `${prefix}/`;
 export const MEDIA = `${prefix}/media`;
 export const PHOTOGRAPHY = `${prefix}/photography`;
 export const PRESS = `${prefix}/press`;
+export const PRESS_KIT = `${prefix}/press-kit`;
 export const SIGN_IN = `${prefix}/signin`;
 export const SIGN_UP = `${prefix}/signup`;
 export const ERROR = `${prefix}/404`;

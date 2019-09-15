@@ -69,19 +69,25 @@ export default function Contact() {
   return (
     <Page>
       <Banner {...headerBanner} />
-      <TitleLink marginTop="XL" title="Mailing Address">
-        {mailingAddress}
-      </TitleLink>
-      <PhoneLink>{phone}</PhoneLink>
-      <EmailLink>{email}</EmailLink>
-      <TitleLink title="Facebook" href={facebookURL}>
-        {facebookTitle}
-      </TitleLink>
-      <P marginTop="2XL" marginBottom="M">
-        {contactDescription}
-      </P>
-      <EmailLink>{contactEmail}</EmailLink>
-      <PhoneLink>{contactPhone}</PhoneLink>
+      {mailingAddress && (
+        <TitleLink marginTop="XL" title="Mailing Address">
+          {mailingAddress}
+        </TitleLink>
+      )}
+      {phone && <PhoneLink>{phone}</PhoneLink>}
+      {email && <EmailLink>{email}</EmailLink>}
+      {facebookTitle && facebookURL && (
+        <TitleLink title="Facebook" href={facebookURL}>
+          {facebookTitle}
+        </TitleLink>
+      )}
+      {contactDescription && (
+        <P marginTop="L" marginBottom="M">
+          {contactDescription}
+        </P>
+      )}
+      {contactEmail && <EmailLink>{contactEmail}</EmailLink>}
+      {contactPhone && <PhoneLink>{contactPhone}</PhoneLink>}
     </Page>
   );
 }
