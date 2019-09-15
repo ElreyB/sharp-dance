@@ -2,6 +2,7 @@ import React from "react";
 import { Page, Banner } from "../../styledGuide";
 import Loading from "../Loading";
 import { PagesContext, PressContext } from "../../Providers";
+import { PressItem } from "./pressItem";
 
 export default function Press() {
   const { getPage } = React.useContext(PagesContext);
@@ -14,11 +15,12 @@ export default function Press() {
 
   const { options, pageName, ...headerBanner } = page;
 
-  console.log("press", press);
-
   return (
     <Page>
       <Banner {...headerBanner} />
+      {press.map(({ id, ...props }) => (
+        <PressItem {...props} key={id} />
+      ))}
     </Page>
   );
 }
