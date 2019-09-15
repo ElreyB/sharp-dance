@@ -11,7 +11,8 @@ export default function Press() {
     return <Loading />;
   }
 
-  const { headerBanner } = page;
+  const { options, pageName, ...headerBanner } = page;
+
   return (
     <Page>
       <Banner {...headerBanner} />

@@ -37,9 +37,7 @@ export default function Classes() {
     return <Loading />;
   }
 
-  const { headerBanner, options = {} } = page;
-
-  console.log(options);
+  const { options = {}, pageName, ...headerBanner } = page;
 
   const upcomingClassesList = options.classSchedules
     .map(classSchedule => {

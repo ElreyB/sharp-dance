@@ -13,6 +13,7 @@ export default function Bios() {
   const { performers, apprentices, guestPerformers, staff } = useContext(
     ResourcesContext
   ).resourceObj;
+
   const director = staff ? staff.find(isDirector) : undefined;
   const { getPage } = useContext(PagesContext);
   const page = getPage("bios");
@@ -21,7 +22,7 @@ export default function Bios() {
     return <Loading />;
   }
 
-  const { headerBanner, options = {} } = page;
+  const { options = {}, pageName, ...headerBanner } = page;
 
   return (
     <Page>
