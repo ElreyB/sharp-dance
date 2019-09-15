@@ -12,7 +12,8 @@ const StyledImgGroup = styled(ImgGroup)`
 
 export const Banner = ({
   title,
-  subtitle,
+  subTitle,
+  subtitle = subTitle,
   imgSrc,
   alt,
   imgCredit,
@@ -61,5 +62,6 @@ Banner.propTypes = {
     )
   ]),
   subtitle: PropTypes.string,
+  subTitle: PropTypes.string,
   title: PropTypes.string
 };

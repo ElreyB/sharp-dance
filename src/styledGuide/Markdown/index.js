@@ -2,7 +2,7 @@ import React from "react";
 import marked from "marked";
 import { Grid } from "gymnast";
 
-export function Markdown({ children, ...props }) {
+export function Markdown({ children = "", ...props }) {
   return (
     <Grid
       {...props}

@@ -1,10 +1,20 @@
 import React from "react";
-import { Page, H2 } from "../../styledGuide";
+import { Page, Banner } from "../../styledGuide";
+import Loading from "../Loading";
+import { PagesContext } from "../../Providers";
 
 export default function Press() {
+  const { getPage } = React.useContext(PagesContext);
+  const page = getPage("press");
+
+  if (!page) {
+    return <Loading />;
+  }
+
+  const { headerBanner } = page;
   return (
     <Page>
-      <H2>Press</H2>
+      <Banner {...headerBanner} />
     </Page>
   );
 }
