@@ -15,6 +15,7 @@ export function Nav({ links, ...props }) {
               <Ul
                 key={`${label}-ul`}
                 size="fit"
+                show="desktop"
                 direction="column"
                 margin="S 0 0 0"
               >

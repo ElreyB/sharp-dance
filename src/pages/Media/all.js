@@ -9,7 +9,7 @@ export default function AllPerformances({ headerBanner, media }) {
       {media.length > 0 ? (
         media.map((album, i) => (
           <AlbumSummary
-            size={6}
+            size={{ mobile: 12, desktop: 6 }}
             link={getPerformanceURL(album)}
             {...album}
             key={i}

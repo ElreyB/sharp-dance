@@ -33,7 +33,7 @@ export default function About() {
       <Banner {...headerBanner} />
       <Grid align="start">
         {quotes && (
-          <Grid size={3} marginRight="XL">
+          <Grid size={3} show="desktop" marginRight="XL">
             <H2>{options.quotesTitle}</H2>
             {quotes.map((quote, i) => (
               <Quote {...quote} key={i} />

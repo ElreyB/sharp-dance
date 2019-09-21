@@ -26,7 +26,7 @@ import {
   PRESS,
   PRESS_KIT
 } from "./constants";
-import { ScrollToTop } from "./styledGuide";
+import { ScrollToTop, GymnastProvider } from "./styledGuide";
 
 function App() {
   const database = useGetDatabase();
@@ -47,28 +47,35 @@ function App() {
   );
 
   return (
-    <Router>
-      <ScrollToTop />
-      <Switch>
-        <Route path={ABOUT} component={component(About)} />
-        <Route path={BIOS} exact component={component(Bios)} />
-        <Route path={CLASSES} component={component(Classes)} />
-        <Route path={CONTACT} component={component(Contact)} />
-        <Route path={DONATIONS} component={genericPage("donations")} />
-        <Route path={EVENTS} component={component(Events)} />
-        <Route path={LANDING} exact component={component(Home)} />
-        <Route
-          path={`${MEDIA}/:performanceTitle?`}
-          component={component(Media)}
-        />
-        <Route path={PHOTOGRAPHY} component={genericPage("photography")} />
-        <Route path={PRESS_KIT} component={genericPage("press-kit")} />
-        <Route path={PRESS} component={component(Press)} />
-        <Route path={ERROR} component={component(Error404)} />
+    <GymnastProvider
+      displayAliases={{
+        desktop: { minWidth: "601px" },
+        mobile: { maxWidth: "600px" }
+      }}
+    >
+      <Router>
+        <ScrollToTop />
+        <Switch>
+          <Route path={ABOUT} component={component(About)} />
+          <Route path={BIOS} exact component={component(Bios)} />
+          <Route path={CLASSES} component={component(Classes)} />
+          <Route path={CONTACT} component={component(Contact)} />
+          <Route path={DONATIONS} component={genericPage("donations")} />
+          <Route path={EVENTS} component={component(Events)} />
+          <Route path={LANDING} exact component={component(Home)} />
+          <Route
+            path={`${MEDIA}/:performanceTitle?`}
+            component={component(Media)}
+          />
+          <Route path={PHOTOGRAPHY} component={genericPage("photography")} />
+          <Route path={PRESS_KIT} component={genericPage("press-kit")} />
+          <Route path={PRESS} component={component(Press)} />
+          <Route path={ERROR} component={component(Error404)} />
 
-        <Route component={component(Error404)} />
-      </Switch>
-    </Router>
+          <Route component={component(Error404)} />
+        </Switch>
+      </Router>
+    </GymnastProvider>
   );
 }
 

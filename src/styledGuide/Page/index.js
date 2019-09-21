@@ -17,7 +17,14 @@ export const Page = ({ children, ...props }) => {
   return (
     <>
       <Header />
-      <PageContent {...props} align="start" padding="XL 2XL 2XL">
+      <PageContent
+        {...props}
+        align="start"
+        padding="XL XL 2XL"
+        marginLeft={{ mobile: 0, desktop: "XL" }}
+        marginRight={{ mobile: 0, desktop: "XL" }}
+        marginTop={{ mobile: "XL", desktop: 0 }}
+      >
         {children}
       </PageContent>
       <Footer padding="M 2XL M" marginBottom="2XL" />

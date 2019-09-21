@@ -10,15 +10,7 @@ export function PressItem({
   outlet,
   url
 }) {
-  /*
-author: "Grace Maiorano"
-date: "07/13/15"
-description: ""
-outlet: "The Temple News"
-url: "https://temple-news.com/philadelphia-dance-company-tours-us-and-europe/"
-*/
-
-  return (
+  const content = (
     <Grid marginBottom="XL" align="start">
       {!logo.src && <H3>{outlet}</H3>}
       <Img backgroundSize="contain" size={3} src={logo.src} alt={logo.title} />
@@ -40,4 +32,10 @@ url: "https://temple-news.com/philadelphia-dance-company-tours-us-and-europe/"
       )}
     </Grid>
   );
+
+  if (url) {
+    return <A href={url}>{content}</A>;
+  }
+
+  return content;
 }
