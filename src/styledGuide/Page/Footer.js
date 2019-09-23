@@ -22,7 +22,7 @@ function FooterLink({ to, children }) {
 export const Footer = props => {
   return (
     <StyledGrid {...props} justify="center">
-      <Grid size={6}>
+      <Grid size={{ mobile: 12, desktop: 6 }}>
         <FooterLink to={PHOTOGRAPHY}>Diane's photography</FooterLink>
         <FooterLink to={CONTACT}>Contact us / Bookings</FooterLink>
         <FooterLink to={PRESS_KIT}>Press Kit</FooterLink>

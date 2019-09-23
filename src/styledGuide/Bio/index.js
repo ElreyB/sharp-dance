@@ -11,7 +11,16 @@ const StyledName = styled(Name)`
   color: ${({ theme }) => theme.colors.blue};
 `;
 
-export function Bio({ name, role, imgCredit, bio, image, images, ...props }) {
+export function Bio({
+  name,
+  role,
+  imgCredit,
+  bio,
+  image,
+  images,
+  title,
+  ...props
+}) {
   const imageList = images || [image];
 
   if (!imageList[0]) {
@@ -20,16 +29,23 @@ export function Bio({ name, role, imgCredit, bio, image, images, ...props }) {
 
   return (
     <Grid {...props} align="start">
-      <H3>
+      <H3 size={{ mobile: 9, desktop: 12 }}>
         <StyledName>{name}</StyledName>
-        {role && `(${role})`}
+        <Grid size={12} show="mobile">
+          {title}
+        </Grid>
+        {title && (
+          <Grid size="auto" show="desktop">
+            {title && `(${title})`}
+          </Grid>
+        )}
       </H3>
-      <Grid size={3}>
+      <Grid size={3} margin={{ desktop: "0 M 0 0", mobile: "0 0 M 0" }}>
         {imageList.map(({ src }) => (
           <Img src={src} key={src} credit={imgCredit} margin="S 0 0 0" />
         ))}
       </Grid>
-      <Markdown marginLeft="M" size="auto">
+      <Markdown size="auto" marginBottom="2XL">
         {bio}
       </Markdown>
     </Grid>

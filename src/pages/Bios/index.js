@@ -22,7 +22,7 @@ export default function Bios() {
     return <Loading />;
   }
 
-  const { options = {}, pageName, ...headerBanner } = page;
+  const { options, pageName, ...headerBanner } = page;
 
   return (
     <Page>
@@ -42,13 +42,15 @@ export default function Bios() {
           </>
         )}
         {director && (
-          <Banner
-            title={director.title}
-            imgSrc={director.images}
-            imgCredit={director.imgCredit}
-          />
+          <>
+            <Banner
+              title={director.title}
+              imgSrc={director.images}
+              imgCredit={director.imgCredit}
+            />
+            <Markdown marginTop="L">{director.bio}</Markdown>
+          </>
         )}
-        <Markdown marginTop="L">{options.bio}</Markdown>
         {staff && staff.filter(isNotDirector).map(getBio)}
       </Grid>
     </Page>
