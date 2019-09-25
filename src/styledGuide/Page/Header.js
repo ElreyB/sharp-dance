@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 import { A } from "../A";
 import { Nav } from "../Nav";
@@ -14,7 +15,6 @@ import {
   MEDIA,
   PRESS
 } from "../../constants";
-import { Grid } from "gymnast";
 
 const StyledH1 = styled(H1)`
   font-size: 18px;
