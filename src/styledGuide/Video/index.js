@@ -1,37 +1,65 @@
+import { Grid } from "gymnast";
 import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
 
+import { useWindowResize } from "./useWindowSize";
+
+const headerHeight = 36;
 const StyledPlayer = styled(ReactPlayer)`
   margin: auto;
 `;
+const StyledGrid = styled(Grid)`
+  position: relative;
+  width: 100vw;
+  height: 100%;
+`;
+export const FullPageVideo = styled(({ src, className }) => {
+  const ref = React.useRef(null);
+  const [height, setHeight] = React.useState("100vh");
 
-export const BackgroundVideo = styled(({ src, className }) => {
+  function resize() {
+    const { wrapper } = ref.current || {};
+
+    if (wrapper) {
+      const iframe = wrapper.querySelector("iframe");
+
+      if (iframe) {
+        const newHeight = `${iframe.getBoundingClientRect().height}px`;
+
+        if (height !== newHeight) {
+          setHeight(newHeight);
+        }
+      }
+    }
+  }
+
+  useWindowResize(resize);
+
   return (
-    <Video
-      muted
-      playing
-      src={src}
-      className={className}
-      width="100%"
-      height="100%"
-      loop
-    />
+    <StyledGrid>
+      <Video
+        muted
+        playing
+        src={src}
+        ref={ref}
+        className={className}
+        width="100%"
+        height={height}
+        onPlay={resize}
+        onProgress={resize}
+        loop
+      />
+    </StyledGrid>
   );
 })`
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
   & iframe {
     box-sizing: border-box;
     left: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    transform: translate(-50%, -50%);
+    min-height: calc(100vh - ${headerHeight}px);
+    min-width: 100vw;
+    transform: translateX(-50%);
     position: absolute;
-    top: 50%;
     height: 56.25vw !important;
     width: 177.77777778vh !important;
   }

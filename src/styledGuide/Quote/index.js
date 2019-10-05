@@ -6,6 +6,10 @@ import { Cite } from "./Cite";
 import { P } from "../P";
 
 export const Quote = ({ source, author, quote, ...props }) => {
+  if (!quote) {
+    return <></>;
+  }
+
   return (
     <Blockquote {...props}>
       <P>{quote}</P>
@@ -17,7 +21,7 @@ export const Quote = ({ source, author, quote, ...props }) => {
 };
 
 Quote.propTypes = {
-  source: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  quote: PropTypes.string.isRequired
+  source: PropTypes.string,
+  author: PropTypes.string,
+  quote: PropTypes.string
 };
