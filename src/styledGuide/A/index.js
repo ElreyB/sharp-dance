@@ -14,12 +14,19 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-export const A = ({ to, href, children, exact = true, ...props }) => {
+export const A = ({
+  children,
+  exact = true,
+  href,
+  target = "_blank",
+  to,
+  ...props
+}) => {
   const [, allProps] = useGrid(props);
 
   if (href) {
     return (
-      <a {...{ href, target: "_blank" }} {...allProps}>
+      <a {...{ href, target }} {...allProps}>
         {children}
       </a>
     );
