@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import { A } from "../A";
 import { Nav } from "../Nav";
 import { H1 } from "../Headings";
 import {
@@ -24,17 +25,21 @@ const StyledGrid = styled(Grid)`
   background-color: ${({ theme }) => theme.colors.black};
   z-index: 1;
 `;
+const UndecoratedA = styled(A)`
+  text-decoration: none;
+`;
 
 export const Header = () => {
   return (
     <StyledGrid>
       <StyledH1 size="fit" margin="0 XL">
-        Sharp Dance
+        <UndecoratedA href={LANDING} target={null}>
+          Sharp Dance
+        </UndecoratedA>
       </StyledH1>
       <Nav
         size="auto"
         links={[
-          { to: LANDING, label: "Home" },
           { to: BIOS, label: "Bio's" },
           { to: MEDIA, label: "Media" },
           { to: PRESS, label: "Press" },
