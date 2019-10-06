@@ -2,11 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "gymnast";
 import styled from "styled-components/macro";
-import { Footer } from "./Footer";
 import { Header } from "./Header";
 
 const PageContent = styled(Grid)`
-  max-width: 900px;
+  max-width: 1050px;
   margin: 0 auto;
   min-height: 100vh;
   color: ${({ theme }) => theme.colors.white};
@@ -20,14 +19,13 @@ export const Page = ({ children, ...props }) => {
       <PageContent
         {...props}
         align="start"
-        padding="XL XL 2XL"
+        padding="2XL XL"
         marginLeft={{ mobile: 0, desktop: "XL" }}
         marginRight={{ mobile: 0, desktop: "XL" }}
         marginTop={{ mobile: "XL", desktop: 0 }}
       >
         {children}
       </PageContent>
-      <Footer padding="M 2XL M" marginBottom="2XL" />
     </>
   );
 };
