@@ -1,6 +1,6 @@
 import React from "react";
-import { FullPageVideo Page } from "../../styledGuide";
-import { PagesContext} from "../../Providers";
+import { FullPageVideo, Page } from "../../styledGuide";
+import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 
 export default function Home() {
