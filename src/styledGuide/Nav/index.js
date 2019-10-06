@@ -17,7 +17,7 @@ export function Nav({ links, ...props }) {
                 size="fit"
                 show="desktop"
                 direction="column"
-                margin="S 0 0 0"
+                margin="2.5 0 0 0"
               >
                 {sub.map(li => (
                   <Li {...li} key={li.label} size="fit" />
