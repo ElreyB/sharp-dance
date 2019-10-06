@@ -8,10 +8,8 @@ import Error404 from "./pages/404";
 import Events from "./pages/Events";
 import Generic from "./pages/Generic";
 import Home from "./pages/Home";
-import Loading from "./pages/Loading";
 import Media from "./pages/Media";
 import Press from "./pages/Press";
-import { useGetDatabase } from "../src/fbconfig";
 import {
   ABOUT,
   BIOS,
@@ -28,24 +26,12 @@ import {
 } from "./constants";
 import { ScrollToTop, GymnastProvider } from "./styledGuide";
 
+const component = Component => routeProps => <Component {...routeProps} />;
+const genericPage = pageKey => routeProps => (
+  <Generic pageKey={pageKey} {...routeProps} />
+);
+
 function App() {
-  const database = useGetDatabase();
-
-  if (!database.pages) {
-    return (
-      <Router>
-        <Loading />
-      </Router>
-    );
-  }
-  // Add loaded "database" as prop to route component
-  const component = Component => routeProps => (
-    <Component {...routeProps} {...database} />
-  );
-  const genericPage = pageKey => routeProps => (
-    <Generic pageKey={pageKey} {...routeProps} {...database} />
-  );
-
   return (
     <GymnastProvider
       displayAliases={{

@@ -21,6 +21,7 @@ const StyledH1 = styled(H1)`
 `;
 const StyledGrid = styled(Grid)`
   position: fixed;
+  min-height: 45px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.black};
   z-index: 1;
@@ -31,7 +32,7 @@ const UndecoratedA = styled(A)`
 
 export const Header = () => {
   return (
-    <StyledGrid>
+    <StyledGrid align="center" justify="center">
       <StyledH1 size="fit" margin="0 XL">
         <UndecoratedA href={LANDING} target={null}>
           Sharp Dance
