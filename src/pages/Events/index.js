@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { Route, Link } from "react-router-dom";
-import { Grid, Banner, Page, Schedule, H3 } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Route } from "react-router-dom";
+import { Grid, Banner, Page, Schedule, H3, A } from "../../styledGuide";
 import Loading from "../Loading";
 import { groupPerformancesByYear, parseSchedule } from "../../utils";
 import { EVENTS } from "../../constants";
@@ -38,6 +39,10 @@ const renderPerformances = ([year, perfs]) =>
     </React.Fragment>
   );
 
+const Anchor = styled(A)`
+  font-style: italic;
+`;
+
 export default function Events(props) {
   const { location } = props;
   const { performances } = useContext(PerformancesContext);
@@ -62,11 +67,9 @@ export default function Events(props) {
   return (
     <Page>
       <Banner {...headerBanner} />
-      <Grid justify="center">
-        <Link to={isEventPage ? PAST_EVENTS : EVENTS}>
-          {isEventPage ? "Past perfomances" : "Upcoming Performances"}
-        </Link>
-      </Grid>
+      <Anchor to={isEventPage ? PAST_EVENTS : EVENTS} justify="center">
+        {isEventPage ? "Past perfomances" : "Upcoming Performances"}
+      </Anchor>
       <Grid align="start">
         <Route
           path={EVENTS}
