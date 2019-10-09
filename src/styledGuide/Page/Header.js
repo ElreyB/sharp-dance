@@ -11,7 +11,8 @@ import {
   LANDING,
   MEDIA,
   PRESS,
-  PAST_EVENTS
+  PAST_EVENTS,
+  DIANE
 } from "../../constants";
 import { Grid } from "gymnast";
 
@@ -41,7 +42,9 @@ export const Header = () => {
       <Nav
         size="auto"
         links={[
-          { to: BIOS, label: "Bio's" },
+          { to: ABOUT, label: "About" },
+          { to: DIANE, label: "Diane Sharp-Nachsin" },
+          { to: BIOS, label: "Company" },
           { to: MEDIA, label: "Media" },
           { to: PRESS, label: "Press" },
           {
@@ -52,8 +55,7 @@ export const Header = () => {
               { to: PAST_EVENTS, label: "Past Performances" }
             ]
           },
-          { to: CLASSES, label: "Classes" },
-          { to: ABOUT, label: "About" }
+          { to: CLASSES, label: "Classes" }
         ]}
       />
     </StyledGrid>
