@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import { Grid, Banner, Page, Schedule, H3 } from "../../styledGuide";
 import Loading from "../Loading";
 import { groupPerformancesByYear, parseSchedule } from "../../utils";
@@ -38,7 +38,8 @@ const renderPerformances = ([year, perfs]) =>
     </React.Fragment>
   );
 
-export default function Events() {
+export default function Events(props) {
+  const { location } = props;
   const { performances } = useContext(PerformancesContext);
   const { getPage } = React.useContext(PagesContext);
   const page = getPage("events");
@@ -56,10 +57,16 @@ export default function Events() {
   }
 
   const { options, pageName, ...headerBanner } = page;
+  const isEventPage = location.pathname === "/events";
 
   return (
     <Page>
       <Banner {...headerBanner} />
+      <Grid justify="center">
+        <Link to={isEventPage ? PAST_EVENTS : EVENTS}>
+          {isEventPage ? "Past perfomances" : "Upcoming Performances"}
+        </Link>
+      </Grid>
       <Grid align="start">
         <Route
           path={EVENTS}

@@ -10,8 +10,7 @@ import {
   EVENTS,
   LANDING,
   MEDIA,
-  PRESS,
-  PAST_EVENTS
+  PRESS
 } from "../../constants";
 import { Grid } from "gymnast";
 
@@ -44,14 +43,7 @@ export const Header = () => {
           { to: BIOS, label: "Bio's" },
           { to: MEDIA, label: "Media" },
           { to: PRESS, label: "Press" },
-          {
-            to: EVENTS,
-            label: "Events",
-            sub: [
-              { to: EVENTS, label: "Upcoming Performances" },
-              { to: PAST_EVENTS, label: "Past Performances" }
-            ]
-          },
+          { to: EVENTS, label: "Performances" },
           { to: CLASSES, label: "Classes" },
           { to: ABOUT, label: "About" }
         ]}
