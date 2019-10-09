@@ -36,13 +36,9 @@ export default function DianeSharp() {
           <H3 justify="center" padding="L 0">
             Visit Diane Sharp Photos
           </H3>
-          <A href={options.facebook} to="#" size={6} justify="center">
+          <A href={options.facebook} justify="center">
             Diane's Photos FaceBook
           </A>
-          {/** TODO: see if Diane's photo site is still up and get the update link */}
-          {/* <A href={options.website} to="#" size={6} justify="center">
-            Diane's Photos Website
-          </A> */}
         </Grid>
       </Grid>
     </Page>
