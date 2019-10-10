@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
-import { Grid, Bio, H2, Banner, Markdown, Page } from "../../styledGuide";
+import { Grid, Bio, H2, Banner, Page } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
 
 // Removes director prop since it's not meant to be passed to the component
 const getBio = ({ director, ...bio }) => <Bio {...bio} key={bio.name} />;
 // We separate director (Diane) from all other staff members to be able to place Diane in a special section
-const isDirector = ({ director }) => director;
 const isNotDirector = ({ director }) => !director;
 
 export default function Bios() {
@@ -14,44 +13,40 @@ export default function Bios() {
     ResourcesContext
   ).resourceObj;
 
-  const director = staff ? staff.find(isDirector) : undefined;
   const { getPage } = useContext(PagesContext);
   const page = getPage("bios");
 
   if (!page) {
     return <Loading />;
   }
-
   const { options, pageName, ...headerBanner } = page;
 
   return (
     <Page>
       <Banner {...headerBanner} />
       <Grid align="start">
-        {performers && Object.values(performers).map(getBio)}
+        {performers && (
+          <>
+            <H2 justify="center">Dancers</H2>
+            {Object.values(performers).map(getBio)}
+          </>
+        )}
         {apprentices && (
           <>
-            <H2>Apprentices</H2>
+            <H2 justify="center">Apprentices</H2>
             {apprentices.map(getBio)}
           </>
         )}
         {guestPerformers && (
           <>
-            <H2>Guest Performers</H2>
+            <H2 justify="center">Guest Performers</H2>
             {guestPerformers.map(getBio)}
           </>
         )}
-        {director && (
-          <>
-            <Banner
-              title={director.title}
-              imgSrc={director.images}
-              imgCredit={director.imgCredit}
-            />
-            <Markdown marginTop="L">{director.bio}</Markdown>
-          </>
-        )}
-        {staff && staff.filter(isNotDirector).map(getBio)}
+        <>
+          <H2 justify="center">Staff</H2>
+          {staff && staff.filter(isNotDirector).map(getBio)}
+        </>
       </Grid>
     </Page>
   );
