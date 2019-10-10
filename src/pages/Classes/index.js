@@ -39,7 +39,6 @@ export default function Classes() {
   }
 
   const { options = {}, pageName, ...headerBanner } = page;
-  /**TODO: logic should go my the month and day not year */
   const upcomingClassesList = classSchedules
     .map(classSchedule => {
       const dates = classSchedule.dates.filter(date =>
