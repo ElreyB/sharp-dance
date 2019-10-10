@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import styled, { css } from "styled-components/macro";
 import { Grid } from "gymnast";
 import { func, bool } from "prop-types";
@@ -44,11 +44,6 @@ const Line = styled.div`
 `;
 
 const HamburgerButton = ({ onClick, aimate }) => {
-  const [animate, setAnimate] = useState(false);
-  const handleOnClick = useCallback(
-    () => setAnimate(prevAnimate => !prevAnimate),
-    [animate]
-  );
   return (
     <StyledButton onClick={handleOnClick} aimate={aimate}>
       <Line aimate={aimate} />

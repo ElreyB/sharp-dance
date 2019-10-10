@@ -1,24 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
 import DrawerToggleButton from "../DrawerToggleButton";
-import { Nav } from "../Nav";
-import {
-  ABOUT,
-  BIOS,
-  CLASSES,
-  EVENTS,
-  LANDING,
-  MEDIA,
-  PRESS,
-  PAST_EVENTS
-} from "../../constants";
-
-const StyledNav = styled(Nav)`
-  position: fixed;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.black};
-  z-index: 1;
-`;
 
 const Nav = styled.nav`
   height: 100%;
@@ -33,39 +15,39 @@ const Nav = styled.nav`
   transition: transform 0.3s ease-out;
 `;
 
-// const NavMenu = styled.ul`
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100%;
-// `;
+const NavMenu = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`;
 
-// const MenuItem = styled.li`
-//   padding: 0 0.5rem;
-//   width: 100%;
-//   text-align: center;
-// `;
+const MenuItem = styled.li`
+  padding: 0 0.5rem;
+  width: 100%;
+  text-align: center;
+`;
 
-// const Anchor = styled.a`
-//   color: #521751;
-//   text-decoration: none;
-//   font-size: 1.2rem;
-//   padding: 0.5rem 0;
-//   display: block;
+const Anchor = styled.a`
+  color: #521751;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  display: block;
 
-//   &:hover,
-//   &:active {
-//     color: #fa923f;
-//   }
+  &:hover,
+  &:active {
+    color: #fa923f;
+  }
 
-//   &:hover {
-//     background: rgba(0, 0, 0, 0.1);
-//   }
-// `;
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+`;
 
 const SideDrawer = ({ show, onClick }) => (
   <Nav show={show}>
@@ -79,32 +61,14 @@ const SideDrawer = ({ show, onClick }) => (
     >
       <DrawerToggleButton reverse onClick={onClick} />
     </div>
-    <StyledNav
-      links={[
-        { to: LANDING, label: "Home" },
-        { to: BIOS, label: "Bio's" },
-        { to: MEDIA, label: "Media" },
-        { to: PRESS, label: "Press" },
-        {
-          to: EVENTS,
-          label: "Events",
-          sub: [
-            { to: EVENTS, label: "Upcoming Performances" },
-            { to: PAST_EVENTS, label: "Past Performances" }
-          ]
-        },
-        { to: CLASSES, label: "Classes" },
-        { to: ABOUT, label: "About" }
-      ]}
-    />
-    {/* <NavMenu>
+    <NavMenu>
       <MenuItem>
-        <Anchor href='/'>Products</Anchor>
+        <Anchor href="/">Products</Anchor>
       </MenuItem>
       <MenuItem>
-        <Anchor href='/'>User</Anchor>
+        <Anchor href="/">User</Anchor>
       </MenuItem>
-    </NavMenu> */}
+    </NavMenu>
   </Nav>
 );
 
