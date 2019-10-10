@@ -5,6 +5,7 @@ export const BIOS = `${prefix}/bios`;
 export const CLASSES = `${prefix}/classes`;
 export const CONTACT = `${prefix}/contact`;
 export const DONATIONS = `${prefix}/donations`;
+export const DIANE = `${prefix}/artistic-director`;
 export const EVENTS = `${prefix}/events`;
 export const PAST_EVENTS = `${EVENTS}/past`;
 export const LANDING = `${prefix}/`;

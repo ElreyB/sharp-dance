@@ -10,11 +10,13 @@ import Generic from "./pages/Generic";
 import Home from "./pages/Home";
 import Media from "./pages/Media";
 import Press from "./pages/Press";
+import DianeSharp from "./pages/DianeSharp";
 import {
   ABOUT,
   BIOS,
   CLASSES,
   CONTACT,
+  DIANE,
   DONATIONS,
   ERROR,
   EVENTS,
@@ -42,20 +44,26 @@ function App() {
       <Router>
         <ScrollToTop />
         <Switch>
-          <Route path={ABOUT} component={component(About)} />
+          <Route path={ABOUT} exact component={component(About)} />
           <Route path={BIOS} exact component={component(Bios)} />
-          <Route path={CLASSES} component={component(Classes)} />
-          <Route path={CONTACT} component={component(Contact)} />
-          <Route path={DONATIONS} component={genericPage("donations")} />
-          <Route path={EVENTS} component={component(Events)} />
+          <Route path={CLASSES} exact component={component(Classes)} />
+          <Route path={CONTACT} exact component={component(Contact)} />
+          <Route path={DIANE} exact component={component(DianeSharp)} />
+          <Route path={DONATIONS} exact component={genericPage("donations")} />
+          <Route path={EVENTS} exact component={component(Events)} />
           <Route path={LANDING} exact component={component(Home)} />
           <Route
             path={`${MEDIA}/:performanceTitle?`}
+            exact
             component={component(Media)}
           />
-          <Route path={PHOTOGRAPHY} component={genericPage("photography")} />
-          <Route path={PRESS_KIT} component={genericPage("press-kit")} />
-          <Route path={PRESS} component={component(Press)} />
+          <Route
+            path={PHOTOGRAPHY}
+            exact
+            component={genericPage("photography")}
+          />
+          <Route path={PRESS_KIT} exact component={genericPage("press-kit")} />
+          <Route path={PRESS} exact component={component(Press)} />
           <Route path={ERROR} component={component(Error404)} />
 
           <Route component={component(Error404)} />
