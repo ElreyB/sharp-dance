@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Grid } from "gymnast";
 import { Page, Banner, H2, A, Img } from "../../styledGuide";
 import { getPerformanceURL } from "./media.logic";
 import { random } from "lodash";
@@ -7,7 +8,12 @@ import { random } from "lodash";
 const StyledImg = styled(Img)`
   max-width: 100%;
   max-height: 100%;
+  background: ${({ theme }) => theme.colors.white};
 `;
+const Border = styled(Grid)`
+  background: ${({ theme }) => theme.colors.black};
+`;
+
 export default function AllPerformances({ headerBanner, media }) {
   const filterMedia = media.filter(album => Number(album.id) < 6);
   return (
@@ -23,13 +29,15 @@ export default function AllPerformances({ headerBanner, media }) {
               size={{ mobile: 12, desktop: 6 }}
             >
               <H2 justify="center">{title}</H2>
-              <StyledImg
-                size="auto"
-                margin="M"
-                align="center"
-                alt={title}
-                src={photo}
-              />
+              <Border margin="S" size="auto">
+                <StyledImg
+                  // size="auto"
+                  margin="M"
+                  align="center"
+                  alt={title}
+                  src={photo}
+                />
+              </Border>
             </A>
           );
         })
