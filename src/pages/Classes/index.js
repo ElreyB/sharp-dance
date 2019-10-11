@@ -2,7 +2,7 @@ import React from "react";
 import { Banner, Page, Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate } from "../../utils";
 import Loading from "../Loading";
-import { PagesContext } from "../../Providers";
+import { PagesContext, ClassScheduleContext } from "../../Providers";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
@@ -31,6 +31,7 @@ function ClassSchedule({ address = "", season, ...upcomingClasses }) {
 
 export default function Classes() {
   const { getPage } = React.useContext(PagesContext);
+  const classSchedules = React.useContext(ClassScheduleContext);
   const page = getPage("classes");
 
   if (!page) {
@@ -38,8 +39,7 @@ export default function Classes() {
   }
 
   const { options = {}, pageName, ...headerBanner } = page;
-
-  const upcomingClassesList = options.classSchedules
+  const upcomingClassesList = classSchedules
     .map(classSchedule => {
       const dates = classSchedule.dates.filter(date =>
         isFuture(parseDate(date))
@@ -52,9 +52,9 @@ export default function Classes() {
   return (
     <Page>
       <Banner {...headerBanner} />
+      {options.content}
       {upcomingClassesList.length > 0 ? (
         <>
-          {options.content}
           {upcomingClassesList.map((schedule, i) => (
             <ClassSchedule {...schedule} key={i} />
           ))}

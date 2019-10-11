@@ -5,3 +5,4 @@ export * from "./OrganizationsProvider";
 export * from "./PagesProvider";
 export * from "./ResourcesProvider";
 export * from "./PressProvider";
+export * from "./ClassScheduleProvider";

@@ -15,26 +15,29 @@ import {
   ResourcesProvider,
   PressProvider
 } from "./Providers";
+import { ClassScheduleProvider } from "./Providers/ClassScheduleProvider";
 
 const RootApp = () => (
   <ThemeProvider theme={theme}>
     <FirestoreProvider firebase={Firebase}>
-      <PerformancesProvider>
-        <MediaProvider>
-          <QuotesProvider>
-            <OrganizationsProvider>
-              <PagesProvider>
-                <ResourcesProvider>
-                  <PressProvider>
-                    <GlobalStyle />
-                    <App />
-                  </PressProvider>
-                </ResourcesProvider>
-              </PagesProvider>
-            </OrganizationsProvider>
-          </QuotesProvider>
-        </MediaProvider>
-      </PerformancesProvider>
+      <ClassScheduleProvider>
+        <PerformancesProvider>
+          <MediaProvider>
+            <QuotesProvider>
+              <OrganizationsProvider>
+                <PagesProvider>
+                  <ResourcesProvider>
+                    <PressProvider>
+                      <GlobalStyle />
+                      <App />
+                    </PressProvider>
+                  </ResourcesProvider>
+                </PagesProvider>
+              </OrganizationsProvider>
+            </QuotesProvider>
+          </MediaProvider>
+        </PerformancesProvider>
+      </ClassScheduleProvider>
     </FirestoreProvider>
   </ThemeProvider>
 );
