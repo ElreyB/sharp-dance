@@ -34,17 +34,16 @@ export const Header = () => {
   return (
     <StyledGrid align="center" justify="center">
       <StyledH1 size="fit" margin="0 XL">
-        <UndecoratedA href={LANDING} target={null}>
-          Sharp Dance
-        </UndecoratedA>
+        <UndecoratedA to={LANDING}>Sharp Dance</UndecoratedA>
       </StyledH1>
       <Nav
+        style={{ fontSize: "14px" }}
         size="auto"
         links={[
           { to: ABOUT, label: "About" },
           { to: DIANE, label: "Diane Sharp-Nachsin" },
           { to: BIOS, label: "Company" },
-          { to: MEDIA, label: "Media" },
+          { to: MEDIA, label: "Repertoire" },
           { to: PRESS, label: "Press" },
           { to: EVENTS, label: "Performances" },
           { to: CLASSES, label: "Classes" }
