@@ -18,7 +18,7 @@ export default function AllPerformances({ headerBanner, media }) {
   const filterMedia = media.filter(album => Number(album.id) < 6);
   return (
     <Page>
-      <Banner {...headerBanner} />
+      <Banner {...headerBanner} marginBottom="6" />
       {filterMedia.length > 0 ? (
         filterMedia.map(({ title, images }, i) => {
           const photo = images[random(0, images.length - 1)];
@@ -27,6 +27,7 @@ export default function AllPerformances({ headerBanner, media }) {
               to={getPerformanceURL(title)}
               key={title}
               size={{ mobile: 12, desktop: 6 }}
+              marginBottom="XL"
             >
               <H2 justify="center">{title}</H2>
               <Border margin="S" size="auto">
