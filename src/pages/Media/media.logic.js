@@ -8,6 +8,6 @@ export function isMatch(a, b) {
   return standardize(a) === standardize(b);
 }
 
-export function getPerformanceURL({ title }) {
+export function getPerformanceURL(title) {
   return `${MEDIA}/${standardize(title)}`;
 }
