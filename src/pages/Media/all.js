@@ -18,7 +18,7 @@ export default function AllPerformances({ headerBanner, media }) {
   const filterMedia = media.filter(album => Number(album.id) < 6);
   return (
     <Page>
-      <Banner {...headerBanner} marginBottom="6" />
+      <Banner {...headerBanner} />
       {filterMedia.length > 0 ? (
         filterMedia.map(({ title, images }, i) => {
           const photo = images[random(0, images.length - 1)];
