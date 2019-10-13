@@ -42,12 +42,12 @@ export const Img = ({
   const combinedAlt = alt || (src && src.title) ? src.title : undefined;
 
   return (
-    <ImgWrapper margin="0 M/2" media={media} {...props}>
+    <ImgWrapper margin="0 M/2" media={media ? 1 : undefined} {...props}>
       <ImgGrid
         align="center"
         justify="center"
         style={{ backgroundImage: `url("${srcString}")`, backgroundSize }}
-        media={media}
+        media={media ? 1 : undefined}
       >
         <InnerImg src={srcString} alt={combinedAlt} role={role} />
       </ImgGrid>
