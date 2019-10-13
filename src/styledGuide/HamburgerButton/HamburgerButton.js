@@ -1,29 +1,32 @@
 import React from "react";
 import styled, { css } from "styled-components/macro";
-import { Grid } from "gymnast";
 import { func, bool } from "prop-types";
 import { Button } from "../Button";
 
 const StyledButton = styled(Button)`
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   height: 24px;
   width: 30px;
   background: transparent;
-  border: none;
+  border-color: transparent;
   cursor: pointer;
-  padding: 0;
-  box-sizing: border-box;
-  @media (min-width: 769px) {
-    display: none;
+  padding: 4px;
+
+  &:focus {
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    outline: none;
   }
-  ${({ aimate }) =>
-    aimate &&
+
+  &:hover > div {
+    background: ${({ theme }) => theme.colors.blue};
+  }
+
+  ${({ closed }) =>
+    closed &&
     css`
       div:nth-child(1) {
-        -webkit-transform: rotate(-45deg) translate(-6px, 5px);
-        transform: rotate(-45deg) translate(-6px, 5px);
+        transform: rotate(-45deg) translate(-4px, 3px);
       }
 
       div:nth-child(2) {
@@ -31,35 +34,36 @@ const StyledButton = styled(Button)`
       }
 
       div:nth-child(3) {
-        -webkit-transform: rotate(45deg) translate(-6px, -6px);
-        transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-4px, -4px);
       }
     `}
 `;
 
 const Line = styled.div`
-  width: 30px;
+  width: 20px;
   height: 2px;
-  background: ${({ aimate }) => (aimate ? "black" : "white")};
+  background: ${({ theme }) => theme.colors.white};
 `;
 
-const HamburgerButton = ({ onClick, aimate }) => {
-  return (
-    <StyledButton onClick={handleOnClick} aimate={aimate}>
-      <Line aimate={aimate} />
-      <Line aimate={aimate} />
-      <Line aimate={aimate} />
+const HamburgerButton = React.forwardRef(
+  ({ onClick, closed = false, ...props }, ref) => (
+    <StyledButton
+      onClick={onClick}
+      closed={closed}
+      ref={ref}
+      direction="column"
+      {...props}
+    >
+      <Line />
+      <Line />
+      <Line />
     </StyledButton>
-  );
-};
+  )
+);
 
 HamburgerButton.propTypes = {
   onClick: func,
-  aimate: bool
-};
-
-HamburgerButton.defaultProps = {
-  aimate: false
+  closed: bool
 };
 
 export default HamburgerButton;

@@ -7,7 +7,7 @@ const LayOver = styled.div`
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 10;
 `;
 

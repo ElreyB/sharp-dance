@@ -3,11 +3,11 @@ import { useGrid } from "gymnast";
 import { Ul } from "./Ul";
 import { Li } from "./Li";
 
-export function Nav({ links, ...props }) {
+export const Nav = React.forwardRef(({ links, ...props }, ref) => {
   const [, allProps] = useGrid(props);
 
   return (
-    <nav {...allProps}>
+    <nav {...allProps} ref={ref}>
       <Ul>
         {links.map(({ to, label, sub = [] }) => (
           <Li to={to} key={label} label={label}>
@@ -29,4 +29,4 @@ export function Nav({ links, ...props }) {
       </Ul>
     </nav>
   );
-}
+});
