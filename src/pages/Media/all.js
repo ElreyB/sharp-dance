@@ -7,9 +7,14 @@ import { random } from "lodash";
 
 const StyledImg = styled(Img)`
   max-width: 100%;
-  max-height: 100%;
   background: ${({ theme }) => theme.colors.white};
+  height: 300px;
+
+  & > div {
+    height: 100%;
+  }
 `;
+
 const Border = styled(Grid)`
   background: ${({ theme }) => theme.colors.black};
 `;
@@ -31,13 +36,7 @@ export default function AllPerformances({ headerBanner, media }) {
             >
               <H2 justify="center">{title}</H2>
               <Border margin="S" size="auto">
-                <StyledImg
-                  margin="M"
-                  align="center"
-                  alt={title}
-                  src={photo}
-                  media
-                />
+                <StyledImg margin="M" align="center" alt={title} src={photo} />
               </Border>
             </A>
           );

@@ -26,7 +26,7 @@ export default function DianeSharp() {
           <>
             <Banner
               title={director.name}
-              imgSrc={director.images}
+              images={director.images}
               imgCredit={director.imgCredit}
             />
             <Markdown marginTop="XL">{director.bio}</Markdown>
