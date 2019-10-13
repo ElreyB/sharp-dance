@@ -13,8 +13,8 @@ export const Quote = ({ source, author, quote, ...props }) => {
   return (
     <Blockquote {...props}>
       <P>{quote}</P>
-      <Footer>
-        —{author}, <Cite>{source}</Cite>
+      <Footer justify="end">
+        — {author}, <Cite size="fit">{source}</Cite>
       </Footer>
     </Blockquote>
   );
