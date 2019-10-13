@@ -7,11 +7,12 @@ import {
   ABOUT,
   BIOS,
   CLASSES,
+  CONTACT,
+  DIANE,
   EVENTS,
   LANDING,
   MEDIA,
-  PRESS,
-  DIANE
+  PRESS
 } from "../../constants";
 import { Grid } from "gymnast";
 
@@ -48,7 +49,8 @@ export const Header = () => {
           { to: MEDIA, label: "Repertoire" },
           { to: PRESS, label: "Press" },
           { to: EVENTS, label: "Performances" },
-          { to: CLASSES, label: "Classes" }
+          { to: CLASSES, label: "Classes" },
+          { to: CONTACT, label: "Contact" }
         ]}
       />
     </StyledGrid>
