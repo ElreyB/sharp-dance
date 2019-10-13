@@ -32,7 +32,7 @@ export const Banner = ({
           alt={alt}
           credit={imgCredit}
           justify={justify}
-          backgroundSize="cover"
+          backgroundSize="contain"
         />
         {subtitle && <H2 justify={justify}>{subtitle}</H2>}
       </Header>
