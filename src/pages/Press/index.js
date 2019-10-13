@@ -7,7 +7,7 @@ import { PressItem } from "./pressItem";
 export default function Press() {
   const { getPage } = React.useContext(PagesContext);
   const press = React.useContext(PressContext);
-  const page = getPage("press");
+  const page = getPage("press-kit");
 
   if (!page) {
     return <Loading />;

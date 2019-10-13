@@ -15,14 +15,14 @@ export const Banner = ({
   subTitle,
   subtitle = subTitle,
   images,
-  imgSrc = images,
+  image,
   alt,
   imgCredit,
   justify = "center",
   ...props
 }) => {
   const [showH1, allProps] = useGrid(props);
-
+  const imgSrc = images || image;
   if (showH1) {
     return (
       <Header {...allProps}>
