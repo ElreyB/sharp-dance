@@ -18,9 +18,11 @@ export default function Press() {
   return (
     <Page>
       <Banner {...headerBanner} />
-      {press.map(({ id, ...props }) => (
-        <PressItem {...props} key={id} />
-      ))}
+      {press
+        .filter(item => !!item.description)
+        .map(({ id, ...props }) => (
+          <PressItem {...props} key={id} />
+        ))}
     </Page>
   );
 }
