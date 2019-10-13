@@ -31,7 +31,13 @@ export default function AllPerformances({ headerBanner, media }) {
             >
               <H2 justify="center">{title}</H2>
               <Border margin="S" size="auto">
-                <StyledImg margin="M" align="center" alt={title} src={photo} />
+                <StyledImg
+                  margin="M"
+                  align="center"
+                  alt={title}
+                  src={photo}
+                  media
+                />
               </Border>
             </A>
           );

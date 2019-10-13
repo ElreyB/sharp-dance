@@ -30,14 +30,16 @@ const UndecoratedA = styled(A)`
   text-decoration: none;
 `;
 
+const StyledNav = styled(Nav)`
+  font-size: 14px;
+`;
 export const Header = () => {
   return (
     <StyledGrid align="center" justify="center">
       <StyledH1 size="fit" margin="0 XL">
         <UndecoratedA to={LANDING}>Sharp Dance</UndecoratedA>
       </StyledH1>
-      <Nav
-        style={{ fontSize: "14px" }}
+      <StyledNav
         size="auto"
         links={[
           { to: ABOUT, label: "About" },
