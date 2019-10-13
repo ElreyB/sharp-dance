@@ -14,8 +14,6 @@ const ClassScheduleProvider = ({ children }) => {
     [classScheduleCollection]
   );
 
-  console.warn("PROVDIER", classSchedules);
-
   return (
     <ClassScheduleContext.Provider value={classSchedules}>
       {children}
