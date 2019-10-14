@@ -50,7 +50,7 @@ function App() {
           <Route path={CONTACT} exact component={component(Contact)} />
           <Route path={DIANE} exact component={component(DianeSharp)} />
           <Route path={DONATIONS} exact component={genericPage("donations")} />
-          <Route path={EVENTS} exact component={component(Events)} />
+          <Route path={EVENTS} component={component(Events)} />
           <Route path={LANDING} exact component={component(Home)} />
           <Route
             path={`${MEDIA}/:performanceTitle?`}

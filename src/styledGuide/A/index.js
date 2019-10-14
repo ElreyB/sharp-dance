@@ -12,6 +12,16 @@ const StyledNavLink = styled(NavLink)`
     font-weight: bold;
     color: ${({ theme }) => theme.colors.blue};
   }
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.blue};
+  }
+
+  &:focus {
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    outline: none;
+  }
 `;
 
 export const A = ({
@@ -19,10 +29,11 @@ export const A = ({
   exact = true,
   href,
   target = "_blank",
+  padding = "0 S",
   to,
   ...props
 }) => {
-  const [, allProps] = useGrid(props);
+  const [, allProps] = useGrid({ padding, ...props });
 
   if (href) {
     return (

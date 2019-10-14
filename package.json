@@ -6,6 +6,7 @@
   "dependencies": {
     "firebase": "^7.2.0",
     "firebase-admin": "^8.1.0",
+    "focus-trap-react": "6.0.0",
     "formik": "^1.5.7",
     "gymnast": "^17.0.0-next.19",
     "lodash": "^4.17.11",
