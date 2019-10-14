@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useGrid } from "gymnast";
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 
-const StyledNavLink = styled(NavLink)`
+const linkStyles = css`
   color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   font-weight: normal;
@@ -24,6 +24,14 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
+const StyledNavLink = styled(NavLink)`
+  ${linkStyles}
+`;
+
+const Anchor = styled.a`
+  ${linkStyles}
+`;
+
 export const A = ({
   children,
   exact = true,
@@ -37,9 +45,9 @@ export const A = ({
 
   if (href) {
     return (
-      <a {...{ href, target }} {...allProps}>
+      <Anchor {...{ href, target }} {...allProps}>
         {children}
-      </a>
+      </Anchor>
     );
   }
 
