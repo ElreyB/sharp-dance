@@ -6,6 +6,17 @@ import BackDrop from "./backDrop";
 import FocusTrap from "focus-trap-react";
 import { A } from "../A";
 import { SocialIcons } from "../SocialIcons";
+import {
+  ABOUT,
+  BIOS,
+  CLASSES,
+  CONTACT,
+  DIANE,
+  EVENTS,
+  MEDIA,
+  PAST_EVENTS,
+  PRESS
+} from "../../constants";
 
 const ESCAPE_KEY = 27;
 const Nav = styled.nav`
@@ -26,7 +37,19 @@ const Nav = styled.nav`
   }
 `;
 
-const SideDrawer = ({ show, links, onClick }) => (
+const links = [
+  { to: ABOUT, label: "About" },
+  { to: DIANE, label: "Diane Sharp-Nachsin" },
+  { to: BIOS, label: "Company" },
+  { to: MEDIA, label: "Repertoire" },
+  { to: PRESS, label: "Press" },
+  { to: EVENTS, label: "Upcoming Performances" },
+  { to: PAST_EVENTS, label: "Past Performances" },
+  { to: CLASSES, label: "Classes" },
+  { to: CONTACT, label: "Contact" }
+];
+
+const SideDrawer = ({ show, onClick }) => (
   <>
     {show && <BackDrop onClick={onClick} />}
     <Nav
@@ -48,23 +71,10 @@ const SideDrawer = ({ show, links, onClick }) => (
         >
           <Grid paddingTop="M">
             <HamburgerButton onClick={onClick} closed />
-            {links.map(({ to, label, sub = [] }) => (
-              <>
-                <A to={to} key={to} size={12} padding="S/2 M">
-                  {label}
-                </A>
-                {sub.map(item => (
-                  <A
-                    to={item.to}
-                    key={item.to}
-                    size={12}
-                    marginLeft="XL"
-                    padding="S/2 M"
-                  >
-                    {item.label}
-                  </A>
-                ))}
-              </>
+            {links.map(({ to, label }) => (
+              <A to={to} key={to} size={12} padding="S/2 M">
+                {label}
+              </A>
             ))}
             <SocialIcons paddingTop="M" />
           </Grid>

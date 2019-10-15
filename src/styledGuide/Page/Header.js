@@ -7,18 +7,7 @@ import { H1 } from "../Headings";
 import SideDrawer from "../SideDrawer";
 import HamburgerButton from "../HamburgerButton";
 import { SocialIcons } from "../SocialIcons";
-import {
-  ABOUT,
-  BIOS,
-  CLASSES,
-  CONTACT,
-  DIANE,
-  EVENTS,
-  LANDING,
-  MEDIA,
-  PAST_EVENTS,
-  PRESS
-} from "../../constants";
+import { LANDING } from "../../constants";
 import { useElementHeight } from "./useElementHeight";
 
 const StyledH1 = styled(H1)`
@@ -53,43 +42,16 @@ export const Header = () => {
   const [show, setShow] = React.useState(false);
   const [ref, height] = useElementHeight();
   const condenseMenu = height > 45;
-  const links = [
-    {
-      to: ABOUT,
-      label: "About",
-      sub: [
-        { to: DIANE, label: "Diane Sharp-Nachsin" },
-        { to: BIOS, label: "Company" },
-        { to: MEDIA, label: "Repertoire" },
-        {
-          to: ABOUT,
-          label: "About"
-        }
-      ]
-    },
-    { to: PRESS, label: "Press" },
-    {
-      to: EVENTS,
-      label: "Performances",
-      sub: [
-        { to: EVENTS, label: "Upcoming Performances" },
-        { to: PAST_EVENTS, label: "Past Performances" }
-      ]
-    },
-    { to: CLASSES, label: "Classes" },
-    { to: CONTACT, label: "Contact" }
-  ];
 
   return (
     <StyledGrid align="center" justify="center">
       <StyledH1 size="fit" margin="0 XL">
         <UndecoratedA to={LANDING}>Sharp Dance</UndecoratedA>
       </StyledH1>
-      <SideDrawer show={show} onClick={() => setShow(!show)} links={links} />
+      <SideDrawer show={show} onClick={() => setShow(!show)} />
       {!condenseMenu && <SocialIcons />}
       <StyledNav
         data-condensed-menu={condenseMenu ? "false" : "true"}
-        links={links}
         ref={ref}
         size="auto"
       />
