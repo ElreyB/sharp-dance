@@ -10,6 +10,7 @@ import { SocialIcons } from "../SocialIcons";
 const ESCAPE_KEY = 27;
 const Nav = styled.nav`
   height: 100%;
+  overflow: auto;
   position: fixed;
   background-color: inherit;
   top: 0;
@@ -47,10 +48,23 @@ const SideDrawer = ({ show, links, onClick }) => (
         >
           <Grid paddingTop="M">
             <HamburgerButton onClick={onClick} closed />
-            {links.map(({ to, label }) => (
-              <A to={to} key={to} size={12} padding="S/2 M">
-                {label}
-              </A>
+            {links.map(({ to, label, sub = [] }) => (
+              <>
+                <A to={to} key={to} size={12} padding="S/2 M">
+                  {label}
+                </A>
+                {sub.map(item => (
+                  <A
+                    to={item.to}
+                    key={item.to}
+                    size={12}
+                    marginLeft="XL"
+                    padding="S/2 M"
+                  >
+                    {item.label}
+                  </A>
+                ))}
+              </>
             ))}
             <SocialIcons paddingTop="M" />
           </Grid>

@@ -16,6 +16,7 @@ import {
   EVENTS,
   LANDING,
   MEDIA,
+  PAST_EVENTS,
   PRESS
 } from "../../constants";
 import { useElementHeight } from "./useElementHeight";
@@ -27,7 +28,6 @@ const StyledH1 = styled(H1)`
 const StyledGrid = styled(Grid)`
   position: fixed;
   height: 45px;
-  overflow: hidden;
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.black};
   z-index: 1;
@@ -54,12 +54,28 @@ export const Header = () => {
   const [ref, height] = useElementHeight();
   const condenseMenu = height > 45;
   const links = [
-    { to: ABOUT, label: "About" },
-    { to: DIANE, label: "Diane Sharp-Nachsin" },
-    { to: BIOS, label: "Company" },
-    { to: MEDIA, label: "Repertoire" },
+    {
+      to: ABOUT,
+      label: "About",
+      sub: [
+        { to: DIANE, label: "Diane Sharp-Nachsin" },
+        { to: BIOS, label: "Company" },
+        { to: MEDIA, label: "Repertoire" },
+        {
+          to: ABOUT,
+          label: "About"
+        }
+      ]
+    },
     { to: PRESS, label: "Press" },
-    { to: EVENTS, label: "Performances" },
+    {
+      to: EVENTS,
+      label: "Performances",
+      sub: [
+        { to: EVENTS, label: "Upcoming Performances" },
+        { to: PAST_EVENTS, label: "Past Performances" }
+      ]
+    },
     { to: CLASSES, label: "Classes" },
     { to: CONTACT, label: "Contact" }
   ];
