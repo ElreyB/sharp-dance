@@ -5,6 +5,7 @@ import HamburgerButton from "../HamburgerButton";
 import BackDrop from "./backDrop";
 import FocusTrap from "focus-trap-react";
 import { A } from "../A";
+import { SocialIcons } from "../SocialIcons";
 
 const ESCAPE_KEY = 27;
 const Nav = styled.nav`
@@ -51,6 +52,7 @@ const SideDrawer = ({ show, links, onClick }) => (
                 {label}
               </A>
             ))}
+            <SocialIcons paddingTop="M" />
           </Grid>
         </FocusTrap>
       )}

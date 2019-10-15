@@ -6,6 +6,7 @@ import { Nav } from "../Nav";
 import { H1 } from "../Headings";
 import SideDrawer from "../SideDrawer";
 import HamburgerButton from "../HamburgerButton";
+import { SocialIcons } from "../SocialIcons";
 import {
   ABOUT,
   BIOS,
@@ -47,6 +48,7 @@ const StyledNav = styled(Nav)`
     visibility: hidden;
   }
 `;
+
 export const Header = () => {
   const [show, setShow] = React.useState(false);
   const [ref, height] = useElementHeight();
@@ -68,6 +70,7 @@ export const Header = () => {
         <UndecoratedA to={LANDING}>Sharp Dance</UndecoratedA>
       </StyledH1>
       <SideDrawer show={show} onClick={() => setShow(!show)} links={links} />
+      {!condenseMenu && <SocialIcons />}
       <StyledNav
         data-condensed-menu={condenseMenu ? "false" : "true"}
         links={links}
