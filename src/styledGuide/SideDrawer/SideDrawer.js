@@ -6,10 +6,22 @@ import BackDrop from "./backDrop";
 import FocusTrap from "focus-trap-react";
 import { A } from "../A";
 import { SocialIcons } from "../SocialIcons";
+import {
+  ABOUT,
+  BIOS,
+  CLASSES,
+  CONTACT,
+  DIANE,
+  EVENTS,
+  MEDIA,
+  PAST_EVENTS,
+  PRESS
+} from "../../constants";
 
 const ESCAPE_KEY = 27;
 const Nav = styled.nav`
   height: 100%;
+  overflow: auto;
   position: fixed;
   background-color: inherit;
   top: 0;
@@ -25,7 +37,19 @@ const Nav = styled.nav`
   }
 `;
 
-const SideDrawer = ({ show, links, onClick }) => (
+const links = [
+  { to: ABOUT, label: "About" },
+  { to: DIANE, label: "Diane Sharp-Nachsin" },
+  { to: BIOS, label: "Company" },
+  { to: MEDIA, label: "Repertoire" },
+  { to: PRESS, label: "Press" },
+  { to: EVENTS, label: "Upcoming Performances" },
+  { to: PAST_EVENTS, label: "Past Performances" },
+  { to: CLASSES, label: "Classes" },
+  { to: CONTACT, label: "Contact" }
+];
+
+const SideDrawer = ({ show, onClick }) => (
   <>
     {show && <BackDrop onClick={onClick} />}
     <Nav

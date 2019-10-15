@@ -2,8 +2,46 @@ import React from "react";
 import { useGrid } from "gymnast";
 import { Ul } from "./Ul";
 import { Li } from "./Li";
+import {
+  ABOUT,
+  BIOS,
+  CLASSES,
+  CONTACT,
+  DIANE,
+  EVENTS,
+  MEDIA,
+  PAST_EVENTS,
+  PRESS
+} from "../../constants";
 
-export const Nav = React.forwardRef(({ links, ...props }, ref) => {
+const links = [
+  {
+    to: ABOUT,
+    label: "About",
+    sub: [
+      { to: DIANE, label: "Diane Sharp-Nachsin" },
+      { to: BIOS, label: "Company" },
+      { to: MEDIA, label: "Repertoire" },
+      {
+        to: ABOUT,
+        label: "About"
+      }
+    ]
+  },
+  { to: PRESS, label: "Press" },
+  {
+    to: EVENTS,
+    label: "Performances",
+    sub: [
+      { to: EVENTS, label: "Upcoming Performances" },
+      { to: PAST_EVENTS, label: "Past Performances" }
+    ]
+  },
+  { to: CLASSES, label: "Classes" },
+  { to: CONTACT, label: "Contact" }
+];
+
+export const Nav = React.forwardRef((props, ref) => {
   const [, allProps] = useGrid(props);
 
   return (
