@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import Bios from "./pages/Bios";
 import Classes from "./pages/Classes";
+import Donations from "./pages/Donations";
 import Contact from "./pages/Contact";
 import Error404 from "./pages/404";
 import Events from "./pages/Events";
@@ -49,7 +50,7 @@ function App() {
           <Route path={CLASSES} exact component={component(Classes)} />
           <Route path={CONTACT} exact component={component(Contact)} />
           <Route path={DIANE} exact component={component(DianeSharp)} />
-          <Route path={DONATIONS} exact component={genericPage("donations")} />
+          <Route path={DONATIONS} exact component={component(Donations)} />
           <Route path={EVENTS} component={component(Events)} />
           <Route path={LANDING} exact component={component(Home)} />
           <Route
