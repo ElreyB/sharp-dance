@@ -16,7 +16,8 @@ import {
   EVENTS,
   MEDIA,
   PAST_EVENTS,
-  PRESS
+  PRESS,
+  TICKETS
 } from "../../constants";
 
 const ESCAPE_KEY = 27;
@@ -40,6 +41,7 @@ const Nav = styled.nav`
 
 const links = [
   { to: ABOUT, label: "About" },
+  { to: TICKETS, label: "Tickets" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
   { to: BIOS, label: "Company" },
   { to: MEDIA, label: "Repertoire" },
