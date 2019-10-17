@@ -12,6 +12,7 @@ import {
   CLASSES,
   CONTACT,
   DIANE,
+  DONATIONS,
   EVENTS,
   MEDIA,
   PAST_EVENTS,
@@ -46,7 +47,8 @@ const links = [
   { to: EVENTS, label: "Upcoming Performances" },
   { to: PAST_EVENTS, label: "Past Performances" },
   { to: CLASSES, label: "Classes" },
-  { to: CONTACT, label: "Contact" }
+  { to: CONTACT, label: "Contact" },
+  { to: DONATIONS, label: "Donations" }
 ];
 
 const SideDrawer = ({ show, onClick }) => (

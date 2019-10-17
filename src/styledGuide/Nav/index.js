@@ -8,6 +8,7 @@ import {
   CLASSES,
   CONTACT,
   DIANE,
+  DONATIONS,
   EVENTS,
   MEDIA,
   PAST_EVENTS,
@@ -38,7 +39,8 @@ const links = [
     ]
   },
   { to: CLASSES, label: "Classes" },
-  { to: CONTACT, label: "Contact" }
+  { to: CONTACT, label: "Contact" },
+  { to: DONATIONS, label: "Donations" }
 ];
 
 export const Nav = React.forwardRef((props, ref) => {
