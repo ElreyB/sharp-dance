@@ -32,17 +32,19 @@ export const Img = ({
 
   return (
     <ImgWrapper margin="0 M/2" {...props}>
-      <ImgGrid
+      <Img.ImgGrid
         align="center"
         justify="center"
         style={{ backgroundImage: `url("${srcString}")`, backgroundSize }}
       >
         <InnerImg src={srcString} alt={combinedAlt} role={role} />
-      </ImgGrid>
+      </Img.ImgGrid>
       <Credit>{credit}</Credit>
     </ImgWrapper>
   );
 };
+
+Img.ImgGrid = ImgGrid;
 
 Img.propTypes = {
   alt: PropTypes.string,

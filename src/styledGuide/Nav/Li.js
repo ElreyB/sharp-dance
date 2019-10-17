@@ -6,13 +6,6 @@ import { A } from "../A";
 import { Label } from "../Label";
 
 const StyledLi = styled("li")`
-  &,
-  & a {
-    z-index: 1;
-  }
-  &:hover ul {
-    display: block;
-  }
   & ul {
     display: none;
     position: absolute;
@@ -31,9 +24,21 @@ const StyledLi = styled("li")`
       background-color: ${({ theme }) => theme.colors.black};
     }
   }
+  & a:focus,
   &:hover > a,
   & li:hover a {
     color: ${({ theme }) => theme.colors.blue};
+  }
+  &,
+  & a {
+    z-index: 1;
+  }
+  & a:focus ~ ul,
+  &:hover ul {
+    display: block;
+  }
+  &:hover ul {
+    z-index: 2;
   }
 `;
 
