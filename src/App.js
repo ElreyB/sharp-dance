@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Media from "./pages/Media";
 import Press from "./pages/Press";
 import DianeSharp from "./pages/DianeSharp";
+import Tickets from "./pages/Tickets";
 import {
   ABOUT,
   BIOS,
@@ -25,7 +26,8 @@ import {
   MEDIA,
   PHOTOGRAPHY,
   PRESS,
-  PRESS_KIT
+  PRESS_KIT,
+  TICKETS
 } from "./constants";
 import { ScrollToTop, GymnastProvider } from "./styledGuide";
 
@@ -65,6 +67,7 @@ function App() {
           />
           <Route path={PRESS_KIT} exact component={genericPage("press-kit")} />
           <Route path={PRESS} exact component={component(Press)} />
+          <Route path={TICKETS} exact component={component(Tickets)} />
           <Route path={ERROR} component={component(Error404)} />
 
           <Route component={component(Error404)} />

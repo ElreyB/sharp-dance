@@ -15,4 +15,5 @@ export const PRESS = `${prefix}/press`;
 export const PRESS_KIT = `${prefix}/press-kit`;
 export const SIGN_IN = `${prefix}/signin`;
 export const SIGN_UP = `${prefix}/signup`;
+export const TICKETS = `${prefix}/tickets`;
 export const ERROR = `${prefix}/404`;

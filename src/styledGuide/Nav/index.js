@@ -12,7 +12,8 @@ import {
   EVENTS,
   MEDIA,
   PAST_EVENTS,
-  PRESS
+  PRESS,
+  TICKETS
 } from "../../constants";
 
 const links = [
@@ -29,6 +30,7 @@ const links = [
       }
     ]
   },
+  { to: TICKETS, label: "Tickets" },
   { to: PRESS, label: "Press" },
   {
     to: EVENTS,
