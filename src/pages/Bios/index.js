@@ -27,24 +27,32 @@ export default function Bios() {
       <Grid align="start">
         {performers && (
           <>
-            <H2 justify="center">Dancers</H2>
+            <H2 justify="center" margin="M M XL M">
+              Dancers
+            </H2>
             {Object.values(performers).map(getBio)}
           </>
         )}
         {apprentices && (
           <>
-            <H2 justify="center">Apprentices</H2>
+            <H2 justify="center" margin="M M XL M">
+              Apprentices
+            </H2>
             {apprentices.map(getBio)}
           </>
         )}
         {guestPerformers && (
           <>
-            <H2 justify="center">Guest Performers</H2>
+            <H2 justify="center" margin="M M XL M">
+              Guest Performers
+            </H2>
             {guestPerformers.map(getBio)}
           </>
         )}
         <>
-          <H2 justify="center">Staff</H2>
+          <H2 justify="center" margin="M M XL M">
+            Staff
+          </H2>
           {staff && staff.filter(isNotDirector).map(getBio)}
         </>
       </Grid>

@@ -22,7 +22,7 @@ export const Page = ({ children, ...props }) => {
         padding="2XL XL"
         marginLeft={{ mobile: 0, desktop: "XL" }}
         marginRight={{ mobile: 0, desktop: "XL" }}
-        marginTop={{ mobile: "XL", desktop: 0 }}
+        marginTop={{ mobile: "XL", desktop: "L" }}
       >
         {children}
       </PageContent>
