@@ -42,12 +42,10 @@ export const Schedule = ({
   address,
   dates,
   description,
-  footnote,
   location,
   margin,
   name,
   padding,
-  pricing,
   purchaseUrl,
   size,
   website
@@ -70,16 +68,16 @@ export const Schedule = ({
                 </td>
                 <td>{time}</td>
                 <td>{notes}</td>
+                <td>
+                  {(location || address) && (
+                    <P>{[location, address].filter(a => !!a).join(" - ")}</P>
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </Grid>
-      {(location || address) && (
-        <P>{[location, address].filter(a => !!a).join(" - ")}</P>
-      )}
-      {pricing && <P>{pricing}</P>}
-      {footnote && <P>{footnote}</P>}
     </Grid>
   );
 };

@@ -1,31 +1,19 @@
 import React from "react";
-import { Banner, Page, Schedule, H3, IFrame } from "../../styledGuide";
+import { Banner, Grid, Page, Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
-const googleMapsEmbedAPIKey = "AIzaSyD5q1ok9ku6lmBoqP-qG5A6WxMgdW6bWyM";
+const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
-function ClassSchedule({ address = "", season, ...upcomingClasses }) {
-  const queryAddress = address.replace(/\s/g, "+");
-
+function ClassSchedule({ season, ...upcomingClasses }) {
   return (
-    <>
+    <Grid>
       {season && <H3>{season}</H3>}
       <Schedule {...upcomingClasses} margin="0 0 L 0" />
-      {queryAddress && (
-        <>
-          <H3>Location </H3>
-          <IFrame
-            src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsEmbedAPIKey}&q=${queryAddress}`}
-            title="Class locations"
-            height="500"
-          ></IFrame>
-        </>
-      )}
-    </>
+    </Grid>
   );
 }
 
@@ -39,6 +27,7 @@ export default function Classes() {
   }
 
   const { options = {}, pageName, ...headerBanner } = page;
+  const location = classSchedules.location || "Equilbrium";
   const upcomingClassesList = classSchedules
     .map(classSchedule => {
       const dates = classSchedule.dates.filter(date =>
@@ -53,6 +42,12 @@ export default function Classes() {
     <Page>
       <Banner {...headerBanner} />
       {options.content}
+      <IFrame
+        margin="M 0"
+        src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsEmbedAPIKey}&q=${location}`}
+        title="Class locations"
+        height="500"
+      ></IFrame>
       {upcomingClassesList.length > 0 ? (
         <>
           {upcomingClassesList.map((schedule, i) => (

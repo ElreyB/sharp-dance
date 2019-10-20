@@ -24,6 +24,7 @@ import {
   EVENTS,
   LANDING,
   MEDIA,
+  PAST_EVENTS,
   PHOTOGRAPHY,
   PRESS,
   PRESS_KIT,
@@ -53,7 +54,8 @@ function App() {
           <Route path={CONTACT} exact component={component(Contact)} />
           <Route path={DIANE} exact component={component(DianeSharp)} />
           <Route path={DONATIONS} exact component={component(Donations)} />
-          <Route path={EVENTS} component={component(Events)} />
+          <Route path={EVENTS} exact component={component(Events)} />
+          <Route path={PAST_EVENTS} exact component={component(Events)} />
           <Route path={LANDING} exact component={component(Home)} />
           <Route
             path={`${MEDIA}/:performanceTitle?`}

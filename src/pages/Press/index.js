@@ -1,9 +1,18 @@
 import React from "react";
-import { Page, Banner, Quote, Grid } from "../../styledGuide";
+import styled from "styled-components";
+import { Page, Banner, Quote, Grid, A, P } from "../../styledGuide";
 import Loading from "../Loading";
 import { PagesContext, PressContext, QuotesContext } from "../../Providers";
 import { PressItem } from "./pressItem";
 import { random } from "lodash";
+
+const Sentence = styled(Grid)`
+  font-size: 18px;
+`;
+
+const Anchor = styled(A)`
+  font-style: italic;
+`;
 
 export default function Press() {
   const { getPage } = React.useContext(PagesContext);
@@ -20,8 +29,20 @@ export default function Press() {
   return (
     <Page>
       <Banner {...headerBanner} />
+      <Sentence>
+        <P size="fit">To receive a press kit please email us at</P>
+        <Anchor
+          title="Email"
+          href={`mailto:${options.email}?subject=Press Kit`}
+          size="fit"
+          margin="0"
+        >
+          {options.email}
+        </Anchor>
+        <P size="fit">and we will send one directly to you.</P>
+      </Sentence>
       <Grid justify="center" size={9} margin="XL 0">
-        <Quote {...quotes[[random(0, quotes.length - 1)]]} />
+        <Quote {...quotes[random(0, quotes.length - 1)]} />
       </Grid>
       {press
         .filter(item => !!item.description)

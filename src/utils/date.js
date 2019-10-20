@@ -64,3 +64,19 @@ export function groupPerformancesByYear(performances = []) {
     return acc;
   }, {});
 }
+
+export function mostRecentFirst(a, b) {
+  return b.dateTime - a.dateTime;
+}
+
+export function olderFirst(a, b) {
+  return a.dateTime - b.dateTime;
+}
+
+export function mostRecentYearsFirst([a], [b]) {
+  return b - a;
+}
+
+export function olderYearsFirst([a], [b]) {
+  return a - b;
+}
