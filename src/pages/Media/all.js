@@ -10,7 +10,7 @@ const StyledImg = styled(Img)`
   background: ${({ theme }) => theme.colors.white};
   height: 300px;
 
-  & > div {
+  ${Img.ImgGrid} {
     height: 100%;
   }
 `;
@@ -32,7 +32,8 @@ export default function AllPerformances({ headerBanner, media }) {
               to={getPerformanceURL(title)}
               key={title}
               size={{ mobile: 12, desktop: 6 }}
-              marginBottom="XL"
+              marginTop="L"
+              marginBottom="L"
             >
               <H2 justify="center">{title}</H2>
               <Border margin="S" size="auto">

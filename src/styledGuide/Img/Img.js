@@ -31,18 +31,21 @@ export const Img = ({
   const combinedAlt = alt || (src && src.title) ? src.title : undefined;
 
   return (
-    <ImgWrapper margin="0 M/2" {...props}>
-      <ImgGrid
+    <Img.ImgWrapper margin="0 M/2" {...props}>
+      <Img.ImgGrid
         align="center"
         justify="center"
         style={{ backgroundImage: `url("${srcString}")`, backgroundSize }}
       >
         <InnerImg src={srcString} alt={combinedAlt} role={role} />
-      </ImgGrid>
+      </Img.ImgGrid>
       <Credit>{credit}</Credit>
-    </ImgWrapper>
+    </Img.ImgWrapper>
   );
 };
+
+Img.ImgGrid = ImgGrid;
+Img.ImgWrapper = ImgWrapper;
 
 Img.propTypes = {
   alt: PropTypes.string,

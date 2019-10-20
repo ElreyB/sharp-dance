@@ -24,9 +24,15 @@ export const ImgGroup = ({ src, alt, credit, backgroundSize, ...props }) => {
 
   return (
     <Grid>
-      <Grid size="auto" {...props}>
+      <Grid
+        size={{
+          desktop: "auto",
+          mobile: 12
+        }}
+        {...props}
+      >
         {srcArr.map((src, i) => (
-          <Img
+          <ImgGroup.Img
             src={src}
             size="fit"
             key={typeof src === "string" ? src : src.src}
@@ -35,12 +41,17 @@ export const ImgGroup = ({ src, alt, credit, backgroundSize, ...props }) => {
           />
         ))}
       </Grid>
-      <Credit size="fit" align="end">
+      <Credit
+        size={{ desktop: "fit", mobile: 12 }}
+        align={{ desktop: "end", mobile: "start" }}
+      >
         {credit}
       </Credit>
     </Grid>
   );
 };
+
+ImgGroup.Img = Img;
 
 ImgGroup.propTypes = {
   alt: PropTypes.oneOfType([

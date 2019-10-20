@@ -11,7 +11,6 @@ import { LANDING } from "../../constants";
 import { useElementHeight } from "./useElementHeight";
 
 const StyledH1 = styled(H1)`
-  font-size: 18px;
   color: ${({ theme }) => theme.colors.white};
 `;
 const StyledGrid = styled(Grid)`
@@ -23,6 +22,7 @@ const StyledGrid = styled(Grid)`
 `;
 const UndecoratedA = styled(A)`
   text-decoration: none;
+  font-size: 18px;
 `;
 
 const StyledHamburger = styled(HamburgerButton)`
@@ -45,7 +45,7 @@ export const Header = () => {
 
   return (
     <StyledGrid align="center" justify="center">
-      <StyledH1 size="fit" margin="0 XL">
+      <StyledH1 size="fit" margin="0 XL" noResize>
         <UndecoratedA to={LANDING}>Sharp Dance</UndecoratedA>
       </StyledH1>
       <SideDrawer show={show} onClick={() => setShow(!show)} />

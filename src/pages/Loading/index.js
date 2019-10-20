@@ -11,6 +11,8 @@ const pulse = keyframes`
       transform: scale(1);
     }
 `;
+const SVG = style("svg")``;
+
 const Container = style(Grid)`
     position: relative;
     z-index: 0;
@@ -21,7 +23,7 @@ const Container = style(Grid)`
     min-height: 100vh;
     overflow: hidden;
 
-    & svg {
+    & ${SVG} {
       z-index: -1;
       position: absolute;
       top: 50%;
@@ -30,7 +32,7 @@ const Container = style(Grid)`
       max-width: 30rem;
     }
 
-    & svg circle {
+    & ${SVG} circle {
       fill: ${({ theme }) => theme.colors.white};
       transform: scale(0);
       opacity: 0;
@@ -61,7 +63,7 @@ const Loading = () => {
   return (
     <Container>
       <Logo>SHARP DANCE CO.</Logo>
-      <svg
+      <SVG
         viewBox="0 0 1024 1024"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +72,7 @@ const Loading = () => {
         <circle cx="512" cy="512" r="512" />
         <circle cx="512" cy="512" r="512" />
         <circle cx="512" cy="512" r="512" />
-      </svg>
+      </SVG>
     </Container>
   );
 };

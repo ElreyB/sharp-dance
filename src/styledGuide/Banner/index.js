@@ -8,6 +8,10 @@ import { ImgGroup } from "../Img";
 
 const StyledImgGroup = styled(ImgGroup)`
   min-height: 400px;
+
+  ${ImgGroup.Img.ImgWrapper} {
+    max-width: 100%;
+  }
 `;
 
 export const Banner = ({
@@ -23,10 +27,11 @@ export const Banner = ({
 }) => {
   const [showH1, allProps] = useGrid(props);
   const imgSrc = images || image;
+
   if (showH1) {
     return (
       <Header {...allProps}>
-        {title && <H1 justify={justify}>{title}</H1>}
+        <H1 justify={justify}>{title}</H1>
         <StyledImgGroup
           src={imgSrc}
           alt={alt}

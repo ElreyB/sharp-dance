@@ -3,6 +3,12 @@ import styled, { css } from "styled-components/macro";
 import { func, bool } from "prop-types";
 import { Button } from "../Button";
 
+const Line = styled.div`
+  width: 20px;
+  height: 2px;
+  background: ${({ theme }) => theme.colors.white};
+`;
+
 const StyledButton = styled(Button)`
   justify-content: space-around;
   height: 24px;
@@ -18,7 +24,7 @@ const StyledButton = styled(Button)`
     outline: none;
   }
 
-  &:hover > div {
+  &:hover > ${Line} {
     background: ${({ theme }) => theme.colors.blue};
   }
 
@@ -37,12 +43,6 @@ const StyledButton = styled(Button)`
         transform: rotate(45deg) translate(-4px, -4px);
       }
     `}
-`;
-
-const Line = styled.div`
-  width: 20px;
-  height: 2px;
-  background: ${({ theme }) => theme.colors.white};
 `;
 
 const HamburgerButton = React.forwardRef(
