@@ -50,6 +50,7 @@ export const Schedule = ({
   size,
   website
 }) => {
+  console.warn(dates);
   return (
     <Grid size={size} margin={margin} padding={padding}>
       <Grid>
@@ -58,19 +59,21 @@ export const Schedule = ({
         <IconAnchor url={website} Icon={TiGlobeOutline} />
       </Grid>
       {description && <P>{description}</P>}
+      <Grid size={{ mobile: "auto", desktop: "fit" }}>
+        {(location || address) && (
+          <P>{[location, address].filter(a => !!a).join(" - ")}</P>
+        )}
+      </Grid>
       <Grid>
         {dates.map(({ days, month, time, notes }, i) => (
           <Grid key={i}>
-            <Grid size="fit">
+            <Grid size="fit" paddingRight="S">
               {monthName[month]}, {days}
             </Grid>
-            <Grid size="fit">{time}</Grid>
-            <Grid size="fit">{notes}</Grid>
-            <Grid size="fit">
-              {(location || address) && (
-                <P>{[location, address].filter(a => !!a).join(" - ")}</P>
-              )}
+            <Grid size="fit" paddingRight="S">
+              {time}
             </Grid>
+            <Grid size="fit">{notes}</Grid>
           </Grid>
         ))}
       </Grid>
