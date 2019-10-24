@@ -3,10 +3,9 @@ import "firebase/auth";
 import "firebase/database";
 import "firebase/storage";
 import "firebase/firestore";
-import { fb } from "./apiKeys";
 
 const config = {
-  apiKey: `${fb}`,
+  apiKey: `${process.env.FIREBASE_KEY}`,
   authDomain: "sharp-dance.firebaseapp.com",
   databaseURL: "https://sharp-dance.firebaseio.com",
   projectId: "sharp-dance",

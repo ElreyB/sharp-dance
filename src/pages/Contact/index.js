@@ -5,7 +5,7 @@ import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 
 const ColorTitle = styled(Label)`
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.blue};
 `;
 
 function TitleLink({ title, href, children, ...props }) {

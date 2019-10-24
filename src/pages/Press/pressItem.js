@@ -5,6 +5,12 @@ import { Grid, Img, H3, P, A } from "../../styledGuide";
 const Wrapper = styled(Grid)`
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};
 `;
+const makeIntoLink = (content, url) => {
+  if (url) {
+    return <A href={url}>{content}</A>;
+  }
+  return content;
+};
 
 export function PressItem({
   author,
@@ -15,10 +21,13 @@ export function PressItem({
   outlet,
   url
 }) {
-  const content = (
+  return (
     <Wrapper padding="XL 0" align="start">
-      {!logo.src && <H3 justify="center">{outlet}</H3>}
-      <Img backgroundSize="contain" src={logo.src} alt={logo.title} />
+      {!logo.src && makeIntoLink(<H3 justify="center">{outlet}</H3>, url)}
+      {makeIntoLink(
+        <Img backgroundSize="contain" src={logo.src} alt={logo.title} />,
+        url
+      )}
       <Grid size="auto" align="start">
         {description && <P size={12}>{description}</P>}
         {(author || date) && (
@@ -29,10 +38,4 @@ export function PressItem({
       </Grid>
     </Wrapper>
   );
-
-  if (url) {
-    return <A href={url}>{content}</A>;
-  }
-
-  return content;
 }

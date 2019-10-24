@@ -42,16 +42,15 @@ export const Schedule = ({
   address,
   dates,
   description,
-  footnote,
   location,
   margin,
   name,
   padding,
-  pricing,
   purchaseUrl,
   size,
   website
 }) => {
+  console.warn(dates);
   return (
     <Grid size={size} margin={margin} padding={padding}>
       <Grid>
@@ -60,26 +59,24 @@ export const Schedule = ({
         <IconAnchor url={website} Icon={TiGlobeOutline} />
       </Grid>
       {description && <P>{description}</P>}
-      <Grid>
-        <table>
-          <tbody>
-            {dates.map(({ days, month, time, notes }, i) => (
-              <tr key={i}>
-                <td>
-                  {monthName[month]}, {days}
-                </td>
-                <td>{time}</td>
-                <td>{notes}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <Grid size={{ mobile: "auto", desktop: "fit" }}>
+        {(location || address) && (
+          <P>{[location, address].filter(a => !!a).join(" - ")}</P>
+        )}
       </Grid>
-      {(location || address) && (
-        <P>{[location, address].filter(a => !!a).join(" - ")}</P>
-      )}
-      {pricing && <P>{pricing}</P>}
-      {footnote && <P>{footnote}</P>}
+      <Grid>
+        {dates.map(({ days, month, time, notes }, i) => (
+          <Grid key={i}>
+            <Grid size="fit" paddingRight="S">
+              {monthName[month]}, {days}
+            </Grid>
+            <Grid size="fit" paddingRight="S">
+              {time}
+            </Grid>
+            <Grid size="fit">{notes}</Grid>
+          </Grid>
+        ))}
+      </Grid>
     </Grid>
   );
 };
