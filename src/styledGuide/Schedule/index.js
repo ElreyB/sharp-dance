@@ -59,24 +59,20 @@ export const Schedule = ({
       </Grid>
       {description && <P>{description}</P>}
       <Grid>
-        <table>
-          <tbody>
-            {dates.map(({ days, month, time, notes }, i) => (
-              <tr key={i}>
-                <td>
-                  {monthName[month]}, {days}
-                </td>
-                <td>{time}</td>
-                <td>{notes}</td>
-                <td>
-                  {(location || address) && (
-                    <P>{[location, address].filter(a => !!a).join(" - ")}</P>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        {dates.map(({ days, month, time, notes }, i) => (
+          <Grid key={i}>
+            <Grid size="fit">
+              {monthName[month]}, {days}
+            </Grid>
+            <Grid size="fit">{time}</Grid>
+            <Grid size="fit">{notes}</Grid>
+            <Grid size="fit">
+              {(location || address) && (
+                <P>{[location, address].filter(a => !!a).join(" - ")}</P>
+              )}
+            </Grid>
+          </Grid>
+        ))}
       </Grid>
     </Grid>
   );
