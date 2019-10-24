@@ -30,18 +30,23 @@ export default function Press() {
     <Page>
       <Banner {...headerBanner} />
       <Sentence>
-        <P size="fit">To receive a press kit please email us at</P>
+        <P size="fit" justify={{ mobile: "center" }}>
+          To receive a press kit please email us at
+        </P>
         <Anchor
           title="Email"
           href={`mailto:${options.email}?subject=Press Kit`}
           size="fit"
           margin="0"
+          justify={{ mobile: "center" }}
         >
           {options.email}
         </Anchor>
-        <P size="fit">and we will send one directly to you.</P>
+        <P size="fit" justify={{ mobile: "center" }}>
+          and we will send one directly to you.
+        </P>
       </Sentence>
-      <Grid justify="center" size={9} margin="XL 0">
+      <Grid justify="center" size={9} margin="L 0">
         <Quote {...quotes[random(0, quotes.length - 1)]} />
       </Grid>
       {press
