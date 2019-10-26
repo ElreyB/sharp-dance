@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://elreyb.github.io/sharp-dance",
   "dependencies": {
-    "env-cmd": "^10.0.1",
     "firebase": "^7.2.0",
     "firebase-admin": "^8.1.0",
     "focus-trap-react": "6.0.0",
@@ -28,8 +27,8 @@
     "yup": "^0.27.0"
   },
   "scripts": {
-    "start": "yarn && react-scripts start",
-    "build": "rm -rf build && react-scripts build",
+    "start": "yarn && bash add-env.sh && react-scripts start",
+    "build": "rm -rf build && bash add-env.sh && react-scripts build",
     "lint": "prettier --check \"src/**/*.{js,json}\" --write && eslint src --fix",
     "test": "react-scripts test",
     "deploy": "gh-pages -d build",
@@ -37,9 +36,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "babelMacros": {
-    "styledComponents": {}
   },
   "browserslist": {
     "production": [
@@ -55,7 +51,6 @@
   },
   "devDependencies": {
     "babel-plugin-macros": "^2.6.1",
-    "dotenv": "^8.2.0",
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.13.0",
     "gh-pages": "^2.0.1",
