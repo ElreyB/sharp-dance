@@ -50,7 +50,6 @@ export const Schedule = ({
   size,
   website
 }) => {
-  console.warn(dates);
   return (
     <Grid size={size} margin={margin} padding={padding}>
       <Grid>
