@@ -3,16 +3,7 @@ import "firebase/auth";
 import "firebase/database";
 import "firebase/storage";
 import "firebase/firestore";
-
-const config = {
-  apiKey: `${process.env.FIREBASE_KEY}`,
-  authDomain: "sharp-dance.firebaseapp.com",
-  databaseURL: "https://sharp-dance.firebaseio.com",
-  projectId: "sharp-dance",
-  storageBucket: "sharp-dance.appspot.com/",
-  messagingSenderId: "1095908484212",
-  appId: "1:1095908484212:web:dff6c5b9eef8929f"
-};
+import config from "./apiKeys";
 
 if (!firebase.apps.length) {
   firebase.initializeApp(config);
