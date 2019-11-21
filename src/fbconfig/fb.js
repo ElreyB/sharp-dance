@@ -3,7 +3,7 @@ import "firebase/auth";
 import "firebase/database";
 import "firebase/storage";
 import "firebase/firestore";
-import config from "./apiKeys";
+import config from "../apiKeys";
 
 if (!firebase.apps.length) {
   firebase.initializeApp(config);

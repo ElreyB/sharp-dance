@@ -3,11 +3,11 @@ import { Banner, Grid, Page, Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
-import config from "../../fbconfig/apiKeys";
+import config from "../../apiKeys";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
-const googleMapsEmbedAPIKey = `${config.apiKey}`;
+const googleMapsEmbedAPIKey = `${config.googleApiKey}`;
 
 function ClassSchedule({ season, ...upcomingClasses }) {
   return (
