@@ -3,7 +3,7 @@ import { Banner, Grid, Page, Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
-import config from "../../apiKeys";
+import config from "../../fbconfig/apiKeys.json";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
