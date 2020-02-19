@@ -6,7 +6,7 @@ import { PagesContext, ClassScheduleContext } from "../../Providers";
 
 const now = new Date().getTime();
 const isFuture = time => time > now;
-const googleMapsEmbedAPIKey = `${process.env.REACT_APP_GOOGLE_API_KEY}`;
+const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 function ClassSchedule({ season, ...upcomingClasses }) {
   return (
