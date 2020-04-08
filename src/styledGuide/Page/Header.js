@@ -9,6 +9,7 @@ import HamburgerButton from "../HamburgerButton";
 import { SocialIcons } from "../SocialIcons";
 import { LANDING } from "../../constants";
 import { useElementHeight } from "./useElementHeight";
+import { SHARP_CO } from "../../constants";
 
 const StyledH1 = styled(H1)`
   color: ${({ theme }) => theme.colors.white};
@@ -46,7 +47,7 @@ export const Header = () => {
   return (
     <StyledGrid align="center" justify="center">
       <StyledH1 size="fit" margin="0 XL" noResize>
-        <UndecoratedA to={LANDING}>Sharp Dance</UndecoratedA>
+        <UndecoratedA to={LANDING}>{SHARP_CO}</UndecoratedA>
       </StyledH1>
       <SideDrawer show={show} onClick={() => setShow(!show)} />
       {!condenseMenu && <SocialIcons />}
