@@ -1,6 +1,7 @@
 import React from "react";
 import style, { keyframes } from "styled-components/macro";
 import { Grid } from "gymnast";
+import { SHARP } from "../../constants";
 
 const pulse = keyframes`
       25% {
@@ -62,7 +63,7 @@ const Logo = style.h2`
 const Loading = () => {
   return (
     <Container>
-      <Logo>SHARP DANCE CO.</Logo>
+      <Logo>{SHARP}</Logo>
       <SVG
         viewBox="0 0 1024 1024"
         version="1.1"
