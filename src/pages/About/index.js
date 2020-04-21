@@ -23,7 +23,7 @@ export default function About() {
         {organizations && (
           <Grid justify="center">
             <H2>Members</H2>
-            {organizations.map(org => (
+            {organizations.map((org) => (
               <Img
                 size="fit"
                 margin="M"

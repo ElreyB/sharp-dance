@@ -8,10 +8,10 @@ import { PaypayForm } from "./PaypalForm";
 const BELOW_TEXT = [
   "Opening Night",
   "Bring your child to our Saturday 5 PM performance and included in your ticket price: get a tour of the theater, meet the dancers and make a hippie accessory to go with your hippie costume! Kids tour starts at 4:00 PM.",
-  "Question & Answer with the Company"
+  "Question & Answer with the Company",
 ];
 
-const StyledLabel = styled(props => (
+const StyledLabel = styled((props) => (
   <Label {...props} size="fit" margin="0 S 0 0" />
 ))`
   color: ${({ theme }) => theme.colors.blue};
@@ -21,7 +21,7 @@ const Notes = styled(P)`
   color: ${({ theme }) => theme.colors.blue};
 `;
 
-const Sentence = styled(props => <P {...props} size="auto" />)``;
+const Sentence = styled((props) => <P {...props} size="auto" />)``;
 
 export default function Home() {
   const { getPage } = React.useContext(PagesContext);
@@ -51,7 +51,7 @@ export default function Home() {
     manager,
     notes,
     showtimes,
-    tickets
+    tickets,
   } = options;
 
   return (
@@ -65,7 +65,7 @@ export default function Home() {
       </Grid>
       <Grid>
         <StyledLabel>Showtimes:</StyledLabel>
-        <Sentence>{showtimes.map(time => time).join(" - ")}</Sentence>
+        <Sentence>{showtimes.map((time) => time).join(" - ")}</Sentence>
       </Grid>
       {showtimes.map((time, i) => (
         <PaypayForm textAbove={time} textBelow={BELOW_TEXT[i]} key={i} />

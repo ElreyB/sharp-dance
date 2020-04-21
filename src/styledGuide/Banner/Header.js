@@ -1,7 +1,7 @@
 import React from "react";
 import { useGrid } from "gymnast";
 
-export const Header = props => {
+export const Header = (props) => {
   const { inputCount, ...rest } = props;
   const [showHeader, allProps] = useGrid(rest);
 

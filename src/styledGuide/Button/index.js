@@ -26,5 +26,5 @@ export const Button = React.forwardRef(
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  role: PropTypes.oneOf(["button", "submit", "reset"])
+  role: PropTypes.oneOf(["button", "submit", "reset"]),
 };

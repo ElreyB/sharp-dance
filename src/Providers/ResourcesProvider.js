@@ -1,11 +1,11 @@
 import React, { createContext, useState, useEffect } from "react";
 import useCollection from "../firestore/useCollection";
 
-const createResourcesObj = resources =>
+const createResourcesObj = (resources) =>
   resources.reduce(
     (obj, resource, i, arr) => ({
       ...obj,
-      [resource.role]: [...(obj[resource.role] || []), resource]
+      [resource.role]: [...(obj[resource.role] || []), resource],
     }),
     {}
   );

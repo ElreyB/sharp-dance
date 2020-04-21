@@ -5,7 +5,7 @@ import styled from "styled-components";
 const StyledIframe = styled("iframe")`
   border: 0;
   width: 100%;
-  height: ${props => props.height}px;
+  height: ${(props) => props.height}px;
   position: relative;
 `;
 

@@ -9,7 +9,7 @@ const MediaProvider = ({ children }) => {
   const { data: mediaCollection } = useCollection("media");
 
   useEffect(() => setMedia(mediaCollection ? mediaCollection : []), [
-    mediaCollection
+    mediaCollection,
   ]);
 
   return (

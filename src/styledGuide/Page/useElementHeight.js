@@ -6,7 +6,7 @@ export function useElementHeight() {
     return node ? node.offsetHeight || 0 : 0;
   }
 
-  const ref = React.useCallback(node => {
+  const ref = React.useCallback((node) => {
     if (node !== null) {
       setHeight(node.offsetHeight || 0);
     }

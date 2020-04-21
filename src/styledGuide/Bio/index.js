@@ -6,7 +6,7 @@ import { H3 } from "../Headings";
 import { Img } from "../Img";
 import { Markdown } from "../Markdown";
 
-const Name = props => <Grid {...props} marginRight="S" />;
+const Name = (props) => <Grid {...props} marginRight="S" />;
 const StyledName = styled(Name)`
   color: ${({ theme }) => theme.colors.blue};
 `;
@@ -65,13 +65,13 @@ Bio.propTypes = {
   imgCredit: PropTypes.string,
   image: PropTypes.shape({
     src: PropTypes.string.isRequired,
-    title: PropTypes.string
+    title: PropTypes.string,
   }),
   images: PropTypes.arrayOf(
     PropTypes.shape({
       src: PropTypes.string.isRequired,
-      title: PropTypes.string
+      title: PropTypes.string,
     })
   ),
-  bio: PropTypes.string
+  bio: PropTypes.string,
 };
