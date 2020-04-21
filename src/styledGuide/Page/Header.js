@@ -37,6 +37,11 @@ const StyledNav = styled(Nav)`
     pointer-events: none;
     visibility: hidden;
   }
+
+  @media (max-width: 600px) {
+    font-size: 0;
+    flex-grow: 1;
+  }
 `;
 
 export const Header = () => {
