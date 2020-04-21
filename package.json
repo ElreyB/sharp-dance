@@ -8,10 +8,10 @@
     "firebase": "^7.2.0",
     "firebase-admin": "^8.1.0",
     "focus-trap-react": "6.0.0",
-    "formik": "^1.5.7",
-    "gymnast": "^17.0.0-next.19",
+    "formik": "^2.1.4",
+    "gymnast": "^18.0.1",
     "lodash": "^4.17.11",
-    "marked": "^0.7.0",
+    "marked": "^1.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -21,11 +21,11 @@
     "react-player": "^1.11.1",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.2.0",
+    "react-scripts": "3.4.1",
     "react-slick": "^0.25.2",
-    "styled-components": "^4.3.1",
+    "styled-components": "^5.1.0",
     "textfit": "2.4.0",
-    "yup": "^0.27.0"
+    "yup": "^0.28.4"
   },
   "scripts": {
     "start": "yarn && react-scripts start",
@@ -60,6 +60,6 @@
     "eslint-plugin-react": "^7.13.0",
     "gh-pages": "^2.0.1",
     "pages": "^0.0.16",
-    "prettier": "^1.18.2"
+    "prettier": "^2.0.4"
   }
 }

@@ -9,7 +9,7 @@ const QuotesProvider = ({ children }) => {
   const { data: quotesCollection } = useCollection("quotes");
 
   useEffect(() => setQuotes(quotesCollection ? quotesCollection : []), [
-    quotesCollection
+    quotesCollection,
   ]);
 
   return (

@@ -63,7 +63,7 @@ const HamburgerButton = React.forwardRef(
 
 HamburgerButton.propTypes = {
   onClick: func,
-  closed: bool
+  closed: bool,
 };
 
 export default HamburgerButton;

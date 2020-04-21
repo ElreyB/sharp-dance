@@ -20,5 +20,5 @@ export const Blockquote = ({ children, ...props }) => {
 };
 
 Blockquote.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };

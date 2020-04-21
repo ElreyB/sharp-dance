@@ -9,5 +9,5 @@ export const P = ({ children, ...props }) => {
 };
 
 P.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };

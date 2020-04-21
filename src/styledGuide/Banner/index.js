@@ -51,23 +51,23 @@ Banner.propTypes = {
   imgCredit: PropTypes.string,
   alt: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string)
+    PropTypes.arrayOf(PropTypes.string),
   ]),
   imgSrc: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.shape({
       src: PropTypes.string,
-      title: PropTypes.string
+      title: PropTypes.string,
     }),
     PropTypes.arrayOf(
       PropTypes.shape({
         src: PropTypes.string,
-        title: PropTypes.string
+        title: PropTypes.string,
       })
-    )
+    ),
   ]),
   subtitle: PropTypes.string,
   subTitle: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 };

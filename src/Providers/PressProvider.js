@@ -9,7 +9,7 @@ const PressProvider = ({ children }) => {
   const { data: pressCollection } = useCollection("press");
 
   useEffect(() => setPress(pressCollection ? pressCollection : []), [
-    pressCollection
+    pressCollection,
   ]);
 
   return (

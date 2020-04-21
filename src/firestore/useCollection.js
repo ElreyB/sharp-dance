@@ -13,11 +13,11 @@ export default function useCollection(ref) {
 
   useEffect(() => {
     const subscribeToData = firestore.collection(ref).onSnapshot(
-      snapshot => {
+      (snapshot) => {
         const dataDocs = snapshot.docs.map(collectionIdsAndDocs);
         setData(dataDocs);
       },
-      err => {
+      (err) => {
         setError(err);
       }
     );

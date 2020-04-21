@@ -31,5 +31,5 @@ export const Page = ({ children, ...props }) => {
 };
 
 Page.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

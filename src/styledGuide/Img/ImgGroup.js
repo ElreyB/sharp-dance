@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { Img } from "./Img";
 import { Credit } from "../internal/Credit";
 
-const getArray = maybeArray => {
+const getArray = (maybeArray) => {
   if (!maybeArray) {
     return [];
   }
@@ -27,7 +27,7 @@ export const ImgGroup = ({ src, alt, credit, backgroundSize, ...props }) => {
       <Grid
         size={{
           desktop: "auto",
-          mobile: 12
+          mobile: 12,
         }}
         {...props}
       >
@@ -56,7 +56,7 @@ ImgGroup.Img = Img;
 ImgGroup.propTypes = {
   alt: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string)
+    PropTypes.arrayOf(PropTypes.string),
   ]),
   backgroundSize: PropTypes.oneOf(["cover", "contain"]),
   credit: PropTypes.string,
@@ -65,13 +65,13 @@ ImgGroup.propTypes = {
     PropTypes.arrayOf(PropTypes.string),
     PropTypes.shape({
       src: PropTypes.string,
-      title: PropTypes.string
+      title: PropTypes.string,
     }),
     PropTypes.arrayOf(
       PropTypes.shape({
         src: PropTypes.string,
-        title: PropTypes.string
+        title: PropTypes.string,
       })
-    )
-  ])
+    ),
+  ]),
 };

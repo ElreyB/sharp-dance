@@ -2,7 +2,7 @@ import React from "react";
 import Styled from "styled-components";
 import { Album } from ".";
 
-export const AlbumSummary = Styled(props => <Album {...props} subtitle="" />)`
+export const AlbumSummary = Styled((props) => <Album {...props} subtitle="" />)`
     p, .slides {
         max-height: 100px;
         overflow: hidden;

@@ -9,7 +9,7 @@ import { A } from "../A";
 const message = {
   tour: "Available for tour",
   performance: "Available for performance",
-  both: "Available for tour or performance"
+  both: "Available for tour or performance",
 };
 
 function getMessage(availableForTour, availableForPerformance) {
@@ -38,7 +38,7 @@ export function Album({
   ...props
 }) {
   const message = getMessage(availableForTour, availableForPerformance);
-  const Wrapper = link ? props => <A to={link} {...props} /> : Grid;
+  const Wrapper = link ? (props) => <A to={link} {...props} /> : Grid;
 
   return (
     <Wrapper {...props} align="start" padding="M">
@@ -49,11 +49,11 @@ export function Album({
         {content && <P>{content}</P>}
       </Grid>
       <Slides
-        sources={[...videos, ...images].map(source => ({
+        sources={[...videos, ...images].map((source) => ({
           src: source.src || source.url,
           title: source.showTitle,
           credit: source.credit,
-          caption: source.imageTitle || source.videoTitle
+          caption: source.imageTitle || source.videoTitle,
         }))}
       />
     </Wrapper>
@@ -72,7 +72,7 @@ Album.propTypes = {
       credit: PropTypes.string,
       image: PropTypes.string,
       imageTitle: PropTypes.string,
-      showTitle: PropTypes.string
+      showTitle: PropTypes.string,
     })
   ),
   videos: PropTypes.arrayOf(
@@ -80,7 +80,7 @@ Album.propTypes = {
       showTitle: PropTypes.string,
       videoTitle: PropTypes.string,
       url: PropTypes.string,
-      credit: PropTypes.string
+      credit: PropTypes.string,
     })
-  )
+  ),
 };

@@ -56,7 +56,7 @@ Img.propTypes = {
     PropTypes.string,
     PropTypes.shape({
       src: PropTypes.string,
-      title: PropTypes.string
-    })
-  ])
+      title: PropTypes.string,
+    }),
+  ]),
 };

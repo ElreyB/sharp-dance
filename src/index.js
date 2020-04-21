@@ -13,7 +13,7 @@ import {
   QuotesProvider,
   PagesProvider,
   ResourcesProvider,
-  PressProvider
+  PressProvider,
 } from "./Providers";
 import { ClassScheduleProvider } from "./Providers/ClassScheduleProvider";
 

@@ -9,10 +9,10 @@ const PagesProvider = ({ children }) => {
   const { data: pagesCollection } = useCollection("pages");
 
   useEffect(() => setPages(pagesCollection ? pagesCollection : []), [
-    pagesCollection
+    pagesCollection,
   ]);
 
-  const getPage = page => pages.filter(p => p.pageName === page)[0];
+  const getPage = (page) => pages.filter((p) => p.pageName === page)[0];
   return (
     <PagesContext.Provider value={{ pages, getPage }}>
       {children}

@@ -50,7 +50,7 @@ export default function Press() {
         <Quote {...quotes[random(0, quotes.length - 1)]} />
       </Grid>
       {press
-        .filter(item => !!item.description)
+        .filter((item) => !!item.description)
         .map(({ id, ...props }) => (
           <PressItem {...props} key={id} />
         ))}
