@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import { useWindowResize } from "./useWindowSize";
 
-const headerHeight = 36;
+const headerHeight = 44;
 const StyledPlayer = styled(ReactPlayer)`
   margin: auto;
 `;
