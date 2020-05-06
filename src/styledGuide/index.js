@@ -7,6 +7,7 @@ export * from "./DonationButton";
 export * from "./Headings";
 export * from "./IFrame";
 export * from "./Img";
+export * from "./Input";
 export * from "./Label";
 export * from "./MailingListForm";
 export * from "./Markdown";
