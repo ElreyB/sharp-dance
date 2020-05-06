@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Page, Banner, Grid, P, A, Label } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
+import { MailingListForm } from "../../styledGuide";
 
 const ColorTitle = styled(Label)`
   color: ${({ theme }) => theme.colors.blue};
@@ -88,6 +89,7 @@ export default function Contact() {
       )}
       {contactEmail && <EmailLink>{contactEmail}</EmailLink>}
       {contactPhone && <PhoneLink>{contactPhone}</PhoneLink>}
+      <MailingListForm />
     </Page>
   );
 }
