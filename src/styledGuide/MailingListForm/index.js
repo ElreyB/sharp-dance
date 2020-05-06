@@ -3,6 +3,7 @@ import { P } from "../P";
 import { Grid } from "gymnast";
 import { Button } from "../Button";
 import { Input } from "../Input";
+import { Form } from "../Form";
 
 export function MailingListForm() {
   const [formData, setFormData] = useState({});
@@ -44,66 +45,64 @@ export function MailingListForm() {
   }
 
   return (
-    <Grid>
-      <form id="contact" name="contact" required onSubmit={sendData}>
-        <Input
-          name="fName"
-          type="text"
-          placeholder="First Name"
-          required
-          onChange={handleInput}
-        />
+    <Form id="contact" name="contact" required onSubmit={sendData}>
+      <Input
+        name="fName"
+        type="text"
+        placeholder="First Name"
+        required
+        onChange={handleInput}
+      />
 
-        <Input
-          name="lName"
-          type="text"
-          placeholder="Last Name"
-          required
-          onChange={handleInput}
-        />
+      <Input
+        name="lName"
+        type="text"
+        placeholder="Last Name"
+        required
+        onChange={handleInput}
+      />
 
-        <Input
-          name="email"
-          type="email"
-          placeholder="Email"
-          required
-          onChange={handleInput}
-        />
+      <Input
+        name="email"
+        type="email"
+        placeholder="Email"
+        required
+        onChange={handleInput}
+      />
 
-        <Input
-          name="address"
-          type="text"
-          placeholder="Address"
-          required
-          onChange={handleInput}
-        />
+      <Input
+        name="address"
+        type="text"
+        placeholder="Address"
+        required
+        onChange={handleInput}
+      />
 
-        <Input
-          name="city"
-          type="text"
-          placeholder="City"
-          required
-          onChange={handleInput}
-        />
+      <Input
+        name="city"
+        type="text"
+        placeholder="City"
+        required
+        onChange={handleInput}
+      />
 
-        <Input
-          name="state"
-          type="text"
-          placeholder="State"
-          required
-          onChange={handleInput}
-        />
+      <Input
+        name="state"
+        type="text"
+        placeholder="State"
+        required
+        onChange={handleInput}
+      />
 
-        <Input
-          name="zip"
-          type="text"
-          placeholder="Zip Code"
-          required
-          onChange={handleInput}
-        />
+      <Input
+        name="zip"
+        type="text"
+        placeholder="Zip Code"
+        required
+        onChange={handleInput}
+      />
 
-        <Button type="submit">Sumbit</Button>
-      </form>
-    </Grid>
+      <Button type="submit">Sumbit</Button>
+    </Form>
   );
 }
