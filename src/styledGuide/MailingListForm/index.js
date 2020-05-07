@@ -1,9 +1,36 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import { P } from "../P";
-import { Grid } from "gymnast";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import { Form } from "../Form";
+import { Grid } from "gymnast";
+
+const StyledP = styled(P)`
+  justify-content: center;
+`;
+
+const StyledInput = styled(Input).attrs({ padding: "S" })`
+  font-size: 16px;
+  background-color: ${({ theme }) => theme.colors.white};
+`;
+
+const StyledGrid = styled(Grid).attrs({})`
+  background-color: black;
+`;
+
+const StyledButton = styled(Button)`
+  font-size: 16px;
+  justify-content: center;
+  line-height: 30px;
+  background-color: ${({ theme }) => theme.colors.blue};
+  border: 1px solid ${({ theme }) => theme.colors.blue};
+`;
+
+const StyledForm = styled(Form)`
+  box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.white}
+  margin-top: 30px;
+`;
 
 export function MailingListForm() {
   const [formData, setFormData] = useState({});
@@ -45,64 +72,88 @@ export function MailingListForm() {
   }
 
   return (
-    <Form id="contact" name="contact" required onSubmit={sendData}>
-      <Input
-        name="fName"
-        type="text"
-        placeholder="First Name"
+    <>
+      <StyledForm
+        id="contact"
+        name="contact"
         required
-        onChange={handleInput}
-      />
+        onSubmit={sendData}
+        padding="M"
+      >
+        <StyledP>Fill out the form below to Join our mailing list!</StyledP>
+        <StyledGrid>
+          <StyledGrid size={6} margin="M">
+            <StyledInput
+              name="fName"
+              type="text"
+              placeholder="First Name"
+              required
+              onChange={handleInput}
+            />
+          </StyledGrid>
+          <StyledGrid size={6} margin="M">
+            <StyledInput
+              name="lName"
+              type="text"
+              placeholder="Last Name"
+              required
+              onChange={handleInput}
+            />
+          </StyledGrid>
+        </StyledGrid>
+        <StyledGrid margin="M">
+          <StyledInput
+            name="email"
+            type="email"
+            placeholder="Email"
+            required
+            onChange={handleInput}
+          />
+        </StyledGrid>
+        <StyledGrid margin="M">
+          <StyledInput
+            name="address"
+            type="text"
+            placeholder="Address"
+            required
+            onChange={handleInput}
+          />
+        </StyledGrid>
 
-      <Input
-        name="lName"
-        type="text"
-        placeholder="Last Name"
-        required
-        onChange={handleInput}
-      />
+        <StyledGrid>
+          <StyledGrid size={4} margin="M">
+            <StyledInput
+              name="city"
+              type="text"
+              placeholder="City"
+              required
+              onChange={handleInput}
+            />
+          </StyledGrid>
+          <StyledGrid size={4} margin="M">
+            <StyledInput
+              name="state"
+              type="text"
+              placeholder="State"
+              required
+              onChange={handleInput}
+            />
+          </StyledGrid>
+          <StyledGrid size={4} margin="M">
+            <StyledInput
+              name="zip"
+              type="text"
+              placeholder="Zip Code"
+              required
+              onChange={handleInput}
+            />
+          </StyledGrid>
+        </StyledGrid>
 
-      <Input
-        name="email"
-        type="email"
-        placeholder="Email"
-        required
-        onChange={handleInput}
-      />
-
-      <Input
-        name="address"
-        type="text"
-        placeholder="Address"
-        required
-        onChange={handleInput}
-      />
-
-      <Input
-        name="city"
-        type="text"
-        placeholder="City"
-        required
-        onChange={handleInput}
-      />
-
-      <Input
-        name="state"
-        type="text"
-        placeholder="State"
-        required
-        onChange={handleInput}
-      />
-
-      <Input
-        name="zip"
-        type="text"
-        placeholder="Zip Code"
-        required
-        onChange={handleInput}
-      />
-
-      <Button type="submit">Sumbit</Button>
-    </Form>
+        <StyledButton type="submit" size="fill">
+          Sumbit
+        </StyledButton>
+      </StyledForm>
+    </>
   );
 }
