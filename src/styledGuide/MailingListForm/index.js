@@ -28,8 +28,8 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledForm = styled(Form)`
-  box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.white}
-  margin-top: 30px;
+  box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.white};
+  /* margin-top: 30px; */
 `;
 
 export function MailingListForm() {
@@ -72,7 +72,7 @@ export function MailingListForm() {
   }
 
   return (
-    <>
+    <Grid paddingTop="L">
       <StyledForm
         id="contact"
         name="contact"
@@ -154,6 +154,6 @@ export function MailingListForm() {
           Sumbit
         </StyledButton>
       </StyledForm>
-    </>
+    </Grid>
   );
 }
