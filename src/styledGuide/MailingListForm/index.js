@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { P } from "../P";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import { Form } from "../Form";
 import { Grid } from "gymnast";
+
+const whiteBorders = css`
+  box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.white};
+`;
 
 const StyledP = styled(P)`
   justify-content: center;
@@ -28,8 +32,12 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledForm = styled(Form)`
-  box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.white};
-  /* margin-top: 30px; */
+  ${whiteBorders};
+`;
+
+const Message = styled(P)`
+  margin-top: 20px;
+  justify-content: center;
 `;
 
 export function MailingListForm() {
@@ -47,7 +55,7 @@ export function MailingListForm() {
     const { fName, lName, email, address, city, state, zip } = formData;
     try {
       const response = await fetch(
-        "https://v1.nocodeapi.com/elreyb/google_sheets/vKiwEROZjIPDwhSN?tabId=Sheet1",
+        `https://v1.nocodeapi.com/elreyb/google_sheets/${process.env.REACT_APP_SHEET_ID},
         {
           method: "post",
           body: JSON.stringify([
@@ -60,15 +68,19 @@ export function MailingListForm() {
       );
       const json = await response.json();
       console.log("Success:", JSON.stringify(json));
-      setMessage("Success");
+      setMessage("Thank you for joining our mailing list!");
     } catch (error) {
       console.error("Error:", error);
+
+
       setMessage("Error");
     }
   };
 
   if (message) {
-    return <P>{message}</P>;
+    return(
+      <Message padding="S">{message}</Message>
+    );
   }
 
   return (
