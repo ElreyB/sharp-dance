@@ -55,7 +55,7 @@ export function MailingListForm() {
     const { fName, lName, email, address, city, state, zip } = formData;
     try {
       const response = await fetch(
-        `https://v1.nocodeapi.com/elreyb/google_sheets/${process.env.REACT_APP_SHEET_ID},
+        `https://v1.nocodeapi.com/elreyb/google_sheets/${process.env.REACT_APP_SHEET_ID}`,
         {
           method: "post",
           body: JSON.stringify([
@@ -94,7 +94,7 @@ export function MailingListForm() {
       >
         <StyledP>Fill out the form below to Join our mailing list!</StyledP>
         <StyledGrid>
-          <StyledGrid size={6} margin="M">
+          <StyledGrid size={{default: 6, mobile: 12}} margin="M">
             <StyledInput
               name="fName"
               type="text"
@@ -103,7 +103,7 @@ export function MailingListForm() {
               onChange={handleInput}
             />
           </StyledGrid>
-          <StyledGrid size={6} margin="M">
+          <StyledGrid size={{default: 6, mobile: 12}} margin="M">
             <StyledInput
               name="lName"
               type="text"
@@ -133,7 +133,7 @@ export function MailingListForm() {
         </StyledGrid>
 
         <StyledGrid>
-          <StyledGrid size={4} margin="M">
+          <StyledGrid size={{default: 4, mobile: 12}} margin="M">
             <StyledInput
               name="city"
               type="text"
@@ -142,7 +142,7 @@ export function MailingListForm() {
               onChange={handleInput}
             />
           </StyledGrid>
-          <StyledGrid size={4} margin="M">
+          <StyledGrid size={{default: 4, mobile: 12}} margin="M">
             <StyledInput
               name="state"
               type="text"
@@ -151,7 +151,7 @@ export function MailingListForm() {
               onChange={handleInput}
             />
           </StyledGrid>
-          <StyledGrid size={4} margin="M">
+          <StyledGrid size={{default: 4, mobile: 12}} margin="M">
             <StyledInput
               name="zip"
               type="text"
@@ -163,7 +163,7 @@ export function MailingListForm() {
         </StyledGrid>
 
         <StyledButton type="submit" size="fill">
-          Sumbit
+          Join Mailing List
         </StyledButton>
       </StyledForm>
     </Grid>
