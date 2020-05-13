@@ -68,7 +68,7 @@ export function MailingListForm() {
       );
       const json = await response.json();
       console.log("Success:", JSON.stringify(json));
-      setMessage("Thank you for Joining our Mailing list!");
+      setMessage("Thank you for joining our mailing list!");
     } catch (error) {
       console.error("Error:", error);
 
