@@ -37,7 +37,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "git-secret hide && git add . && git commit -m \"update git-secret\""
+      "pre-push": "git-secret hide && git add . && git commit --fixup"
     }
   },
   "eslintConfig": {
