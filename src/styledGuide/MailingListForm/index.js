@@ -89,7 +89,7 @@ export function MailingListForm() {
         onSubmit={sendData}
         padding="M"
       >
-        <StyledP>Fill out the form below to Join our mailing list!!!</StyledP>
+        <StyledP>Fill out the form below to Join our mailing list!</StyledP>
         <StyledGrid>
           <StyledGrid size={{ default: 6, mobile: 12 }} margin="M">
             <StyledInput
