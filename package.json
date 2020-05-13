@@ -37,7 +37,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "git-secret hide && git add . && git commit --fixup HEAD && git rebase --interactive --autosquash HEAD~2"
+      "pre-push": "git-secret hide && git add . && git commit --fixup HEAD && git rebase -i --autosquash HEAD~1"
     }
   },
   "eslintConfig": {
