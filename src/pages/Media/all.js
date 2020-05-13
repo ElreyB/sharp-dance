@@ -20,7 +20,7 @@ const Border = styled(Grid)`
 `;
 
 export default function AllPerformances({ headerBanner, media }) {
-  const filterMedia = media.filter(album => Number(album.id) < 6);
+  const filterMedia = media.filter((album) => Number(album.id) < 6);
   return (
     <Page>
       <Banner {...headerBanner} />

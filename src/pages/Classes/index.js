@@ -5,7 +5,7 @@ import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
 
 const now = new Date().getTime();
-const isFuture = time => time > now;
+const isFuture = (time) => time > now;
 const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 function ClassSchedule({ season, ...upcomingClasses }) {
@@ -29,14 +29,14 @@ export default function Classes() {
   const { options = {}, pageName, ...headerBanner } = page;
   const location = classSchedules.location || "Equilbrium";
   const upcomingClassesList = classSchedules
-    .map(classSchedule => {
-      const dates = classSchedule.dates.filter(date =>
+    .map((classSchedule) => {
+      const dates = classSchedule.dates.filter((date) =>
         isFuture(parseDate(date))
       );
 
       return dates.length === 0 ? undefined : { ...classSchedule, dates };
     })
-    .filter(classSchedule => !!classSchedule);
+    .filter((classSchedule) => !!classSchedule);
 
   return (
     <Page>

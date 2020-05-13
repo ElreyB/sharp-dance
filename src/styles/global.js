@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     line-height: 2;
+    overflow-x: hidden;
     font-family: ${({ theme }) => theme.fonts.sansSerif};
   }
   h1,h2,h3,h4,h5,h6 {

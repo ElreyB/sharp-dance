@@ -7,12 +7,12 @@ const StyledUl = styled("ul")`
   margin: 0;
 `;
 
-export const Ul = props => {
+export const Ul = (props) => {
   const [shouldShow, allProps] = useGrid({
     justify: "end",
     margin: "0 L 0 0",
     padding: 0,
-    ...props
+    ...props,
   });
 
   if (!shouldShow) {

@@ -13,7 +13,7 @@ import {
   MEDIA,
   PAST_EVENTS,
   PRESS,
-  TICKETS
+  TICKETS,
 } from "../../constants";
 
 const links = [
@@ -26,9 +26,9 @@ const links = [
       { to: MEDIA, label: "Repertoire" },
       {
         to: ABOUT,
-        label: "About"
-      }
-    ]
+        label: "About",
+      },
+    ],
   },
   { to: TICKETS, label: "Tickets" },
   { to: PRESS, label: "Press" },
@@ -37,12 +37,12 @@ const links = [
     label: "Performances",
     sub: [
       { to: EVENTS, label: "Upcoming Performances" },
-      { to: PAST_EVENTS, label: "Past Performances" }
-    ]
+      { to: PAST_EVENTS, label: "Past Performances" },
+    ],
   },
   { to: CLASSES, label: "Classes" },
   { to: CONTACT, label: "Contact" },
-  { to: DONATIONS, label: "Donations" }
+  { to: DONATIONS, label: "Donations" },
 ];
 
 export const Nav = React.forwardRef((props, ref) => {
@@ -61,7 +61,7 @@ export const Nav = React.forwardRef((props, ref) => {
                 direction="column"
                 margin="2.5 0 0 0"
               >
-                {sub.map(li => (
+                {sub.map((li) => (
                   <Li {...li} key={li.label} size="fit" />
                 ))}
               </Ul>

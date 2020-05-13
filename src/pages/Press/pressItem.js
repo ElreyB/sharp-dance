@@ -19,7 +19,7 @@ export function PressItem({
   image,
   logo,
   outlet,
-  url
+  url,
 }) {
   return (
     <Wrapper padding="XL 0" align="start">

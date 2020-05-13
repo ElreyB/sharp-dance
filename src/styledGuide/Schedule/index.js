@@ -30,7 +30,7 @@ const monthName = {
   9: "September",
   10: "October",
   11: "November",
-  12: "December"
+  12: "December",
 };
 
 const StyledH3 = styled(H3)`
@@ -48,7 +48,7 @@ export const Schedule = ({
   padding,
   purchaseUrl,
   size,
-  website
+  website,
 }) => {
   return (
     <Grid size={size} margin={margin} padding={padding}>
@@ -60,7 +60,7 @@ export const Schedule = ({
       {description && <P>{description}</P>}
       <Grid size={{ mobile: "auto", desktop: "fit" }}>
         {(location || address) && (
-          <P>{[location, address].filter(a => !!a).join(" - ")}</P>
+          <P>{[location, address].filter((a) => !!a).join(" - ")}</P>
         )}
       </Grid>
       <Grid>
@@ -88,7 +88,7 @@ Schedule.propTypes = {
       month: PropTypes.number,
       year: PropTypes.number,
       time: PropTypes.string,
-      notes: PropTypes.string
+      notes: PropTypes.string,
     })
   ),
   description: PropTypes.string,
@@ -97,5 +97,5 @@ Schedule.propTypes = {
   name: PropTypes.string,
   pricing: PropTypes.string,
   purchaseUrl: PropTypes.string,
-  website: PropTypes.string
+  website: PropTypes.string,
 };

@@ -22,5 +22,5 @@ export const Credit = ({ children, ...props }) => {
 };
 
 Credit.propTypes = {
-  children: PropTypes.string
+  children: PropTypes.string,
 };

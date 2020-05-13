@@ -4,7 +4,7 @@ import Loading from "../Loading";
 import {
   groupPerformancesByYear,
   olderYearsFirst,
-  mostRecentYearsFirst
+  mostRecentYearsFirst,
 } from "../../utils";
 import { EVENTS } from "../../constants";
 import { PerformancesContext, PagesContext } from "../../Providers";

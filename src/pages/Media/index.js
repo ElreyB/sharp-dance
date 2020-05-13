@@ -19,7 +19,7 @@ export default function Media({ match }) {
 
   const { options, pageName, ...headerBanner } = page;
 
-  const performance = media.find(performance =>
+  const performance = media.find((performance) =>
     isMatch(performance.title, performanceTitle)
   );
 

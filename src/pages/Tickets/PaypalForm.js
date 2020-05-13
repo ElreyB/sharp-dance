@@ -68,5 +68,5 @@ export const PaypayForm = ({ textAbove, textBelow }) => {
 
 PaypayForm.propTypes = {
   textAbove: PropTypes.string,
-  textBelow: PropTypes.string
+  textBelow: PropTypes.string,
 };

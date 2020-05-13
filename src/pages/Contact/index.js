@@ -64,7 +64,7 @@ export default function Contact() {
     facebookTitle,
     facebookURL,
     mailingAddress,
-    phone
+    phone,
   } = options;
 
   return (

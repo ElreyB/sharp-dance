@@ -8,7 +8,7 @@ import fallbackVideo from "./thumbnail.svg";
 const width = 100;
 const height = (width * 9) / 16;
 
-const useThumbnail = src => {
+const useThumbnail = (src) => {
   const [thumbnail, setThumbnail] = React.useState();
 
   React.useEffect(() => {
@@ -50,7 +50,7 @@ export default ({ src, onClick }) => (
     <Poster
       paddingBottom="S"
       style={{
-        backgroundImage: `url(${useThumbnail(src)})`
+        backgroundImage: `url(${useThumbnail(src)})`,
       }}
     />
   </Grid>

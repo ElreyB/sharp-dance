@@ -6,7 +6,7 @@ export function parseDate(date) {
   const parsedDate = {
     day: parseInt((date.days.match(/([0-9]+)/) || [])[1], 10) || 0,
     month: date.month || 0,
-    year: date.year
+    year: date.year,
   };
   const hasDate = date.year || date.month;
 
@@ -41,7 +41,7 @@ export function parseSchedule(performance) {
     dates,
     dateTime,
     isFuture,
-    hasDate
+    hasDate,
   };
 }
 

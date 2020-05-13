@@ -6,7 +6,7 @@ export function useElementWidth() {
     return node ? node.offsetWidth || 0 : 0;
   }
 
-  const ref = React.useCallback(node => {
+  const ref = React.useCallback((node) => {
     if (node !== null) {
       setWidth(node.offsetWidth || 0);
     }

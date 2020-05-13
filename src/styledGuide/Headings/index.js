@@ -18,7 +18,7 @@ function fitWrapper(Component, maxFontSize) {
           widthOnly: true,
           alignHoriz: true,
           detectMultiLine: false,
-          maxFontSize
+          maxFontSize,
         });
       }
     }, [node, children, noResize, width]);

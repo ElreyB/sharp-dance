@@ -28,12 +28,12 @@ import {
   PHOTOGRAPHY,
   PRESS,
   PRESS_KIT,
-  TICKETS
+  TICKETS,
 } from "./constants";
 import { ScrollToTop, GymnastProvider } from "./styledGuide";
 
-const component = Component => routeProps => <Component {...routeProps} />;
-const genericPage = pageKey => routeProps => (
+const component = (Component) => (routeProps) => <Component {...routeProps} />;
+const genericPage = (pageKey) => (routeProps) => (
   <Generic pageKey={pageKey} {...routeProps} />
 );
 
@@ -42,7 +42,7 @@ function App() {
     <GymnastProvider
       displayAliases={{
         desktop: { minWidth: "601px" },
-        mobile: { maxWidth: "600px" }
+        mobile: { maxWidth: "600px" },
       }}
     >
       <Router>

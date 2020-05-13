@@ -17,7 +17,7 @@ import {
   MEDIA,
   PAST_EVENTS,
   PRESS,
-  TICKETS
+  TICKETS,
 } from "../../constants";
 
 const ESCAPE_KEY = 27;
@@ -50,7 +50,7 @@ const links = [
   { to: PAST_EVENTS, label: "Past Performances" },
   { to: CLASSES, label: "Classes" },
   { to: CONTACT, label: "Contact" },
-  { to: DONATIONS, label: "Donations" }
+  { to: DONATIONS, label: "Donations" },
 ];
 
 const SideDrawer = ({ show, onClick }) => (
@@ -69,7 +69,7 @@ const SideDrawer = ({ show, onClick }) => (
           focusTrapOptions={{
             escapeDeactivates: true,
             clickOutsideDeactivates: true,
-            initialFocus: "button"
+            initialFocus: "button",
           }}
           onDeactivate={onClick}
         >

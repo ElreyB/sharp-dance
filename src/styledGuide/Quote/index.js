@@ -23,5 +23,5 @@ export const Quote = ({ source, author, quote, ...props }) => {
 Quote.propTypes = {
   source: PropTypes.string,
   author: PropTypes.string,
-  quote: PropTypes.string
+  quote: PropTypes.string,
 };

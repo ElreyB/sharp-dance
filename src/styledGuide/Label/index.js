@@ -17,5 +17,5 @@ export const Label = ({
 };
 
 Label.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };

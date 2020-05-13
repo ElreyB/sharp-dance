@@ -19,7 +19,7 @@ function FooterLink({ to, children }) {
   );
 }
 
-export const Footer = props => {
+export const Footer = (props) => {
   return (
     <StyledGrid {...props} justify="center">
       <Grid size={{ mobile: 12, desktop: 6 }}>
