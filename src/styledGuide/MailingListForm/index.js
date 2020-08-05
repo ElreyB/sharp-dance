@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { P } from "../P";
 import { Button } from "../Button";
 import { Input } from "../Input";
@@ -44,13 +44,13 @@ export function MailingListForm() {
   const [formData, setFormData] = useState({});
   const [message, setMessage] = useState("");
 
-  const handleInput = e => {
+  const handleInput = (e) => {
     const copyFormData = { ...formData };
     copyFormData[e.target.name] = e.target.value;
     setFormData(copyFormData);
   };
 
-  const sendData = async e => {
+  const sendData = async (e) => {
     e.preventDefault();
     const { fName, lName, email, address, city, state, zip } = formData;
     try {
@@ -59,11 +59,11 @@ export function MailingListForm() {
         {
           method: "post",
           body: JSON.stringify([
-            [fName, lName, email, address, city, state, zip]
+            [fName, lName, email, address, city, state, zip],
           ]),
           headers: {
-            "Content-Type": "application/json"
-          }
+            "Content-Type": "application/json",
+          },
         }
       );
       const json = await response.json();
@@ -72,15 +72,12 @@ export function MailingListForm() {
     } catch (error) {
       console.error("Error:", error);
 
-
       setMessage("Error");
     }
   };
 
   if (message) {
-    return(
-      <Message padding="S">{message}</Message>
-    );
+    return <Message padding="S">{message}</Message>;
   }
 
   return (
@@ -94,7 +91,7 @@ export function MailingListForm() {
       >
         <StyledP>Fill out the form below to Join our mailing list!</StyledP>
         <StyledGrid>
-          <StyledGrid size={{default: 6, mobile: 12}} margin="M">
+          <StyledGrid size={{ default: 6, mobile: 12 }} margin="M">
             <StyledInput
               name="fName"
               type="text"
@@ -103,7 +100,7 @@ export function MailingListForm() {
               onChange={handleInput}
             />
           </StyledGrid>
-          <StyledGrid size={{default: 6, mobile: 12}} margin="M">
+          <StyledGrid size={{ default: 6, mobile: 12 }} margin="M">
             <StyledInput
               name="lName"
               type="text"
@@ -133,7 +130,7 @@ export function MailingListForm() {
         </StyledGrid>
 
         <StyledGrid>
-          <StyledGrid size={{default: 4, mobile: 12}} margin="M">
+          <StyledGrid size={{ default: 4, mobile: 12 }} margin="M">
             <StyledInput
               name="city"
               type="text"
@@ -142,7 +139,7 @@ export function MailingListForm() {
               onChange={handleInput}
             />
           </StyledGrid>
-          <StyledGrid size={{default: 4, mobile: 12}} margin="M">
+          <StyledGrid size={{ default: 4, mobile: 12 }} margin="M">
             <StyledInput
               name="state"
               type="text"
@@ -151,7 +148,7 @@ export function MailingListForm() {
               onChange={handleInput}
             />
           </StyledGrid>
-          <StyledGrid size={{default: 4, mobile: 12}} margin="M">
+          <StyledGrid size={{ default: 4, mobile: 12 }} margin="M">
             <StyledInput
               name="zip"
               type="text"

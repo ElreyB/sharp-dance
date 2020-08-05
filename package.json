@@ -37,7 +37,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "git-secret hide"
+      "pre-commit": "git-secret hide && git add .env.secret"
     }
   },
   "eslintConfig": {
