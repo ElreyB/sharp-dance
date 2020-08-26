@@ -13,7 +13,7 @@ import {
   MEDIA,
   PAST_EVENTS,
   PRESS,
-  TICKETS,
+  // TICKETS,
 } from "../../constants";
 
 const links = [
@@ -30,7 +30,8 @@ const links = [
       },
     ],
   },
-  { to: TICKETS, label: "Tickets" },
+  // TODO: better way to show or remove link
+  // { to: TICKETS, label: "Tickets" },
   { to: PRESS, label: "Press" },
   {
     to: EVENTS,

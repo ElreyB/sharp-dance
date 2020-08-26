@@ -39,6 +39,7 @@ export default function Home() {
     option4,
     options = {},
     pageName,
+    showPage,
     ...headerBanner
   } = page;
 
@@ -53,7 +54,8 @@ export default function Home() {
     showtimes,
     tickets,
   } = options;
-
+  console.log(showPage);
+  if (!showPage) return null;
   return (
     <Page>
       <Banner {...headerBanner} />
