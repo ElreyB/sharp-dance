@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Grid, Banner, Label, Page, P } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";

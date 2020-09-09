@@ -2,7 +2,7 @@ import React from "react";
 import { FullPageVideo, Page } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const CustomPage = styled(Page)`
   max-width: 100vw;

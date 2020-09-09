@@ -1,7 +1,7 @@
 import React from "react";
 import { isImageURL } from "./utils";
 import { Grid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import fallbackVideo from "./thumbnail.svg";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const StyledIframe = styled("iframe")`
   border: 0;

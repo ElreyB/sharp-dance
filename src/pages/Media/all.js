@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Grid } from "gymnast";
 import { Page, Banner, H2, A, Img } from "../../styledGuide";
 import { getPerformanceURL } from "./media.logic";

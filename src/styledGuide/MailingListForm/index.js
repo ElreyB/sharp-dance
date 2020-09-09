@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components/macro";
 import { P } from "../P";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import { Form } from "../Form";
+import { Label } from "../Label";
 import { Grid } from "gymnast";
 
 const whiteBorders = css`
@@ -17,6 +18,7 @@ const StyledP = styled(P)`
 const StyledInput = styled(Input).attrs({ padding: "S" })`
   font-size: 16px;
   background-color: ${({ theme }) => theme.colors.white};
+  border: 2px solid ${({ theme }) => theme.colors.black};
 `;
 
 const StyledGrid = styled(Grid).attrs({})`
@@ -38,6 +40,21 @@ const StyledForm = styled(Form)`
 const Message = styled(P)`
   margin-top: 20px;
   justify-content: center;
+`;
+
+const MailChimp = styled.div`
+  background-color: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+`;
+
+const HiddenWrapper = styled.div`
+  position: absolute;
+  left: -5000px;
+`;
+
+const StyledLabel = styled(Label).attrs({ margin: "S" })`
+  color: ${({ theme }) => theme.colors.white};
 `;
 
 export function MailingListForm() {
@@ -79,90 +96,54 @@ export function MailingListForm() {
   if (message) {
     return <Message padding="S">{message}</Message>;
   }
-
+  const { EMAIL } = formData;
   return (
-    <Grid paddingTop="L">
-      <StyledForm
-        id="contact"
-        name="contact"
-        required
-        onSubmit={sendData}
-        padding="M"
-      >
-        <StyledP>Fill out the form below to Join our mailing list!</StyledP>
-        <StyledGrid>
-          <StyledGrid size={{ default: 6, mobile: 12 }} margin="M">
+    <StyledGrid paddingTop="L">
+      <MailChimp>
+        <StyledForm
+          action="https://gmail.us4.list-manage.com/subscribe/post?u=364f26570f2fb7eb199685aae&amp;id=0217eb61c3"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          className="validate"
+          target="_blank"
+          noValidate
+        >
+          <StyledGrid>
+            <StyledLabel htmlFor="mce-EMAIL">
+              Join our mailing list!
+            </StyledLabel>
             <StyledInput
-              name="fName"
-              type="text"
-              placeholder="First Name"
+              type="email"
+              value={EMAIL}
+              name="EMAIL"
+              className="email"
+              id="mce-EMAIL"
+              placeholder="email address"
               required
               onChange={handleInput}
             />
+            {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+            <HiddenWrapper aria-hidden="true">
+              <StyledInput
+                type="text"
+                name="b_364f26570f2fb7eb199685aae_0217eb61c3"
+                tabindex="-1"
+                value=""
+              />
+            </HiddenWrapper>
+            <StyledButton
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              className="button"
+            >
+              Subscribe
+            </StyledButton>
           </StyledGrid>
-          <StyledGrid size={{ default: 6, mobile: 12 }} margin="M">
-            <StyledInput
-              name="lName"
-              type="text"
-              placeholder="Last Name"
-              required
-              onChange={handleInput}
-            />
-          </StyledGrid>
-        </StyledGrid>
-        <StyledGrid margin="M">
-          <StyledInput
-            name="email"
-            type="email"
-            placeholder="Email"
-            required
-            onChange={handleInput}
-          />
-        </StyledGrid>
-        <StyledGrid margin="M">
-          <StyledInput
-            name="address"
-            type="text"
-            placeholder="Address"
-            required
-            onChange={handleInput}
-          />
-        </StyledGrid>
-
-        <StyledGrid>
-          <StyledGrid size={{ default: 4, mobile: 12 }} margin="M">
-            <StyledInput
-              name="city"
-              type="text"
-              placeholder="City"
-              required
-              onChange={handleInput}
-            />
-          </StyledGrid>
-          <StyledGrid size={{ default: 4, mobile: 12 }} margin="M">
-            <StyledInput
-              name="state"
-              type="text"
-              placeholder="State"
-              required
-              onChange={handleInput}
-            />
-          </StyledGrid>
-          <StyledGrid size={{ default: 4, mobile: 12 }} margin="M">
-            <StyledInput
-              name="zip"
-              type="text"
-              placeholder="Zip Code"
-              required
-              onChange={handleInput}
-            />
-          </StyledGrid>
-        </StyledGrid>
-
-        <StyledButton type="submit" size="fill">
-          Join Mailing List
-        </StyledButton>
-      </StyledForm>
-    </Grid>
+        </StyledForm>
+      </MailChimp>
+    </StyledGrid>
   );
 }

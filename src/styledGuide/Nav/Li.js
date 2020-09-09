@@ -1,6 +1,6 @@
 import React from "react";
 import { useGrid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { A } from "../A";
 import { Label } from "../Label";

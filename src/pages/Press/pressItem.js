@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Grid, Img, H3, P, A } from "../../styledGuide";
 
 const Wrapper = styled(Grid)`

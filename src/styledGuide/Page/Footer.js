@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { A } from "../A";
 import { PHOTOGRAPHY, CONTACT, PRESS_KIT, DONATIONS } from "../../constants";
