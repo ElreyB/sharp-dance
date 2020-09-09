@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components/macro";
-import { P } from "../P";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import { Form } from "../Form";
@@ -11,41 +10,30 @@ const whiteBorders = css`
   box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.white};
 `;
 
-const StyledP = styled(P)`
-  justify-content: center;
-`;
-
-const StyledInput = styled(Input).attrs({ padding: "S" })`
+const StyledInput = styled(Input).attrs({ size: "8", marginBottom: "S" })`
   font-size: 16px;
   background-color: ${({ theme }) => theme.colors.white};
-  border: 2px solid ${({ theme }) => theme.colors.black};
+  border: 1px solid ${({ theme }) => theme.colors.black};
 `;
 
 const StyledGrid = styled(Grid).attrs({})`
   background-color: black;
 `;
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(Button).attrs({
+  align: "center",
+  padding: "0",
+  margin: "0",
+  marginBottom: "S",
+  marginLeft: "0",
+})`
   font-size: 16px;
-  justify-content: center;
-  line-height: 30px;
   background-color: ${({ theme }) => theme.colors.blue};
-  border: 1px solid ${({ theme }) => theme.colors.blue};
+  border: 1px solid ${({ theme }) => theme.colors.black};
 `;
 
 const StyledForm = styled(Form)`
   ${whiteBorders};
-`;
-
-const Message = styled(P)`
-  margin-top: 20px;
-  justify-content: center;
-`;
-
-const MailChimp = styled.div`
-  background-color: #fff;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
 `;
 
 const HiddenWrapper = styled.div`
@@ -55,11 +43,11 @@ const HiddenWrapper = styled.div`
 
 const StyledLabel = styled(Label).attrs({ margin: "S" })`
   color: ${({ theme }) => theme.colors.white};
+  text-align: center;
 `;
 
 export function MailingListForm() {
   const [formData, setFormData] = useState({});
-  const [message, setMessage] = useState("");
 
   const handleInput = (e) => {
     const copyFormData = { ...formData };
@@ -67,52 +55,24 @@ export function MailingListForm() {
     setFormData(copyFormData);
   };
 
-  const sendData = async (e) => {
-    e.preventDefault();
-    const { fName, lName, email, address, city, state, zip } = formData;
-    try {
-      const response = await fetch(
-        `https://v1.nocodeapi.com/elreyb/google_sheets/${process.env.REACT_APP_SHEET_ID}`,
-        {
-          method: "post",
-          body: JSON.stringify([
-            [fName, lName, email, address, city, state, zip],
-          ]),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      const json = await response.json();
-      console.log("Success:", JSON.stringify(json));
-      setMessage("Thank you for joining our mailing list!");
-    } catch (error) {
-      console.error("Error:", error);
-
-      setMessage("Error");
-    }
-  };
-
-  if (message) {
-    return <Message padding="S">{message}</Message>;
-  }
   const { EMAIL } = formData;
   return (
-    <StyledGrid paddingTop="L">
-      <MailChimp>
-        <StyledForm
-          action="https://gmail.us4.list-manage.com/subscribe/post?u=364f26570f2fb7eb199685aae&amp;id=0217eb61c3"
-          method="post"
-          id="mc-embedded-subscribe-form"
-          name="mc-embedded-subscribe-form"
-          className="validate"
-          target="_blank"
-          noValidate
-        >
-          <StyledGrid>
-            <StyledLabel htmlFor="mce-EMAIL">
-              Join our mailing list!
-            </StyledLabel>
+    <StyledGrid paddingTop="L" justify="center">
+      <StyledForm
+        action="https://gmail.us4.list-manage.com/subscribe/post?u=364f26570f2fb7eb199685aae&amp;id=0217eb61c3"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        className="validate"
+        target="_blank"
+        noValidate
+        size="8"
+      >
+        <StyledGrid>
+          <StyledLabel htmlFor="mce-EMAIL" justify="center" margin="0">
+            Join our mailing list!
+          </StyledLabel>
+          <StyledGrid justify="center">
             <StyledInput
               type="email"
               value={EMAIL}
@@ -142,8 +102,8 @@ export function MailingListForm() {
               Subscribe
             </StyledButton>
           </StyledGrid>
-        </StyledForm>
-      </MailChimp>
+        </StyledGrid>
+      </StyledForm>
     </StyledGrid>
   );
 }

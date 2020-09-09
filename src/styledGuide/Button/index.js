@@ -9,13 +9,28 @@ const StyledButton = styled.button`
 
 export const Button = React.forwardRef(
   (
-    { size = "fit", padding = "S M", children, role = "button", ...props },
+    {
+      size = "fit",
+      padding = "S M",
+      margin,
+      children,
+      justify,
+      align,
+      role = "button",
+      ...props
+    },
     ref
   ) => {
     const [, allProps] = useGrid(props);
 
     return (
-      <Grid size={size} padding={padding}>
+      <Grid
+        size={size}
+        padding={padding}
+        justify={justify}
+        align={align}
+        margin={margin}
+      >
         <StyledButton {...allProps} ref={ref}>
           {children}
         </StyledButton>

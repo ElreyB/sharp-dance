@@ -7,10 +7,11 @@ export const Label = ({
   size,
   margin = "M M 0 M",
   padding,
+  justify,
   ...props
 }) => {
   return (
-    <Grid size={size} margin={margin} padding={padding}>
+    <Grid size={size} margin={margin} padding={padding} justify={justify}>
       <label {...props}>{children}</label>
     </Grid>
   );
