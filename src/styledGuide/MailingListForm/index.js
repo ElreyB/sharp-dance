@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components/macro";
-import { Button } from "../Button";
-import { Input } from "../Input";
+// import { Button } from "../Button";
+// import { Input } from "../Input";
 import { Form } from "../Form";
 import { Label } from "../Label";
 import { Grid } from "gymnast";
@@ -10,7 +10,13 @@ const whiteBorders = css`
   box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.white};
 `;
 
-const StyledInput = styled(Input).attrs({ size: "8", marginBottom: "S" })`
+// const StyledInput = styled(Input).attrs({ size: "8", marginBottom: "S" })`
+//   font-size: 16px;
+//   background-color: ${({ theme }) => theme.colors.white};
+//   border: 1px solid ${({ theme }) => theme.colors.black};
+// `;
+
+const StyledInput2 = styled.input`
   font-size: 16px;
   background-color: ${({ theme }) => theme.colors.white};
   border: 1px solid ${({ theme }) => theme.colors.black};
@@ -20,13 +26,19 @@ const StyledGrid = styled(Grid).attrs({})`
   background-color: black;
 `;
 
-const StyledButton = styled(Button).attrs({
-  align: "center",
-  padding: "0",
-  margin: "0",
-  marginBottom: "S",
-  marginLeft: "0",
-})`
+// const StyledButton = styled(Button).attrs({
+//   align: "center",
+//   padding: "0",
+//   margin: "0",
+//   marginBottom: "S",
+//   marginLeft: "0",
+// })`
+//   font-size: 16px;
+//   background-color: ${({ theme }) => theme.colors.blue};
+//   border: 1px solid ${({ theme }) => theme.colors.black};
+// `;
+
+const StyledButton2 = styled.button`
   font-size: 16px;
   background-color: ${({ theme }) => theme.colors.blue};
   border: 1px solid ${({ theme }) => theme.colors.black};
@@ -72,8 +84,8 @@ export function MailingListForm() {
           <StyledLabel htmlFor="mce-EMAIL" justify="center" margin="0">
             Join our mailing list!
           </StyledLabel>
-          <StyledGrid justify="center">
-            <StyledInput
+          <StyledGrid justify="center" marginBottom="S">
+            <StyledInput2
               type="email"
               value={EMAIL}
               name="EMAIL"
@@ -85,14 +97,14 @@ export function MailingListForm() {
             />
             {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
             <HiddenWrapper aria-hidden="true">
-              <StyledInput
+              <StyledInput2
                 type="text"
                 name="b_364f26570f2fb7eb199685aae_0217eb61c3"
                 tabindex="-1"
                 value=""
               />
             </HiddenWrapper>
-            <StyledButton
+            <StyledButton2
               type="submit"
               value="Subscribe"
               name="subscribe"
@@ -100,7 +112,7 @@ export function MailingListForm() {
               className="button"
             >
               Subscribe
-            </StyledButton>
+            </StyledButton2>
           </StyledGrid>
         </StyledGrid>
       </StyledForm>
