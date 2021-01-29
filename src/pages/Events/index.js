@@ -8,6 +8,9 @@ import {
 } from "../../utils";
 import { EVENTS } from "../../constants";
 import { PerformancesContext, PagesContext } from "../../Providers";
+import NoUpcomingEvents from "./NoUpcomingEvents";
+
+// https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F6.jpg?alt=media&token=e4ebd608-54c1-4aae-a0d3-5db4dd60511b
 
 const renderPerformances = ([year, perfs]) =>
   perfs.length > 0 && (
@@ -38,17 +41,23 @@ export default function Events(props) {
   const { options, pageName, ...headerBanner } = page;
   const isEventPage = location.pathname === EVENTS;
 
+  const performanceArr = isEventPage
+    ? Object.entries(groupPerformancesByYear(upcomingPerformances))
+        .sort(olderYearsFirst)
+        .map(renderPerformances)
+    : Object.entries(groupPerformancesByYear(pastPerformances))
+        .sort(mostRecentYearsFirst)
+        .map(renderPerformances);
+
   return (
     <Page>
       <Banner {...headerBanner} />
       <Grid align="start">
-        {isEventPage
-          ? Object.entries(groupPerformancesByYear(upcomingPerformances))
-              .sort(olderYearsFirst)
-              .map(renderPerformances)
-          : Object.entries(groupPerformancesByYear(pastPerformances))
-              .sort(mostRecentYearsFirst)
-              .map(renderPerformances)}
+        {isEventPage && performanceArr.length === 0 ? (
+          <NoUpcomingEvents />
+        ) : (
+          performanceArr
+        )}
       </Grid>
     </Page>
   );
