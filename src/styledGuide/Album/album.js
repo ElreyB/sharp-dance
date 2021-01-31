@@ -4,7 +4,7 @@ import { Grid } from "gymnast";
 import { H2, H3, H4 } from "../Headings";
 import { P } from "../P";
 import Slides from "./slides";
-import { A } from "../A";
+import { A } from "../A/A";
 
 const message = {
   tour: "Available for tour",

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Grid, Img, H3, P, A } from "../../styledGuide";
+import { Grid, Img, H3, P } from "../../styledGuide";
+import { A } from "../../styledGuide/A/A";
 
 const Wrapper = styled(Grid)`
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};

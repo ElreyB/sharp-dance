@@ -4,7 +4,7 @@ import styled from "styled-components/macro";
 import HamburgerButton from "../HamburgerButton";
 import BackDrop from "./backDrop";
 import FocusTrap from "focus-trap-react";
-import { A } from "../A";
+import { A } from "../A/A";
 import { SocialIcons } from "../SocialIcons";
 import {
   ABOUT,
@@ -37,6 +37,12 @@ const Nav = styled.nav`
   @media (max-width: 600px) {
     width: 100%;
   }
+`;
+
+const NavLink = styled(A)`
+  flex-basis: 100%;
+  max-width: 100%;
+  padding: ${({ theme }) => `${theme.spacing.XS} ${theme.spacing.M}`};
 `;
 
 const links = [
@@ -76,9 +82,9 @@ const SideDrawer = ({ show, onClick }) => (
           <Grid paddingTop="M">
             <HamburgerButton onClick={onClick} closed />
             {links.map(({ to, label }) => (
-              <A to={to} key={to} size={12} padding="S/2 M">
+              <NavLink to={to} key={to}>
                 {label}
-              </A>
+              </NavLink>
             ))}
             <SocialIcons paddingTop="M" />
           </Grid>

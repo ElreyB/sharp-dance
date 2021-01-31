@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Grid } from "gymnast";
-import { Page, Banner, H2, A, Img } from "../../styledGuide";
+import { Page, Banner, H2, Img } from "../../styledGuide";
 import { getPerformanceURL } from "./media.logic";
 import { random } from "lodash";
+import { A } from "../../styledGuide/A/A";
 
 const StyledImg = styled(Img)`
   max-width: 100%;
@@ -19,7 +20,15 @@ const Border = styled(Grid)`
   background: ${({ theme }) => theme.colors.black};
 `;
 
-export default function AllPerformances({ headerBanner, media }) {
+const MediaAnchor = styled(A)`
+  width: 50%;
+  padding: ${({ theme }) => `${theme.spacing.L} ${theme.spacing.S}`};
+  @media ${({ theme }) => theme.device.mobile} {
+    width: 100%;
+  }
+`;
+
+export default function Media({ headerBanner, media }) {
   const filterMedia = media.filter((album) => Number(album.id) < 6);
   return (
     <Page>
@@ -28,18 +37,12 @@ export default function AllPerformances({ headerBanner, media }) {
         filterMedia.map(({ title, images }, i) => {
           const photo = images[random(0, images.length - 1)];
           return (
-            <A
-              to={getPerformanceURL(title)}
-              key={title}
-              size={{ mobile: 12, desktop: 6 }}
-              marginTop="L"
-              marginBottom="L"
-            >
+            <MediaAnchor to={getPerformanceURL(title)} key={title}>
               <H2 justify="center">{title}</H2>
               <Border margin="S" size="auto">
                 <StyledImg margin="M" align="center" alt={title} src={photo} />
               </Border>
-            </A>
+            </MediaAnchor>
           );
         })
       ) : (

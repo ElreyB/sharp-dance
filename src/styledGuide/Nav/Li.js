@@ -2,10 +2,10 @@ import React from "react";
 import { useGrid } from "gymnast";
 import styled from "styled-components";
 
-import { A } from "../A";
+import { A } from "../A/A";
 import { Label } from "../Label";
 
-const StyledLi = styled("li")`
+const StyledLi = styled.li`
   & ul {
     display: none;
     position: absolute;
@@ -42,16 +42,19 @@ const StyledLi = styled("li")`
   }
 `;
 
+const StyledAnchor = styled(A)`
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: auto;
+  white-space: nowrap;
+`;
+
 export const Li = ({ to, label, children, ...props }) => {
   const [, allProps] = useGrid({ size: "fit", margin: "0 M", ...props });
 
   return (
     <StyledLi {...allProps}>
-      {to && (
-        <A size="fit" to={to}>
-          {label}
-        </A>
-      )}
+      {to && <StyledAnchor to={to}>{label}</StyledAnchor>}
       {!to && <Label size="fit">{label}</Label>}
       {children}
     </StyledLi>

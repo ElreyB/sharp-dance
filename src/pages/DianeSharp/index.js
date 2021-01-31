@@ -1,9 +1,17 @@
 import React, { useContext } from "react";
-import { Grid, H3, A, Banner, Markdown, Page } from "../../styledGuide";
+import { Grid, H3, Banner, Markdown, Page } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
+import { A } from "../../styledGuide/A/A";
+import styled from "styled-components";
 
 const isDirector = ({ director }) => director;
+
+const FaceBookLink = styled(A)`
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
 export default function DianeSharp() {
   const { staff } = useContext(ResourcesContext).resourceObj;
@@ -36,9 +44,9 @@ export default function DianeSharp() {
           <H3 justify="center" padding="L 0">
             Visit Diane Sharp Photos
           </H3>
-          <A href={options.facebook} justify="center">
+          <FaceBookLink href={options.facebook}>
             Diane's Photos FaceBook
-          </A>
+          </FaceBookLink>
         </Grid>
       </Grid>
     </Page>
