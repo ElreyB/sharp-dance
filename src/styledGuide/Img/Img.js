@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 import { Credit } from "../internal/Credit";
 
-const ImgWrapper = styled(Grid)`
+const ImgWrapper = styled.div`
   position: relative;
 `;
 
-const ImgGrid = styled(Grid)`
+const ImgGrid = styled.div`
   background-repeat: no-repeat;
   background-position: center;
 `;

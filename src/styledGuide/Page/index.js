@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 import { Header } from "./Header";
 
-const PageContent = styled(Grid)`
+const PageContent = styled.div`
   max-width: 1050px;
   margin: 0 auto;
   min-height: 100vh;

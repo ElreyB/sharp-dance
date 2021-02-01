@@ -1,14 +1,21 @@
 import React from "react";
+import { Grid } from "gymnast";
 import textfit from "textfit";
 import styled from "styled-components/macro";
 
-// import { withGrid } from "../internal";
+import { withGrid } from "../internal";
 import { useElementWidth } from "./useElementWidth";
 
+import { FlexWrapper } from "../FlexWrapper";
+
+const Wrapper = styled(FlexWrapper)`
+  justify-content: center;
+`;
+
 function fitWrapper(Component, maxFontSize) {
-  // const Styled = styled(withGrid(Component))`
-  //   margin: 0;
-  // `;
+  const Styled = styled(withGrid(Component))`
+    margin: 0;
+  `;
   return ({ children, noResize, ...props }) => {
     const [ref, width, node] = useElementWidth();
     React.useLayoutEffect(() => {
@@ -23,9 +30,9 @@ function fitWrapper(Component, maxFontSize) {
     }, [node, children, noResize, width]);
 
     return (
-      <div ref={ref} justify="center" {...props}>
-        {children && <div>{children}</div>}
-      </div>
+      <Wrapper ref={ref} {...props}>
+        {children && <Styled>{children}</Styled>}
+      </Wrapper>
     );
   };
 }

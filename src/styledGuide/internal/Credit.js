@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
-import { Grid } from "gymnast";
 
-const StyledCredit = styled(Grid)`
+const StyledCredit = styled.div`
   word-wrap: break-word;
   overflow: wrap;
   white-space: normal;

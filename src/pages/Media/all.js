@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Grid } from "gymnast";
 import { Page, Banner, H2, Img } from "../../styledGuide";
 import { getPerformanceURL } from "./media.logic";
 import { random } from "lodash";
@@ -16,7 +15,7 @@ const StyledImg = styled(Img)`
   }
 `;
 
-const Border = styled(Grid)`
+const Border = styled.div`
   background: ${({ theme }) => theme.colors.black};
 `;
 

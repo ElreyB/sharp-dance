@@ -1,4 +1,3 @@
-import { Grid } from "gymnast";
 import React from "react";
 import styled from "styled-components/macro";
 import HamburgerButton from "../HamburgerButton";
@@ -83,7 +82,7 @@ const SideDrawer = ({ show, onClick }) => (
           }}
           onDeactivate={onClick}
         >
-          <Grid paddingTop="M">
+          <div>
             <HamburgerButton onClick={onClick} closed />
             {links.map(({ to, label }) => (
               <NavLink to={to} key={to}>
@@ -91,7 +90,7 @@ const SideDrawer = ({ show, onClick }) => (
               </NavLink>
             ))}
             <StyledSocialIcons />
-          </Grid>
+          </div>
         </FocusTrap>
       )}
     </Nav>

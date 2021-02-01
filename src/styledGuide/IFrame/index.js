@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 
 const StyledIframe = styled("iframe")`
@@ -19,7 +18,7 @@ export function IFrame({
   ...props
 }) {
   return (
-    <Grid {...{ margin, padding, size }} {...props}>
+    <div {...{ margin, padding, size }} {...props}>
       <StyledIframe
         src={src}
         title={title}
@@ -27,6 +26,6 @@ export function IFrame({
         frameborder="0"
         allowfullscreen
       ></StyledIframe>
-    </Grid>
+    </div>
   );
 }

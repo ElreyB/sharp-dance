@@ -1,6 +1,5 @@
 import React from "react";
 import { isImageURL } from "./utils";
-import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 
 import fallbackVideo from "./thumbnail.svg";
@@ -33,7 +32,7 @@ const useThumbnail = (src) => {
   return thumbnail;
 };
 
-const Poster = styled(Grid)`
+const Poster = styled.div`
   background-color: #eee;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,12 +45,12 @@ const Poster = styled(Grid)`
 `;
 
 export default ({ src, onClick }) => (
-  <Grid onClick={onClick} size="fit" role="button" tabIndex={0} margin="XS">
+  <div onClick={onClick} size="fit" role="button" tabIndex={0} margin="XS">
     <Poster
       paddingBottom="S"
       style={{
         backgroundImage: `url(${useThumbnail(src)})`,
       }}
     />
-  </Grid>
+  </div>
 );

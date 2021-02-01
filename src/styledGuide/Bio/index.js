@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 import { H3 } from "../Headings";
 import { Img } from "../Img";
 import { Markdown } from "../Markdown";
 
-const Name = (props) => <Grid {...props} marginRight="S" />;
+const Name = (props) => <div {...props} marginRight="S" />;
 const StyledName = styled(Name)`
   color: ${({ theme }) => theme.colors.blue};
 `;
@@ -28,34 +27,34 @@ export function Bio({
   }
 
   return (
-    <Grid {...props}>
+    <div {...props}>
       <H3 size={12} justify={{ desktop: "start", mobile: "center" }} noResize>
         <StyledName size={{ desktop: "fit", mobile: 12 }} justify="center">
           {name}
         </StyledName>
-        <Grid show="mobile" justify="center">
+        <div show="mobile" justify="center">
           {title}
-        </Grid>
+        </div>
         {title && (
-          <Grid show="desktop" size="auto">
+          <div show="desktop" size="auto">
             ({title})
-          </Grid>
+          </div>
         )}
       </H3>
-      <Grid
+      <div
         size={{ desktop: 3, mobile: 12 }}
         margin={{ desktop: "0 M 0 0", mobile: "0 M XL" }}
       >
-        <Grid justify="center" size={{ desktop: 12, mobile: 6 }}>
+        <div justify="center" size={{ desktop: 12, mobile: 6 }}>
           {imageList.map(({ src }) => (
             <Img src={src} key={src} credit={imgCredit} margin="S 0 0 0" />
           ))}
-        </Grid>
-      </Grid>
+        </div>
+      </div>
       <Markdown size="auto" marginBottom="2XL">
         {bio}
       </Markdown>
-    </Grid>
+    </div>
   );
 }
 

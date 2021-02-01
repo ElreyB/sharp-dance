@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Grid, Banner, Label, Page, P } from "../../styledGuide";
+import { Banner, Label, Page, P } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 import { PaypayForm } from "./PaypalForm";
@@ -58,39 +58,39 @@ export default function Tickets() {
   return (
     <Page>
       <Banner {...headerBanner} />
-      <Grid>
+      <div>
         <P>{description}</P>
         <Notes justify="center">{notes}</Notes>
         <StyledLabel>Tickets:</StyledLabel>
         <Sentence>{tickets}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Showtimes:</StyledLabel>
         <Sentence>{showtimes.map((time) => time).join(" - ")}</Sentence>
-      </Grid>
+      </div>
       {showtimes.map((time, i) => (
         <PaypayForm textAbove={time} textBelow={BELOW_TEXT[i]} key={i} />
       ))}
-      <Grid>
+      <div>
         <StyledLabel>Location:</StyledLabel>
         <Sentence>{location}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Address: </StyledLabel>
         <Sentence>{address}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Dancers: </StyledLabel>
         <Sentence>{dancers}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Manager: </StyledLabel>
         <Sentence>{manager}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Artistic Director: </StyledLabel>
         <Sentence>{director}</Sentence>
-      </Grid>
+      </div>
     </Page>
   );
 }

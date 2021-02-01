@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Grid, H3, Banner, Markdown, Page } from "../../styledGuide";
+import { H3, Banner, Markdown, Page } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
 import { A } from "../../styledGuide/A/A";
@@ -29,7 +29,7 @@ export default function DianeSharp() {
   return (
     <Page>
       <Banner {...headerBanner} />
-      <Grid align="start">
+      <div align="start">
         {director && (
           <>
             <Banner
@@ -40,15 +40,15 @@ export default function DianeSharp() {
             <Markdown marginTop="XL">{director.bio}</Markdown>
           </>
         )}
-        <Grid direction="row">
+        <div direction="row">
           <H3 justify="center" padding="L 0">
             Visit Diane Sharp Photos
           </H3>
           <FaceBookLink href={options.facebook}>
             Diane's Photos FaceBook
           </FaceBookLink>
-        </Grid>
-      </Grid>
+        </div>
+      </div>
     </Page>
   );
 }

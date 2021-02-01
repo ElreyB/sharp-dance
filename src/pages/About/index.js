@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Grid, H2, Banner, Markdown, Img, Page } from "../../styledGuide";
+import { div, H2, Banner, Markdown, Img, Page } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext, PagesContext } from "../../Providers";
 
@@ -18,10 +18,10 @@ export default function About() {
   return (
     <Page>
       <Banner {...headerBanner} />
-      <Grid align="start">
+      <div align="start">
         <Markdown>{options.content}</Markdown>
         {organizations && (
-          <Grid justify="center">
+          <div justify="center">
             <H2>Members</H2>
             {organizations.map((org) => (
               <Img
@@ -33,9 +33,9 @@ export default function About() {
                 key={org.organization}
               />
             ))}
-          </Grid>
+          </div>
         )}
-      </Grid>
+      </div>
     </Page>
   );
 }

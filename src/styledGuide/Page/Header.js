@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 import { A } from "../A";
 import { Nav } from "../Nav";
@@ -14,7 +13,7 @@ import { SHARP_CO } from "../../constants";
 const StyledH1 = styled(H1)`
   color: ${({ theme }) => theme.colors.white};
 `;
-const StyledGrid = styled(Grid)`
+const StyledGrid = styled.div`
   position: fixed;
   height: 45px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};

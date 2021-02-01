@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
-import { useGrid } from "gymnast";
 
 const StyledBlockquote = styled("blockquote")`
   margin-block-start: 0;
@@ -14,9 +13,7 @@ const StyledBlockquote = styled("blockquote")`
 `;
 
 export const Blockquote = ({ children, ...props }) => {
-  const [, allProps] = useGrid({ marginBottom: "M", ...props });
-
-  return <StyledBlockquote {...allProps}>{children}</StyledBlockquote>;
+  return <StyledBlockquote {...props}>{children}</StyledBlockquote>;
 };
 
 Blockquote.propTypes = {

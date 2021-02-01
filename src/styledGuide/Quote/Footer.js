@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useGrid } from "gymnast";
 import styled from "styled-components/macro";
 
 const StyledFooter = styled("footer")`
@@ -9,9 +8,7 @@ const StyledFooter = styled("footer")`
 `;
 
 export const Footer = ({ children, ...props }) => {
-  const [, allProps] = useGrid(props);
-
-  return <StyledFooter {...allProps}>{children}</StyledFooter>;
+  return <StyledFooter {...props}>{children}</StyledFooter>;
 };
 
 Footer.propTypes = {

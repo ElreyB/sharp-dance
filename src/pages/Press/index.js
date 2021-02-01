@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Page, Banner, Quote, Grid } from "../../styledGuide";
+import { Page, Banner, Quote } from "../../styledGuide";
 import Loading from "../Loading";
 import { PagesContext, PressContext, QuotesContext } from "../../Providers";
 import { PressItem } from "./pressItem";
@@ -9,7 +9,7 @@ import { random } from "lodash";
 import { A } from "../../styledGuide/A/A";
 import { P } from "../../styledGuide/P/P";
 
-const Sentence = styled(Grid)`
+const Sentence = styled.div`
   font-size: 18px;
 `;
 
@@ -46,9 +46,9 @@ export default function Press() {
           and we will send one directly to you.
         </P>
       </Sentence>
-      <Grid justify="center" size={9} margin="L 0">
+      <div justify="center" size={9} margin="L 0">
         <Quote {...quotes[random(0, quotes.length - 1)]} />
-      </Grid>
+      </div>
       {press
         .filter((item) => !!item.description)
         .map(({ id, ...props }) => (

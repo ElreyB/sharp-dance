@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Grid } from "gymnast";
 import PropTypes from "prop-types";
 import { Img } from "./Img";
 import { Credit } from "../internal/Credit";
@@ -23,8 +22,8 @@ export const ImgGroup = ({ src, alt, credit, backgroundSize, ...props }) => {
   }
 
   return (
-    <Grid>
-      <Grid
+    <div>
+      <div
         size={{
           desktop: "auto",
           mobile: 12,
@@ -40,14 +39,14 @@ export const ImgGroup = ({ src, alt, credit, backgroundSize, ...props }) => {
             backgroundSize={backgroundSize}
           />
         ))}
-      </Grid>
+      </div>
       <Credit
         size={{ desktop: "fit", mobile: 12 }}
         align={{ desktop: "end", mobile: "start" }}
       >
         {credit}
       </Credit>
-    </Grid>
+    </div>
   );
 };
 

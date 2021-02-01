@@ -1,11 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useGrid } from "gymnast";
 
 export const Cite = ({ children, ...props }) => {
-  const [, allProps] = useGrid(props);
-
-  return <cite {...allProps}>{children}</cite>;
+  return <cite {...props}>{children}</cite>;
 };
 
 Cite.propTypes = {

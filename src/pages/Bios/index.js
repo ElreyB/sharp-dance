@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Grid, Bio, H2, Banner, Page } from "../../styledGuide";
+import { Bio, H2, Banner, Page } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
 
@@ -24,7 +24,7 @@ export default function Bios() {
   return (
     <Page>
       <Banner {...headerBanner} />
-      <Grid align="start">
+      <div align="start">
         {performers && (
           <>
             <H2 justify="center" margin="M M XL M">
@@ -55,7 +55,7 @@ export default function Bios() {
           </H2>
           {staff && staff.filter(isNotDirector).map(getBio)}
         </>
-      </Grid>
+      </div>
     </Page>
   );
 }

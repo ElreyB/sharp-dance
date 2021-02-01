@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Grid } from "gymnast";
 import styled from "styled-components/macro";
 import { TiTicket, TiGlobeOutline } from "react-icons/ti";
 import { P } from "../P/P";
@@ -51,32 +50,32 @@ export const Schedule = ({
   website,
 }) => {
   return (
-    <Grid size={size} margin={margin} padding={padding}>
-      <Grid>
+    <div size={size} margin={margin} padding={padding}>
+      <div>
         {name && <StyledH3 size="fit">{name}</StyledH3>}
         <IconAnchor url={purchaseUrl} Icon={TiTicket} />
         <IconAnchor url={website} Icon={TiGlobeOutline} />
-      </Grid>
+      </div>
       {description && <P>{description}</P>}
-      <Grid size={{ mobile: "auto", desktop: "fit" }}>
+      <div size={{ mobile: "auto", desktop: "fit" }}>
         {(location || address) && (
           <P>{[location, address].filter((a) => !!a).join(" - ")}</P>
         )}
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         {dates.map(({ days, month, time, notes }, i) => (
-          <Grid key={i}>
-            <Grid size="fit" paddingRight="S">
+          <div key={i}>
+            <div size="fit" paddingRight="S">
               {monthName[month]}, {days}
-            </Grid>
-            <Grid size="fit" paddingRight="S">
+            </div>
+            <div size="fit" paddingRight="S">
               {time}
-            </Grid>
-            <Grid size="fit">{notes}</Grid>
-          </Grid>
+            </div>
+            <div size="fit">{notes}</div>
+          </div>
         ))}
-      </Grid>
-    </Grid>
+      </div>
+    </div>
   );
 };
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Poster from "./poster";
-import { Grid } from "gymnast";
 import Carousel, { ModalGateway, Modal } from "react-images";
 import View from "./view";
 
@@ -9,7 +8,7 @@ export default function Slides({ sources }) {
 
   return (
     <>
-      <Grid className="slides" style={{ overflow: "hidden" }}>
+      <div className="slides" style={{ overflow: "hidden" }}>
         {sources.map(({ src }, i) => (
           <Poster
             margin="XS"
@@ -18,7 +17,7 @@ export default function Slides({ sources }) {
             onClick={() => setCurrentModal(i)}
           />
         ))}
-      </Grid>
+      </div>
       <ModalGateway>
         {currentModal !== null ? (
           <Modal

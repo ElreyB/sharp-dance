@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Grid } from "gymnast";
 import { H2, H3, H4 } from "../Headings";
 import { P } from "../P/P";
 import Slides from "./slides";
@@ -38,16 +37,16 @@ export function Album({
   ...props
 }) {
   const message = getMessage(availableForTour, availableForPerformance);
-  const Wrapper = link ? (props) => <A to={link} {...props} /> : Grid;
+  const Wrapper = link ? (props) => <A to={link} {...props} /> : <div />;
 
   return (
     <Wrapper {...props} align="start" padding="M">
-      <Grid>
+      <div>
         {title && <H2 size="fit">{title}</H2>}
         {message && <H4>({message})</H4>}
         {subtitle && <H3>{subtitle}</H3>}
         {content && <P>{content}</P>}
-      </Grid>
+      </div>
       <Slides
         sources={[...videos, ...images].map((source) => ({
           src: source.src || source.url,

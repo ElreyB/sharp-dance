@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useGrid } from "gymnast";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 import { Header } from "./Header";
@@ -25,26 +24,21 @@ export const Banner = ({
   justify = "center",
   ...props
 }) => {
-  const [showH1, allProps] = useGrid(props);
   const imgSrc = images || image;
 
-  if (showH1) {
-    return (
-      <Header {...allProps}>
-        <H1 justify={justify}>{title}</H1>
-        <StyledImgGroup
-          src={imgSrc}
-          alt={alt}
-          credit={imgCredit}
-          justify={justify}
-          backgroundSize="contain"
-        />
-        {subtitle && <H2 justify={justify}>{subtitle}</H2>}
-      </Header>
-    );
-  }
-
-  return null;
+  return (
+    <Header {...props}>
+      <H1 justify={justify}>{title}</H1>
+      <StyledImgGroup
+        src={imgSrc}
+        alt={alt}
+        credit={imgCredit}
+        justify={justify}
+        backgroundSize="contain"
+      />
+      {subtitle && <H2 justify={justify}>{subtitle}</H2>}
+    </Header>
+  );
 };
 
 Banner.propTypes = {

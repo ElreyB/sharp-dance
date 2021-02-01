@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner, Grid, Page, Schedule, H3, IFrame } from "../../styledGuide";
+import { Banner, Page, Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
@@ -10,10 +10,10 @@ const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 function ClassSchedule({ season, ...upcomingClasses }) {
   return (
-    <Grid>
+    <div>
       {season && <H3>{season}</H3>}
       <Schedule {...upcomingClasses} margin="0 0 L 0" />
-    </Grid>
+    </div>
   );
 }
 

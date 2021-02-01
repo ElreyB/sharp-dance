@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Grid, Img, H3 } from "../../styledGuide";
+import { Img, H3 } from "../../styledGuide";
 import { A } from "../../styledGuide/A/A";
 import { P } from "../../styledGuide/P/P";
 
-const Wrapper = styled(Grid)`
+const Wrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};
 `;
 const makeIntoLink = (content, url) => {
@@ -30,14 +30,14 @@ export function PressItem({
         <Img backgroundSize="contain" src={logo.src} alt={logo.title} />,
         url
       )}
-      <Grid size="auto" align="start">
+      <div size="auto" align="start">
         {description && <P>{description}</P>}
         {(author || date) && (
-          <Grid justify="end" size="fit">
+          <div justify="end" size="fit">
             {author} {date}
-          </Grid>
+          </div>
         )}
-      </Grid>
+      </div>
     </Wrapper>
   );
 }

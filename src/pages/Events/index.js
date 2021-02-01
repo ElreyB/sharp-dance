@@ -1,5 +1,5 @@
 import React, { useContext, Fragment } from "react";
-import { Grid, Banner, Page, Schedule, H3 } from "../../styledGuide";
+import { Banner, Page, Schedule, H3 } from "../../styledGuide";
 import Loading from "../Loading";
 import {
   groupPerformancesByYear,
@@ -52,13 +52,13 @@ export default function Events(props) {
   return (
     <Page>
       <Banner {...headerBanner} />
-      <Grid align="start">
+      <div align="start">
         {isEventPage && performanceArr.length === 0 ? (
           <NoUpcomingEvents />
         ) : (
           performanceArr
         )}
-      </Grid>
+      </div>
     </Page>
   );
 }

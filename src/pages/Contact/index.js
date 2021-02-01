@@ -3,7 +3,6 @@ import styled from "styled-components/macro";
 import { Page, Banner } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
-import { MailingListForm } from "../../styledGuide";
 
 import { A } from "../../styledGuide/A/A";
 import { P } from "../../styledGuide/P/P";
@@ -126,7 +125,6 @@ export default function Contact() {
       )}
       {contactEmail && <EmailLink>{contactEmail}</EmailLink>}
       {contactPhone && <PhoneLink>{contactPhone}</PhoneLink>}
-      <MailingListForm />
     </Page>
   );
 }
