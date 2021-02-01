@@ -5,6 +5,15 @@ import { A } from "../A/A";
 import { Label } from "../Label/Label";
 
 const StyledLi = styled.li`
+  border: 0px solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: auto;
+  white-space: nowrap;
+
   & ul {
     display: none;
     position: absolute;
