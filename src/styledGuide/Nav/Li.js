@@ -1,5 +1,4 @@
 import React from "react";
-import { useGrid } from "gymnast";
 import styled from "styled-components/macro";
 
 import { A } from "../A/A";
@@ -50,10 +49,8 @@ const StyledAnchor = styled(A)`
 `;
 
 export const Li = ({ to, label, children, ...props }) => {
-  const [, allProps] = useGrid({ size: "fit", margin: "0 M", ...props });
-
   return (
-    <StyledLi {...allProps}>
+    <StyledLi {...props}>
       {to && <StyledAnchor to={to}>{label}</StyledAnchor>}
       {!to && <Label>{label}</Label>}
       {children}
