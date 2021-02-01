@@ -3,7 +3,7 @@ import { useGrid } from "gymnast";
 import styled from "styled-components/macro";
 
 import { A } from "../A/A";
-import { Label } from "../Label";
+import { Label } from "../Label/Label";
 
 const StyledLi = styled.li`
   & ul {
@@ -55,7 +55,7 @@ export const Li = ({ to, label, children, ...props }) => {
   return (
     <StyledLi {...allProps}>
       {to && <StyledAnchor to={to}>{label}</StyledAnchor>}
-      {!to && <Label size="fit">{label}</Label>}
+      {!to && <Label>{label}</Label>}
       {children}
     </StyledLi>
   );

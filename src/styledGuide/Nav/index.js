@@ -63,7 +63,7 @@ export const Nav = React.forwardRef((props, ref) => {
                 margin="2.5 0 0 0"
               >
                 {sub.map((li) => (
-                  <Li {...li} key={li.label} size="fit" />
+                  <Li {...li} key={li.label} />
                 ))}
               </Ul>
             )}

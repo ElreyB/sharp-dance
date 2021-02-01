@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Page, Banner, Grid, Label } from "../../styledGuide";
+import { Page, Banner } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 import { MailingListForm } from "../../styledGuide";
 
 import { A } from "../../styledGuide/A/A";
 import { P } from "../../styledGuide/P/P";
+import { Label } from "../../styledGuide/Label/Label";
 
 const StyledP = styled(P)`
   padding-top: ${({ theme, pT }) => (pT ? theme.spacing[pT] : 0)};
