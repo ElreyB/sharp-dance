@@ -6,7 +6,7 @@ import styled from "styled-components/macro";
 import { withGrid } from "../internal";
 import { useElementWidth } from "./useElementWidth";
 
-import { FlexWrapper } from "../FlexWrapper";
+import FlexWrapper from "../FlexWrapper";
 
 const Wrapper = styled(FlexWrapper)`
   justify-content: center;

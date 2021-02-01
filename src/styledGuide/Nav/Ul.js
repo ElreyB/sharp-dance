@@ -4,6 +4,7 @@ import styled from "styled-components/macro";
 const StyledUl = styled.ul`
   list-style-type: none;
   margin: 0;
+  display: flex;
   //add media query for moblie and desktop
 `;
 

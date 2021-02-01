@@ -12,7 +12,7 @@ const Div = styled.div`
   white-space: nowrap;
 `;
 
-export function FlexWrapper({ children, ...props }) {
+export default function FlexWrapper({ children, ...props }) {
   return <Div {...props}>{children}</Div>;
 }
 

@@ -1,3 +1,5 @@
+import { css } from "styled-components/macro";
+
 const colors = {
   black: "#000000",
   white: "#ffffff",
@@ -23,9 +25,42 @@ const device = {
   mobile: "(max-width: 600px)",
 };
 
+export const breakpoints = {
+  xs: "480px",
+  sm: "768px",
+  md: "992px",
+  lg: "1200px",
+};
+
+export const mediaMax = Object.keys(breakpoints).reduce(
+  (accumulator, label) => {
+    accumulator[label] = (...args) => css`
+      @media (max-width: ${breakpoints[label]}) {
+        ${css(...args)};
+      }
+    `;
+    return accumulator;
+  },
+  {}
+);
+
+export const mediaMin = Object.keys(breakpoints).reduce(
+  (accumulator, label) => {
+    accumulator[label] = (...args) => css`
+      @media (min-width: ${breakpoints[label]}) {
+        ${css(...args)};
+      }
+    `;
+    return accumulator;
+  },
+  {}
+);
+
 export const theme = {
   colors,
   fonts,
   spacing,
   device,
+  mediaMax,
+  mediaMin,
 };
