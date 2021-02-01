@@ -14,7 +14,7 @@ const PageContent = styled.div`
 export const Page = ({ children, ...props }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <PageContent
         {...props}
         align="start"

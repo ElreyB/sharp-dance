@@ -13,6 +13,8 @@ import Media from "./pages/Media";
 import Press from "./pages/Press";
 import DianeSharp from "./pages/DianeSharp";
 import Tickets from "./pages/Tickets";
+
+import Header from "./components/Header";
 import {
   ABOUT,
   BIOS,
@@ -46,6 +48,7 @@ function App() {
       }}
     >
       <Router>
+        <Header />
         <ScrollToTop />
         <Switch>
           <Route path={ABOUT} exact component={component(About)} />
