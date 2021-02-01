@@ -45,6 +45,10 @@ const NavLink = styled(A)`
   padding: ${({ theme }) => `${theme.spacing.XS} ${theme.spacing.M}`};
 `;
 
+const StyledSocialIcons = styled(SocialIcons)`
+  margin-top: ${({ theme }) => theme.spacing.M};
+`;
+
 const links = [
   { to: ABOUT, label: "About" },
   { to: TICKETS, label: "Tickets" },
@@ -86,7 +90,7 @@ const SideDrawer = ({ show, onClick }) => (
                 {label}
               </NavLink>
             ))}
-            <SocialIcons paddingTop="M" />
+            <StyledSocialIcons />
           </Grid>
         </FocusTrap>
       )}

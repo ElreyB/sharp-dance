@@ -6,7 +6,6 @@ import { Label } from "../Label/Label";
 
 const StyledLi = styled.li`
   border: 0px solid transparent;
-  box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
   flex-grow: 0;

@@ -1,31 +1,25 @@
 import React from "react";
-import { Grid } from "gymnast";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { A } from "../A/A";
+import { FlexWrapper } from "../FlexWrapper";
 import styled from "styled-components/macro";
 
 const IconLink = styled(A)`
   width: 33.33%;
 `;
 
-export const SocialIcons = ({ className, ...props }) => {
+export const SocialIcons = (props) => {
   return (
-    <Grid size="fit" className={className} {...props}>
+    <FlexWrapper {...props}>
       <IconLink href="https://www.facebook.com/sharpdance/">
-        <Grid padding="S 0">
-          <FaFacebookF size={24} />
-        </Grid>
+        <FaFacebookF size={24} />
       </IconLink>
       <IconLink href="https://www.instagram.com/sharpdancephilly/">
-        <Grid padding="S 0">
-          <FaInstagram size={24} />
-        </Grid>
+        <FaInstagram size={24} />
       </IconLink>
       <IconLink href="https://twitter.com/sharpdancephila/">
-        <Grid padding="S 0">
-          <FaTwitter size={24} />
-        </Grid>
+        <FaTwitter size={24} />
       </IconLink>
-    </Grid>
+    </FlexWrapper>
   );
 };
