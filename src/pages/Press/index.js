@@ -1,17 +1,22 @@
 import React from "react";
-import styled from "styled-components";
-import { Page, Banner, Quote, Grid, A, P } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Page, Banner, Quote, Grid } from "../../styledGuide";
 import Loading from "../Loading";
 import { PagesContext, PressContext, QuotesContext } from "../../Providers";
 import { PressItem } from "./pressItem";
 import { random } from "lodash";
+
+import { A } from "../../styledGuide/A/A";
+import { P } from "../../styledGuide/P/P";
 
 const Sentence = styled(Grid)`
   font-size: 18px;
 `;
 
 const Anchor = styled(A)`
+  display: inline-block;
   font-style: italic;
+  width: auto;
 `;
 
 export default function Press() {
@@ -30,19 +35,14 @@ export default function Press() {
     <Page>
       <Banner {...headerBanner} />
       <Sentence>
-        <P size="fit" justify={{ mobile: "center" }}>
+        <P>
           To receive a press kit please email us at
-        </P>
-        <Anchor
-          title="Email"
-          href={`mailto:${options.email}?subject=Press Kit`}
-          size="fit"
-          margin="0"
-          justify={{ mobile: "center" }}
-        >
-          {options.email}
-        </Anchor>
-        <P size="fit" justify={{ mobile: "center" }}>
+          <Anchor
+            title="Email"
+            href={`mailto:${options.email}?subject=Press Kit`}
+          >
+            {options.email}
+          </Anchor>
           and we will send one directly to you.
         </P>
       </Sentence>

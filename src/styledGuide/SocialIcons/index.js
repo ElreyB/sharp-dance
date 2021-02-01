@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "gymnast";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { A } from "../A/A";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const IconLink = styled(A)`
   width: 33.33%;

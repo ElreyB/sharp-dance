@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "gymnast";
 import { H2, H3, H4 } from "../Headings";
-import { P } from "../P";
+import { P } from "../P/P";
 import Slides from "./slides";
 import { A } from "../A/A";
 

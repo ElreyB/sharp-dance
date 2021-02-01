@@ -1,7 +1,7 @@
 import React from "react";
 import { Album, Page, Banner } from "../../styledGuide";
 import { MEDIA } from "../../constants";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { A } from "../../styledGuide/A/A";
 

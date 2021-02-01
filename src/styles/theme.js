@@ -10,6 +10,7 @@ const spacing = {
   S: "8px",
   M: "16px",
   L: "24px",
+  XL: "32px",
 };
 
 const fonts = {

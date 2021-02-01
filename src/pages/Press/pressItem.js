@@ -1,7 +1,8 @@
 import React from "react";
-import styled from "styled-components";
-import { Grid, Img, H3, P } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Grid, Img, H3 } from "../../styledGuide";
 import { A } from "../../styledGuide/A/A";
+import { P } from "../../styledGuide/P/P";
 
 const Wrapper = styled(Grid)`
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};
@@ -30,7 +31,7 @@ export function PressItem({
         url
       )}
       <Grid size="auto" align="start">
-        {description && <P size={12}>{description}</P>}
+        {description && <P>{description}</P>}
         {(author || date) && (
           <Grid justify="end" size="fit">
             {author} {date}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components/macro";
 import { P } from "../P";
 import { Button } from "../Button";
 import { Input } from "../Input";

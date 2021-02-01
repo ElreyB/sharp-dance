@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useGrid } from "gymnast";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Header } from "./Header";
 import { H1, H2 } from "../Headings";
 import { ImgGroup } from "../Img";

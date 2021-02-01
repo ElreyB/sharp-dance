@@ -3,7 +3,7 @@ import { Grid, H3, Banner, Markdown, Page } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
 import { A } from "../../styledGuide/A/A";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const isDirector = ({ director }) => director;
 

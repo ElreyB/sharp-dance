@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Grid, Banner, Label, Page, P } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
@@ -23,7 +23,7 @@ const Notes = styled(P)`
 
 const Sentence = styled((props) => <P {...props} size="auto" />)``;
 
-export default function Home() {
+export default function Tickets() {
   const { getPage } = React.useContext(PagesContext);
   const page = getPage("tickets");
 
@@ -54,7 +54,6 @@ export default function Home() {
     showtimes,
     tickets,
   } = options;
-  console.log(showPage);
   if (!showPage) return null;
   return (
     <Page>

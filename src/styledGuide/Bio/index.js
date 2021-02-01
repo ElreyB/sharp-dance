@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { H3 } from "../Headings";
 import { Img } from "../Img";
 import { Markdown } from "../Markdown";

@@ -1,7 +1,7 @@
 import { Grid } from "gymnast";
 import React from "react";
 import ReactPlayer from "react-player";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { useWindowResize } from "./useWindowSize";
 

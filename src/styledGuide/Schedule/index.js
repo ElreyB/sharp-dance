@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Grid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { TiTicket, TiGlobeOutline } from "react-icons/ti";
-import { P } from "../P";
+import { P } from "../P/P";
 import { H3 } from "../Headings";
 
 function IconAnchor({ Icon, url }) {

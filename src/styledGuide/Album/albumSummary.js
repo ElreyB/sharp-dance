@@ -1,5 +1,5 @@
 import React from "react";
-import Styled from "styled-components";
+import Styled from "styled-components/macro";
 import { Album } from ".";
 
 export const AlbumSummary = Styled((props) => <Album {...props} subtitle="" />)`
@@ -21,7 +21,7 @@ export const AlbumSummary = Styled((props) => <Album {...props} subtitle="" />)`
     p:before {
         box-shadow: inset 0px -20px 20px 0px rgba(0,0,0,0.75);
     }
-    
+
     .slides:before {
         box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.75);
     }
