@@ -1,5 +1,4 @@
 import React from "react";
-import { Banner } from "../../styledGuide";
 import { node } from "prop-types";
 import styled from "styled-components/macro";
 
