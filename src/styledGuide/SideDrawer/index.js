@@ -46,6 +46,11 @@ const NavLink = styled(A)`
 
 const StyledSocialIcons = styled(SocialIcons)`
   margin-top: ${({ theme }) => theme.spacing.M};
+  width: 50%;
+`;
+
+const HamburgerWrapper = styled.div`
+  padding: 8px 16px;
 `;
 
 const links = [
@@ -83,7 +88,9 @@ const SideDrawer = ({ show, onClick }) => (
           onDeactivate={onClick}
         >
           <div>
-            <HamburgerButton onClick={onClick} closed />
+            <HamburgerWrapper>
+              <HamburgerButton onClick={onClick} closed />
+            </HamburgerWrapper>
             {links.map(({ to, label }) => (
               <NavLink to={to} key={to}>
                 {label}

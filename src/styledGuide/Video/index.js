@@ -1,7 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components/macro";
-import FlexWrapper from "../FlexWrapper";
 
 import { useWindowResize } from "./useWindowSize";
 

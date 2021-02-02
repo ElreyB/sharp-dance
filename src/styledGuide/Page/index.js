@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
-import { Header } from "./Header";
 
 const PageContent = styled.div`
   max-width: 1050px;
@@ -14,7 +13,6 @@ const PageContent = styled.div`
 export const Page = ({ children, ...props }) => {
   return (
     <>
-      {/* <Header /> */}
       <PageContent
         {...props}
         align="start"

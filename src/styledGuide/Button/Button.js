@@ -3,10 +3,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 import FlexWrapper from "../FlexWrapper";
 
-const Wrapper = styled(FlexWrapper)`
-  padding: 8px 16px;
-`;
-
 const StyledButton = styled.button`
   display: flex;
   flex-flow: row wrap;
@@ -20,11 +16,9 @@ const StyledButton = styled.button`
 export const Button = React.forwardRef(
   ({ children, role = "button", ...props }, ref) => {
     return (
-      <Wrapper>
-        <StyledButton {...props} ref={ref}>
-          {children}
-        </StyledButton>
-      </Wrapper>
+      <StyledButton {...props} ref={ref}>
+        {children}
+      </StyledButton>
     );
   }
 );

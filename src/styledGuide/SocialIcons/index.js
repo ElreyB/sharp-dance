@@ -4,13 +4,22 @@ import { A } from "../A/A";
 import FlexWrapper from "../FlexWrapper";
 import styled from "styled-components/macro";
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: auto;
+  white-space: nowrap;
+`;
+
 const IconLink = styled(A)`
   width: 33.33%;
 `;
 
 export const SocialIcons = (props) => {
   return (
-    <FlexWrapper {...props}>
+    <Wrapper {...props}>
       <IconLink href="https://www.facebook.com/sharpdance/">
         <FaFacebookF size={24} />
       </IconLink>
@@ -20,6 +29,6 @@ export const SocialIcons = (props) => {
       <IconLink href="https://twitter.com/sharpdancephila/">
         <FaTwitter size={24} />
       </IconLink>
-    </FlexWrapper>
+    </Wrapper>
   );
 };
