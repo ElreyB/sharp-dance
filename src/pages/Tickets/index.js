@@ -56,8 +56,7 @@ export default function Tickets() {
   } = options;
   if (!showPage) return null;
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       <div>
         <P>{description}</P>
         <Notes justify="center">{notes}</Notes>

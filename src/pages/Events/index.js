@@ -1,5 +1,5 @@
 import React, { useContext, Fragment } from "react";
-import { Banner, Page, Schedule, H3 } from "../../styledGuide";
+import { Schedule, H3 } from "../../styledGuide";
 import Loading from "../Loading";
 import {
   groupPerformancesByYear,
@@ -9,6 +9,7 @@ import {
 import { EVENTS } from "../../constants";
 import { PerformancesContext, PagesContext } from "../../Providers";
 import NoUpcomingEvents from "./NoUpcomingEvents";
+import Page from "../../layouts/Page";
 
 // https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F6.jpg?alt=media&token=e4ebd608-54c1-4aae-a0d3-5db4dd60511b
 
@@ -50,8 +51,7 @@ export default function Events(props) {
         .map(renderPerformances);
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       <div align="start">
         {isEventPage && performanceArr.length === 0 ? (
           <NoUpcomingEvents />

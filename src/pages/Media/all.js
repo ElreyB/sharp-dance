@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Page, Banner, H2, Img } from "../../styledGuide";
+import { H2, Img } from "../../styledGuide";
 import { getPerformanceURL } from "./media.logic";
 import { random } from "lodash";
 import { A } from "../../styledGuide/A/A";
+import Page from "../../layouts/Page";
 
 const StyledImg = styled(Img)`
   max-width: 100%;
@@ -30,8 +31,7 @@ const MediaAnchor = styled(A)`
 export default function Media({ headerBanner, media }) {
   const filterMedia = media.filter((album) => Number(album.id) < 6);
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       {filterMedia.length > 0 ? (
         filterMedia.map(({ title, images }, i) => {
           const photo = images[random(0, images.length - 1)];

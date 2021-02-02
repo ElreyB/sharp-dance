@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Page, Banner, Quote } from "../../styledGuide";
+import { Quote } from "../../styledGuide";
 import Loading from "../Loading";
 import { PagesContext, PressContext, QuotesContext } from "../../Providers";
 import { PressItem } from "./pressItem";
@@ -8,6 +8,7 @@ import { random } from "lodash";
 
 import { A } from "../../styledGuide/A/A";
 import { P } from "../../styledGuide/P/P";
+import Page from "../../layouts/Page";
 
 const Sentence = styled.div`
   font-size: 18px;
@@ -32,8 +33,7 @@ export default function Press() {
   const { options, pageName, ...headerBanner } = page;
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       <Sentence>
         <P>
           To receive a press kit please email us at

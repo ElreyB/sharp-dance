@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { Markdown, Img } from "../../styledGuide";
+import { Markdown } from "../../styledGuide";
 import Image from "../../styledGuide/Image";
 import Loading from "../Loading";
 import { OrganizationsContext, PagesContext } from "../../Providers";
-import MainLayout from "../../layouts/MainLayout";
 import styled from "styled-components/macro";
+import Page from "../../layouts/Page";
 
 const H2 = styled.h2`
   text-align: center;
@@ -34,7 +34,7 @@ export default function About() {
   const { options = {}, pageName, ...headerBanner } = page;
 
   return (
-    <MainLayout headerBanner={headerBanner}>
+    <Page headerBanner={headerBanner}>
       <Markdown>{options.content}</Markdown>
       {organizations && (
         <>
@@ -50,6 +50,6 @@ export default function About() {
           </ImageGroup>
         </>
       )}
-    </MainLayout>
+    </Page>
   );
 }

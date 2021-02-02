@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Page, Banner } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 
 import { A } from "../../styledGuide/A/A";
 import { P } from "../../styledGuide/P/P";
 import { Label } from "../../styledGuide/Label/Label";
+import Page from "../../layouts/Page";
 
 const StyledP = styled(P)`
   padding-top: ${({ theme, pT }) => (pT ? theme.spacing[pT] : 0)};
@@ -104,8 +104,7 @@ export default function Contact() {
   } = options;
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       {mailingAddress && (
         <TitleLink pT="XL" title="Mailing Address">
           {mailingAddress}

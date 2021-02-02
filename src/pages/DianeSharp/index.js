@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import { H3, Banner, Markdown, Page } from "../../styledGuide";
+import { H3, Markdown, Banner } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
 import { A } from "../../styledGuide/A/A";
 import styled from "styled-components/macro";
+import Page from "../../layouts/Page";
 
 const isDirector = ({ director }) => director;
 
@@ -27,8 +28,7 @@ export default function DianeSharp() {
   const { options, pageName, ...headerBanner } = page;
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       <div align="start">
         {director && (
           <>

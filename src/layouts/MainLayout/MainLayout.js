@@ -14,10 +14,9 @@ const Wrapper = styled.div`
 
 const Main = styled.main``;
 
-export default function MainLayout({ headerBanner, children, ...props }) {
+export default function MainLayout({ children, ...props }) {
   return (
     <Wrapper {...props}>
-      <Banner {...headerBanner} />
       <Main>{children}</Main>
     </Wrapper>
   );

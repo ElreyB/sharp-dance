@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import { Bio, H2, Banner, Page } from "../../styledGuide";
+import { Bio, H2 } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
+import Page from "../../layouts/Page";
 
 // Removes director prop since it's not meant to be passed to the component
 const getBio = ({ director, ...bio }) => <Bio {...bio} key={bio.name} />;
@@ -22,8 +23,7 @@ export default function Bios() {
   const { options, pageName, ...headerBanner } = page;
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       <div align="start">
         {performers && (
           <>

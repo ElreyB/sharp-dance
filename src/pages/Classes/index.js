@@ -1,8 +1,9 @@
 import React from "react";
-import { Banner, Page, Schedule, H3, IFrame } from "../../styledGuide";
+import { Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
+import Page from "../../layouts/Page";
 
 const now = new Date().getTime();
 const isFuture = (time) => time > now;
@@ -39,8 +40,7 @@ export default function Classes() {
     .filter((classSchedule) => !!classSchedule);
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       {options.content}
       <IFrame
         margin="M 0"
