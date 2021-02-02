@@ -25,6 +25,7 @@ const StyledGrid = styled(FlexWrapper)`
   background-color: ${({ theme }) => theme.colors.black};
   z-index: 1;
   width: 100%;
+  padding: 5px 0;
 `;
 const UndecoratedA = styled(A)`
   text-decoration: none;
@@ -32,13 +33,13 @@ const UndecoratedA = styled(A)`
 `;
 
 const StyledHamburger = styled(HamburgerButton)`
-  ${({ theme }) => theme.mediaMin.sm`
+  ${({ theme }) => theme.mediaMin.md`
   display: none
   `}
 `;
 
 const StyledNav = styled(Nav)`
-  ${({ theme }) => theme.mediaMax.sm`
+  ${({ theme }) => theme.mediaMax.md`
   display: none
   `}
 
@@ -49,7 +50,7 @@ const StyledNav = styled(Nav)`
 `;
 
 const DesktopSocialIcons = styled(SocialIcons)`
-  ${({ theme }) => theme.mediaMax.sm`
+  ${({ theme }) => theme.mediaMax.md`
   display: none
   `}
 `;

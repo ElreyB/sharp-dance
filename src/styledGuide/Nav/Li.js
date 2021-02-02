@@ -16,7 +16,7 @@ const StyledLi = styled.li`
   & ul {
     display: none;
     position: absolute;
-    top: 24px;
+    top: 44px;
 
     &:before {
       position: absolute;
