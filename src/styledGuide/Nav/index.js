@@ -47,7 +47,7 @@ const links = [
 
 export const Nav = React.forwardRef((props, ref) => {
   return (
-    <nav {...props} ref={ref}>
+    <nav {...props}>
       <Ul>
         {links.map(({ to, label, sub = [] }) => (
           <Li to={to} key={label} label={label}>

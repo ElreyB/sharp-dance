@@ -12,11 +12,19 @@ const StyledLi = styled.li`
   flex-shrink: 0;
   width: auto;
   white-space: nowrap;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    bottom: -5px;
+  }
 
   & ul {
     display: none;
     position: absolute;
-    top: 44px;
+    top: 34px;
 
     &:before {
       position: absolute;
