@@ -1,8 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
-import { Header } from "./Header";
-import { H1, H2 } from "../Headings";
+// import { H2 } from "../Headings";
 import { ImgGroup } from "../Img";
 
 const StyledImgGroup = styled(ImgGroup)`
@@ -13,22 +12,30 @@ const StyledImgGroup = styled(ImgGroup)`
   }
 `;
 
+const H1 = styled.h1`
+  text-align: center;
+`;
+const H2 = styled.h2`
+  text-align: center;
+`;
+
+const Header = styled.header``;
+
 export const Banner = ({
   title,
-  subTitle,
-  subtitle = subTitle,
+  subtitle,
   images,
   image,
   alt,
   imgCredit,
   justify = "center",
+  inputCount,
   ...props
 }) => {
   const imgSrc = images || image;
-
   return (
     <Header {...props}>
-      <H1 justify={justify}>{title}</H1>
+      <H1>{title}</H1>
       <StyledImgGroup
         src={imgSrc}
         alt={alt}
@@ -36,7 +43,7 @@ export const Banner = ({
         justify={justify}
         backgroundSize="contain"
       />
-      {subtitle && <H2 justify={justify}>{subtitle}</H2>}
+      {subtitle && <H2>{subtitle}</H2>}
     </Header>
   );
 };
@@ -62,6 +69,5 @@ Banner.propTypes = {
     ),
   ]),
   subtitle: PropTypes.string,
-  subTitle: PropTypes.string,
   title: PropTypes.string,
 };

@@ -1,7 +1,25 @@
 import React, { useContext } from "react";
-import { div, H2, Banner, Markdown, Img, Page } from "../../styledGuide";
+import { Markdown, Img } from "../../styledGuide";
+import Image from "../../styledGuide/Image";
 import Loading from "../Loading";
 import { OrganizationsContext, PagesContext } from "../../Providers";
+import MainLayout from "../../layouts/MainLayout";
+import styled from "styled-components/macro";
+
+const H2 = styled.h2`
+  text-align: center;
+  margin: 20px;
+`;
+
+const ImageGroup = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`;
+
+const StyledImage = styled(Image)`
+  /* width: 50%; */
+`;
 
 export default function About() {
   const organizations = useContext(OrganizationsContext);
@@ -16,26 +34,22 @@ export default function About() {
   const { options = {}, pageName, ...headerBanner } = page;
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
-      <div align="start">
-        <Markdown>{options.content}</Markdown>
-        {organizations && (
-          <div justify="center">
-            <H2>Members</H2>
+    <MainLayout headerBanner={headerBanner}>
+      <Markdown>{options.content}</Markdown>
+      {organizations && (
+        <>
+          <H2>Members</H2>
+          <ImageGroup>
             {organizations.map((org) => (
-              <Img
-                size="fit"
-                margin="M"
-                align="center"
+              <StyledImage
                 alt={org.organization}
                 src={org.logo}
                 key={org.organization}
               />
             ))}
-          </div>
-        )}
-      </div>
-    </Page>
+          </ImageGroup>
+        </>
+      )}
+    </MainLayout>
   );
 }

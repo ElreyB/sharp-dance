@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components/macro";
 import { A } from "../../styledGuide/A/A";
 import { Nav } from "../../styledGuide/Nav";
-import { H1 } from "../../styledGuide/Headings";
 import SideDrawer from "../../styledGuide/SideDrawer";
 import HamburgerButton from "../../styledGuide/HamburgerButton";
 import { SocialIcons } from "../../styledGuide/SocialIcons";
@@ -54,6 +53,7 @@ const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   flex: 1;
+  padding-left: 20px;
 `;
 
 const HamburgerWrapper = styled.div`

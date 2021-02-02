@@ -13,16 +13,7 @@ const PageContent = styled.div`
 export const Page = ({ children, ...props }) => {
   return (
     <>
-      <PageContent
-        {...props}
-        align="start"
-        padding="2XL XL"
-        marginLeft={{ mobile: 0, desktop: "XL" }}
-        marginRight={{ mobile: 0, desktop: "XL" }}
-        marginTop={{ mobile: "XL", desktop: "L" }}
-      >
-        {children}
-      </PageContent>
+      <PageContent {...props}>{children}</PageContent>
     </>
   );
 };

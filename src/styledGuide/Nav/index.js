@@ -23,10 +23,6 @@ const links = [
       { to: DIANE, label: "Diane Sharp-Nachsin" },
       { to: BIOS, label: "Company" },
       { to: MEDIA, label: "Repertoire" },
-      {
-        to: ABOUT,
-        label: "About",
-      },
     ],
   },
   // TODO: better way to show or remove link
