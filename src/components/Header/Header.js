@@ -21,10 +21,10 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.black};
   z-index: 1;
   width: 100%;
-  padding: 5px 0;
+  /* padding: 5px 0;
   ${({ theme }) => theme.media.mobile`
     padding: 0;
-  `}
+  `} */
 `;
 const UndecoratedA = styled(A)`
   text-decoration: none;

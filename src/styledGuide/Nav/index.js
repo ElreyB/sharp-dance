@@ -14,6 +14,7 @@ import {
   PRESS,
   // TICKETS,
 } from "../../constants";
+import styled from "styled-components";
 
 const links = [
   {
@@ -41,28 +42,39 @@ const links = [
   { to: DONATIONS, label: "Donations" },
 ];
 
+const StyledNav = styled.nav``;
+
+const StyledUl = styled(Ul)`
+  height: 100%;
+`;
+
+const SubUl = styled(Ul)`
+  border-top: 20px solid transparent;
+`;
+
 export const Nav = React.forwardRef((props, ref) => {
   return (
-    <nav {...props}>
-      <Ul>
+    <StyledNav {...props}>
+      <StyledUl>
         {links.map(({ to, label, sub = [] }) => (
-          <Li to={to} key={label} label={label}>
+          <Li
+            to={to}
+            key={label}
+            label={label}
+            onBlur={() => {
+              console.log("li", "blur");
+            }}
+          >
             {sub.length > 0 && (
-              <Ul
-                key={`${label}-ul`}
-                size="fit"
-                show="desktop"
-                direction="column"
-                margin="2.5 0 0 0"
-              >
+              <SubUl key={`${label}-ul`}>
                 {sub.map((li) => (
                   <Li {...li} key={li.label} />
                 ))}
-              </Ul>
+              </SubUl>
             )}
           </Li>
         ))}
-      </Ul>
-    </nav>
+      </StyledUl>
+    </StyledNav>
   );
 });
