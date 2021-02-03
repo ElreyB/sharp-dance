@@ -21,8 +21,8 @@ const fonts = {
 };
 
 const device = {
-  desktop: "(min-width: 601px)",
-  mobile: "(max-width: 600px)",
+  desktop: "(min-width: 992px)",
+  mobile: "(max-width: 991px)",
 };
 
 export const breakpoints = {
@@ -32,35 +32,19 @@ export const breakpoints = {
   lg: "1200px",
 };
 
-export const mediaMax = Object.keys(breakpoints).reduce(
-  (accumulator, label) => {
-    accumulator[label] = (...args) => css`
-      @media (max-width: ${breakpoints[label]}) {
-        ${css(...args)};
-      }
-    `;
-    return accumulator;
-  },
-  {}
-);
-
-export const mediaMin = Object.keys(breakpoints).reduce(
-  (accumulator, label) => {
-    accumulator[label] = (...args) => css`
-      @media (min-width: ${breakpoints[label]}) {
-        ${css(...args)};
-      }
-    `;
-    return accumulator;
-  },
-  {}
-);
+export const media = Object.keys(device).reduce((accumulator, label) => {
+  accumulator[label] = (...args) => css`
+    @media ${device[label]} {
+      ${css(...args)};
+    }
+  `;
+  return accumulator;
+}, {});
 
 export const theme = {
   colors,
   fonts,
   spacing,
   device,
-  mediaMax,
-  mediaMin,
+  media,
 };

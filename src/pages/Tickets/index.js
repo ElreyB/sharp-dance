@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Banner, Label, Page, P } from "../../styledGuide";
+import { Label, P } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 import { PaypayForm } from "./PaypalForm";
+import Page from "../../layouts/Page";
 
 const BELOW_TEXT = [
   "Opening Night",

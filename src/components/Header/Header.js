@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   z-index: 1;
   width: 100%;
   padding: 5px 0;
-  ${({ theme }) => theme.mediaMax.md`
+  ${({ theme }) => theme.media.mobile`
     padding: 0;
   `}
 `;
@@ -33,19 +33,19 @@ const UndecoratedA = styled(A)`
 `;
 
 const StyledHamburger = styled(HamburgerButton)`
-  ${({ theme }) => theme.mediaMin.md`
+  ${({ theme }) => theme.media.desktop`
   display: none
   `}
 `;
 
 const StyledNav = styled(Nav)`
-  ${({ theme }) => theme.mediaMax.md`
+  ${({ theme }) => theme.media.mobile`
   display: none
   `}
 `;
 
 const DesktopSocialIcons = styled(SocialIcons)`
-  ${({ theme }) => theme.mediaMax.md`
+  ${({ theme }) => theme.media.mobile`
   display: none
   `}
 `;
