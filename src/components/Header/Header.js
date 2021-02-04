@@ -22,10 +22,11 @@ const Wrapper = styled.div`
   z-index: 1;
   width: 100%;
 `;
-const UndecoratedA = styled(A)`
+const LogoLink = styled(A)`
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  display: block;
 `;
 
 const StyledHamburger = styled(HamburgerButton)`
@@ -44,12 +45,15 @@ const DesktopSocialIcons = styled(SocialIcons)`
   ${({ theme }) => theme.media.mobile`
   display: none
   `}
+  padding-top: 8px;
+  padding-left: 8px;
 `;
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   flex: 1;
   padding-left: 20px;
+  height: 100%;
 `;
 
 const HamburgerWrapper = styled.div`
@@ -62,7 +66,7 @@ export default function Header() {
     <Wrapper>
       <LogoWrapper>
         <StyledH1 size="fit" margin="0 XL" noResize>
-          <UndecoratedA to={LANDING}>{SHARP_CO}</UndecoratedA>
+          <LogoLink to={LANDING}>{SHARP_CO}</LogoLink>
         </StyledH1>
         <DesktopSocialIcons />
       </LogoWrapper>

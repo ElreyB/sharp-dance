@@ -6,10 +6,6 @@ import styled from "styled-components/macro";
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
-  flex-grow: 0;
-  flex-shrink: 0;
-  width: auto;
-  white-space: nowrap;
 `;
 
 const IconLink = styled(A)`

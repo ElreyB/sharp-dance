@@ -6,12 +6,12 @@ const linkStyles = css`
   color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   font-weight: normal;
-  border: 0px solid transparent;
-  box-sizing: border-box;
+  /* display: block; */
+  /* border: 0px solid transparent;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  flex-grow: 1;
+  flex-grow: 1; */
 
   &.link-active {
     font-weight: bold;
