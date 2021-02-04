@@ -32,7 +32,7 @@ const useThumbnail = (src) => {
   return thumbnail;
 };
 
-const Poster = styled.div`
+const StyledPoster = styled.div`
   background-color: #eee;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,13 +44,20 @@ const Poster = styled.div`
   height: ${height}px;
 `;
 
-export default ({ src, onClick }) => (
-  <div onClick={onClick} size="fit" role="button" tabIndex={0} margin="XS">
-    <Poster
+const FakeButton = styled.div`
+  margin: ${({ theme }) => theme.spacing.XS};
+  cursor: pointer;
+`;
+
+const Poster = ({ src, onClick }) => (
+  <FakeButton onClick={onClick} size="fit" role="button" tabIndex={0}>
+    <StyledPoster
       paddingBottom="S"
       style={{
         backgroundImage: `url(${useThumbnail(src)})`,
       }}
     />
-  </div>
+  </FakeButton>
 );
+
+export default Poster;

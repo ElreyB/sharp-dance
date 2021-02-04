@@ -1,14 +1,21 @@
 import React from "react";
-import Poster from "./poster";
+import Poster from "./Poster";
 import Carousel, { ModalGateway, Modal } from "react-images";
 import View from "./view";
+import styled from "styled-components/macro";
+
+const PosterWrapper = styled.div`
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+`;
 
 export default function Slides({ sources }) {
   const [currentModal, setCurrentModal] = React.useState(null);
 
   return (
     <>
-      <div className="slides" style={{ overflow: "hidden" }}>
+      <PosterWrapper className="slides" style={{ overflow: "hidden" }}>
         {sources.map(({ src }, i) => (
           <Poster
             margin="XS"
@@ -17,7 +24,7 @@ export default function Slides({ sources }) {
             onClick={() => setCurrentModal(i)}
           />
         ))}
-      </div>
+      </PosterWrapper>
       <ModalGateway>
         {currentModal !== null ? (
           <Modal
