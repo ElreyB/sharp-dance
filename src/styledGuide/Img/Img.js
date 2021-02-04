@@ -31,7 +31,6 @@ export const Img = ({
 
   return (
     <Img.ImgWrapper margin="0 M/2" {...props}>
-      {/**image to take full width without destoing */}
       <Img.ImgGrid
         align="center"
         justify="center"

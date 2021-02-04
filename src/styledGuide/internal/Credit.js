@@ -9,15 +9,8 @@ const StyledCredit = styled.div`
   font-size: 12px;
 `;
 export const Credit = ({ children, ...props }) => {
-  if (!children) {
-    return <></>;
-  }
-
-  return (
-    <StyledCredit size="fit" {...props}>
-      Credit: {children}
-    </StyledCredit>
-  );
+  if (!children) return null;
+  return <StyledCredit {...props}>Credit: {children}</StyledCredit>;
 };
 
 Credit.propTypes = {

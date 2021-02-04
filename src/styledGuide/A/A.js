@@ -12,7 +12,6 @@ const linkStyles = css`
   flex-flow: row wrap;
   width: 100%;
   flex-grow: 1;
-  padding: 0 ${({ theme }) => theme.spacing.S};
 
   &.link-active {
     font-weight: bold;

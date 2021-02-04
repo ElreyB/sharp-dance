@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 
 const IconLink = styled(A)`
   width: 33.33%;
+  padding: 0 4px;
 `;
 
 export const SocialIcons = (props) => {

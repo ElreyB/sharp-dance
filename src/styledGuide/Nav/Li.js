@@ -12,6 +12,7 @@ const StyledLi = styled.li`
   flex-shrink: 0;
   width: auto;
   white-space: nowrap;
+  padding: 0 ${({ theme }) => theme.spacing.S};
 
   & ul {
     display: none;

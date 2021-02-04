@@ -26,11 +26,18 @@ export default function DianeSharp() {
   }
 
   const { options, pageName, ...headerBanner } = page;
+  console.log("Diane", { headerBanner });
+  const additonalInfo = {
+    ...headerBanner,
+    title: `${headerBanner.title} : ${director.name}`,
+    images: director.images,
+    imgCredit: director.imgCredit,
+  };
 
   return (
-    <Page headerBanner={headerBanner}>
+    <Page headerBanner={additonalInfo}>
       <div align="start">
-        {director && (
+        {/* {director && (
           <>
             <Banner
               title={director.name}
@@ -39,7 +46,9 @@ export default function DianeSharp() {
             />
             <Markdown marginTop="XL">{director.bio}</Markdown>
           </>
-        )}
+        )} */}
+        <Markdown>{director.bio}</Markdown>
+
         <div direction="row">
           <H3 justify="center" padding="L 0">
             Visit Diane Sharp Photos
