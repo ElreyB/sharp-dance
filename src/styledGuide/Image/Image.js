@@ -7,7 +7,9 @@ const Wrapper = styled.figure`
   overflow: hidden;
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+  width: 100%;
+`;
 
 const Credit = styled.figcaption`
   word-wrap: break-word;
@@ -16,12 +18,26 @@ const Credit = styled.figcaption`
   font-size: 12px;
 `;
 
+const getSrcString = (src) => {
+  if (Array.isArray(src)) {
+    return src.length ? src[0].src : "";
+  } else if (typeof src === "object") {
+    return src.src;
+  } else {
+    return src;
+  }
+};
+
 export default function Image({ src, alt, credit, ...props }) {
   const role = alt ? undefined : "presentation";
 
+  const srcString = getSrcString(src);
+  const combinedAlt = alt || (src && src.title) ? src.title : undefined;
+
+  if (!srcString) return null;
   return (
     <Wrapper {...props}>
-      <Img src={src} alt={alt} role={role} />
+      <Img src={srcString} alt={combinedAlt} role={role} />
       {credit && <Credit>Credit: {credit}</Credit>}
     </Wrapper>
   );

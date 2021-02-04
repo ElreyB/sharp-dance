@@ -17,16 +17,6 @@ const H2 = styled.h2`
 
 const BannerHeader = styled.header``;
 
-const getSrcString = (src) => {
-  if (Array.isArray(src)) {
-    return src.length ? src[0].src : "";
-  } else if (typeof src === "object") {
-    return src.src;
-  } else {
-    return src;
-  }
-};
-
 export const Banner = ({
   title,
   subtitle,
@@ -39,15 +29,11 @@ export const Banner = ({
 }) => {
   const imgSrc = images || image;
 
-  const srcString = getSrcString(imgSrc);
-  const combinedAlt =
-    alt || (imgSrc && imgSrc.title) ? imgSrc.title : undefined;
   return (
     <BannerHeader {...props}>
       <H1>{title}</H1>
-      {srcString && (
-        <StyledImage src={srcString} alt={combinedAlt} credit={imgCredit} />
-      )}
+
+      <StyledImage src={imgSrc} alt={alt} credit={imgCredit} />
       {subtitle && <H2>{subtitle}</H2>}
     </BannerHeader>
   );

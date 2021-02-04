@@ -25,6 +25,7 @@ export function Bio({
   if (!imageList[0]) {
     console.error("Image not found for", name);
   }
+  console.log({ title });
 
   return (
     <div {...props}>
