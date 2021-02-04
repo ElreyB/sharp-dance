@@ -1,17 +1,16 @@
 import React from "react";
 import styled from "styled-components/macro";
-// import { H2, Img } from "../../styledGuide";
 import { getPerformanceURL } from "./media.logic";
 import { random } from "lodash";
 import { A } from "../../styledGuide/A/A";
 import Page from "../../layouts/Page";
-import Image from "../../styledGuide/Image";
+// import Image from "../../styledGuide/Image";
 
-const StyledImg = styled(Image)`
-  max-width: 100%;
-  height: 300px;
-  margin: ${({ theme }) => theme.spacing.M};
-`;
+// const StyledImg = styled(Image)`
+//   max-width: 100%;
+//   height: 300px;
+//   margin: ${({ theme }) => theme.spacing.M};
+// `;
 
 const MediaContainer = styled.div`
   display: flex;
@@ -51,9 +50,9 @@ export default function Media({ headerBanner, media }) {
             return (
               <MediaAnchor to={getPerformanceURL(title)} key={title}>
                 <H2>{title}</H2>
-                <Border photo={photo}>
-                  {/* <StyledImg alt={title} src={photo} /> */}
-                </Border>
+                <Border photo={photo} />
+                {/* <StyledImg alt={title} src={photo} /> */}
+                {/* </Border> */}
               </MediaAnchor>
             );
           })

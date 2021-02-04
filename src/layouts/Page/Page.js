@@ -5,7 +5,7 @@ import { Banner } from "../../styledGuide";
 export default function Page({ children, headerBanner, ...props }) {
   return (
     <div {...props}>
-      <Banner {...headerBanner} />
+      {headerBanner && <Banner {...headerBanner} />}
       {children}
     </div>
   );

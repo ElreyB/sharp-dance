@@ -37,10 +37,11 @@ export function Album({
   ...props
 }) {
   const message = getMessage(availableForTour, availableForPerformance);
-  const Wrapper = link ? (props) => <A to={link} {...props} /> : <div />;
-
+  const Wrapper = link
+    ? (props) => <A to={link} {...props} />
+    : (props) => <div {...props} />;
   return (
-    <Wrapper {...props} align="start" padding="M">
+    <Wrapper {...props}>
       <div>
         {title && <H2 size="fit">{title}</H2>}
         {message && <H4>({message})</H4>}

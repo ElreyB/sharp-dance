@@ -8,7 +8,8 @@ const Wrapper = styled.figure`
 `;
 
 const Img = styled.img`
-  width: 100%;
+  /* width: 100%; */
+  ${({ size }) => `width: ${size}`}
 `;
 
 const Credit = styled.figcaption`
@@ -28,7 +29,7 @@ const getSrcString = (src) => {
   }
 };
 
-export default function Image({ src, alt, credit, ...props }) {
+export default function Image({ src, alt, credit, imageSize, ...props }) {
   const role = alt ? undefined : "presentation";
 
   const srcString = getSrcString(src);
@@ -37,7 +38,7 @@ export default function Image({ src, alt, credit, ...props }) {
   if (!srcString) return null;
   return (
     <Wrapper {...props}>
-      <Img src={srcString} alt={combinedAlt} role={role} />
+      <Img src={srcString} alt={combinedAlt} role={role} size={imageSize} />
       {credit && <Credit>Credit: {credit}</Credit>}
     </Wrapper>
   );

@@ -59,6 +59,7 @@ export default function Bio({
           src={imgSrc}
           alt={`${name} headshot`}
           credit={imgCredit}
+          imageSize="100%"
         ></StyledImage>
         <StyledMarkdown>{bio}</StyledMarkdown>
       </Content>

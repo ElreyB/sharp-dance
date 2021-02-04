@@ -53,6 +53,11 @@ const HamburgerWrapper = styled.div`
   padding: 8px 16px;
 `;
 
+const Links = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const links = [
   { to: ABOUT, label: "About" },
   { to: TICKETS, label: "Tickets" },
@@ -87,7 +92,7 @@ const SideDrawer = ({ show, onClick }) => (
           }}
           onDeactivate={onClick}
         >
-          <div>
+          <Links>
             <HamburgerWrapper>
               <HamburgerButton onClick={onClick} closed />
             </HamburgerWrapper>
@@ -97,7 +102,7 @@ const SideDrawer = ({ show, onClick }) => (
               </NavLink>
             ))}
             <StyledSocialIcons />
-          </div>
+          </Links>
         </FocusTrap>
       )}
     </Nav>
