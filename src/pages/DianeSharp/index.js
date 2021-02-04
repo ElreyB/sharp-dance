@@ -10,8 +10,6 @@ const isDirector = ({ director }) => director;
 
 const FaceBookLink = styled(A)`
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 `;
 
 export default function DianeSharp() {
@@ -36,28 +34,11 @@ export default function DianeSharp() {
 
   return (
     <Page headerBanner={additonalInfo}>
-      <div align="start">
-        {/* {director && (
-          <>
-            <Banner
-              title={director.name}
-              images={director.images}
-              imgCredit={director.imgCredit}
-            />
-            <Markdown marginTop="XL">{director.bio}</Markdown>
-          </>
-        )} */}
-        <Markdown>{director.bio}</Markdown>
-
-        <div direction="row">
-          <H3 justify="center" padding="L 0">
-            Visit Diane Sharp Photos
-          </H3>
-          <FaceBookLink href={options.facebook}>
-            Diane's Photos FaceBook
-          </FaceBookLink>
-        </div>
-      </div>
+      <Markdown>{director.bio}</Markdown>
+      <H3>Visit Diane Sharp Photos</H3>
+      <FaceBookLink href={options.facebook}>
+        Diane's Photos FaceBook
+      </FaceBookLink>
     </Page>
   );
 }

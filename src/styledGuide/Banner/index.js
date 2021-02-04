@@ -1,8 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
-// import { H2 } from "../Headings";
-// import { ImgGroup } from "../Img";
 import Image from "../Image";
 
 const StyledImage = styled(Image)`
@@ -19,6 +17,16 @@ const H2 = styled.h2`
 
 const BannerHeader = styled.header``;
 
+const getSrcString = (src) => {
+  if (Array.isArray(src)) {
+    return src.length ? src[0].src : "";
+  } else if (typeof src === "object") {
+    return src.src;
+  } else {
+    return src;
+  }
+};
+
 export const Banner = ({
   title,
   subtitle,
@@ -30,19 +38,16 @@ export const Banner = ({
   ...props
 }) => {
   const imgSrc = images || image;
-  console.log("banner", {
-    title,
-    subtitle,
-    images,
-    image,
-    alt,
-    imgCredit,
-    inputCount,
-  });
+
+  const srcString = getSrcString(imgSrc);
+  const combinedAlt =
+    alt || (imgSrc && imgSrc.title) ? imgSrc.title : undefined;
   return (
     <BannerHeader {...props}>
       <H1>{title}</H1>
-      <StyledImage src={imgSrc} alt={alt} credit={imgCredit} />
+      {srcString && (
+        <StyledImage src={srcString} alt={combinedAlt} credit={imgCredit} />
+      )}
       {subtitle && <H2>{subtitle}</H2>}
     </BannerHeader>
   );
