@@ -12,8 +12,14 @@ import { PerformancesContext, PagesContext } from "../../Providers";
 import NoUpcomingEvents from "./NoUpcomingEvents";
 import Page from "../../layouts/Page";
 
+const Wrapper = styled.div``;
+
 const H3 = styled.h3`
   text-align: center;
+`;
+
+const StyledSchedule = styled(Schedule)`
+  margin-bottom: ${({ theme: { spacing } }) => spacing.L};
 `;
 
 const renderPerformances = ([year, perfs]) =>
@@ -21,11 +27,7 @@ const renderPerformances = ([year, perfs]) =>
     <Fragment key={year}>
       <H3>{year}</H3>
       {perfs.map((perf, i) => (
-        <Schedule
-          {...perf}
-          key={`${year}-${perf.name}-${i}`}
-          margin="0 0 L 0"
-        />
+        <StyledSchedule {...perf} key={`${year}-${perf.name}-${i}`} />
       ))}
     </Fragment>
   );
@@ -55,13 +57,13 @@ export default function Events(props) {
 
   return (
     <Page headerBanner={headerBanner}>
-      <div align="start">
+      <Wrapper>
         {isEventPage && performanceArr.length === 0 ? (
           <NoUpcomingEvents />
         ) : (
           performanceArr
         )}
-      </div>
+      </Wrapper>
     </Page>
   );
 }

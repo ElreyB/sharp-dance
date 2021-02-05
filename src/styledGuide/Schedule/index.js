@@ -2,8 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 import { TiTicket, TiGlobeOutline } from "react-icons/ti";
+import { IconContext } from "react-icons";
 import { P } from "../P/P";
+import { A } from "../A/A";
 // import { H3 } from "../Headings";
+
+const StyledA = styled(A)`
+  ${({ theme: { media } }) => media.mobile`
+    text-align: center;
+  `}
+`;
 
 function IconAnchor({ Icon, url }) {
   if (!url) {
@@ -11,9 +19,11 @@ function IconAnchor({ Icon, url }) {
   }
 
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      <Icon />
-    </a>
+    <IconContext.Provider value={{ size: "30px" }}>
+      <StyledA href={url} target="_blank" rel="noopener noreferrer">
+        <Icon />
+      </StyledA>
+    </IconContext.Provider>
   );
 }
 
@@ -36,6 +46,7 @@ const Wrapper = styled.div``;
 
 const H3 = styled.h3`
   text-align: center;
+  flex: 1;
   /* color: ${({ theme }) => theme.colors.blue}; */
 `;
 
@@ -45,6 +56,13 @@ const Location = styled(P)`
 `;
 const DateTime = styled(P)`
   /* color: ${({ theme }) => theme.colors.blue}; */
+`;
+
+const Header = styled.header`
+  display: flex;
+  ${({ theme: { media } }) => media.mobile`
+    flex-direction: column;
+  `}
 `;
 
 export const Schedule = ({
@@ -59,9 +77,11 @@ export const Schedule = ({
 }) => {
   return (
     <Wrapper {...props}>
-      {name && <H3>{name}</H3>}
-      <IconAnchor url={purchaseUrl} Icon={TiTicket} />
-      <IconAnchor url={website} Icon={TiGlobeOutline} />
+      <Header>
+        {name && <H3>{name}</H3>}
+        <IconAnchor url={purchaseUrl} Icon={TiTicket} />
+        <IconAnchor url={website} Icon={TiGlobeOutline} />
+      </Header>
       {description && <Description>{description}</Description>}
       {(location || address) && (
         <Location>
