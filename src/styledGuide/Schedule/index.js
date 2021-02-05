@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 import { TiTicket, TiGlobeOutline } from "react-icons/ti";
 import { P } from "../P/P";
-import { H3 } from "../Headings";
+// import { H3 } from "../Headings";
 
 function IconAnchor({ Icon, url }) {
   if (!url) {
@@ -32,9 +32,19 @@ const monthName = {
   12: "December",
 };
 
-const StyledH3 = styled(H3)`
-  white-space: normal;
-  max-width: 100%;
+const Wrapper = styled.div``;
+
+const H3 = styled.h3`
+  text-align: center;
+  /* color: ${({ theme }) => theme.colors.blue}; */
+`;
+
+const Description = styled(P)``;
+const Location = styled(P)`
+  /* color: ${({ theme }) => theme.colors.red}; */
+`;
+const DateTime = styled(P)`
+  /* color: ${({ theme }) => theme.colors.blue}; */
 `;
 
 export const Schedule = ({
@@ -42,40 +52,28 @@ export const Schedule = ({
   dates,
   description,
   location,
-  margin,
   name,
-  padding,
   purchaseUrl,
-  size,
   website,
+  ...props
 }) => {
   return (
-    <div size={size} margin={margin} padding={padding}>
-      <div>
-        {name && <StyledH3 size="fit">{name}</StyledH3>}
-        <IconAnchor url={purchaseUrl} Icon={TiTicket} />
-        <IconAnchor url={website} Icon={TiGlobeOutline} />
-      </div>
-      {description && <P>{description}</P>}
-      <div size={{ mobile: "auto", desktop: "fit" }}>
-        {(location || address) && (
-          <P>{[location, address].filter((a) => !!a).join(" - ")}</P>
-        )}
-      </div>
-      <div>
-        {dates.map(({ days, month, time, notes }, i) => (
-          <div key={i}>
-            <div size="fit" paddingRight="S">
-              {monthName[month]}, {days}
-            </div>
-            <div size="fit" paddingRight="S">
-              {time}
-            </div>
-            <div size="fit">{notes}</div>
-          </div>
-        ))}
-      </div>
-    </div>
+    <Wrapper {...props}>
+      {name && <H3>{name}</H3>}
+      <IconAnchor url={purchaseUrl} Icon={TiTicket} />
+      <IconAnchor url={website} Icon={TiGlobeOutline} />
+      {description && <Description>{description}</Description>}
+      {(location || address) && (
+        <Location>
+          {[location, address].filter((a) => !!a).join(" - ")}
+        </Location>
+      )}
+      {dates.map(({ days, month, time, notes }, i) => (
+        <DateTime key={i}>
+          {monthName[month]}, {days} {time} {notes}
+        </DateTime>
+      ))}
+    </Wrapper>
   );
 };
 

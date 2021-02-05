@@ -1,5 +1,6 @@
 import React, { useContext, Fragment } from "react";
-import { Schedule, H3 } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Schedule } from "../../styledGuide";
 import Loading from "../Loading";
 import {
   groupPerformancesByYear,
@@ -11,7 +12,9 @@ import { PerformancesContext, PagesContext } from "../../Providers";
 import NoUpcomingEvents from "./NoUpcomingEvents";
 import Page from "../../layouts/Page";
 
-// https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F6.jpg?alt=media&token=e4ebd608-54c1-4aae-a0d3-5db4dd60511b
+const H3 = styled.h3`
+  text-align: center;
+`;
 
 const renderPerformances = ([year, perfs]) =>
   perfs.length > 0 && (

@@ -61,7 +61,11 @@ function App() {
         <MainLayoutRoute path={DONATIONS} exact component={Donations} />
         <MainLayoutRoute path={EVENTS} exact component={Events} />
         <MainLayoutRoute path={PAST_EVENTS} exact component={Events} />
-        <MainLayoutRoute path={LANDING} exact component={Home} />
+        <MainLayoutRoute
+          path={[LANDING, "/sharp-dance"]}
+          exact
+          component={Home}
+        />
         <MainLayoutRoute
           path={`${MEDIA}/:performanceTitle?`}
           exact
