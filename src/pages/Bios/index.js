@@ -14,7 +14,7 @@ const H2 = styled.h2`
   text-align: center;
   ${({ theme }) =>
     `margin:${theme.spacing.M} ${theme.spacing.M} ${theme.spacing.XL} ${theme.spacing.M}`};
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 export default function Bios() {

@@ -16,7 +16,7 @@ import {
   MEDIA,
   PAST_EVENTS,
   PRESS,
-  TICKETS,
+  // TICKETS,
 } from "../../constants";
 
 const ESCAPE_KEY = 27;

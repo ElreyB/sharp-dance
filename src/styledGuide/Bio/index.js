@@ -11,11 +11,15 @@ const Content = styled.div`
   display: flex;
   ${({ theme }) => theme.media.mobile`
     flex-direction: column;
-  `}
+  `};
 `;
 
 const StyledImage = styled(Image)`
   text-align: center;
+  ${({ theme: { media } }) => media.mobile`
+    width: 50%;
+    align-self: center;
+  `};
 `;
 
 const H3 = styled.h3`
@@ -25,7 +29,7 @@ const H3 = styled.h3`
 `;
 
 const Name = styled.span`
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 const Title = styled.span`
