@@ -1,6 +1,5 @@
 import React from "react";
 import textfit from "textfit";
-import styled from "styled-components/macro";
 
 // import { withGrid } from "../internal";
 import { useElementWidth } from "./useElementWidth";

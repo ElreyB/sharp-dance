@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { H2, H3, H4 } from "../Headings";
-import { P } from "../P/P";
+import { P } from "../P";
 import Slides from "./slides";
-import { A } from "../A/A";
+import { A } from "../A";
 
 const message = {
   tour: "Available for tour",
@@ -43,7 +43,7 @@ export function Album({
   return (
     <Wrapper {...props}>
       <div>
-        {title && <H2 size="fit">{title}</H2>}
+        {title && <H2>{title}</H2>}
         {message && <H4>({message})</H4>}
         {subtitle && <H3>{subtitle}</H3>}
         {content && <P>{content}</P>}

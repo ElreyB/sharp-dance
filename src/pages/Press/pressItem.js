@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Img, H3 } from "../../styledGuide";
-import { A } from "../../styledGuide/A/A";
-import { P } from "../../styledGuide/P/P";
+import { A, P } from "../../styledGuide";
 
 const Wrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};

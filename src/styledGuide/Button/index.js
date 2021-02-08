@@ -1,25 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useGrid, Grid } from "gymnast";
 import styled from "styled-components/macro";
 
 const StyledButton = styled.button`
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
   border: 1px solid white;
+  flex-direction: column;
+
+  flex-grow: 1;
 `;
 
 export const Button = React.forwardRef(
-  (
-    { size = "fit", padding = "S M", children, role = "button", ...props },
-    ref
-  ) => {
-    const [, allProps] = useGrid(props);
-
+  ({ children, role = "button", ...props }, ref) => {
     return (
-      <Grid size={size} padding={padding}>
-        <StyledButton {...allProps} ref={ref}>
-          {children}
-        </StyledButton>
-      </Grid>
+      <StyledButton {...props} ref={ref}>
+        {children}
+      </StyledButton>
     );
   }
 );

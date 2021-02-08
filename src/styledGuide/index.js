@@ -18,4 +18,3 @@ export * from "./Schedule";
 export * from "./ScrollTop";
 export * from "./SocialIcons";
 export * from "./Video";
-export * from "gymnast";

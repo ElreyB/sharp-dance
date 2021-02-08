@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
-import { Page, H2, H3 } from "../../styledGuide";
+import Page from "../../layouts/Page";
 import { LANDING } from "../../constants";
 
 const StyledLink = styled(NavLink)`
@@ -11,8 +11,8 @@ const StyledLink = styled(NavLink)`
 export default function Error404() {
   return (
     <Page>
-      <H2>404 - Page Not Found</H2>
-      <H3>Oops looks like you went off stage!</H3>
+      <h2>404 - Page Not Found</h2>
+      <h3>Oops looks like you went off stage!</h3>
       <StyledLink exact to={LANDING}>
         Return to the homepage
       </StyledLink>

@@ -3,9 +3,8 @@ import styled from "styled-components/macro";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 
-import { A } from "../../styledGuide/A/A";
-import { P } from "../../styledGuide/P/P";
-import { Label } from "../../styledGuide/Label/Label";
+import { A, P, Label } from "../../styledGuide";
+
 import Page from "../../layouts/Page";
 
 const StyledP = styled(P)`

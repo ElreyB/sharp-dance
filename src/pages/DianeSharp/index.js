@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { H3, Markdown } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
-import { A } from "../../styledGuide/A/A";
+import { A } from "../../styledGuide";
 import styled from "styled-components/macro";
 import Page from "../../layouts/Page";
 

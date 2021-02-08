@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Img } from "../../styledGuide";
-import { P } from "../../styledGuide/P/P";
+import { Img, P } from "../../styledGuide";
 
 const Wrapper = styled.div`
   border: 0px solid transparent;

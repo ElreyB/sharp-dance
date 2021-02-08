@@ -1,9 +1,11 @@
 import React from "react";
-import { Album, Page, Banner } from "../../styledGuide";
+import { Album, Banner } from "../../styledGuide";
 import { MEDIA } from "../../constants";
 import styled from "styled-components/macro";
 
-import { A } from "../../styledGuide/A/A";
+import { A } from "../../styledGuide";
+
+import Page from "../../layouts/Page";
 
 const BackLink = styled(A)`
   margin-top: ${({ theme }) => theme.spacing.M};

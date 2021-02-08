@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
-import { P } from "../../styledGuide/P/P";
+import { P } from "../../styledGuide";
 
 const Form = styled.form`
   width: 100%;

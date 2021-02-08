@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-import { A } from "../A/A";
+import { A } from "../A";
 import styled from "styled-components/macro";
 
 const Wrapper = styled.div`

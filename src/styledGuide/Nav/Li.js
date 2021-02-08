@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { A } from "../A/A";
+import { A } from "../A";
 import { Label } from "../Label/Label";
 
 const StyledLi = styled.li`

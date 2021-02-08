@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 import HamburgerButton from "../HamburgerButton";
 import BackDrop from "./backDrop";
 import FocusTrap from "focus-trap-react";
-import { A } from "../A/A";
+import { A } from "../A";
 import { SocialIcons } from "../SocialIcons";
 import {
   ABOUT,

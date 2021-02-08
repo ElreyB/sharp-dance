@@ -1,13 +1,20 @@
 import React from "react";
 import { node } from "prop-types";
 import { Banner } from "../../styledGuide";
+import styled from "styled-components/macro";
+
+const PageContent = styled.div`
+  max-width: 1050px;
+  margin: 0 auto;
+  min-height: 100vh;
+`;
 
 export default function Page({ children, headerBanner, ...props }) {
   return (
-    <div {...props}>
+    <PageContent {...props}>
       {headerBanner && <Banner {...headerBanner} />}
       {children}
-    </div>
+    </PageContent>
   );
 }
 

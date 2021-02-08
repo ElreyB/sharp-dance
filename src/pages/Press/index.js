@@ -6,8 +6,7 @@ import { PagesContext, PressContext, QuotesContext } from "../../Providers";
 import { PressItem } from "./pressItem";
 import { random } from "lodash";
 
-import { A } from "../../styledGuide/A/A";
-import { P } from "../../styledGuide/P/P";
+import { A, P } from "../../styledGuide";
 import Page from "../../layouts/Page";
 
 const Sentence = styled.div`

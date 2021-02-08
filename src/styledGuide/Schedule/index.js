@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 import styled from "styled-components/macro";
 import { TiTicket, TiGlobeOutline } from "react-icons/ti";
 import { IconContext } from "react-icons";
-import { P } from "../P/P";
-import { A } from "../A/A";
-// import { H3 } from "../Headings";
+import { P } from "../P";
+import { A } from "../A";
 
 const StyledA = styled(A)`
   ${({ theme: { media } }) => media.mobile`

@@ -2,15 +2,8 @@ import React from "react";
 import styled from "styled-components/macro";
 import { getPerformanceURL } from "./media.logic";
 import { random } from "lodash";
-import { A } from "../../styledGuide/A/A";
+import { A } from "../../styledGuide";
 import Page from "../../layouts/Page";
-// import Image from "../../styledGuide/Image";
-
-// const StyledImg = styled(Image)`
-//   max-width: 100%;
-//   height: 300px;
-//   margin: ${({ theme }) => theme.spacing.M};
-// `;
 
 const MediaContainer = styled.div`
   display: flex;
@@ -20,9 +13,9 @@ const MediaContainer = styled.div`
 const Border = styled.div`
   border: 10px solid ${({ theme }) => theme.colors.white};
   background-image: url(${({ photo }) => photo.src});
-  height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 `;
 
@@ -51,8 +44,6 @@ export default function Media({ headerBanner, media }) {
               <MediaAnchor to={getPerformanceURL(title)} key={title}>
                 <H2>{title}</H2>
                 <Border photo={photo} />
-                {/* <StyledImg alt={title} src={photo} /> */}
-                {/* </Border> */}
               </MediaAnchor>
             );
           })

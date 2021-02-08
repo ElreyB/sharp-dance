@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
 import Page from "../../layouts/Page";
-import Bio from "../../styledGuide/Bio/Bio";
+import { Bio } from "../../styledGuide";
 import styled from "styled-components";
 
 // Removes director prop since it's not meant to be passed to the component

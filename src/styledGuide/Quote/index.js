@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Blockquote } from "./Blockquote";
 import { Footer } from "./Footer";
 import { Cite } from "./Cite";
-import { P } from "../P/P";
+import { P } from "../P";
 
 export const Quote = ({ source, author, quote, ...props }) => {
   if (!quote) {

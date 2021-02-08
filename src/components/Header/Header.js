@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { A } from "../../styledGuide/A/A";
+import { A } from "../../styledGuide";
 import { Nav } from "../../styledGuide/Nav";
 import SideDrawer from "../../styledGuide/SideDrawer";
 import HamburgerButton from "../../styledGuide/HamburgerButton";

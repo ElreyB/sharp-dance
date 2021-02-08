@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components/macro";
 import { func, bool } from "prop-types";
-import { Button } from "../Button/Button";
+import { Button } from "../Button";
 
 const Line = styled.div`
   width: 20px;
