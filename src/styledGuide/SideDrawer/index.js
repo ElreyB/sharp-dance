@@ -60,7 +60,7 @@ const Links = styled.div`
 
 const links = [
   { to: ABOUT, label: "About" },
-  { to: TICKETS, label: "Tickets" },
+  // { to: TICKETS, label: "Tickets" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
   { to: BIOS, label: "Company" },
   { to: MEDIA, label: "Repertoire" },
@@ -97,7 +97,7 @@ const SideDrawer = ({ show, onClick }) => (
               <HamburgerButton onClick={onClick} closed />
             </HamburgerWrapper>
             {links.map(({ to, label }) => (
-              <NavLink to={to} key={to}>
+              <NavLink to={to} key={to} onClick={() => onClick(false)}>
                 {label}
               </NavLink>
             ))}
