@@ -1,6 +1,6 @@
 import React from "react";
-import { Redirect } from "react-router";
-import { ERROR } from "../../constants";
+// import { Redirect } from "react-router";
+// import { ERROR } from "../../constants";
 import AllPerformances from "./all";
 import SinglePerformance from "./single";
 import { isMatch } from "./media.logic";
@@ -19,13 +19,16 @@ export default function Media({ match }) {
 
   const { options, pageName, ...headerBanner } = page;
 
-  const performance = media.find((performance) =>
-    isMatch(performance.title, performanceTitle)
-  );
+  const performance = media.find((performance) => {
+    console.log("performance", performance.title, performanceTitle);
+    return isMatch(performance.title, performanceTitle);
+  });
 
-  if (performanceTitle && !performance) {
-    return <Redirect to={ERROR} />;
-  }
+  // TODO: do we need this check
+
+  // if (performanceTitle && !performance) {
+  //   // return <Redirect to={ERROR} />;
+  // }
 
   if (performance) {
     return <SinglePerformance performance={performance} />;

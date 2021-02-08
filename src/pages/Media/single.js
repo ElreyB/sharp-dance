@@ -8,6 +8,7 @@ import { A } from "../../styledGuide";
 import Page from "../../layouts/Page";
 
 const BackLink = styled(A)`
+  display: block;
   margin-top: ${({ theme }) => theme.spacing.M};
 `;
 

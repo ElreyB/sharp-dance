@@ -8,6 +8,9 @@ const PosterWrapper = styled.div`
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  ${({ theme: { media } }) => media.mobile`
+    justify-content: space-evenly;
+  `};
 `;
 
 export default function Slides({ sources }) {
