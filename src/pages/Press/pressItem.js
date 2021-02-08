@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Img, H3 } from "../../styledGuide";
+import { Image, H3 } from "../../styledGuide";
 import { A, P } from "../../styledGuide";
 
 const Wrapper = styled.div`
@@ -26,7 +26,7 @@ export function PressItem({
     <Wrapper padding="XL 0" align="start">
       {!logo.src && makeIntoLink(<H3 justify="center">{outlet}</H3>, url)}
       {makeIntoLink(
-        <Img backgroundSize="contain" src={logo.src} alt={logo.title} />,
+        <Image backgroundSize="contain" src={logo.src} alt={logo.title} />,
         url
       )}
       <div size="auto" align="start">

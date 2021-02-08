@@ -1,7 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components/macro";
-import Image from "../Image";
+import { Image } from "../Image";
 
 const StyledImage = styled(Image)`
   min-height: 400px;

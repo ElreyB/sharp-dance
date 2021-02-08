@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import Image from "../Image";
+import { Image } from "../Image";
 import { Markdown } from "../Markdown";
 
 const Wrapper = styled.div`

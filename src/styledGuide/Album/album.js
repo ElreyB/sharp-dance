@@ -43,7 +43,7 @@ export function Album({
   return (
     <Wrapper {...props}>
       <div>
-        {title && <H2>{title}</H2>}
+        {/* {title && <H2>{title}</H2>} */}
         {message && <H4>({message})</H4>}
         {subtitle && <H3>{subtitle}</H3>}
         {content && <P>{content}</P>}

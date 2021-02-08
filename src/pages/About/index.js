@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { Markdown } from "../../styledGuide";
-import Image from "../../styledGuide/Image";
+import { Markdown, Image } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext, PagesContext } from "../../Providers";
 import styled from "styled-components/macro";

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Img, P } from "../../styledGuide";
+import { Image, P } from "../../styledGuide";
 
 const Wrapper = styled.div`
   border: 0px solid transparent;
@@ -21,7 +21,7 @@ const StyledP = styled(P)`
 export default function NoUpcomingEvents() {
   return (
     <Wrapper>
-      <Img
+      <Image
         size={6}
         margin="M"
         align="center"

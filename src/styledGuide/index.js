@@ -6,7 +6,7 @@ export * from "./Button";
 export * from "./DonationButton";
 export * from "./Headings";
 export * from "./IFrame";
-export * from "./Img";
+export * from "./Image";
 export * from "./Input";
 export * from "./Label";
 export * from "./Markdown";
