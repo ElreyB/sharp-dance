@@ -12,7 +12,6 @@ export * from "./Label";
 export * from "./Markdown";
 export * from "./Nav";
 export * from "./P";
-export * from "./Page";
 export * from "./Quote";
 export * from "./Schedule";
 export * from "./ScrollTop";
