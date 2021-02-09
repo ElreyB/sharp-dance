@@ -1,13 +1,21 @@
 import React from "react";
-import { A, Album, Page, Banner } from "../../styledGuide";
+import { Album, Banner } from "../../styledGuide";
 import { MEDIA } from "../../constants";
+import styled from "styled-components/macro";
+
+import { A } from "../../styledGuide";
+
+import Page from "../../layouts/Page";
+
+const BackLink = styled(A)`
+  display: block;
+  margin-top: ${({ theme }) => theme.spacing.M};
+`;
 
 export default function SinglePerformance({ performance }) {
   return (
     <Page>
-      <A marginTop="M" to={MEDIA}>
-        ⮐ Back
-      </A>
+      <BackLink to={MEDIA}>⮐ Back</BackLink>
       <Banner title={performance.title} />
       <Album {...performance} title="" />
     </Page>

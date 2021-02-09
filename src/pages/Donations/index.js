@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import { Banner, Markdown, Page, DonationButton } from "../../styledGuide";
+import { Markdown, DonationButton } from "../../styledGuide";
 import Loading from "../Loading";
 import { PagesContext } from "../../Providers";
+import Page from "../../layouts/Page";
 
 export default function Donations() {
   const { getPage } = useContext(PagesContext);
@@ -14,10 +15,9 @@ export default function Donations() {
   const { options, pageName, richTextContent, ...headerBanner } = page;
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       <DonationButton />
-      <Markdown marginTop="XL">{options.richTextContent}</Markdown>
+      <Markdown>{options.richTextContent}</Markdown>
     </Page>
   );
 }

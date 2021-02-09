@@ -1,6 +1,5 @@
 import React from "react";
 import style, { keyframes } from "styled-components/macro";
-import { Grid } from "gymnast";
 import { SHARP } from "../../constants";
 
 const pulse = keyframes`
@@ -12,9 +11,9 @@ const pulse = keyframes`
       transform: scale(1);
     }
 `;
-const SVG = style("svg")``;
+const SVG = style.svg``;
 
-const Container = style(Grid)`
+const Container = style.div`
     position: relative;
     z-index: 0;
     background-color: ${({ theme }) => theme.colors.black};

@@ -4,7 +4,6 @@ export * from "./Bios";
 export * from "./Classes";
 export * from "./Contact";
 export * from "./Events";
-export * from "./Generic";
 export * from "./Home";
 export * from "./Loading";
 export * from "./Media";

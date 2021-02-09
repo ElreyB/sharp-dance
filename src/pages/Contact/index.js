@@ -1,12 +1,43 @@
 import React from "react";
-import styled from "styled-components";
-import { Page, Banner, Grid, P, A, Label } from "../../styledGuide";
+import styled from "styled-components/macro";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
-import { MailingListForm } from "../../styledGuide";
+
+import { A, P, Label } from "../../styledGuide";
+
+import Page from "../../layouts/Page";
+
+const StyledP = styled(P)`
+  padding-top: ${({ theme, pT }) => (pT ? theme.spacing[pT] : 0)};
+  padding-bottom: ${({ theme, pB }) => (pB ? theme.spacing[pB] : 0)};
+  padding-left: ${({ theme, pL }) => (pL ? theme.spacing[pL] : 0)};
+  padding-right: ${({ theme, pR }) => (pR ? theme.spacing[pR] : 0)};
+`;
+
+const StyledA = styled(A)`
+  padding-top: ${({ theme, pT }) => (pT ? theme.spacing[pT] : 0)};
+  padding-bottom: ${({ theme, pB }) => (pB ? theme.spacing[pB] : 0)};
+  padding-left: ${({ theme, pL }) =>
+    pL ? theme.spacing[pL] : theme.spacing.S};
+  padding-right: ${({ theme, pR }) =>
+    pR ? theme.spacing[pR] : theme.spacing.S};
+
+  margin-left: ${({ theme }) => theme.spacing.M}
+  width: auto;
+  white-space: nowrap;
+`;
+
+const Wrapper = styled.div`
+  border: 0px solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  flex-grow: 1;
+`;
 
 const ColorTitle = styled(Label)`
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 function TitleLink({ title, href, children, ...props }) {
@@ -14,17 +45,15 @@ function TitleLink({ title, href, children, ...props }) {
     return null;
   }
 
-  const Component = href ? A : P;
+  const Component = href ? StyledA : StyledP;
 
   return (
-    <Grid {...props}>
-      <ColorTitle margin={0} size="fit">
-        {title}:
-      </ColorTitle>
-      <Component size="fit" marginLeft="M" href={href}>
+    <Wrapper {...props}>
+      <ColorTitle>{title}:</ColorTitle>
+      <Component pL="M" href={href}>
         {children}
       </Component>
-    </Grid>
+    </Wrapper>
   );
 }
 
@@ -68,10 +97,9 @@ export default function Contact() {
   } = options;
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       {mailingAddress && (
-        <TitleLink marginTop="XL" title="Mailing Address">
+        <TitleLink pT="XL" title="Mailing Address">
           {mailingAddress}
         </TitleLink>
       )}
@@ -83,13 +111,12 @@ export default function Contact() {
         </TitleLink>
       )}
       {contactDescription && (
-        <P marginTop="L" marginBottom="M">
+        <StyledP pT="L" pB="M">
           {contactDescription}
-        </P>
+        </StyledP>
       )}
       {contactEmail && <EmailLink>{contactEmail}</EmailLink>}
       {contactPhone && <PhoneLink>{contactPhone}</PhoneLink>}
-      <MailingListForm />
     </Page>
   );
 }

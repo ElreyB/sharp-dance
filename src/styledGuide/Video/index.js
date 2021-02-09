@@ -1,7 +1,6 @@
-import { Grid } from "gymnast";
 import React from "react";
 import ReactPlayer from "react-player";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { useWindowResize } from "./useWindowSize";
 
@@ -9,7 +8,7 @@ const headerHeight = 44;
 const StyledPlayer = styled(ReactPlayer)`
   margin: auto;
 `;
-const StyledGrid = styled(Grid)`
+const StyledGrid = styled.div`
   position: relative;
   width: 100vw;
   height: 100%;

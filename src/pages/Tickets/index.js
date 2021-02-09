@@ -1,9 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-import { Grid, Banner, Label, Page, P } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Label, P } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 import { PaypayForm } from "./PaypalForm";
+import Page from "../../layouts/Page";
 
 const BELOW_TEXT = [
   "Opening Night",
@@ -23,7 +24,7 @@ const Notes = styled(P)`
 
 const Sentence = styled((props) => <P {...props} size="auto" />)``;
 
-export default function Home() {
+export default function Tickets() {
   const { getPage } = React.useContext(PagesContext);
   const page = getPage("tickets");
 
@@ -54,44 +55,42 @@ export default function Home() {
     showtimes,
     tickets,
   } = options;
-  console.log(showPage);
   if (!showPage) return null;
   return (
-    <Page>
-      <Banner {...headerBanner} />
-      <Grid>
+    <Page headerBanner={headerBanner}>
+      <div>
         <P>{description}</P>
         <Notes justify="center">{notes}</Notes>
         <StyledLabel>Tickets:</StyledLabel>
         <Sentence>{tickets}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Showtimes:</StyledLabel>
         <Sentence>{showtimes.map((time) => time).join(" - ")}</Sentence>
-      </Grid>
+      </div>
       {showtimes.map((time, i) => (
         <PaypayForm textAbove={time} textBelow={BELOW_TEXT[i]} key={i} />
       ))}
-      <Grid>
+      <div>
         <StyledLabel>Location:</StyledLabel>
         <Sentence>{location}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Address: </StyledLabel>
         <Sentence>{address}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Dancers: </StyledLabel>
         <Sentence>{dancers}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Manager: </StyledLabel>
         <Sentence>{manager}</Sentence>
-      </Grid>
-      <Grid>
+      </div>
+      <div>
         <StyledLabel>Artistic Director: </StyledLabel>
         <Sentence>{director}</Sentence>
-      </Grid>
+      </div>
     </Page>
   );
 }

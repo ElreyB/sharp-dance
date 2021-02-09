@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components/macro";
 
 export const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
   html {
     background-color: ${({ theme }) => theme.colors.black};
   }
@@ -13,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   h1,h2,h3,h4,h5,h6 {
     font-family: ${({ theme }) => theme.fonts.serif};
+    margin: 0;
   }
   a {
     color: ${({ theme }) => theme.colors.white};

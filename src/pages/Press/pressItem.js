@@ -1,10 +1,26 @@
 import React from "react";
-import styled from "styled-components";
-import { Grid, Img, H3, P, A } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Image } from "../../styledGuide";
+import { A, P } from "../../styledGuide";
 
-const Wrapper = styled(Grid)`
+const Wrapper = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+  padding: ${({ theme: { spacing } }) => `${spacing.XL} 0`};
 `;
+const H3 = styled.h3`
+  text-align: center;
+`;
+
+const Content = styled.div``;
+
+const AuthorDate = styled(P)`
+  text-align: right;
+`;
+
+const Logo = styled(Image)`
+  text-align: center;
+`;
+
 const makeIntoLink = (content, url) => {
   if (url) {
     return <A href={url}>{content}</A>;
@@ -22,20 +38,17 @@ export function PressItem({
   url,
 }) {
   return (
-    <Wrapper padding="XL 0" align="start">
-      {!logo.src && makeIntoLink(<H3 justify="center">{outlet}</H3>, url)}
-      {makeIntoLink(
-        <Img backgroundSize="contain" src={logo.src} alt={logo.title} />,
-        url
-      )}
-      <Grid size="auto" align="start">
-        {description && <P size={12}>{description}</P>}
+    <Wrapper>
+      {!logo.src && makeIntoLink(<H3>{outlet}</H3>, url)}
+      {makeIntoLink(<Logo src={logo.src} alt={logo.title} />, url)}
+      <Content>
+        {description && <P>{description}</P>}
         {(author || date) && (
-          <Grid justify="end" size="fit">
-            {author} {date}
-          </Grid>
+          <AuthorDate>
+            - {author} {date}
+          </AuthorDate>
         )}
-      </Grid>
+      </Content>
     </Wrapper>
   );
 }

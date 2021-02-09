@@ -1,14 +1,43 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Grid } from "gymnast";
-import styled from "styled-components";
-import { H3 } from "../Headings";
-import { Img } from "../Img";
+import styled from "styled-components/macro";
+import { Image } from "../Image";
 import { Markdown } from "../Markdown";
 
-const Name = (props) => <Grid {...props} marginRight="S" />;
-const StyledName = styled(Name)`
-  color: ${({ theme }) => theme.colors.blue};
+const Wrapper = styled.div`
+  margin-bottom: ${({ theme }) => theme.spacing.L};
+`;
+
+const Content = styled.div`
+  display: flex;
+  ${({ theme }) => theme.media.mobile`
+    flex-direction: column;
+  `};
+`;
+
+const StyledImage = styled(Image)`
+  text-align: center;
+  ${({ theme: { media } }) => media.mobile`
+    width: 50%;
+    align-self: center;
+  `};
+`;
+
+const H3 = styled.h3`
+  ${({ theme }) => theme.media.mobile`
+      text-align: center;
+  `};
+`;
+
+const Name = styled.span`
+  color: ${({ theme }) => theme.colors.red};
+`;
+
+const Title = styled.span`
+  font-style: italic;
+`;
+
+const StyledMarkdown = styled(Markdown)`
+  margin: 16px 40px;
 `;
 
 export function Bio({
@@ -21,57 +50,23 @@ export function Bio({
   title,
   ...props
 }) {
-  const imageList = images || [image];
-
-  if (!imageList[0]) {
-    console.error("Image not found for", name);
-  }
+  const imgSrc = images || image;
 
   return (
-    <Grid {...props}>
-      <H3 size={12} justify={{ desktop: "start", mobile: "center" }} noResize>
-        <StyledName size={{ desktop: "fit", mobile: 12 }} justify="center">
-          {name}
-        </StyledName>
-        <Grid show="mobile" justify="center">
-          {title}
-        </Grid>
-        {title && (
-          <Grid show="desktop" size="auto">
-            ({title})
-          </Grid>
-        )}
+    <Wrapper>
+      <H3>
+        <Name>{name} </Name>
+        <Title>({title})</Title>
       </H3>
-      <Grid
-        size={{ desktop: 3, mobile: 12 }}
-        margin={{ desktop: "0 M 0 0", mobile: "0 M XL" }}
-      >
-        <Grid justify="center" size={{ desktop: 12, mobile: 6 }}>
-          {imageList.map(({ src }) => (
-            <Img src={src} key={src} credit={imgCredit} margin="S 0 0 0" />
-          ))}
-        </Grid>
-      </Grid>
-      <Markdown size="auto" marginBottom="2XL">
-        {bio}
-      </Markdown>
-    </Grid>
+      <Content>
+        <StyledImage
+          src={imgSrc}
+          alt={`${name} headshot`}
+          credit={imgCredit}
+          imageSize="100%"
+        ></StyledImage>
+        <StyledMarkdown>{bio}</StyledMarkdown>
+      </Content>
+    </Wrapper>
   );
 }
-
-Bio.propTypes = {
-  name: PropTypes.string,
-  role: PropTypes.string,
-  imgCredit: PropTypes.string,
-  image: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    title: PropTypes.string,
-  }),
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      title: PropTypes.string,
-    })
-  ),
-  bio: PropTypes.string,
-};

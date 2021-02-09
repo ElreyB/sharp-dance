@@ -1,17 +1,34 @@
 import React from "react";
-import { P, Img, Grid } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Image, P } from "../../styledGuide";
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1050px;
+  width: 100%;
+`;
+
+const StyledP = styled(P)`
+  align-self: center;
+`;
+
+const StyledImage = styled(Image)`
+  text-align: center;
+`;
 
 export default function NoUpcomingEvents() {
   return (
-    <Grid justify="center">
-      <Img
-        size={6}
-        margin="M"
-        align="center"
+    <Wrapper>
+      {/* <div> */}
+      <StyledImage
+        imageSize="50%"
         alt="puzzle"
         src="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F6.jpg?alt=media&token=e4ebd608-54c1-4aae-a0d3-5db4dd60511b"
       />
-      <P justify="center">Currently no performances.</P>
-    </Grid>
+      {/* </div> */}
+      <StyledP>Currently no performances.</StyledP>
+    </Wrapper>
   );
 }

@@ -1,11 +1,19 @@
 import React from "react";
-import { useGrid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 import { A } from "../A";
-import { Label } from "../Label";
+import { Label } from "../Label/Label";
 
-const StyledLi = styled("li")`
+const StyledLi = styled.li`
+  border: 0px solid transparent;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: auto;
+  white-space: nowrap;
+  padding: 0 ${({ theme }) => theme.spacing.S};
+
   & ul {
     display: none;
     position: absolute;
@@ -33,7 +41,6 @@ const StyledLi = styled("li")`
   & a {
     z-index: 1;
   }
-  & a:focus ~ ul,
   &:hover ul {
     display: block;
   }
@@ -42,17 +49,18 @@ const StyledLi = styled("li")`
   }
 `;
 
-export const Li = ({ to, label, children, ...props }) => {
-  const [, allProps] = useGrid({ size: "fit", margin: "0 M", ...props });
+const StyledAnchor = styled(A)`
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: auto;
+  white-space: nowrap;
+`;
 
+export const Li = ({ to, label, children, ...props }) => {
   return (
-    <StyledLi {...allProps}>
-      {to && (
-        <A size="fit" to={to}>
-          {label}
-        </A>
-      )}
-      {!to && <Label size="fit">{label}</Label>}
+    <StyledLi {...props}>
+      {to && <StyledAnchor to={to}>{label}</StyledAnchor>}
+      {!to && <Label>{label}</Label>}
       {children}
     </StyledLi>
   );

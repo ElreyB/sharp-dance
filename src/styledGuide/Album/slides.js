@@ -1,15 +1,24 @@
 import React from "react";
-import Poster from "./poster";
-import { Grid } from "gymnast";
+import Poster from "./Poster";
 import Carousel, { ModalGateway, Modal } from "react-images";
 import View from "./view";
+import styled from "styled-components/macro";
+
+const PosterWrapper = styled.div`
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  ${({ theme: { media } }) => media.mobile`
+    justify-content: space-evenly;
+  `};
+`;
 
 export default function Slides({ sources }) {
   const [currentModal, setCurrentModal] = React.useState(null);
 
   return (
     <>
-      <Grid className="slides" style={{ overflow: "hidden" }}>
+      <PosterWrapper className="slides" style={{ overflow: "hidden" }}>
         {sources.map(({ src }, i) => (
           <Poster
             margin="XS"
@@ -18,7 +27,7 @@ export default function Slides({ sources }) {
             onClick={() => setCurrentModal(i)}
           />
         ))}
-      </Grid>
+      </PosterWrapper>
       <ModalGateway>
         {currentModal !== null ? (
           <Modal

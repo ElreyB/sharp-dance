@@ -1,50 +1,48 @@
 import * as React from "react";
-import { useGrid } from "gymnast";
 import PropTypes from "prop-types";
-import styled from "styled-components";
-import { Header } from "./Header";
-import { H1, H2 } from "../Headings";
-import { ImgGroup } from "../Img";
+import styled from "styled-components/macro";
+import { Image } from "../Image";
 
-const StyledImgGroup = styled(ImgGroup)`
+const StyledImage = styled(Image)`
   min-height: 400px;
-
-  ${ImgGroup.Img.ImgWrapper} {
-    max-width: 100%;
-  }
+  text-align: center;
+  ${Image.Img} {
+    width: 50%;
+    ${({ theme: { media } }) => media.mobile`
+      width: 60%;
+    `};
+  } ;
 `;
+
+const H1 = styled.h1`
+  text-align: center;
+`;
+const H2 = styled.h2`
+  text-align: center;
+`;
+
+const BannerHeader = styled.header``;
 
 export const Banner = ({
   title,
-  subTitle,
-  subtitle = subTitle,
+  subtitle,
   images,
   image,
   alt,
   imgCredit,
-  justify = "center",
+  inputCount,
   ...props
 }) => {
-  const [showH1, allProps] = useGrid(props);
   const imgSrc = images || image;
 
-  if (showH1) {
-    return (
-      <Header {...allProps}>
-        <H1 justify={justify}>{title}</H1>
-        <StyledImgGroup
-          src={imgSrc}
-          alt={alt}
-          credit={imgCredit}
-          justify={justify}
-          backgroundSize="contain"
-        />
-        {subtitle && <H2 justify={justify}>{subtitle}</H2>}
-      </Header>
-    );
-  }
+  return (
+    <BannerHeader {...props}>
+      <H1>{title}</H1>
 
-  return null;
+      <StyledImage src={imgSrc} alt={alt} credit={imgCredit} />
+      {subtitle && <H2>{subtitle}</H2>}
+    </BannerHeader>
+  );
 };
 
 Banner.propTypes = {
@@ -68,6 +66,5 @@ Banner.propTypes = {
     ),
   ]),
   subtitle: PropTypes.string,
-  subTitle: PropTypes.string,
   title: PropTypes.string,
 };

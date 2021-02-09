@@ -1,5 +1,6 @@
 import React, { useContext, Fragment } from "react";
-import { Grid, Banner, Page, Schedule, H3 } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Schedule } from "../../styledGuide";
 import Loading from "../Loading";
 import {
   groupPerformancesByYear,
@@ -9,19 +10,24 @@ import {
 import { EVENTS } from "../../constants";
 import { PerformancesContext, PagesContext } from "../../Providers";
 import NoUpcomingEvents from "./NoUpcomingEvents";
+import Page from "../../layouts/Page";
 
-// https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/site%2Fmedia%2Fpuzzle%2F6.jpg?alt=media&token=e4ebd608-54c1-4aae-a0d3-5db4dd60511b
+const Wrapper = styled.div``;
+
+const H3 = styled.h3`
+  text-align: center;
+`;
+
+const StyledSchedule = styled(Schedule)`
+  margin-bottom: ${({ theme: { spacing } }) => spacing.L};
+`;
 
 const renderPerformances = ([year, perfs]) =>
   perfs.length > 0 && (
     <Fragment key={year}>
       <H3>{year}</H3>
       {perfs.map((perf, i) => (
-        <Schedule
-          {...perf}
-          key={`${year}-${perf.name}-${i}`}
-          margin="0 0 L 0"
-        />
+        <StyledSchedule {...perf} key={`${year}-${perf.name}-${i}`} />
       ))}
     </Fragment>
   );
@@ -50,15 +56,14 @@ export default function Events(props) {
         .map(renderPerformances);
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
-      <Grid align="start">
+    <Page headerBanner={headerBanner}>
+      <Wrapper>
         {isEventPage && performanceArr.length === 0 ? (
           <NoUpcomingEvents />
         ) : (
           performanceArr
         )}
-      </Grid>
+      </Wrapper>
     </Page>
   );
 }

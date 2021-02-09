@@ -1,16 +1,10 @@
 import React from "react";
-import { Grid } from "gymnast";
 import textfit from "textfit";
-import styled from "styled-components/macro";
 
-import { withGrid } from "../internal";
 import { useElementWidth } from "./useElementWidth";
 
 function fitWrapper(Component, maxFontSize) {
-  const Styled = styled(withGrid(Component))`
-    margin: 0;
-  `;
-  return ({ children, noResize, ...props }) => {
+  const Headers = ({ children, noResize, ...props }) => {
     const [ref, width, node] = useElementWidth();
     React.useLayoutEffect(() => {
       if (node && children && !noResize) {
@@ -24,11 +18,13 @@ function fitWrapper(Component, maxFontSize) {
     }, [node, children, noResize, width]);
 
     return (
-      <Grid ref={ref} justify="center" {...props}>
-        {children && <Styled>{children}</Styled>}
-      </Grid>
+      <div ref={ref} justify="center" {...props}>
+        {children && <div>{children}</div>}
+      </div>
     );
   };
+  Headers.displayName = Component;
+  return Headers;
 }
 
 export const H1 = fitWrapper("h1", 18);

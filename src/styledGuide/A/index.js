@@ -1,12 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useGrid } from "gymnast";
 import styled, { css } from "styled-components/macro";
 
 const linkStyles = css`
   color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   font-weight: normal;
+  /* display: block; */
+  /* border: 0px solid transparent;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  flex-grow: 1; */
 
   &.link-active {
     font-weight: bold;
@@ -37,15 +42,12 @@ export const A = ({
   exact = true,
   href,
   target = "_blank",
-  padding = "0 S",
   to,
   ...props
 }) => {
-  const [, allProps] = useGrid({ padding, ...props });
-
   if (href) {
     return (
-      <Anchor {...{ href, target }} {...allProps}>
+      <Anchor {...{ href, target }} {...props}>
         {children}
       </Anchor>
     );
@@ -53,7 +55,7 @@ export const A = ({
 
   return (
     <StyledNavLink
-      {...allProps}
+      {...props}
       exact={exact}
       to={to}
       activeClassName="link-active"

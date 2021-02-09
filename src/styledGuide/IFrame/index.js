@@ -1,6 +1,5 @@
 import React from "react";
-import { Grid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 const StyledIframe = styled("iframe")`
   border: 0;
@@ -9,17 +8,9 @@ const StyledIframe = styled("iframe")`
   position: relative;
 `;
 
-export function IFrame({
-  size,
-  margin,
-  padding,
-  src,
-  title,
-  height,
-  ...props
-}) {
+export function IFrame({ src, title, height, ...props }) {
   return (
-    <Grid {...{ margin, padding, size }} {...props}>
+    <div {...props}>
       <StyledIframe
         src={src}
         title={title}
@@ -27,6 +18,6 @@ export function IFrame({
         frameborder="0"
         allowfullscreen
       ></StyledIframe>
-    </Grid>
+    </div>
   );
 }

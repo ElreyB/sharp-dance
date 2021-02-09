@@ -1,10 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Grid } from "gymnast";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { TiTicket, TiGlobeOutline } from "react-icons/ti";
+import { IconContext } from "react-icons";
 import { P } from "../P";
-import { H3 } from "../Headings";
+import { A } from "../A";
+
+const StyledA = styled(A)`
+  ${({ theme: { media } }) => media.mobile`
+    text-align: center;
+  `}
+`;
 
 function IconAnchor({ Icon, url }) {
   if (!url) {
@@ -12,9 +18,11 @@ function IconAnchor({ Icon, url }) {
   }
 
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      <Icon />
-    </a>
+    <IconContext.Provider value={{ size: "30px" }}>
+      <StyledA href={url} target="_blank" rel="noopener noreferrer">
+        <Icon />
+      </StyledA>
+    </IconContext.Provider>
   );
 }
 
@@ -33,9 +41,27 @@ const monthName = {
   12: "December",
 };
 
-const StyledH3 = styled(H3)`
-  white-space: normal;
-  max-width: 100%;
+const Wrapper = styled.div``;
+
+const H3 = styled.h3`
+  text-align: center;
+  flex: 1;
+  /* color: ${({ theme }) => theme.colors.blue}; */
+`;
+
+const Description = styled(P)``;
+const Location = styled(P)`
+  /* color: ${({ theme }) => theme.colors.red}; */
+`;
+const DateTime = styled(P)`
+  /* color: ${({ theme }) => theme.colors.blue}; */
+`;
+
+const Header = styled.header`
+  display: flex;
+  ${({ theme: { media } }) => media.mobile`
+    flex-direction: column;
+  `}
 `;
 
 export const Schedule = ({
@@ -43,40 +69,30 @@ export const Schedule = ({
   dates,
   description,
   location,
-  margin,
   name,
-  padding,
   purchaseUrl,
-  size,
   website,
+  ...props
 }) => {
   return (
-    <Grid size={size} margin={margin} padding={padding}>
-      <Grid>
-        {name && <StyledH3 size="fit">{name}</StyledH3>}
+    <Wrapper {...props}>
+      <Header>
+        {name && <H3>{name}</H3>}
         <IconAnchor url={purchaseUrl} Icon={TiTicket} />
         <IconAnchor url={website} Icon={TiGlobeOutline} />
-      </Grid>
-      {description && <P>{description}</P>}
-      <Grid size={{ mobile: "auto", desktop: "fit" }}>
-        {(location || address) && (
-          <P>{[location, address].filter((a) => !!a).join(" - ")}</P>
-        )}
-      </Grid>
-      <Grid>
-        {dates.map(({ days, month, time, notes }, i) => (
-          <Grid key={i}>
-            <Grid size="fit" paddingRight="S">
-              {monthName[month]}, {days}
-            </Grid>
-            <Grid size="fit" paddingRight="S">
-              {time}
-            </Grid>
-            <Grid size="fit">{notes}</Grid>
-          </Grid>
-        ))}
-      </Grid>
-    </Grid>
+      </Header>
+      {description && <Description>{description}</Description>}
+      {(location || address) && (
+        <Location>
+          {[location, address].filter((a) => !!a).join(" - ")}
+        </Location>
+      )}
+      {dates.map(({ days, month, time, notes }, i) => (
+        <DateTime key={i}>
+          {monthName[month]}, {days} {time} {notes}
+        </DateTime>
+      ))}
+    </Wrapper>
   );
 };
 

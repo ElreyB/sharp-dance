@@ -1,9 +1,16 @@
 import React, { useContext } from "react";
-import { Grid, H3, A, Banner, Markdown, Page } from "../../styledGuide";
+import { H3, Markdown } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
+import { A } from "../../styledGuide";
+import styled from "styled-components/macro";
+import Page from "../../layouts/Page";
 
 const isDirector = ({ director }) => director;
+
+const FaceBookLink = styled(A)`
+  justify-content: center;
+`;
 
 export default function DianeSharp() {
   const { staff } = useContext(ResourcesContext).resourceObj;
@@ -17,30 +24,22 @@ export default function DianeSharp() {
   }
 
   const { options, pageName, ...headerBanner } = page;
+  const additonalInfo = {
+    ...headerBanner,
+    title: `${headerBanner.title} : ${director.name}`,
+    images: director.images,
+    imgCredit: director.imgCredit,
+  };
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
-      <Grid align="start">
-        {director && (
-          <>
-            <Banner
-              title={director.name}
-              images={director.images}
-              imgCredit={director.imgCredit}
-            />
-            <Markdown marginTop="XL">{director.bio}</Markdown>
-          </>
-        )}
-        <Grid direction="row">
-          <H3 justify="center" padding="L 0">
-            Visit Diane Sharp Photos
-          </H3>
-          <A href={options.facebook} justify="center">
-            Diane's Photos FaceBook
-          </A>
-        </Grid>
-      </Grid>
+    <Page headerBanner={additonalInfo}>
+      <Markdown>{director.bio}</Markdown>
+      <H3>
+        Visit Diane Sharp Photos - {""}
+        <FaceBookLink href={options.facebook}>
+          Diane's Photos FaceBook
+        </FaceBookLink>
+      </H3>
     </Page>
   );
 }

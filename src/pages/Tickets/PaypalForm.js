@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
-import { Grid, P } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { P } from "../../styledGuide";
 
 const Form = styled.form`
   width: 100%;
@@ -13,15 +13,15 @@ const Sentence = styled(P)`
 
 export const PaypayForm = ({ textAbove, textBelow }) => {
   return (
-    <Grid margin="S 0">
+    <div margin="S 0">
       {textAbove && <Sentence>{textAbove}</Sentence>}
-      <Grid>
+      <div>
         <Form
           target="paypal"
           action="https://www.paypal.com/cgi-bin/webscr"
           method="post"
         >
-          <Grid>
+          <div>
             <input type="hidden" name="cmd" value="_s-xclick" />
             <input
               type="hidden"
@@ -58,11 +58,11 @@ export const PaypayForm = ({ textAbove, textBelow }) => {
               width="1"
               height="1"
             />
-          </Grid>
+          </div>
         </Form>
-      </Grid>
+      </div>
       {textBelow && <Sentence>{textBelow}</Sentence>}
-    </Grid>
+    </div>
   );
 };
 

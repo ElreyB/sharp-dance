@@ -1,8 +1,10 @@
 import React from "react";
-import { Banner, Grid, Page, Schedule, H3, IFrame } from "../../styledGuide";
+import styled from "styled-components/macro";
+import { Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
+import Page from "../../layouts/Page";
 
 const now = new Date().getTime();
 const isFuture = (time) => time > now;
@@ -10,12 +12,16 @@ const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 function ClassSchedule({ season, ...upcomingClasses }) {
   return (
-    <Grid>
+    <div>
       {season && <H3>{season}</H3>}
-      <Schedule {...upcomingClasses} margin="0 0 L 0" />
-    </Grid>
+      <Schedule {...upcomingClasses} />
+    </div>
   );
 }
+
+const StyledIFrame = styled(IFrame)`
+  margin: ${({ theme: { spacing } }) => `${spacing.M} 0`};
+`;
 
 export default function Classes() {
   const { getPage } = React.useContext(PagesContext);
@@ -39,15 +45,13 @@ export default function Classes() {
     .filter((classSchedule) => !!classSchedule);
 
   return (
-    <Page>
-      <Banner {...headerBanner} />
+    <Page headerBanner={headerBanner}>
       {options.content}
-      <IFrame
-        margin="M 0"
+      <StyledIFrame
         src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsEmbedAPIKey}&q=${location}`}
         title="Class locations"
         height="500"
-      ></IFrame>
+      ></StyledIFrame>
       {upcomingClassesList.length > 0 ? (
         <>
           {upcomingClassesList.map((schedule, i) => (

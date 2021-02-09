@@ -1,4 +1,3 @@
-import { Grid } from "gymnast";
 import React from "react";
 import styled from "styled-components/macro";
 import HamburgerButton from "../HamburgerButton";
@@ -17,7 +16,7 @@ import {
   MEDIA,
   PAST_EVENTS,
   PRESS,
-  TICKETS,
+  // TICKETS,
 } from "../../constants";
 
 const ESCAPE_KEY = 27;
@@ -39,9 +38,29 @@ const Nav = styled.nav`
   }
 `;
 
+const NavLink = styled(A)`
+  flex-basis: 100%;
+  max-width: 100%;
+  padding: ${({ theme }) => `${theme.spacing.XS} ${theme.spacing.M}`};
+`;
+
+const StyledSocialIcons = styled(SocialIcons)`
+  margin-top: ${({ theme }) => theme.spacing.M};
+  width: 50%;
+`;
+
+const HamburgerWrapper = styled.div`
+  padding: 8px 16px;
+`;
+
+const Links = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const links = [
   { to: ABOUT, label: "About" },
-  { to: TICKETS, label: "Tickets" },
+  // { to: TICKETS, label: "Tickets" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
   { to: BIOS, label: "Company" },
   { to: MEDIA, label: "Repertoire" },
@@ -73,15 +92,17 @@ const SideDrawer = ({ show, onClick }) => (
           }}
           onDeactivate={onClick}
         >
-          <Grid paddingTop="M">
-            <HamburgerButton onClick={onClick} closed />
+          <Links>
+            <HamburgerWrapper>
+              <HamburgerButton onClick={onClick} closed />
+            </HamburgerWrapper>
             {links.map(({ to, label }) => (
-              <A to={to} key={to} size={12} padding="S/2 M">
+              <NavLink to={to} key={to} onClick={() => onClick(false)}>
                 {label}
-              </A>
+              </NavLink>
             ))}
-            <SocialIcons paddingTop="M" />
-          </Grid>
+            <StyledSocialIcons />
+          </Links>
         </FocusTrap>
       )}
     </Nav>
