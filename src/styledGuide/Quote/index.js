@@ -1,20 +1,34 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Blockquote } from "./Blockquote";
-import { Footer } from "./Footer";
-import { Cite } from "./Cite";
+import styled from "styled-components/macro";
 import { P } from "../P";
+
+const Blockquote = styled("blockquote")`
+  color: ${({ theme }) => theme.colors.red};
+  line-height: 1.4;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: ${({ theme: { spacing } }) => spacing.XL};
+`;
+
+const Cite = styled.cite``;
+
+const Footer = styled("footer")`
+  color: ${({ theme }) => theme.colors.white};
+  font-style: normal;
+  text-align: right;
+`;
 
 export const Quote = ({ source, author, quote, ...props }) => {
   if (!quote) {
-    return <></>;
+    return null;
   }
 
   return (
     <Blockquote {...props}>
       <P>{quote}</P>
-      <Footer justify="end">
-        — {author}, <Cite size="fit">{source}</Cite>
+      <Footer>
+        — {author}, <Cite>{source}</Cite>
       </Footer>
     </Blockquote>
   );

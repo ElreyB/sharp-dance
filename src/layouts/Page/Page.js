@@ -7,6 +7,7 @@ const PageContent = styled.div`
   max-width: 1050px;
   margin: 0 auto;
   min-height: 100vh;
+  padding-top: ${({ theme: { spacing } }) => spacing.XL};
 `;
 
 export default function Page({ children, headerBanner, ...props }) {
