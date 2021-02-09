@@ -29,7 +29,6 @@ export default function Bios() {
     return <Loading />;
   }
   const { options, pageName, ...headerBanner } = page;
-  console.log("bios", { headerBanner });
   return (
     <Page headerBanner={headerBanner}>
       {/* <div align="start"> */}

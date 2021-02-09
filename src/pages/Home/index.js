@@ -5,11 +5,6 @@ import Loading from "../Loading";
 import styled from "styled-components/macro";
 
 const CustomPage = styled.div`
-  max-width: 1050px;
-  margin: 0 auto;
-  min-height: 100vh;
-  color: ${({ theme }) => theme.colors.white};
-  z-index: 0;
   max-width: 100vw;
   padding-bottom: 0 !important;
   position: absolute;

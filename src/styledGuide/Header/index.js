@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { A } from "../../styledGuide";
-import { Nav } from "../../styledGuide/Nav";
-import SideDrawer from "../../styledGuide/SideDrawer";
-import HamburgerButton from "../../styledGuide/HamburgerButton";
-import { SocialIcons } from "../../styledGuide/SocialIcons";
+import { A } from "..";
+import { Nav } from "../Nav";
+import SideDrawer from "../SideDrawer";
+import HamburgerButton from "../HamburgerButton";
+import { SocialIcons } from "../SocialIcons";
 import { LANDING, SHARP_CO } from "../../constants";
 
 const StyledH1 = styled.h1`
@@ -60,12 +60,12 @@ const HamburgerWrapper = styled.div`
   padding: 8px 16px;
 `;
 
-export default function Header() {
+export function Header() {
   const [show, setShow] = React.useState(false);
   return (
     <Wrapper>
       <LogoWrapper>
-        <StyledH1 size="fit" margin="0 XL" noResize>
+        <StyledH1>
           <LogoLink to={LANDING}>{SHARP_CO}</LogoLink>
         </StyledH1>
         <DesktopSocialIcons />

@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components/macro";
 import { Schedule, H3, IFrame } from "../../styledGuide";
 import { parseDate } from "../../utils";
 import Loading from "../Loading";
@@ -13,10 +14,14 @@ function ClassSchedule({ season, ...upcomingClasses }) {
   return (
     <div>
       {season && <H3>{season}</H3>}
-      <Schedule {...upcomingClasses} margin="0 0 L 0" />
+      <Schedule {...upcomingClasses} />
     </div>
   );
 }
+
+const StyledIFrame = styled(IFrame)`
+  margin: ${({ theme: { spacing } }) => `${spacing.M} 0`};
+`;
 
 export default function Classes() {
   const { getPage } = React.useContext(PagesContext);
@@ -42,12 +47,11 @@ export default function Classes() {
   return (
     <Page headerBanner={headerBanner}>
       {options.content}
-      <IFrame
-        margin="M 0"
+      <StyledIFrame
         src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsEmbedAPIKey}&q=${location}`}
         title="Class locations"
         height="500"
-      ></IFrame>
+      ></StyledIFrame>
       {upcomingClassesList.length > 0 ? (
         <>
           {upcomingClassesList.map((schedule, i) => (

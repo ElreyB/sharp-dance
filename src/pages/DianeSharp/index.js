@@ -24,7 +24,6 @@ export default function DianeSharp() {
   }
 
   const { options, pageName, ...headerBanner } = page;
-  console.log("Diane", { headerBanner });
   const additonalInfo = {
     ...headerBanner,
     title: `${headerBanner.title} : ${director.name}`,

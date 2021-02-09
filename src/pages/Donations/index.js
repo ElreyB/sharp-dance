@@ -17,7 +17,7 @@ export default function Donations() {
   return (
     <Page headerBanner={headerBanner}>
       <DonationButton />
-      <Markdown marginTop="XL">{options.richTextContent}</Markdown>
+      <Markdown>{options.richTextContent}</Markdown>
     </Page>
   );
 }

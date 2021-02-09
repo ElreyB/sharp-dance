@@ -13,7 +13,7 @@ import Press from "./pages/Press";
 import DianeSharp from "./pages/DianeSharp";
 import Tickets from "./pages/Tickets";
 
-import Header from "./components/Header";
+import { Header } from "./styledGuide";
 import {
   ABOUT,
   BIOS,

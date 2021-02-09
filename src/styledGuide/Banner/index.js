@@ -6,6 +6,12 @@ import { Image } from "../Image";
 const StyledImage = styled(Image)`
   min-height: 400px;
   text-align: center;
+  ${Image.Img} {
+    width: 50%;
+    ${({ theme: { media } }) => media.mobile`
+      width: 60%;
+    `};
+  } ;
 `;
 
 const H1 = styled.h1`

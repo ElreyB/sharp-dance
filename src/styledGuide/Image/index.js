@@ -38,8 +38,15 @@ export function Image({ src, alt, credit, imageSize, ...props }) {
   if (!srcString) return null;
   return (
     <Wrapper {...props}>
-      <Img src={srcString} alt={combinedAlt} role={role} size={imageSize} />
+      <Image.Img
+        src={srcString}
+        alt={combinedAlt}
+        role={role}
+        size={imageSize}
+      />
       {credit && <Credit>Credit: {credit}</Credit>}
     </Wrapper>
   );
 }
+
+Image.Img = Img;

@@ -8,17 +8,9 @@ const StyledIframe = styled("iframe")`
   position: relative;
 `;
 
-export function IFrame({
-  size,
-  margin,
-  padding,
-  src,
-  title,
-  height,
-  ...props
-}) {
+export function IFrame({ src, title, height, ...props }) {
   return (
-    <div {...{ margin, padding, size }} {...props}>
+    <div {...props}>
       <StyledIframe
         src={src}
         title={title}

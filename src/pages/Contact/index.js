@@ -23,9 +23,6 @@ const StyledA = styled(A)`
     pR ? theme.spacing[pR] : theme.spacing.S};
 
   margin-left: ${({ theme }) => theme.spacing.M}
-
-  flex-grow: 0;
-  flex-shrink: 0;
   width: auto;
   white-space: nowrap;
 `;
@@ -37,11 +34,10 @@ const Wrapper = styled.div`
   flex-flow: row wrap;
   width: 100%;
   flex-grow: 1;
-  padding-top: ${({ theme, pT }) => (pT ? theme.spacing[pT] : 0)};
 `;
 
 const ColorTitle = styled(Label)`
-  color: ${({ theme }) => theme.colors.blue};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 function TitleLink({ title, href, children, ...props }) {
@@ -53,9 +49,7 @@ function TitleLink({ title, href, children, ...props }) {
 
   return (
     <Wrapper {...props}>
-      <ColorTitle margin={0} size="fit">
-        {title}:
-      </ColorTitle>
+      <ColorTitle>{title}:</ColorTitle>
       <Component pL="M" href={href}>
         {children}
       </Component>
