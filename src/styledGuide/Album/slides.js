@@ -1,5 +1,5 @@
 import React from "react";
-import Poster from "./Poster";
+import Poster from "./poster";
 import Carousel, { ModalGateway, Modal } from "react-images";
 import View from "./view";
 import styled from "styled-components/macro";
