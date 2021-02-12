@@ -3,7 +3,7 @@ import { css } from "styled-components/macro";
 const primaryColors = {
   white: "rgb(255, 255, 255)",
   black: "rgb(0,0,0)",
-  grey: "rgb(140, 133, 133)",
+  sliver: "rgb(140, 133, 133)",
   red: "rgb(207, 31, 34)",
 };
 
