@@ -15,11 +15,11 @@ const linkStyles = css`
 
   &.link-active {
     font-weight: bold;
-    color: ${({ theme }) => theme.colors.blue};
+    color: ${({ theme: { colors } }) => colors.favorites.teal};
   }
 
   &:hover {
-    color: ${({ theme }) => theme.colors.blue};
+    color: ${({ theme: { colors } }) => colors.favorites.teal};
   }
 
   &:focus {

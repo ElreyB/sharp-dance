@@ -2,9 +2,6 @@ version: 2
 
 jobs:
   build:
-    filters:
-      branches:
-        ignore: gh-pages
     shell: /bin/bash --login
     docker:
       - image: circleci/node:12-browsers
