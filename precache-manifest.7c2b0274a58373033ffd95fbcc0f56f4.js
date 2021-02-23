@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d25b17906cd0ce821b9e8afe88d7cdb",
+    "revision": "ae60edf496d0b2f2aadc27c32e4a7ce1",
     "url": "/sharp-dance/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sharp-dance/static/js/2.26f12e72.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c7db8adb99ecfad57c12",
-    "url": "/sharp-dance/static/js/main.b12842d4.chunk.js"
+    "revision": "360017ee2bd59f96b10c",
+    "url": "/sharp-dance/static/js/main.13ef56b0.chunk.js"
   },
   {
     "revision": "4c5ec8b3c5b593dbce19",
