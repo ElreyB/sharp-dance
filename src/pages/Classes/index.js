@@ -34,7 +34,7 @@ export default function Classes() {
   console.log({ classSchedules });
 
   const { options = {}, pageName, ...headerBanner } = page;
-  const location = classSchedules.length && classSchedules[0].placeId;
+  const location = classSchedules.length && classSchedules[0].location;
   const upcomingClassesList = classSchedules
     .map((classSchedule) => {
       const dates = classSchedule.dates.filter((date) =>
@@ -50,7 +50,8 @@ export default function Classes() {
       {options.content}
       {location && (
         <StyledIFrame
-          src={`https://www.google.com/maps/embed/v1/place?q=place_id:${location}&key=${googleMapsEmbedAPIKey}`}
+          src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsEmbedAPIKey}&q=${location}`}
+          // src={`https://www.google.com/maps/embed/v1/place?q=place_id:${location}&key=${googleMapsEmbedAPIKey}`}
           // <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc0iiUg7GxokRGIlW7bU0DKo&key=AIzaSyAbL6Zcu80QrsNEEtx_AkpejRW2fhJ9T_I"></iframe>
           title="Class locations"
           height="500"
