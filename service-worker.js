@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sharp-dance/precache-manifest.4b1ec1b6aadffe3a546659c60c8a0d8d.js"
+  "/sharp-dance/precache-manifest.10eb7fe1388a6d4ab3735b073d47e732.js"
 );
 
 self.addEventListener('message', (event) => {
