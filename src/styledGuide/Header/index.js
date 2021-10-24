@@ -5,6 +5,7 @@ import { Nav } from "../Nav";
 import SideDrawer from "../SideDrawer";
 import HamburgerButton from "../HamburgerButton";
 import { SocialIcons } from "../SocialIcons";
+import { Image } from "../Image";
 import { LANDING, SHARP_CO } from "../../constants";
 
 const StyledH1 = styled.h1`
@@ -15,11 +16,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   white-space: nowrap;
-  position: fixed;
-  height: 45px;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+  /* position: fixed; */
+  height: 105px;
   background-color: ${({ theme }) => theme.colors.black};
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
 `;
 const LogoLink = styled(A)`
@@ -65,13 +65,25 @@ export function Header() {
   return (
     <Wrapper>
       <LogoWrapper>
-        <StyledH1>
-          <LogoLink to={LANDING}>{SHARP_CO}</LogoLink>
-        </StyledH1>
-        <DesktopSocialIcons />
+        {/* <StyledH1> */}
+        <LogoLink to={LANDING}>
+          <img
+            src={process.env.PUBLIC_URL + "/images/white-logo-dancer.png"}
+            width="120px"
+            alt="sharp dance"
+          />
+          <img
+            src={process.env.PUBLIC_URL + "/images/white-logo-name.png"}
+            width="200px"
+            alt="sharp dance"
+            style={{ paddingTop: "10px" }}
+          />
+        </LogoLink>
+        {/* </StyledH1> */}
       </LogoWrapper>
       <SideDrawer show={show} onClick={() => setShow(!show)} />
       <StyledNav />
+      <DesktopSocialIcons />
       <HamburgerWrapper>
         <StyledHamburger onClick={() => setShow(!show)} />
       </HamburgerWrapper>

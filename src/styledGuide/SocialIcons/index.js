@@ -6,6 +6,7 @@ import styled from "styled-components/macro";
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
 `;
 
 const IconLink = styled(A)`

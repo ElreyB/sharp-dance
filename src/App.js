@@ -12,6 +12,9 @@ import Media from "./pages/Media";
 import Press from "./pages/Press";
 import DianeSharp from "./pages/DianeSharp";
 import Tickets from "./pages/Tickets";
+import { Quote } from "./styledGuide/Quote";
+import { QuotesContext } from "./Providers";
+import { random } from "lodash";
 
 import { Header } from "./styledGuide";
 import {
@@ -48,9 +51,12 @@ function MainLayoutRoute({ component: Component, ...rest }) {
 }
 
 function App() {
+  const quotes = React.useContext(QuotesContext);
   return (
     <Router>
       <Header />
+      <Quote {...quotes[random(0, quotes.length - 1)]} alignAuthor="center" />
+
       <ScrollToTop />
       <Switch>
         <MainLayoutRoute path={ABOUT} exact component={About} />
@@ -61,7 +67,11 @@ function App() {
         <MainLayoutRoute path={DONATIONS} exact component={Donations} />
         <MainLayoutRoute path={EVENTS} exact component={Events} />
         <MainLayoutRoute path={PAST_EVENTS} exact component={Events} />
-        <Route path={[LANDING, "/sharp-dance"]} exact component={Home} />
+        <MainLayoutRoute
+          path={[LANDING, "/sharp-dance"]}
+          exact
+          component={Home}
+        />
         <MainLayoutRoute
           path={`${MEDIA}/:performanceTitle?`}
           exact

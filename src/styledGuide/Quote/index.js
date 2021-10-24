@@ -16,10 +16,16 @@ const Cite = styled.cite``;
 const Footer = styled("footer")`
   color: ${({ theme }) => theme.colors.white};
   font-style: normal;
-  text-align: right;
+  text-align: ${({ align }) => align};
 `;
 
-export const Quote = ({ source, author, quote, ...props }) => {
+export const Quote = ({
+  source,
+  author,
+  quote,
+  alignAuthor = "right",
+  ...props
+}) => {
   if (!quote) {
     return null;
   }
@@ -27,7 +33,7 @@ export const Quote = ({ source, author, quote, ...props }) => {
   return (
     <Blockquote {...props}>
       <P>{quote}</P>
-      <Footer>
+      <Footer align={alignAuthor}>
         — {author}, <Cite>{source}</Cite>
       </Footer>
     </Blockquote>
@@ -38,4 +44,5 @@ Quote.propTypes = {
   source: PropTypes.string,
   author: PropTypes.string,
   quote: PropTypes.string,
+  alignAuthor: PropTypes.string,
 };
