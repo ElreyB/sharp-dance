@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import Loading from "../Loading";
-import { ResourcesContext, PagesContext } from "../../Providers";
-import Page from "../../layouts/Page";
-import { Bio } from "../../styledGuide";
 import styled from "styled-components";
+import Page from "../../layouts/Page";
+import { PagesContext, ResourcesContext } from "../../Providers";
+import { Bio } from "../../styledGuide";
+import Loading from "../Loading";
 
 // Removes director prop since it's not meant to be passed to the component
 const getBio = ({ director, ...bio }) => <Bio {...bio} key={bio.name} />;
@@ -14,7 +14,7 @@ const H2 = styled.h2`
   text-align: center;
   ${({ theme }) =>
     `margin:${theme.spacing.M} ${theme.spacing.M} ${theme.spacing.XL} ${theme.spacing.M}`};
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 export default function Bios() {

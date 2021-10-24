@@ -22,7 +22,7 @@ const favorites = {
 const colors = {
   black: "#000000",
   white: "#ffffff",
-  red: "#d0021b",
+  red: "#B12427",
   blue: "#00fdff",
   primaryColors,
   secondaryColors,
@@ -67,6 +67,7 @@ export const theme = {
   colors,
   fonts,
   spacing,
+  breakpoints,
   device,
   media,
 };

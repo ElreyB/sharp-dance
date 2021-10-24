@@ -1,10 +1,6 @@
+import FocusTrap from "focus-trap-react";
 import React from "react";
 import styled from "styled-components/macro";
-import HamburgerButton from "../HamburgerButton";
-import BackDrop from "./backDrop";
-import FocusTrap from "focus-trap-react";
-import { A } from "../A";
-import { SocialIcons } from "../SocialIcons";
 import {
   ABOUT,
   BIOS,
@@ -16,15 +12,18 @@ import {
   MEDIA,
   PAST_EVENTS,
   PRESS,
-  // TICKETS,
 } from "../../constants";
+import { A } from "../A";
+import HamburgerButton from "../HamburgerButton";
+import { SocialIcons } from "../SocialIcons";
+import BackDrop from "./backDrop";
 
 const ESCAPE_KEY = 27;
 const Nav = styled.nav`
   height: 100%;
   overflow: auto;
   position: fixed;
-  background-color: inherit;
+  background-color: ${({ theme }) => theme.colors.red};
   top: 0;
   left: 0;
   z-index: 100;

@@ -1,10 +1,10 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
 import styled from "styled-components/macro";
 import { P } from "../P";
 
 const Blockquote = styled("blockquote")`
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.black};
   line-height: 1.4;
   font-style: italic;
   text-align: center;

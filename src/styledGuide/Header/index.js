@@ -1,25 +1,18 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { A } from "..";
+import { LANDING } from "../../constants";
+import HamburgerButton from "../HamburgerButton";
 import { Nav } from "../Nav";
 import SideDrawer from "../SideDrawer";
-import HamburgerButton from "../HamburgerButton";
-import { SocialIcons } from "../SocialIcons";
-import { Image } from "../Image";
-import { LANDING, SHARP_CO } from "../../constants";
 
-const StyledH1 = styled.h1`
-  color: ${({ theme }) => theme.colors.white};
-`;
 const Wrapper = styled.div`
   border: 0px solid transparent;
   display: flex;
   flex-flow: row wrap;
   white-space: nowrap;
-  /* position: fixed; */
   height: 105px;
   background-color: ${({ theme }) => theme.colors.black};
-  /* z-index: 1; */
   width: 100%;
 `;
 const LogoLink = styled(A)`
@@ -41,13 +34,6 @@ const StyledNav = styled(Nav)`
   `}
 `;
 
-const DesktopSocialIcons = styled(SocialIcons)`
-  ${({ theme }) => theme.media.mobile`
-  display: none
-  `}
-  padding-top: 8px;
-  padding-left: 8px;
-`;
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -65,10 +51,9 @@ export function Header() {
   return (
     <Wrapper>
       <LogoWrapper>
-        {/* <StyledH1> */}
         <LogoLink to={LANDING}>
           <img
-            src={process.env.PUBLIC_URL + "/images/white-logo-dancer.png"}
+            src={process.env.PUBLIC_URL + "/images/tabimage.jpg"}
             width="120px"
             alt="sharp dance"
           />
@@ -79,11 +64,9 @@ export function Header() {
             style={{ paddingTop: "10px" }}
           />
         </LogoLink>
-        {/* </StyledH1> */}
       </LogoWrapper>
       <SideDrawer show={show} onClick={() => setShow(!show)} />
       <StyledNav />
-      <DesktopSocialIcons />
       <HamburgerWrapper>
         <StyledHamburger onClick={() => setShow(!show)} />
       </HamburgerWrapper>

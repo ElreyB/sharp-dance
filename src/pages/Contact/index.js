@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { PagesContext } from "../../Providers";
-import Loading from "../Loading";
-
-import { A, P, Label } from "../../styledGuide";
-
 import Page from "../../layouts/Page";
+import { PagesContext } from "../../Providers";
+import { A, Label, P } from "../../styledGuide";
+import Loading from "../Loading";
 
 const StyledP = styled(P)`
   padding-top: ${({ theme, pT }) => (pT ? theme.spacing[pT] : 0)};
@@ -37,7 +35,7 @@ const Wrapper = styled.div`
 `;
 
 const ColorTitle = styled(Label)`
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 function TitleLink({ title, href, children, ...props }) {
