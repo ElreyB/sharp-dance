@@ -4,6 +4,7 @@ import Page from "../../layouts/Page";
 import { PagesContext, ResourcesContext } from "../../Providers";
 import { Bio } from "../../styledGuide";
 import Loading from "../Loading";
+import DesktopBios from "./DesktopBios";
 
 // Removes director prop since it's not meant to be passed to the component
 const getBio = ({ director, ...bio }) => <Bio {...bio} key={bio.name} />;
@@ -30,31 +31,32 @@ export default function Bios() {
   }
   const { options, pageName, ...headerBanner } = page;
   return (
-    <Page headerBanner={headerBanner}>
-      {/* <div align="start"> */}
-      {performers && (
-        <>
-          <H2>Dancers</H2>
-          {Object.values(performers).map(getBio)}
-        </>
-      )}
-      {apprentices && (
-        <>
-          <H2>Apprentices</H2>
-          {apprentices.map(getBio)}
-        </>
-      )}
-      {guestPerformers && (
-        <>
-          <H2>Guest Performers</H2>
-          {guestPerformers.map(getBio)}
-        </>
-      )}
-      <>
-        <H2>Staff</H2>
-        {staff && staff.filter(isNotDirector).map(getBio)}
-      </>
-      {/* </div> */}
-    </Page>
+    <DesktopBios />
+    // <Page headerBanner={headerBanner}>
+    //   {/* <div align="start"> */}
+    //   {performers && (
+    //     <>
+    //       <H2>Dancers</H2>
+    //       {Object.values(performers).map(getBio)}
+    //     </>
+    //   )}
+    //   {apprentices && (
+    //     <>
+    //       <H2>Apprentices</H2>
+    //       {apprentices.map(getBio)}
+    //     </>
+    //   )}
+    //   {guestPerformers && (
+    //     <>
+    //       <H2>Guest Performers</H2>
+    //       {guestPerformers.map(getBio)}
+    //     </>
+    //   )}
+    //   <>
+    //     <H2>Staff</H2>
+    //     {staff && staff.filter(isNotDirector).map(getBio)}
+    //   </>
+    //   {/* </div> */}
+    // </Page>
   );
 }
