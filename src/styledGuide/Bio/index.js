@@ -29,7 +29,7 @@ const H3 = styled.h3`
 `;
 
 const Name = styled.span`
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 const Title = styled.span`

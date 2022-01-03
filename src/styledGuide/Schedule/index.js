@@ -1,10 +1,10 @@
-import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components/macro";
-import { TiTicket, TiGlobeOutline } from "react-icons/ti";
+import React from "react";
 import { IconContext } from "react-icons";
-import { P } from "../P";
+import { TiGlobeOutline, TiTicket } from "react-icons/ti";
+import styled from "styled-components/macro";
 import { A } from "../A";
+import { P } from "../P";
 
 const StyledA = styled(A)`
   ${({ theme: { media } }) => media.mobile`
@@ -50,12 +50,8 @@ const H3 = styled.h3`
 `;
 
 const Description = styled(P)``;
-const Location = styled(P)`
-  /* color: ${({ theme }) => theme.colors.red}; */
-`;
-const DateTime = styled(P)`
-  /* color: ${({ theme }) => theme.colors.blue}; */
-`;
+const Location = styled(P)``;
+const DateTime = styled(P)``;
 
 const Header = styled.header`
   display: flex;

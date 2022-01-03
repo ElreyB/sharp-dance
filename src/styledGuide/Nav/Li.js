@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components/macro";
-
 import { A } from "../A";
 import { Label } from "../Label/Label";
 
@@ -29,7 +28,7 @@ const StyledLi = styled.li`
       border-bottom: 1px solid ${({ theme }) => theme.colors.white};
       border-left: 1px solid ${({ theme }) => theme.colors.white};
       border-right: 1px solid ${({ theme }) => theme.colors.white};
-      background-color: ${({ theme }) => theme.colors.black};
+      background-color: inherit;
     }
   }
   & a:focus,
