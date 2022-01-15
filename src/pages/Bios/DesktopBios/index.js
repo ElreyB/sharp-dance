@@ -39,7 +39,7 @@ const NavResoucesDiv = styled.div(
   ({ theme }) => css`
     display: flex;
     flex-direction: column;
-    background-color: ${theme.colors.primaryColors.white};
+    background-color: transparent;
     position: absolute;
     width: 400px;
     height: 300px;
@@ -56,12 +56,14 @@ const NavButton = styled(Button)(
     justify-content: center;
     align-items: center;
     background-color: inherit;
+    border: none;
+    font-size: 24px;
   `
 );
 
-const DivTest = styled.div`
-  width: 100px;
-  height: 100px;
+const DivTest = styled.img`
+  width: 150px;
+  height: 150px;
   position: absolute;
   border-radius: 100%;
   -webkit-transition: all 1s;
@@ -72,23 +74,17 @@ const DivTest = styled.div`
 `;
 
 export default function DesktopBios() {
-  const [data, setData] = useState({ role: "", resouces: {} });
   const { performers, apprentices, guestPerformers, staff } = useContext(
     ResourcesContext
   ).resourceObj;
-
-  useEffect(() => {
-    switch (data.role) {
-      case "performers":
-        setData({ ...data, resouces: Object.values(performers).map(getBio) });
-        break;
-      default:
-    }
-  }, [data, performers]);
+  const [data, setData] = useState({
+    role: "performers",
+    resouces: performers,
+  });
 
   useEffect(() => {
     const circle = document.getElementById("box");
-    const imgs = document.querySelectorAll("div[data-div]");
+    const imgs = document.querySelectorAll("img[data-div]");
     const total = imgs.length;
     const coords = {};
     let diam;
@@ -118,8 +114,30 @@ export default function DesktopBios() {
 
       alpha = alpha - corner;
     }
-  }, []);
-
+  }, [data]);
+  const onNavClick = (label) => {
+    console.log(label);
+    switch (label) {
+      case "Dancers":
+        setData({ ...data, role: "performers", resouces: performers });
+        break;
+      case "Apprentices":
+        setData({ ...data, role: "apprentices", resouces: apprentices });
+        break;
+      case "Guest Performers":
+        setData({
+          ...data,
+          role: "guestPerformers",
+          resouces: guestPerformers,
+        });
+        break;
+      case "Staff":
+        setData({ ...data, role: "staff", resouces: staff });
+        break;
+      default:
+        setData({ ...data, role: "performers", resouces: performers });
+    }
+  };
   const { getPage } = useContext(PagesContext);
   const page = getPage("bios");
 
@@ -127,24 +145,25 @@ export default function DesktopBios() {
     return <Loading />;
   }
   const { options, pageName, ...headerBanner } = page;
+  const { role, resouces } = data;
   console.log({ data });
   return (
     // <Page headerBanner={headerBanner}>
     <Wrapper id="box">
       <NavResoucesDiv>
         {navLabels.map((label, index) => (
-          <NavButton key={index}>
+          <NavButton key={index} onClick={() => onNavClick(label)}>
             <span>{label}</span>
           </NavButton>
         ))}
       </NavResoucesDiv>
-      <DivTest data-div="test">Hello</DivTest>
-      <DivTest data-div="test">Hello</DivTest>
-      <DivTest data-div="test">Hello</DivTest>
-      <DivTest data-div="test">Hello</DivTest>
-      <DivTest data-div="test">Hello</DivTest>
-      <DivTest data-div="test">Hello</DivTest>
-      <DivTest data-div="test">Hello</DivTest>
+      {data?.resouces?.map((resouce, index) => (
+        <DivTest
+          data-div="test"
+          key={index}
+          src={resouce.images ? resouce?.images[0]?.src : resouce?.image?.src}
+        />
+      ))}
     </Wrapper>
   );
 }
