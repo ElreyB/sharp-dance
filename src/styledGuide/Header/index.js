@@ -20,6 +20,7 @@ const LogoLink = styled(A)`
   font-size: 18px;
   font-weight: bold;
   display: block;
+  padding-left: 5px;
 `;
 
 const StyledHamburger = styled(HamburgerButton)`

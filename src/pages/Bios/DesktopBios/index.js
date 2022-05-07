@@ -1,30 +1,17 @@
 import React, { useContext, useState, useEffect } from "react";
 import Loading from "../../Loading";
 import { ResourcesContext, PagesContext } from "../../../Providers";
-import Page from "../../../layouts/Page";
-import { Bio, Button } from "../../../styledGuide";
+import { Button } from "../../../styledGuide";
 import styled, { css } from "styled-components/macro";
-import { FaBorderNone } from "react-icons/fa";
 
 const navLabels = ["Dancers", "Apprentices", "Guest Performers", "Staff"];
 
-// Removes director prop since it's not meant to be passed to the component
-const getBio = ({ director, ...bio }) => <Bio {...bio} key={bio.name} />;
-// We separate director (Diane) from all other staff members to be able to place Diane in a special section
-const isNotDirector = ({ director }) => !director;
-
-const H2 = styled.h2`
-  text-align: center;
-  ${({ theme }) =>
-    `margin:${theme.spacing.M} ${theme.spacing.M} ${theme.spacing.XL} ${theme.spacing.M}`};
-  color: ${({ theme }) => theme.colors.red};
-`;
 const Wrapper = styled.div`
-  width: 1000px;
-  height: 1000px;
+  width: 1200px;
+  height: 1200px;
   position: relative;
   border-radius: 100%;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   margin: 50px auto;
   display: flex;
   justify-content: center;
@@ -36,17 +23,14 @@ const Wrapper = styled.div`
 `;
 
 const NavResoucesDiv = styled.div(
-  ({ theme }) => css`
+  ({ theme, isFront }) => css`
     display: flex;
     flex-direction: column;
     background-color: transparent;
     position: absolute;
     width: 400px;
     height: 300px;
-    /* left: 50%;
-    top: 50%;
-    margin-left: -20px;
-    margin-top: -20px; */
+    visibility: ${({ isFront }) => (!isFront ? "visible" : "hidden")};
   `
 );
 
@@ -73,6 +57,71 @@ const DivTest = styled.img`
   align-items: center;
 `;
 
+const ImageButton = styled.button`
+  width: 150px;
+  height: 150px;
+  border: none;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-transition: all 1s;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* visibility: ${({ isFront }) => (!isFront ? "visible" : "hidden")}; */
+`;
+
+const InfoDiv = styled.div`
+  width: 1200px;
+  height: 1200px;
+  border-radius: 100%;
+  /* border: 1px solid teal; */
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  visibility: ${({ isFront }) => (!isFront ? "hidden" : "visible")};
+
+  ${({ theme }) => theme.media.mobile`
+      display: none;
+    `}
+`;
+
+const Section = styled.section`
+  width: 50%;
+  height: 100%;
+  border: solid 1px white;
+  background-color: black;
+  color: white;
+
+  :first-of-type {
+    border-radius: 100% 0 0 100%;
+  }
+
+  :last-of-type {
+    border-radius: 0 100% 100% 0;
+  }
+`;
+
+const P = styled.p`
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 0 100% 100% 0;
+`;
+
 export default function DesktopBios() {
   const { performers, apprentices, guestPerformers, staff } = useContext(
     ResourcesContext
@@ -81,40 +130,45 @@ export default function DesktopBios() {
     role: "performers",
     resouces: performers,
   });
+  const [infor, setInfor] = useState({});
 
   useEffect(() => {
-    const circle = document.getElementById("box");
-    const imgs = document.querySelectorAll("img[data-div]");
-    const total = imgs.length;
-    const coords = {};
-    let diam;
-    let radius1;
-    let radius2;
-    let imgW;
-    console.log({ imgs });
+    if (!infor.id) {
+      const circle = document.getElementById("box");
+      const imgs = document.querySelectorAll("button[data-div]");
+      const total = imgs.length;
+      // const coords = {};
+      let diam;
+      // let radius1;
+      let radius2;
+      let imgW;
 
-    // get circle diameter
-    // getBoundingClientRect outputs the actual px AFTER transform
-    //      using getComputedStyle does the job as we want
-    diam = parseInt(window.getComputedStyle(circle).getPropertyValue("width"));
-    const radius = diam / 2;
-    imgW = imgs[0].getBoundingClientRect().width;
-    // // get the dimensions of the inner circle we want the images to align to
-    radius2 = radius - imgW;
+      // get circle diameter
+      // getBoundingClientRect outputs the actual px AFTER transform
+      //      using getComputedStyle does the job as we want
+      diam = parseInt(
+        window.getComputedStyle(circle).getPropertyValue("width")
+      );
+      const radius = diam / 2;
+      imgW = imgs[0].getBoundingClientRect().width;
+      // // get the dimensions of the inner circle we want the images to align to
+      radius2 = radius - imgW;
 
-    let alpha = Math.PI / 2;
-    const len = imgs.length;
-    const corner = (2 * Math.PI) / total;
+      let alpha = Math.PI / 2;
+      // const len = imgs.length;
+      const corner = (2 * Math.PI) / total;
 
-    for (let i = 0; i < total; i++) {
-      imgs[i].style.left =
-        parseInt(radius - imgW / 2 + radius2 * Math.cos(alpha)) + "px";
-      imgs[i].style.top =
-        parseInt(radius - imgW / 2 - radius2 * Math.sin(alpha)) + "px";
+      for (let i = 0; i < total; i++) {
+        imgs[i].style.left =
+          parseInt(radius - imgW / 2 + radius2 * Math.cos(alpha)) + "px";
+        imgs[i].style.top =
+          parseInt(radius - imgW / 2 - radius2 * Math.sin(alpha)) + "px";
 
-      alpha = alpha - corner;
+        alpha = alpha - corner;
+      }
     }
-  }, [data]);
+  }, [data, infor]);
+
   const onNavClick = (label) => {
     console.log(label);
     switch (label) {
@@ -144,26 +198,47 @@ export default function DesktopBios() {
   if (!page) {
     return <Loading />;
   }
-  const { options, pageName, ...headerBanner } = page;
-  const { role, resouces } = data;
-  console.log({ data });
+  console.log("Bio", infor);
   return (
-    // <Page headerBanner={headerBanner}>
     <Wrapper id="box">
-      <NavResoucesDiv>
+      <InfoDiv isFront={!!infor?.id} onClick={() => setInfor({})}>
+        <Section>
+          <P>
+            <span>{infor.name}</span>
+            <span>{infor.title}</span>
+            {infor?.bio}
+          </P>
+        </Section>
+        <Section>
+          <Image
+            src={infor.images ? infor?.images[0]?.src : infor?.image?.src}
+            alt={infor.images ? infor?.images[0]?.title : infor?.image?.title}
+          />
+        </Section>
+      </InfoDiv>
+
+      <NavResoucesDiv isFront={!!infor?.id}>
         {navLabels.map((label, index) => (
           <NavButton key={index} onClick={() => onNavClick(label)}>
             <span>{label}</span>
           </NavButton>
         ))}
       </NavResoucesDiv>
-      {data?.resouces?.map((resouce, index) => (
-        <DivTest
-          data-div="test"
-          key={index}
-          src={resouce.images ? resouce?.images[0]?.src : resouce?.image?.src}
-        />
-      ))}
+      {!infor?.id &&
+        data?.resouces?.map((resouce, index) => (
+          <ImageButton
+            type="button"
+            data-div="test"
+            key={index}
+            onClick={() => setInfor(resouce)}
+          >
+            <DivTest
+              src={
+                resouce.images ? resouce?.images[0]?.src : resouce?.image?.src
+              }
+            />
+          </ImageButton>
+        ))}
     </Wrapper>
   );
 }

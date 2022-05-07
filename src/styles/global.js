@@ -6,7 +6,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   html {
     // return to black
-        background-color: ${({ theme }) => theme.colors.primaryColors.red};
+        /* background-color: ${({ theme }) =>
+          theme.colors.primaryColors.red}; */
   }
   body {
     margin: 0;
