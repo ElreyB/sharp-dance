@@ -4,7 +4,6 @@ import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  color: ${({ theme }) => theme.colors.white};
   z-index: 0;
 `;
 

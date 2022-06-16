@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import {
+  BIOS,
   CLASSES,
   CONTACT,
   DIANE,
@@ -13,6 +14,7 @@ import { Ul } from "./Ul";
 
 const links = [
   { to: DIANE, label: "Diane Sharp-Nachsin" },
+  { to: BIOS, label: "Sharp Family" },
   { to: MEDIA, label: "Repertoire" },
   // TODO: better way to show or remove link
   // { to: TICKETS, label: "Tickets" },

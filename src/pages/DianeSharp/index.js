@@ -9,6 +9,7 @@ import Page from "../../layouts/Page";
 const isDirector = ({ director }) => director;
 
 const FaceBookLink = styled(A)`
+  color: ${({ theme: { colors } }) => colors.mainTC};
   justify-content: center;
 `;
 

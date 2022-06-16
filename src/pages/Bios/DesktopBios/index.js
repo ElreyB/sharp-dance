@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   height: 1200px;
   position: relative;
   border-radius: 100%;
-  /* border: 1px solid teal; */
+  border: 1px solid teal;
   margin: 50px auto;
   display: flex;
   justify-content: center;
@@ -42,6 +42,11 @@ const NavButton = styled(Button)(
     background-color: inherit;
     border: none;
     font-size: 24px;
+    color: ${theme.colors.mainTC};
+
+    :hover {
+      color: ${theme.colors.favorites.teal};
+    }
   `
 );
 
@@ -49,12 +54,9 @@ const DivTest = styled.img`
   width: 150px;
   height: 150px;
   position: absolute;
-  border-radius: 100%;
+  border-radius: 50%;
   -webkit-transition: all 1s;
   background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 const ImageButton = styled.button`
@@ -62,13 +64,12 @@ const ImageButton = styled.button`
   height: 150px;
   border: none;
   position: absolute;
-  border-radius: 100%;
+  border-radius: 50%;
   -webkit-transition: all 1s;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* visibility: ${({ isFront }) => (!isFront ? "visible" : "hidden")}; */
 `;
 
 const InfoDiv = styled.div`
@@ -91,29 +92,33 @@ const InfoDiv = styled.div`
 const Section = styled.section`
   width: 50%;
   height: 100%;
-  border: solid 1px white;
+  /* border: solid 1px white; */
   background-color: black;
   color: white;
 
   :first-of-type {
-    border-radius: 100% 0 0 100%;
+    border-radius: 100% 30% 30% 100%;
   }
 
   :last-of-type {
-    border-radius: 0 100% 100% 0;
+    border-radius: 30% 100% 100% 30%;
+    :hover {
+      opacity: 0.5;
+    }
   }
 `;
 
 const P = styled.p`
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  background-color: inherit;
   color: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 50px;
+  border-radius: 100% 0 0 100%;
 `;
 
 const Image = styled.img`
@@ -198,10 +203,31 @@ export default function DesktopBios() {
   if (!page) {
     return <Loading />;
   }
-  console.log("Bio", infor);
+  console.log("Bio", infor?.images);
+  const src = (data) => {
+    console.log(typeof data);
+    let image;
+    const title = data.images ? data?.images[0]?.title : data?.image?.title;
+    if (data.images) {
+      data.images.forEach((img) => {
+        if (img.title.includes("headshot")) {
+          image = img.src;
+        } else {
+          image = data?.images[0]?.src;
+        }
+        console.log(img.title.includes("headshot"));
+      });
+    } else {
+      image = data?.image?.src;
+    }
+    return { image, title };
+  };
+
+  const { image, title } = src(infor);
+  console.log({ image, title });
   return (
     <Wrapper id="box">
-      <InfoDiv isFront={!!infor?.id} onClick={() => setInfor({})}>
+      <InfoDiv isFront={!!infor?.id}>
         <Section>
           <P>
             <span>{infor.name}</span>
@@ -209,11 +235,8 @@ export default function DesktopBios() {
             {infor?.bio}
           </P>
         </Section>
-        <Section>
-          <Image
-            src={infor.images ? infor?.images[0]?.src : infor?.image?.src}
-            alt={infor.images ? infor?.images[0]?.title : infor?.image?.title}
-          />
+        <Section onClick={() => setInfor({})}>
+          <Image src={image} alt={title} />
         </Section>
       </InfoDiv>
 
@@ -225,20 +248,19 @@ export default function DesktopBios() {
         ))}
       </NavResoucesDiv>
       {!infor?.id &&
-        data?.resouces?.map((resouce, index) => (
-          <ImageButton
-            type="button"
-            data-div="test"
-            key={index}
-            onClick={() => setInfor(resouce)}
-          >
-            <DivTest
-              src={
-                resouce.images ? resouce?.images[0]?.src : resouce?.image?.src
-              }
-            />
-          </ImageButton>
-        ))}
+        data?.resouces?.map((resouce, index) => {
+          const { image, title } = src(resouce);
+          return (
+            <ImageButton
+              type="button"
+              data-div="test"
+              key={index}
+              onClick={() => setInfor(resouce)}
+            >
+              <DivTest src={image} alt={title} />
+            </ImageButton>
+          );
+        })}
     </Wrapper>
   );
 }

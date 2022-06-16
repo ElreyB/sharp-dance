@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { ResourcesContext } from "../../../Providers";
 // import Page from "../../layouts/Page";
 import { Bio } from "../../../styledGuide";
@@ -18,7 +18,7 @@ const H2 = styled.h2`
 
 const Wrapper = styled.div`
   ${({ theme }) => theme.media.desktop`
-      display: none;
+      // display: none;
     `}
 `;
 

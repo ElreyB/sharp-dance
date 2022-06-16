@@ -15,7 +15,7 @@ export default function Bios() {
   const { options, pageName, ...headerBanner } = page;
   return (
     <Page headerBanner={headerBanner}>
-      <DesktopBios />
+      {/* <DesktopBios /> */}
       <MobileBios />
     </Page>
   );
