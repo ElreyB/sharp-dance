@@ -35,12 +35,6 @@ export default function DianeSharp() {
   return (
     <Page headerBanner={additonalInfo}>
       <Markdown>{director.bio}</Markdown>
-      <H3>
-        Visit Diane Sharp Photos - {""}
-        <FaceBookLink href={options.facebook}>
-          Diane's Photos FaceBook
-        </FaceBookLink>
-      </H3>
     </Page>
   );
 }

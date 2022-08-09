@@ -4,19 +4,20 @@ import { func, bool } from "prop-types";
 import { Button } from "../Button";
 
 const Line = styled.div`
-  width: 20px;
-  height: 2px;
+  width: 50px;
+  height: 5px;
   background: ${({ theme }) => theme.colors.white};
 `;
 
 const StyledButton = styled(Button)`
   justify-content: space-around;
-  height: 24px;
+  height: 50%;
   width: 30px;
   background: transparent;
   border-color: transparent;
   cursor: pointer;
   padding: 4px;
+  margin-right: 30px;
 
   /* &:focus {
     border-radius: 4px;

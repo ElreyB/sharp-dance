@@ -56,6 +56,10 @@ const Links = styled.div`
   flex-direction: column;
 `;
 
+const StyledCloseButton = styled(HamburgerButton)`
+  margin-top: 12px;
+`;
+
 const links = [
   { to: ABOUT, label: "About" },
   // TODO: better way to show or remove link
@@ -94,7 +98,7 @@ const SideDrawer = ({ show, onClick }) => (
         >
           <Links>
             <HamburgerWrapper>
-              <HamburgerButton onClick={onClick} closed />
+              <StyledCloseButton onClick={onClick} closed />
             </HamburgerWrapper>
             {links.map(({ to, label }) => (
               <NavLink to={to} key={to} onClick={() => onClick(false)}>

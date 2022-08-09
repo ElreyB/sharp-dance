@@ -24,6 +24,7 @@ const LogoLink = styled(A)`
 `;
 
 const StyledHamburger = styled(HamburgerButton)`
+  align-self: center;
   ${({ theme }) => theme.media.desktop`
   display: none
   `}
@@ -44,7 +45,9 @@ const LogoWrapper = styled.div`
 `;
 
 const HamburgerWrapper = styled.div`
+  display: flex;
   padding: 8px 16px;
+  width: 10%;
 `;
 
 export function Header() {
