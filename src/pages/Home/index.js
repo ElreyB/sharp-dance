@@ -2,7 +2,7 @@ import { sampleSize } from "lodash-es";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
-import { TICKETS } from "../../constants";
+// import { TICKETS } from "../../constants";
 import { MediaContext, PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
 import { Footer } from "../../styledGuide/Footer";

@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
-import { H3, Markdown } from "../../styledGuide";
+import { Markdown } from "../../styledGuide";
 import Loading from "../Loading";
 import { ResourcesContext, PagesContext } from "../../Providers";
-import { A } from "../../styledGuide";
-import styled from "styled-components/macro";
+// import { A } from "../../styledGuide";
+// import styled from "styled-components/macro";
 import Page from "../../layouts/Page";
 
 const isDirector = ({ director }) => director;
 
-const FaceBookLink = styled(A)`
-  color: ${({ theme: { colors } }) => colors.mainTC};
-  justify-content: center;
-`;
+// const FaceBookLink = styled(A)`
+//   color: ${({ theme: { colors } }) => colors.mainTC};
+//   justify-content: center;
+// `;
 
 export default function DianeSharp() {
   const { staff } = useContext(ResourcesContext).resourceObj;

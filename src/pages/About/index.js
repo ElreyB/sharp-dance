@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Markdown, Image } from "../../styledGuide";
+import { Markdown } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext, PagesContext } from "../../Providers";
 import styled from "styled-components/macro";
@@ -10,15 +10,15 @@ const H2 = styled.h2`
   margin: 20px;
 `;
 
-const ImageGroup = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-`;
+// const ImageGroup = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+// `;
 
-const StyledImage = styled(Image)`
-  /* width: 50%; */
-`;
+// const StyledImage = styled(Image)`
+//   /* width: 50%; */
+// `;
 
 export default function About() {
   const organizations = useContext(OrganizationsContext);

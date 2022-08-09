@@ -10,8 +10,8 @@ import {
   DONATIONS,
   EVENTS,
   MEDIA,
-  PAST_EVENTS,
-  PRESS,
+  // PAST_EVENTS,
+  // PRESS,
 } from "../../constants";
 import { A } from "../A";
 import HamburgerButton from "../HamburgerButton";
