@@ -10,8 +10,8 @@ import {
   DONATIONS,
   EVENTS,
   MEDIA,
-  PAST_EVENTS,
-  PRESS,
+  // PAST_EVENTS,
+  // PRESS,
 } from "../../constants";
 import { A } from "../A";
 import HamburgerButton from "../HamburgerButton";
@@ -45,7 +45,6 @@ const NavLink = styled(A)`
 
 const StyledSocialIcons = styled(SocialIcons)`
   margin-top: ${({ theme }) => theme.spacing.M};
-  width: 50%;
 `;
 
 const HamburgerWrapper = styled.div`
@@ -57,15 +56,21 @@ const Links = styled.div`
   flex-direction: column;
 `;
 
+const StyledCloseButton = styled(HamburgerButton)`
+  margin-top: 12px;
+`;
+
 const links = [
   { to: ABOUT, label: "About" },
+  // TODO: better way to show or remove link
   // { to: TICKETS, label: "Tickets" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
-  { to: BIOS, label: "Company" },
+  { to: BIOS, label: "Sharp Family" },
   { to: MEDIA, label: "Repertoire" },
-  { to: PRESS, label: "Press" },
-  { to: EVENTS, label: "Upcoming Performances" },
-  { to: PAST_EVENTS, label: "Past Performances" },
+  {
+    to: EVENTS,
+    label: "Performances",
+  },
   { to: CLASSES, label: "Classes" },
   { to: CONTACT, label: "Contact" },
   { to: DONATIONS, label: "Donations" },
@@ -93,7 +98,7 @@ const SideDrawer = ({ show, onClick }) => (
         >
           <Links>
             <HamburgerWrapper>
-              <HamburgerButton onClick={onClick} closed />
+              <StyledCloseButton onClick={onClick} closed />
             </HamburgerWrapper>
             {links.map(({ to, label }) => (
               <NavLink to={to} key={to} onClick={() => onClick(false)}>

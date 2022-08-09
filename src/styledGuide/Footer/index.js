@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { SocialIcons } from "..";
 import { OrganizationsContext } from "../../Providers";
 
@@ -12,14 +12,14 @@ const DesktopSocialIcons = styled(SocialIcons)`
 
 const StyledFooter = styled.footer`
   background-color: white;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 `;
 const StyledFooterContent = styled.div`
   display: flex;
   flex-direction: column;
   align-content: start;
-  margin: 0 auto;
-  max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
+  margin: 0;
+  width: 100%;
 `;
 
 const StyledImage = styled.div`
@@ -31,8 +31,8 @@ const StyledImage = styled.div`
   background-position: center;
 `;
 const StyledSponsors = styled.div`
-  justify-content: center;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 `;

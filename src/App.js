@@ -1,4 +1,4 @@
-import { random } from "lodash";
+// import { random } from "lodash";
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
@@ -29,9 +29,9 @@ import Home from "./pages/Home";
 import Media from "./pages/Media";
 import Press from "./pages/Press";
 import Tickets from "./pages/Tickets";
-import { QuotesContext } from "./Providers";
+// import { QuotesContext } from "./Providers";
 import { Header, ScrollToTop } from "./styledGuide";
-import { Quote } from "./styledGuide/Quote";
+// import { Quote } from "./styledGuide/Quote";
 
 function MainLayoutRoute({ component: Component, ...rest }) {
   return (
@@ -49,11 +49,11 @@ function MainLayoutRoute({ component: Component, ...rest }) {
 }
 
 function App() {
-  const quotes = React.useContext(QuotesContext);
+  // const quotes = React.useContext(QuotesContext);
   return (
     <Router>
       <Header />
-      <Quote {...quotes[random(0, quotes.length - 1)]} alignAuthor="center" />
+      {/* <Quote {...quotes[random(0, quotes.length - 1)]} alignAuthor="center" /> */}
 
       <ScrollToTop />
       <Switch>

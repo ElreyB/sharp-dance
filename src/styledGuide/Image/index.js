@@ -9,7 +9,8 @@ const Wrapper = styled.figure`
 
 const Img = styled.img`
   /* width: 100%; */
-  ${({ size }) => `width: ${size}`}
+  min-height: 515px;
+  ${({ size }) => `width: ${size}`};
 `;
 
 const Credit = styled.figcaption`

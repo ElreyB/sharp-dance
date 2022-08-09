@@ -5,8 +5,8 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   html {
-    background-color: ${({ theme }) => theme.colors.red};
-    color:  ${({ theme }) => theme.colors.black};
+    // return to black
+        background-color: ${({ theme }) => theme.colors.mainBg};
   }
   body {
     margin: 0;
