@@ -18,11 +18,11 @@ const StyledButton = styled(Button)`
   cursor: pointer;
   padding: 4px;
 
-  &:focus {
+  /* &:focus {
     border-radius: 4px;
     box-shadow: 0px 0px 0px 1px #fff inset;
     outline: none;
-  }
+  } */
 
   &:hover > ${Line} {
     background: ${({ theme }) => theme.colors.blue};

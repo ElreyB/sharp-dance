@@ -6,9 +6,9 @@ import styled, { css } from "styled-components/macro";
 const PageContent = styled.div(
   ({ theme }) => css`
     max-width: 1050px;
-    margin: 0 auto;
+    margin: 50px auto;
     min-height: 100vh;
-    padding-top: ${theme.spacing.XL};
+    padding: ${theme.spacing.XL};
   `
 );
 

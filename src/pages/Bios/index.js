@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Page from "../../layouts/Page";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
-import DesktopBios from "./DesktopBios";
+// import DesktopBios from "./DesktopBios";
 import MobileBios from "./MobileBios";
 
 export default function Bios() {

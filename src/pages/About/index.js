@@ -38,15 +38,6 @@ export default function About() {
       {organizations && (
         <>
           <H2>Members</H2>
-          <ImageGroup>
-            {organizations.map((org) => (
-              <StyledImage
-                alt={org.organization}
-                src={org.logo}
-                key={org.organization}
-              />
-            ))}
-          </ImageGroup>
         </>
       )}
     </Page>

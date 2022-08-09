@@ -53,7 +53,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <Quote {...quotes[random(0, quotes.length - 1)]} alignAuthor="center" />
+      {/* <Quote {...quotes[random(0, quotes.length - 1)]} alignAuthor="center" /> */}
 
       <ScrollToTop />
       <Switch>

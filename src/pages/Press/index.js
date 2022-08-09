@@ -13,6 +13,7 @@ const Anchor = styled(A)`
   display: inline-block;
   font-style: italic;
   width: auto;
+  color: black;
 `;
 
 const RequestPresKit = styled(P)`

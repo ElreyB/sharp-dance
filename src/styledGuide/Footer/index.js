@@ -12,15 +12,14 @@ const DesktopSocialIcons = styled(SocialIcons)`
 
 const StyledFooter = styled.footer`
   background-color: white;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 `;
 const StyledFooterContent = styled.div`
   display: flex;
   flex-direction: column;
   align-content: start;
   margin: 0;
-  width: 100%auto;
-  min-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
+  width: 100%;
 `;
 
 const StyledImage = styled.div`

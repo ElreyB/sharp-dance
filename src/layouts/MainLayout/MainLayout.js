@@ -15,6 +15,7 @@ export default function MainLayout({ children, ...props }) {
   return (
     <Wrapper {...props}>
       <Main>{children}</Main>
+      {/* <Footer /> */}
     </Wrapper>
   );
 }

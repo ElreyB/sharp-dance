@@ -7,7 +7,7 @@ const MAX_WIDTH = 1200;
 
 const StyledPlayer = styled(ReactPlayer)`
   margin: 0 auto;
-  max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
+  /* max-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
 `;
 const StyledGrid = styled.div`
   position: relative;
@@ -65,6 +65,7 @@ export const Video = React.forwardRef(
 
     return (
       <StyledPlayer
+        onReady={() => console.log("playing video")}
         url={src}
         ref={ref}
         {...props}
