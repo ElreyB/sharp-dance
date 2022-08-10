@@ -23,6 +23,7 @@ const StyledA = styled(A)`
   margin-left: ${({ theme }) => theme.spacing.M}
   width: auto;
   white-space: nowrap;
+  color: inherit;
 `;
 
 const Wrapper = styled.div`
@@ -32,6 +33,7 @@ const Wrapper = styled.div`
   flex-flow: row wrap;
   width: 100%;
   flex-grow: 1;
+  color: black;
 `;
 
 const ColorTitle = styled(Label)`

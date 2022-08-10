@@ -3,7 +3,7 @@ import { css } from "styled-components/macro";
 const primaryColors = {
   white: "rgb(255, 255, 255)",
   black: "rgb(0,0,0)",
-  sliver: "rgb(140, 133, 133)",
+  silver: "rgb(140, 133, 133)",
   red: "rgb(207, 31, 34)",
 };
 
@@ -27,6 +27,8 @@ const colors = {
   primaryColors,
   secondaryColors,
   favorites,
+  mainBg: primaryColors.white,
+  mainTC: primaryColors.black,
 };
 
 const spacing = {
@@ -43,8 +45,8 @@ const fonts = {
 };
 
 const device = {
-  desktop: "(min-width: 992px)",
-  mobile: "(max-width: 991px)",
+  desktop: "(min-width: 1185px)",
+  mobile: "(max-width: 1184px)",
 };
 
 export const breakpoints = {
