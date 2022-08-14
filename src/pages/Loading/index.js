@@ -16,7 +16,7 @@ const SVG = style.svg``;
 const Container = style.div`
     position: relative;
     z-index: 0;
-    background-color: ${({ theme }) => theme.colors.black};
+    background-color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;

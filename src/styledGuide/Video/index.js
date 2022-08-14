@@ -1,19 +1,20 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components/macro";
-
 import { useWindowResize } from "./useWindowSize";
 
-const headerHeight = 44;
+const MAX_WIDTH = 1200;
+
 const StyledPlayer = styled(ReactPlayer)`
-  margin: auto;
+  margin: 0 auto;
+  /* max-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
 `;
 const StyledGrid = styled.div`
   position: relative;
   width: 100vw;
-  height: 100%;
+  background-color: black;
 `;
-export const FullPageVideo = styled(({ src, className }) => {
+export const FullPageVideo = ({ src, className }) => {
   const ref = React.useRef(null);
   const [height, setHeight] = React.useState("100vh");
 
@@ -24,10 +25,13 @@ export const FullPageVideo = styled(({ src, className }) => {
       const iframe = wrapper.querySelector("iframe");
 
       if (iframe) {
-        const newHeight = `${iframe.getBoundingClientRect().height}px`;
+        const iframeSize = iframe.getBoundingClientRect() || {};
+        const ratio = 0.5625; // Percentage ratio for 16:9
+        const desiredHeight = Math.min(MAX_WIDTH, window.innerWidth) * ratio;
 
-        if (height !== newHeight) {
-          setHeight(newHeight);
+        if (iframeSize.height !== desiredHeight) {
+          console.log(iframeSize.height, desiredHeight);
+          setHeight(`${desiredHeight}px`);
         }
       }
     }
@@ -51,18 +55,7 @@ export const FullPageVideo = styled(({ src, className }) => {
       />
     </StyledGrid>
   );
-})`
-  & iframe {
-    box-sizing: border-box;
-    left: 50%;
-    min-height: calc(100vh - ${headerHeight}px);
-    min-width: 100vw;
-    transform: translateX(-50%);
-    position: absolute;
-    height: 56.25vw !important;
-    width: 177.77777778vh !important;
-  }
-`;
+};
 
 export const Video = React.forwardRef(
   ({ src, controls = false, ...props }, ref) => {
@@ -72,6 +65,7 @@ export const Video = React.forwardRef(
 
     return (
       <StyledPlayer
+        onReady={() => console.log("playing video")}
         url={src}
         ref={ref}
         {...props}

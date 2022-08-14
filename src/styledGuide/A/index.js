@@ -21,12 +21,12 @@ const linkStyles = css`
   &:hover {
     color: ${({ theme: { colors } }) => colors.favorites.teal};
   }
-
+  /*
   &:focus {
     border-radius: 4px;
     box-shadow: 0px 0px 0px 1px #fff inset;
     outline: none;
-  }
+  } */
 `;
 
 const StyledNavLink = styled(NavLink)`

@@ -5,6 +5,8 @@ import { Markdown } from "../Markdown";
 
 const Wrapper = styled.div`
   margin-bottom: ${({ theme }) => theme.spacing.L};
+  border: 5px solid black;
+  padding: 48px;
 `;
 
 const Content = styled.div`
@@ -16,20 +18,18 @@ const Content = styled.div`
 
 const StyledImage = styled(Image)`
   text-align: center;
+
   ${({ theme: { media } }) => media.mobile`
-    width: 50%;
     align-self: center;
   `};
 `;
 
 const H3 = styled.h3`
-  ${({ theme }) => theme.media.mobile`
-      text-align: center;
-  `};
+  text-align: center;
 `;
 
 const Name = styled.span`
-  color: ${({ theme }) => theme.colors.red};
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 const Title = styled.span`
@@ -39,6 +39,20 @@ const Title = styled.span`
 const StyledMarkdown = styled(Markdown)`
   margin: 16px 40px;
 `;
+
+const src = (images) => {
+  console.log(images);
+  let image;
+  images.forEach((img) => {
+    if (img.title.includes("headshot")) {
+      image = img.src;
+    } else {
+      image = images[0]?.src;
+    }
+    // console.log(img.title.includes("headshot"));
+  });
+  return { image };
+};
 
 export function Bio({
   name,
@@ -52,6 +66,8 @@ export function Bio({
 }) {
   const imgSrc = images || image;
 
+  const { image: imageSrc } = src(imgSrc);
+
   return (
     <Wrapper>
       <H3>
@@ -60,7 +76,7 @@ export function Bio({
       </H3>
       <Content>
         <StyledImage
-          src={imgSrc}
+          src={imageSrc}
           alt={`${name} headshot`}
           credit={imgCredit}
           imageSize="100%"

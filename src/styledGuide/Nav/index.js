@@ -1,8 +1,6 @@
 import React from "react";
-import { Ul } from "./Ul";
-import { Li } from "./Li";
+import styled from "styled-components/macro";
 import {
-  ABOUT,
   BIOS,
   CLASSES,
   CONTACT,
@@ -10,32 +8,19 @@ import {
   DONATIONS,
   EVENTS,
   MEDIA,
-  PAST_EVENTS,
-  PRESS,
-  // TICKETS,
 } from "../../constants";
-import styled from "styled-components";
+import { Li } from "./Li";
+import { Ul } from "./Ul";
 
 const links = [
-  {
-    to: ABOUT,
-    label: "About",
-    sub: [
-      { to: DIANE, label: "Diane Sharp-Nachsin" },
-      { to: BIOS, label: "Company" },
-      { to: MEDIA, label: "Repertoire" },
-    ],
-  },
+  { to: DIANE, label: "Diane Sharp-Nachsin" },
+  { to: BIOS, label: "Sharp Family" },
+  { to: MEDIA, label: "Repertoire" },
   // TODO: better way to show or remove link
   // { to: TICKETS, label: "Tickets" },
-  { to: PRESS, label: "Press" },
   {
     to: EVENTS,
     label: "Performances",
-    sub: [
-      { to: EVENTS, label: "Upcoming Performances" },
-      { to: PAST_EVENTS, label: "Past Performances" },
-    ],
   },
   { to: CLASSES, label: "Classes" },
   { to: CONTACT, label: "Contact" },
@@ -50,6 +35,8 @@ const StyledUl = styled(Ul)`
 
 const SubUl = styled(Ul)`
   border-top: 20px solid transparent;
+  background-color: inherit;
+  position: relative;
 `;
 
 export const Nav = React.forwardRef((props, ref) => {
@@ -57,14 +44,7 @@ export const Nav = React.forwardRef((props, ref) => {
     <StyledNav {...props}>
       <StyledUl>
         {links.map(({ to, label, sub = [] }) => (
-          <Li
-            to={to}
-            key={label}
-            label={label}
-            onBlur={() => {
-              console.log("li", "blur");
-            }}
-          >
+          <Li to={to} key={label} label={label}>
             {sub.length > 0 && (
               <SubUl key={`${label}-ul`}>
                 {sub.map((li) => (

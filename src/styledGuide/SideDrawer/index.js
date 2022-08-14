@@ -1,10 +1,6 @@
+import FocusTrap from "focus-trap-react";
 import React from "react";
 import styled from "styled-components/macro";
-import HamburgerButton from "../HamburgerButton";
-import BackDrop from "./backDrop";
-import FocusTrap from "focus-trap-react";
-import { A } from "../A";
-import { SocialIcons } from "../SocialIcons";
 import {
   ABOUT,
   BIOS,
@@ -14,17 +10,20 @@ import {
   DONATIONS,
   EVENTS,
   MEDIA,
-  PAST_EVENTS,
-  PRESS,
-  // TICKETS,
+  // PAST_EVENTS,
+  // PRESS,
 } from "../../constants";
+import { A } from "../A";
+import HamburgerButton from "../HamburgerButton";
+import { SocialIcons } from "../SocialIcons";
+import BackDrop from "./backDrop";
 
 const ESCAPE_KEY = 27;
 const Nav = styled.nav`
   height: 100%;
   overflow: auto;
   position: fixed;
-  background-color: inherit;
+  background-color: ${({ theme }) => theme.colors.red};
   top: 0;
   left: 0;
   z-index: 100;
@@ -46,7 +45,6 @@ const NavLink = styled(A)`
 
 const StyledSocialIcons = styled(SocialIcons)`
   margin-top: ${({ theme }) => theme.spacing.M};
-  width: 50%;
 `;
 
 const HamburgerWrapper = styled.div`
@@ -58,15 +56,21 @@ const Links = styled.div`
   flex-direction: column;
 `;
 
+const StyledCloseButton = styled(HamburgerButton)`
+  margin-top: 12px;
+`;
+
 const links = [
   { to: ABOUT, label: "About" },
+  // TODO: better way to show or remove link
   // { to: TICKETS, label: "Tickets" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
-  { to: BIOS, label: "Company" },
+  { to: BIOS, label: "Sharp Family" },
   { to: MEDIA, label: "Repertoire" },
-  { to: PRESS, label: "Press" },
-  { to: EVENTS, label: "Upcoming Performances" },
-  { to: PAST_EVENTS, label: "Past Performances" },
+  {
+    to: EVENTS,
+    label: "Performances",
+  },
   { to: CLASSES, label: "Classes" },
   { to: CONTACT, label: "Contact" },
   { to: DONATIONS, label: "Donations" },
@@ -94,7 +98,7 @@ const SideDrawer = ({ show, onClick }) => (
         >
           <Links>
             <HamburgerWrapper>
-              <HamburgerButton onClick={onClick} closed />
+              <StyledCloseButton onClick={onClick} closed />
             </HamburgerWrapper>
             {links.map(({ to, label }) => (
               <NavLink to={to} key={to} onClick={() => onClick(false)}>

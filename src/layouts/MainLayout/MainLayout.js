@@ -1,22 +1,21 @@
-import React from "react";
 import { node } from "prop-types";
+import React from "react";
 import styled from "styled-components/macro";
 
 const Wrapper = styled.div`
-  max-width: 80%;
   margin: 0 auto;
-  min-height: 100vh;
-  color: ${({ theme }) => theme.colors.white};
   z-index: 0;
-  padding-top: 46px;
 `;
 
-const Main = styled.main``;
+const Main = styled.main`
+  position: relative;
+`;
 
 export default function MainLayout({ children, ...props }) {
   return (
     <Wrapper {...props}>
       <Main>{children}</Main>
+      {/* <Footer /> */}
     </Wrapper>
   );
 }

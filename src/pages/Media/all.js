@@ -30,6 +30,7 @@ const MediaAnchor = styled(A)`
 
 const H2 = styled.h2`
   text-align: center;
+  color: ${({ theme: { colors } }) => colors.mainTC};
 `;
 
 export default function Media({ headerBanner, media }) {

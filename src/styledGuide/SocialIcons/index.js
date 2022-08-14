@@ -6,11 +6,13 @@ import styled from "styled-components/macro";
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
 `;
 
 const IconLink = styled(A)`
   width: 33.33%;
   padding: 0 4px;
+  text-align: center;
 `;
 
 export const SocialIcons = (props) => {
