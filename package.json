@@ -32,7 +32,8 @@
     "lint": "prettier --check \"src/**/*.{js,json}\" --write && eslint src --fix",
     "test": "react-scripts test",
     "deploy": "gh-pages -d build --message \"[skip ci] Updates\" --repo \"https://$GH_TOKEN@github.com/ElreyB/sharp-dance.git\"",
-    "predeploy": "yarn build"
+    "predeploy": "yarn build",
+    "resolve:security": "npm i --package-lock-only && npm audit fix && rm yarn.lock && yarn import && rm package-lock.json"
   },
   "husky": {
     "hooks": {
