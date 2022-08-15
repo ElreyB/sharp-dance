@@ -38,6 +38,10 @@ const Title = styled.span`
 
 const StyledMarkdown = styled(Markdown)`
   margin: 16px 40px;
+
+  p {
+    width: 380px;
+  }
 `;
 
 const src = (images) => {
