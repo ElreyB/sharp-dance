@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/sharp-dance/static/js/main.b025b422.chunk.js",
-    "main.js.map": "/sharp-dance/static/js/main.b025b422.chunk.js.map",
+    "main.js": "/sharp-dance/static/js/main.516393fa.chunk.js",
+    "main.js.map": "/sharp-dance/static/js/main.516393fa.chunk.js.map",
     "runtime-main.js": "/sharp-dance/static/js/runtime-main.b5c1d22a.js",
     "runtime-main.js.map": "/sharp-dance/static/js/runtime-main.b5c1d22a.js.map",
-    "static/js/2.4547e42f.chunk.js": "/sharp-dance/static/js/2.4547e42f.chunk.js",
-    "static/js/2.4547e42f.chunk.js.map": "/sharp-dance/static/js/2.4547e42f.chunk.js.map",
+    "static/js/2.bf84ee36.chunk.js": "/sharp-dance/static/js/2.bf84ee36.chunk.js",
+    "static/js/2.bf84ee36.chunk.js.map": "/sharp-dance/static/js/2.bf84ee36.chunk.js.map",
     "index.html": "/sharp-dance/index.html",
-    "precache-manifest.1b10dbf36ab67ebfd4311b283bf54878.js": "/sharp-dance/precache-manifest.1b10dbf36ab67ebfd4311b283bf54878.js",
+    "precache-manifest.d8bf315367fd79e6eec404f9e2209140.js": "/sharp-dance/precache-manifest.d8bf315367fd79e6eec404f9e2209140.js",
     "service-worker.js": "/sharp-dance/service-worker.js",
-    "static/js/2.4547e42f.chunk.js.LICENSE.txt": "/sharp-dance/static/js/2.4547e42f.chunk.js.LICENSE.txt",
+    "static/js/2.bf84ee36.chunk.js.LICENSE.txt": "/sharp-dance/static/js/2.bf84ee36.chunk.js.LICENSE.txt",
     "static/media/thumbnail.svg": "/sharp-dance/static/media/thumbnail.593eab4f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b5c1d22a.js",
-    "static/js/2.4547e42f.chunk.js",
-    "static/js/main.b025b422.chunk.js"
+    "static/js/2.bf84ee36.chunk.js",
+    "static/js/main.516393fa.chunk.js"
   ]
 }
