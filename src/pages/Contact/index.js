@@ -62,13 +62,13 @@ function PhoneLink({ children, ...props }) {
   );
 }
 
-function EmailLink({ children, ...props }) {
-  return (
-    <TitleLink title="Email" href={`mailto:${children}`} {...props}>
-      {children}
-    </TitleLink>
-  );
-}
+// function EmailLink({ children, ...props }) {
+//   return (
+//     <TitleLink title="Email" href={`mailto:${children}`} {...props}>
+//       {children}
+//     </TitleLink>
+//   );
+// }
 
 export default function Contact() {
   const { getPage } = React.useContext(PagesContext);
