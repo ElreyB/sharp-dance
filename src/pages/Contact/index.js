@@ -5,12 +5,7 @@ import { PagesContext } from "../../Providers";
 import { A, Label, P } from "../../styledGuide";
 import Loading from "../Loading";
 
-const StyledP = styled(P)`
-  padding-top: ${({ theme, pT }) => (pT ? theme.spacing[pT] : 0)};
-  padding-bottom: ${({ theme, pB }) => (pB ? theme.spacing[pB] : 0)};
-  padding-left: ${({ theme, pL }) => (pL ? theme.spacing[pL] : 0)};
-  padding-right: ${({ theme, pR }) => (pR ? theme.spacing[pR] : 0)};
-`;
+const StyledP = styled(P)``;
 
 const StyledA = styled(A)`
   padding-top: ${({ theme, pT }) => (pT ? theme.spacing[pT] : 0)};
@@ -67,13 +62,13 @@ function PhoneLink({ children, ...props }) {
   );
 }
 
-function EmailLink({ children, ...props }) {
-  return (
-    <TitleLink title="Email" href={`mailto:${children}`} {...props}>
-      {children}
-    </TitleLink>
-  );
-}
+// function EmailLink({ children, ...props }) {
+//   return (
+//     <TitleLink title="Email" href={`mailto:${children}`} {...props}>
+//       {children}
+//     </TitleLink>
+//   );
+// }
 
 export default function Contact() {
   const { getPage } = React.useContext(PagesContext);
@@ -83,22 +78,30 @@ export default function Contact() {
     return <Loading />;
   }
 
-  const { options = {}, pageName, ...headerBanner } = page;
+  const { pageName, ...headerBanner } = page;
 
-  const {
-    contactDescription,
-    contactEmail,
-    contactPhone,
-    email,
-    facebookTitle,
-    facebookURL,
-    mailingAddress,
-    phone,
-  } = options;
+  // const {
+  //   contactDescription,
+  //   contactEmail,
+  //   contactPhone,
+  //   email,
+  //   facebookTitle,
+  //   facebookURL,
+  //   mailingAddress,
+  //   phone,
+  // } = options;
 
   return (
     <Page headerBanner={headerBanner}>
-      {mailingAddress && (
+      <StyledP>
+        For Residency or Performance Information please contact our agents:
+      </StyledP>
+      <StyledP>Jennifer Morris of Siegel Artist Management</StyledP>
+      <TitleLink pT="XL" title="Mailing Address">
+        18 Amherst Ave Wilkes-Barre, PA 18702
+      </TitleLink>
+      <PhoneLink>570-258-5700 X 101</PhoneLink>
+      {/* {mailingAddress && (
         <TitleLink pT="XL" title="Mailing Address">
           {mailingAddress}
         </TitleLink>
@@ -109,14 +112,7 @@ export default function Contact() {
         <TitleLink title="Facebook" href={facebookURL}>
           {facebookTitle}
         </TitleLink>
-      )}
-      {contactDescription && (
-        <StyledP pT="L" pB="M">
-          {contactDescription}
-        </StyledP>
-      )}
-      {contactEmail && <EmailLink>{contactEmail}</EmailLink>}
-      {contactPhone && <PhoneLink>{contactPhone}</PhoneLink>}
+      )} */}
     </Page>
   );
 }
