@@ -54,7 +54,7 @@ export default function Events(props) {
     : Object.entries(groupPerformancesByYear(pastPerformances))
         .sort(mostRecentYearsFirst)
         .map(renderPerformances);
-
+  console.log(headerBanner);
   return (
     <Page headerBanner={headerBanner}>
       <Wrapper>

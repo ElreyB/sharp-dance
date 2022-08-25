@@ -7,6 +7,7 @@ import { MediaContext, PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
 import { Footer } from "../../styledGuide/Footer";
 import Loading from "../Loading";
+import { OrganizationsContext } from "../../Providers";
 
 const CustomPage = styled.div``;
 
@@ -95,10 +96,37 @@ const BuyTicketsSection = styled.section`
 //   align-items: stretch;
 //   flex-shrink: 1;
 // `;
+const SponserTitle = styled.h2`
+  text-align: center;
+`;
+
+const StyledFooterContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  margin: 0;
+  width: 100%;
+`;
+
+const StyledImage = styled.div`
+  margin: 8px;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+`;
+const StyledSponsors = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+`;
 
 export default function Home() {
   const { getPage } = React.useContext(PagesContext);
   const media = React.useContext(MediaContext);
+  const orgs = React.useContext(OrganizationsContext);
 
   const page = getPage("home");
 
@@ -168,6 +196,19 @@ export default function Home() {
           <StyledA href={TICKETS}>Buy Tickets</StyledA>
         </Main> */}
       </BuyTicketsSection>
+      <StyledFooterContent>
+        <SponserTitle>Affiliates and Donors</SponserTitle>
+        <StyledSponsors>
+          {orgs.map((org) => (
+            <StyledImage
+              key={org.id}
+              alt={org.organization}
+              style={{ backgroundImage: `url("${org.logo.src}")` }}
+            />
+          ))}
+        </StyledSponsors>
+      </StyledFooterContent>
+
       <Footer />
     </CustomPage>
   );

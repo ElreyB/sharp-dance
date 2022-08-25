@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components/macro";
 
 const linkStyles = css`
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.black};
   text-decoration: none;
   font-weight: normal;
   /* display: block; */
