@@ -9,10 +9,12 @@ import { P } from "../P";
 const StyledA = styled(A)`
   ${({ theme: { media } }) => media.mobile`
     text-align: center;
+    color: black;
   `}
 `;
 
 function IconAnchor({ Icon, url }) {
+  console.error({ url });
   if (!url) {
     return null;
   }
@@ -70,6 +72,7 @@ export const Schedule = ({
   website,
   ...props
 }) => {
+  console.error({ name });
   return (
     <Wrapper {...props}>
       <Header>
