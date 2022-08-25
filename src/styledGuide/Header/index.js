@@ -57,13 +57,8 @@ export function Header() {
       <LogoWrapper>
         <LogoLink to={LANDING}>
           <img
-            src={process.env.PUBLIC_URL + "/images/tabimage.jpg"}
-            width="120px"
-            alt="sharp dance"
-          />
-          <img
-            src={process.env.PUBLIC_URL + "/images/white-logo-name.png"}
-            width="200px"
+            src={process.env.PUBLIC_URL + "/images/SHARP-logo.png"}
+            width="355px"
             alt="sharp dance"
             style={{ paddingTop: "10px" }}
           />

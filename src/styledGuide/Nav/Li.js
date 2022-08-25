@@ -53,6 +53,7 @@ const StyledAnchor = styled(A)`
   flex-shrink: 0;
   width: auto;
   white-space: nowrap;
+  color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Li = ({ to, label, children, ...props }) => {
