@@ -34,13 +34,18 @@ const H2 = styled.h2`
 `;
 
 export default function Media({ headerBanner, media }) {
-  const filterMedia = media.filter((album) => Number(album.id) < 6);
+  const filterMedia = media.filter((album) => {
+    console.log("id", Number(album.id));
+    return Number(album.id) !== 7 && Number(album.id) !== 6;
+  });
+  console.log({ filterMedia });
   return (
     <Page headerBanner={headerBanner}>
       <MediaContainer>
         {filterMedia.length > 0 ? (
           filterMedia.map(({ title, images }, i) => {
             const photo = images[random(0, images.length - 1)];
+            console.log({ photo });
             return (
               <MediaAnchor to={getPerformanceURL(title)} key={title}>
                 <H2>{title}</H2>

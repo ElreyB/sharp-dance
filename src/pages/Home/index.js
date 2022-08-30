@@ -18,13 +18,13 @@ const Main = styled.main`
   font-weight: 700;
   font-size: 18px;
   line-height: 36.57px;
-  max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
-  border: 5px solid black;
   padding: 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  border: 5px solid black;
+  max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
 
   ${({ theme }) => theme.media.mobile`
        max-width: ${({ theme: { breakpoints } }) => breakpoints.md};
@@ -51,20 +51,20 @@ const AnchorButton = styled(NavLink)`
   border: 1px solid white;
   text-transform: uppercase;
 `;
-// const StyledA = styled.a`
-//   color: ${({ theme: { colors } }) => colors.white};
-//   background-color: ${({ theme: { colors } }) => colors.black};
-//   text-decoration: none;
-//   margin-top: 32px;
-//   padding: 10px 80px;
-//   width: 100%;
-// `;
+const StyledA = styled.a`
+  color: ${({ theme: { colors } }) => colors.white};
+  background-color: ${({ theme: { colors } }) => colors.black};
+  text-decoration: none;
+  margin-top: 32px;
+  padding: 10px 80px;
+  width: 100%;
+`;
 
 const ImageSection = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   overflow: hidden;
-  height: 250px;
+  height: 400px;
   background-color: ${({ theme: { colors } }) => colors.black};
 `;
 const BuyTicketsSection = styled.section`
@@ -123,6 +123,18 @@ const StyledSponsors = styled.div`
   flex-wrap: wrap;
 `;
 
+const ShowMain = styled(Main)`
+  border: 0;
+`;
+
+const ShowSection = styled.section`
+  border: 5px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
+`;
+
 export default function Home() {
   const { getPage } = React.useContext(PagesContext);
   const media = React.useContext(MediaContext);
@@ -137,7 +149,7 @@ export default function Home() {
   const { options = {} } = page;
   const urls = sampleSize(
     media.flatMap(({ images }) => images).map(({ src }) => src),
-    5
+    50
   );
 
   // https://vimeo.com/252107468
@@ -173,28 +185,30 @@ export default function Home() {
         </ImageSection>
       </div>
       <BuyTicketsSection>
-        <Main>
-          <p>Open Company Classes</p>
-          <p>Mondays from 6pm-4pm</p>
-          <br />
-          <p>Equilibrium Dance Academy 1802 S. Broad Street</p>
-          <br />
-        </Main>
-        {/* <Main>
-          <p>Charity Performance for the Tree of Life Synagogue families</p>
-          <p>
-            Featuring SHARP repertory &amp;“669” the Story of Nicholas Winton
-            who saved 669 children from the Holocaust.
-          </p>
-          <br />
-          <p>
-            The Hillman Center for the Performing Arts - 423 Fox Chapel Rd,
-            Pittsburgh, PA 15238
-          </p>
-          <p>February, 16 8:00 PM</p>
-          <br />
-          <StyledA href={TICKETS}>Buy Tickets</StyledA>
-        </Main> */}
+        <ShowSection>
+          <ShowMain>
+            <p>Rochester Fringe Festival</p>
+            <p>
+              S.O.T.A.- School of the Arts 25 Prince Street Rochester, N.Y.
+              14607
+            </p>
+            <p>Friday September 16 8:30 PM</p>
+            <p>Sunday September 18 7:30 PM</p>
+            <br />
+            <StyledA
+              href="https://www.rochesterfringe.com/tickets-and-shows/a-tie-that-binds"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Buy Tickets
+            </StyledA>
+          </ShowMain>
+          <img
+            src={process.env.PUBLIC_URL + "/images/rochesterfringe.jpeg"}
+            width="50%"
+            alt="sharp dance"
+          />
+        </ShowSection>
       </BuyTicketsSection>
       <StyledFooterContent>
         <SponserTitle>Affiliates and Donors</SponserTitle>
@@ -209,7 +223,24 @@ export default function Home() {
         </StyledSponsors>
       </StyledFooterContent>
 
-      <Footer />
+      <BuyTicketsSection>
+        <ShowSection>
+          <ShowMain>
+            <p>Open Company Classes</p>
+            <p>Mondays from 6pm-4pm</p>
+            <br />
+            <p>Equilibrium Dance Academy 1802 S. Broad Street</p>
+            <br />
+          </ShowMain>
+          <img
+            src={process.env.PUBLIC_URL + "/images/black-logo-name.svg"}
+            height="50%"
+            alt="sharp dance"
+          />
+        </ShowSection>
+      </BuyTicketsSection>
+
+      {/* <Footer /> */}
     </CustomPage>
   );
 }

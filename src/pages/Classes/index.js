@@ -47,6 +47,8 @@ export default function Classes() {
     })
     .filter((classSchedule) => !!classSchedule);
 
+  console.log({ headerBanner });
+
   return (
     <Page headerBanner={headerBanner}>
       {options.content}
