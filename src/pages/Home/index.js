@@ -5,7 +5,7 @@ import styled from "styled-components/macro";
 // import { TICKETS } from "../../constants";
 import { MediaContext, PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
-import { Footer } from "../../styledGuide/Footer";
+// import { Footer } from "../../styledGuide/Footer";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
 
