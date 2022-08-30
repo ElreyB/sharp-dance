@@ -5,9 +5,31 @@ import { OrganizationsContext, PagesContext } from "../../Providers";
 import styled from "styled-components/macro";
 import Page from "../../layouts/Page";
 
-const H2 = styled.h2`
-  text-align: center;
-  margin: 20px;
+const SponserTitle = styled.h2`
+  margin-top: 30px;
+`;
+
+const StyledFooterContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  margin: 0;
+  width: 100%;
+`;
+
+const StyledImage = styled.div`
+  margin: 8px;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+`;
+const StyledSponsors = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 // const ImageGroup = styled.div`
@@ -37,7 +59,18 @@ export default function About() {
       <Markdown>{options.content}</Markdown>
       {organizations && (
         <>
-          <H2>Members</H2>
+          <StyledFooterContent>
+            <SponserTitle>Affiliates and Donors</SponserTitle>
+            <StyledSponsors>
+              {organizations.map((org) => (
+                <StyledImage
+                  key={org.id}
+                  alt={org.organization}
+                  style={{ backgroundImage: `url("${org.logo.src}")` }}
+                />
+              ))}
+            </StyledSponsors>
+          </StyledFooterContent>
         </>
       )}
     </Page>

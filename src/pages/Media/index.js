@@ -30,6 +30,8 @@ export default function Media({ match }) {
   //   // return <Redirect to={ERROR} />;
   // }
 
+  console.log({ media });
+
   if (performance) {
     return <SinglePerformance performance={performance} />;
   }
