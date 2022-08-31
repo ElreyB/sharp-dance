@@ -227,7 +227,7 @@ export default function Home() {
         <ShowSection>
           <ShowMain>
             <p>Open Company Classes</p>
-            <p>Mondays from 6pm-4pm</p>
+            <p>Mondays from 6pm-7pm</p>
             <br />
             <p>Equilibrium Dance Academy 1802 S. Broad Street</p>
             <br />
