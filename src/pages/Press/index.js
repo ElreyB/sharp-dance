@@ -1,12 +1,12 @@
 import React from "react";
-import styled from "styled-components/macro";
+// import styled from "styled-components/macro";
 import { Quote } from "../../styledGuide";
 import Loading from "../Loading";
-import { PagesContext, PressContext, QuotesContext } from "../../Providers";
+import { PagesContext, QuotesContext } from "../../Providers";
 // import { PressItem } from "./pressItem";
 import { random } from "lodash";
 
-import { A, P } from "../../styledGuide";
+// import { A, P } from "../../styledGuide";
 import Page from "../../layouts/Page";
 
 // const Anchor = styled(A)`
