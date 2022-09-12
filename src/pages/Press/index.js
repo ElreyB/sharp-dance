@@ -1,29 +1,29 @@
 import React from "react";
-import styled from "styled-components/macro";
+// import styled from "styled-components/macro";
 import { Quote } from "../../styledGuide";
 import Loading from "../Loading";
-import { PagesContext, PressContext, QuotesContext } from "../../Providers";
-import { PressItem } from "./pressItem";
+import { PagesContext, QuotesContext } from "../../Providers";
+// import { PressItem } from "./pressItem";
 import { random } from "lodash";
 
-import { A, P } from "../../styledGuide";
+// import { A, P } from "../../styledGuide";
 import Page from "../../layouts/Page";
 
-const Anchor = styled(A)`
-  display: inline-block;
-  font-style: italic;
-  width: auto;
-  color: black;
-`;
+// const Anchor = styled(A)`
+//   display: inline-block;
+//   font-style: italic;
+//   width: auto;
+//   color: black;
+// `;
 
-const RequestPresKit = styled(P)`
-  font-size: 18px;
-  margin-bottom: ${({ theme: { spacing } }) => spacing.L};
-`;
+// const RequestPresKit = styled(P)`
+//   font-size: 18px;
+//   margin-bottom: ${({ theme: { spacing } }) => spacing.L};
+// `;
 
 export default function Press() {
   const { getPage } = React.useContext(PagesContext);
-  const press = React.useContext(PressContext);
+  // const press = React.useContext(PressContext);
   const quotes = React.useContext(QuotesContext);
   const page = getPage("press-kit");
 
@@ -35,7 +35,7 @@ export default function Press() {
 
   return (
     <Page headerBanner={headerBanner}>
-      <RequestPresKit>
+      {/* <RequestPresKit>
         To receive a press kit please email us at{" "}
         <Anchor
           title="Email"
@@ -44,13 +44,20 @@ export default function Press() {
           {options.email}
         </Anchor>{" "}
         and we will send one directly to you.
-      </RequestPresKit>
+      </RequestPresKit> */}
       <Quote {...quotes[random(0, quotes.length - 1)]} />
-      {press
+      <iframe
+        title="press kit"
+        src={`${process.env.PUBLIC_URL}/press-kit.pdf`}
+        width="100%"
+        height="1000px"
+      />
+
+      {/* {press
         .filter((item) => !!item.description)
         .map(({ id, ...props }) => (
           <PressItem {...props} key={id} />
-        ))}
+        ))} */}
     </Page>
   );
 }
