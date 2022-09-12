@@ -35,7 +35,7 @@ export default function Press() {
 
   return (
     <Page headerBanner={headerBanner}>
-      <RequestPresKit>
+      {/* <RequestPresKit>
         To receive a press kit please email us at{" "}
         <Anchor
           title="Email"
@@ -44,13 +44,20 @@ export default function Press() {
           {options.email}
         </Anchor>{" "}
         and we will send one directly to you.
-      </RequestPresKit>
+      </RequestPresKit> */}
       <Quote {...quotes[random(0, quotes.length - 1)]} />
-      {press
+      <iframe
+        title="press kit"
+        src={`${process.env.PUBLIC_URL}/press-kit.pdf`}
+        width="100%"
+        height="1000px"
+      />
+
+      {/* {press
         .filter((item) => !!item.description)
         .map(({ id, ...props }) => (
           <PressItem {...props} key={id} />
-        ))}
+        ))} */}
     </Page>
   );
 }
