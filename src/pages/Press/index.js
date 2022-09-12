@@ -3,27 +3,27 @@ import styled from "styled-components/macro";
 import { Quote } from "../../styledGuide";
 import Loading from "../Loading";
 import { PagesContext, PressContext, QuotesContext } from "../../Providers";
-import { PressItem } from "./pressItem";
+// import { PressItem } from "./pressItem";
 import { random } from "lodash";
 
 import { A, P } from "../../styledGuide";
 import Page from "../../layouts/Page";
 
-const Anchor = styled(A)`
-  display: inline-block;
-  font-style: italic;
-  width: auto;
-  color: black;
-`;
+// const Anchor = styled(A)`
+//   display: inline-block;
+//   font-style: italic;
+//   width: auto;
+//   color: black;
+// `;
 
-const RequestPresKit = styled(P)`
-  font-size: 18px;
-  margin-bottom: ${({ theme: { spacing } }) => spacing.L};
-`;
+// const RequestPresKit = styled(P)`
+//   font-size: 18px;
+//   margin-bottom: ${({ theme: { spacing } }) => spacing.L};
+// `;
 
 export default function Press() {
   const { getPage } = React.useContext(PagesContext);
-  const press = React.useContext(PressContext);
+  // const press = React.useContext(PressContext);
   const quotes = React.useContext(QuotesContext);
   const page = getPage("press-kit");
 
