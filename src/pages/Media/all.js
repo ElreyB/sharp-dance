@@ -33,17 +33,32 @@ const H2 = styled.h2`
   color: ${({ theme: { colors } }) => colors.mainTC};
 `;
 
+const mediaOrder = [
+  "I am here",
+  "Puzzle",
+  "669",
+  "Seven Windows",
+  "The Garden Tour",
+  "Roller Coaster",
+];
+
 export default function Media({ headerBanner, media }) {
   const filterMedia = media.filter((album) => {
-    console.log("id", Number(album.id));
     return Number(album.id) !== 7 && Number(album.id) !== 6;
   });
-  console.log({ filterMedia });
+
+  const mediaToDisplay = mediaOrder.map((mediaTitle) =>
+    filterMedia.find(
+      ({ title }) => mediaTitle.toLowerCase() === title.toLowerCase()
+    )
+  );
+
+  console.log("media order", mediaToDisplay, filterMedia);
   return (
     <Page headerBanner={headerBanner}>
       <MediaContainer>
         {filterMedia.length > 0 ? (
-          filterMedia.map(({ title, images }, i) => {
+          mediaToDisplay.map(({ title, images }, i) => {
             const photo = images[random(0, images.length - 1)];
             console.log({ photo });
             return (
