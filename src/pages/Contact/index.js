@@ -101,18 +101,11 @@ export default function Contact() {
         18 Amherst Ave Wilkes-Barre, PA 18702
       </TitleLink>
       <PhoneLink>570-258-5700 X 101</PhoneLink>
-      {/* {mailingAddress && (
-        <TitleLink pT="XL" title="Mailing Address">
-          {mailingAddress}
-        </TitleLink>
-      )}
-      {phone && <PhoneLink>{phone}</PhoneLink>}
-      {email && <EmailLink>{email}</EmailLink>}
-      {facebookTitle && facebookURL && (
-        <TitleLink title="Facebook" href={facebookURL}>
-          {facebookTitle}
-        </TitleLink>
-      )} */}
+      {/* For any other information please contact
+Nikki Battestilli, Company Manager         Nikki@sharpdance.org     814.952.5573
+Diane Sharp-Nachsin, Artistic Director     Diane@sharpdance.org    215-880-2306
+Company Mailing address:
+1420 Locust Street 33 F Philadelphia PA 19102 */}
     </Page>
   );
 }
