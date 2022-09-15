@@ -65,7 +65,7 @@ const links = [
   // TODO: better way to show or remove link
   // { to: TICKETS, label: "Tickets" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
-  { to: BIOS, label: "Sharp Family" },
+  { to: BIOS, label: "SHARP Family" },
   { to: MEDIA, label: "Repertoire" },
   {
     to: EVENTS,
