@@ -3,16 +3,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 // import { TICKETS } from "../../constants";
-import { MediaContext, PagesContext } from "../../Providers";
+import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
-import { Footer } from "../../styledGuide/Footer";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
 
 const CustomPage = styled.div``;
 
 const Main = styled.main`
-  margin: 24px auto;
+  margin: 40px auto;
   text-align: center;
   color: ${({ theme: { colors } }) => colors.black};
   font-weight: 700;
@@ -68,7 +67,7 @@ const BuyTicketsSection = styled.section`
   font-weight: 700;
   font-size: 16px;
   line-height: 36.57px;
-  margin: 24px auto;
+  margin: 40px auto;
   /* padding: 32px; */
   /* margin-bottom: 64px;
   border: 5px solid;
@@ -93,7 +92,7 @@ const SponserTitle = styled.h2`
   text-align: center;
 `;
 
-const StyledFooterContent = styled.div`
+const SponserSection = styled.div`
   display: flex;
   flex-direction: column;
   align-content: start;
@@ -118,6 +117,14 @@ const StyledSponsors = styled.div`
 
 const ShowMain = styled(Main)`
   border: 0;
+  flex-basis: 50%;
+`;
+
+const ImageSide = styled(ShowMain)`
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-image: url(${({ imageUrl }) => imageUrl});
 `;
 
 const ShowSection = styled.section`
@@ -214,14 +221,16 @@ export default function Home() {
               Buy Tickets
             </StyledA>
           </ShowMain>
-          <img
-            src={process.env.PUBLIC_URL + "/images/rochesterfringe.jpeg"}
-            width="50%"
-            alt="sharp dance"
-          />
+          <ShowMain>
+            <img
+              src={process.env.PUBLIC_URL + "/images/rochesterfringe.jpeg"}
+              width="100%"
+              alt="sharp dance"
+            />
+          </ShowMain>
         </ShowSection>
       </BuyTicketsSection>
-      <StyledFooterContent>
+      <SponserSection>
         <SponserTitle>Affiliates and Donors</SponserTitle>
         <StyledSponsors>
           {orgs.map((org) => (
@@ -232,7 +241,7 @@ export default function Home() {
             />
           ))}
         </StyledSponsors>
-      </StyledFooterContent>
+      </SponserSection>
 
       <BuyTicketsSection>
         <ShowSection>
@@ -242,16 +251,11 @@ export default function Home() {
             <br />
             <p>Equilibrium Dance Academy 1802 S. Broad Street</p>
             <br />
+            <AnchorButton to="/classes">See more</AnchorButton>
           </ShowMain>
-          <img
-            src={process.env.PUBLIC_URL + "/images/black-logo-name.svg"}
-            height="50%"
-            alt="sharp dance"
-          />
+          <ImageSide imageUrl="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1" />
         </ShowSection>
       </BuyTicketsSection>
-
-      <Footer />
     </CustomPage>
   );
 }
