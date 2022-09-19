@@ -16,12 +16,12 @@ import {
   // PRESS,
 } from "../../constants";
 
-const DesktopSocialIcons = styled(SocialIcons)`
-  display: block;
-  margin: 64px auto;
-  text-align: center;
-  max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
-`;
+// const DesktopSocialIcons = styled(SocialIcons)`
+//   display: block;
+//   margin: 64px auto;
+//   text-align: center;
+//   max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
+// `;
 
 const StyledFooter = styled.footer`
   display: flex;

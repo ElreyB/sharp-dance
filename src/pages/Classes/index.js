@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Schedule, H3, A } from "../../styledGuide";
-import { parseDate } from "../../utils";
+// import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
 import Page from "../../layouts/Page";

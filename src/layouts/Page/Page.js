@@ -1,6 +1,6 @@
 import React from "react";
 import { node } from "prop-types";
-import { Banner, Footer } from "../../styledGuide";
+import { Banner } from "../../styledGuide";
 import styled, { css } from "styled-components/macro";
 
 const PageContent = styled.div(
