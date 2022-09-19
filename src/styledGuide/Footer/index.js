@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { SocialIcons } from "../SocialIcons";
+// import { SocialIcons } from "../SocialIcons";
 import { Mailchimp } from "../Mailchimp";
 import { A } from "../A";
 import {
