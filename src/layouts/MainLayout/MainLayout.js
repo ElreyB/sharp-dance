@@ -1,6 +1,7 @@
 import { node } from "prop-types";
 import React from "react";
 import styled from "styled-components/macro";
+import { Footer } from "../../styledGuide";
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -15,7 +16,7 @@ export default function MainLayout({ children, ...props }) {
   return (
     <Wrapper {...props}>
       <Main>{children}</Main>
-      {/* <Footer /> */}
+      <Footer />
     </Wrapper>
   );
 }

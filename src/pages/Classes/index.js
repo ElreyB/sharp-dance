@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Schedule, H3, A } from "../../styledGuide";
-import { parseDate } from "../../utils";
+// import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
 import Page from "../../layouts/Page";
 
 const now = new Date().getTime();
-const isFuture = (time) => time > now;
+const isFuture = (time) => {
+  console.log({ time, now });
+  return time > now;
+};
 // const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 function ClassSchedule({ season, ...upcomingClasses }) {
@@ -39,15 +42,17 @@ export default function Classes() {
   // const location = classSchedules.length && classSchedules[0].location;
   const upcomingClassesList = classSchedules
     .map((classSchedule) => {
-      const dates = classSchedule.dates.filter((date) =>
-        isFuture(parseDate(date))
-      );
+      const dates = classSchedule.dates.filter((date) => {
+        const replacedDate = date.days.replaceAll("-", ",");
+        const dateTime = new Date(replacedDate).getTime();
+        return isFuture(dateTime);
+      });
 
       return dates.length === 0 ? undefined : { ...classSchedule, dates };
     })
     .filter((classSchedule) => !!classSchedule);
 
-  console.log({ headerBanner });
+  console.log({ upcomingClassesList });
 
   return (
     <Page headerBanner={headerBanner}>

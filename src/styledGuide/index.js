@@ -4,6 +4,7 @@ export * from "./Banner";
 export * from "./Bio";
 export * from "./Button";
 export * from "./DonationButton";
+export * from "./Footer";
 export * from "./Header";
 export * from "./Headings";
 export * from "./IFrame";

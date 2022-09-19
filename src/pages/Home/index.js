@@ -1,18 +1,17 @@
-import { sampleSize } from "lodash-es";
+// import { sampleSize } from "lodash-es";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 // import { TICKETS } from "../../constants";
-import { MediaContext, PagesContext } from "../../Providers";
+import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
-// import { Footer } from "../../styledGuide/Footer";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
 
 const CustomPage = styled.div``;
 
 const Main = styled.main`
-  margin: 24px auto;
+  margin: 40px auto;
   text-align: center;
   color: ${({ theme: { colors } }) => colors.black};
   font-weight: 700;
@@ -60,13 +59,6 @@ const StyledA = styled.a`
   width: 100%;
 `;
 
-const ImageSection = styled.section`
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  height: 400px;
-  background-color: ${({ theme: { colors } }) => colors.black};
-`;
 const BuyTicketsSection = styled.section`
   max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
   text-align: center;
@@ -75,7 +67,7 @@ const BuyTicketsSection = styled.section`
   font-weight: 700;
   font-size: 16px;
   line-height: 36.57px;
-  margin: 24px auto;
+  margin: 40px auto;
   /* padding: 32px; */
   /* margin-bottom: 64px;
   border: 5px solid;
@@ -100,7 +92,7 @@ const SponserTitle = styled.h2`
   text-align: center;
 `;
 
-const StyledFooterContent = styled.div`
+const SponserSection = styled.div`
   display: flex;
   flex-direction: column;
   align-content: start;
@@ -125,6 +117,14 @@ const StyledSponsors = styled.div`
 
 const ShowMain = styled(Main)`
   border: 0;
+  flex-basis: 50%;
+`;
+
+const ImageSide = styled(ShowMain)`
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-image: url(${({ imageUrl }) => imageUrl});
 `;
 
 const ShowSection = styled.section`
@@ -135,9 +135,21 @@ const ShowSection = styled.section`
   min-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
 `;
 
+const ImageSection = styled.section`
+  display: flex;
+  /* justify-content: space-between;
+  overflow: hidden;
+  height: 400px;
+  background-color: ${({ theme: { colors } }) => colors.black}; */
+`;
+
+const ImageContainer = styled.div`
+  flex: 25%;
+`;
+
 export default function Home() {
   const { getPage } = React.useContext(PagesContext);
-  const media = React.useContext(MediaContext);
+  // const media = React.useContext(MediaContext);
   const orgs = React.useContext(OrganizationsContext);
 
   const page = getPage("home");
@@ -147,11 +159,17 @@ export default function Home() {
   }
 
   const { options = {} } = page;
-  const urls = sampleSize(
-    media.flatMap(({ images }) => images).map(({ src }) => src),
-    50
-  );
+  // const urls = sampleSize(
+  //   media.flatMap(({ images }) => images).map(({ src }) => src),
+  //   50
+  // );
 
+  const imageTitles = [
+    "/images/669-Adj.png",
+    "/images/Retreat-Adj.png",
+    "/images/RICHRYAN-Kate-Adg.png",
+    "/images/SEVENWINDOWS-Mig&Wren-ADJ.png",
+  ];
   // https://vimeo.com/252107468
 
   return (
@@ -173,17 +191,17 @@ export default function Home() {
             <AnchorButton to="/sharp-dance/press">Press Kit</AnchorButton>
           </Li>
           <Li>
-            <AnchorButton to="/sharp-dance/bios">Sharp Family</AnchorButton>
+            <AnchorButton to="/sharp-dance/bios">SHARP Family</AnchorButton>
           </Li>
         </Ul>
       </Main>
-      <div>
-        <ImageSection>
-          {urls.map((src) => (
-            <img alt="" key={src} src={src} />
-          ))}
-        </ImageSection>
-      </div>
+      <ImageSection>
+        {imageTitles.map((src) => (
+          <ImageContainer key={src}>
+            <img alt="dance" src={process.env.PUBLIC_URL + src} width="100%" />
+          </ImageContainer>
+        ))}
+      </ImageSection>
       <BuyTicketsSection>
         <ShowSection>
           <ShowMain>
@@ -203,14 +221,16 @@ export default function Home() {
               Buy Tickets
             </StyledA>
           </ShowMain>
-          <img
-            src={process.env.PUBLIC_URL + "/images/rochesterfringe.jpeg"}
-            width="50%"
-            alt="sharp dance"
-          />
+          <ShowMain>
+            <img
+              src={process.env.PUBLIC_URL + "/images/rochesterfringe.jpeg"}
+              width="100%"
+              alt="sharp dance"
+            />
+          </ShowMain>
         </ShowSection>
       </BuyTicketsSection>
-      <StyledFooterContent>
+      <SponserSection>
         <SponserTitle>Affiliates and Donors</SponserTitle>
         <StyledSponsors>
           {orgs.map((org) => (
@@ -221,7 +241,7 @@ export default function Home() {
             />
           ))}
         </StyledSponsors>
-      </StyledFooterContent>
+      </SponserSection>
 
       <BuyTicketsSection>
         <ShowSection>
@@ -231,50 +251,11 @@ export default function Home() {
             <br />
             <p>Equilibrium Dance Academy 1802 S. Broad Street</p>
             <br />
+            <AnchorButton to="/classes">See more</AnchorButton>
           </ShowMain>
-          <img
-            src={process.env.PUBLIC_URL + "/images/black-logo-name.svg"}
-            height="50%"
-            alt="sharp dance"
-          />
+          <ImageSide imageUrl="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1" />
         </ShowSection>
       </BuyTicketsSection>
-
-      {/* <Footer /> */}
-      {/* <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */}
-      {/* </style>
-<div id="mc_embed_signup">
-    <form action="https://sharpdance.us2.list-manage.com/subscribe/post?u=43b5092106df2ef610d002684&amp;id=986bbed649&amp;f_id=006041e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-
-        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-</div>
-	<div id="mce-responses" class="clear foot">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_43b5092106df2ef610d002684_986bbed649" tabindex="-1" value=""></div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                <p class="brandingLogo"><a href="http://eepurl.com/h-12gn" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
-            </div>
-        </div>
-    </div>
-</form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup--></link> */}
     </CustomPage>
   );
 }
