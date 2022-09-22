@@ -88,7 +88,7 @@ const LinkHeader = styled.h3`
   font-weight: bold;
 `;
 
-const FooterCredit = styled.div``;
+// const FooterCredit = styled.div``;
 
 const peopleLinks = [
   { to: ABOUT, label: "About" },
