@@ -15,6 +15,7 @@ import {
   // PAST_EVENTS,
   // PRESS,
 } from "../../constants";
+import { FaRegCopyright } from "react-icons/fa";
 
 // const DesktopSocialIcons = styled(SocialIcons)`
 //   display: block;
@@ -23,24 +24,30 @@ import {
 //   max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
 // `;
 
-const StyledFooter = styled.footer`
+const FooterActions = styled.div`
   display: flex;
   background-color: black;
   color: white;
   padding: 10px 35px 10px 0;
+  flex-wrap: wrap;
 `;
 
 const StyledFooterContent = styled.div`
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  width: 50%;
+  flex-basis: 14%;
   margin-top: 100px;
-  margin-left: 50px;
 
-  & :last-child {
-    width: 100%;
-    margin-left: 0;
+  &:nth-child(5) {
+    flex-basis: 24%;
+  }
+
+  &:nth-child(6) {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
   }
 `;
 
@@ -81,6 +88,8 @@ const LinkHeader = styled.h3`
   font-weight: bold;
 `;
 
+const FooterCredit = styled.div``;
+
 const peopleLinks = [
   { to: ABOUT, label: "About" },
   // TODO: better way to show or remove link
@@ -105,39 +114,47 @@ const supportLinks = [
 
 export function Footer() {
   return (
-    <StyledFooter>
-      <img
-        src={process.env.PUBLIC_URL + "/images/sharp-logo-image-up-2.svg"}
-        height="50%"
-        alt="sharp dance"
-      />
-      <StyledFooterContent>
-        <LinkHeader>Company</LinkHeader>
-        {peopleLinks.map(({ to, label }) => (
-          <NavLink to={to} key={to}>
-            {label}
-          </NavLink>
-        ))}
-      </StyledFooterContent>
-      <StyledFooterContent>
-        <LinkHeader>Information</LinkHeader>
-        {informationLinks.map(({ to, label }) => (
-          <NavLink to={to} key={to}>
-            {label}
-          </NavLink>
-        ))}
-      </StyledFooterContent>
-      <StyledFooterContent>
-        <LinkHeader>Support</LinkHeader>
-        {supportLinks.map(({ to, label }) => (
-          <NavLink to={to} key={to}>
-            {label}
-          </NavLink>
-        ))}
-      </StyledFooterContent>
-      <StyledFooterContent>
-        <Mailchimp />
-      </StyledFooterContent>
-    </StyledFooter>
+    <footer>
+      <FooterActions>
+        <img
+          src={process.env.PUBLIC_URL + "/images/sharp-logo-image-up-2.svg"}
+          height="50%"
+          alt="sharp dance"
+        />
+        <StyledFooterContent>
+          <LinkHeader>Company</LinkHeader>
+          {peopleLinks.map(({ to, label }) => (
+            <NavLink to={to} key={to}>
+              {label}
+            </NavLink>
+          ))}
+        </StyledFooterContent>
+        <StyledFooterContent>
+          <LinkHeader>Information</LinkHeader>
+          {informationLinks.map(({ to, label }) => (
+            <NavLink to={to} key={to}>
+              {label}
+            </NavLink>
+          ))}
+        </StyledFooterContent>
+        <StyledFooterContent>
+          <LinkHeader>Support</LinkHeader>
+          {supportLinks.map(({ to, label }) => (
+            <NavLink to={to} key={to}>
+              {label}
+            </NavLink>
+          ))}
+        </StyledFooterContent>
+        <StyledFooterContent>
+          <Mailchimp />
+        </StyledFooterContent>
+        <StyledFooterContent>
+          <p>
+            <FaRegCopyright />
+            2022 SHARP Dance Company Website by: Elrey Belmonti, Photos by: Bill
+          </p>
+        </StyledFooterContent>
+      </FooterActions>
+    </footer>
   );
 }
