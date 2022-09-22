@@ -205,16 +205,14 @@ export default function Home() {
       <BuyTicketsSection>
         <ShowSection>
           <ShowMain>
-            <p>Rochester Fringe Festival</p>
-            <p>
-              S.O.T.A.- School of the Arts 25 Prince Street Rochester, N.Y.
-              14607
-            </p>
-            <p>Friday September 16 8:30 PM</p>
-            <p>Sunday September 18 7:30 PM</p>
+            <p>SHARP home fall show</p>
+            <p>20 N. American St Philadelphia, PA 19106</p>
+            <p>Friday November 11 8 PM</p>
+            <p>Saturday November 12 8 PM</p>
+            <p>Sunday November 13 8 PM</p>
             <br />
             <StyledA
-              href="https://www.rochesterfringe.com/tickets-and-shows/a-tie-that-binds"
+              href="https://christchurchphila.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
