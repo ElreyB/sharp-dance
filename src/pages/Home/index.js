@@ -7,6 +7,7 @@ import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
+import { BIOS, ABOUT, PRESS } from "../../constants";
 
 const CustomPage = styled.div``;
 
@@ -60,7 +61,7 @@ const StyledA = styled.a`
 `;
 
 const BuyTicketsSection = styled.section`
-  max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
+  /* max-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
   text-align: center;
   background-color: ${({ theme: { colors } }) => colors.primaryColors.sliver};
   color: ${({ theme: { colors } }) => colors.black};
@@ -132,7 +133,7 @@ const ShowSection = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  min-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
+  /* min-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
 `;
 
 const ImageSection = styled.section`
@@ -185,13 +186,13 @@ export default function Home() {
         </div>
         <Ul>
           <Li>
-            <AnchorButton to="/sharp-dance/about">Learn more</AnchorButton>
+            <AnchorButton to={ABOUT}>Learn more</AnchorButton>
           </Li>
           <Li>
-            <AnchorButton to="/sharp-dance/press">Press Kit</AnchorButton>
+            <AnchorButton to={PRESS}>Press Kit</AnchorButton>
           </Li>
           <Li>
-            <AnchorButton to="/sharp-dance/bios">SHARP Family</AnchorButton>
+            <AnchorButton to={BIOS}>SHARP Family</AnchorButton>
           </Li>
         </Ul>
       </Main>
@@ -221,7 +222,7 @@ export default function Home() {
           </ShowMain>
           <ShowMain>
             <img
-              src={process.env.PUBLIC_URL + "/images/rochesterfringe.jpeg"}
+              src={process.env.PUBLIC_URL + "/images/stories-fall-show.jpeg"}
               width="100%"
               alt="sharp dance"
             />
@@ -251,7 +252,14 @@ export default function Home() {
             <br />
             <AnchorButton to="/classes">See more</AnchorButton>
           </ShowMain>
-          <ImageSide imageUrl="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1" />
+          <ShowMain>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1"
+              width="100%"
+              alt="sharp dance"
+            />
+          </ShowMain>
+          {/* <ImageSide imageUrl="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1" /> */}
         </ShowSection>
       </BuyTicketsSection>
     </CustomPage>

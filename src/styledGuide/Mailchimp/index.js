@@ -20,9 +20,11 @@ const StyledInput2 = styled.input`
   padding-left: 12px;
 `;
 
-const StyledGrid = styled.div`
+const Wrapper = styled.div`
   background-color: black;
-  width: 100%;
+  padding: 0 35px;
+  display: flex;
+  justify-content: center;
 `;
 
 // const StyledButton = styled(Button).attrs({
@@ -71,7 +73,7 @@ export function Mailchimp() {
 
   const { EMAIL } = formData;
   return (
-    <StyledGrid>
+    <Wrapper>
       <StyledForm
         action="https://sharpdance.us2.list-manage.com/subscribe/post?u=43b5092106df2ef610d002684&amp;id=986bbed649&amp;f_id=006041e0f0"
         method="post"
@@ -112,6 +114,6 @@ export function Mailchimp() {
           </StyledButton2>
         </InputContainer>
       </StyledForm>
-    </StyledGrid>
+    </Wrapper>
   );
 }
