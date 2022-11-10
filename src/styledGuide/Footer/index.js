@@ -44,7 +44,7 @@ const StyledFooterContent = styled.div`
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  flex-basis: 30%;
+  flex-basis: 25%;
   /* margin: 0; */
 
   &:nth-child(4) {

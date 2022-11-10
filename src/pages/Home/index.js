@@ -60,23 +60,16 @@ const StyledA = styled.a`
   width: 100%;
 `;
 
-const BuyTicketsSection = styled.section`
-  /* max-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
-  text-align: center;
+const Section = styled.section`
   background-color: ${({ theme: { colors } }) => colors.primaryColors.sliver};
   color: ${({ theme: { colors } }) => colors.black};
   font-weight: 700;
   font-size: 16px;
   line-height: 36.57px;
   margin: 40px auto;
-  /* padding: 32px; */
-  /* margin-bottom: 64px;
-  border: 5px solid;
-  padding: 48px; */
+
   display: flex;
-  /* flex-direction: column;
   justify-content: center;
-  align-items: stretch; */
 `;
 // const SectionContent = styled.div`
 //   margin: 0 auto;
@@ -121,31 +114,34 @@ const ShowMain = styled(Main)`
   flex-basis: 50%;
 `;
 
-const ImageSide = styled(ShowMain)`
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  background-image: url(${({ imageUrl }) => imageUrl});
-`;
+// const ImageSide = styled(ShowMain)`
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 100%;
+//   background-image: url(${({ imageUrl }) => imageUrl});
+// `;
 
-const ShowSection = styled.section`
-  border: 5px solid black;
-  display: flex;
+const ShowSection = styled(Main)`
   justify-content: space-evenly;
   align-items: center;
-  /* min-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
+
+  ${({ theme }) => theme.media.desktop`
+      flex-direction: row;
+    `}/* min-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
 `;
 
 const ImageSection = styled.section`
   display: flex;
-  /* justify-content: space-between;
-  overflow: hidden;
-  height: 400px;
-  background-color: ${({ theme: { colors } }) => colors.black}; */
+  ${({ theme }) => theme.media.mobile`
+      flex-wrap: wrap;
+    `}
 `;
 
 const ImageContainer = styled.div`
   flex: 25%;
+  ${({ theme }) => theme.media.mobile`
+      flex: 50%;
+    `}
 `;
 
 export default function Home() {
@@ -203,8 +199,15 @@ export default function Home() {
           </ImageContainer>
         ))}
       </ImageSection>
-      <BuyTicketsSection>
+      <Section>
         <ShowSection>
+          <ShowMain>
+            <img
+              src={process.env.PUBLIC_URL + "/images/stories-fall-show.jpeg"}
+              width="100%"
+              alt="sharp dance"
+            />
+          </ShowMain>
           <ShowMain>
             <p>SHARP home fall show</p>
             <p>20 N. American St Philadelphia, PA 19106</p>
@@ -220,15 +223,8 @@ export default function Home() {
               Buy Tickets
             </StyledA>
           </ShowMain>
-          <ShowMain>
-            <img
-              src={process.env.PUBLIC_URL + "/images/stories-fall-show.jpeg"}
-              width="100%"
-              alt="sharp dance"
-            />
-          </ShowMain>
         </ShowSection>
-      </BuyTicketsSection>
+      </Section>
       <SponserSection>
         <SponserTitle>Affiliates and Donors</SponserTitle>
         <StyledSponsors>
@@ -242,8 +238,15 @@ export default function Home() {
         </StyledSponsors>
       </SponserSection>
 
-      <BuyTicketsSection>
+      <Section>
         <ShowSection>
+          <ShowMain>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1"
+              width="100%"
+              alt="sharp dance"
+            />
+          </ShowMain>
           <ShowMain>
             <p>Open Company Classes</p>
             <p>Mondays from 6pm-7pm</p>
@@ -252,16 +255,8 @@ export default function Home() {
             <br />
             <AnchorButton to="/classes">See more</AnchorButton>
           </ShowMain>
-          <ShowMain>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1"
-              width="100%"
-              alt="sharp dance"
-            />
-          </ShowMain>
-          {/* <ImageSide imageUrl="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1" /> */}
         </ShowSection>
-      </BuyTicketsSection>
+      </Section>
     </CustomPage>
   );
 }

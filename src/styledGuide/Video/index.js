@@ -7,6 +7,7 @@ const MAX_WIDTH = 1200;
 
 const StyledPlayer = styled(ReactPlayer)`
   margin: 0 auto;
+  height: initial;
   /* max-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
 `;
 const StyledGrid = styled.div`
@@ -30,7 +31,7 @@ export const FullPageVideo = ({ src, className }) => {
         const desiredHeight = Math.min(MAX_WIDTH, window.innerWidth) * ratio;
 
         if (iframeSize.height !== desiredHeight) {
-          console.log(iframeSize.height, desiredHeight);
+          console.log(iframeSize.height, desiredHeight, "THISISIS");
           setHeight(`${desiredHeight}px`);
         }
       }
@@ -38,6 +39,8 @@ export const FullPageVideo = ({ src, className }) => {
   }
 
   useWindowResize(resize);
+
+  console.log({ height });
 
   return (
     <StyledGrid>
