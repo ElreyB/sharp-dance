@@ -40,11 +40,17 @@ const Nav = styled.nav`
 const NavLink = styled(A)`
   flex-basis: 100%;
   max-width: 100%;
+  font-size: 22px;
   padding: ${({ theme }) => `${theme.spacing.XS} ${theme.spacing.M}`};
 `;
 
 const StyledSocialIcons = styled(SocialIcons)`
   margin-top: ${({ theme }) => theme.spacing.M};
+
+  & svg {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 const HamburgerWrapper = styled.div`

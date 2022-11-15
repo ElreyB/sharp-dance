@@ -1,5 +1,5 @@
 // import { sampleSize } from "lodash-es";
-import React from "react";
+import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 // import { TICKETS } from "../../constants";
@@ -8,6 +8,9 @@ import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
 import { BIOS, ABOUT, PRESS } from "../../constants";
+import { PerformancesContext } from "../../Providers";
+import { groupPerformancesByYear, olderYearsFirst } from "../../utils";
+import { Schedule } from "../../styledGuide";
 
 const CustomPage = styled.div``;
 
@@ -144,9 +147,17 @@ const ImageContainer = styled.div`
     `}
 `;
 
+const H3 = styled.h3`
+  text-align: center;
+`;
+
+const StyledSchedule = styled(Schedule)`
+  margin-bottom: ${({ theme: { spacing } }) => spacing.L};
+`;
+
 export default function Home() {
   const { getPage } = React.useContext(PagesContext);
-  // const media = React.useContext(MediaContext);
+  const { upcomingPerformances } = React.useContext(PerformancesContext);
   const orgs = React.useContext(OrganizationsContext);
 
   const page = getPage("home");
@@ -167,11 +178,47 @@ export default function Home() {
     "/images/RICHRYAN-Kate-Adg.png",
     "/images/SEVENWINDOWS-Mig&Wren-ADJ.png",
   ];
-  // https://vimeo.com/252107468
+
+  const renderPerformances = ([year, perfs]) =>
+    perfs.length > 0 && (
+      <Fragment key={year}>
+        {
+          perfs.map((perf, i) => {
+            console.log({ perf });
+            return (
+              <>
+                <StyledSchedule
+                  {...perf}
+                  key={`${year}-${perf.name}-${i}`}
+                  currentShow
+                />
+                <StyledA
+                  href={perf.purchaseUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Buy Tickets
+                </StyledA>
+              </>
+            );
+          })[0]
+        }
+      </Fragment>
+    );
+
+  const upcomingShow = Object.entries(
+    groupPerformancesByYear(upcomingPerformances)
+  )
+    .sort(olderYearsFirst)
+    .map(renderPerformances)[0];
 
   return (
     <CustomPage>
-      {!options.video ? <Loading /> : <FullPageVideo src={options.video} />}
+      {!options.video ? (
+        <Loading />
+      ) : (
+        <FullPageVideo src="https://youtu.be/17JusykEp_E" />
+      )}
       <Main>
         <div>
           The mission of SHARP Dance Co. is to translate raw human emotion
@@ -208,21 +255,7 @@ export default function Home() {
               alt="sharp dance"
             />
           </ShowMain>
-          <ShowMain>
-            <p>SHARP home fall show</p>
-            <p>20 N. American St Philadelphia, PA 19106</p>
-            <p>Friday November 11 8 PM</p>
-            <p>Saturday November 12 8 PM</p>
-            <p>Sunday November 13 8 PM</p>
-            <br />
-            <StyledA
-              href="https://christchurchphila.org/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Buy Tickets
-            </StyledA>
-          </ShowMain>
+          <ShowMain>{upcomingShow}</ShowMain>
         </ShowSection>
       </Section>
       <SponserSection>

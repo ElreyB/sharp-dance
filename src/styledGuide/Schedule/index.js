@@ -62,6 +62,26 @@ const Header = styled.header`
   `}
 `;
 
+const locationP = (location, address, currentShow) => {
+  if (location || address) {
+    if (currentShow) {
+      return (
+        <>
+          <Location>{location}</Location>
+          <Location>{address}</Location>
+        </>
+      );
+    } else {
+      return (
+        <Location>
+          {[location, address].filter((a) => !!a).join(" - ")}
+        </Location>
+      );
+    }
+  }
+  return null;
+};
+
 export const Schedule = ({
   address,
   dates,
@@ -70,6 +90,7 @@ export const Schedule = ({
   name,
   purchaseUrl,
   website,
+  currentShow,
   ...props
 }) => {
   console.error({ name });
@@ -77,18 +98,18 @@ export const Schedule = ({
     <Wrapper {...props}>
       <Header>
         {name && <H3>{name}</H3>}
-        <IconAnchor url={purchaseUrl} Icon={TiTicket} />
-        <IconAnchor url={website} Icon={TiGlobeOutline} />
+        {!currentShow && (
+          <>
+            <IconAnchor url={purchaseUrl} Icon={TiTicket} />
+            <IconAnchor url={website} Icon={TiGlobeOutline} />
+          </>
+        )}
       </Header>
       {description && <Description>{description}</Description>}
-      {(location || address) && (
-        <Location>
-          {[location, address].filter((a) => !!a).join(" - ")}
-        </Location>
-      )}
+      {locationP(location, address, currentShow)}
       {dates.map(({ days, month, time, notes }, i) => (
         <DateTime key={i}>
-          {monthName[month]}, {days} {time} {notes}
+          {monthName[month]} {days}, {time} {notes}
         </DateTime>
       ))}
     </Wrapper>
@@ -113,4 +134,5 @@ Schedule.propTypes = {
   pricing: PropTypes.string,
   purchaseUrl: PropTypes.string,
   website: PropTypes.string,
+  currentShow: PropTypes.bool,
 };
