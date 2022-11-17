@@ -1,6 +1,6 @@
 // import { random } from "lodash";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   ABOUT,
   BIOS,
@@ -33,18 +33,11 @@ import Tickets from "./pages/Tickets";
 import { Header, ScrollToTop } from "./styledGuide";
 // import { Quote } from "./styledGuide/Quote";
 
-function MainLayoutRoute({ component: Component, ...rest }) {
+function withMainLayout(Component) {
   return (
-    <Route
-      {...rest}
-      render={(props) => {
-        return (
-          <MainLayout>
-            <Component {...props} />
-          </MainLayout>
-        );
-      }}
-    />
+    <MainLayout>
+      <Component />
+    </MainLayout>
   );
 }
 
@@ -56,31 +49,27 @@ function App() {
       {/* <Quote {...quotes[random(0, quotes.length - 1)]} alignAuthor="center" /> */}
 
       <ScrollToTop />
-      <Switch>
-        <MainLayoutRoute path={ABOUT} exact component={About} />
-        <MainLayoutRoute path={BIOS} exact component={Bios} />
-        <MainLayoutRoute path={CLASSES} exact component={Classes} />
-        <MainLayoutRoute path={CONTACT} exact component={Contact} />
-        <MainLayoutRoute path={DIANE} exact component={DianeSharp} />
-        <MainLayoutRoute path={DONATIONS} exact component={Donations} />
-        <MainLayoutRoute path={EVENTS} exact component={Events} />
-        <MainLayoutRoute path={PAST_EVENTS} exact component={Events} />
-        <MainLayoutRoute
-          path={[LANDING, "/sharp-dance"]}
-          exact
-          component={Home}
-        />
-        <MainLayoutRoute
+      <Routes>
+        <Route path={ABOUT} exact element={withMainLayout(About)} />
+        <Route path={BIOS} exact element={withMainLayout(Bios)} />
+        <Route path={CLASSES} exact element={withMainLayout(Classes)} />
+        <Route path={CONTACT} exact element={withMainLayout(Contact)} />
+        <Route path={DIANE} exact element={withMainLayout(DianeSharp)} />
+        <Route path={DONATIONS} exact element={withMainLayout(Donations)} />
+        <Route path={EVENTS} exact element={withMainLayout(Events)} />
+        <Route path={PAST_EVENTS} exact element={withMainLayout(Events)} />
+        <Route path={LANDING} exact element={withMainLayout(Home)} />
+        <Route path={"/sharp-dance"} exact element={withMainLayout(Home)} />
+        <Route
           path={`${MEDIA}/:performanceTitle?`}
           exact
-          component={Media}
+          element={withMainLayout(Media)}
         />
-        <MainLayoutRoute path={PRESS} exact component={Press} />
-        <MainLayoutRoute path={TICKETS} exact component={Tickets} />
-        <MainLayoutRoute path={ERROR} component={Error404} />
-
-        <MainLayoutRoute component={Error404} />
-      </Switch>
+        <Route path={PRESS} exact element={withMainLayout(Press)} />
+        <Route path={TICKETS} exact element={withMainLayout(Tickets)} />
+        <Route path={ERROR} element={withMainLayout(Error404)} />
+        <Route element={withMainLayout(Error404)} />
+      </Routes>
     </Router>
   );
 }
