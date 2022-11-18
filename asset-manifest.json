@@ -1,20 +1,11 @@
 {
   "files": {
-    "main.js": "/sharp-dance/static/js/main.4066a340.chunk.js",
-    "main.js.map": "/sharp-dance/static/js/main.4066a340.chunk.js.map",
-    "runtime-main.js": "/sharp-dance/static/js/runtime-main.b5c1d22a.js",
-    "runtime-main.js.map": "/sharp-dance/static/js/runtime-main.b5c1d22a.js.map",
-    "static/js/2.6fd9b6e4.chunk.js": "/sharp-dance/static/js/2.6fd9b6e4.chunk.js",
-    "static/js/2.6fd9b6e4.chunk.js.map": "/sharp-dance/static/js/2.6fd9b6e4.chunk.js.map",
+    "main.js": "/sharp-dance/static/js/main.53cfbf83.js",
     "index.html": "/sharp-dance/index.html",
-    "precache-manifest.e368e14e01a3dfb70fd0e2420e81c9b9.js": "/sharp-dance/precache-manifest.e368e14e01a3dfb70fd0e2420e81c9b9.js",
-    "service-worker.js": "/sharp-dance/service-worker.js",
-    "static/js/2.6fd9b6e4.chunk.js.LICENSE.txt": "/sharp-dance/static/js/2.6fd9b6e4.chunk.js.LICENSE.txt",
-    "static/media/thumbnail.svg": "/sharp-dance/static/media/thumbnail.593eab4f.svg"
+    "static/media/thumbnail.svg": "/sharp-dance/static/media/thumbnail.a3f34fafaae38743c4d41b91f89f2032.svg",
+    "main.53cfbf83.js.map": "/sharp-dance/static/js/main.53cfbf83.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5c1d22a.js",
-    "static/js/2.6fd9b6e4.chunk.js",
-    "static/js/main.4066a340.chunk.js"
+    "static/js/main.53cfbf83.js"
   ]
 }
