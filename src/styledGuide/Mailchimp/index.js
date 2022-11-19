@@ -101,7 +101,7 @@ export function Mailchimp() {
               type="text"
               name="b_43b5092106df2ef610d002684_986bbed649"
               tabindex="-1"
-              value=""
+              defaultValue=""
             />
           </HiddenWrapper>
           <StyledButton2

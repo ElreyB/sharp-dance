@@ -1,6 +1,5 @@
 import React from "react";
 import style, { keyframes } from "styled-components/macro";
-import { SHARP } from "../../constants";
 
 const pulse = keyframes`
       25% {
@@ -16,7 +15,7 @@ const SVG = style.svg``;
 const Container = style.div`
     position: relative;
     z-index: 0;
-    background-color: inherit;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +32,7 @@ const Container = style.div`
     }
 
     & ${SVG} circle {
-      fill: ${({ theme }) => theme.colors.white};
+      fill: ${({ theme }) => theme.colors.mainBg};
       transform: scale(0);
       opacity: 0;
       transform-origin: 50% 50%;
@@ -41,13 +40,13 @@ const Container = style.div`
       animation-iteration-count: infinite;
 
       &:nth-child(2) {
-        fill: ${({ theme }) => theme.colors.blue};
+        fill: ${({ theme }) => theme.colors.red};
         animation: ${pulse} 2s 1s cubic-bezier(.5,.5,0,1);
         animation-iteration-count: infinite;
       }
 
       &:nth-child(3) {
-        fill: ${({ theme }) => theme.colors.white};
+        fill: ${({ theme }) => theme.colors.mainBg};
         animation: ${pulse} 2s 2s cubic-bezier(.5,.5,0,1);
         animation-iteration-count: infinite;
       }
@@ -55,14 +54,9 @@ const Container = style.div`
     }
 `;
 
-const Logo = style.h2`
-    color: ${({ theme }) => theme.colors.white};
-`;
-
 const Loading = () => {
   return (
     <Container>
-      <Logo>{SHARP}</Logo>
       <SVG
         viewBox="0 0 1024 1024"
         version="1.1"

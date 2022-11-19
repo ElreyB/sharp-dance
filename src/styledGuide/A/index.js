@@ -1,6 +1,27 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink as BaseNavLink } from "react-router-dom";
+
 import styled, { css } from "styled-components/macro";
+
+const NavLink = React.forwardRef(
+  ({ activeClassName, activeStyle, ...props }, ref) => {
+    return (
+      <BaseNavLink
+        ref={ref}
+        {...props}
+        className={({ isActive }) =>
+          [props.className, isActive ? activeClassName : null]
+            .filter(Boolean)
+            .join(" ")
+        }
+        style={({ isActive }) => ({
+          ...props.style,
+          ...(isActive ? activeStyle : null),
+        })}
+      />
+    );
+  }
+);
 
 const linkStyles = css`
   color: ${({ theme }) => theme.colors.black};
@@ -54,12 +75,7 @@ export const A = ({
   }
 
   return (
-    <StyledNavLink
-      {...props}
-      exact={exact}
-      to={to}
-      activeClassName="link-active"
-    >
+    <StyledNavLink {...props} to={to} activeClassName="link-active">
       {children}
     </StyledNavLink>
   );

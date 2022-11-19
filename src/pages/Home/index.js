@@ -159,6 +159,7 @@ export default function Home() {
   const { getPage } = React.useContext(PagesContext);
   const { upcomingPerformances } = React.useContext(PerformancesContext);
   const orgs = React.useContext(OrganizationsContext);
+  const [isLoading, setLoading] = React.useState(true);
 
   const page = getPage("home");
 
@@ -214,10 +215,15 @@ export default function Home() {
 
   return (
     <CustomPage>
-      {!options.video ? (
-        <Loading />
-      ) : (
-        <FullPageVideo src="https://youtu.be/17JusykEp_E" />
+      {isLoading ? <Loading /> : null}
+      {options.video && (
+        <FullPageVideo
+          src={options.video}
+          onReady={() => {
+            setLoading(false);
+            console.log("Video ready to play!");
+          }}
+        />
       )}
       <Main>
         <div>

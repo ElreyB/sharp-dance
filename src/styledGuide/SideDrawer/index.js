@@ -84,7 +84,7 @@ const links = [
 
 const SideDrawer = ({ show, onClick }) => (
   <>
-    {show && <BackDrop onClick={onClick} />}
+    {show ? <BackDrop onClick={onClick} /> : null}
     <Nav
       show={show}
       onKeyDown={({ keyCode }) => {
@@ -93,7 +93,7 @@ const SideDrawer = ({ show, onClick }) => (
         }
       }}
     >
-      {show && (
+      {show ? (
         <FocusTrap
           focusTrapOptions={{
             escapeDeactivates: true,
@@ -114,7 +114,7 @@ const SideDrawer = ({ show, onClick }) => (
             <StyledSocialIcons />
           </Links>
         </FocusTrap>
-      )}
+      ) : null}
     </Nav>
   </>
 );

@@ -15,7 +15,7 @@ const StyledGrid = styled.div`
   width: 100vw;
   background-color: black;
 `;
-export const FullPageVideo = ({ src, className }) => {
+export const FullPageVideo = ({ src, className, onReady }) => {
   const ref = React.useRef(null);
   const [height, setHeight] = React.useState("100vh");
 
@@ -53,6 +53,7 @@ export const FullPageVideo = ({ src, className }) => {
         width="100%"
         height={height}
         onPlay={resize}
+        onReady={onReady}
         onProgress={resize}
         loop
       />
@@ -68,7 +69,6 @@ export const Video = React.forwardRef(
 
     return (
       <StyledPlayer
-        onReady={() => console.log("playing video")}
         url={src}
         ref={ref}
         {...props}
