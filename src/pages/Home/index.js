@@ -151,6 +151,7 @@ export default function Home() {
   const { getPage } = React.useContext(PagesContext);
   // const media = React.useContext(MediaContext);
   const orgs = React.useContext(OrganizationsContext);
+  const [isLoading, setLoading] = React.useState(true);
 
   const page = getPage("home");
 
@@ -174,7 +175,16 @@ export default function Home() {
 
   return (
     <CustomPage>
-      {!options.video ? <Loading /> : <FullPageVideo src={options.video} />}
+      {isLoading ? <Loading /> : null}
+      {options.video && (
+        <FullPageVideo
+          src={options.video}
+          onReady={() => {
+            setLoading(false);
+            console.log("Video ready to play!");
+          }}
+        />
+      )}
       <Main>
         <div>
           The mission of SHARP Dance Co. is to translate raw human emotion
