@@ -7,6 +7,7 @@ const MAX_WIDTH = 1200;
 
 const StyledPlayer = styled(ReactPlayer)`
   margin: 0 auto;
+  height: initial;
   /* max-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
 `;
 const StyledGrid = styled.div`
@@ -14,7 +15,7 @@ const StyledGrid = styled.div`
   width: 100vw;
   background-color: black;
 `;
-export const FullPageVideo = ({ src, className }) => {
+export const FullPageVideo = ({ src, className, onReady }) => {
   const ref = React.useRef(null);
   const [height, setHeight] = React.useState("100vh");
 
@@ -30,7 +31,7 @@ export const FullPageVideo = ({ src, className }) => {
         const desiredHeight = Math.min(MAX_WIDTH, window.innerWidth) * ratio;
 
         if (iframeSize.height !== desiredHeight) {
-          console.log(iframeSize.height, desiredHeight);
+          console.log(iframeSize.height, desiredHeight, "THISISIS");
           setHeight(`${desiredHeight}px`);
         }
       }
@@ -38,6 +39,8 @@ export const FullPageVideo = ({ src, className }) => {
   }
 
   useWindowResize(resize);
+
+  console.log({ height });
 
   return (
     <StyledGrid>
@@ -50,6 +53,7 @@ export const FullPageVideo = ({ src, className }) => {
         width="100%"
         height={height}
         onPlay={resize}
+        onReady={onReady}
         onProgress={resize}
         loop
       />
@@ -65,7 +69,6 @@ export const Video = React.forwardRef(
 
     return (
       <StyledPlayer
-        onReady={() => console.log("playing video")}
         url={src}
         ref={ref}
         {...props}

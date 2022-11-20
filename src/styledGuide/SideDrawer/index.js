@@ -10,6 +10,7 @@ import {
   DONATIONS,
   EVENTS,
   MEDIA,
+  INTENSIVE,
   // PAST_EVENTS,
   // PRESS,
 } from "../../constants";
@@ -40,11 +41,28 @@ const Nav = styled.nav`
 const NavLink = styled(A)`
   flex-basis: 100%;
   max-width: 100%;
+  font-size: 22px;
   padding: ${({ theme }) => `${theme.spacing.XS} ${theme.spacing.M}`};
+
+  ${({ theme }) => theme.media.phone`
+       font-size: 30px;
+    `}
 `;
 
 const StyledSocialIcons = styled(SocialIcons)`
   margin-top: ${({ theme }) => theme.spacing.M};
+
+  & svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  ${({ theme }) => theme.media.phone`
+        & svg {
+    width: 50px;
+    height: 50px;
+  }
+    `}
 `;
 
 const HamburgerWrapper = styled.div`
@@ -63,10 +81,10 @@ const StyledCloseButton = styled(HamburgerButton)`
 const links = [
   { to: ABOUT, label: "About" },
   // TODO: better way to show or remove link
-  // { to: TICKETS, label: "Tickets" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
   { to: BIOS, label: "SHARP Family" },
   { to: MEDIA, label: "Repertoire" },
+  { to: INTENSIVE, label: "Intensive" },
   {
     to: EVENTS,
     label: "Performances",

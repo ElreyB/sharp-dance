@@ -10,7 +10,7 @@ import Loading from "../Loading";
 export default function Media({ match }) {
   const media = React.useContext(MediaContext);
   const { getPage } = React.useContext(PagesContext);
-  const { performanceTitle } = match.params;
+  const { performanceTitle } = match?.params || {};
   const page = getPage("media");
 
   if (!page) {
@@ -19,7 +19,7 @@ export default function Media({ match }) {
 
   const { options, pageName, ...headerBanner } = page;
 
-  const performance = media.find((performance) => {
+  const performance = media.find((performance = {}) => {
     console.log("performance", performance.title, performanceTitle);
     return isMatch(performance.title, performanceTitle);
   });

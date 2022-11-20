@@ -2,11 +2,7 @@ import React, { useContext, Fragment } from "react";
 import styled from "styled-components/macro";
 import { Schedule } from "../../styledGuide";
 import Loading from "../Loading";
-import {
-  groupPerformancesByYear,
-  olderYearsFirst,
-  mostRecentYearsFirst,
-} from "../../utils";
+import { groupPerformancesByYear, olderYearsFirst } from "../../utils";
 import { EVENTS } from "../../constants";
 import { PerformancesContext, PagesContext } from "../../Providers";
 import NoUpcomingEvents from "./NoUpcomingEvents";
@@ -34,9 +30,7 @@ const renderPerformances = ([year, perfs]) =>
 
 export default function Events(props) {
   const { location } = props;
-  const { pastPerformances, upcomingPerformances } = useContext(
-    PerformancesContext
-  );
+  const { upcomingPerformances } = useContext(PerformancesContext);
   const { getPage } = React.useContext(PagesContext);
   const page = getPage("events");
 
@@ -45,16 +39,18 @@ export default function Events(props) {
   }
 
   const { options, pageName, ...headerBanner } = page;
-  const isEventPage = location.pathname === EVENTS;
+  const isEventPage = location?.pathname === EVENTS;
 
-  const performanceArr = isEventPage
-    ? Object.entries(groupPerformancesByYear(upcomingPerformances))
-        .sort(olderYearsFirst)
-        .map(renderPerformances)
-    : Object.entries(groupPerformancesByYear(pastPerformances))
-        .sort(mostRecentYearsFirst)
-        .map(renderPerformances);
-  console.log(headerBanner);
+  const performanceArr = Object.entries(
+    groupPerformancesByYear(upcomingPerformances)
+  )
+    .sort(olderYearsFirst)
+    .map(renderPerformances);
+  // : Object.entries(groupPerformancesByYear(pastPerformances))
+  //     .sort(mostRecentYearsFirst)
+  //     .map(renderPerformances);
+
+  console.warn(props);
   return (
     <Page headerBanner={headerBanner}>
       <Wrapper>

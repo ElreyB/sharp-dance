@@ -1,12 +1,16 @@
 // import { sampleSize } from "lodash-es";
-import React from "react";
+import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
-// import { TICKETS } from "../../constants";
+// import { INTENSIVE } from "../../constants";
 import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
+import { BIOS, ABOUT, PRESS } from "../../constants";
+import { PerformancesContext } from "../../Providers";
+import { groupPerformancesByYear, olderYearsFirst } from "../../utils";
+import { Schedule } from "../../styledGuide";
 
 const CustomPage = styled.div``;
 
@@ -59,23 +63,16 @@ const StyledA = styled.a`
   width: 100%;
 `;
 
-const BuyTicketsSection = styled.section`
-  max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
-  text-align: center;
+const Section = styled.section`
   background-color: ${({ theme: { colors } }) => colors.primaryColors.sliver};
   color: ${({ theme: { colors } }) => colors.black};
   font-weight: 700;
   font-size: 16px;
   line-height: 36.57px;
   margin: 40px auto;
-  /* padding: 32px; */
-  /* margin-bottom: 64px;
-  border: 5px solid;
-  padding: 48px; */
+
   display: flex;
-  /* flex-direction: column;
   justify-content: center;
-  align-items: stretch; */
 `;
 // const SectionContent = styled.div`
 //   margin: 0 auto;
@@ -120,37 +117,49 @@ const ShowMain = styled(Main)`
   flex-basis: 50%;
 `;
 
-const ImageSide = styled(ShowMain)`
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  background-image: url(${({ imageUrl }) => imageUrl});
-`;
+// const ImageSide = styled(ShowMain)`
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 100%;
+//   background-image: url(${({ imageUrl }) => imageUrl});
+// `;
 
-const ShowSection = styled.section`
-  border: 5px solid black;
-  display: flex;
+const ShowSection = styled(Main)`
   justify-content: space-evenly;
   align-items: center;
-  min-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
+
+  ${({ theme }) => theme.media.desktop`
+      flex-direction: row;
+    `}/* min-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
 `;
 
 const ImageSection = styled.section`
   display: flex;
-  /* justify-content: space-between;
-  overflow: hidden;
-  height: 400px;
-  background-color: ${({ theme: { colors } }) => colors.black}; */
+  ${({ theme }) => theme.media.mobile`
+      flex-wrap: wrap;
+    `}
 `;
 
 const ImageContainer = styled.div`
   flex: 25%;
+  ${({ theme }) => theme.media.mobile`
+      flex: 50%;
+    `}
+`;
+
+// const H3 = styled.h3`
+//   text-align: center;
+// `;
+
+const StyledSchedule = styled(Schedule)`
+  margin-bottom: ${({ theme: { spacing } }) => spacing.L};
 `;
 
 export default function Home() {
   const { getPage } = React.useContext(PagesContext);
-  // const media = React.useContext(MediaContext);
+  const { upcomingPerformances } = React.useContext(PerformancesContext);
   const orgs = React.useContext(OrganizationsContext);
+  const [isLoading, setLoading] = React.useState(true);
 
   const page = getPage("home");
 
@@ -170,11 +179,52 @@ export default function Home() {
     "/images/RICHRYAN-Kate-Adg.png",
     "/images/SEVENWINDOWS-Mig&Wren-ADJ.png",
   ];
-  // https://vimeo.com/252107468
+
+  const renderPerformances = ([year, perfs]) =>
+    perfs.length > 0 && (
+      <Fragment key={year}>
+        {
+          perfs.map((perf, i) => {
+            console.log({ perf });
+            return (
+              <>
+                <StyledSchedule
+                  {...perf}
+                  key={`${year}-${perf.name}-${i}`}
+                  currentShow
+                />
+                <StyledA
+                  href={perf.purchaseUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Buy Tickets
+                </StyledA>
+              </>
+            );
+          })[0]
+        }
+      </Fragment>
+    );
+
+  const upcomingShow = Object.entries(
+    groupPerformancesByYear(upcomingPerformances)
+  )
+    .sort(olderYearsFirst)
+    .map(renderPerformances)[0];
 
   return (
     <CustomPage>
-      {!options.video ? <Loading /> : <FullPageVideo src={options.video} />}
+      {isLoading ? <Loading /> : null}
+      {options.video && (
+        <FullPageVideo
+          src={options.video}
+          onReady={() => {
+            setLoading(false);
+            console.log("Video ready to play!");
+          }}
+        />
+      )}
       <Main>
         <div>
           The mission of SHARP Dance Co. is to translate raw human emotion
@@ -185,13 +235,13 @@ export default function Home() {
         </div>
         <Ul>
           <Li>
-            <AnchorButton to="/sharp-dance/about">Learn more</AnchorButton>
+            <AnchorButton to={ABOUT}>Learn more</AnchorButton>
           </Li>
           <Li>
-            <AnchorButton to="/sharp-dance/press">Press Kit</AnchorButton>
+            <AnchorButton to={PRESS}>Press Kit</AnchorButton>
           </Li>
           <Li>
-            <AnchorButton to="/sharp-dance/bios">SHARP Family</AnchorButton>
+            <AnchorButton to={BIOS}>SHARP Family</AnchorButton>
           </Li>
         </Ul>
       </Main>
@@ -202,32 +252,18 @@ export default function Home() {
           </ImageContainer>
         ))}
       </ImageSection>
-      <BuyTicketsSection>
+      <Section>
         <ShowSection>
           <ShowMain>
-            <p>SHARP home fall show</p>
-            <p>20 N. American St Philadelphia, PA 19106</p>
-            <p>Friday November 11 8 PM</p>
-            <p>Saturday November 12 8 PM</p>
-            <p>Sunday November 13 8 PM</p>
-            <br />
-            <StyledA
-              href="https://christchurchphila.org/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Buy Tickets
-            </StyledA>
-          </ShowMain>
-          <ShowMain>
             <img
-              src={process.env.PUBLIC_URL + "/images/rochesterfringe.jpeg"}
+              src={process.env.PUBLIC_URL + "/images/stories-fall-show.jpeg"}
               width="100%"
               alt="sharp dance"
             />
           </ShowMain>
+          <ShowMain>{upcomingShow}</ShowMain>
         </ShowSection>
-      </BuyTicketsSection>
+      </Section>
       <SponserSection>
         <SponserTitle>Affiliates and Donors</SponserTitle>
         <StyledSponsors>
@@ -241,8 +277,15 @@ export default function Home() {
         </StyledSponsors>
       </SponserSection>
 
-      <BuyTicketsSection>
+      <Section>
         <ShowSection>
+          <ShowMain>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1"
+              width="100%"
+              alt="sharp dance"
+            />
+          </ShowMain>
           <ShowMain>
             <p>Open Company Classes</p>
             <p>Mondays from 6pm-7pm</p>
@@ -251,9 +294,8 @@ export default function Home() {
             <br />
             <AnchorButton to="/classes">See more</AnchorButton>
           </ShowMain>
-          <ImageSide imageUrl="https://firebasestorage.googleapis.com/v0/b/sharp-dance.appspot.com/o/pages%2F4%2Fimage?alt=media&token=0e35446b-f65e-4ca6-8f33-7c10c074e8a1" />
         </ShowSection>
-      </BuyTicketsSection>
+      </Section>
     </CustomPage>
   );
 }

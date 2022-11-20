@@ -7,9 +7,13 @@ import { A } from "../A";
 import { P } from "../P";
 
 const StyledA = styled(A)`
+  height: 30px;
+  width: 30px;
   ${({ theme: { media } }) => media.mobile`
     text-align: center;
     color: black;
+    height: 60px;
+    width: 60px;
   `}
 `;
 
@@ -20,7 +24,7 @@ function IconAnchor({ Icon, url }) {
   }
 
   return (
-    <IconContext.Provider value={{ size: "30px" }}>
+    <IconContext.Provider value={{ size: "100%" }}>
       <StyledA href={url} target="_blank" rel="noopener noreferrer">
         <Icon />
       </StyledA>
@@ -48,7 +52,14 @@ const Wrapper = styled.div``;
 const H3 = styled.h3`
   text-align: center;
   flex: 1;
-  /* color: ${({ theme }) => theme.colors.blue}; */
+  ${({ theme: { media } }) => media.mobile`
+   font-size: 30px
+  `}
+`;
+
+const IconWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
 `;
 
 const Description = styled(P)``;
@@ -62,6 +73,26 @@ const Header = styled.header`
   `}
 `;
 
+const locationP = (location, address, currentShow) => {
+  if (location || address) {
+    if (currentShow) {
+      return (
+        <>
+          <Location>{location}</Location>
+          <Location>{address}</Location>
+        </>
+      );
+    } else {
+      return (
+        <Location>
+          {[location, address].filter((a) => !!a).join(" - ")}
+        </Location>
+      );
+    }
+  }
+  return null;
+};
+
 export const Schedule = ({
   address,
   dates,
@@ -70,6 +101,7 @@ export const Schedule = ({
   name,
   purchaseUrl,
   website,
+  currentShow,
   ...props
 }) => {
   console.error({ name });
@@ -77,18 +109,18 @@ export const Schedule = ({
     <Wrapper {...props}>
       <Header>
         {name && <H3>{name}</H3>}
-        <IconAnchor url={purchaseUrl} Icon={TiTicket} />
-        <IconAnchor url={website} Icon={TiGlobeOutline} />
+        {!currentShow && (
+          <IconWrapper>
+            <IconAnchor url={purchaseUrl} Icon={TiTicket} />
+            <IconAnchor url={website} Icon={TiGlobeOutline} />
+          </IconWrapper>
+        )}
       </Header>
       {description && <Description>{description}</Description>}
-      {(location || address) && (
-        <Location>
-          {[location, address].filter((a) => !!a).join(" - ")}
-        </Location>
-      )}
+      {locationP(location, address, currentShow)}
       {dates.map(({ days, month, time, notes }, i) => (
         <DateTime key={i}>
-          {monthName[month]}, {days} {time} {notes}
+          {monthName[month]} {days}, {time} {notes}
         </DateTime>
       ))}
     </Wrapper>
@@ -113,4 +145,5 @@ Schedule.propTypes = {
   pricing: PropTypes.string,
   purchaseUrl: PropTypes.string,
   website: PropTypes.string,
+  currentShow: PropTypes.bool,
 };

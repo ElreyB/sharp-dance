@@ -47,7 +47,8 @@ const LogoWrapper = styled.div`
 const HamburgerWrapper = styled.div`
   display: flex;
   padding: 8px 16px;
-  width: 10%;
+  /* width: 10%; */
+  // add mobile width: 16%;
 `;
 
 export function Header() {
