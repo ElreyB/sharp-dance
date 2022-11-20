@@ -5,23 +5,23 @@ import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 import Page from "../../layouts/Page";
 
-const BELOW_TEXT = [
-  "Opening Night",
-  "Bring your child to our Saturday 5 PM performance and included in your ticket price: get a tour of the theater, meet the dancers and make a hippie accessory to go with your hippie costume! Kids tour starts at 4:00 PM.",
-  "Question & Answer with the Company",
-];
+// const BELOW_TEXT = [
+//   "Opening Night",
+//   "Bring your child to our Saturday 5 PM performance and included in your ticket price: get a tour of the theater, meet the dancers and make a hippie accessory to go with your hippie costume! Kids tour starts at 4:00 PM.",
+//   "Question & Answer with the Company",
+// ];
 
-const StyledLabel = styled((props) => (
-  <Label {...props} size="fit" margin="0 S 0 0" />
-))`
-  color: ${({ theme }) => theme.colors.blue};
-`;
+// const StyledLabel = styled((props) => (
+//   <Label {...props} size="fit" margin="0 S 0 0" />
+// ))`
+//   color: ${({ theme }) => theme.colors.blue};
+// `;
 
-const Notes = styled(P)`
-  color: ${({ theme }) => theme.colors.blue};
-`;
+// const Notes = styled(P)`
+//   color: ${({ theme }) => theme.colors.blue};
+// `;
 
-const Sentence = styled((props) => <P {...props} size="auto" />)``;
+// const Sentence = styled((props) => <P {...props} size="auto" />)``;
 
 export default function Intensive() {
   const { getPage } = React.useContext(PagesContext);
@@ -44,15 +44,15 @@ export default function Intensive() {
   } = page;
 
   const {
-    address,
-    dancers,
+    // address,
+    // dancers,
     description,
-    director,
-    location,
-    manager,
-    notes,
-    showtimes,
-    tickets,
+    // director,
+    // location,
+    // manager,
+    // notes,
+    // showtimes,
+    // tickets,
   } = options;
   if (!showPage) return null;
   return (
