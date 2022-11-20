@@ -45,17 +45,18 @@ export default function Events(props) {
   }
 
   const { options, pageName, ...headerBanner } = page;
-  const isEventPage = location.pathname === EVENTS;
+  const isEventPage = location?.pathname === EVENTS;
 
-  const performanceArr = isEventPage
-    ? Object.entries(groupPerformancesByYear(upcomingPerformances))
-        .sort(olderYearsFirst)
-        .map(renderPerformances)
-    : Object.entries(groupPerformancesByYear(pastPerformances))
-        .sort(mostRecentYearsFirst)
-        .map(renderPerformances);
+  const performanceArr = Object.entries(
+    groupPerformancesByYear(upcomingPerformances)
+  )
+    .sort(olderYearsFirst)
+    .map(renderPerformances);
+  // : Object.entries(groupPerformancesByYear(pastPerformances))
+  //     .sort(mostRecentYearsFirst)
+  //     .map(renderPerformances);
 
-  console.warn({ upcomingPerformances });
+  console.warn(props);
   return (
     <Page headerBanner={headerBanner}>
       <Wrapper>

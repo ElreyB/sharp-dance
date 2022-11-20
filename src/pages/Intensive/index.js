@@ -3,7 +3,6 @@ import styled from "styled-components/macro";
 import { Label, P } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
-import { PaypayForm } from "./PaypalForm";
 import Page from "../../layouts/Page";
 
 const BELOW_TEXT = [
@@ -24,9 +23,9 @@ const Notes = styled(P)`
 
 const Sentence = styled((props) => <P {...props} size="auto" />)``;
 
-export default function Tickets() {
+export default function Intensive() {
   const { getPage } = React.useContext(PagesContext);
-  const page = getPage("tickets");
+  const page = getPage("intensive");
 
   if (!page) {
     return <Loading />;
@@ -60,18 +59,11 @@ export default function Tickets() {
     <Page headerBanner={headerBanner}>
       <div>
         <P>{description}</P>
-        <Notes justify="center">{notes}</Notes>
+        {/* <Notes justify="center">{notes}</Notes>
         <StyledLabel>Tickets:</StyledLabel>
-        <Sentence>{tickets}</Sentence>
+        <Sentence>{tickets}</Sentence> */}
       </div>
-      <div>
-        <StyledLabel>Showtimes:</StyledLabel>
-        <Sentence>{showtimes.map((time) => time).join(" - ")}</Sentence>
-      </div>
-      {showtimes.map((time, i) => (
-        <PaypayForm textAbove={time} textBelow={BELOW_TEXT[i]} key={i} />
-      ))}
-      <div>
+      {/* <div>
         <StyledLabel>Location:</StyledLabel>
         <Sentence>{location}</Sentence>
       </div>
@@ -90,7 +82,7 @@ export default function Tickets() {
       <div>
         <StyledLabel>Artistic Director: </StyledLabel>
         <Sentence>{director}</Sentence>
-      </div>
+      </div> */}
     </Page>
   );
 }

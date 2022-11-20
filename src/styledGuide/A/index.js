@@ -41,6 +41,9 @@ const linkStyles = css`
 
   &:hover {
     color: ${({ theme: { colors } }) => colors.favorites.teal};
+
+  &:active {
+    color: ${({ theme: { colors } }) => colors.favorites.teal};
   }
   /*
   &:focus {

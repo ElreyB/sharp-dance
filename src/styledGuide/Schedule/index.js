@@ -7,9 +7,13 @@ import { A } from "../A";
 import { P } from "../P";
 
 const StyledA = styled(A)`
+  height: 30px;
+  width: 30px;
   ${({ theme: { media } }) => media.mobile`
     text-align: center;
     color: black;
+    height: 60px;
+    width: 60px;
   `}
 `;
 
@@ -20,7 +24,7 @@ function IconAnchor({ Icon, url }) {
   }
 
   return (
-    <IconContext.Provider value={{ size: "30px" }}>
+    <IconContext.Provider value={{ size: "100%" }}>
       <StyledA href={url} target="_blank" rel="noopener noreferrer">
         <Icon />
       </StyledA>
@@ -48,7 +52,14 @@ const Wrapper = styled.div``;
 const H3 = styled.h3`
   text-align: center;
   flex: 1;
-  /* color: ${({ theme }) => theme.colors.blue}; */
+  ${({ theme: { media } }) => media.mobile`
+   font-size: 30px
+  `}
+`;
+
+const IconWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
 `;
 
 const Description = styled(P)``;
@@ -99,10 +110,10 @@ export const Schedule = ({
       <Header>
         {name && <H3>{name}</H3>}
         {!currentShow && (
-          <>
+          <IconWrapper>
             <IconAnchor url={purchaseUrl} Icon={TiTicket} />
             <IconAnchor url={website} Icon={TiGlobeOutline} />
-          </>
+          </IconWrapper>
         )}
       </Header>
       {description && <Description>{description}</Description>}

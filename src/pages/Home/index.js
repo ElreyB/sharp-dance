@@ -2,7 +2,7 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
-// import { TICKETS } from "../../constants";
+// import { INTENSIVE } from "../../constants";
 import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";

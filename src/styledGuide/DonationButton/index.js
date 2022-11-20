@@ -1,11 +1,22 @@
 import React from "react";
+import styled from "styled-components/macro";
 
-/**TODO: replace with Diane's paypal donation button */
+const Input = styled.input`
+  width: 130px;
+
+  ${({ theme }) => theme.media.mobile`
+         width: 188px;
+    `}
+`;
+
+const Form = styled.form`
+  text-align: center;
+`;
 
 export const DonationButton = () => {
   return (
     <div size="fit" justify="center">
-      <form
+      <Form
         action="https://www.paypal.com/cgi-bin/webscr"
         method="post"
         target="_blank"
@@ -17,7 +28,7 @@ export const DonationButton = () => {
           <input type="hidden" name="hosted_button_id" value="BD6MEHQFPGX2S" />
         </div>
         <div>
-          <input
+          <Input
             type="image"
             src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
             border="0"
@@ -35,7 +46,7 @@ export const DonationButton = () => {
             height="1"
           />
         </div>
-      </form>
+      </Form>
     </div>
   );
 };

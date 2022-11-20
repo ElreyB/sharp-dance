@@ -112,7 +112,7 @@ const Img = styled.img`
 const peopleLinks = [
   { to: ABOUT, label: "About" },
   // TODO: better way to show or remove link
-  // { to: TICKETS, label: "Tickets" },
+  // { to: INTENSIVE, label: "Intensive" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
   { to: BIOS, label: "SHARP Family" },
 ];

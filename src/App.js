@@ -14,7 +14,7 @@ import {
   MEDIA,
   PAST_EVENTS,
   PRESS,
-  TICKETS,
+  INTENSIVE,
 } from "./constants";
 import MainLayout from "./layouts/MainLayout";
 import Error404 from "./pages/404";
@@ -28,7 +28,7 @@ import Events from "./pages/Events";
 import Home from "./pages/Home";
 import Media from "./pages/Media";
 import Press from "./pages/Press";
-import Tickets from "./pages/Tickets";
+import Intensive from "./pages/Intensive";
 // import { QuotesContext } from "./Providers";
 import { Header, ScrollToTop } from "./styledGuide";
 // import { Quote } from "./styledGuide/Quote";
@@ -64,9 +64,10 @@ function App() {
           path={`${MEDIA}/:performanceTitle?`}
           exact
           element={withMainLayout(Media)}
-        />
+        />{" "}
+        <Route path={MEDIA} exact element={withMainLayout(Media)} />
         <Route path={PRESS} exact element={withMainLayout(Press)} />
-        <Route path={TICKETS} exact element={withMainLayout(Tickets)} />
+        <Route path={INTENSIVE} exact element={withMainLayout(Intensive)} />
         <Route path={ERROR} element={withMainLayout(Error404)} />
         <Route element={withMainLayout(Error404)} />
       </Routes>

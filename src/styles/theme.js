@@ -47,6 +47,7 @@ const fonts = {
 const device = {
   desktop: "(min-width: 1185px)",
   mobile: "(max-width: 1184px)",
+  phone: "(max-width: 700px)",
 };
 
 export const breakpoints = {

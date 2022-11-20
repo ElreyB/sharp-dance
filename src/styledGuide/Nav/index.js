@@ -8,6 +8,7 @@ import {
   DONATIONS,
   EVENTS,
   MEDIA,
+  INTENSIVE,
 } from "../../constants";
 import { Li } from "./Li";
 import { Ul } from "./Ul";
@@ -17,7 +18,7 @@ const links = [
   { to: BIOS, label: "SHARP Family" },
   { to: MEDIA, label: "Repertoire" },
   // TODO: better way to show or remove link
-  // { to: TICKETS, label: "Tickets" },
+  { to: INTENSIVE, label: "Intensive" },
   {
     to: EVENTS,
     label: "Performances",
