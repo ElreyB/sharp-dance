@@ -147,9 +147,9 @@ const ImageContainer = styled.div`
     `}
 `;
 
-const H3 = styled.h3`
-  text-align: center;
-`;
+// const H3 = styled.h3`
+//   text-align: center;
+// `;
 
 const StyledSchedule = styled(Schedule)`
   margin-bottom: ${({ theme: { spacing } }) => spacing.L};

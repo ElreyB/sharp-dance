@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { Label, P } from "../../styledGuide";
+// import styled from "styled-components/macro";
+import { P } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 import Page from "../../layouts/Page";
