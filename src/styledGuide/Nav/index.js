@@ -15,7 +15,7 @@ import { Ul } from "./Ul";
 
 const links = [
   { to: DIANE, label: "Diane Sharp-Nachsin" },
-  { to: BIOS, label: "SHARP Family" },
+  { to: BIOS, label: "Meet the SHARP Family" },
   { to: MEDIA, label: "Repertoire" },
   // TODO: better way to show or remove link
   { to: INTENSIVE, label: "Intensive" },
