@@ -1,9 +1,10 @@
 import React from "react";
 // import styled from "styled-components/macro";
-import { P } from "../../styledGuide";
+// import { P } from "../../styledGuide";
 import { PagesContext } from "../../Providers";
 import Loading from "../Loading";
 import Page from "../../layouts/Page";
+import { Markdown } from "../../styledGuide";
 
 // const BELOW_TEXT = [
 //   "Opening Night",
@@ -58,7 +59,7 @@ export default function Intensive() {
   return (
     <Page headerBanner={headerBanner}>
       <div>
-        <P>{description}</P>
+        <Markdown>{description}</Markdown>
         {/* <Notes justify="center">{notes}</Notes>
         <StyledLabel>Tickets:</StyledLabel>
         <Sentence>{tickets}</Sentence> */}

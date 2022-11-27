@@ -160,6 +160,20 @@ export default function Home() {
   const { upcomingPerformances } = React.useContext(PerformancesContext);
   const orgs = React.useContext(OrganizationsContext);
   const [isLoading, setLoading] = React.useState(true);
+  // const iframeRef = React.useRef(null);
+
+  // const iamPlay = (event) => {
+  //   console.log("video is playing!!!");
+  // };
+
+  // React.useEffect(() => {
+  //   console.log("UseEffect");
+  //   const iframe = document.getElementById(iframeRef?.current?.id);
+  //   if (iframeRef.current) {
+  //     iframe.addEventListener("onload", iamPlay);
+  //   }
+  //   return () => iframe.removeEventListener("onload", iamPlay);
+  // }, []);
 
   const page = getPage("home");
 
@@ -185,7 +199,6 @@ export default function Home() {
       <Fragment key={year}>
         {
           perfs.map((perf, i) => {
-            console.log({ perf });
             return (
               <>
                 <StyledSchedule
@@ -225,6 +238,17 @@ export default function Home() {
           }}
         />
       )}
+      {/* <iframe
+        ref={iframeRef}
+        id="video"
+        width="100%"
+        height="800"
+        src="https://www.youtube.com/embed/17JusykEp_E?controls=0&autoplay=1&mute=1&loop=1&playlist=17JusykEp_E"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe> */}
       <Main>
         <div>
           The mission of SHARP Dance Co. is to translate raw human emotion
@@ -288,7 +312,7 @@ export default function Home() {
           </ShowMain>
           <ShowMain>
             <p>Open Company Classes</p>
-            <p>Mondays from 6pm-7pm</p>
+            <p>Mondays from 10am-11am</p>
             <br />
             <p>Equilibrium Dance Academy 1802 S. Broad Street</p>
             <br />

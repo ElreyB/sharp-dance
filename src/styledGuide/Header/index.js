@@ -31,6 +31,9 @@ const StyledHamburger = styled(HamburgerButton)`
 `;
 
 const StyledNav = styled(Nav)`
+  @media (max-width: 1357px) and (min-width: 1184px) {
+    font-size: 13px;
+  }
   ${({ theme }) => theme.media.mobile`
   display: none
   `}

@@ -82,7 +82,7 @@ const links = [
   { to: ABOUT, label: "About" },
   // TODO: better way to show or remove link
   { to: DIANE, label: "Diane Sharp-Nachsin" },
-  { to: BIOS, label: "SHARP Family" },
+  { to: BIOS, label: "Meet the SHARP Family" },
   { to: MEDIA, label: "Repertoire" },
   { to: INTENSIVE, label: "Intensive" },
   {

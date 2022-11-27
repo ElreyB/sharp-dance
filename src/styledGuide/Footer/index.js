@@ -114,7 +114,7 @@ const peopleLinks = [
   // TODO: better way to show or remove link
   // { to: INTENSIVE, label: "Intensive" },
   { to: DIANE, label: "Diane Sharp-Nachsin" },
-  { to: BIOS, label: "SHARP Family" },
+  { to: BIOS, label: "Meet the SHARP Family" },
 ];
 
 const informationLinks = [
@@ -174,8 +174,8 @@ export function Footer() {
         </p>
         <p>Website by: Elrey Belmonti</p>
         <p>
-          Photos by: Bill Eberther, Rich Ryan, Kylene Claver, Diane Sharp,
-          Desiree Ortman, Ed Flores, Andrew Bernstein
+          Photos by: Bill Hebert, Rich Ryan, Kylene Cleaver, Diane Sharp, Ed
+          Flores, Andrew Bernstein
         </p>
       </Credit>
     </StyledFooter>
