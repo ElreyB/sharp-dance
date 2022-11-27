@@ -231,9 +231,7 @@ export default function Home() {
       {isLoading ? <Loading /> : null}
       {options.video && (
         <FullPageVideo
-          src={
-            "https://www.youtube.com/embed/17JusykEp_E?controls=0&autoplay=1&mute=1&loop=1&playlist=17JusykEp_E"
-          }
+          src={options.video}
           onReady={() => {
             setLoading(false);
             console.log("Video ready to play!");
