@@ -1,74 +1,73 @@
 import React from "react";
 import style, { keyframes } from "styled-components/macro";
 
-const pulse = keyframes`
-      25% {
-      opacity: 0.4;
-    }
+const leftLine = keyframes`
+      0%,
+      100% {
+        transform: translateX(-100%) scaleX(1);
+      }
 
-    100% {
-      transform: scale(1);
+      25%,
+      75% {
+        transform: translateX(-25%) scaleX(1);
+      }
+
+      50% {
+        transform: translateX(50%) scaleX(0.3);
+      }
+
+    }`;
+
+const rightLine = keyframes`
+      0%,
+      100% {
+        transform: translateX(100%) scaleX(1);
+      }
+
+      25%,
+      75% {
+        transform: translateX(25%) scaleX(1);
+      }
+
+      50% {
+        transform: translateX(-50%) scaleX(0.3);
+      }
     }
 `;
-const SVG = style.svg``;
+const duration = 3;
+const thickness = 3;
 
-const Container = style.div`
-    position: relative;
-    z-index: 0;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    overflow: hidden;
+const Lines = style.div`
+      position: fixed;
+      z-index: 100;
+      background-color: black;
+      width: 100vw;
+      height: 100vh;
+      animation-fill-mode: forwards;
 
-    & ${SVG} {
-      z-index: -1;
+     &::before,
+   &::after {
       position: absolute;
+      display: block;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 30rem;
+      width: 50%;
+      height: ${thickness}px;
+      content: ' ';
+      background-color: white;
     }
 
-    & ${SVG} circle {
-      fill: ${({ theme }) => theme.colors.mainBg};
-      transform: scale(0);
-      opacity: 0;
-      transform-origin: 50% 50%;
-      animation: ${pulse} 2s cubic-bezier(.5,.5,0,1);
-      animation-iteration-count: infinite;
-
-      &:nth-child(2) {
-        fill: ${({ theme }) => theme.colors.red};
-        animation: ${pulse} 2s 1s cubic-bezier(.5,.5,0,1);
-        animation-iteration-count: infinite;
-      }
-
-      &:nth-child(3) {
-        fill: ${({ theme }) => theme.colors.mainBg};
-        animation: ${pulse} 2s 2s cubic-bezier(.5,.5,0,1);
-        animation-iteration-count: infinite;
-      }
-
+   &::before {
+      animation: ${leftLine} linear ${duration}s infinite;
+      left: 0;
+      transform: translateX(-100%);
     }
+
+   &::after {
+      animation: ${rightLine} linear ${duration}s infinite;
+      right: 0;
+      transform: translateX(100%);
 `;
 
-const Loading = () => {
-  return (
-    <Container>
-      <SVG
-        viewBox="0 0 1024 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-      >
-        <circle cx="512" cy="512" r="512" />
-        <circle cx="512" cy="512" r="512" />
-        <circle cx="512" cy="512" r="512" />
-      </SVG>
-    </Container>
-  );
-};
+const Loading = () => <Lines />;
 
 export default Loading;
