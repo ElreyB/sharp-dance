@@ -7,7 +7,7 @@ import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
-import { BIOS, ABOUT, PRESS } from "../../constants";
+import { BIOS, ABOUT, PRESS, CLASSES } from "../../constants";
 import { PerformancesContext } from "../../Providers";
 import { groupPerformancesByYear, olderYearsFirst } from "../../utils";
 import { Schedule } from "../../styledGuide";
@@ -231,7 +231,9 @@ export default function Home() {
       {isLoading ? <Loading /> : null}
       {options.video && (
         <FullPageVideo
-          src={options.video}
+          src={
+            "https://www.youtube.com/embed/17JusykEp_E?controls=0&autoplay=1&mute=1&loop=1&playlist=17JusykEp_E"
+          }
           onReady={() => {
             setLoading(false);
             console.log("Video ready to play!");
@@ -251,11 +253,9 @@ export default function Home() {
       ></iframe> */}
       <Main>
         <div>
-          The mission of SHARP Dance Co. is to translate raw human emotion
-          utilizing contemporary movement to connect the audience through
-          individual interpretation. SHARP strives to foster ongoing artistic
-          collaborations between innovative visual, literary and performing
-          artists.
+          The mission of SHARP Dance Company is to connect people and
+          communities to raw human emotion by presenting story-driven movement
+          that is inspired by socially conscious issues.
         </div>
         <Ul>
           <Li>
@@ -316,7 +316,7 @@ export default function Home() {
             <br />
             <p>Equilibrium Dance Academy 1802 S. Broad Street</p>
             <br />
-            <AnchorButton to="/classes">See more</AnchorButton>
+            <AnchorButton to={CLASSES}>See more</AnchorButton>
           </ShowMain>
         </ShowSection>
       </Section>

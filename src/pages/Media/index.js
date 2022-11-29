@@ -20,15 +20,8 @@ export default function Media({ match }) {
   const { options, pageName, ...headerBanner } = page;
 
   const performance = media.find((performance = {}) => {
-    console.log("performance", performance.title, performanceTitle);
     return isMatch(performance.title, performanceTitle);
   });
-
-  // TODO: do we need this check
-
-  // if (performanceTitle && !performance) {
-  //   // return <Redirect to={ERROR} />;
-  // }
 
   console.log({ media });
 
