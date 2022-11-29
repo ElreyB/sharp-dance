@@ -104,7 +104,7 @@ export const Schedule = ({
   currentShow,
   ...props
 }) => {
-  console.error({ name });
+  console.error({ dates });
   return (
     <Wrapper {...props}>
       <Header>

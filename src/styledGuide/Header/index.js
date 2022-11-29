@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   white-space: nowrap;
-  height: 105px;
+  height: 110px;
   background-color: ${({ theme }) => theme.colors.black};
   width: 100%;
 `;
