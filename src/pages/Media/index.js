@@ -1,16 +1,15 @@
 import React from "react";
-// import { Redirect } from "react-router";
-// import { ERROR } from "../../constants";
+import { useParams } from "react-router";
 import AllPerformances from "./all";
 import SinglePerformance from "./single";
 import { isMatch } from "./media.logic";
 import { MediaContext, PagesContext } from "../../Providers";
 import Loading from "../Loading";
 
-export default function Media({ match }) {
+export default function Media() {
+  const { performanceTitle } = useParams();
   const media = React.useContext(MediaContext);
   const { getPage } = React.useContext(PagesContext);
-  const { performanceTitle } = match?.params || {};
   const page = getPage("media");
 
   if (!page) {
