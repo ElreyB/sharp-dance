@@ -128,9 +128,8 @@ const Image = styled.img`
 `;
 
 export default function DesktopBios() {
-  const { performers, apprentices, guestPerformers, staff } = useContext(
-    ResourcesContext
-  ).resourceObj;
+  const { performers, apprentices, guestPerformers, staff } =
+    useContext(ResourcesContext).resourceObj;
   const [data, setData] = useState({
     role: "performers",
     resouces: performers,

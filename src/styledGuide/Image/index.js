@@ -34,7 +34,7 @@ export function Image({ src, alt, credit, imageSize, ...props }) {
   const role = alt ? undefined : "presentation";
 
   const srcString = getSrcString(src);
-  const combinedAlt = alt || (src && src.title) ? src.title : undefined;
+  const combinedAlt = alt ?? src?.title ?? undefined;
 
   if (!srcString) return null;
   return (
