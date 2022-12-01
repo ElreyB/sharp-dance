@@ -52,7 +52,11 @@ export function parseSchedule(performance) {
  */
 export function groupPerformancesByYear(performances = []) {
   return performances.reduce((acc, performance) => {
-    const { year } = performance.dates[0];
+    const { year } = performance.dates[0] || {};
+
+    if (!year) {
+      return acc;
+    }
 
     if (!acc[year]) {
       acc[year] = [];

@@ -1,4 +1,3 @@
-// import { random } from "lodash";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
@@ -61,10 +60,10 @@ function App() {
         <Route path={LANDING} exact element={withMainLayout(Home)} />
         <Route path={"/sharp-dance"} exact element={withMainLayout(Home)} />
         <Route
-          path={`${MEDIA}/:performanceTitle?`}
+          path={`${MEDIA}/:performanceTitle`}
           exact
           element={withMainLayout(Media)}
-        />{" "}
+        />
         <Route path={MEDIA} exact element={withMainLayout(Media)} />
         <Route path={PRESS} exact element={withMainLayout(Press)} />
         <Route path={INTENSIVE} exact element={withMainLayout(Intensive)} />
