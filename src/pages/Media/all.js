@@ -53,14 +53,12 @@ export default function Media({ headerBanner, media }) {
     )
   );
 
-  console.log("media order", mediaToDisplay, filterMedia);
   return (
     <Page headerBanner={headerBanner}>
       <MediaContainer>
         {filterMedia.length > 0 ? (
           mediaToDisplay.map(({ title, images }, i) => {
             const photo = images[random(0, images.length - 1)];
-            console.log({ photo });
             return (
               <MediaAnchor to={getPerformanceURL(title)} key={title}>
                 <H2>{title}</H2>

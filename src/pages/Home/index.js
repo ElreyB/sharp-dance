@@ -7,7 +7,7 @@ import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
-import { BIOS, ABOUT, PRESS, CLASSES } from "../../constants";
+import { BIOS, ABOUT, CLASSES } from "../../constants";
 import { PerformancesContext } from "../../Providers";
 import { groupPerformancesByYear, olderYearsFirst } from "../../utils";
 import { Schedule } from "../../styledGuide";
@@ -160,20 +160,6 @@ export default function Home() {
   const { upcomingPerformances } = React.useContext(PerformancesContext);
   const orgs = React.useContext(OrganizationsContext);
   const [isLoading, setLoading] = React.useState(true);
-  // const iframeRef = React.useRef(null);
-
-  // const iamPlay = (event) => {
-  //   console.log("video is playing!!!");
-  // };
-
-  // React.useEffect(() => {
-  //   console.log("UseEffect");
-  //   const iframe = document.getElementById(iframeRef?.current?.id);
-  //   if (iframeRef.current) {
-  //     iframe.addEventListener("onload", iamPlay);
-  //   }
-  //   return () => iframe.removeEventListener("onload", iamPlay);
-  // }, []);
 
   const page = getPage("home");
 
@@ -181,18 +167,16 @@ export default function Home() {
     return <Loading />;
   }
 
-  const { options = {} } = page;
-  // const urls = sampleSize(
-  //   media.flatMap(({ images }) => images).map(({ src }) => src),
-  //   50
-  // );
+  const { options = {}, images } = page;
+  const currentShowImg = images.filter(({ title }) => title === "current-show");
+  const imageSection = images.filter(({ title }) => title !== "current-show");
 
-  const imageTitles = [
-    "/images/669-Adj.png",
-    "/images/Retreat-Adj.png",
-    "/images/RICHRYAN-Kate-Adg.png",
-    "/images/SEVENWINDOWS-Mig&Wren-ADJ.png",
-  ];
+  // const imageTitles = [
+  //   "/images/669-Adj.png",
+  //   "/images/Retreat-Adj.png",
+  //   "/images/RICHRYAN-Kate-Adg.png",
+  //   "/images/SEVENWINDOWS-Mig&Wren-ADJ.png",
+  // ];
 
   const renderPerformances = ([year, perfs]) =>
     perfs.length > 0 && (
@@ -226,6 +210,8 @@ export default function Home() {
     .sort(olderYearsFirst)
     .map(renderPerformances)[0];
 
+  console.log({ images, currentShowImg });
+
   return (
     <CustomPage>
       {isLoading ? <Loading /> : null}
@@ -241,7 +227,6 @@ export default function Home() {
         />
       )}
       {/* <iframe
-        ref={iframeRef}
         id="video"
         width="100%"
         height="800"
@@ -262,7 +247,13 @@ export default function Home() {
             <AnchorButton to={ABOUT}>Learn more</AnchorButton>
           </Li>
           <Li>
-            <AnchorButton to={PRESS}>Press Kit</AnchorButton>
+            <AnchorButton
+              to={`${process.env.PUBLIC_URL}/press-kit.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Press Kit
+            </AnchorButton>
           </Li>
           <Li>
             <AnchorButton to={BIOS}>SHARP Family</AnchorButton>
@@ -270,19 +261,24 @@ export default function Home() {
         </Ul>
       </Main>
       <ImageSection>
-        {imageTitles.map((src) => (
+        {imageSection.map(({ src, title }) => (
+          <ImageContainer key={title}>
+            <img alt={title} src={src} width="100%" />
+          </ImageContainer>
+        ))}
+        {/* {imageTitles.map((src) => (
           <ImageContainer key={src}>
             <img alt="dance" src={process.env.PUBLIC_URL + src} width="100%" />
           </ImageContainer>
-        ))}
+        ))} */}
       </ImageSection>
       <Section>
         <ShowSection>
           <ShowMain>
             <img
-              src={process.env.PUBLIC_URL + "/images/stories-fall-show.jpeg"}
+              src={currentShowImg[0].src}
               width="100%"
-              alt="sharp dance"
+              alt={currentShowImg[0].title}
             />
           </ShowMain>
           <ShowMain>{upcomingShow}</ShowMain>

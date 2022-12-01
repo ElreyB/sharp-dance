@@ -45,7 +45,6 @@ const StyledMarkdown = styled(Markdown)`
 `;
 
 const src = (images) => {
-  console.log(images);
   let image;
   images.forEach((img) => {
     if (img.title.includes("headshot")) {
@@ -53,7 +52,6 @@ const src = (images) => {
     } else {
       image = images[0]?.src;
     }
-    // console.log(img.title.includes("headshot"));
   });
   return { image };
 };

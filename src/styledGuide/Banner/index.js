@@ -7,7 +7,7 @@ const StyledImage = styled(Image)`
   min-height: 400px;
   text-align: center;
   ${Image.Img} {
-    width: 75%;
+    width: 50%;
     ${({ theme: { media } }) => media.mobile`
       width: 100%;
     `};
@@ -34,7 +34,6 @@ export const Banner = ({
   ...props
 }) => {
   const imgSrc = images || image;
-  console.log({ imgSrc, images, image });
   return (
     <BannerHeader {...props}>
       <H1>{title}</H1>

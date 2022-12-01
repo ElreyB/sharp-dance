@@ -23,8 +23,6 @@ export default function Media({ match }) {
     return isMatch(performance.title, performanceTitle);
   });
 
-  console.log({ media });
-
   if (performance) {
     return <SinglePerformance performance={performance} />;
   }

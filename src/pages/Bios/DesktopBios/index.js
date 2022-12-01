@@ -128,9 +128,8 @@ const Image = styled.img`
 `;
 
 export default function DesktopBios() {
-  const { performers, apprentices, guestPerformers, staff } = useContext(
-    ResourcesContext
-  ).resourceObj;
+  const { performers, apprentices, guestPerformers, staff } =
+    useContext(ResourcesContext).resourceObj;
   const [data, setData] = useState({
     role: "performers",
     resouces: performers,
@@ -175,7 +174,6 @@ export default function DesktopBios() {
   }, [data, infor]);
 
   const onNavClick = (label) => {
-    console.log(label);
     switch (label) {
       case "Dancers":
         setData({ ...data, role: "performers", resouces: performers });
@@ -203,9 +201,7 @@ export default function DesktopBios() {
   if (!page) {
     return <Loading />;
   }
-  console.log("Bio", infor?.images);
   const src = (data) => {
-    console.log(typeof data);
     let image;
     const title = data.images ? data?.images[0]?.title : data?.image?.title;
     if (data.images) {
@@ -215,7 +211,6 @@ export default function DesktopBios() {
         } else {
           image = data?.images[0]?.src;
         }
-        console.log(img.title.includes("headshot"));
       });
     } else {
       image = data?.image?.src;
@@ -224,7 +219,6 @@ export default function DesktopBios() {
   };
 
   const { image, title } = src(infor);
-  console.log({ image, title });
   return (
     <Wrapper id="box">
       <InfoDiv isFront={!!infor?.id}>

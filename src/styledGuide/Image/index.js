@@ -32,6 +32,7 @@ const getSrcString = (src) => {
 
 export function Image({ src, alt, credit, imageSize, ...props }) {
   const role = alt ? undefined : "presentation";
+  console.warn({ credit });
 
   const srcString = getSrcString(src);
   const combinedAlt = alt || (src && src.title) ? src.title : undefined;
@@ -45,7 +46,7 @@ export function Image({ src, alt, credit, imageSize, ...props }) {
         role={role}
         size={imageSize}
       />
-      {credit && <Credit>Credit: {credit}</Credit>}
+      {/* {credit && <Credit>Credit: {credit}</Credit>} */}
     </Wrapper>
   );
 }

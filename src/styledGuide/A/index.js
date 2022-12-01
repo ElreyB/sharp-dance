@@ -27,12 +27,6 @@ const linkStyles = css`
   color: ${({ theme }) => theme.colors.black};
   text-decoration: none;
   font-weight: normal;
-  /* display: block; */
-  /* border: 0px solid transparent;
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  flex-grow: 1; */
 
   &.link-active {
     font-weight: bold;
@@ -45,12 +39,6 @@ const linkStyles = css`
   &:active {
     color: ${({ theme: { colors } }) => colors.favorites.teal};
   }
-  /*
-  &:focus {
-    border-radius: 4px;
-    box-shadow: 0px 0px 0px 1px #fff inset;
-    outline: none;
-  } */
 `;
 
 const StyledNavLink = styled(NavLink)`

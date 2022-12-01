@@ -8,7 +8,6 @@ import Page from "../../layouts/Page";
 
 const now = new Date().getTime();
 const isFuture = (time) => {
-  console.log({ time, now });
   return time > now;
 };
 // const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
@@ -36,7 +35,6 @@ export default function Classes() {
   if (!page) {
     return <Loading />;
   }
-  console.log({ classSchedules });
 
   const { options = {}, pageName, ...headerBanner } = page;
   // const location = classSchedules.length && classSchedules[0].location;
@@ -51,8 +49,6 @@ export default function Classes() {
       return dates.length === 0 ? undefined : { ...classSchedule, dates };
     })
     .filter((classSchedule) => !!classSchedule);
-
-  console.log({ upcomingClassesList });
 
   return (
     <Page headerBanner={headerBanner}>
