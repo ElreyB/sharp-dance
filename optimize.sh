@@ -20,7 +20,17 @@ fi
 
 cd $1
 
-for img in ./*.{jpg,png,jpeg}; do
+for img in ./*.png; do
+    if echo x"$img" | grep '*' > /dev/null; then
+        echo "Skipped $img"
+    else
+        nopath="${img%.*}"
+        convert $nopath.png $nopath.jpg
+        rm -f $nopath.png
+    fi
+done
+
+for img in ./*.{jpg,jpeg}; do
     if echo x"$img" | grep '*' > /dev/null; then
         echo "Skipped $img"
     else
