@@ -35,7 +35,7 @@ export function Image({ src, alt, credit, imageSize, ...props }) {
   console.warn({ credit });
 
   const srcString = getSrcString(src);
-  const combinedAlt = alt || (src && src.title) ? src.title : undefined;
+  const combinedAlt = alt ?? src?.title ?? undefined;
 
   if (!srcString) return null;
   return (

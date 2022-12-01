@@ -46,7 +46,7 @@ const StyledMarkdown = styled(Markdown)`
 
 const src = (images) => {
   let image;
-  images.forEach((img) => {
+  images?.forEach((img) => {
     if (img.title.includes("headshot")) {
       image = img.src;
     } else {
