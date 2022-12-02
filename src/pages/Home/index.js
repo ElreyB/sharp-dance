@@ -159,7 +159,7 @@ export default function Home() {
   const { getPage } = React.useContext(PagesContext);
   const { upcomingPerformances } = React.useContext(PerformancesContext);
   const orgs = React.useContext(OrganizationsContext);
-  const [isLoading, setLoading] = React.useState(true);
+  // const [isLoading, setLoading] = React.useState(true);
 
   const page = getPage("home");
 
