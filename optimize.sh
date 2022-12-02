@@ -24,7 +24,7 @@ for img in ./*.{jpg,png,jpeg}; do
     if echo x"$img" | grep '*' > /dev/null; then
         echo "Skipped $img"
     else
-        convert "$img" -resize 602x400 -strip -quality 86 "$img";
+        convert "$img" -resize 600x600 -strip -quality 86 "$img";
     fi
 done
 

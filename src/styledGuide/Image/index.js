@@ -8,9 +8,8 @@ const Wrapper = styled.figure`
 `;
 
 const Img = styled.img`
-  /* width: 100%; */
-  min-height: 515px;
-  ${({ size }) => `width: ${size}`};
+  max-height: 515px;
+  ${({ size }) => `max-width: ${size}`};
 `;
 
 const Credit = styled.figcaption`
@@ -43,7 +42,7 @@ export function Image({ src, alt, credit, imageSize, ...props }) {
         src={srcString}
         alt={combinedAlt}
         role={role}
-        size={imageSize}
+        size={imageSize ?? "initial"}
       />
       {credit && <Credit>Credit: {credit}</Credit>}
     </Wrapper>
