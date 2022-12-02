@@ -7,9 +7,9 @@ const StyledImage = styled(Image)`
   min-height: 400px;
   text-align: center;
   ${Image.Img} {
-    width: 50%;
+    min-width: 300px;
     ${({ theme: { media } }) => media.mobile`
-      width: 100%;
+      min-width: 100px;
     `};
   } ;
 `;
