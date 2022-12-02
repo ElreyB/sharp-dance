@@ -214,8 +214,8 @@ export default function Home() {
 
   return (
     <CustomPage>
-      {isLoading ? <Loading /> : null}
-      {options.video && (
+      {/* {isLoading ? <Loading /> : null} */}
+      {/* {options.video && (
         <FullPageVideo
           src={
             "https://www.youtube.com/embed/17JusykEp_E?controls=0&autoplay=1&mute=1&loop=1&playlist=17JusykEp_E"
@@ -225,8 +225,8 @@ export default function Home() {
             console.log("Video ready to play!");
           }}
         />
-      )}
-      {/* <iframe
+      )} */}
+      <iframe
         id="video"
         width="100%"
         height="800"
@@ -235,7 +235,7 @@ export default function Home() {
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe> */}
+      ></iframe>
       <Main>
         <div>
           The mission of SHARP Dance Company is to connect people and
