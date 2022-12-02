@@ -54,13 +54,20 @@ const HamburgerWrapper = styled.div`
   // add mobile width: 16%;
 `;
 
+const Image = styled.img`
+  width: 355px;
+  ${({ theme }) => theme.media.phone`
+    width: 260px;
+  `}
+`;
+
 export function Header() {
   const [show, setShow] = React.useState(false);
   return (
     <Wrapper>
       <LogoWrapper>
         <LogoLink to={LANDING}>
-          <img
+          <Image
             src={process.env.PUBLIC_URL + "/images/SHARP-logo.png"}
             width="355px"
             alt="sharp dance"
