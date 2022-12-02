@@ -34,7 +34,6 @@ export const Banner = ({
   ...props
 }) => {
   const imgSrc = images || image;
-  console.log({ imgSrc, images, image });
   return (
     <BannerHeader {...props}>
       <H1>{title}</H1>

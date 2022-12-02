@@ -22,8 +22,6 @@ export default function Media() {
     return isMatch(performance.title, performanceTitle);
   });
 
-  console.log({ media });
-
   if (performance) {
     return <SinglePerformance performance={performance} />;
   }

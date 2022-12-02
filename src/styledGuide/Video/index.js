@@ -31,7 +31,6 @@ export const FullPageVideo = ({ src, className, onReady }) => {
         const desiredHeight = Math.min(MAX_WIDTH, window.innerWidth) * ratio;
 
         if (iframeSize.height !== desiredHeight) {
-          console.log(iframeSize.height, desiredHeight, "THISISIS");
           setHeight(`${desiredHeight}px`);
         }
       }
@@ -39,8 +38,6 @@ export const FullPageVideo = ({ src, className, onReady }) => {
   }
 
   useWindowResize(resize);
-
-  console.log({ height });
 
   return (
     <StyledGrid>

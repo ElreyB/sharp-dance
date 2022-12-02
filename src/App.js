@@ -28,9 +28,7 @@ import Home from "./pages/Home";
 import Media from "./pages/Media";
 import Press from "./pages/Press";
 import Intensive from "./pages/Intensive";
-// import { QuotesContext } from "./Providers";
 import { Header, ScrollToTop } from "./styledGuide";
-// import { Quote } from "./styledGuide/Quote";
 
 function withMainLayout(Component) {
   return (
@@ -41,11 +39,9 @@ function withMainLayout(Component) {
 }
 
 function App() {
-  // const quotes = React.useContext(QuotesContext);
   return (
     <Router>
       <Header />
-      {/* <Quote {...quotes[random(0, quotes.length - 1)]} alignAuthor="center" /> */}
 
       <ScrollToTop />
       <Routes>

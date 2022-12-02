@@ -12,12 +12,12 @@ const Img = styled.img`
   ${({ size }) => `max-width: ${size}`};
 `;
 
-const Credit = styled.figcaption`
-  word-wrap: break-word;
-  overflow: wrap;
-  white-space: normal;
-  font-size: 12px;
-`;
+// const Credit = styled.figcaption`
+//   word-wrap: break-word;
+//   overflow: wrap;
+//   white-space: normal;
+//   font-size: 12px;
+// `;
 
 const getSrcString = (src) => {
   if (Array.isArray(src)) {
@@ -31,6 +31,7 @@ const getSrcString = (src) => {
 
 export function Image({ src, alt, credit, imageSize, ...props }) {
   const role = alt ? undefined : "presentation";
+  console.warn({ credit });
 
   const srcString = getSrcString(src);
   const combinedAlt = alt ?? src?.title ?? undefined;
@@ -44,7 +45,7 @@ export function Image({ src, alt, credit, imageSize, ...props }) {
         role={role}
         size={imageSize ?? "initial"}
       />
-      {credit && <Credit>Credit: {credit}</Credit>}
+      {/* {credit && <Credit>Credit: {credit}</Credit>} */}
     </Wrapper>
   );
 }
