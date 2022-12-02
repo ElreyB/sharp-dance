@@ -12,12 +12,12 @@ const Img = styled.img`
   ${({ size }) => `max-width: ${size}`};
 `;
 
-const Credit = styled.figcaption`
-  word-wrap: break-word;
-  overflow: wrap;
-  white-space: normal;
-  font-size: 12px;
-`;
+// const Credit = styled.figcaption`
+//   word-wrap: break-word;
+//   overflow: wrap;
+//   white-space: normal;
+//   font-size: 12px;
+// `;
 
 const getSrcString = (src) => {
   if (Array.isArray(src)) {
