@@ -11,6 +11,7 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   display: flex;
+  position: relative;
   ${({ theme }) => theme.media.mobile`
     flex-direction: column;
   `};
