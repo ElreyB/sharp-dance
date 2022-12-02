@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 // import { INTENSIVE } from "../../constants";
 import { PagesContext } from "../../Providers";
-import { FullPageVideo } from "../../styledGuide";
+// import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
 import { BIOS, ABOUT, CLASSES } from "../../constants";
@@ -167,7 +167,7 @@ export default function Home() {
     return <Loading />;
   }
 
-  const { options = {}, images } = page;
+  const { images } = page;
   const currentShowImg = images.filter(({ title }) => title === "current-show");
   const imageSection = images.filter(({ title }) => title !== "current-show");
 
