@@ -67,6 +67,7 @@ const StyledSocialIcons = styled(SocialIcons)`
 
 const HamburgerWrapper = styled.div`
   padding: 8px 16px;
+  margin: 10px 0;
 `;
 
 const Links = styled.div`
