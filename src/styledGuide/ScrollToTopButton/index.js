@@ -9,6 +9,14 @@ const Button = styled.button`
   background-color: ${({ theme }) => theme?.colors?.favorites?.teal};
   color: #fff;
   text-align: center;
+  border: none;
+  border-radius: 52%;
+  padding: 9px;
+  z-index: 5;
+  display: none;
+  ${({ theme }) => theme.media.phone`
+    display: initial;
+  `}
 `;
 
 export function ScrollToTopButton({ children }) {

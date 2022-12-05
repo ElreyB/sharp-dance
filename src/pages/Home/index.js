@@ -210,8 +210,6 @@ export default function Home() {
     .sort(olderYearsFirst)
     .map(renderPerformances)[0];
 
-  console.log({ images, currentShowImg });
-
   return (
     <CustomPage>
       {/* {isLoading ? <Loading /> : null} */}
