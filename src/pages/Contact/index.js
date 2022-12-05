@@ -111,7 +111,7 @@ export default function Contact() {
       <Description>For any other information please contact:</Description>
       <StyledP>Nikki Battestilli, Company Manager</StyledP>
       <EmailLink>Nikki@sharpdance.org</EmailLink>
-      <PhoneLink>814.952.5573</PhoneLink>
+      <PhoneLink>814-952-6673</PhoneLink>
       <br />
       <StyledP>Diane Sharp-Nachsin, Artistic Director</StyledP>
       <EmailLink>Diane@sharpdance.org</EmailLink>

@@ -14,6 +14,9 @@ const Wrapper = styled.div`
   height: 110px;
   background-color: ${({ theme }) => theme.colors.black};
   width: 100%;
+  ${({ theme }) => theme.media.phone`
+    justify-content: space-between;
+  `}
 `;
 const LogoLink = styled(A)`
   text-decoration: none;
@@ -57,18 +60,33 @@ const HamburgerWrapper = styled.div`
 const Image = styled.img`
   width: 355px;
   ${({ theme }) => theme.media.phone`
-    width: 260px;
+    display: none;
+  `}
+`;
+
+const PhoneLogo = styled(Image)`
+  width: 230px;
+  display: none;
+  ${({ theme }) => theme.media.phone`
+  display: initial;
   `}
 `;
 
 export function Header() {
   const [show, setShow] = React.useState(false);
+
   return (
     <Wrapper>
       <LogoWrapper>
         <LogoLink to={LANDING}>
           <Image
-            src={process.env.PUBLIC_URL + "/images/SHARP-logo.png"}
+            src={`${process.env.PUBLIC_URL}/images/SHARP-logo.png`}
+            width="355px"
+            alt="sharp dance"
+            style={{ paddingTop: "10px" }}
+          />
+          <PhoneLogo
+            src={`${process.env.PUBLIC_URL}/images/white-logo-name.png`}
             width="355px"
             alt="sharp dance"
             style={{ paddingTop: "10px" }}

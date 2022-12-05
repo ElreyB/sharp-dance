@@ -60,30 +60,7 @@ export default function Intensive() {
     <Page headerBanner={headerBanner}>
       <div>
         <Markdown>{description}</Markdown>
-        {/* <Notes justify="center">{notes}</Notes>
-        <StyledLabel>Tickets:</StyledLabel>
-        <Sentence>{tickets}</Sentence> */}
       </div>
-      {/* <div>
-        <StyledLabel>Location:</StyledLabel>
-        <Sentence>{location}</Sentence>
-      </div>
-      <div>
-        <StyledLabel>Address: </StyledLabel>
-        <Sentence>{address}</Sentence>
-      </div>
-      <div>
-        <StyledLabel>Dancers: </StyledLabel>
-        <Sentence>{dancers}</Sentence>
-      </div>
-      <div>
-        <StyledLabel>Manager: </StyledLabel>
-        <Sentence>{manager}</Sentence>
-      </div>
-      <div>
-        <StyledLabel>Artistic Director: </StyledLabel>
-        <Sentence>{director}</Sentence>
-      </div> */}
     </Page>
   );
 }

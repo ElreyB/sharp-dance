@@ -23,16 +23,15 @@ const Wrapper = styled.div`
 `;
 
 export default function MobileBios() {
-  const { performers, apprentices, guestPerformers, staff } = useContext(
-    ResourcesContext
-  ).resourceObj;
+  const { performers, apprentices, guestPerformers, staff, board, exboard } =
+    useContext(ResourcesContext).resourceObj;
 
   // if (!page) {
   //   return <Loading />;
   // }
+  console.log({ exboard });
   return (
     <Wrapper>
-      {/* <div align="start"> */}
       {performers && (
         <>
           <H2>Dancers</H2>
@@ -55,7 +54,20 @@ export default function MobileBios() {
         <H2>Staff</H2>
         {staff && staff.filter(isNotDirector).map(getBio)}
       </>
-      {/* </div> */}
+
+      {exboard && (
+        <>
+          <H2>Executive Board Members</H2>
+          {exboard.map(getBio)}
+        </>
+      )}
+
+      {board && (
+        <>
+          <H2>Board Members</H2>
+          {board.map(getBio)}
+        </>
+      )}
     </Wrapper>
   );
 }
