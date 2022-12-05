@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/sharp-dance/static/js/main.d2314fe7.js",
+    "main.js": "/sharp-dance/static/js/main.fa0ac0ef.js",
     "index.html": "/sharp-dance/index.html",
     "static/media/thumbnail.svg": "/sharp-dance/static/media/thumbnail.a3f34fafaae38743c4d41b91f89f2032.svg",
-    "main.d2314fe7.js.map": "/sharp-dance/static/js/main.d2314fe7.js.map"
+    "main.fa0ac0ef.js.map": "/sharp-dance/static/js/main.fa0ac0ef.js.map"
   },
   "entrypoints": [
-    "static/js/main.d2314fe7.js"
+    "static/js/main.fa0ac0ef.js"
   ]
 }
