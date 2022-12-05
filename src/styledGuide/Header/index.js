@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { useTheme } from "styled-components/macro";
+import styled from "styled-components/macro";
 import { A } from "..";
 import { LANDING } from "../../constants";
 import HamburgerButton from "../HamburgerButton";
@@ -74,7 +74,6 @@ const PhoneLogo = styled(Image)`
 
 export function Header() {
   const [show, setShow] = React.useState(false);
-  const theme = useTheme();
 
   return (
     <Wrapper>

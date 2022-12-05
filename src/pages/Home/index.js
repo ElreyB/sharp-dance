@@ -5,7 +5,7 @@ import styled from "styled-components/macro";
 // import { INTENSIVE } from "../../constants";
 import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
-import Loading from "../Loading";
+// import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
 import { BIOS, ABOUT, CLASSES } from "../../constants";
 import { PerformancesContext } from "../../Providers";
