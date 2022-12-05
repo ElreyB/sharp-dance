@@ -28,7 +28,7 @@ import Home from "./pages/Home";
 import Media from "./pages/Media";
 import Press from "./pages/Press";
 import Intensive from "./pages/Intensive";
-import { Header, ScrollToTop } from "./styledGuide";
+import { Header, ScrollToTop, ScrollToTopButton } from "./styledGuide";
 
 function withMainLayout(Component) {
   return (
@@ -44,6 +44,8 @@ function App() {
       <Header />
 
       <ScrollToTop />
+      <ScrollToTopButton />
+
       <Routes>
         <Route path={ABOUT} exact element={withMainLayout(About)} />
         <Route path={BIOS} exact element={withMainLayout(Bios)} />

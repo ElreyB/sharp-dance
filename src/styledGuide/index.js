@@ -16,6 +16,7 @@ export * from "./Nav";
 export * from "./P";
 export * from "./Quote";
 export * from "./Schedule";
-export * from "./ScrollTop";
+export * from "./ScrollToTop";
+export * from "./ScrollToTopButton";
 export * from "./SocialIcons";
 export * from "./Video";

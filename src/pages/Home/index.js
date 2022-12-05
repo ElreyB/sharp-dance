@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 // import { INTENSIVE } from "../../constants";
 import { PagesContext } from "../../Providers";
-// import { FullPageVideo } from "../../styledGuide";
+import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";
 import { OrganizationsContext } from "../../Providers";
 import { BIOS, ABOUT, CLASSES } from "../../constants";
@@ -159,7 +159,7 @@ export default function Home() {
   const { getPage } = React.useContext(PagesContext);
   const { upcomingPerformances } = React.useContext(PerformancesContext);
   const orgs = React.useContext(OrganizationsContext);
-  // const [isLoading, setLoading] = React.useState(true);
+  const [isLoading, setLoading] = React.useState(true);
 
   const page = getPage("home");
 
@@ -167,7 +167,7 @@ export default function Home() {
     return <Loading />;
   }
 
-  const { images } = page;
+  const { images, options = {} } = page;
   const currentShowImg = images.filter(({ title }) => title === "current-show");
   const imageSection = images.filter(({ title }) => title !== "current-show");
 
@@ -215,18 +215,16 @@ export default function Home() {
   return (
     <CustomPage>
       {/* {isLoading ? <Loading /> : null} */}
-      {/* {options.video && (
+      {options.video && (
         <FullPageVideo
-          src={
-            "https://www.youtube.com/embed/17JusykEp_E?controls=0&autoplay=1&mute=1&loop=1&playlist=17JusykEp_E"
-          }
+          src={options.video}
           onReady={() => {
             setLoading(false);
             console.log("Video ready to play!");
           }}
         />
-      )} */}
-      <iframe
+      )}
+      {/* <iframe
         id="video"
         width="100%"
         height="800"
@@ -235,7 +233,7 @@ export default function Home() {
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
+      ></iframe> */}
       <Main>
         <div>
           The mission of SHARP Dance Company is to connect people and
