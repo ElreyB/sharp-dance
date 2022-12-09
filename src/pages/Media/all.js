@@ -40,6 +40,7 @@ const mediaOrder = [
   "Seven Windows",
   "The Garden Tour",
   "Roller Coaster",
+  "Blind Faith",
 ];
 
 export default function Media({ headerBanner, media }) {
