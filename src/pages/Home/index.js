@@ -1,8 +1,6 @@
-// import { sampleSize } from "lodash-es";
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
-// import { INTENSIVE } from "../../constants";
 import { PagesContext } from "../../Providers";
 import { FullPageVideo } from "../../styledGuide";
 import Loading from "../Loading";
@@ -11,8 +9,15 @@ import { BIOS, ABOUT, CLASSES } from "../../constants";
 import { PerformancesContext } from "../../Providers";
 import { groupPerformancesByYear, olderYearsFirst } from "../../utils";
 import { Schedule } from "../../styledGuide";
+import HeroCarousel from "./HeroCarousel";
 
 const CustomPage = styled.div``;
+
+const StyledVideo = styled(FullPageVideo)`
+  ${({ theme }) => theme.media.phone`
+      display: none;
+    `}
+`;
 
 const Main = styled.main`
   margin: 40px auto;
@@ -30,8 +35,8 @@ const Main = styled.main`
   max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
 
   ${({ theme }) => theme.media.mobile`
-       max-width: ${({ theme: { breakpoints } }) => breakpoints.md};
-        border: none;
+       max-width: 100%;
+       border: none;
     `}
 `;
 
@@ -61,6 +66,9 @@ const StyledA = styled.a`
   margin-top: 32px;
   padding: 10px 80px;
   width: 100%;
+  ${({ theme }) => theme.media.mobile`
+      padding: 0;
+    `}
 `;
 
 const Section = styled.section`
@@ -74,17 +82,7 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
 `;
-// const SectionContent = styled.div`
-//   margin: 0 auto;
-//   min-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
-//   border: 5px solid;
-//   padding: 48px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: stretch;
-//   flex-shrink: 1;
-// `;
+
 const SponserTitle = styled.h2`
   text-align: center;
 `;
@@ -117,26 +115,20 @@ const ShowMain = styled(Main)`
   flex-basis: 50%;
 `;
 
-// const ImageSide = styled(ShowMain)`
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 100%;
-//   background-image: url(${({ imageUrl }) => imageUrl});
-// `;
-
 const ShowSection = styled(Main)`
   justify-content: space-evenly;
   align-items: center;
 
   ${({ theme }) => theme.media.desktop`
       flex-direction: row;
-    `}/* min-width: ${({ theme: { breakpoints } }) => breakpoints.lg}; */
+    `}
 `;
 
 const ImageSection = styled.section`
   display: flex;
   ${({ theme }) => theme.media.mobile`
       flex-wrap: wrap;
+      display: none;
     `}
 `;
 
@@ -177,6 +169,7 @@ export default function Home() {
   //   "/images/RICHRYAN-Kate-Adg.png",
   //   "/images/SEVENWINDOWS-Mig&Wren-ADJ.png",
   // ];
+  console.log("VIDEIOOOO", options.video);
 
   const renderPerformances = ([year, perfs]) =>
     perfs.length > 0 && (
@@ -214,7 +207,7 @@ export default function Home() {
     <CustomPage>
       {isLoading ? <Loading /> : null}
       {options.video && (
-        <FullPageVideo
+        <StyledVideo
           src={options.video}
           onReady={() => {
             setLoading(false);
@@ -222,16 +215,7 @@ export default function Home() {
           }}
         />
       )}
-      {/* <iframe
-        id="video"
-        width="100%"
-        height="800"
-        src="https://www.youtube.com/embed/17JusykEp_E?controls=0&autoplay=1&mute=1&loop=1&playlist=17JusykEp_E"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe> */}
+      <HeroCarousel />
       <Main>
         <div>
           The mission of SHARP Dance Company is to connect people and
@@ -262,11 +246,6 @@ export default function Home() {
             <img alt={title} src={src} width="100%" />
           </ImageContainer>
         ))}
-        {/* {imageTitles.map((src) => (
-          <ImageContainer key={src}>
-            <img alt="dance" src={process.env.PUBLIC_URL + src} width="100%" />
-          </ImageContainer>
-        ))} */}
       </ImageSection>
       <Section>
         <ShowSection>
