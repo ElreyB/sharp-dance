@@ -15,7 +15,7 @@ const StyledInput2 = styled.input`
   font-size: 16px;
   background-color: ${({ theme }) => theme.colors.white};
   border: none;
-  height: 40px;
+  height: 50px;
   width: 100%;
   padding-left: 12px;
 `;

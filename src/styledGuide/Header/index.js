@@ -65,7 +65,7 @@ const Image = styled.img`
 `;
 
 const PhoneLogo = styled(Image)`
-  width: 230px;
+  width: 200px;
   display: none;
   ${({ theme }) => theme.media.phone`
   display: initial;
