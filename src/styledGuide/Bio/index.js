@@ -11,7 +11,8 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   display: flex;
-  position: relative;
+  justify-content: center;
+  align-items: center;
   ${({ theme }) => theme.media.mobile`
     flex-direction: column;
   `};
@@ -27,10 +28,13 @@ const StyledImage = styled(Image)`
 
 const H3 = styled.h3`
   text-align: center;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Name = styled.span`
   color: ${({ theme }) => theme.colors.black};
+  margin-bottom: 5px;
 `;
 
 const Title = styled.span`
@@ -39,7 +43,9 @@ const Title = styled.span`
 
 const StyledMarkdown = styled(Markdown)`
   margin: 16px 40px;
-
+  ${({ theme }) => theme.media.phone`
+     margin: 0 auto;
+  `}
   p {
     width: 380px;
   }
@@ -74,7 +80,7 @@ export function Bio({
   return (
     <Wrapper>
       <H3>
-        <Name>{name} </Name>
+        <Name>{name}</Name>
         <Title>({title})</Title>
       </H3>
       <Content>

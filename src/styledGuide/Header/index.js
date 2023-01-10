@@ -83,7 +83,6 @@ export function Header() {
             src={`${process.env.PUBLIC_URL}/images/SHARP-logo.png`}
             width="355px"
             alt="sharp dance"
-            style={{ paddingTop: "10px" }}
           />
           <PhoneLogo
             src={`${process.env.PUBLIC_URL}/images/white-logo-name.png`}

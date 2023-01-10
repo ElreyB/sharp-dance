@@ -31,7 +31,6 @@ const getSrcString = (src) => {
 
 export function Image({ src, alt, credit, imageSize, ...props }) {
   const role = alt ? undefined : "presentation";
-  console.warn({ credit });
 
   const srcString = getSrcString(src);
   const combinedAlt = alt ?? src?.title ?? undefined;

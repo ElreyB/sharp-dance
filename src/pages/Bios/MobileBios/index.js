@@ -29,7 +29,6 @@ export default function MobileBios() {
   // if (!page) {
   //   return <Loading />;
   // }
-  console.log({ exboard });
   return (
     <Wrapper>
       {performers && (
@@ -51,7 +50,7 @@ export default function MobileBios() {
         </>
       )}
       <>
-        <H2>Staff</H2>
+        <H2>Staff / Collaborators</H2>
         {staff && staff.filter(isNotDirector).map(getBio)}
       </>
 

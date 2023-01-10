@@ -169,7 +169,6 @@ export default function Home() {
   //   "/images/RICHRYAN-Kate-Adg.png",
   //   "/images/SEVENWINDOWS-Mig&Wren-ADJ.png",
   // ];
-  console.log("VIDEIOOOO", options.video);
 
   const renderPerformances = ([year, perfs]) =>
     perfs.length > 0 && (
@@ -183,13 +182,13 @@ export default function Home() {
                   key={`${year}-${perf.name}-${i}`}
                   currentShow
                 />
-                <StyledA
+                {/* <StyledA
                   href={perf.purchaseUrl}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   Buy Tickets
-                </StyledA>
+                </StyledA> */}
               </>
             );
           })[0]
@@ -202,7 +201,6 @@ export default function Home() {
   )
     .sort(olderYearsFirst)
     .map(renderPerformances)[0];
-
   return (
     <CustomPage>
       {isLoading ? <Loading /> : null}
