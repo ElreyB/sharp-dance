@@ -18,7 +18,6 @@ const StyledA = styled(A)`
 `;
 
 function IconAnchor({ Icon, url }) {
-  console.error({ url });
   if (!url) {
     return null;
   }
@@ -96,6 +95,7 @@ const locationP = (location, address, currentShow) => {
 export const Schedule = ({
   address,
   dates,
+  time,
   description,
   location,
   name,
@@ -104,7 +104,6 @@ export const Schedule = ({
   currentShow,
   ...props
 }) => {
-  console.error({ dates });
   return (
     <Wrapper {...props}>
       <Header>
@@ -118,7 +117,7 @@ export const Schedule = ({
       </Header>
       {description && <Description>{description}</Description>}
       {locationP(location, address, currentShow)}
-      {dates.map(({ days, month, time, notes }, i) => (
+      {dates.map(({ days, month, notes }, i) => (
         <DateTime key={i}>
           {monthName[month]} {days}, {time} {notes}
         </DateTime>

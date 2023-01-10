@@ -63,9 +63,9 @@ export default function Classes() {
       </A>
       {upcomingClassesList.length > 0 ? (
         <>
-          {upcomingClassesList.map((schedule, i) => (
-            <ClassSchedule {...schedule} key={i} />
-          ))}
+          {upcomingClassesList.map((schedule, i) => {
+            return <ClassSchedule {...schedule} key={i} />;
+          })}
         </>
       ) : (
         <H3>{options.noClasses}</H3>

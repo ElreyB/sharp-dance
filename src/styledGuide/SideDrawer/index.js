@@ -45,12 +45,13 @@ const NavLink = styled(A)`
   padding: ${({ theme }) => `${theme.spacing.XS} ${theme.spacing.M}`};
 
   ${({ theme }) => theme.media.phone`
-       font-size: 30px;
+       font-size: 28px;
     `}
 `;
 
 const StyledSocialIcons = styled(SocialIcons)`
   margin-top: ${({ theme }) => theme.spacing.M};
+  margin-bottom: ${({ theme }) => theme.spacing.M};
 
   & svg {
     width: 30px;

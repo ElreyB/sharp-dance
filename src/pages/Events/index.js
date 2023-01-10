@@ -50,7 +50,6 @@ export default function Events(props) {
   //     .sort(mostRecentYearsFirst)
   //     .map(renderPerformances);
 
-  console.warn(props);
   return (
     <Page headerBanner={headerBanner}>
       <Wrapper>
