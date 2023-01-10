@@ -25,8 +25,8 @@ export default function HeroCarousel() {
       controls={false}
       indicators={false}
     >
-      {imageSection.map(({ src, title }) => (
-        <Carousel.Item>
+      {imageSection.map(({ src, title }, index) => (
+        <Carousel.Item key={title + index}>
           <img alt={title} src={src} className="d-block w-100" />
           {/* <Carousel.Caption>
             <h3>First slide label</h3>

@@ -155,7 +155,7 @@ export default function Home() {
 
   const page = getPage("home");
 
-  if (!page && isLoading) {
+  if (!page) {
     return <Loading />;
   }
 
@@ -201,6 +201,7 @@ export default function Home() {
   )
     .sort(olderYearsFirst)
     .map(renderPerformances)[0];
+  console.log("I AM RENDERING agian");
   return (
     <CustomPage>
       {isLoading ? <Loading /> : null}
