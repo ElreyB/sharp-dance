@@ -155,7 +155,7 @@ export default function Home() {
 
   const page = getPage("home");
 
-  if (!page && isLoading) {
+  if (!page) {
     return <Loading />;
   }
 
@@ -209,7 +209,6 @@ export default function Home() {
           src={options.video}
           onReady={() => {
             setLoading(false);
-            console.log("Video ready to play!");
           }}
         />
       )}
