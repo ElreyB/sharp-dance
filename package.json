@@ -2,7 +2,7 @@
   "name": "sharp-dance",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://elreyb.github.io/sharp-dance",
+  "homepage": "https://sharp-dance.org",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "env-cmd": "^10.0.1",
