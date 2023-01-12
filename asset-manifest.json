@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/sharp-dance/static/css/main.c2cab247.css",
-    "main.js": "/sharp-dance/static/js/main.8b5e7211.js",
-    "index.html": "/sharp-dance/index.html",
-    "static/media/thumbnail.svg": "/sharp-dance/static/media/thumbnail.a3f34fafaae38743c4d41b91f89f2032.svg",
-    "main.c2cab247.css.map": "/sharp-dance/static/css/main.c2cab247.css.map",
-    "main.8b5e7211.js.map": "/sharp-dance/static/js/main.8b5e7211.js.map"
+    "main.css": "/static/css/main.c2cab247.css",
+    "main.js": "/static/js/main.3a08d726.js",
+    "index.html": "/index.html",
+    "static/media/thumbnail.svg": "/static/media/thumbnail.a3f34fafaae38743c4d41b91f89f2032.svg",
+    "main.c2cab247.css.map": "/static/css/main.c2cab247.css.map",
+    "main.3a08d726.js.map": "/static/js/main.3a08d726.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.8b5e7211.js"
+    "static/js/main.3a08d726.js"
   ]
 }
