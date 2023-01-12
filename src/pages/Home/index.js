@@ -37,6 +37,7 @@ const Main = styled.main`
   ${({ theme }) => theme.media.mobile`
        max-width: 100%;
        border: none;
+       padding: 0 10px;
     `}
 `;
 
