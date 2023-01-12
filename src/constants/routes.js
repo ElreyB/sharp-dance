@@ -1,4 +1,4 @@
-const prefix = process.env.NODE_ENV === "development" ? "" : "/sharp-dance";
+const prefix = "";
 
 export const ABOUT = `${prefix}/about`;
 export const BIOS = `${prefix}/bios`;
