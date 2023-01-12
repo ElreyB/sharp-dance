@@ -56,7 +56,7 @@ function App() {
         <Route path={EVENTS} exact element={withMainLayout(Events)} />
         <Route path={PAST_EVENTS} exact element={withMainLayout(Events)} />
         <Route path={LANDING} exact element={withMainLayout(Home)} />
-        <Route path={"/sharp-dance"} exact element={withMainLayout(Home)} />
+        <Route path={"/"} exact element={withMainLayout(Home)} />
         <Route
           path={`${MEDIA}/:performanceTitle`}
           exact
