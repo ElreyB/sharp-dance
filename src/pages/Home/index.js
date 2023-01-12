@@ -201,7 +201,6 @@ export default function Home() {
   )
     .sort(olderYearsFirst)
     .map(renderPerformances)[0];
-  console.log("I AM RENDERING agian");
   return (
     <CustomPage>
       {isLoading ? <Loading /> : null}
@@ -210,7 +209,6 @@ export default function Home() {
           src={options.video}
           onReady={() => {
             setLoading(false);
-            console.log("Video ready to play!");
           }}
         />
       )}
