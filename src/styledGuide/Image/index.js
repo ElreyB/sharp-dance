@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components/macro";
 
 const Wrapper = styled.figure`
-  min-height: 100px;
-  min-width: 200px;
   overflow: hidden;
 `;
 

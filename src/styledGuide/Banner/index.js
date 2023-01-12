@@ -5,14 +5,9 @@ import { Image } from "../Image";
 
 const StyledImage = styled(Image)`
   max-width: 100%;
-  min-height: 400px;
   text-align: center;
   ${Image.Img} {
-    min-width: 300px;
-    ${({ theme: { media } }) => media.mobile`
-      min-width: 100px;
-      max-width: 100%;
-    `};
+    width: 100%;
   } ;
 `;
 
