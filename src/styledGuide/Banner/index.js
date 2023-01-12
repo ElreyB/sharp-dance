@@ -18,6 +18,7 @@ const StyledImage = styled(Image)`
 
 const H1 = styled.h1`
   text-align: center;
+  margin-bottom: 10px;
 `;
 const H2 = styled.h2`
   text-align: center;
