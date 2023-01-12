@@ -5,7 +5,7 @@ import { Image } from "../Image";
 
 const StyledImage = styled(Image)`
   max-width: 100%;
-  min-height: 400px;
+  /* min-height: 400px; */
   text-align: center;
   ${Image.Img} {
     min-width: 300px;
@@ -18,6 +18,7 @@ const StyledImage = styled(Image)`
 
 const H1 = styled.h1`
   text-align: center;
+  margin-bottom: 10px;
 `;
 const H2 = styled.h2`
   text-align: center;
