@@ -41,8 +41,7 @@ export default function Classes() {
   const upcomingClassesList = classSchedules
     .map((classSchedule) => {
       const dates = classSchedule.dates.filter((date) => {
-        const replacedDate = date.days.replace(/-/g, ",");
-        const dateTime = new Date(replacedDate).getTime();
+        const dateTime = new Date(date.days).getTime();
         return isFuture(dateTime);
       });
 
