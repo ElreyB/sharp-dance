@@ -2,6 +2,7 @@ import FocusTrap from "focus-trap-react";
 import React from "react";
 import styled from "styled-components/macro";
 import {
+  LANDING,
   ABOUT,
   BIOS,
   CLASSES,
@@ -81,6 +82,7 @@ const StyledCloseButton = styled(HamburgerButton)`
 `;
 
 const links = [
+  { to: LANDING, label: "Home" },
   { to: ABOUT, label: "About" },
   // TODO: better way to show or remove link
   { to: DIANE, label: "Diane Sharp-Nachsin" },
