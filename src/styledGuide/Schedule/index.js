@@ -117,11 +117,15 @@ export const Schedule = ({
       </Header>
       {description && <Description>{description}</Description>}
       {locationP(location, address, currentShow)}
-      {dates.map(({ days, month, notes }, i) => (
-        <DateTime key={i}>
-          {monthName[month]} {days}, {time} {notes}
-        </DateTime>
-      ))}
+      {dates.map(({ days, month, time: dateTime, year, notes }, i) => {
+        console.warn({ days, time, year, dateTime });
+        const composedTime = time ? time : `${dateTime}, ${year}`;
+        return (
+          <DateTime key={i}>
+            {monthName[month]} {days}, {composedTime} {notes}
+          </DateTime>
+        );
+      })}
     </Wrapper>
   );
 };

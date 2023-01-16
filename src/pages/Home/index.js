@@ -60,17 +60,17 @@ const AnchorButton = styled(NavLink)`
   border: 1px solid white;
   text-transform: uppercase;
 `;
-// const StyledA = styled.a`
-//   color: ${({ theme: { colors } }) => colors.white};
-//   background-color: ${({ theme: { colors } }) => colors.black};
-//   text-decoration: none;
-//   margin-top: 32px;
-//   padding: 10px 80px;
-//   width: 100%;
-//   ${({ theme }) => theme.media.mobile`
-//       padding: 0;
-//     `}
-// `;
+const StyledA = styled.a`
+  color: ${({ theme: { colors } }) => colors.white};
+  background-color: ${({ theme: { colors } }) => colors.black};
+  text-decoration: none;
+  margin-top: 32px;
+  padding: 10px 80px;
+  width: 100%;
+  ${({ theme }) => theme.media.mobile`
+      padding: 0;
+    `}
+`;
 
 const Section = styled.section`
   background-color: ${({ theme: { colors } }) => colors.primaryColors.sliver};
@@ -164,6 +164,8 @@ export default function Home() {
   const currentShowImg = images.filter(({ title }) => title === "current-show");
   const imageSection = images.filter(({ title }) => title !== "current-show");
 
+  console.log({ currentShowImg, images });
+
   // const imageTitles = [
   //   "/images/669-Adj.png",
   //   "/images/Retreat-Adj.png",
@@ -183,13 +185,13 @@ export default function Home() {
                   key={`${year}-${perf.name}-${i}`}
                   currentShow
                 />
-                {/* <StyledA
+                <StyledA
                   href={perf.purchaseUrl}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   Buy Tickets
-                </StyledA> */}
+                </StyledA>
               </>
             );
           })[0]
