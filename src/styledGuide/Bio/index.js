@@ -20,11 +20,7 @@ const Content = styled.div`
 
 const StyledImage = styled(Image)`
   min-width: 267px;
-  align-align: center;
-
-  /* ${({ theme: { media } }) => media.mobile`
-    align-self: center;
-  `}; */
+  align-self: center;
 `;
 
 const H3 = styled.h3`
