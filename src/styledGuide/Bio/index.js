@@ -19,11 +19,12 @@ const Content = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-  text-align: center;
+  min-width: 267px;
+  align-align: center;
 
-  ${({ theme: { media } }) => media.mobile`
+  /* ${({ theme: { media } }) => media.mobile`
     align-self: center;
-  `};
+  `}; */
 `;
 
 const H3 = styled.h3`
