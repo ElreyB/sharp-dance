@@ -118,8 +118,10 @@ export const Schedule = ({
       {description && <Description>{description}</Description>}
       {locationP(location, address, currentShow)}
       {dates.map(({ days, month, time: dateTime, year, notes }, i) => {
-        console.warn({ days, time, year, dateTime });
-        const composedTime = time ? time : `${dateTime}, ${year}`;
+        console.warn("time", { days, time, year, dateTime });
+        const composedTime = notes.includes("summer intensive")
+          ? "9:30am-4pm"
+          : time;
         return (
           <DateTime key={i}>
             {monthName[month]} {days}, {composedTime} {notes}
