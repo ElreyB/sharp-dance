@@ -119,7 +119,7 @@ export const Schedule = ({
       {locationP(location, address, currentShow)}
       {dates.map(({ days, month, time: dateTime, year, notes }, i) => {
         console.warn("time", { days, time, year, dateTime });
-        const composedTime = notes.includes("summer intensive")
+        const composedTime = notes?.includes("summer intensive")
           ? "9:30am-4pm"
           : time;
         return (
