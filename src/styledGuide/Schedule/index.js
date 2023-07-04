@@ -62,6 +62,9 @@ const IconWrapper = styled.div`
 `;
 
 const Description = styled(P)``;
+const Footnote = styled(P)`
+  font-style: italic;
+`;
 const Location = styled(P)``;
 const DateTime = styled(P)``;
 
@@ -102,6 +105,7 @@ export const Schedule = ({
   purchaseUrl,
   website,
   currentShow,
+  footnote,
   ...props
 }) => {
   return (
@@ -117,14 +121,15 @@ export const Schedule = ({
       </Header>
       {description && <Description>{description}</Description>}
       {locationP(location, address, currentShow)}
+      {footnote && <Footnote>{footnote}</Footnote>}
       {dates.map(({ days, month, time: dateTime, year, notes }, i) => {
-        console.warn("time", { days, time, year, dateTime });
+        console.warn("time", { days, time, year, dateTime, ...props });
         const composedTime = notes?.includes("summer intensive")
           ? "9:30am-4pm"
-          : time;
+          : dateTime;
         return (
           <DateTime key={i}>
-            {monthName[month]} {days}, {composedTime} {notes}
+            {monthName[month]} {days}, {year} {composedTime} {notes}
           </DateTime>
         );
       })}
