@@ -129,7 +129,7 @@ export const Schedule = ({
           : dateTime;
         return (
           <DateTime key={i}>
-            {monthName[month]} {days}, {year} {composedTime} {notes}
+            {monthName[month]} {days}, {year} {composedTime || time} {notes}
           </DateTime>
         );
       })}
