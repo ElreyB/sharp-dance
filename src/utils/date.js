@@ -23,7 +23,13 @@ export function parseDate(date) {
  * and a parsed time representation of the first date (dateTime)
  */
 export function parseSchedule(performance) {
-  const now = new Date().getTime();
+  const now = new Date(
+    parseDate({
+      month: new Date().getMonth(),
+      days: `${new Date().getDay()}`,
+      year: new Date().getFullYear(),
+    })
+  );
   const copy = JSON.parse(JSON.stringify(performance));
   let hasDate = false;
   let dates = [{ year: 0, month: 0, days: "0" }];
@@ -32,8 +38,7 @@ export function parseSchedule(performance) {
     dates = copy.dates;
     hasDate = true;
   }
-
-  const dateTime = parseDate(copy.dates[0]);
+  const dateTime = parseDate(copy.dates[copy.dates.length - 1]);
   const isFuture = hasDate && dateTime > now;
 
   return {
