@@ -13,7 +13,7 @@ const PerformancesProvider = ({ children }) => {
     () => setPerformances(performancesCollection ? performancesCollection : []),
     [performancesCollection]
   );
-
+  console.log("I am being called");
   const parsedPerformances = performances.map(parseSchedule);
   const upcomingPerformances = parsedPerformances
     .filter(({ isFuture }) => isFuture)

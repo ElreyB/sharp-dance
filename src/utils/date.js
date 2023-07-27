@@ -4,7 +4,7 @@ function sortPerformance(perfA, perfB) {
 
 export function parseDate(date) {
   const parsedDate = {
-    day: parseInt((date.days.match(/([0-9]+)/) || [])[1], 10) || 0,
+    day: parseInt((date.days.match(/([0-9]+)/) || [])?.[1], 10) || 0,
     month: date.month || 0,
     year: date.year,
   };
@@ -25,8 +25,8 @@ export function parseDate(date) {
 export function parseSchedule(performance) {
   const now = new Date(
     parseDate({
-      month: new Date().getMonth(),
-      days: `${new Date().getDay()}`,
+      month: new Date().getMonth() + 1,
+      days: `${new Date().getDate()}`,
       year: new Date().getFullYear(),
     })
   );
@@ -40,6 +40,10 @@ export function parseSchedule(performance) {
   }
   const dateTime = parseDate(copy.dates[copy.dates.length - 1]);
   const isFuture = hasDate && dateTime > now;
+
+  if (isFuture) {
+    console.log("BUG AREA", dateTime, now.toUTCString(), copy.name, copy);
+  }
 
   return {
     ...copy,
