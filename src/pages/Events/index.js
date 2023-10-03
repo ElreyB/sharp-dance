@@ -49,7 +49,7 @@ export default function Events(props) {
   // : Object.entries(groupPerformancesByYear(pastPerformances))
   //     .sort(mostRecentYearsFirst)
   //     .map(renderPerformances);
-  console.log({ performanceArr });
+  console.log("perform", { performanceArr });
   return (
     <Page headerBanner={headerBanner}>
       <Wrapper>
