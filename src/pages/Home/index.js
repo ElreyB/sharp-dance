@@ -192,6 +192,13 @@ export default function Home() {
                 >
                   Buy Tickets
                 </StyledA>
+                <StyledA
+                  href="https://sharp-dance-company.ticketleap.com/saturday-night-post-show-cabaret-party/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Post show party ticket
+                </StyledA>
               </>
             );
           })[0]

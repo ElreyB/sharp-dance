@@ -95,6 +95,10 @@ const locationP = (location, address, currentShow) => {
   return null;
 };
 
+const TicIcon = styled.div`
+  display: inline-flex;
+`;
+
 export const Schedule = ({
   address,
   dates,
@@ -123,13 +127,24 @@ export const Schedule = ({
       {locationP(location, address, currentShow)}
       {footnote && <Footnote>{footnote}</Footnote>}
       {dates.map(({ days, month, time: dateTime, year, notes }, i) => {
-        console.warn("time", { days, time, year, dateTime, ...props });
         const composedTime = notes?.includes("summer intensive")
           ? "9:30am-4pm"
           : dateTime;
+        const composedNotes = notes?.includes("Cabaret Party") ? (
+          <TicIcon>
+            <p>9:30-11pm Cabaret Party</p>
+            <IconAnchor
+              url="https://sharp-dance-company.ticketleap.com/saturday-night-post-show-cabaret-party/"
+              Icon={TiTicket}
+            />
+          </TicIcon>
+        ) : (
+          notes
+        );
         return (
           <DateTime key={i}>
-            {monthName[month]} {days}, {year} {composedTime || time} {notes}
+            {monthName[month]} {days}, {year} {composedTime || time}{" "}
+            {composedNotes}
           </DateTime>
         );
       })}
