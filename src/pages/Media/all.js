@@ -43,8 +43,9 @@ const mediaOrder = [
 ];
 
 export default function Media({ headerBanner, media }) {
+  console.log("jdlkfjaslkf", media);
   const filterMedia = media.filter((album) => {
-    return Number(album.id) !== 6 && Number(album.id) !== 5;
+    return Number(album.id) !== 6;
   });
 
   const mediaToDisplay = mediaOrder.map((mediaTitle) =>
