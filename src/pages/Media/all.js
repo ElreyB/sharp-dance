@@ -35,7 +35,6 @@ const H2 = styled.h2`
 
 const mediaOrder = [
   "I am here",
-  "Puzzle",
   "669",
   "Seven Windows",
   "The Garden Tour",
