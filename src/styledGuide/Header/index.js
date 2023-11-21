@@ -5,11 +5,13 @@ import { LANDING } from "../../constants";
 import HamburgerButton from "../HamburgerButton";
 import { Nav } from "../Nav";
 import SideDrawer from "../SideDrawer";
+import { SocialIcons } from "../SocialIcons";
 
 const Wrapper = styled.div`
   border: 0px solid transparent;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   white-space: nowrap;
   height: 110px;
   background-color: ${({ theme }) => theme.colors.black};
@@ -72,6 +74,16 @@ const PhoneLogo = styled(Image)`
   `}
 `;
 
+const StyledSocialIcons = styled(SocialIcons)`
+  ${({ theme }) => theme.media.mobile`
+  display: none
+  `}
+
+  & a {
+    color: ${({ theme: { colors } }) => colors.white};
+  }
+`;
+
 export function Header() {
   const [show, setShow] = React.useState(false);
 
@@ -94,6 +106,7 @@ export function Header() {
       </LogoWrapper>
       <SideDrawer show={show} onClick={() => setShow(!show)} />
       <StyledNav />
+      <StyledSocialIcons />
       <HamburgerWrapper>
         <StyledHamburger onClick={() => setShow(!show)} />
       </HamburgerWrapper>

@@ -185,20 +185,15 @@ export default function Home() {
                   key={`${year}-${perf.name}-${i}`}
                   currentShow
                 />
-                <StyledA
-                  href={perf.purchaseUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Buy Tickets
-                </StyledA>
-                <StyledA
-                  href="https://sharp-dance-company.ticketleap.com/saturday-night-post-show-cabaret-party/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Post show party ticket
-                </StyledA>
+                {perf.purchaseUrl && (
+                  <StyledA
+                    href={perf.purchaseUrl}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Buy Tickets
+                  </StyledA>
+                )}
               </>
             );
           })[0]
