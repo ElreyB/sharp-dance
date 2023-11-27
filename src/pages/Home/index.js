@@ -164,15 +164,6 @@ export default function Home() {
   const currentShowImg = images.filter(({ title }) => title === "current-show");
   const imageSection = images.filter(({ title }) => title !== "current-show");
 
-  console.log({ currentShowImg, images });
-
-  // const imageTitles = [
-  //   "/images/669-Adj.png",
-  //   "/images/Retreat-Adj.png",
-  //   "/images/RICHRYAN-Kate-Adg.png",
-  //   "/images/SEVENWINDOWS-Mig&Wren-ADJ.png",
-  // ];
-
   const renderPerformances = ([year, perfs]) =>
     perfs.length > 0 && (
       <Fragment key={year}>

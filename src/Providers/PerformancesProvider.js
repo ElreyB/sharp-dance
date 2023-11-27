@@ -13,11 +13,18 @@ const PerformancesProvider = ({ children }) => {
     () => setPerformances(performancesCollection ? performancesCollection : []),
     [performancesCollection]
   );
-  console.log("I am being called");
   const parsedPerformances = performances.map(parseSchedule);
   const upcomingPerformances = parsedPerformances
     .filter(({ isFuture }) => isFuture)
-    .sort(olderFirst);
+    .sort(olderFirst)
+    .map((performances) => ({
+      ...performances,
+      description: performances.description.replaceAll("<p>", ""),
+    }))
+    .map((performances) => ({
+      ...performances,
+      description: performances.description.replaceAll("</p>", ""),
+    }));
 
   const pastPerformances = parsedPerformances
     .filter(({ isFuture }) => !isFuture)
