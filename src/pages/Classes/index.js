@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components/macro";
+// import styled from "styled-components/macro";
 // import { A, Markdown } from "../../styledGuide";
 // import { FaInstagram } from "react-icons/fa";
 // import { parseDate } from "../../utils";
 import Loading from "../Loading";
-import { PagesContext, ClassScheduleContext } from "../../Providers";
+import { PagesContext } from "../../Providers";
 import Page from "../../layouts/Page";
 
 // const Wrapper = styled.div`
@@ -19,7 +19,7 @@ import Page from "../../layouts/Page";
 //   text-align: center;
 // `;
 
-const now = new Date().getTime();
+// const now = new Date().getTime();
 // const isFuture = (time) => {
 //   return time > now;
 // };
@@ -42,7 +42,7 @@ const now = new Date().getTime();
 
 export default function Classes() {
   const { getPage } = React.useContext(PagesContext);
-  // const classSchedules = React.useContext(ClassScheduleContext);
+  // const classSchedules = React.useContex);
   const page = getPage("classes");
 
   if (!page) {
