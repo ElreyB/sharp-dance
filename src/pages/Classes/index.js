@@ -1,10 +1,23 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Schedule, H3, A } from "../../styledGuide";
+import { FaInstagram } from "react-icons/fa";
 // import { parseDate } from "../../utils";
 import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
 import Page from "../../layouts/Page";
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+`;
+
+const IconLink = styled(A)`
+  width: 33.33%;
+  padding: 0 4px;
+  text-align: center;
+`;
 
 const now = new Date().getTime();
 const isFuture = (time) => {
@@ -52,7 +65,10 @@ export default function Classes() {
   return (
     <Page headerBanner={headerBanner}>
       {options.content}
-      <A href="https://www.google.com/maps/place/Equilibrium+Dance+Academy,+LLC/@39.9279158,-75.1714042,17z/data=!4m5!3m4!1s0x89c6c60e52a24873:0xaa0c34b5ed568918!8m2!3d39.9279156!4d-75.1692154">
+      <IconLink href="https://www.instagram.com/sharpdancephilly/">
+        <FaInstagram size={40} />
+      </IconLink>
+      {/* <A href="https://www.google.com/maps/place/Equilibrium+Dance+Academy,+LLC/@39.9279158,-75.1714042,17z/data=!4m5!3m4!1s0x89c6c60e52a24873:0xaa0c34b5ed568918!8m2!3d39.9279156!4d-75.1692154">
         <StyledImage
           src={process.env.PUBLIC_URL + "/images/sharp-google-maps.png"}
           width="200px"
@@ -68,7 +84,7 @@ export default function Classes() {
         </>
       ) : (
         <H3>{options.noClasses}</H3>
-      )}
+      )} */}
     </Page>
   );
 }
