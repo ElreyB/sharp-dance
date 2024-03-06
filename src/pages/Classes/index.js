@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Schedule, H3, A } from "../../styledGuide";
+import { A } from "../../styledGuide";
 import { FaInstagram } from "react-icons/fa";
 // import { parseDate } from "../../utils";
 import Loading from "../Loading";
@@ -20,9 +20,9 @@ const IconLink = styled(A)`
 `;
 
 const now = new Date().getTime();
-const isFuture = (time) => {
-  return time > now;
-};
+// const isFuture = (time) => {
+//   return time > now;
+// };
 // const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 // function ClassSchedule({ season, ...upcomingClasses }) {
@@ -42,7 +42,7 @@ const isFuture = (time) => {
 
 export default function Classes() {
   const { getPage } = React.useContext(PagesContext);
-  const classSchedules = React.useContext(ClassScheduleContext);
+  // const classSchedules = React.useContext(ClassScheduleContext);
   const page = getPage("classes");
 
   if (!page) {
