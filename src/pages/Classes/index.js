@@ -7,11 +7,11 @@ import Loading from "../Loading";
 import { PagesContext, ClassScheduleContext } from "../../Providers";
 import Page from "../../layouts/Page";
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-`;
+// const Wrapper = styled.div`
+//   display: flex;
+//   flex-flow: row wrap;
+//   align-items: center;
+// `;
 
 const IconLink = styled(A)`
   width: 33.33%;
@@ -25,20 +25,20 @@ const isFuture = (time) => {
 };
 // const googleMapsEmbedAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
-function ClassSchedule({ season, ...upcomingClasses }) {
-  return (
-    <div>
-      {season && <H3>{season}</H3>}
-      <Schedule {...upcomingClasses} />
-    </div>
-  );
-}
+// function ClassSchedule({ season, ...upcomingClasses }) {
+//   return (
+//     <div>
+//       {season && <H3>{season}</H3>}
+//       <Schedule {...upcomingClasses} />
+//     </div>
+//   );
+// }
 
-const StyledImage = styled.img`
-  margin: ${({ theme: { spacing } }) => `${spacing.M} 0`};
-  width: 100%;
-  height: 500px;
-`;
+// const StyledImage = styled.img`
+//   margin: ${({ theme: { spacing } }) => `${spacing.M} 0`};
+//   width: 100%;
+//   height: 500px;
+// `;
 
 export default function Classes() {
   const { getPage } = React.useContext(PagesContext);
@@ -51,16 +51,16 @@ export default function Classes() {
 
   const { options = {}, pageName, ...headerBanner } = page;
   // const location = classSchedules.length && classSchedules[0].location;
-  const upcomingClassesList = classSchedules
-    .map((classSchedule) => {
-      const dates = classSchedule.dates.filter((date) => {
-        const dateTime = new Date(date.days).getTime();
-        return isFuture(dateTime);
-      });
+  // const upcomingClassesList = classSchedules
+  //   .map((classSchedule) => {
+  //     const dates = classSchedule.dates.filter((date) => {
+  //       const dateTime = new Date(date.days).getTime();
+  //       return isFuture(dateTime);
+  //     });
 
-      return dates.length === 0 ? undefined : { ...classSchedule, dates };
-    })
-    .filter((classSchedule) => !!classSchedule);
+  //     return dates.length === 0 ? undefined : { ...classSchedule, dates };
+  //   })
+  //   .filter((classSchedule) => !!classSchedule);
 
   return (
     <Page headerBanner={headerBanner}>
